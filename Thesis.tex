@@ -270,33 +270,174 @@ PP 1/333(1) \cite{PP13332024}, which
 filled the gap in the use of digital technologies in phytosanitary product efficacy
 and selectivity trials. This standard provides guidelines for incorporating digital
 tools into trial protocols, where digital tools are intended as a combination of
-hardwares and softwares delivering samples quantitative or qualitative measurments 
-of the samples in a semi-automatic or automatic fashon.
+hardwares and softwares delivering sample measurments 
+in a semi-automatic or automatic fashon.
 The delivered measurments must respect the same quality standards of the manual
 ones, and the digital tools must be validated before the trial execution.
 The standard also provides guidance on the validation of digital tools, which should
 be performed by comparing the results of digital and manual assessments. The validation
 report should demonstrate that the digital tools provide reliable and consistent
 results compared to manual assessments. The benchmarks for the validation depends
-on the type of variables measured:
+on the type of variables measured. For each type of variable, the congruence between 
+digital and manual measurement should be measured with a different metric:
 \begin{itemize}
-    \item \textbf{Continuous}: digital measurment correlation with manual measurment
-            must deliver a coefficient of determination (R) higher than 0.85.
-    \item \textbf{Ordinal and Nominal}, the validation should include the
-          comparison of the frequency of the different classes of the digital and
-          manual assessments.
-    \item \textbf{Binary}, the validation should include the comparison of the
-          frequency of the two classes of the digital and manual assessments.
+    \item \textbf{Continuous}: Coefficient of determination (R²) higher than 0.85.
+    \item \textbf{Ordinal and Nominal}: Cohen K higher than 0.7.
+    \item \textbf{Binary}: Accuracy higher than 0.85
+\end{itemize}
 
+One of the most compelling advantages of adopting digital approaches is the
+dramatic increase in the number of observations that can be collected. Unlike
+manual methods, which are inherently limited by human capacity and time
+constraints, automated and semi-automated systems can continuously gather data
+with minimal interruption. This greater volume of data not only improves the
+resolution and granularity of analysis but also significantly enhances the
+statistical power of hypothesis testing.
+
+The power of a statistical test, defined as the probability of correctly
+rejecting the null hypothesis when it is false, directly depends on the sample
+size (number of observations). As noted by classical statisticians such as
+Student (1908), Pearson (1920), and Fisher (1935), increasing the independent sample size
+is a fundamental way to achieve higher statistical power. However effiecient technics
+to collect data does not garantee indipendency of samples. Wheter repeated observations
+per experimental unit are produced, also (generalized) linear mixed models can benefit from 
+digital sample size enhancement \cite{kumle_estimating_2021}.
+
+In summary, the adoption of digital tools as per EPPO PP 1/333(1) standard
+presents a substantial leap forward in phytosanitary product efficacy and
+selectivity trials. By enabling the collection of significantly more data
+points, these technologies enhance the robustness of statistical analyses and
+support more reliable decision-making in agricultural practices.
 
 \section{Geomatic Technics}
 \subsection{Photogrammetry}
+
+Photogrammetry is a geomatic technique that allows the acquisition of spatial
+data by processing and analyzing photographic images. It involves capturing a
+series of overlapping photos from various perspectives, often using aerial
+platforms such as drones or UAVs (Unmanned Aerial Vehicles), and then processing
+them using specialized software to generate precise three-dimensional (3D)
+models and orthomosaics. In the context of EPPO PP 1/333(1), photogrammetry
+offers the ability to obtain high-resolution spatial data, which can greatly
+enhance the precision of efficacy and selectivity assessments.
+
+The key benefits of photogrammetry include:
+
+\begin{itemize}
+\item \textbf{High Spats correct distortions and
+generate georeferenced maps, minimizing errors related to manual measurements.
+\item \textbf{Integration with GIS}: Facilitates spatial analysis and
+interpretation within Geographic Information Systems.
+\end{itemize}
+
+When integrated into efficacy trials, photogrammetry significantly enhances the
+ability to detect spatial heterogeneities and assess treatment performance across
+large areas. The increased data density and spatial accuracy ultimately lead to
+improved statistical power, especially when combined with geostatistical
+techniques.
+
 \subsection{Geostatistics}
 
+Geostatistics encompasses a range of statistical methods aimed at analyzing
+spatial and spatiotemporal data. In the context of phytosanitary product trials,
+geostatistical methods allow for the quantification of spatial variation and the
+prediction of treatment effects across plots. The most prominent techniques
+include kriging, spatial covariates modeling, and spatial analysis of field trials
+with splines.
+
+\textbf{Kriging} is an advanced interpolation method that provides best linear
+unbiased predictions (BLUP) of spatially correlated variables. By modeling the
+spatial covariance structure through variograms, kriging allows for accurate
+prediction of unmeasured locations, reducing spatial noise and enhancing the
+interpretation of treatment effects.
+
+\textbf{Spatial Covariates} involve incorporating additional spatial information
+(such as soil properties or topography) into statistical models, thereby
+improving the accuracy of predictions. Integrating spatial covariates helps to
+account for environmental variability and isolate the true treatment effect.
+
+\textbf{Spatial Analysis of Field Trials with Splines} leverages spline functions
+to model smooth spatial trends, effectively addressing spatial heterogeneity.
+Splines offer a flexible and efficient way to account for gradual changes across
+the field, complementing other geostatistical methods.
+
+Combining photogrammetry and geostatistics as outlined in EPPO PP 1/333(1) allows
+researchers to gain comprehensive spatial insights, ultimately strengthening the
+reliability and validity of efficacy assessments.ial Resolution}: Captures detailed spatial variations
+across plots, enabling accurate characterization of treatment effects.
+\item \textbf{Time Efficiency}: Rapid data acquisition compared to manual
+methods, allowing for frequent monitoring and real-time data analysis.
+\item \textbf{Enhanced Accuracy}: Advanced algorithm
+
 \section{Machine Learning}
+
+Machine Learning (ML) is a branch of artificial intelligence (AI) that 
+focuses on the development of algorithms and models capable of learning 
+from and making predictions or decisions based on data. Unlike traditional 
+programming, where explicit instructions dictate the output for given inputs, 
+ML models identify patterns and relationships within data to generate 
+predictive outcomes. These techniques are particularly valuable when 
+dealing with large, complex, or high-dimensional datasets, where manual 
+analysis would be impractical or inefficient.
+
+ML has gained substantial importance in various scientific fields, including 
+agriculture and plant protection. Within the context of phytosanitary product 
+efficacy evaluation, ML offers new opportunities to enhance data processing, 
+interpretation, and decision-making by leveraging vast amounts of observational 
+data collected during field trials. Integrating ML approaches into the framework 
+of PP1/333 can significantly increase the robustness and accuracy of the analysis, 
+allowing for more data-driven and automated assessments.
+
+The primary objective of employing ML techniques in phytosanitary product trials 
+is to improve accuracy, precision, and reproducibility while reducing manual 
+intervention and subjective bias. Modern ML methods can analyze complex interactions 
+between variables and predict treatment outcomes under various conditions, thereby 
+facilitating more efficient and accurate efficacy assessments.
+
 \subsection{Approaches}
+
+There are several fundamental approaches in machine learning, each suited to different 
+types of tasks and data structures:
+
+\begin{itemize}
+    \item \textbf{Supervised Learning}: Models are trained on labeled datasets where 
+    the input-output relationship is known. Techniques include regression, classification, 
+    and ensemble methods such as Random Forests and Gradient Boosting.
+    \item \textbf{Unsupervised Learning}: Models identify patterns or groupings within 
+    data without labeled responses. Clustering (e.g., K-means, hierarchical clustering) 
+    and dimensionality reduction (e.g., PCA, t-SNE) are common techniques.
+    \item \textbf{Semi-supervised Learning}: Combines a small amount of labeled data with 
+    a large amount of unlabeled data to improve learning accuracy.
+    \item \textbf{Reinforcement Learning}: Agents learn by interacting with an environment 
+    and receiving feedback in the form of rewards or penalties.
+    \item \textbf{Deep Learning}: Utilizes neural networks with multiple layers 
+    (deep architectures) to model complex relationships and patterns, particularly 
+    in image and signal processing.
+\end{itemize}
+
+ML models can also be integrated with statistical techniques, providing hybrid approaches that 
+combine inferential statistics with predictive modeling. For example, generalized linear models 
+(GLMs) can be enhanced with ML techniques to improve their accuracy and adaptability.
+
 \subsection{Computer Vision}
 
+Computer vision is a subfield of ML that focuses on enabling machines to interpret and analyze 
+visual information. In the context of phytosanitary product efficacy evaluation, computer vision 
+methods are increasingly used for automated observation and measurement, particularly when 
+integrated with digital imaging and photogrammetry.
+
+The use of computer vision within PP1/333 trials significantly enhances data acquisition by 
+enabling continuous monitoring and precise measurement of crop conditions. Techniques such as 
+image segmentation, object detection, and texture analysis can automatically identify plant 
+stress, disease symptoms, and pest damage. Convolutional Neural Networks (CNNs) and related 
+architectures, including ResNet and U-Net, have shown high efficacy in analyzing complex 
+agricultural images.
+
+Moreover, combining computer vision with geostatistical methods allows for the spatial mapping 
+of efficacy across field plots, generating comprehensive visual assessments that support 
+statistical evaluations. This integrated approach maximizes the utility of both spatial 
+and temporal data, facilitating more robust and accurate assessments while minimizing human 
+error and labor requirements.
 
 \chapter{Thesis Aims and Framework: A New Statistical Analysis Workflow}
 

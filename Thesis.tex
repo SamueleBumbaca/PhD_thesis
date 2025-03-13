@@ -103,11 +103,85 @@ PP 1/135(4) \cite{EPPO_PP1_135} describes the selectivity assessment procedures,
 in other words: the standard phytotoxicity assessments of PPPs.
 The PP 1/152 \cite{EPPO_PP1_152} standard describes the general principles for the
 efficacy and selectivity evaluation of PPPs, in describing the standard experimental design.
-Aside from: objectives of the study, description of treatments, controls, reference treatment, 
-plot size, replications, randomization, sampling and assessment timing, the
-PP 1/152 outlined that a comprehensive experimental design should include:
-a description of the sampling and measurement procedures and the statistical analysis plan.
+Aside from the objectives of the study and the description of thesis (treatments), 
+% controls, reference treatment, plot size, replications, randomization, sampling and assessment timing, 
+the PP 1/152 outlined that a comprehensive experimental design should include a description of:
+\begin{itemize}
+    \item \textbf{Type of Design}
+    \item \textbf{Sampling Method and Measures Units}
+    \item \textbf{Statistical Analysis Plan}
+\end{itemize}
 
+For what concerns the type of design, EPPO "envisage trials in which the experimental
+treatments are the ‘test product(s), reference product(s) and
+untreated control, arranged in a suitable statistical design’" \cite{EPPO_PP1_152}.
+The experimental design should be randomized, with replications and blocks, and
+should include a sufficient number of plots to ensure the statistical power of the
+analysis. The number of replications and blocks should be determined based on the
+expected variability of the data and the desired level of statistical significance
+in respect control and reference thesis. The
+randomization of thesis within blocks should be carried out using a suitable
+randomization procedure to ensure that the treatments are assigned to plots in a
+completely random manner. The key randomization used in phytosanitary product 
+evaluations include:
+
+\begin{itemize}
+    \item \textbf{Completely Randomized Design (CRD)}: Treatments randomly assigned to 
+          experimental units; statistically powerful but only suitable for homogeneous trial 
+          areas where environmental variation is minimal.
+          
+    \item \textbf{Randomized Complete Block Design (RCBD)}: Groups plots into homogeneous 
+          blocks with each treatment appearing once per block; controls for environmental 
+          heterogeneity across the experimental area.
+          
+    \item \textbf{Split-Plot Design}: Used when one factor (e.g., cultivation equipment) 
+          cannot be fully randomized; creates hierarchy with whole plots and subplots; 
+          particularly useful when plot size or equipment constraints exist.
+          
+    \item \textbf{Systematic designs}: Non-randomized arrangements rarely suitable for 
+          efficacy evaluations; may only be appropriate in special cases like varietal 
+          trials on herbicide selectivity.
+\end{itemize}
+
+When designing phytosanitary product trials, the arrangement of untreated controls 
+is critical for proper efficacy assessment. According to EPPO standards, the main 
+purpose of untreated controls is to demonstrate adequate pest infestation, without 
+which efficacy cannot be meaningfully evaluated. Four distinct arrangements for 
+untreated controls exist:
+
+\begin{itemize}
+    \item \textbf{Included controls}: The most common approach, where control plots 
+    have the same shape and size as treatment plots and are fully randomized within 
+    the experimental design. This arrangement is essential when controls 
+    will be used in statistical comparisons.
+    
+    \item \textbf{Imbricated controls}: Control plots are arranged systematically 
+    within the trial (between blocks or between treated plots), potentially with 
+    different dimensions than treatment plots. These observations are typically 
+    not included in statistical analyses but ensure more homogeneous distribution 
+    of untreated area effects.
+    
+    \item \textbf{Excluded controls}: Control plots are established outside the 
+    main trial area but in similar environmental conditions. While replication is 
+    not essential, it may be beneficial in heterogeneous environments. These observations 
+    are generally excluded from statistical analyses.
+    
+    \item \textbf{Adjacent controls}: Each plot is divided into two subplots, with 
+    one randomly selected to remain untreated. This approach is particularly valuable 
+    in highly heterogeneous environments but requires specialized split-plot statistical 
+    analysis.
+\end{itemize}
+
+The selection of control arrangement depends on several factors: whether the control 
+will be included in statistical tests (requiring included controls), the degree 
+of environmental heterogeneity (adjacent controls are preferred for high heterogeneity), 
+and the potential for control plots to interfere with adjacent treatment plots (suggesting 
+excluded controls when interference is likely).
+The trials type design is critical for the success of the study, as it ensures
+that the results are reliable, reproducible, and statistically valid.
+
+After defining the experimental units through the randomization design choise,
+the next step is to define the sampling method and the measures units.
 Target and crop-specific standards point out "mode of
 assessment recording and measurements" fixing evaluation metrics in two ways:
 countable (discrete values) and measurable (continuous values) effects which must be
@@ -185,33 +259,35 @@ that products demonstrate consistent efficacy across relevant agricultural condi
 
 While the EPPO experimental design standards provide a solid foundation for conducting
 phytosanitary product trials, the increasing availability of digital tools and technologies
-offers new opportunities to enhance the efficiency and accuracy of these assessments.
-Digital approaches can streamline data collection, automate analysis, and improve the
+offers new opportunities to enhance the quality (in the "Quality of a mode of observation" sense \cite{EPPO_PP1_152}) 
+and efficiency of these assessments.
+Digital approaches can automate data collection and analysis, improving the
 reproducibility of results, ultimately accelerating the development and registration of
 effective phytosanitary products.
 
-In November 2024, the EPPO published a new standard, PP 1/333(1) \cite{PP13332024}, which 
+To regulate the use of this kind of technologies, the EPPO published a new standard, 
+PP 1/333(1) \cite{PP13332024}, which 
 filled the gap in the use of digital technologies in phytosanitary product efficacy
 and selectivity trials. This standard provides guidelines for incorporating digital
-tools into trial protocols, including the use of digital sensors and algorithms
-for data processing and analysis.
+tools into trial protocols, where digital tools are intended as a combination of
+hardwares and softwares delivering samples quantitative or qualitative measurments 
+of the samples in a semi-automatic or automatic fashon.
+The delivered measurments must respect the same quality standards of the manual
+ones, and the digital tools must be validated before the trial execution.
+The standard also provides guidance on the validation of digital tools, which should
+be performed by comparing the results of digital and manual assessments. The validation
+report should demonstrate that the digital tools provide reliable and consistent
+results compared to manual assessments. The benchmarks for the validation depends
+on the type of variables measured:
+\begin{itemize}
+    \item \textbf{Continuous}: digital measurment correlation with manual measurment
+            must deliver a coefficient of determination (R) higher than 0.85.
+    \item \textbf{Ordinal and Nominal}, the validation should include the
+          comparison of the frequency of the different classes of the digital and
+          manual assessments.
+    \item \textbf{Binary}, the validation should include the comparison of the
+          frequency of the two classes of the digital and manual assessments.
 
-When implementing digital technologies in efficacy trials, it is essential to document how the technology was used in accordance with the verification report. In the final trial report, digital technologies used in assessment should be clearly specified, including:
-
-- The type of digital technology used and its version number
-- Reference to the verification report
-- Confirmation that the digital technology was used within its verified scope and operating conditions
-- Any deviations from the standard operating procedure and their potential impact on the results
-- Calibration records showing the equipment was operating correctly at the time of assessment
-
-The data generated through digital technologies should be stored in a manner that ensures traceability and allows for subsequent verification if required by regulatory authorities. Raw data, such as images used for analysis, should be archived according to GEP requirements.
-
-
-Digital technologies offer significant potential to enhance the accuracy, efficiency, and reproducibility of efficacy evaluations for plant protection products. When properly validated, verified, and calibrated, these technologies can complement or potentially replace conventional assessment methods while maintaining compliance with GEP standards.
-
-As digital technologies continue to evolve, this Standard will be periodically reviewed and updated to reflect advancements in hardware capabilities, algorithm development, and machine learning applications. Regulatory authorities, GEP facilities, and technology developers are encouraged to collaborate in the ongoing development of appropriate standards for digital technology implementation in efficacy evaluation trials.
-
-The adoption of digital technology should prioritize data quality, reliability, and transparency while facilitating innovation that may improve the assessment of plant protection product performance. All parties involved should work to ensure that digital technologies are implemented in a manner that maintains the scientific integrity of efficacy evaluations while enabling more efficient and potentially more precise data collection methodologies.
 
 \section{Geomatic Technics}
 \subsection{Photogrammetry}

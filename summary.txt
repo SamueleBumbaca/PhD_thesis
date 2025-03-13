@@ -1,0 +1,35 @@
+Introduction
+- Context
+-- Phytosanitay Products
+-- International Standards
+- EPPO
+-- Standards
+-- Experimental Design
+-- Statistical Analysis
+- Geomatic Technics
+-- Arial Photogrammetry
+-- Geostatistics
+--- Spatial and Temporal Variables
+--- Krigging
+--- Splines
+- Machine Learning
+-- Approaches
+--- ...
+--- Random Forest
+--- Support Vector Machine
+--- Artificial Neural Networks
+-- Computer Vision
+--- Image Classification
+--- Object Detection 
+--- Segmentation
+Thesis Aims and Framework: A New Statistical Analysis Workflow
+Study cases
+- Continuous Variables
+-- On the minimum dataset requirements to fine-tune an object
+ detector for arable crops plant counting: A downstream case
+ study on maize seedlings
+- Ordinal and Nominal Variables
+-- Supporting Screening of New Plant Protection Products through
+ a Multispectral Photogrammetric Approach Integrated with AI
+- Binary Variables
+-- Embedding Spaces for Control Sample Anomaly Detection

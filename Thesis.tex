@@ -22,6 +22,8 @@
 \bibliographystyle{plain}  % or another style that suits your needs
 \usepackage{url}
 \usepackage{hyperref}
+% math
+\usepackage{amsmath}
 
 % Paragraph formatting
 \setlength{\parskip}{6pt}
@@ -40,8 +42,7 @@
 % Main content
 \chapter{Introduction}
 
-\section{EPPO}
-\subsection{Phytosanitary Products}
+\section{Phytosanitary Products}
 
 Phytosanitary products, commonly used as a synonym for "Plant Protection Products" (PPPs),
 are a specific category of pesticides designed primarily to maintain crop health 
@@ -95,7 +96,7 @@ Biological Assessment Dossier (BAD) efficacy trials. GEP units are expected to f
 EPPO PP 1 to assess PPPs selectivity detecting phytotoxicity effects, and efficacy in the
 complaint of Regulation (EC) No 1107/2009 of the European Parliament and Council \cite{EC_Regulation_1107_2009}.
 
-\subsection{Standard Experimental Design}
+\section{EPPO Standards}
 
 Generics on efficacy assessments are reported in PP 1/181(5) \cite{EPPO_PP1_181}, which describes
 herbicide, fungicide, bactericide, and insecticide efficacy on the target evaluation.
@@ -104,7 +105,6 @@ in other words: the standard phytotoxicity assessments of PPPs.
 The PP 1/152 \cite{EPPO_PP1_152} standard describes the general principles for the
 efficacy and selectivity evaluation of PPPs, in describing the standard experimental design.
 Aside from the objectives of the study and the description of thesis (treatments), 
-% controls, reference treatment, plot size, replications, randomization, sampling and assessment timing, 
 the PP 1/152 outlined that a comprehensive experimental design should include a description of:
 \begin{itemize}
     \item \textbf{Type of Design}
@@ -112,7 +112,9 @@ the PP 1/152 outlined that a comprehensive experimental design should include a 
     \item \textbf{Statistical Analysis Plan}
 \end{itemize}
 
-For what concerns the type of design, EPPO "envisage trials in which the experimental
+\subsection{Experimental Design}
+
+EPPO "envisage trials in which the experimental
 treatments are the ‘test product(s), reference product(s) and
 untreated control, arranged in a suitable statistical design’" \cite{EPPO_PP1_152}.
 The experimental design should be randomized, with replications and blocks, and
@@ -180,6 +182,8 @@ excluded controls when interference is likely).
 The trials type design is critical for the success of the study, as it ensures
 that the results are reliable, reproducible, and statistically valid.
 
+\subsection{Sampling Method and Measures Units}
+
 After defining the experimental units through the randomization design choise,
 the next step is to define the sampling method and the measures units.
 Target and crop-specific standards point out "mode of
@@ -231,6 +235,8 @@ Continuous not limited & X & X & & \\
 \end{tabular}
 \end{table}
 
+\subsection{Statistical Analysis}
+
 The statistical analysis of trials is equally critical, providing objective 
 assessment of treatment effects. While PP 1/152 \cite{EPPO_PP1_152} doesn't prescribe 
 specific analyses for all situations, it emphasizes that analysis methods should 
@@ -255,7 +261,7 @@ Through adherence to these rigorous design and analysis standards, researchers c
 generate reliable evidence to support phytosanitary product registration while ensuring 
 that products demonstrate consistent efficacy across relevant agricultural conditions.
 
-\subsection{Digital Approaches}
+\section{Geomatics Techniques}
 
 While the EPPO experimental design standards provide a solid foundation for conducting
 phytosanitary product trials, the increasing availability of digital tools and technologies
@@ -270,21 +276,29 @@ PP 1/333(1) \cite{PP13332024}, which
 filled the gap in the use of digital technologies in phytosanitary product efficacy
 and selectivity trials. This standard provides guidelines for incorporating digital
 tools into trial protocols, where digital tools are intended as a combination of
-hardwares and softwares delivering sample measurments 
+hardwares and softwares delivering data 
 in a semi-automatic or automatic fashon.
-The delivered measurments must respect the same quality standards of the manual
+The digital data must respect the same quality standards of the manual
 ones, and the digital tools must be validated before the trial execution.
-The standard also provides guidance on the validation of digital tools, which should
-be performed by comparing the results of digital and manual assessments. The validation
-report should demonstrate that the digital tools provide reliable and consistent
-results compared to manual assessments. The benchmarks for the validation depends
-on the type of variables measured. For each type of variable, the congruence between 
-digital and manual measurement should be measured with a different metric:
+Validation of digital tools should
+be performed by comparing the results of digital and manual assessments, 
+demonstrating that the digital tools provide reliable and consistent
+results compared to manual assessments golden sample. 
+The benchmarks for the validation depends
+on the type of variable. For each type of variable, the congruence between 
+digital and manual should be evaluated with a different metric:
+
 \begin{itemize}
     \item \textbf{Continuous}: Coefficient of determination (R²) higher than 0.85.
-    \item \textbf{Ordinal and Nominal}: Cohen K higher than 0.7.
+    \item \textbf{Ordinal and Nominal}: Cohen's kappa Coefficient ($\kappa$) higher than 0.7.
     \item \textbf{Binary}: Accuracy higher than 0.85
 \end{itemize}
+
+\subsection{Geostatistics}
+
+Adoption of digital tools is not only a matter of data collection but also of data
+analysis. In many case analyze digital data with the same statistical methods
+reduce the benefits of digital data collection or simply is not possible. 
 
 One of the most compelling advantages of adopting digital approaches is the
 dramatic increase in the number of observations that can be collected. Unlike
@@ -296,47 +310,40 @@ statistical power of hypothesis testing.
 
 The power of a statistical test, defined as the probability of correctly
 rejecting the null hypothesis when it is false, directly depends on the sample
-size (number of observations). As noted by classical statisticians such as
-Student (1908), Pearson (1920), and Fisher (1935), increasing the independent sample size
-is a fundamental way to achieve higher statistical power. However effiecient technics
-to collect data does not garantee indipendency of samples. Wheter repeated observations
-per experimental unit are produced, also (generalized) linear mixed models can benefit from 
-digital sample size enhancement \cite{kumle_estimating_2021}.
-
-In summary, the adoption of digital tools as per EPPO PP 1/333(1) standard
-presents a substantial leap forward in phytosanitary product efficacy and
-selectivity trials. By enabling the collection of significantly more data
-points, these technologies enhance the robustness of statistical analyses and
-support more reliable decision-making in agricultural practices.
-
-\section{Geomatic Technics}
-\subsection{Photogrammetry}
-
-Photogrammetry is a geomatic technique that allows the acquisition of spatial
-data by processing and analyzing photographic images. It involves capturing a
-series of overlapping photos from various perspectives, often using aerial
-platforms such as drones or UAVs (Unmanned Aerial Vehicles), and then processing
-them using specialized software to generate precise three-dimensional (3D)
-models and orthomosaics. In the context of EPPO PP 1/333(1), photogrammetry
-offers the ability to obtain high-resolution spatial data, which can greatly
-enhance the precision of efficacy and selectivity assessments.
-
-The key benefits of photogrammetry include:
-
-\begin{itemize}
-\item \textbf{High Spats correct distortions and
-generate georeferenced maps, minimizing errors related to manual measurements.
-\item \textbf{Integration with GIS}: Facilitates spatial analysis and
-interpretation within Geographic Information Systems.
-\end{itemize}
-
-When integrated into efficacy trials, photogrammetry significantly enhances the
-ability to detect spatial heterogeneities and assess treatment performance across
-large areas. The increased data density and spatial accuracy ultimately lead to
-improved statistical power, especially when combined with geostatistical
-techniques.
-
-\subsection{Geostatistics}
+size (number of observations), as noted by a classical statisticians as
+Fisher \cite{fisherStatisticalMethodsResearch1992}. However effiecient technics
+to collect data does not garantee indipendency of samples. 
+In other words, having a powerfull tool to collect data does not mean that we
+can rely on a higher amount of replications.
+Wheter repeated observations
+per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
+(GLMM) \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}
+should be used to benefit from 
+digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
+account for the correlation structure of repeated observation
+by incorporating random effects, thus providing more
+accurate estimates of treatment effects and their associated uncertainty.
+% To clarify the need of GLMMs, let's consider a simple example. In a field trial
+% where the same plot is observed multiple times, the observations within the same
+% plot are likely to be correlated due to the shared environmental conditions.
+% Ignoring this correlation can lead to biased estimates of treatment effects and
+% inflated Type I error rates. Averaging all the observations within a plot could
+% be a solution, and would allow for the use of standard GLMs, but this approach
+% would also reduce the sample size and statistical power, potentially masking treatment
+% effects. In a scenario where we deliberately used digital tools to increase the
+% number of observations, it would be simply a waste to then reduce the sample
+% size by averaging the data. GLMMs provide a more elegant solution by modeling
+% the correlation structure directly, allowing for the inclusion of all observations
+% while appropriately accounting for the correlation. This approach maximizes the
+% statistical power of the analysis and ensures that the results are both accurate
+% and reliable.
+GLMMs can also be used to model spatial and temporal autocorrelation, which is
+common in field trials and can significantly impact the validity of statistical
+inferences. Randomization of treatments within blocks is designed to minimize
+the impact of spatial variability, but residual spatial autocorrelation may still
+exist due to unmeasured environmental factors. Accounting for these correlation
+structures ensures that whether the randomization fails in capture environmental
+variability, the results are still valid and reliable.
 
 Geostatistics encompasses a range of statistical methods aimed at analyzing
 spatial and spatiotemporal data. In the context of phytosanitary product trials,
@@ -361,15 +368,78 @@ to model smooth spatial trends, effectively addressing spatial heterogeneity.
 Splines offer a flexible and efficient way to account for gradual changes across
 the field, complementing other geostatistical methods.
 
-Combining photogrammetry and geostatistics as outlined in EPPO PP 1/333(1) allows
-researchers to gain comprehensive spatial insights, ultimately strengthening the
-reliability and validity of efficacy assessments.ial Resolution}: Captures detailed spatial variations
-across plots, enabling accurate characterization of treatment effects.
-\item \textbf{Time Efficiency}: Rapid data acquisition compared to manual
-methods, allowing for frequent monitoring and real-time data analysis.
-\item \textbf{Enhanced Accuracy}: Advanced algorithm
+All these geostatistical techniques can be seamlessly integrated with GLMMs to
+provide a comprehensive analysis of spatial-temporal data, enhancing the accuracy and
+reliability of treatment effect estimates.
 
-\section{Machine Learning}
+
+\subsection{Photogrammetry}
+
+Photogrammetry is a geomatic technique that allows the acquisition of spatial
+data by processing and analyzing photographic images. 
+Photogrammetry is a technique used to obtain reliable information about physical 
+objects and the environment through the process of recording, measuring, and interpreting 
+photographic images. It is widely used in various fields such as topographic mapping, 
+architecture, engineering, manufacturing, quality control, and geology. The fundamental 
+principle of photogrammetry is based on the geometry of image formation and the 
+mathematical relationships between the images and the objects being photographed.
+
+The basic principle of photogrammetry involves capturing multiple photographs of 
+an object or scene from different perspectives. By analyzing these images, it is 
+possible to reconstruct the three-dimensional (3D) coordinates of points on the 
+object's surface. The key steps in photogrammetry include image acquisition, image 
+orientation, and 3D reconstruction.
+
+Images are typically captured using cameras mounted on various platforms such as 
+tripods, drones, or aircraft. The quality and resolution of the images are crucial 
+for accurate photogrammetric analysis. The images should have sufficient overlap 
+(usually 60-80\%) to ensure that common points are visible in multiple images.
+
+Image orientation involves determining the position and orientation of the camera 
+at the time each photograph was taken. This process is divided into two main steps: 
+interior orientation and exterior orientation.
+
+\begin{itemize}
+    \item \textbf{Interior Orientation:} This step involves determining the internal 
+    geometry of the camera, including the focal length, principal point, and lens 
+    distortion parameters. These parameters are typically obtained through a camera 
+    calibration process.
+    \item \textbf{Exterior Orientation:} This step involves determining the position 
+    (X, Y, Z coordinates) and orientation (roll, pitch, yaw angles) of the camera 
+    in a global coordinate system. This is achieved by identifying and matching 
+    common points (tie points) in overlapping images and using these points to solve 
+    for the camera parameters.
+\end{itemize}
+
+Once the images are oriented, the 3D coordinates of points on the object's surface 
+can be reconstructed using triangulation. Triangulation is a mathematical process 
+that involves intersecting lines of sight from multiple images to determine the 
+precise location of a point in 3D space.
+
+Mathematically, the process can be described using the collinearity equations, which 
+relate the image coordinates (x, y) of a point to its object coordinates (X, Y, Z) 
+through the camera parameters:
+
+\[
+\begin{aligned}
+    x &= x_0 - \frac{f \cdot (r_{11}(X - X_0) + r_{12}(Y - Y_0) + r_{13}(Z - Z_0))}{r_{31}(X - X_0) + r_{32}(Y - Y_0) + r_{33}(Z - Z_0)} \\
+    y &= y_0 - \frac{f \cdot (r_{21}(X - X_0) + r_{22}(Y - Y_0) + r_{23}(Z - Z_0))}{r_{31}(X - X_0) + r_{32}(Y - Y_0) + r_{33}(Z - Z_0)}
+\end{aligned}
+\]
+
+where:
+\begin{itemize}
+    \item \( (x_0, y_0) \) are the coordinates of the principal point in the image.
+    \item \( f \) is the focal length of the camera.
+    \item \( (X_0, Y_0, Z_0) \) are the coordinates of the camera position.
+    \item \( r_{ij} \) are the elements of the rotation matrix that describes the orientation of the camera.
+\end{itemize}
+
+By solving these equations for multiple images, the 3D coordinates of the object 
+points can be accurately determined.
+
+
+\subsection{Machine Learning}
 
 Machine Learning (ML) is a branch of artificial intelligence (AI) that 
 focuses on the development of algorithms and models capable of learning 
@@ -394,8 +464,6 @@ intervention and subjective bias. Modern ML methods can analyze complex interact
 between variables and predict treatment outcomes under various conditions, thereby 
 facilitating more efficient and accurate efficacy assessments.
 
-\subsection{Approaches}
-
 There are several fundamental approaches in machine learning, each suited to different 
 types of tasks and data structures:
 
@@ -419,8 +487,6 @@ ML models can also be integrated with statistical techniques, providing hybrid a
 combine inferential statistics with predictive modeling. For example, generalized linear models 
 (GLMs) can be enhanced with ML techniques to improve their accuracy and adaptability.
 
-\subsection{Computer Vision}
-
 Computer vision is a subfield of ML that focuses on enabling machines to interpret and analyze 
 visual information. In the context of phytosanitary product efficacy evaluation, computer vision 
 methods are increasingly used for automated observation and measurement, particularly when 
@@ -439,7 +505,18 @@ statistical evaluations. This integrated approach maximizes the utility of both 
 and temporal data, facilitating more robust and accurate assessments while minimizing human 
 error and labor requirements.
 
-\chapter{Thesis Aims and Framework: A New Statistical Analysis Workflow}
+\chapter{Thesis Aims}
+
+The aim of this thesis is to investigate the potential benefits of integrating
+geomatics techniques in the design and analysis of phytosanitary product efficacy trials.
+As already discussed, the EPPO standards provide a solid foundation for conducting experimental trials,
+but the increasing availability of digital tools and technologies offers new opportunities to enhance
+the quality and efficiency of these assessments. By leveraging geomatics techniques such as photogrammetry,
+geostatistics, and machine learning, researchers can improve data collection, analysis, and interpretation,
+ultimately accelerating the development and registration of effective phytosanitary products.
+Throughout a study case each variable type, we will explore the opportunities and
+constraints of deploy geomatic techics for increase phytosanitary products effects
+estimation.
 
 \chapter{Study Cases}
 \section{Continuous Variables}

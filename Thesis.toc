@@ -1,19 +1,18 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}EPPO}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Phytosanitary Products}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Standard Experimental Design}{6}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Digital Approaches}{12}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Geomatic Technics}{14}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Photogrammetry}{14}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Geostatistics}{14}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Machine Learning}{14}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Approaches}{14}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Computer Vision}{14}{subsection.1.3.2}%
-\contentsline {chapter}{\numberline {2}Thesis Aims and Framework: A New Statistical Analysis Workflow}{15}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Study Cases}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Continuous Variables}{16}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Plant Count}{16}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Ordinal and Nominal Variables}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Phytoxicity Score}{16}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Binary Variables}{16}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Embedding Spaces for Control Sample Anomaly Detection}{16}{subsection.3.3.1}%
+\contentsline {section}{\numberline {1.1}Phytosanitary Products}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}EPPO Standards}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Experimental Design}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Sampling Method and Measures Units}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Statistical Analysis}{11}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Geomatics Techniques}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Geostatistics}{13}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Photogrammetry}{16}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Machine Learning}{18}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Thesis Aims}{22}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Study Cases}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Continuous Variables}{23}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Plant Count}{23}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Ordinal and Nominal Variables}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Phytoxicity Score}{23}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Binary Variables}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Embedding Spaces for Control Sample Anomaly Detection}{23}{subsection.3.3.1}%

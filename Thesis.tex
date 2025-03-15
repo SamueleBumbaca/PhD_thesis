@@ -294,83 +294,7 @@ digital and manual should be evaluated with a different metric:
     \item \textbf{Binary}: Accuracy higher than 0.85
 \end{itemize}
 
-\subsection{Geostatistics}
-
-Adoption of digital tools is not only a matter of data collection but also of data
-analysis. In many case analyze digital data with the same statistical methods
-reduce the benefits of digital data collection or simply is not possible. 
-
-One of the most compelling advantages of adopting digital approaches is the
-dramatic increase in the number of observations that can be collected. Unlike
-manual methods, which are inherently limited by human capacity and time
-constraints, automated and semi-automated systems can continuously gather data
-with minimal interruption. This greater volume of data not only improves the
-resolution and granularity of analysis but also significantly enhances the
-statistical power of hypothesis testing.
-
-The power of a statistical test, defined as the probability of correctly
-rejecting the null hypothesis when it is false, directly depends on the sample
-size (number of observations), as noted by a classical statisticians as
-Fisher \cite{fisherStatisticalMethodsResearch1992}. However effiecient technics
-to collect data does not garantee indipendency of samples. 
-In other words, having a powerfull tool to collect data does not mean that we
-can rely on a higher amount of replications.
-Wheter repeated observations
-per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
-(GLMM) \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}
-should be used to benefit from 
-digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
-account for the correlation structure of repeated observation
-by incorporating random effects, thus providing more
-accurate estimates of treatment effects and their associated uncertainty.
-% To clarify the need of GLMMs, let's consider a simple example. In a field trial
-% where the same plot is observed multiple times, the observations within the same
-% plot are likely to be correlated due to the shared environmental conditions.
-% Ignoring this correlation can lead to biased estimates of treatment effects and
-% inflated Type I error rates. Averaging all the observations within a plot could
-% be a solution, and would allow for the use of standard GLMs, but this approach
-% would also reduce the sample size and statistical power, potentially masking treatment
-% effects. In a scenario where we deliberately used digital tools to increase the
-% number of observations, it would be simply a waste to then reduce the sample
-% size by averaging the data. GLMMs provide a more elegant solution by modeling
-% the correlation structure directly, allowing for the inclusion of all observations
-% while appropriately accounting for the correlation. This approach maximizes the
-% statistical power of the analysis and ensures that the results are both accurate
-% and reliable.
-GLMMs can also be used to model spatial and temporal autocorrelation, which is
-common in field trials and can significantly impact the validity of statistical
-inferences. Randomization of treatments within blocks is designed to minimize
-the impact of spatial variability, but residual spatial autocorrelation may still
-exist due to unmeasured environmental factors. Accounting for these correlation
-structures ensures that whether the randomization fails in capture environmental
-variability, the results are still valid and reliable.
-
-Geostatistics encompasses a range of statistical methods aimed at analyzing
-spatial and spatiotemporal data. In the context of phytosanitary product trials,
-geostatistical methods allow for the quantification of spatial variation and the
-prediction of treatment effects across plots. The most prominent techniques
-include kriging, spatial covariates modeling, and spatial analysis of field trials
-with splines.
-
-\textbf{Kriging} is an advanced interpolation method that provides best linear
-unbiased predictions (BLUP) of spatially correlated variables. By modeling the
-spatial covariance structure through variograms, kriging allows for accurate
-prediction of unmeasured locations, reducing spatial noise and enhancing the
-interpretation of treatment effects.
-
-\textbf{Spatial Covariates} involve incorporating additional spatial information
-(such as soil properties or topography) into statistical models, thereby
-improving the accuracy of predictions. Integrating spatial covariates helps to
-account for environmental variability and isolate the true treatment effect.
-
-\textbf{Spatial Analysis of Field Trials with Splines} leverages spline functions
-to model smooth spatial trends, effectively addressing spatial heterogeneity.
-Splines offer a flexible and efficient way to account for gradual changes across
-the field, complementing other geostatistical methods.
-
-All these geostatistical techniques can be seamlessly integrated with GLMMs to
-provide a comprehensive analysis of spatial-temporal data, enhancing the accuracy and
-reliability of treatment effect estimates.
+The variable type also influence the kind of digital tool to use.
 
 
 \subsection{Photogrammetry}
@@ -504,6 +428,91 @@ of efficacy across field plots, generating comprehensive visual assessments that
 statistical evaluations. This integrated approach maximizes the utility of both spatial 
 and temporal data, facilitating more robust and accurate assessments while minimizing human 
 error and labor requirements.
+
+\subsection{Geostatistics}
+
+Adoption of digital tools is not only a matter of data collection but also of data
+analysis. In many case analyze digital data with the same statistical methods
+reduce the benefits of digital data collection or simply is not possible. 
+
+One of the most compelling advantages of adopting digital approaches is the
+dramatic increase in the number of observations that can be collected. Unlike
+manual methods, which are inherently limited by human capacity and time
+constraints, automated and semi-automated systems can continuously gather data
+with minimal interruption. This greater volume of data not only improves the
+resolution and granularity of analysis but also significantly enhances the
+statistical power of hypothesis testing.
+
+The power of a statistical test, defined as the probability of correctly
+rejecting the null hypothesis when it is false, directly depends on the sample
+size (number of observations), as noted by a classical statisticians as
+Fisher \cite{fisherStatisticalMethodsResearch1992}. However effiecient technics
+to collect data does not garantee indipendency of samples. 
+In other words, having a powerfull tool to collect data does not mean that we
+can rely on a higher amount of replications.
+Wheter repeated observations
+per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
+(GLMM) \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}
+should be used to benefit from 
+digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
+account for the correlation structure of repeated observation
+by incorporating random effects, thus providing more
+accurate estimates of treatment effects and their associated uncertainty.
+% To clarify the need of GLMMs, let's consider a simple example. In a field trial
+% where the same plot is observed multiple times, the observations within the same
+% plot are likely to be correlated due to the shared environmental conditions.
+% Ignoring this correlation can lead to biased estimates of treatment effects and
+% inflated Type I error rates. Averaging all the observations within a plot could
+% be a solution, and would allow for the use of standard GLMs, but this approach
+% would also reduce the sample size and statistical power, potentially masking treatment
+% effects. In a scenario where we deliberately used digital tools to increase the
+% number of observations, it would be simply a waste to then reduce the sample
+% size by averaging the data. GLMMs provide a more elegant solution by modeling
+% the correlation structure directly, allowing for the inclusion of all observations
+% while appropriately accounting for the correlation. This approach maximizes the
+% statistical power of the analysis and ensures that the results are both accurate
+% and reliable.
+GLMMs can also be used to model spatial and temporal autocorrelation, which is
+common in field trials and can significantly impact the validity of statistical
+inferences. Randomization of treatments within blocks is designed to minimize
+the impact of spatial variability, but residual spatial autocorrelation may still
+exist due to unmeasured environmental factors. Accounting for these correlation
+structures ensures that whether the randomization fails in capture environmental
+variability, the results are still valid and reliable.
+
+Geostatistics encompasses a range of statistical methods aimed at analyzing
+spatial and spatiotemporal data. In the context of phytosanitary product trials,
+geostatistical methods allow for the quantification of spatial variation and the
+prediction of treatment effects across plots. The most prominent techniques
+include kriging, spatial covariates modeling, and spatial analysis of field trials
+with splines.
+
+\textbf{Kriging} is an advanced interpolation method that provides best linear
+unbiased predictions (BLUP) of spatially correlated variables. By modeling the
+spatial covariance structure through variograms, kriging allows for accurate
+prediction of unmeasured locations, reducing spatial noise and enhancing the
+interpretation of treatment effects.
+
+\textbf{Spatial Covariates} involve incorporating additional spatial information
+(such as soil properties or topography) into statistical models, thereby
+improving the accuracy of predictions. Integrating spatial covariates helps to
+account for environmental variability and isolate the true treatment effect.
+
+\textbf{Spatial Analysis of Field Trials with Splines} leverages spline functions
+to model smooth spatial trends, effectively addressing spatial heterogeneity.
+Splines offer a flexible and efficient way to account for gradual changes across
+the field, complementing other geostatistical methods.
+
+All these geostatistical techniques can be seamlessly integrated with GLMMs to
+provide a comprehensive analysis of spatial-temporal data, enhancing the accuracy and
+reliability of treatment effect estimates.
+
+Analysis of data collected under trials that share the same protocol, thus
+from studies with the same objectives and the same thesis,
+but realized in different places and/or moments, 
+are named "Statistical analysis of trial series" \cite{EPPO_PP1_152}.
+
+CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI ALL'ANALISI SPAZIALE/TEMPORALE
 
 \chapter{Thesis Aims}
 

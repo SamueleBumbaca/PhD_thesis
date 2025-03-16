@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Plant_count.aux
+The style file: plain.bst
+Illegal, another \bibstyle command---line 169 of file Plant_count.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: Phd_Thesis_SBumbaca.bib
+Repeated entry---line 1370 of file Phd_Thesis_SBumbaca.bib
+ : @article{PP13332024
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in PP13332024
+Warning--to sort, need author or key in EstimatesMaizePlant
+Warning--to sort, need author or key in Maize_seedingDatasetOverview
+Warning--to sort, need author or key in MaizeseedlingdetectionDatasetOverview
+Warning--to sort, need author or key in FasterRCNNRealTime
+Warning--to sort, need author or key in YouOnlyLook
+Warning--to sort, need author or key in 14090575ImageNetLarge
+Warning--to sort, need author or key in MetaLearningBasedIncrementalFewShot
+Warning--empty author in PP13332024
+Warning--empty title in fao2024
+Warning--empty journal in wuOptimizingConnectedComponent2005
+Warning--empty publisher in zhangMetaDETRFewShotObject2021
+You've used 85 entries,
+            2118 wiz_defined-function locations,
+            1007 strings with 28082 characters,
+and the built_in function-call counts, 34681 in all, are:
+= -- 3086
+> -- 2492
+< -- 19
++ -- 991
+- -- 896
+* -- 2840
+:= -- 5739
+add.period$ -- 224
+call.type$ -- 85
+change.case$ -- 691
+chr.to.int$ -- 0
+cite$ -- 97
+duplicate$ -- 1019
+empty$ -- 2257
+format.name$ -- 896
+if$ -- 7035
+int.to.chr$ -- 0
+int.to.str$ -- 85
+missing$ -- 54
+newline$ -- 386
+num.names$ -- 160
+pop$ -- 845
+preamble$ -- 1
+purify$ -- 609
+quote$ -- 0
+skip$ -- 873
+stack$ -- 0
+substring$ -- 1511
+swap$ -- 259
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 336
+warning$ -- 12
+while$ -- 245
+width$ -- 87
+write$ -- 832
+(There were 2 error messages)

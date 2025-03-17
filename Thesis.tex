@@ -25,10 +25,23 @@
 % math
 \usepackage{amsmath}
 
+% for Plant Count section
+\usepackage{tabularx}         % For tabularx environment
+\usepackage{float}            % For H float option
+\usepackage{subfig}           % For subfloat command
+\usepackage{changepage}       % For adjustwidth environment
+\usepackage{booktabs}         % For toprule, midrule, bottomrule commands
+\usepackage{cleveref}         % For \cref command
+
+
 % Paragraph formatting
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 \setstretch{1.5}
+
+% Define extralength parameter
+\newlength{\extralength}
+\setlength{\extralength}{0cm}
 
 \begin{document}
 
@@ -91,7 +104,8 @@ institution in charge of emitting standards for plant health \cite{IPPC}. IPPC i
 regions. European Union (EU) countries refer to the European and Mediterranean Plant
 Protection Organization (EPPO). EPPO Standards are divided into Standards on
 Phytosanitary Measures and Standards on PPPs. PPPs standards describe the efficacy
-evaluation of PPPs (PP 1) and good plant protection practices. EU GEP units provide
+evaluation of PPPs (PP 1) and good plant protection practices. EU Good Experimental
+Practices (GEP) units provide
 Biological Assessment Dossier (BAD) efficacy trials. GEP units are expected to follow
 EPPO PP 1 to assess PPPs selectivity detecting phytotoxicity effects, and efficacy in the
 complaint of Regulation (EC) No 1107/2009 of the European Parliament and Council \cite{EC_Regulation_1107_2009}.
@@ -240,10 +254,10 @@ Continuous not limited & X & X & & \\
 The statistical analysis of trials is equally critical, providing objective 
 assessment of treatment effects. While PP 1/152 \cite{EPPO_PP1_152} doesn't prescribe 
 specific analyses for all situations, it emphasizes that analysis methods should 
-align with the experimental design and data types collected. For qunatitative 
+align with the experimental design and data types collected. For quantitative 
 variables (continuous or discrete), parametric methods based on Generalized 
 Linear Models (GLM) are recommended, including ANOVA and regression approaches. 
-For qualitative variables (ordinal or nominal), non-parametric methods are more 
+For qualitative variables (bynary, ordinal or nominal), non-parametric methods are more 
 appropriate. Parametric analysis assumes additivity of effects, homogeneity of variance, 
 and normally distributed errors—when these assumptions aren't met, data transformations 
 or alternative approaches become necessary.
@@ -264,7 +278,7 @@ that products demonstrate consistent efficacy across relevant agricultural condi
 \section{Geomatics Techniques}
 
 While the EPPO experimental design standards provide a solid foundation for conducting
-phytosanitary product trials, the increasing availability of digital tools and technologies
+phytosanitary product trials, the increasing availability of digital technologies
 offers new opportunities to enhance the quality (in the "Quality of a mode of observation" sense \cite{EPPO_PP1_152}) 
 and efficiency of these assessments.
 Digital approaches can automate data collection and analysis, improving the
@@ -295,12 +309,35 @@ digital and manual should be evaluated with a different metric:
 \end{itemize}
 
 The variable type also influence the kind of digital tool to use.
-
+The hardware of a digital tool is always a sensor to collect the raw data and a
+processor to convert the raw data in a digital format.
+For what concerns the software of a digital tool, it is worth to mention that
+the core of it is always a model that convert the digital format into the assessment
+observation in the variable units.
+Quantitative variables are produced by regression models, while qualitative (categorical) 
+variables are produced by classification models. 
+Quantitative variables: continuous (limited or not) and discrete
+can be summarized as metric measurments and counts respectively. 
+Perform metric measurements in agriculture is probability the anciest
+problem that human faced with geometry. Geomatics is the science that
+studies the acquisition, processing, analysis, and interpretation of
+geospatial data.
+Photogrammetry is a geomatic technique that allows the acquisition of spatial
+data in metric scale by processing and analyzing photographic images.
+After the acquisition of the spatial data, also other geomatic techniques can be
+used to analyze the data. Machine learning is a branch of artificial intelligence
+that allows counting and classifying.
+Through the use of these geomatics technics, it is possible to implemtent 
+digital tools that can boost the data collection.
+However, adoption of digital tools is not only a matter of data collection but also of data
+analysis. In many case analyze digital data with the same statistical methods
+reduce the benefits of digital data collection or simply is not possible. 
+Geostatistics offers a wide range of statistical methods that can be used to
+overcome the limitations of traditional statistical methods and to exploit the
+full potential of digital data.
 
 \subsection{Photogrammetry}
 
-Photogrammetry is a geomatic technique that allows the acquisition of spatial
-data by processing and analyzing photographic images. 
 Photogrammetry is a technique used to obtain reliable information about physical 
 objects and the environment through the process of recording, measuring, and interpreting 
 photographic images. It is widely used in various fields such as topographic mapping, 
@@ -431,10 +468,6 @@ error and labor requirements.
 
 \subsection{Geostatistics}
 
-Adoption of digital tools is not only a matter of data collection but also of data
-analysis. In many case analyze digital data with the same statistical methods
-reduce the benefits of digital data collection or simply is not possible. 
-
 One of the most compelling advantages of adopting digital approaches is the
 dramatic increase in the number of observations that can be collected. Unlike
 manual methods, which are inherently limited by human capacity and time
@@ -514,9 +547,12 @@ are named "Statistical analysis of trial series" \cite{EPPO_PP1_152}.
 
 CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI ALL'ANALISI SPAZIALE/TEMPORALE
 
-\chapter{Thesis Aims}
+\section{The Literature Gap and the Thesis Aims}
 
-The aim of this thesis is to investigate the potential benefits of integrating
+Despite the clear benefits of integrating geomatics techniques into phytosanitary
+product efficacy trials, there is a notable gap in the literature regarding the
+practical implementation and evaluation of these methods. 
+The aim of this thesis is to investigate the limits of integrating
 geomatics techniques in the design and analysis of phytosanitary product efficacy trials.
 As already discussed, the EPPO standards provide a solid foundation for conducting experimental trials,
 but the increasing availability of digital tools and technologies offers new opportunities to enhance
@@ -531,8 +567,14 @@ estimation.
 \section{Continuous Variables}
 \subsection{Plant Count}
 
+% Include the first page from the PDF file
+\includepdf[pages=-]{Plant_count.pdf}
+
 \section{Ordinal and Nominal Variables}
 \subsection{Phytoxicity Score}
+
+
+\includepdf[pages=-]{Phytotoxicity_score/Phytoxicity_score.pdf}
 
 \section{Binary Variables}
 \subsection{Embedding Spaces for Control Sample Anomaly Detection}

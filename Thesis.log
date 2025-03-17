@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  14 MAR 2025 17:18
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  16 MAR 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,29 +363,128 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (./Thesis.aux)
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen180
+\ar@mcellbox=\box59
+\extrarowheight=\dimen181
+\NC@list=\toks28
+\extratabsurround=\skip74
+\backup@length=\skip75
+\ar@cellbox=\box60
+)
+\TX@col@width=\dimen182
+\TX@old@table=\dimen183
+\TX@old@col=\dimen184
+\TX@target=\dimen185
+\TX@delta=\dimen186
+\TX@cols=\count317
+\TX@ftn=\toks29
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks30
+\float@box=\box61
+\@float@everytoks=\toks31
+\@floatcapt=\box62
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count319
+\c@continuedfloat=\count320
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count321
+\sf@farskip=\skip76
+\sf@captopadj=\dimen195
+\sf@capskip=\skip77
+\sf@nearskip=\skip78
+\c@subfigure=\count322
+\c@subfigure@save=\count323
+\c@lofdepth=\count324
+\c@subtable=\count325
+\c@subtable@save=\count326
+\c@lotdepth=\count327
+\sf@top=\skip79
+\sf@bottom=\skip80
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count328
+\cp@tempcnt=\count329
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen196
+\lightrulewidth=\dimen197
+\cmidrulewidth=\dimen198
+\belowrulesep=\dimen199
+\belowbottomsep=\dimen256
+\aboverulesep=\dimen257
+\abovetopsep=\dimen258
+\cmidrulesep=\dimen259
+\cmidrulekern=\dimen260
+\defaultaddspace=\dimen261
+\@cmidla=\count330
+\@cmidlb=\count331
+\@aboverulesep=\dimen262
+\@belowrulesep=\dimen263
+\@thisruleclass=\count332
+\@lastruleclass=\count333
+\@thisrulewidth=\dimen264
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `subfig' support loaded on input line 3164.
+)
+\extralength=\skip81
+ (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -428,56 +527,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 33.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 33.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 33.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 33.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 33.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 33.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 33.
-LaTeX Font Info:    Redeclaring math accent \check on input line 33.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 33.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 33.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 33.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 33.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 33.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 46.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 46.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 46.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 46.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 46.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 46.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 46.
+LaTeX Font Info:    Redeclaring math accent \check on input line 46.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 46.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 46.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 46.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 46.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 33.
+(Font)              `operators' in the math version `normal' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 33.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 46.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 33.
+(Font)              `operators' in the math version `bold' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 33.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 33.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 33.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 33.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 33.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 33.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 46.
 (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -487,11 +586,17 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 ))
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 46.
  (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write3
 \openout3 = `Thesis.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen265
+\caption@adjustwidth@linewidth=\dimen266
+Package caption Info: End \AtBeginDocument code.
 File: Intestazione/t3._Thesis_first_page.pdf Graphic file (type pdf)
 <use Intestazione/t3._Thesis_first_page.pdf>
 File: Intestazione/t3._Thesis_first_page.pdf Graphic file (type pdf)
@@ -529,7 +634,7 @@ Overfull \hbox (10.85072pt too wide) in paragraph at lines 18--18
 [3]
 Chapter 1.
 
-Overfull \hbox (13.40694pt too wide) in paragraph at lines 57--64
+Overfull \hbox (13.40694pt too wide) in paragraph at lines 70--77
 \TU/Arial(0)/m/n/12 These active substances undergo rigorous risk assessment processes,
  []
 
@@ -542,34 +647,34 @@ Overfull \hbox (13.40694pt too wide) in paragraph at lines 57--64
 [5]
 
 [6]
-Overfull \hbox (2.53117pt too wide) in paragraph at lines 117--129
+Overfull \hbox (2.53117pt too wide) in paragraph at lines 131--143
 \TU/Arial(0)/m/n/12 ‘test product(s), reference product(s) and untreated control, arranged
  []
 
 
-Overfull \hbox (8.39912pt too wide) in paragraph at lines 131--134
+Overfull \hbox (8.39912pt too wide) in paragraph at lines 145--148
 []\TU/Arial(0)/b/n/12 Completely Randomized Design (CRD)\TU/Arial(0)/m/n/12 : Treatments randomly
  []
 
 
-Overfull \hbox (2.06905pt too wide) in paragraph at lines 131--134
+Overfull \hbox (2.06905pt too wide) in paragraph at lines 145--148
 \TU/Arial(0)/m/n/12 suitable for homogeneous trial areas where environmental vari-
  []
 
 
 
 [7]
-Overfull \hbox (10.80988pt too wide) in paragraph at lines 139--142
+Overfull \hbox (10.80988pt too wide) in paragraph at lines 153--156
 []\TU/Arial(0)/b/n/12 Split-Plot Design\TU/Arial(0)/m/n/12 : Used when one factor (e.g., cultivation equip-
  []
 
 
-Overfull \hbox (1.31645pt too wide) in paragraph at lines 139--142
+Overfull \hbox (1.31645pt too wide) in paragraph at lines 153--156
 \TU/Arial(0)/m/n/12 ment) cannot be fully randomized; creates hierarchy with whole
  []
 
 
-Overfull \hbox (7.04431pt too wide) in paragraph at lines 160--165
+Overfull \hbox (7.04431pt too wide) in paragraph at lines 174--179
 \TU/Arial(0)/m/n/12 potentially with different dimensions than treatment plots. These
  []
 
@@ -580,47 +685,32 @@ Overfull \hbox (7.04431pt too wide) in paragraph at lines 160--165
 [9]
 
 [10]
-Overfull \hbox (92.25467pt too wide) in paragraph at lines 219--236
+Overfull \hbox (94.65463pt too wide) in paragraph at lines 233--250
  [][] 
  []
 
 
 
 [11]
-Overfull \hbox (0.51164pt too wide) in paragraph at lines 251--259
+Overfull \hbox (0.51164pt too wide) in paragraph at lines 265--273
 \TU/Arial(0)/m/n/12 ence), test products versus reference (evaluating efficacy), and com-
  []
 
 
-Overfull \hbox (1.01631pt too wide) in paragraph at lines 260--263
+Overfull \hbox (1.01631pt too wide) in paragraph at lines 274--277
 []\TU/Arial(0)/m/n/12 Through adherence to these rigorous design and analysis standards,
  []
 
 
-Overfull \hbox (7.20929pt too wide) in paragraph at lines 266--273
+Overfull \hbox (7.20929pt too wide) in paragraph at lines 280--287
 \TU/Arial(0)/m/n/12 dation for conducting phytosanitary product trials, the increasing avail-
  []
 
 
 
 [12]
-Overfull \hbox (4.80244pt too wide) in paragraph at lines 292--293
+Overfull \hbox (4.80244pt too wide) in paragraph at lines 306--307
 []\TU/Arial(0)/b/n/12 Continuous\TU/Arial(0)/m/n/12 : Coefficient of determination (R²) higher than 0.85. 
- []
-
-
-Overfull \hbox (9.25069pt too wide) in paragraph at lines 303--310
-[]\TU/Arial(0)/m/n/12 One of the most compelling advantages of adopting digital approaches
- []
-
-
-Overfull \hbox (7.65265pt too wide) in paragraph at lines 303--310
-\TU/Arial(0)/m/n/12 human capacity and time constraints, automated and semi-automated
- []
-
-
-Overfull \hbox (0.1322pt too wide) in paragraph at lines 303--310
-\TU/Arial(0)/m/n/12 systems can continuously gather data with minimal interruption. This
  []
 
 
@@ -628,31 +718,41 @@ Overfull \hbox (0.1322pt too wide) in paragraph at lines 303--310
 [13]
 
 [14]
-Overfull \hbox (0.46748pt too wide) in paragraph at lines 366--370
-[]\TU/Arial(0)/b/n/12 Spatial Analysis of Field Trials with Splines \TU/Arial(0)/m/n/12 leverages spline func-
- []
-
-
-
-[15]
-Overfull \hbox (26.76398pt too wide) in paragraph at lines 387--392
+Overfull \hbox (26.76398pt too wide) in paragraph at lines 348--353
 \TU/Arial(0)/m/n/12 analyzing these images, it is possible to reconstruct the three-dimensional
  []
 
 
 
+[15]
+
 [16]
 
 [17]
-
-[18]
-Overfull \hbox (5.22882pt too wide) in paragraph at lines 467--469
+Overfull \hbox (5.22882pt too wide) in paragraph at lines 428--430
 []\TU/Arial(0)/m/n/12 There are several fundamental approaches in machine learning, each
  []
 
 
-Overfull \hbox (0.3962pt too wide) in paragraph at lines 471--474
+Overfull \hbox (0.3962pt too wide) in paragraph at lines 432--435
 []\TU/Arial(0)/b/n/12 Supervised Learning\TU/Arial(0)/m/n/12 : Models are trained on labeled datasets
+ []
+
+
+
+[18]
+Overfull \hbox (9.25069pt too wide) in paragraph at lines 471--478
+\TU/Arial(0)/m/n/12 One of the most compelling advantages of adopting digital approaches
+ []
+
+
+Overfull \hbox (7.65265pt too wide) in paragraph at lines 471--478
+\TU/Arial(0)/m/n/12 human capacity and time constraints, automated and semi-automated
+ []
+
+
+Overfull \hbox (0.1322pt too wide) in paragraph at lines 471--478
+\TU/Arial(0)/m/n/12 systems can continuously gather data with minimal interruption. This
  []
 
 
@@ -660,53 +760,1340 @@ Overfull \hbox (0.3962pt too wide) in paragraph at lines 471--474
 [19]
 
 [20]
+Overfull \hbox (0.46748pt too wide) in paragraph at lines 534--538
+[]\TU/Arial(0)/b/n/12 Spatial Analysis of Field Trials with Splines \TU/Arial(0)/m/n/12 leverages spline func-
+ []
+
+
 
 [21]
+Overfull \hbox (6.40987pt too wide) in paragraph at lines 548--549
+[]\TU/Arial(0)/m/n/12 CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI
+ []
+
+
+Overfull \hbox (2.51237pt too wide) in paragraph at lines 550--550
+|[]\TU/Arial(0)/b/n/17.28 The Literature Gap and the Thesis Aims| 
+ []
+
+
+
+[22]
+
+[23]
 Chapter 2.
-
-
-[22
-
-]
-Chapter 3.
-
-Overfull \hbox (15.35605pt too wide) in paragraph at lines 529--529
-|[]\TU/Arial(0)/b/n/14.4 Embedding Spaces for Control Sample Anomaly
- []
-
-(./Thesis.bbl
-
-[23
-
-]
-
-LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
-(Font)              using `TU/Arial(0)/m/n' instead on input line 4.
-
-
-Underfull \hbox (badness 2556) in paragraph at lines 8--11
-[]\TU/Arial(0)/m/n/12 H. Bleiholder, T. van den Boom, P. Langelüddeke, and
- []
-
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 1>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 1>
 
 
 [24
 
 ]
-Underfull \hbox (badness 2042) in paragraph at lines 41--43
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 1>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 1>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 1>
+[25
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 2>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 2>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 2>
+[26
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 3>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 3>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 3>
+[27
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 4>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 4>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 4>
+[28
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 5>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 5>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 5>
+[29
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 6>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 6>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 6>
+[30
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 7>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 7>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 7>
+[31
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 8>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 8>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 8>
+[32
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 9>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 9>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 9>
+[33
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 10>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 10>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 10>
+[34
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 11>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 11>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 11>
+[35
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 12>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 12>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 12>
+[36
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 13>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 13>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 13>
+[37
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 14>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 14>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 14>
+[38
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 15>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 15>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 15>
+[39
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 16>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 16>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 16>
+[40
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 17>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 17>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 17>
+[41
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 18>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 18>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 18>
+[42
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 19>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 19>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 19>
+[43
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 20>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 20>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 20>
+[44
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 21>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 21>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 21>
+[45
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 22>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 22>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 22>
+[46
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 23>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 23>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 23>
+[47
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 24>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 24>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 24>
+[48
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 25>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 25>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 25>
+[49
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 26>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 26>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 26>
+[50
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 27>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 27>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 27>
+[51
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 28>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 28>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 28>
+[52
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 29>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 29>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 29>
+[53
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 30>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 30>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 30>
+[54
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 31>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 31>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 31>
+[55
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 32>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 32>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 32>
+[56
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 33>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 33>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 33>
+[57
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 34>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 34>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 34>
+[58
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 35>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 35>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 35>
+[59
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 36>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 36>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 36>
+[60
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 37>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 37>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 37>
+[61
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 38>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 38>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 38>
+[62
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 39>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 39>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 39>
+[63
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 40>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 40>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 40>
+[64
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 41>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 41>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 41>
+[65
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 42>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 42>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 42>
+[66
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 43>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 43>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 43>
+[67
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 44>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 44>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 44>
+[68
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 45>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 45>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 45>
+[69
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 46>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 46>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 46>
+[70
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 47>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 47>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 47>
+[71
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 48>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 48>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 48>
+[72
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 49>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 49>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 49>
+[73
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 50>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 50>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 50>
+[74
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 51>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 51>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 51>
+[75
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 52>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 52>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 52>
+[76
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 53>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 53>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 53>
+[77
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 54>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 54>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 54>
+[78
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 55>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 55>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 55>
+[79
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 56>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 56>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 56>
+[80
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 57>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 57>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 57>
+[81
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 58>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 58>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 58>
+[82
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 59>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 59>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 59>
+[83
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 60>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 60>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 60>
+[84
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 61>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 61>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 61>
+[85
+
+]
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 62>
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 62>
+
+
+File: Plant_count.pdf Graphic file (type pdf)
+<use Plant_count.pdf, page 62>
+[86
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
+
+
+[87]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
+[88
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
+[89
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
+[90
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
+[91
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
+[92
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
+[93
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+[94
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+[95
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+[96
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+[97
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+[98
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+[99
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+[100
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+[101
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+[102
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+[103
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+[104
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+[105
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+[106
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+[107
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+[108
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+[109
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+[110
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+[111
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+[112
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+[113
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+[114
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+[115
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+[116
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+[117
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+[118
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+[119
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+[120
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+[121
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+[122
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+[123
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+[124
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+[125
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+[126
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+[127
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+[128
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+[129
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+[130
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+[131
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+[132
+
+]
+Overfull \hbox (15.35605pt too wide) in paragraph at lines 580--580
+|[]\TU/Arial(0)/b/n/14.4 Embedding Spaces for Control Sample Anomaly
+ []
+
+(./Thesis.bbl
+
+[133]
+
+LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
+(Font)              using `TU/Arial(0)/m/n' instead on input line 25.
+
+
+
+[134
+
+]
+Underfull \hbox (badness 2334) in paragraph at lines 49--52
+[]\TU/Arial(0)/m/n/12 Erik Andvaag, Kaylie Krys, Steven J. Shirtliffe, and Ian
+ []
+
+
+
+[135]
+Underfull \hbox (badness 2556) in paragraph at lines 73--76
+[]\TU/Arial(0)/m/n/12 H. Bleiholder, T. van den Boom, P. Langelüddeke, and
+ []
+
+
+
+[136]
+Underfull \hbox (badness 1057) in paragraph at lines 103--105
+\TU/Arial(0)/m/n/12 Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa
+ []
+
+
+
+[137]
+Underfull \hbox (badness 1005) in paragraph at lines 107--110
+[]\TU/Arial(0)/m/n/12 Xianzhi Du, Tsung-Yi Lin, Pengchong Jin, Golnaz Ghiasi,
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 107--110
+\TU/Arial(0)/m/n/12 Mingxing Tan, Yin Cui, Quoc V. Le, and Xiaodan Song.
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 136--138
 []\TU/Arial(0)/m/n/12 European Parliament and Council.  Regulation (EC) No
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 45--48
+
+[138]
+Underfull \hbox (badness 1033) in paragraph at lines 144--147
 \TU/Arial(0)/m/it/12 in Statistics: Methodology and Distribution\TU/Arial(0)/m/n/12 , pages 66–70.
  []
 
 
+Underfull \hbox (badness 3635) in paragraph at lines 158--161
+[]\TU/Arial(0)/m/n/12 Héctor García-Martínez, Héctor Flores-Magdaleno, Abdul
+ []
 
-[25])
 
-[26] (./Thesis.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+\TU/Arial(0)/m/n/12 Khalil-Gardezi, Roberto Ascencio-Hernández, Leonardo
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 158--161
+\TU/Arial(0)/m/n/12 Tijerina-Chávez, Mario A. Vázquez-Peña, and Oscar R.
+ []
+
+
+
+[139]
+Underfull \hbox (badness 1348) in paragraph at lines 173--175
+\TU/Arial(0)/m/n/12 drew Gordon Wilson, and Tom Goldstein.  Battle of the
+ []
+
+
+
+[140]
+
+[141]
+
+[142]
+
+[143]
+
+[144]
+
+[145]
+Underfull \hbox (badness 1867) in paragraph at lines 347--350
+\TU/Arial(0)/m/n/12 ception in Agricultural Robotics.  In \TU/Arial(0)/m/it/12 2023 IEEE Interna-
+ []
+
+
+
+[146]
+
+[147]
+
+[148]
+Underfull \hbox (badness 1038) in paragraph at lines 419--422
+\TU/Arial(0)/m/n/12 on Lightweight Model of Maize Seedling Object Detection
+ []
+
+)
+
+[149] (./Thesis.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -716,15 +2103,15 @@ L3 programming layer <2024-11-02>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2B8D16B4581EEAAA0177E4958E696890;2846.
+(rerunfilecheck)             Checksum: A86014322CDB39B4F7997346364F9550;3007.
  ) 
 Here is how much of TeX's memory you used:
- 14090 strings out of 475921
- 270139 string characters out of 5775722
- 719963 words of memory out of 5000000
- 36714 multiletter control sequences out of 15000+600000
+ 17959 strings out of 475921
+ 360866 string characters out of 5775722
+ 817599 words of memory out of 5000000
+ 40547 multiletter control sequences out of 15000+600000
  562023 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,17n,93p,429b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,17n,93p,521b,807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (26 pages).
+Output written on Thesis.pdf (149 pages).

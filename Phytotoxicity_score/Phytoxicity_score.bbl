@@ -1,0 +1,264 @@
+\begin{thebibliography}{10}
+
+\bibitem{MAPIR_Survey3_Camera_Datasheet_Englishpdf}
+{{MAPIR}}\_{{Survey3}}\_{{Camera}}\_{{Datasheet}}\_{{English}}.pdf.
+\newblock https://drive.google.com/file/d/10gIzOjWVNoG9dvZwmAUG9fVqkEZHXEur/view?usp=drive\_open\&usp=embed\_facebook.
+
+\bibitem{RegulationECNo}
+Regulation ({{EC}}) {{No}}~1107/2009 of the {{European Parliament}} and of the {{Council}} of 21~{{October}} 2009 concerning the placing of plant protection products on the market and repealing {{Council Directives}} 79/117/{{EEC}} and 91/414/{{EEC}}.
+\newblock page~50.
+
+\bibitem{FASTAPPROXIMATENEAREST2009}
+{{FAST APPROXIMATE NEAREST NEIGHBORS WITH AUTOMATIC ALGORITHM CONFIGURATION}}:.
+\newblock In {\em Proceedings of the {{Fourth International Conference}} on {{Computer Vision Theory}} and {{Applications}}}, pages 331--340, Lisboa, Portugal, 2009. {SciTePress - Science and and Technology Publications}.
+
+\bibitem{DesignAnalysisEfficacy2012}
+Design and analysis of efficacy evaluation trials.
+\newblock {\em EPPO Bulletin}, 42(3):367--381, December 2012.
+
+\bibitem{PP11352014}
+{{PP}} 1/135 (4) {{Phytotoxicity}} assessment.
+\newblock {\em EPPO Bulletin}, 44(3):265--273, December 2014.
+
+\bibitem{PP13192021}
+{{PP}} 1/319 (1) {{General}} principles for efficacy evaluation of plant protection products with a mode of action as plant defence inducers.
+\newblock {\em EPPO Bulletin}, 51(1):5--9, April 2021.
+
+\bibitem{PP11812022}
+{{PP}} 1/181 (5) {{Conduct}} and reporting of efficacy evaluation trials, including good experimental practice.
+\newblock {\em EPPO Bulletin}, 52(1):4--16, 2022.
+
+\bibitem{agrestiAnalysisOrdinalCategorical}
+Alan Agresti.
+\newblock Analysis of {{Ordinal Categorical Data}}.
+
+\bibitem{alcalaWorldTradeOrganization2020}
+R.~Alcala, H.~Vitikkala, and G.~Ferlet.
+\newblock The {{World Trade Organization Agreement}} on the {{Application}} of {{Sanitary}} and {{Phytosanitary Measures}} and veterinary control procedures.
+\newblock {\em El Acuerdo sobre la Aplicaci{\'o}n de Medidas Sanitarias y Fitosanitarias de la Organizaci{\'o}n Mundial del Comercio y los procedimientos de control veterinario.}, 39(1):253--261, January 2020.
+
+\bibitem{aliUseImageAnalysis2013}
+Asif Ali, Jens~C. Streibig, Joachim Duus, and Christian Andreasen.
+\newblock Use of {{Image Analysis}} to {{Assess Color Response}} on {{Plants Caused}} by {{Herbicide Application}}.
+\newblock {\em Weed Technology}, 27(3):604--611, 2013.
+
+\bibitem{atkinsonCloseRangePhotogrammetry1996}
+Keith~B. Atkinson, editor.
+\newblock {\em Close Range Photogrammetry and Machine Vision}.
+\newblock Whittles, Caithness, reprinted edition, 1996.
+
+\bibitem{barbedoFactorsInfluencingUse2018}
+Jayme G.~A. Barbedo.
+\newblock Factors influencing the use of deep learning for plant disease recognition.
+\newblock {\em Biosystems Engineering}, 172:84--91, August 2018.
+
+\bibitem{barbedoDeepLearningApplied2022}
+Jayme G.~A. Barbedo.
+\newblock Deep learning applied to plant pathology: The problem of data representativeness.
+\newblock {\em Tropical Plant Pathology}, 47(1):85--94, February 2022.
+
+\bibitem{borgognomondinoMultitemporalImageCoregistration2015}
+Enrico Borgogno~Mondino.
+\newblock Multi-temporal image co-registration improvement for a better representation and quantification of risky situations: The {{Belvedere Glacier}} case study.
+\newblock {\em Geomatics, Natural Hazards and Risk}, 6(5-7):362--378, July 2015.
+
+\bibitem{cameraMAPIRCameraReflectance}
+{\relax MAPIR}~CAMERA.
+\newblock {{MAPIR Camera Reflectance Calibration Ground Target Package}} ({{V2}}).
+\newblock https://www.mapir.camera/products/mapir-camera-reflectance-calibration-ground-target-package-v2.
+
+\bibitem{carterLeafOpticalProperties2001}
+Gregory~A. Carter and Alan~K. Knapp.
+\newblock Leaf optical properties in higher plants: Linking spectral characteristics to stress and chlorophyll concentration.
+\newblock {\em American Journal of Botany}, 88(4):677--684, 2001.
+
+\bibitem{chiangEffectsRaterBias2016}
+K.~S. Chiang, C.~H. Bock, M.~El~Jarroudi, P.~Delfosse, I.~H. Lee, and H.~I. Liu.
+\newblock Effects of rater bias and assessment method on disease severity estimation with regard to hypothesis testing.
+\newblock {\em Plant Pathology}, 65(4):523--535, 2016.
+
+\bibitem{chiangUnderstandingRamificationsQuantitative2022}
+Kuo-Szu Chiang and Clive~H. Bock.
+\newblock Understanding the ramifications of quantitative ordinal scales on accuracy of estimates of disease severity and data analysis in plant pathology.
+\newblock {\em Tropical Plant Pathology}, 47(1):58--73, February 2022.
+
+\bibitem{chuHyperspectralImagingShallow2022}
+Hangjian Chu, Chu Zhang, Mengcen Wang, Mostafa Gouda, Xinhua Wei, Yong He, and Yufei Liu.
+\newblock Hyperspectral imaging with shallow convolutional neural networks ({{SCNN}}) predicts the early herbicide stress in wheat cultivars.
+\newblock {\em Journal of Hazardous Materials}, 421:126706, January 2022.
+
+\bibitem{depetrisRPASbasedPhotogrammetrySupport2020}
+Samuele De~Petris, Filippo Sarvia, and Enrico {Borgogno-Mondino}.
+\newblock {{RPAS-based}} photogrammetry to support tree stability assessment: {{Longing}} for precision arboriculture.
+\newblock {\em Urban Forestry \& Urban Greening}, 55:126862, November 2020.
+
+\bibitem{eppoPP11352014}
+{EPPO}.
+\newblock {{PP}} 1/135 (4) {{Phytotoxicity}} assessment.
+\newblock {\em EPPO Bulletin}, 44(3):265--273, 2014.
+
+\bibitem{eppoDigitalTechnologyEfficacy}
+2022-06-27/29 EPPO.
+\newblock Digital {{Technology}} and {{Efficacy Evaluation}} of {{Plant Protection Products}}.
+\newblock https://www.eppo.int/MEETINGS/2022\_meetings/https\%3A\%2F\%2Fwww.eppo.int\%2FMEETINGS\%2F2022\_meetings\%2Fwk\_digital\_technology\_ppp.
+
+\bibitem{friedmanRegularizationPathsGeneralized2010}
+Jerome~H. Friedman, Trevor Hastie, and Rob Tibshirani.
+\newblock Regularization {{Paths}} for {{Generalized Linear Models}} via {{Coordinate Descent}}.
+\newblock {\em Journal of Statistical Software}, 33:1--22, February 2010.
+
+\bibitem{garbowMINPACK1SubroutineLibrary1984}
+Burton~S. Garbow.
+\newblock {{MINPACK-1}}, {{Subroutine Library}} for {{Nonlinear Equation System}}.
+\newblock April 1984.
+
+\bibitem{gatesSpectralPropertiesPlants1965}
+David~M. Gates, Harry~J. Keegan, John~C. Schleter, and Victor~R. Weidner.
+\newblock Spectral {{Properties}} of {{Plants}}.
+\newblock {\em Applied Optics}, 4(1):11--20, January 1965.
+
+\bibitem{ghosalExplainableDeepMachine2018}
+Sambuddha Ghosal, David Blystone, Asheesh~K. Singh, Baskar Ganapathysubramanian, Arti Singh, and Soumik Sarkar.
+\newblock An explainable deep machine vision framework for plant stress phenotyping.
+\newblock {\em Proceedings of the National Academy of Sciences}, 115(18):4613--4618, May 2018.
+
+\bibitem{gomarascaElementsPhotogrammetry2009}
+Mario~A. Gomarasca.
+\newblock Elements of {{Photogrammetry}}.
+\newblock In Mario~A. Gomarasca, editor, {\em Basics of {{Geomatics}}}, pages 79--121. Springer Netherlands, Dordrecht, 2009.
+
+\bibitem{gomez-zamanilloDamageAssessmentSoybean2023}
+Laura {G{\'o}mez-Zamanillo}, Arantza {Bereciartua-P{\'e}rez}, Artzai Pic{\'o}n, Liliana Parra, Marian Oldenbuerger, Ram{\'o}n {Navarra-Mestre}, Christian Klukas, Till Eggers, and Jone Echazarra.
+\newblock Damage assessment of soybean and redroot amaranth plants in greenhouse through biomass estimation and deep learning-based symptom classification.
+\newblock {\em Smart Agricultural Technology}, 5:100243, October 2023.
+
+\bibitem{hajamEffectiveEnsembleConvolutional2023}
+Mohd~Asif Hajam, Tasleem Arif, Akib Mohi Ud~Din Khanday, and Mehdi Neshat.
+\newblock An {{Effective Ensemble Convolutional Learning Model}} with {{Fine-Tuning}} for {{Medicinal Plant Leaf Identification}}.
+\newblock {\em Information}, 14(11):618, November 2023.
+
+\bibitem{hartleyMultipleViewGeometry2004}
+Richard Hartley and Andrew Zisserman.
+\newblock {\em Multiple {{View Geometry}} in {{Computer Vision}}}.
+\newblock Cambridge University Press, Cambridge, 2 edition, 2004.
+
+\bibitem{hastieElementsStatisticalLearning2009}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The {{Elements}} of {{Statistical Learning}}}.
+\newblock Springer {{Series}} in {{Statistics}}. Springer, New York, NY, 2009.
+
+\bibitem{hughesOpenAccessRepository}
+David~P Hughes and Marcel Salath{\'e}.
+\newblock An open access repository of images on plant health to enable the development of mobile disease diagnostics.
+
+\bibitem{jamesIntroductionStatisticalLearning2023}
+Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor.
+\newblock {\em An {{Introduction}} to {{Statistical Learning}}: With {{Applications}} in {{Python}}}.
+\newblock Springer {{Texts}} in {{Statistics}}. Springer International Publishing, Cham, 2023.
+
+\bibitem{krausPhotogrammetryGeometryImages2011}
+Karl Kraus.
+\newblock {\em Photogrammetry: {{Geometry}} from {{Images}} and {{Laser Scans}}}.
+\newblock De Gruyter, October 2011.
+
+\bibitem{li3DImagingGreenhouse2017}
+Dawei Li, Lihong Xu, Xue-song Tang, Shaoyuan Sun, Xin Cai, and Peng Zhang.
+\newblock {{3D Imaging}} of {{Greenhouse Plants}} with an {{Inexpensive Binocular Stereo Vision System}}.
+\newblock {\em Remote Sensing}, 9(5):508, May 2017.
+
+\bibitem{loweDistinctiveImageFeatures2004}
+David~G. Lowe.
+\newblock Distinctive {{Image Features}} from {{Scale-Invariant Keypoints}}.
+\newblock {\em International Journal of Computer Vision}, 60(2):91--110, November 2004.
+
+\bibitem{loweObjectRecognitionLocal1999}
+D.G. Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In {\em Proceedings of the {{Seventh IEEE International Conference}} on {{Computer Vision}}}, pages 1150--1157 vol.2, Kerkyra, Greece, 1999. IEEE.
+
+\bibitem{mahleinHyperspectralSensorsImaging2018}
+A.-K. Mahlein, M.T. Kuska, J.~Behmann, G.~Polder, and A.~Walter.
+\newblock Hyperspectral {{Sensors}} and {{Imaging Technologies}} in {{Phytopathology}}: {{State}} of the {{Art}}.
+\newblock {\em Annual Review of Phytopathology}, 56(1):535--558, 2018.
+
+\bibitem{mahleinPlantDiseaseDetection2016}
+Anne-Katrin Mahlein.
+\newblock Plant {{Disease Detection}} by {{Imaging Sensors}} -- {{Parallels}} and {{Specific Demands}} for {{Precision Agriculture}} and {{Plant Phenotyping}}.
+\newblock {\em Plant Disease}, 100(2):241--251, February 2016.
+
+\bibitem{moulonPositionnementRobustePrecis}
+Pierre Moulon.
+\newblock {Positionnement robuste et pr{\'e}cis de r{\'e}seaux d'images}.
+\newblock page 193.
+
+\bibitem{nikithLeafDiseaseDetection2023}
+B.~V. Nikith, N.~K.~S. Keerthan, M.~S. Praneeth, and Dr.~T Amrita.
+\newblock Leaf {{Disease Detection}} and {{Classification}}.
+\newblock {\em Procedia Computer Science}, 218:291--300, January 2023.
+
+\bibitem{oteroAnatomySIFTMethod2014}
+Ives~Rey Otero and Mauricio Delbracio.
+\newblock Anatomy of the {{SIFT Method}}.
+\newblock {\em Image Processing On Line}, 4:370--396, December 2014.
+
+\bibitem{otsuThresholdSelectionMethod1979}
+Nobuyuki Otsu.
+\newblock A {{Threshold Selection Method}} from {{Gray-Level Histograms}}.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, 9(1):62--66, January 1979.
+
+\bibitem{owenEvaluationApplicationTimings2013}
+Michael~D. Owen, Damian~D. Franzenburg, Dean~M. Grossnickle, and James~F. Lux.
+\newblock {Evaluation of Application Timings of Warrant Herbicide for Soybean Phytotoxicity}.
+\newblock {\em Iowa State University Research and Demonstration Farms Progress Reports}, 2012(1), January 2013.
+
+\bibitem{petterInternationalStandardsDiagnosis2008}
+Fran{\c c}oise Petter, Anne~Sophie Roy, and Ian Smith.
+\newblock International standards for the diagnosis of regulated pests.
+\newblock {\em European Journal of Plant Pathology}, 121(3):331--337, July 2008.
+
+\bibitem{rossiPerformancesEvaluationLowCost2020}
+Riccardo Rossi, Claudio Leolini, Sergi {Costafreda-Aumedes}, Luisa Leolini, Marco Bindi, Alessandro Zaldei, and Marco Moriondo.
+\newblock Performances {{Evaluation}} of a {{Low-Cost Platform}} for {{High-Resolution Plant Phenotyping}}.
+\newblock {\em Sensors}, 20(11):3150, January 2020.
+
+\bibitem{rotherGrabCutInteractiveForeground2004}
+Carsten Rother, Vladimir Kolmogorov, and Andrew Blake.
+\newblock "{{GrabCut}}": Interactive foreground extraction using iterated graph cuts.
+\newblock In {\em {{ACM SIGGRAPH}} 2004 {{Papers}}}, {{SIGGRAPH}} '04, pages 309--314, New York, NY, USA, August 2004. Association for Computing Machinery.
+
+\bibitem{stevensTheoryScalesMeasurement1946}
+S.~S. Stevens.
+\newblock On the {{Theory}} of {{Scales}} of {{Measurement}}.
+\newblock {\em Science}, 103(2684):677--680, June 1946.
+
+\bibitem{stornDifferentialEvolutionSimple1997}
+Rainer Storn and Kenneth Price.
+\newblock Differential {{Evolution}} -- {{A Simple}} and {{Efficient Heuristic}} for global {{Optimization}} over {{Continuous Spaces}}.
+\newblock {\em Journal of Global Optimization}, 11(4):341--359, December 1997.
+
+\bibitem{tanTomatoLeafDiseases2021}
+Lijuan Tan, Jinzhu Lu, and Huanyu Jiang.
+\newblock Tomato {{Leaf Diseases Classification Based}} on {{Leaf Images}}: {{A Comparison}} between {{Classical Machine Learning}} and {{Deep Learning Methods}}.
+\newblock {\em AgriEngineering}, 3(3):542--558, September 2021.
+
+\bibitem{triggsBundleAdjustmentModern2000}
+Bill Triggs, Philip~F. McLauchlan, Richard~I. Hartley, and Andrew~W. Fitzgibbon.
+\newblock Bundle {{Adjustment}} --- {{A Modern Synthesis}}.
+\newblock In Gerhard Goos, Juris Hartmanis, Jan {van Leeuwen}, Bill Triggs, Andrew Zisserman, and Richard Szeliski, editors, {\em Vision {{Algorithms}}: {{Theory}} and {{Practice}}}, volume 1883, pages 298--372. Springer Berlin Heidelberg, Berlin, Heidelberg, 2000.
+
+\bibitem{wyattRadiometricCalibrationTheory2012}
+Clair Wyatt.
+\newblock {\em Radiometric {{Calibration}}: {{Theory}} and {{Methods}}}.
+\newblock Elsevier, December 2012.
+
+\bibitem{zhouEvaluatingGeometricMeasurement2018}
+Jing Zhou, Xiuqing Fu, Leon Schumacher, and Jianfeng Zhou.
+\newblock Evaluating {{Geometric Measurement Accuracy Based}} on {{3D Reconstruction}} of {{Automated Imagery}} in a {{Greenhouse}}.
+\newblock {\em Sensors}, 18(7):2270, July 2018.
+
+\bibitem{zouDegreesFreedomLasso2007}
+Hui Zou, Trevor Hastie, and Robert Tibshirani.
+\newblock On the ``degrees of freedom'' of the lasso.
+\newblock {\em The Annals of Statistics}, 35(5):2173--2192, October 2007.
+
+\end{thebibliography}

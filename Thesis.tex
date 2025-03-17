@@ -7,6 +7,20 @@
 \usepackage{titling}
 \usepackage{times}
 \usepackage{fontspec}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{adjustbox}
+\usepackage{pdflscape}
+% Include PDF
+\usepackage{pdfpages}
+% Bibliography
+\usepackage{natbib}
 \setmainfont{Arial}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -15,10 +29,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Include PDF
-\usepackage{pdfpages}
-% Bibliography
-\usepackage{natbib}
+
 \bibliographystyle{plain}  % or another style that suits your needs
 \usepackage{url}
 \usepackage{hyperref}
@@ -286,7 +297,7 @@ reproducibility of results, ultimately accelerating the development and registra
 effective phytosanitary products.
 
 To regulate the use of this kind of technologies, the EPPO published a new standard, 
-PP 1/333(1) \cite{PP13332024}, which 
+PP 1/333(1) \cite{noauthor_span_2024}, which 
 filled the gap in the use of digital technologies in phytosanitary product efficacy
 and selectivity trials. This standard provides guidelines for incorporating digital
 tools into trial protocols, where digital tools are intended as a combination of
@@ -479,13 +490,13 @@ statistical power of hypothesis testing.
 The power of a statistical test, defined as the probability of correctly
 rejecting the null hypothesis when it is false, directly depends on the sample
 size (number of observations), as noted by a classical statisticians as
-Fisher \cite{fisherStatisticalMethodsResearch1992}. However effiecient technics
+Fisher \cite{fisher_statistical_1992}. However effiecient technics
 to collect data does not garantee indipendency of samples. 
 In other words, having a powerfull tool to collect data does not mean that we
 can rely on a higher amount of replications.
 Wheter repeated observations
 per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
-(GLMM) \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}
+(GLMM) \cite{gbur_analysis_2020,kumle_estimating_2021}
 should be used to benefit from 
 digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
 account for the correlation structure of repeated observation
@@ -563,23 +574,35 @@ Throughout a study case each variable type, we will explore the opportunities an
 constraints of deploy geomatic techics for increase phytosanitary products effects
 estimation.
 
+\bibliographystyle{plainnat}
+\bibliography{Phd_Thesis_SBumbaca}
+
 \chapter{Study Cases}
 \section{Continuous Variables}
-\subsection{Plant Count}
+% \subsection{Plant Count}
 
 % Include the first page from the PDF file
-\includepdf[pages=-]{Plant_count.pdf}
+\includepdf[pages=1-12]{Plant_count/Plant_count.pdf}
+\includepdf[pages=13-14,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=15-28]{Plant_count/Plant_count.pdf}
+\includepdf[pages=29,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=30]{Plant_count/Plant_count.pdf}
+\includepdf[pages=31-35,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=36]{Plant_count/Plant_count.pdf}
+\includepdf[pages=37-38,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=39]{Plant_count/Plant_count.pdf}
+\includepdf[pages=40,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=41]{Plant_count/Plant_count.pdf}
+\includepdf[pages=42-43,landscape=true]{Plant_count/Plant_count.pdf}
+\includepdf[pages=44-]{Plant_count/Plant_count.pdf}
 
 \section{Ordinal and Nominal Variables}
-\subsection{Phytoxicity Score}
-
-
-\includepdf[pages=-]{Phytotoxicity_score/Phytoxicity_score.pdf}
+% \subsection{Phytoxicity Score}
+\includepdf[pages=1-6]{Phytotoxicity_score/Phytoxicity_score.pdf}
+\includepdf[pages=7,landscape=true]{Phytotoxicity_score/Phytoxicity_score.pdf}
+\includepdf[pages=8-]{Phytotoxicity_score/Phytoxicity_score.pdf}
 
 \section{Binary Variables}
 \subsection{Embedding Spaces for Control Sample Anomaly Detection}
-
-\bibliographystyle{plainnat}
-\bibliography{Phd_Thesis_SBumbaca}
 
 \end{document}

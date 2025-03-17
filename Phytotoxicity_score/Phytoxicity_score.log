@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  16 MAR 2025 17:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  17 MAR 2025 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,26 +552,26 @@ Package cleveref Info: `subfig' support loaded on input line 3164.
  (./Phytoxicity_score.aux)
 \openout1 = `Phytoxicity_score.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -614,57 +614,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 56.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 56.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 56.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 56.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 56.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 56.
-LaTeX Font Info:    Redeclaring math accent \check on input line 56.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 56.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 56.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 56.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 59.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 59.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 59.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 59.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 59.
+LaTeX Font Info:    Redeclaring math accent \check on input line 59.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 59.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 59.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 59.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 56.
+(Font)              `operators' in the math version `normal' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 56.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 59.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 56.
+(Font)              `operators' in the math version `bold' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 56.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 56.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 56.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 56.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 56.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 56.
-Package hyperref Info: Link coloring OFF on input line 56.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 59.
+Package hyperref Info: Link coloring OFF on input line 59.
 (./Phytoxicity_score.out) (./Phytoxicity_score.out)
 \@outlinefile=\write3
 \openout3 = `Phytoxicity_score.out'.
@@ -680,144 +680,148 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 ]
-Overfull \hbox (0.57642pt too wide) in paragraph at lines 68--86
+
+[2]
+Overfull \hbox (0.57642pt too wide) in paragraph at lines 77--95
 \TU/Arial(0)/m/n/12 market entry. PPP developers must meticulously formulate and dose
  []
 
 
-Overfull \hbox (2.79002pt too wide) in paragraph at lines 68--86
+Overfull \hbox (2.79002pt too wide) in paragraph at lines 77--95
 \TU/Arial(0)/m/n/12 taining selectivity [[]]. Traditionally, experimenters assess the sever-
  []
 
 
-Overfull \hbox (2.08076pt too wide) in paragraph at lines 68--86
+Overfull \hbox (2.08076pt too wide) in paragraph at lines 77--95
 \TU/Arial(0)/m/n/12 these assessments depends on low variability among experimenters’
  []
 
 
 
-[2]
+[97
 
-[3]
+]
 
-[4]
+[98]
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[99]
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Depending on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \TU/Arial(0)/m/n/12 the rater, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \TU/Arial(0)/m/n/12 recommended
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 129--129
+Underfull \hbox (badness 2213) in paragraph at lines 138--138
 \TU/Arial(0)/m/n/12 maximum error
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Traditional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 and no moni-
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 129--129
+Underfull \hbox (badness 3679) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Destructive and only spectral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Ghosal et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 From 50% to
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 129--129
+Underfull \hbox (badness 5954) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Not phytotoxicity-specific, de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Gómez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \TU/Arial(0)/m/n/12 Zamanillo et
  []
 
 
-Overfull \hbox (119.13184pt too wide) in alignment at lines 129--129
+Overfull \hbox (119.13184pt too wide) in alignment at lines 138--138
 [][][][] 
  []
 
 
 
-[6]
-Overfull \hbox (7.30174pt too wide) in paragraph at lines 140--146
+[101]
+Overfull \hbox (7.30174pt too wide) in paragraph at lines 149--155
 \TU/Arial(0)/m/n/12 can be unique due to their novelty, making them unpredictable. There-
  []
 
 
-Overfull \hbox (10.11397pt too wide) in paragraph at lines 147--152
+Overfull \hbox (10.11397pt too wide) in paragraph at lines 156--161
 \TU/Arial(0)/m/n/12 firmed the robustness of the method regardless of the sample adopted.
  []
 
 
 
-[7
+[102
 
 
 ]
 
-[8]
+[103]
 File: Images/agronomy-14-00306-g001.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g001.png>
 
 
-[9]
+[104]
 
-[10]
+[105]
 File: Images/agronomy-14-00306-g002.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g002.png>
 
 
-[11]
+[106]
 
-[12]
+[107]
 
-[13]
+[108]
 
-[14]
+[109]
 File: Images/agronomy-14-00306-g003.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g003.png>
 
 
-[15]
-Overfull \hbox (2.50897pt too wide) in paragraph at lines 259--261
+[110]
+Overfull \hbox (2.50897pt too wide) in paragraph at lines 268--270
 []\TU/Arial(0)/m/n/12 where H is the camera-to-target distance, f is the camera focal length,
  []
 
 
 
-[16]
-Overfull \hbox (7.21515pt too wide) in paragraph at lines 262--267
+[111]
+Overfull \hbox (7.21515pt too wide) in paragraph at lines 271--276
 []\TU/Arial(0)/m/n/12 When planning an acquisition, it is important to ensure that the coarser
  []
 
@@ -825,107 +829,112 @@ File: Images/agronomy-14-00306-g004.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g004.png>
 
 
-[17]
+[112]
 File: Images/agronomy-14-00306-g005.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g005.png>
 
 
-[18]
+[113]
 
-[19]
+[114]
 
-[20]
+[115]
+Overfull \hbox (2.27556pt too wide) in paragraph at lines 329--329
+|[]\TU/Arial(0)/b/n/14.4 Radiometric Calibration of the Multi-Spectral
+ []
 
-[21]
+
+
+[116]
 File: Images/agronomy-14-00306-g006.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g006.png>
 
 
-[22]
+[117]
 
-[23]
-Underfull \hbox (badness 6995) in paragraph at lines 381--381
+[118]
+Underfull \hbox (badness 6995) in paragraph at lines 390--390
 \TU/Arial(0)/m/n/12 calibrated reflectance values
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 381--381
+Underfull \hbox (badness 6995) in paragraph at lines 390--390
 \TU/Arial(0)/m/n/12 calibrated reflectance values
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 381--381
+Underfull \hbox (badness 1122) in paragraph at lines 390--390
 \OML/cmm/m/it/12 H[]$ \TU/Arial(0)/m/n/12 is the absolute height of
  []
 
 
 
-[24]
-Overfull \hbox (55.35852pt too wide) in paragraph at lines 408--408
+[119]
+Overfull \hbox (55.35852pt too wide) in paragraph at lines 417--417
 []|$[][] [][] \OT1/cmr/m/n/12 +
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 408--408
+Underfull \hbox (badness 2237) in paragraph at lines 417--417
 \OML/cmm/m/it/12 L[] \OT1/cmr/m/n/12 = []; \OML/cmm/m/it/12 L[] \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--408
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 []|\TU/Arial(0)/m/it/12 LogisticFunction
  []
 
 
-Overfull \hbox (27.029pt too wide) in paragraph at lines 408--408
+Overfull \hbox (27.029pt too wide) in paragraph at lines 417--417
 []|$[][] [] \OT1/cmr/m/n/12 =
  []
 
 
 
-[25]
+[120]
 
-[26]
+[121]
 
-[27]
-Overfull \hbox (7.73318pt too wide) in paragraph at lines 460--470
+[122]
+Overfull \hbox (7.73318pt too wide) in paragraph at lines 469--479
  [][] 
  []
 
 
 
-[28]
+[123]
 File: Images/agronomy-14-00306-g007.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g007.png>
 
 
-[29]
+[124]
 
-[30]
-Overfull \hbox (0.75421pt too wide) in paragraph at lines 536--543
+[125]
+Overfull \hbox (0.75421pt too wide) in paragraph at lines 545--552
 []\TU/Arial(0)/m/n/12 The stacked model predictions ensure a mean absolute error, slightly
  []
 
 
 
-[31]
+[126]
 File: Images/agronomy-14-00306-g008.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g008.png>
 
 
-[32]
-Overfull \hbox (2.74054pt too wide) in paragraph at lines 559--569
+[127]
+Overfull \hbox (2.74054pt too wide) in paragraph at lines 568--578
 \TU/Arial(0)/m/n/12 acquired images more similar, partially overcoming one of the biggest
  []
 
 
 
-[33]
+[128]
 
-[34]
+[129]
 
-[35] (./Phytoxicity_score.bbl
+[130] (./Phytoxicity_score.bbl
 
-[36]
+[131]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\TU/Arial(0)/m/n/12 MAPIR_Survey3_Camera_Datasheet_English.pdf.
  []
@@ -942,7 +951,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 20--22
 
 
 
-[37
+[132
 
 ]
 Underfull \hbox (badness 7064) in paragraph at lines 61--64
@@ -951,7 +960,7 @@ Underfull \hbox (badness 7064) in paragraph at lines 61--64
 
 
 
-[38]
+[133]
 Underfull \hbox (badness 10000) in paragraph at lines 66--69
 []\TU/Arial(0)/m/n/12 MAPIR CAMERA.  MAPIR Camera Re-
  []
@@ -968,7 +977,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
 
 
-[39]
+[134]
 Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\TU/Arial(0)/m/n/12 2022-06-27/29 EPPO.  Digital Technology and Ef-
  []
@@ -1005,9 +1014,9 @@ Underfull \hbox (badness 1038) in paragraph at lines 126--129
 
 
 
-[40]
+[135]
 
-[41]
+[136]
 Underfull \hbox (badness 1242) in paragraph at lines 170--173
 []\TU/Arial(0)/m/n/12 David G. Lowe.  Distinctive Image Features from Scale-
  []
@@ -1015,18 +1024,18 @@ Underfull \hbox (badness 1242) in paragraph at lines 170--173
 Missing character: There is no ^^92 (U+0092) in font Arial/OT:language=dflt;mapping=tex-text;!
 
 
-[42]
+[137]
 Underfull \hbox (badness 1231) in paragraph at lines 225--228
 []\TU/Arial(0)/m/n/12 Carsten Rother, Vladimir Kolmogorov, and Andrew Blake.
  []
 
 
 
-[43]
+[138]
 
-[44])
+[139])
 
-[45] (./Phytoxicity_score.aux)
+[140] (./Phytoxicity_score.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1035,14 +1044,8 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `Phytoxicity_score.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Phytoxicity_score.out':
-(rerunfilecheck)             Before: D665AE77E4627DA889AA28E2030EFEFE;3320
-(rerunfilecheck)             After:  65911C6F0ABF8A7184CA6FD5250ADC0E;3320.
+Package rerunfilecheck Info: File `Phytoxicity_score.out' has not changed.
+(rerunfilecheck)             Checksum: D665AE77E4627DA889AA28E2030EFEFE;3320.
  ) 
 Here is how much of TeX's memory you used:
  19552 strings out of 475921
@@ -1053,4 +1056,4 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  86i,17n,133p,2884b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Phytoxicity_score.pdf (45 pages).
+Output written on Phytoxicity_score.pdf (46 pages).

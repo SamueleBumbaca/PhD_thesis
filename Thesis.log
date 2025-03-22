@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  17 MAR 2025 16:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  22 MAR 2025 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -806,7 +806,7 @@ Overfull \hbox (4.80244pt too wide) in paragraph at lines 317--318
 [13]
 
 [14]
-Overfull \hbox (26.76398pt too wide) in paragraph at lines 359--364
+Overfull \hbox (26.76398pt too wide) in paragraph at lines 365--370
 \TU/Arial(0)/m/n/12 analyzing these images, it is possible to reconstruct the three-dimensional
  []
 
@@ -817,29 +817,29 @@ Overfull \hbox (26.76398pt too wide) in paragraph at lines 359--364
 [16]
 
 [17]
-Overfull \hbox (5.22882pt too wide) in paragraph at lines 439--441
-[]\TU/Arial(0)/m/n/12 There are several fundamental approaches in machine learning, each
- []
-
-
-Overfull \hbox (0.3962pt too wide) in paragraph at lines 443--446
+Overfull \hbox (0.3962pt too wide) in paragraph at lines 449--452
 []\TU/Arial(0)/b/n/12 Supervised Learning\TU/Arial(0)/m/n/12 : Models are trained on labeled datasets
  []
 
 
 
 [18]
-Overfull \hbox (9.25069pt too wide) in paragraph at lines 482--489
+Overfull \hbox (0.31085pt too wide) in paragraph at lines 470--474
+\TU/Arial(0)/m/n/12 observation and measurement, particularly when integrated with dig-
+ []
+
+
+Overfull \hbox (9.25069pt too wide) in paragraph at lines 488--495
 \TU/Arial(0)/m/n/12 One of the most compelling advantages of adopting digital approaches
  []
 
 
-Overfull \hbox (7.65265pt too wide) in paragraph at lines 482--489
+Overfull \hbox (7.65265pt too wide) in paragraph at lines 488--495
 \TU/Arial(0)/m/n/12 human capacity and time constraints, automated and semi-automated
  []
 
 
-Overfull \hbox (0.1322pt too wide) in paragraph at lines 482--489
+Overfull \hbox (0.1322pt too wide) in paragraph at lines 488--495
 \TU/Arial(0)/m/n/12 systems can continuously gather data with minimal interruption. This
  []
 
@@ -848,19 +848,19 @@ Overfull \hbox (0.1322pt too wide) in paragraph at lines 482--489
 [19]
 
 [20]
-Overfull \hbox (0.46748pt too wide) in paragraph at lines 545--549
+Overfull \hbox (0.46748pt too wide) in paragraph at lines 551--555
 []\TU/Arial(0)/b/n/12 Spatial Analysis of Field Trials with Splines \TU/Arial(0)/m/n/12 leverages spline func-
  []
 
 
 
 [21]
-Overfull \hbox (6.40987pt too wide) in paragraph at lines 559--560
+Overfull \hbox (6.40987pt too wide) in paragraph at lines 565--566
 []\TU/Arial(0)/m/n/12 CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI
  []
 
 
-Overfull \hbox (2.51237pt too wide) in paragraph at lines 561--561
+Overfull \hbox (2.51237pt too wide) in paragraph at lines 567--567
 |[]\TU/Arial(0)/b/n/17.28 The Literature Gap and the Thesis Aims| 
  []
 
@@ -2277,7 +2277,7 @@ File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 [141
 
 ]
-Overfull \hbox (15.35605pt too wide) in paragraph at lines 606--606
+Overfull \hbox (15.35605pt too wide) in paragraph at lines 620--620
 |[]\TU/Arial(0)/b/n/14.4 Embedding Spaces for Control Sample Anomaly
  []
 
@@ -2294,7 +2294,7 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  19486 strings out of 475921
  384247 string characters out of 5775722
- 847843 words of memory out of 5000000
+ 848843 words of memory out of 5000000
  42021 multiletter control sequences out of 15000+600000
  562023 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191

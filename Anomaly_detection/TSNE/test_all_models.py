@@ -1,6 +1,6 @@
 import subprocess
 import os
-from Anomaly_detection.TSNE.test_all_models import get_model
+from models import get_model
 
 def main():
     # Set common parameters
@@ -28,7 +28,7 @@ def main():
         try:
             # Run the tsne.py script with the current model
             cmd = [
-                "python3", "dimensional_reduction.py",
+                "python3", "tsne.py",
                 "--path", dataset_path,
                 "--dataset_type", dataset_type,
                 "--batch", str(batch_size),

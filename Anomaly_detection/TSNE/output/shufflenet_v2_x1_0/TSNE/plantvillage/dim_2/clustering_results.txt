@@ -1,0 +1,27 @@
+Clustering Results Comparison
+===========================
+
+Dataset Statistics:
+  - Total samples: 500
+  - Number of classes: 3
+  - Classes: Apple_Apple_scab, Apple_Cedar_apple_rust, Apple_healthy
+
+Method Comparison:
+--------------------------------------------------
+Method          Cohen Kappa    
+--------------------------------------------------
+KMeans          0.5785
+Hierarchical    0.5785
+GMM             0.5854
+DBSCAN          0.6575
+--------------------------------------------------
+
+Best performing method: DBSCAN (Cohen's Kappa: 0.6575)
+
+Method Details:
+1. KMeans: K-Means clustering with k=number of classes
+2. Hierarchical: Agglomerative clustering with n_clusters=number of classes
+3. GMM: Gaussian Mixture Model with n_components=number of classes
+4. DBSCAN: Density-Based Spatial Clustering with automatic epsilon estimation
+   - Estimated epsilon: 0.0628
+   - Min samples: 5

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Anomaly_detection.aux
+The style file: plain.bst
+Illegal, another \bibstyle command---line 63 of file Anomaly_detection.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: Anomaly_detection.bib
+Warning--I didn't find a database entry for "liu2008isolation"
+Warning--I didn't find a database entry for "scholkopf2001estimating"
+Warning--I didn't find a database entry for "breunig2000lof"
+Warning--to sort, need author or key in ModelsPretrainedWeights
+Warning--to sort, need author or key in FacebookresearchDinov22025
+Warning--empty booktitle in huangDenselyConnectedConvolutional2017
+You've used 23 entries,
+            2118 wiz_defined-function locations,
+            645 strings with 10261 characters,
+and the built_in function-call counts, 8517 in all, are:
+= -- 754
+> -- 618
+< -- 1
++ -- 251
+- -- 222
+* -- 684
+:= -- 1453
+add.period$ -- 70
+call.type$ -- 23
+change.case$ -- 180
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 217
+empty$ -- 554
+format.name$ -- 222
+if$ -- 1687
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 11
+newline$ -- 119
+num.names$ -- 42
+pop$ -- 221
+preamble$ -- 1
+purify$ -- 157
+quote$ -- 0
+skip$ -- 187
+stack$ -- 0
+substring$ -- 337
+swap$ -- 34
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 92
+warning$ -- 3
+while$ -- 59
+width$ -- 25
+write$ -- 243
+(There was 1 error message)

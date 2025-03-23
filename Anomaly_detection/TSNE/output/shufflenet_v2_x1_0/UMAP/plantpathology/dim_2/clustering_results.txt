@@ -3,25 +3,25 @@ Clustering Results Comparison
 
 Dataset Statistics:
   - Total samples: 500
-  - Number of classes: 4
-  - Classes: healthy, multiple_diseases, rust, scab
+  - Number of classes: 3
+  - Classes: healthy, rust, scab
 
 Method Comparison:
 --------------------------------------------------
 Method          Cohen Kappa    
 --------------------------------------------------
-KMeans          0.4370
-Hierarchical    0.4761
-GMM             0.4370
-DBSCAN          0.3260
+KMeans          0.6678
+Hierarchical    0.6217
+GMM             0.6787
+DBSCAN          0.7159
 --------------------------------------------------
 
-Best performing method: Hierarchical (Cohen's Kappa: 0.4761)
+Best performing method: DBSCAN (Cohen's Kappa: 0.7159)
 
 Method Details:
 1. KMeans: K-Means clustering with k=number of classes
 2. Hierarchical: Agglomerative clustering with n_clusters=number of classes
 3. GMM: Gaussian Mixture Model with n_components=number of classes
 4. DBSCAN: Density-Based Spatial Clustering with automatic epsilon estimation
-   - Estimated epsilon: 0.0074
+   - Estimated epsilon: 0.0070
    - Min samples: 5

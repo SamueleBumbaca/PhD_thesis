@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  22 MAR 2025 10:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  23 MAR 2025 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -699,25 +699,15 @@ Overfull \hbox (1.42145pt too wide) detected at line 15
  []\TU/Arial(0)/m/n/12 142
  []
 
-
-
-[2
-
-]
-Overfull \hbox (1.42145pt too wide) detected at line 16
- []\TU/Arial(0)/m/n/12 142
- []
-
-
-Overfull \hbox (10.85072pt too wide) in paragraph at lines 16--16
- [][] [][]\TU/Arial(0)/m/n/12 Embedding Spaces for Control Sample Anomaly 
- []
-
 )
 \tf@toc=\write4
 \openout4 = `Thesis.toc'.
 
 
+
+[2
+
+]
 
 [3]
 Chapter 1.
@@ -2277,27 +2267,372 @@ File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 [141
 
 ]
-Overfull \hbox (15.35605pt too wide) in paragraph at lines 620--620
-|[]\TU/Arial(0)/b/n/14.4 Embedding Spaces for Control Sample Anomaly
- []
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 1>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 1>
 
 
+[142]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 1>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 1>
 
-[142] (./Thesis.aux)
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 1>
+[143
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
+[144
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
+[145
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
+[146
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
+[147
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
+[148
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+[149
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+[150
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+[151
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+[152
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+[153
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+[154
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+[155
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+[156
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+[157
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+[158
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+[159
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+[160
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+[161
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+[162
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+[163
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+[164
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+[165
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+[166
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+[167
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+[168
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+[169
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+[170
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+[171
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+[172
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+[173
+
+] (./Thesis.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: ED18282279F03F49DD3E6B9968AECF5B;2737.
+(rerunfilecheck)             Checksum: 6BFED471F8315850F2DEFBDD962174BD;2392.
  ) 
 Here is how much of TeX's memory you used:
- 19486 strings out of 475921
- 384247 string characters out of 5775722
+ 19558 strings out of 475921
+ 388217 string characters out of 5775722
  848843 words of memory out of 5000000
- 42021 multiletter control sequences out of 15000+600000
+ 42090 multiletter control sequences out of 15000+600000
  562023 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 86i,17n,133p,429b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,17n,133p,345b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (142 pages).
+Output written on Thesis.pdf (173 pages).

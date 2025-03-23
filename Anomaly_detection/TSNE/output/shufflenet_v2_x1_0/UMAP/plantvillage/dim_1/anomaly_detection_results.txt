@@ -1,0 +1,26 @@
+Anomaly Detection Results Comparison
+==================================
+
+Dataset Statistics:
+  - Total samples: 500
+  - Healthy samples: 183
+  - Unhealthy samples: 317
+
+Method Comparison:
+----------------------------------------------------------------------
+Method          Accuracy   Precision  Recall     F1         AUC       
+----------------------------------------------------------------------
+IQR+CI          0.9820     0.9968     0.9748     0.9856     0.9846
+IsolationForest 0.9580     0.9431     0.9937     0.9677     0.9449
+OneClassSVM     0.9540     0.9455     0.9842     0.9645     0.9429
+LOF             0.9840     0.9968     0.9779     0.9873     0.9862
+GMM             0.9840     0.9936     0.9811     0.9873     0.9851
+----------------------------------------------------------------------
+
+Best performing method: LOF (Accuracy: 0.9840)
+
+Method Details:
+1. IQR+CI: Interquartile Range with Confidence Interval
+   - IQR bounds: [7.1888, 16.9498]
+   - Confidence interval (95.0%): [8.8913, 15.0166]
+

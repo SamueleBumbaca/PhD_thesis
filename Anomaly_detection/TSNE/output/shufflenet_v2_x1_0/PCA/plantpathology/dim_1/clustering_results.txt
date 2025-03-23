@@ -3,20 +3,20 @@ Clustering Results Comparison
 
 Dataset Statistics:
   - Total samples: 500
-  - Number of classes: 4
-  - Classes: healthy, multiple_diseases, rust, scab
+  - Number of classes: 3
+  - Classes: healthy, rust, scab
 
 Method Comparison:
 --------------------------------------------------
 Method          Cohen Kappa    
 --------------------------------------------------
-KMeans          0.3526
-Hierarchical    0.3917
-GMM             0.3403
-DBSCAN          0.4511
+KMeans          0.4350
+Hierarchical    0.4271
+GMM             0.4463
+DBSCAN          0.4688
 --------------------------------------------------
 
-Best performing method: DBSCAN (Cohen's Kappa: 0.4511)
+Best performing method: DBSCAN (Cohen's Kappa: 0.4688)
 
 Method Details:
 1. KMeans: K-Means clustering with k=number of classes

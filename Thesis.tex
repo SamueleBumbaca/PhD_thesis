@@ -446,7 +446,7 @@ types of tasks and data structures:
     \item \textbf{Unsupervised Learning}: Models identify patterns or groupings within 
     data without labeled responses. Clustering (e.g., K-means, hierarchical clustering) 
     and dimensionality reduction (e.g., PCA, t-SNE) are common techniques.
-    \item \textbf{Semi-supervised Learning}: Combines a small amount of labeled data with 
+    \item \textbf{Weakly-supervised Learning}: Combines a small amount of labeled data with 
     a large amount of unlabeled data to improve learning accuracy.
     \item \textbf{Reinforcement Learning}: Agents learn by interacting with an environment 
     and receiving feedback in the form of rewards or penalties.
@@ -462,7 +462,10 @@ types of tasks and data structures:
 ML models can also be integrated with statistical techniques, providing hybrid approaches 
 that combine inferential statistics with predictive modeling \cite{hastie_elements_2009}. 
 For example, generalized linear models (GLMs) can be enhanced with ML techniques to improve 
-their accuracy and adaptability \cite{salinas_ruiz_generalized_2023}. Computer vision is a subfield of 
+their accuracy and adaptability \cite{salinas_ruiz_generalized_2023}. 
+Deep Learning (DL) is a subfield of ML that studies a particular class of models named Deep
+Neural Networks \cite{goodfellow_deep_2016}, the most active ML study area since ten years.
+Computer vision is another subfield of 
 ML that focuses on enabling machines to interpret and analyze visual information. In 
 the context of phytosanitary product efficacy evaluation, computer vision methods are 
 increasingly used for automated observation and measurement, particularly when integrated 
@@ -475,22 +478,18 @@ and related architectures, including ResNet and U-Net, have shown high efficacy 
 complex agricultural images \cite{pandian_j_improved_2022, ronneberger_u-net_2015}. Moreover, combining computer 
 vision with geostatistical methods allows for the spatial mapping of efficacy across field plots, 
 generating comprehensive visual assessments that support statistical evaluations 
-\cite{koldasbayeva_challenges_2024}. This integrated approach maximizes the utility of both 
-spatial and temporal data, facilitating more robust and accurate assessments while 
-minimizing human error and labor requirements \cite{goodfellow_deep_2016}.
+\cite{koldasbayeva_challenges_2024}.
 
 Having representative big datasets and computing power are significant challenges in deep learning. 
 Large-scale, high-quality datasets are crucial for training robust machine learning models, but acquiring 
 such datasets is often prohibitively expensive and time-consuming. Many domains, particularly specialized 
 fields like plant protection products and phytopathometry research, 
 struggle to compile sufficiently large and diverse training datasets \cite{alom2019state}. The data collection process 
-frequently involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
+in Supervised Learning involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
 Moreover, ensuring dataset representativeness is complex, as minor sampling biases can lead to models 
 that perform poorly when deployed in real-world scenarios \cite{torralba2011tiny}.
-Computing power presents another substantial bottleneck in deep learning research and application. 
-Training state-of-the-art neural networks requires massive computational resources, creating a significant 
-barrier to entry for researchers and organizations with limited budgets or for applications where
-edge computing is needed, creating also carbon-foot-print concernings \cite{patterson2021carbon}.
+Self-supervised and Weakly-supervised Learning came to leverage this problem giving the possibility
+to train models without human supervision
 
 \subsection{Geostatistics}
 

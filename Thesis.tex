@@ -450,9 +450,13 @@ types of tasks and data structures:
     a large amount of unlabeled data to improve learning accuracy.
     \item \textbf{Reinforcement Learning}: Agents learn by interacting with an environment 
     and receiving feedback in the form of rewards or penalties.
-    \item \textbf{Deep Learning}: Utilizes neural networks with multiple layers 
-    (deep architectures) to model complex relationships and patterns, particularly 
-    in image and signal processing.
+    \item \textbf{Self-supervised Learning}: A machine learning approach where the model
+    generates its own labels from the input data, creating supervised-like learning
+    tasks without external human annotations. The model learns by solving tasks
+    designed within the data itself, such as
+    reconstructing partially obscured images. This technique allows models to learn rich, generalizable
+    representations from large unlabeled datasets, enabling transfer learning and
+    reducing the dependency on expensive manual labeling.
 \end{itemize}
 
 ML models can also be integrated with statistical techniques, providing hybrid approaches 
@@ -474,6 +478,19 @@ generating comprehensive visual assessments that support statistical evaluations
 \cite{koldasbayeva_challenges_2024}. This integrated approach maximizes the utility of both 
 spatial and temporal data, facilitating more robust and accurate assessments while 
 minimizing human error and labor requirements \cite{goodfellow_deep_2016}.
+
+Having representative big datasets and computing power are significant challenges in deep learning. 
+Large-scale, high-quality datasets are crucial for training robust machine learning models, but acquiring 
+such datasets is often prohibitively expensive and time-consuming. Many domains, particularly specialized 
+fields like plant protection products and phytopathometry research, 
+struggle to compile sufficiently large and diverse training datasets \cite{alom2019state}. The data collection process 
+frequently involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
+Moreover, ensuring dataset representativeness is complex, as minor sampling biases can lead to models 
+that perform poorly when deployed in real-world scenarios \cite{torralba2011tiny}.
+Computing power presents another substantial bottleneck in deep learning research and application. 
+Training state-of-the-art neural networks requires massive computational resources, creating a significant 
+barrier to entry for researchers and organizations with limited budgets or for applications where
+edge computing is needed, creating also carbon-foot-print concernings \cite{patterson2021carbon}.
 
 \subsection{Geostatistics}
 

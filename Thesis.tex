@@ -448,8 +448,6 @@ types of tasks and data structures:
     and dimensionality reduction (e.g., PCA, t-SNE) are common techniques.
     \item \textbf{Weakly-supervised Learning}: Combines a small amount of labeled data with 
     a large amount of unlabeled data to improve learning accuracy.
-    \item \textbf{Reinforcement Learning}: Agents learn by interacting with an environment 
-    and receiving feedback in the form of rewards or penalties.
     \item \textbf{Self-supervised Learning}: A machine learning approach where the model
     generates its own labels from the input data, creating supervised-like learning
     tasks without external human annotations. The model learns by solving tasks
@@ -465,22 +463,24 @@ For example, generalized linear models (GLMs) can be enhanced with ML techniques
 their accuracy and adaptability \cite{salinas_ruiz_generalized_2023}. 
 Deep Learning (DL) is a subfield of ML that studies a particular class of models named Deep
 Neural Networks \cite{goodfellow_deep_2016}, the most active ML study area since ten years.
-Computer vision is another subfield of 
-ML that focuses on enabling machines to interpret and analyze visual information. In 
+Computer vision (CV) is another subfield of 
+ML that focuses on enabling machines to interpret and analyze visual information. 
+CV is the more and more treated lonely with DL instead of other ML approaches. In 
 the context of phytosanitary product efficacy evaluation, computer vision methods are 
 increasingly used for automated observation and measurement, particularly when integrated 
 with digital imaging and photogrammetry \cite{lu_instancefusion_2020}. The use of computer vision 
-within PP1/333 trials significantly enhances data acquisition by enabling continuous monitoring 
+within PP1/333 trials significantly enhances data acquisition by enabling digital sensing 
 and precise measurement of crop conditions \cite{barbedo_automatic_2014,arnal_barbedo_digital_2013}. Techniques such as image 
 segmentation, object detection, and texture analysis can automatically identify plant stress, 
-disease symptoms, and pest damage \cite{kamilaris_deep_2018}. Convolutional Neural Networks (CNNs) 
-and related architectures, including ResNet and U-Net, have shown high efficacy in analyzing 
-complex agricultural images \cite{pandian_j_improved_2022, ronneberger_u-net_2015}. Moreover, combining computer 
+disease symptoms, and pest damage \cite{kamilaris_deep_2018}. In the context of experimental tests, object detection and 
+segmentation serve to localize in space and time the observations used during statistical tests on models such as GLMs.
+This allows the exclusion of spatiotemporal variability as explained in the next chapter 'Geostatistics'.
+Moreover, combining computer 
 vision with geostatistical methods allows for the spatial mapping of efficacy across field plots, 
 generating comprehensive visual assessments that support statistical evaluations 
 \cite{koldasbayeva_challenges_2024}.
 
-Having representative big datasets and computing power are significant challenges in deep learning. 
+Having representative big datasets is a significant challenge in DL. 
 Large-scale, high-quality datasets are crucial for training robust machine learning models, but acquiring 
 such datasets is often prohibitively expensive and time-consuming. Many domains, particularly specialized 
 fields like plant protection products and phytopathometry research, 
@@ -488,8 +488,40 @@ struggle to compile sufficiently large and diverse training datasets \cite{alom2
 in Supervised Learning involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
 Moreover, ensuring dataset representativeness is complex, as minor sampling biases can lead to models 
 that perform poorly when deployed in real-world scenarios \cite{torralba2011tiny}.
-Self-supervised and Weakly-supervised Learning came to leverage this problem giving the possibility
-to train models without human supervision
+Weakly-supervised and Self-supervised Learning came to leverage this problem giving the possibility
+to train models with respectivelly few or without human supervision.
+Weakly-supervised learning leverages pre-trained models developed through enormous computational efforts, 
+resulting in foundation models with remarkable generalization capabilities \cite{radford_learning_2021}. 
+These models can effectively perform new tasks with minimal fine-tuning, a phenomenon known as 
+"few-shot learning" or "in-context learning" \cite{brown_language_2020}. The remarkable ability of 
+these models to adapt to new tasks with very few examples represents a paradigm shift in machine 
+learning, where the pre-training phase becomes crucial in developing adaptable and versatile 
+AI systems \cite{bommasani_opportunities_2022}.
+Self-supervised learning, while promising to revolutionize machine learning by eliminating 
+the need for manual labeling, presents its own set of challenges \cite{he_momentum_2020}. 
+The computational resources required for training large self-supervised models are substantial, 
+often exceeding the capabilities of smaller research labs or specialized studies \cite{patterson_carbon_2021}. 
+This computational intensity creates a significant barrier to entry, particularly for domain-specific 
+research like phytosanitary product efficacy evaluation, where the computational and expertise 
+requirements may outstrip the available resources of a typical research group 
+\cite{strubell_energy_2019}. Despite its transformative potential, self-supervised learning remains a 
+cutting-edge approach that requires significant computational infrastructure and interdisciplinary expertise to implement effectively.
+
+A way to use these advanced learning approaches is to leverage pre-trained models as feature extractors through unsupervised 
+inference techniques \cite{chen_simple_2020}. Researchers can exploit the rich representations learned by foundation models, 
+applying them as powerful feature extraction mechanisms across various downstream tasks \cite{devlin_bert_2019}. Alternatively, 
+these pre-trained models can serve as robust backbones, with researchers fine-tuning only the final classification or 
+prediction layers to adapt the model to specific domain requirements \cite{he_momentum_2020}. This transfer learning 
+approach allows for efficient model adaptation, reducing the need for extensive domain-specific data collection and 
+annotation \cite{kornblith_better_2019}. In the context of specialized fields like phytosanitary research, such 
+techniques enable more efficient model development by leveraging the generalization capabilities of large-scale 
+pre-trained models, effectively bridging the gap between computational limitations and domain-specific research 
+needs \cite{razavian_cnn_2014}.
+The transfer of knowledge from foundation models to domain-specific applications represents a significant advancement 
+in machine learning methodologies. By extracting and repurposing learned representations, researchers can develop 
+more sophisticated and adaptable models with minimal additional training resources \cite{zoph_rethinking_2020}. 
+This approach not only mitigates the challenges of data scarcity but also provides a more computationally 
+efficient pathway to developing advanced predictive models in specialized research domains \cite{tan_efficientnet_2020}.
 
 \subsection{Geostatistics}
 

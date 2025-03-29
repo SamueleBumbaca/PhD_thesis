@@ -288,13 +288,205 @@ that products demonstrate consistent efficacy across relevant agricultural condi
 
 \section{Geomatics Techniques}
 
+Traditional statistical analysis for phytosanitary product trials still relies on 
+Fisher's principles of experimental design 
+\cite{fisherStatisticalMethodsResearch1992, mead_statistical_2012, casler_randomization_2015}, 
+which emphasize the importance of randomization, replication, and blocking to 
+ensure the validity of results. Even if this approach for the experimental design 
+is well-established, it is not without weaknesses: it relies on the 
+agronomist-experimentalist knowledge and experience of the field where the trial 
+is performed that can be limited and biased as any human observation 
+\cite{petersen_assessment_2014, bouwman_designing_2020}. The experimental design part 
+that mostly relies on human choice is the block disposal and the control 
+arrangement \cite{piepho_optimal_2015, van_es_guidelines_2007}. The block disposal 
+should guarantee that the environmental variability is minimized within the block 
+and maximized between blocks \cite{brien_designs_2011, van_es_spatial_2005}, while 
+the control arrangement ensures that the untreated control is not influenced by 
+adjacent treated plots \cite{paciorek_practical_2009, piepho_experimental_2013}. 
+Problems arise when environmental variability effects, unobserved during set-up, 
+make the parametric statistical analysis invalid due to heteroscedasticity of the 
+residuals \cite{schabenberger_contemporary_2017, onofri_analysis_2010}. Often in such cases, 
+shifting to non-parametric tests could mean a decrease 
+of power \cite{stroup_rethinking_2014, littell_sas_2006}.
+If the experimental design and the statistical model could be able to catch 
+the environmental variability "a posteriori" instead of "a priori"
+\cite{oliver_geostatistics_2010, webster_geostatistics_2007}, 
+the statistical analysis should be more robust, reliable and free from
+unexpected heterogeneity whithin the blocks.
+Variograms are fundamental tools in geostatistics that quantify 
+the spatial dependence of a random field 
+\cite{cressie_statistics_1993, goovaerts_geostatistics_1997}. 
+They characterize how data similarity 
+changes with distance, making possible to include the indipendent from the thesis
+spatial variation in a parametric model. 
+The empirical (sample) variogram $\hat{\gamma}(h)$ is calculated by:
+[ \hat{\gamma}(h) = \frac{1}{2|N(h)|} \sum_{(i,j) \in N(h)} [z(s_i) - z(s_j)]^2 ]
+
+where $z(s_i)$ is the observed value at location $s_i$, $N(h)$ is the set of all 
+point pairs separated by distance $h$, and $|N(h)|$ is the number of such pairs
+\cite{matheron_principles_1963, journel_mining_1978}.
+
+Variogram estimation typically follows a two-step process: first calculating the 
+empirical variogram from observed data points, then fitting a theoretical model to 
+this empirical structure \cite{webster_geostatistics_2007, oliver_geostatistics_2010}. 
+The empirical variogram is influenced by several factors:
+
+\begin{itemize} 
+    \item \textbf{Lag distance}: The distance interval $h$ at which pairs of points are compared 
+    \item \textbf{Binning}: How distance classes are discretized when calculating average semivariance 
+    \item \textbf{Directional parameters}: Whether to consider anisotropy (directional dependence) 
+    \item \textbf{Maximum distance}: The upper limit of separation distance to include 
+\end{itemize}
+
+Variogram parameters that require configuration, often without direct 
+optimization so reling on statistician-agronomic knowledge
+\cite{muller,GSTOOLS}, 
+include:
+
+\begin{itemize} 
+    \item \textbf{Nugget} ($c_0$): The y-intercept of the variogram, representing measurement error and microscale variation 
+    \item \textbf{Sill} ($c$): The plateau value reached by the variogram, equal to the variance of the random field 
+    \item \textbf{Range} ($a$): The distance beyond which observations become spatially independent 
+    \item \textbf{Anisotropy ratio}: The ratio between the maximum and minimum ranges in different directions 
+    \item \textbf{Anisotropy angle}: The direction of maximum spatial continuity 
+\end{itemize}
+
+Theoretical variogram models must be selected to fit the empirical variogram
+\cite{cressie_statistics_1993, goovaerts_geostatistics_1997}. 
+Common models include:
+
+\begin{itemize} 
+    \item \textbf{Spherical model}: Exhibits a progressive decrease of spatial dependence until reaching the range 
+    \item \textbf{Exponential model}: Approaches the sill asymptotically, with practical range typically defined at 95\% of the sill 
+    \item \textbf{Gaussian model}: Shows a parabolic behavior near the origin, indicating high continuity 
+    \item \textbf{Matérn model}: Offers flexibility through an additional smoothness parameter 
+    \item \textbf{Power model}: Used for non-stationary processes without a finite variance 
+    \item \textbf{Nugget effect model}: Represents microscale variation or measurement error 
+\end{itemize}
+
+Proper variogram modeling for excluding spatial variation in a parametric model
+must be fitted on control samples \cite{lark_optimized_2002, minasny_efficient_2005}
+to avoid including treatment effects in the 
+spatial terms of the parametric model. 
+The control samples must be homogeneously distributed
+in the space and also in time if the aim is to get spatiotemporal variation.
+In order to ensure the right control sampling, it is necessary to implement a 
+combined approach using both imbricated or adjacent controls along with included 
+controls in the following manner:
+imbricated or adjacent control observations to fit the variogram model 
+while the included control to test the error of the variogram predictions in a
+cross-validation fashon. Testing on included controls ensures the variogram model 
+error estimates aren't biased by the spatial arrangement of control observations. 
+Nevertheless, it is possible to not include control and test variogram model errors
+through other cross-validation technics such as Leave-One-Out or K-Folds on the 
+imbricated or adjacent controls
+\cite{webster_geostatistics_2007, hengl_practical_2009}. 
+If the only imbricated control is present, area size of control is even 
+more important, because having it smaller than thesis plot size could lead to a 
+wrong estimation of the variogram model. In practical terms, in an imbricated control
+arrangement, a buffer area with width equal to the treatment plot width must be placed around each plot,
+resulting equivalent to an adjacent control arrangement. 
+The spatial varibility estimation through variogram modeling was already proved 
+to be effective in many studies \cite{bullockDataIntensiveFarmManagement2019,castrignanoGeostatisticalApproachModelling2017,jinEfficientGeostatisticalAnalysis2021,puntelLeveragingDigitalAgriculture2024,trevisanSpatialVariabilityCrop2021}, 
+but it has the drawback of requiring a large control area. 
+If incorporating such large control areas is not feasible and only included 
+controls are available, 
+one can rely on Spatial Analysis of field Trials with Splines (SpATS)
+\cite{rodriguez-alvarezCorrectingSpatialHeterogeneity2018,rodriguez-alvarezFastSmoothingParameter2015,leeEfficientTwodimensionalSmoothing2013}.
+SpATS is a statistical model that enables correction of spatial heterogeneity
+of the data by using splines to model the spatial trend of the response variable.
+The SpATS model is based on the assumption that the response variable can be
+described as a function of the treatment effects and a smooth spatial trend.
+The model can be expressed as:
+[y_{ij} = \mu + \tau_i + f(u_j, v_j) + \varepsilon_{ij}]
+
+where: 
+\begin{itemize} 
+    \item $y_{ij}$ is the response variable observed at the $j$-th location for the $i$-th treatment 
+    \item $\mu$ is the overall mean \item $\tau_i$ represents the fixed effect of the $i$-th treatment 
+    \item $f(u_j, v_j)$ is the smooth spatial trend modeled using tensor-product P-splines, where $u_j$ and $v_j$ are the spatial coordinates of the $j$-th location 
+    \item $\varepsilon_{ij}$ is the random error term, typically assumed to be normally distributed with zero mean and constant variance 
+\end{itemize}
+
+The spatial component $f(u_j, v_j)$ can be further decomposed into additive and 
+interaction effects: 
+
+[ f(u_j, v_j) = f_1(u_j) + f_2(v_j) + f_{12}(u_j, v_j) ]
+
+where $f_1(u_j)$ and $f_2(v_j)$ are the main effects for rows and columns, 
+and $f_{12}(u_j, v_j)$ represents the smooth interaction surface that accounts 
+for localized spatial patterns. The smoothing parameters controlling the flexibility 
+of these components are estimated using restricted maximum likelihood (REML).
+
+According to Rodriguez-Alvarez et al. (2018) 
+\cite{rodriguez-alvarezCorrectingSpatialHeterogeneity2018}, 
+SpATS has been effectively applied 
+to field trials with varying dimensions, but there are practical considerations 
+for minimum requirements: a minimum grid of 5×5 (25 plots) is often considered a 
+practical lower limit, but complex spatial variations might require a bigger grid.
+SpATS has been successfully applied to breeding trials with experimental designs 
+exceeding hundreds of rows and columns, whereas the variogram approach can be effective 
+even with a single treatment plot, provided sufficient control area is available.
+Thus, as a rule of thumb, for trials with sufficient space to implement imbricated
+or adjacent checks with included control, variogram is advised,
+while for trials with many individuals (at least more than 25 in a regular grid) 
+and constrained space, SpATS estimations is often better.
+To evaluate how effectively the fitted model describes spatial variability of the 
+data for SpATS, 
+residuals of included control repetitions (compared to their mean) should be 
+smaller than the combined model random and unexplained variation.
+For both approaches, finding the optimal model across parameters that cannot be 
+directly solved requires, 
+an iterative approach testing various settings can be deployed. 
+The bigger drawback of adopting a geostatistic approach to exclude environmental
+variability is the need for georeferenced observations 
+\cite{oliver_geostatistics_2010, webster_geostatistics_2007}, 
+often impractical for traditional
+assessments like visual ones. One can argue that for trials with regular grid 
+layouts on flat fields, the geographic coordinates of the plots are not needed, as
+the distance between plots is regular and can be taken as unitary to get spatial coordinates.
+However, geostatistic models are sensitive to accuracy and precision of coordinates,
+so they must be scaled to the environmental feature minimum spatial size. 
+Since geostatistical approaches are adopted precisely to address unknown patterns 
+of environmental variability, 
+we cannot set a minimum coordinates precision "a priori".
+Today, digital technologies such as georeferenced imaging, ensure a very high precision
+of measurments \cite{mahlein_plant_2016}.    
+Digital approaches can automate data collection and analysis, improving the
+reproducibility of results, ultimately accelerating the development and registration of
+effective phytosanitary products.
 While the EPPO experimental design standards provide a solid foundation for conducting
 phytosanitary product trials, the increasing availability of digital technologies
 offers new opportunities to enhance the quality (in the "Quality of a mode of observation" sense \cite{EPPO_PP1_152}) 
 and efficiency of these assessments.
-Digital approaches can automate data collection and analysis, improving the
-reproducibility of results, ultimately accelerating the development and registration of
-effective phytosanitary products.
+
+Another advantage of adopting digital approaches is the
+dramatic increase in the number of observations that can be collected. Unlike
+manual methods, which are inherently limited by human capacity and time
+constraints, automated and semi-automated systems can continuously gather data
+with minimal interruption. This greater volume of data not only improves the
+resolution and granularity of analysis but also significantly enhances the
+statistical power of hypothesis testing.
+
+The power of a statistical test, defined as the probability of correctly
+rejecting the null hypothesis when it is false, directly depends on the sample
+size (number of observations), as noted by a classical statisticians as
+Fisher \cite{fisher_statistical_1992}. However effiecient technics
+to collect data does not garantee indipendency of samples. 
+In other words, having a powerfull tool to collect data does not mean that we
+can rely on a higher amount of replications.
+
+Wheter repeated observations
+per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
+(GLMM) \cite{gbur_analysis_2020,kumle_estimating_2021}
+should be used to benefit from 
+digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
+account for the correlation structure of repeated observation
+by incorporating random effects, thus providing more
+accurate estimates of treatment effects and their associated uncertainty.
+All the described geostatistical techniques can be seamlessly integrated with GLMMs to
+provide a comprehensive analysis of spatial-temporal data, enhancing the accuracy and
+reliability of treatment effect estimates.
 
 To regulate the use of this kind of technologies, the EPPO published a new standard, 
 PP 1/333(1) \cite{noauthor_span_2024}, which 
@@ -331,11 +523,8 @@ Quantitative variables: continuous (limited or not) and discrete
 can be summarized as metric measurments and counts respectively. 
 Perform metric measurements in agriculture is probability the anciest
 problem that human faced with geometry and the rise of geography. 
-Geomatics is the science that
-studies the acquisition, processing, analysis, and interpretation of
-geospatial data to measure and map.
 Photogrammetry is a geomatic technique that allows the acquisition of spatial
-data in metric scale by processing and analyzing photographic images.
+data in metric scale by processing and analyzing georeferenced photographic images.
 It allows to create digital maps of agriculture landscapes. This kinds of maps
 that will be better depicted in the following sections, can be analyzed to
 track and measure the spatial distribution of the variables of interest.
@@ -347,7 +536,8 @@ digital tools that can boost the data collection.
 However, adoption of digital tools is not only a matter of data collection but also of data
 analysis. In many case, perform classical statistical analysis on digital data with 
 reduce the benefits of collecting spatial data or simply is not possible. 
-Geostatistics offers a wide range of statistical methods that can be used to
+Geostatistics, as already shown, offers a wide range of statistical methods that 
+can be used to
 overcome the limitations of traditional statistical methods and to exploit the
 full potential of digital data.
 In the following sections, we will explore the opportunities and constraints of
@@ -360,22 +550,26 @@ objects and the environment through the process of recording, measuring, and int
 photographic images. It is widely used in various fields such as topographic mapping, 
 architecture, engineering, manufacturing, quality control, and geology. The fundamental 
 principle of photogrammetry is based on the geometry of image formation and the 
-mathematical relationships between the images and the objects being photographed.
+mathematical relationships between the images and the objects being photographed
+\cite{hartley_multiple_2003,kraus_photogrammetry_2007}.
 
 The basic principle of photogrammetry involves capturing multiple photographs of 
 an object or scene from different perspectives. By analyzing these images, it is 
 possible to reconstruct the three-dimensional (3D) coordinates of points on the 
 object's surface. The key steps in photogrammetry include image acquisition, image 
-orientation, and 3D reconstruction.
+orientation, and 3D reconstruction
+cite{hartley_multiple_2003, szeliski_computer_2010}.
 
 Images are typically captured using cameras mounted on various platforms such as 
 tripods, drones, or aircraft. The quality and resolution of the images are crucial 
 for accurate photogrammetric analysis. The images should have sufficient overlap 
-(usually 60-80\%) to ensure that common points are visible in multiple images.
+(usually 60-80\%) to ensure that common points are visible in multiple images
+\cite{colomina_unmanned_2014, nex_uav_2014}.
 
 Image orientation involves determining the position and orientation of the camera 
 at the time each photograph was taken. This process is divided into two main steps: 
-interior orientation and exterior orientation.
+interior orientation and exterior orientation 
+\cite{brown_close-range_1971, triggs_bundle_2000}.
 
 \begin{itemize}
     \item \textbf{Interior Orientation:} This step involves determining the internal 
@@ -392,11 +586,13 @@ interior orientation and exterior orientation.
 Once the images are oriented, the 3D coordinates of points on the object's surface 
 can be reconstructed using triangulation. Triangulation is a mathematical process 
 that involves intersecting lines of sight from multiple images to determine the 
-precise location of a point in 3D space.
+precise location of a point in 3D space
+\cite{hartley_multiple_2003, furukawa_accurate_2009}.
 
 Mathematically, the process can be described using the collinearity equations, which 
 relate the image coordinates (x, y) of a point to its object coordinates (X, Y, Z) 
-through the camera parameters:
+through the camera parameters
+\cite{wolf_elements_2014, kraus_photogrammetry_2007}:
 
 \[
 \begin{aligned}
@@ -415,35 +611,121 @@ where:
 
 By solving these equations for multiple images, the 3D coordinates of the object 
 points can be accurately determined.
+Recognized object points can be more or less sparse depending on the approach to 
+their recognition and pairing. 
+Historically, homologous points whithin images was
+performed manually. Today many algorithms doing this task are available. 
+They can be divided between point-based and area-based algorithms.
+Point-based algorithms identify and match distinct points in the images, such as
+corners or edges. These algorithms rely on feature descriptors (e.g., SIFT, SURF, ORB)
+\cite{lowe_distinctive_2004, bay_surf_2008, rublee_orb_2011}
+to extract and match key points across images. Area-based algorithms, on the other hand,
+use the entire image region to find correspondences. They typically involve
+template matching or correlation techniques to identify similar regions in different images.
+The choice of algorithm depends on the specific application and the characteristics
+of the images being processed.
+The 3D reconstruction process can also be enhanced using additional techniques such as
+structure from motion (SfM) and multi-view stereo (MVS)
+\cite{westoby_structure-from-motion_2012, seitz_comparison_2006}. 
+SfM is a technique that
+estimates the camera motion and 3D structure of a scene simultaneously from a
+set of images. It involves detecting and matching feature points across multiple images,
+and then using these correspondences to estimate the camera parameters and the 3D
+coordinates of the points. MVS, on the other hand, focuses on dense reconstruction
+by estimating the depth information for each pixel in the images. It uses the camera
+parameters and the matched feature points to create a dense point cloud or a 3D mesh
+of the scene.
+The resulting 3D model can be visualized and analyzed using specialized software,
+allowing for measurements of distances, areas, and volumes. Photogrammetry can also
+be used to create orthophotos, which are geometrically corrected images that can be
+used for mapping and analysis
+\cite{mikhail_introduction_2001, paine_aerial_2012}. 
+Orthophotos are generated by removing the effects of
+perspective distortion and terrain relief from the original images, resulting in a
+scale-accurate representation of the area.
 
+\subsection{Spectral Imaging}
+Spectral imaging is a technique that captures images at multiple wavelengths
+of the electromagnetic spectrum, providing valuable information about the spectral
+characteristics of objects and materials
+\cite{van_der_meer_imaging_2001, thenkabail_hyperspectral_2016}. 
+Multispectral images are typically acquired using specialized
+cameras or sensors that can capture light in different spectral bands, ranging
+from ultraviolet (UV) to infrared (IR) wavelengths
+\cite{thenkabail_spectral_2013, Mahlein}. 
+Some study tested also the 
+feasibility to use bands in the termal infrared (TIR) range \cite{wanOptimizingUAVbasedUncooled2024}.
+Each spectral band corresponds
+to a specific range of wavelengths, allowing for the analysis of the spectral
+signature of objects in the scene.
+The spectral signature is the unique pattern of reflectance or absorption of
+light at different wavelengths for a specific material or object. By analyzing
+the spectral signatures of different materials, it is possible to identify and
+classify them based on their spectral characteristics. This is particularly useful
+in applications such as vegetation analysis, where different plant species exhibit
+distinct spectral signatures due to variations in leaf pigments, moisture content,
+and other physiological factors
+\cite{sarvia}.
+Multispectral imaging can be performed using various platforms, including
+drones, satellites, and ground-based systems. The choice of platform depends on
+the specific application, the spatial resolution required, and the area of interest.
+The images captured by multispectral sensors are typically processed using
+specialized software that applies various algorithms to extract relevant information
+from the spectral data. This processing may include radiometric correction,
+geometric correction, and atmospheric correction to ensure accurate and reliable
+results.
+The resulting multispectral images can be analyzed to derive various indices
+and metrics that provide insights into the health and condition of vegetation.
+One of the most commonly used indices in agriculture is the Normalized Difference
+Vegetation Index (NDVI), which is calculated using the red and near-infrared
+(NIR) bands of the multispectral image \cite{rouse_monitoring_1974, tucker_red_1979}. 
+NDVI is a measure of vegetation
+greenness and is widely used to assess plant health, monitor crop growth, and
+detect stress conditions. The NDVI is calculated using the following formula:
+\[
+NDVI = \frac{NIR - Red}{NIR + Red}
+\]
+where \(NIR\) and \(Red\) are the reflectance values in the near-infrared and red
+bands, respectively. NDVI values range from -1 to +1, with higher values indicating
+greater vegetation density and health. NDVI is particularly useful for monitoring
+crop growth, assessing drought conditions, and detecting plant diseases.
+Other indices derived from multispectral images include the Enhanced
+Vegetation Index (EVI), Soil-Adjusted Vegetation Index (SAVI), and Leaf Area
+Index (LAI), each providing specific information about vegetation health and
+condition
+\cite{huete_overview_2002, qi_modified_1994}. 
+These indices can be used to monitor crop performance, assess
+nutrient status, and evaluate the impact of environmental factors on plant
+growth
+\cite{jones_remote_2010, mahlein_recent_2018}.
 
 \subsection{Machine Learning}
 
 Machine Learning (ML) is a branch of artificial intelligence (AI) that 
 focuses on the development of algorithms and models capable of learning 
-from and making predictions or decisions based on data. Unlike traditional 
+from and making predictions or decisions based on data \cite{Koza1996}. Unlike traditional 
 programming, where explicit instructions dictate the output for given inputs, 
 ML models identify patterns and relationships within data to generate 
-predictive outcomes. These techniques are particularly valuable when 
+predictive outcomes \cite{hastie_elements_2009}. These techniques are particularly valuable when 
 dealing with large, complex, or high-dimensional datasets, where manual 
 analysis would be impractical or inefficient.
 
 ML has gained substantial importance in various scientific fields, including 
-agriculture and plant protection. Within the context of phytosanitary product 
+agriculture \cite{agronomy13122976} and plant protection \cite{bock_visual_2020}. Within the context of phytosanitary product 
 efficacy evaluation, ML offers new opportunities to enhance data processing, 
 interpretation, and decision-making by leveraging vast amounts of observational 
-data collected during field trials. Integrating ML approaches into the framework 
+data collected during field trials \cite{bock_phytopathometry_2022}. Integrating ML approaches into the framework 
 of PP1/333 can significantly increase the robustness and accuracy of the analysis, 
-allowing for more data-driven and automated assessments.
+allowing for more data-driven and automated assessments \cite{barbedo_automatic_2014,arnal_barbedo_digital_2013,bock_plant_2010}.
 
 The primary objective of employing ML techniques in phytosanitary product trials 
 is to improve accuracy, precision, and reproducibility while reducing manual 
-intervention and subjective bias. Modern ML methods can analyze complex interactions 
+intervention and subjective bias \cite{bock_visual_2020}. Modern ML methods can analyze complex interactions 
 between variables and predict treatment outcomes under various conditions, thereby 
 facilitating more efficient and accurate efficacy assessments.
 
-There are several fundamental approaches in ML applicables to phytosanitary product
-evaluation under EPPO standards:
+There are several fundamental approaches in machine learning, each suited to different 
+types of tasks and data structures:
 
 \begin{itemize}
     \item \textbf{Supervised Learning}: Models are trained on labeled datasets where 
@@ -452,117 +734,82 @@ evaluation under EPPO standards:
     \item \textbf{Unsupervised Learning}: Models identify patterns or groupings within 
     data without labeled responses. Clustering (e.g., K-means, hierarchical clustering) 
     and dimensionality reduction (e.g., PCA, t-SNE) are common techniques.
-    \item \textbf{Semi-supervised Learning}: Combines a small amount of labeled data with 
+    \item \textbf{Weakly-supervised Learning}: Combines a small amount of labeled data with 
     a large amount of unlabeled data to improve learning accuracy.
+    \item \textbf{Self-supervised Learning}: A machine learning approach where the model
+    generates its own labels from the input data, creating supervised-like learning
+    tasks without external human annotations. The model learns by solving tasks
+    designed within the data itself, such as
+    reconstructing partially obscured images. This technique allows models to learn rich, generalizable
+    representations from large unlabeled datasets, enabling transfer learning and
+    reducing the dependency on expensive manual labeling.
 \end{itemize}
 
-ML models can also be integrated with statistical techniques, providing hybrid approaches that 
-combine inferential statistics with predictive modeling. For example, generalized linear models 
-(GLMs) can be enhanced with ML techniques to improve their accuracy and adaptability.
+ML models can also be integrated with statistical techniques, providing hybrid approaches 
+that combine inferential statistics with predictive modeling \cite{hastie_elements_2009}. 
+For example, generalized linear models (GLMs) can be enhanced with ML techniques to improve 
+their accuracy and adaptability \cite{salinas_ruiz_generalized_2023}. 
+Deep Learning (DL) is a subfield of ML that studies a particular class of models named Deep
+Neural Networks \cite{goodfellow_deep_2016}, the most active ML study area since ten years.
+Computer vision (CV) is another subfield of 
+ML that focuses on enabling machines to interpret and analyze visual information. 
+CV is the more and more treated lonely with DL instead of other ML approaches. In 
+the context of phytosanitary product efficacy evaluation, computer vision methods are 
+increasingly used for automated observation and measurement, particularly when integrated 
+with digital imaging and photogrammetry \cite{lu_instancefusion_2020}. The use of computer vision 
+within PP1/333 trials significantly enhances data acquisition by enabling digital sensing 
+and precise measurement of crop conditions \cite{barbedo_automatic_2014,arnal_barbedo_digital_2013}. Techniques such as image 
+segmentation, object detection, and texture analysis can automatically identify plant stress, 
+disease symptoms, and pest damage \cite{kamilaris_deep_2018}. In the context of experimental tests, object detection and 
+segmentation serve to localize in space and time the observations used during statistical tests on models such as GLMs.
+This allows the exclusion of spatiotemporal variability as explained in the next chapter 'Geostatistics'.
+Moreover, combining computer 
+vision with geostatistical methods allows for the spatial mapping of efficacy across field plots, 
+generating comprehensive visual assessments that support statistical evaluations 
+\cite{koldasbayeva_challenges_2024}.
 
-Deep Learning (DL) is a subfield of ML Utilizes neural networks with multiple layers 
-(deep architectures) to model complex relationships and patterns, particularly 
-in image and signal processing.
-DL is the most adopted ML method in agriculture, particularly in plant protection,
-as it is the most effective, accurate and precise in analyzing complex and high-dimensional data.
-The drawback of use DL is the need of a large amount of data to train the model.
+Having representative big datasets is a significant challenge in DL. 
+Large-scale, high-quality datasets are crucial for training robust machine learning models, but acquiring 
+such datasets is often prohibitively expensive and time-consuming. Many domains, particularly specialized 
+fields like plant protection products and phytopathometry research, 
+struggle to compile sufficiently large and diverse training datasets \cite{alom2019state}. The data collection process 
+in Supervised Learning involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
+Moreover, ensuring dataset representativeness is complex, as minor sampling biases can lead to models 
+that perform poorly when deployed in real-world scenarios \cite{torralba2011tiny}.
+Weakly-supervised and Self-supervised Learning came to leverage this problem giving the possibility
+to train models with respectivelly few or without human supervision.
+Weakly-supervised learning leverages pre-trained models developed through enormous computational efforts, 
+resulting in foundation models with remarkable generalization capabilities \cite{radford_learning_2021}. 
+These models can effectively perform new tasks with minimal fine-tuning, a phenomenon known as 
+"few-shot learning" or "in-context learning" \cite{brown_language_2020}. The remarkable ability of 
+these models to adapt to new tasks with very few examples represents a paradigm shift in machine 
+learning, where the pre-training phase becomes crucial in developing adaptable and versatile 
+AI systems \cite{bommasani_opportunities_2022}.
+Self-supervised learning, while promising to revolutionize machine learning by eliminating 
+the need for manual labeling, presents its own set of challenges \cite{he_momentum_2020}. 
+The computational resources required for training large self-supervised models are substantial, 
+often exceeding the capabilities of smaller research labs or specialized studies \cite{patterson_carbon_2021}. 
+This computational intensity creates a significant barrier to entry, particularly for domain-specific 
+research like phytosanitary product efficacy evaluation, where the computational and expertise 
+requirements may outstrip the available resources of a typical research group 
+\cite{strubell_energy_2019}. Despite its transformative potential, self-supervised learning remains a 
+cutting-edge approach that requires significant computational infrastructure and interdisciplinary expertise to implement effectively.
 
-Computer Vision (CV) levereages ML technics to interpret and analyze 
-visual information. In the context of phytosanitary product efficacy evaluation, CV
-methods are increasingly used for automated observation and measurement, particularly when 
-integrated with digital imaging and photogrammetry.
-
-The use of CV within PP1/333 trials significantly enhances data acquisition by 
-enabling continuous monitoring and precise measurement of crop conditions. Techniques such as 
-image segmentation, object detection, and texture analysis can automatically identify plant 
-stress, disease symptoms, and pest damage.
-
-CV is already observed to be able to reproduce the most of the assessments
-required by EPPO standards and the main constraints for its adoption is the dataset size, 
-thus the feasability of using such technics to evaluate phytosanitary products
-efficacy is strictly related on the match between minimum requirements and data
-availability.
-
-\subsection{Geostatistics}
-
-One of the most compelling advantages of adopting digital approaches is the
-dramatic increase in the number of observations that can be collected. Unlike
-manual methods, which are inherently limited by human capacity and time
-constraints, automated and semi-automated systems can continuously gather data
-with minimal interruption. This greater volume of data not only improves the
-resolution and granularity of analysis but also significantly enhances the
-statistical power of hypothesis testing.
-
-The power of a statistical test, defined as the probability of correctly
-rejecting the null hypothesis when it is false, directly depends on the sample
-size (number of observations), as noted by a classical statisticians as
-Fisher \cite{fisher_statistical_1992}. However effiecient technics
-to collect data does not garantee indipendency of samples. 
-In other words, having a powerfull tool to collect data does not mean that we
-can rely on a higher amount of replications.
-Wheter repeated observations
-per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
-(GLMM) \cite{gbur_analysis_2020,kumle_estimating_2021}
-should be used to benefit from 
-digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
-account for the correlation structure of repeated observation
-by incorporating random effects, thus providing more
-accurate estimates of treatment effects and their associated uncertainty.
-% To clarify the need of GLMMs, let's consider a simple example. In a field trial
-% where the same plot is observed multiple times, the observations within the same
-% plot are likely to be correlated due to the shared environmental conditions.
-% Ignoring this correlation can lead to biased estimates of treatment effects and
-% inflated Type I error rates. Averaging all the observations within a plot could
-% be a solution, and would allow for the use of standard GLMs, but this approach
-% would also reduce the sample size and statistical power, potentially masking treatment
-% effects. In a scenario where we deliberately used digital tools to increase the
-% number of observations, it would be simply a waste to then reduce the sample
-% size by averaging the data. GLMMs provide a more elegant solution by modeling
-% the correlation structure directly, allowing for the inclusion of all observations
-% while appropriately accounting for the correlation. This approach maximizes the
-% statistical power of the analysis and ensures that the results are both accurate
-% and reliable.
-GLMMs can also be used to model spatial and temporal autocorrelation, which is
-common in field trials and can significantly impact the validity of statistical
-inferences. Randomization of treatments within blocks is designed to minimize
-the impact of spatial variability, but residual spatial autocorrelation may still
-exist due to unmeasured environmental factors. Accounting for these correlation
-structures ensures that whether the randomization fails in capture environmental
-variability, the results are still valid and reliable.
-
-Geostatistics encompasses a range of statistical methods aimed at analyzing
-spatial and spatiotemporal data. In the context of phytosanitary product trials,
-geostatistical methods allow for the quantification of spatial variation and the
-prediction of treatment effects across plots. The most prominent techniques
-include kriging, spatial covariates modeling, and spatial analysis of field trials
-with splines.
-
-\textbf{Kriging} is an advanced interpolation method that provides best linear
-unbiased predictions (BLUP) of spatially correlated variables. By modeling the
-spatial covariance structure through variograms, kriging allows for accurate
-prediction of unmeasured locations, reducing spatial noise and enhancing the
-interpretation of treatment effects.
-
-\textbf{Spatial Covariates} involve incorporating additional spatial information
-(such as soil properties or topography) into statistical models, thereby
-improving the accuracy of predictions. Integrating spatial covariates helps to
-account for environmental variability and isolate the true treatment effect.
-
-\textbf{Spatial Analysis of Field Trials with Splines} leverages spline functions
-to model smooth spatial trends, effectively addressing spatial heterogeneity.
-Splines offer a flexible and efficient way to account for gradual changes across
-the field, complementing other geostatistical methods.
-
-All these geostatistical techniques can be seamlessly integrated with GLMMs to
-provide a comprehensive analysis of spatial-temporal data, enhancing the accuracy and
-reliability of treatment effect estimates.
-
-Analysis of data collected under trials that share the same protocol, thus
-from studies with the same objectives and the same thesis,
-but realized in different places and/or moments, 
-are named "Statistical analysis of trial series" \cite{EPPO_PP1_152}.
-
-CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI ALL'ANALISI SPAZIALE/TEMPORALE
+A way to use these advanced learning approaches is to leverage pre-trained models as feature extractors through unsupervised 
+inference techniques \cite{chen_simple_2020}. Researchers can exploit the rich representations learned by foundation models, 
+applying them as powerful feature extraction mechanisms across various downstream tasks \cite{devlin_bert_2019}. Alternatively, 
+these pre-trained models can serve as robust backbones, with researchers fine-tuning only the final classification or 
+prediction layers to adapt the model to specific domain requirements \cite{he_momentum_2020}. This transfer learning 
+approach allows for efficient model adaptation, reducing the need for extensive domain-specific data collection and 
+annotation \cite{kornblith_better_2019}. In the context of specialized fields like phytosanitary research, such 
+techniques enable more efficient model development by leveraging the generalization capabilities of large-scale 
+pre-trained models, effectively bridging the gap between computational limitations and domain-specific research 
+needs \cite{razavian_cnn_2014}.
+The transfer of knowledge from foundation models to domain-specific applications represents a significant advancement 
+in machine learning methodologies. By extracting and repurposing learned representations, researchers can develop 
+more sophisticated and adaptable models with minimal additional training resources \cite{zoph_rethinking_2020}. 
+This approach not only mitigates the challenges of data scarcity but also provides a more computationally 
+efficient pathway to developing advanced predictive models in specialized research domains \cite{tan_efficientnet_2020}.
 
 \section{The Literature Gap and the Thesis Aims}
 
@@ -575,8 +822,9 @@ CONTUNA QUI PARLANDO DI TRIAL SERIES E PER COLLEGARTI ALL'ANALISI SPAZIALE/TEMPO
 
 
 Despite the clear benefits of integrating geomatics techniques into phytosanitary
-product efficacy trials, there is a notable gap in the literature regarding the
-practical implementation and evaluation of these methods. 
+product efficacy trials, the high amount of observations needed for 
+% there is a notable gap in the literature regarding the
+% practical implementation and evaluation of these methods. 
 The aim of this thesis is to investigate the limits of integrating
 geomatics techniques in the design and analysis of phytosanitary product efficacy trials.
 As already discussed, the EPPO standards provide a solid foundation for conducting experimental trials,

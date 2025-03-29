@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{noauthor_span_2024}
-{\textless}span style="font-variant:small-caps;"{\textgreater}{PP}{\textless}/span{\textgreater} 1/333 (1) {Adoption} of digital technology for data generation for the efficacy evaluation of plant protection products.
-\newblock {\em EPPO Bulletin}, page epp.13037, November 2024.
-
 \bibitem{EWRS_score}
 H.~Bleiholder, T.~van~den Boom, P.~Langelüddeke, and R.~Stauss.
 \newblock Einheitliche codierung der phänologischen entwicklungsstadien mono- und dikotyler pflanzen - erweiterte {BBCH}-skala, allgemein.
@@ -44,25 +40,9 @@ H.~Bleiholder, T.~van~den Boom, P.~Langelüddeke, and R.~Stauss.
 \newblock Regulation ({EC}) {No} 1107/2009 of the {European} {Parliament} and of the {Council} of 21 {October} 2009 concerning the placing of plant protection products on the market, 2009.
 \newblock Pages: 1–50 Volume: L 309.
 
-\bibitem{fisher_statistical_1992}
-R.~A. Fisher.
-\newblock Statistical {Methods} for {Research} {Workers}.
-\newblock In Samuel Kotz and Norman~L. Johnson, editors, {\em Breakthroughs in {Statistics}: {Methodology} and {Distribution}}, pages 66--70. Springer, New York, NY, 1992.
-
-\bibitem{gbur_analysis_2020}
-Edward~E. Gbur, Walter~W. Stroup, Kevin~S. McCarter, Susan Durham, Linda~J. Young, Mary Christman, Mark West, and Matthew Kramer.
-\newblock {\em Analysis of {Generalized} {Linear} {Mixed} {Models} in the {Agricultural} and {Natural} {Resources} {Sciences}}.
-\newblock John Wiley \& Sons, January 2020.
-\newblock Google-Books-ID: BgnMDwAAQBAJ.
-
 \bibitem{IPPC}
 {International Plant Protection Convention}.
 \newblock International standards for phytosanitary measures (ispms), 2022.
-
-\bibitem{kumle_estimating_2021}
-Levi Kumle, Melissa L.-H. Võ, and Dejan Draschkow.
-\newblock Estimating power in (generalized) linear mixed models: {An} open introduction and tutorial in {R}.
-\newblock {\em Behavior Research Methods}, 53(6):2528--2543, December 2021.
 
 \bibitem{WTO_SPS_Agreement}
 {World Trade Organization}.

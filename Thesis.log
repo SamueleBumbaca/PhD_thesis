@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:10
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2736,8 +2736,28 @@ Overfull \hbox (2.78389pt too wide) in paragraph at lines 933--944
 
 
 [200]
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf>
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf>
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf, page 1>
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf, page 1>
 
-[201] (./Thesis.aux)
+
+[201]
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf, page 1>
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf, page 1>
+
+
+File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
+<use Intestazione/ringraziamenti.pdf, page 1>
+[202
+
+] (./Thesis.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -2746,12 +2766,12 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 360AFC1D81871DCD84BBE006F53DD66D;2509.
  ) 
 Here is how much of TeX's memory you used:
- 19824 strings out of 475921
- 399879 string characters out of 5775722
+ 19836 strings out of 475921
+ 400324 string characters out of 5775722
  848843 words of memory out of 5000000
- 42356 multiletter control sequences out of 15000+600000
+ 42366 multiletter control sequences out of 15000+600000
  562023 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  86i,17n,133p,1831b,847s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (201 pages).
+Output written on Thesis.pdf (202 pages).

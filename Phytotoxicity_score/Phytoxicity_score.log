@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 16:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,15 +698,15 @@ Overfull \hbox (2.08076pt too wide) in paragraph at lines 77--95
 
 
 
-[97
+[122
 
 ]
 
-[98]
+[123]
 
-[99]
+[124]
 
-[100]
+[125]
 Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\TU/Arial(0)/m/n/12 Depending on
  []
@@ -773,7 +773,7 @@ Overfull \hbox (119.13184pt too wide) in alignment at lines 138--138
 
 
 
-[101]
+[126]
 Overfull \hbox (7.30174pt too wide) in paragraph at lines 149--155
 \TU/Arial(0)/m/n/12 can be unique due to their novelty, making them unpredictable. There-
  []
@@ -785,42 +785,42 @@ Overfull \hbox (10.11397pt too wide) in paragraph at lines 156--161
 
 
 
-[102
+[127
 
 
 ]
 
-[103]
+[128]
 File: Images/agronomy-14-00306-g001.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g001.png>
 
 
-[104]
+[129]
 
-[105]
+[130]
 File: Images/agronomy-14-00306-g002.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g002.png>
 
 
-[106]
+[131]
 
-[107]
+[132]
 
-[108]
+[133]
 
-[109]
+[134]
 File: Images/agronomy-14-00306-g003.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g003.png>
 
 
-[110]
+[135]
 Overfull \hbox (2.50897pt too wide) in paragraph at lines 268--270
 []\TU/Arial(0)/m/n/12 where H is the camera-to-target distance, f is the camera focal length,
  []
 
 
 
-[111]
+[136]
 Overfull \hbox (7.21515pt too wide) in paragraph at lines 271--276
 []\TU/Arial(0)/m/n/12 When planning an acquisition, it is important to ensure that the coarser
  []
@@ -829,30 +829,30 @@ File: Images/agronomy-14-00306-g004.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g004.png>
 
 
-[112]
+[137]
 File: Images/agronomy-14-00306-g005.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g005.png>
 
 
-[113]
+[138]
 
-[114]
+[139]
 
-[115]
+[140]
 Overfull \hbox (2.27556pt too wide) in paragraph at lines 329--329
 |[]\TU/Arial(0)/b/n/14.4 Radiometric Calibration of the Multi-Spectral
  []
 
 
 
-[116]
+[141]
 File: Images/agronomy-14-00306-g006.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g006.png>
 
 
-[117]
+[142]
 
-[118]
+[143]
 Underfull \hbox (badness 6995) in paragraph at lines 390--390
 \TU/Arial(0)/m/n/12 calibrated reflectance values
  []
@@ -869,7 +869,7 @@ Underfull \hbox (badness 1122) in paragraph at lines 390--390
 
 
 
-[119]
+[144]
 Overfull \hbox (55.35852pt too wide) in paragraph at lines 417--417
 []|$[][] [][] \OT1/cmr/m/n/12 +
  []
@@ -891,57 +891,52 @@ Overfull \hbox (27.029pt too wide) in paragraph at lines 417--417
 
 
 
-[120]
+[145]
 
-[121]
+[146]
 
-[122]
+[147]
 Overfull \hbox (7.73318pt too wide) in paragraph at lines 469--479
  [][] 
  []
 
 
 
-[123]
+[148]
 File: Images/agronomy-14-00306-g007.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g007.png>
 
 
-[124]
+[149]
 
-[125]
+[150]
 Overfull \hbox (0.75421pt too wide) in paragraph at lines 545--552
 []\TU/Arial(0)/m/n/12 The stacked model predictions ensure a mean absolute error, slightly
  []
 
 
 
-[126]
+[151]
 File: Images/agronomy-14-00306-g008.png Graphic file (type bmp)
 <Images/agronomy-14-00306-g008.png>
 
 
-[127]
+[152]
 Overfull \hbox (2.74054pt too wide) in paragraph at lines 568--578
 \TU/Arial(0)/m/n/12 acquired images more similar, partially overcoming one of the biggest
  []
 
 
 
-[128]
+[153]
 
-[129]
+[154]
 
-[130] (./Phytoxicity_score.bbl
+[155] (./Phytoxicity_score.bbl
 
-[131]
+[156]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\TU/Arial(0)/m/n/12 MAPIR_Survey3_Camera_Datasheet_English.pdf.
- []
-
-
-Overfull \hbox (317.34834pt too wide) in paragraph at lines 4--6
-\TU/Arial(0)/m/n/12 https://drive.google.com/file/d/10gIzOjWVNoG9dvZwmAUG9fVqkEZHXEur/view?usp=drive_open&usp=embed_facebook. 
  []
 
 
@@ -951,7 +946,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 20--22
 
 
 
-[132
+[157
 
 ]
 Underfull \hbox (badness 7064) in paragraph at lines 61--64
@@ -960,7 +955,7 @@ Underfull \hbox (badness 7064) in paragraph at lines 61--64
 
 
 
-[133]
+[158]
 Underfull \hbox (badness 10000) in paragraph at lines 66--69
 []\TU/Arial(0)/m/n/12 MAPIR CAMERA.  MAPIR Camera Re-
  []
@@ -977,7 +972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
 
 
-[134]
+[159]
 Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\TU/Arial(0)/m/n/12 2022-06-27/29 EPPO.  Digital Technology and Ef-
  []
@@ -985,11 +980,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
 Underfull \hbox (badness 10000) in paragraph at lines 101--104
 \TU/Arial(0)/m/n/12 ficacy Evaluation of Plant Protection Products.
- []
-
-
-Overfull \hbox (470.7585pt too wide) in paragraph at lines 101--104
-\TU/Arial(0)/m/n/12 https://www.eppo.int/MEETINGS/2022_meetings/https%3A%2F%2Fwww.eppo.int%2FMEETINGS%2F2022_meetings%2Fwk_digital_technology_ppp. 
  []
 
 
@@ -1014,9 +1004,9 @@ Underfull \hbox (badness 1038) in paragraph at lines 126--129
 
 
 
-[135]
+[160]
 
-[136]
+[161]
 Underfull \hbox (badness 1242) in paragraph at lines 170--173
 []\TU/Arial(0)/m/n/12 David G. Lowe.  Distinctive Image Features from Scale-
  []
@@ -1024,22 +1014,26 @@ Underfull \hbox (badness 1242) in paragraph at lines 170--173
 Missing character: There is no ^^92 (U+0092) in font Arial/OT:language=dflt;mapping=tex-text;!
 
 
-[137]
+[162]
 Underfull \hbox (badness 1231) in paragraph at lines 225--228
 []\TU/Arial(0)/m/n/12 Carsten Rother, Vladimir Kolmogorov, and Andrew Blake.
  []
 
 
 
-[138]
+[163]
 
-[139])
+[164])
 
-[140] (./Phytoxicity_score.aux)
+[165] (./Phytoxicity_score.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Phytoxicity_score.out' has not changed.
 (rerunfilecheck)             Checksum: D665AE77E4627DA889AA28E2030EFEFE;3320.
  ) 

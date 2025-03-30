@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,7 +641,7 @@ Overfull \hbox (4.7503pt too wide) in paragraph at lines 56--74
 
 ]
 
-[28
+[53
 
 ]
 Overfull \hbox (3.23273pt too wide) in paragraph at lines 125--145
@@ -650,9 +650,9 @@ Overfull \hbox (3.23273pt too wide) in paragraph at lines 125--145
 
 
 
-[29]
+[54]
 
-[30]
+[55]
 Overfull \hbox (4.99483pt too wide) in paragraph at lines 169--194
 []\TU/Arial(0)/m/n/12 To represent the categories and compare performance between pure-
  []
@@ -669,28 +669,28 @@ Overfull \hbox (14.70052pt too wide) in paragraph at lines 169--194
 
 
 
-[31]
+[56]
 
-[32]
+[57]
 
-[33]
+[58]
 Overfull \hbox (4.37634pt too wide) in paragraph at lines 271--303
 \TU/Arial(0)/m/n/12 training is still prohibitive for many applications. No backbone weights
  []
 
 
 
-[34]
+[59]
 
-[35]
+[60]
 
-[36]
+[61]
 
-[37]
+[62]
 
-[38]
+[63]
 
-[39]
+[64]
 File: Plots/DavidEtAl.png Graphic file (type bmp)
 <Plots/DavidEtAl.png>
 File: Plots/LiuEtAl.png Graphic file (type bmp)
@@ -711,7 +711,7 @@ LaTeX Warning: Float too large for page by 137.95003pt on input line 462.
 
 
 
-[40]
+[65]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 477.
 
 
@@ -780,7 +780,7 @@ Overfull \hbox (6.76593pt too wide) in paragraph at lines 586--589
 
 
 
-[41
+[66
 
 
 
@@ -791,18 +791,18 @@ Overfull \hbox (6.76593pt too wide) in paragraph at lines 586--589
 
 ]
 
-[42]
+[67]
 
-[43]
+[68]
 
-[44]
+[69]
 Overfull \hbox (0.30513pt too wide) in paragraph at lines 611--614
 []\TU/Arial(0)/m/sc/12 The training dataset was composed of the OOD or ID training dataset
  []
 
 
 
-[45]
+[70]
 Overfull \hbox (17.21358pt too wide) in paragraph at lines 635--636
 \TU/Arial(0)/m/sc/12 sions to balance open-vocabulary generalization and task-specific
  []
@@ -814,7 +814,7 @@ Overfull \hbox (13.34953pt too wide) in paragraph at lines 638--642
 
 
 
-[46]
+[71]
 Underfull \hbox (badness 6016) in paragraph at lines 677--677
 []|\TU/Arial(0)/b/n/12 s$[]$ or
  []
@@ -831,22 +831,22 @@ Overfull \hbox (1.48318pt too wide) in paragraph at lines 677--677
 
 
 
-[47]
+[72]
 
-[48]
+[73]
 
-[49]
+[74]
 Overfull \hbox (0.7414pt too wide) in paragraph at lines 735--736
 []\TU/Arial(0)/m/sc/12 For object detection performance, we used the standard COCO eval-
  []
 
 
 
-[50]
+[75]
 
-[51]
+[76]
 
-[52]
+[77]
 Overfull \hbox (0.9383pt too wide) in paragraph at lines 818--818
 []|$\OML/cmm/m/it/12 RMSE$| 
  []
@@ -863,9 +863,9 @@ Overfull \hbox (3.96658pt too wide) in paragraph at lines 818--818
 
 
 
-[53]
+[78]
 
-[54]
+[79]
 File: Plots/metrics_OOD_datasets.pdf Graphic file (type pdf)
 <use Plots/metrics_OOD_datasets.pdf>
 
@@ -874,14 +874,14 @@ LaTeX Warning: Float too large for page by 159.63268pt on input line 896.
 
 
 
-[55]
+[80]
 Overfull \hbox (8.52998pt too wide) in paragraph at lines 1012--1017
 []\TU/Arial(0)/m/sc/12 For the combinations of model-architecture/dataset-size that achieved
  []
 
 
 
-[56
+[81
 
 
 
@@ -891,34 +891,34 @@ File: Plots/r2_ap_vs_dataset_size_yolov5.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolov5.pdf>
 
 
-[57]
+[82]
 File: Plots/r2_ap_vs_dataset_size_yolov8.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolov8.pdf>
 
 
-[58]
+[83]
 File: Plots/r2_ap_vs_dataset_size_yolo11.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolo11.pdf>
 
 
-[59]
+[84]
 File: Plots/r2_ap_vs_dataset_size_rtdetr.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_rtdetr.pdf>
 
 
-[60]
+[85]
 File: Plots/r2_ap_vs_dataset_quality.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_quality.pdf>
 
 
-[61]
+[86]
 Overfull \hbox (3.66475pt too wide) in paragraph at lines 1043--1045
 \TU/Arial(0)/m/sc/12 The few-shots models were evaluated against the established bench-
  []
 
 
 
-[62
+[87
 
 
 
@@ -944,14 +944,14 @@ File: Plots/r2_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_shots_cdvito.pdf>
 
 
-[63]
+[88]
 File: Plots/rmse_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
 <use Plots/rmse_ap_vs_shots_cdvito.pdf>
 
 
-[64]
+[89]
 
-[65
+[90
 
 
 
@@ -965,7 +965,7 @@ File: Plots/few_shot_annotations.pdf Graphic file (type pdf)
 <use Plots/few_shot_annotations.pdf>
 
 
-[66]
+[91]
 Overfull \hbox (8.28194pt too wide) in paragraph at lines 1188--1197
 \TU/Arial(0)/m/sc/12 Our experiments clearly demonstrate the critical importance of dataset
  []
@@ -987,7 +987,7 @@ Overfull \hbox (3.04626pt too wide) in paragraph at lines 1198--1213
 
 
 
-[67
+[92
 
 
 
@@ -1001,12 +1001,12 @@ LaTeX Warning: Float too large for page by 52.95319pt on input line 1213.
 
 
 
-[68]
+[93]
 File: Plots/zeroshot_images.pdf Graphic file (type pdf)
 <use Plots/zeroshot_images.pdf>
 
 
-[69]
+[94]
 Overfull \hbox (14.68219pt too wide) in paragraph at lines 1218--1218
 |[]\TU/Arial(0)/b/n/14.4 Many-Shot Object Detection: Architecture and
  []
@@ -1028,7 +1028,7 @@ Overfull \hbox (9.42256pt too wide) in paragraph at lines 1219--1238
 
 
 
-[70
+[95
 
 
 
@@ -1039,20 +1039,20 @@ Overfull \hbox (9.42256pt too wide) in paragraph at lines 1219--1238
 
 ]
 
-[71]
+[96]
 Overfull \hbox (4.74092pt too wide) in paragraph at lines 1246--1252
 \TU/Arial(0)/m/sc/12 Our investigation into minimum dataset quality requirements revealed
  []
 
 
 
-[72]
+[97]
 
-[73]
+[98]
 
-[74]
+[99]
 
-[75]
+[100]
 Overfull \hbox (8.1615pt too wide) in paragraph at lines 1329--1333
 \TU/Arial(0)/m/sc/12 with 65-90% of the original quality. This suggests that semi-automated
  []
@@ -1064,18 +1064,18 @@ Overfull \hbox (0.10616pt too wide) in paragraph at lines 1338--1345
 
 
 
-[76]
+[101]
 Overfull \hbox (7.44795pt too wide) in paragraph at lines 1357--1365
 \TU/Arial(0)/m/sc/12 quiring unreasonable dataset size to achieve benchmark performance
  []
 
 
 
-[77] (./Plant_count.bbl
+[102] (./Plant_count.bbl
 
-[78]
+[103]
 
-[79
+[104
 
 ]
 Underfull \hbox (badness 2334) in paragraph at lines 49--52
@@ -1084,9 +1084,9 @@ Underfull \hbox (badness 2334) in paragraph at lines 49--52
 
 
 
-[80]
+[105]
 
-[81]
+[106]
 Underfull \hbox (badness 1057) in paragraph at lines 94--96
 \TU/Arial(0)/m/sc/12 Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa
  []
@@ -1103,7 +1103,7 @@ Underfull \hbox (badness 1448) in paragraph at lines 98--101
 
 
 
-[82]
+[107]
 Underfull \hbox (badness 3635) in paragraph at lines 121--124
 []\TU/Arial(0)/m/sc/12 Héctor García-Martínez, Héctor Flores-Magdaleno, Abdul
  []
@@ -1125,37 +1125,37 @@ Underfull \hbox (badness 1348) in paragraph at lines 131--133
 
 
 
-[83]
+[108]
 
-[84]
+[109]
 
-[85]
+[110]
 
-[86]
+[111]
 
-[87]
+[112]
 
-[88]
+[113]
 
-[89]
+[114]
 Underfull \hbox (badness 1867) in paragraph at lines 296--299
 \TU/Arial(0)/m/sc/12 ception in Agricultural Robotics.  In \TU/Arial(0)/m/it/12 2023 IEEE Interna-
  []
 
 
 
-[90]
+[115]
 
-[91]
+[116]
 Underfull \hbox (badness 1038) in paragraph at lines 368--371
 \TU/Arial(0)/m/sc/12 on Lightweight Model of Maize Seedling Object Detection
  []
 
 
 
-[92])
+[117])
 
-[93] (./Plant_count.aux)
+[118] (./Plant_count.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1163,6 +1163,9 @@ L3 programming layer <2024-11-02>
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Plant_count.out' has not changed.
 (rerunfilecheck)             Checksum: CD84723F4DCEA1F91D28DE2BFAE76FDF;5173.

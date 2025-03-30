@@ -1,10 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  23 MAR 2025 22:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:07
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/samuelebumbaca/repositories/PhD_thesis/Anomaly_detection/Anomaly_detection
-(/home/samuelebumbaca/repositories/PhD_thesis/Anomaly_detection/Anomaly_detection.tex
+**Anomaly_detection.tex
+(./Anomaly_detection.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
 (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/base/report.cls
@@ -723,8 +722,8 @@ Overfull \hbox (1.2011pt too wide) in paragraph at lines 114--121
 
 
 [145]
-Overfull \hbox (3.03194pt too wide) in paragraph at lines 145--146
-\TU/Arial(0)/m/n/12 ages of individual plant leaves photographed against controlled back-
+Overfull \hbox (17.49092pt too wide) in paragraph at lines 145--146
+\TU/Arial(0)/m/n/12 of individual plant leaves photographed against controlled backgrounds.
  []
 
 
@@ -792,18 +791,7 @@ Overfull \hbox (5.68025pt too wide) in paragraph at lines 271--272
 
 [152]
 
-Package natbib Warning: Citation `liu2008isolation' on page 153 undefined on input line 303.
-
-
-
 [153]
-
-Package natbib Warning: Citation `scholkopf2001estimating' on page 154 undefined on input line 305.
-
-
-Package natbib Warning: Citation `breunig2000lof' on page 154 undefined on input line 307.
-
-
 Overfull \hbox (1.63155pt too wide) in paragraph at lines 321--322
 []\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
  []
@@ -1000,12 +988,12 @@ Overfull \hbox (10.75264pt too wide) in paragraph at lines 512--513
 (./Anomaly_detection.bbl
 
 [168]
-Underfull \hbox (badness 6032) in paragraph at lines 22--25
+Underfull \hbox (badness 6032) in paragraph at lines 27--30
 \TU/Arial(0)/m/n/12 ing for Anomaly Detection: A Survey, January 2019.
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 27--30
+Underfull \hbox (badness 1057) in paragraph at lines 32--35
 \TU/Arial(0)/m/n/12 Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa
  []
 
@@ -1014,44 +1002,43 @@ Underfull \hbox (badness 1057) in paragraph at lines 27--30
 [169
 
 ]
-Underfull \hbox (badness 1377) in paragraph at lines 52--55
+Underfull \hbox (badness 1377) in paragraph at lines 57--60
 []\TU/Arial(0)/m/n/12 Ryoya Katafuchi and Terumasa Tokunaga.  Image-based
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 62--66
-\TU/Arial(0)/m/n/12 Stefano Panno, Giuseppe Scuderi, Paolo Ruisi, Paolo
  []
 
 
 
 [170]
-
-[171])
-
-Package natbib Warning: There were undefined citations.
-
+Underfull \hbox (badness 5756) in paragraph at lines 72--76
+\TU/Arial(0)/m/n/12 Stefano Panno, Giuseppe Scuderi, Paolo Ruisi, Paolo
+ []
 
 
-[172] (./Anomaly_detection.aux)
+
+[171]
+Underfull \hbox (badness 1817) in paragraph at lines 100--103
+\TU/Arial(0)/m/n/12 Smola, and Robert C. Williamson.  Estimating the sup-
+ []
+
+
+
+[172])
+
+[173] (./Anomaly_detection.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Anomaly_detection.out' has not changed.
 (rerunfilecheck)             Checksum: 060AF5F4E7E1125493AD92305ECF034D;1317.
  ) 
 Here is how much of TeX's memory you used:
- 19344 strings out of 475921
- 377353 string characters out of 5775722
+ 19352 strings out of 475921
+ 377397 string characters out of 5775722
  857822 words of memory out of 5000000
- 41882 multiletter control sequences out of 15000+600000
+ 41891 multiletter control sequences out of 15000+600000
  562501 words of font info for 77 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 86i,12n,133p,1083b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,133p,1024b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Anomaly_detection.pdf (31 pages).
+Output written on Anomaly_detection.pdf (32 pages).

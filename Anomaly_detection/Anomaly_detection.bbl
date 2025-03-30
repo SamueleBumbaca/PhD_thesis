@@ -12,6 +12,11 @@ Jayme G.~A. Barbedo.
 \newblock Factors influencing the use of deep learning for plant disease recognition.
 \newblock {\em Biosystems Engineering}, 172:84--91, August 2018.
 
+\bibitem{breunig2000lof}
+Markus~M. Breunig, Hans-Peter Kriegel, Raymond~T. Ng, and J\"{o}rg Sander.
+\newblock Lof: identifying density-based local outliers.
+\newblock {\em SIGMOD Rec.}, 29(2):93–104, May 2000.
+
 \bibitem{bumbacaSupportingScreeningNew2024}
 Samuele Bumbaca and Enrico Borgogno-Mondino.
 \newblock Supporting {Screening} of {New} {Plant} {Protection} {Products} through a {Multispectral} {Photogrammetric} {Approach} {Integrated} with {AI}.
@@ -53,6 +58,11 @@ Ryoya Katafuchi and Terumasa Tokunaga.
 \newblock Image-based {Plant} {Disease} {Diagnosis} with {Unsupervised} {Anomaly} {Detection} {Based} on {Reconstructability} of {Colors}, September 2021.
 \newblock arXiv:2011.14306 [cs].
 
+\bibitem{liu2008isolation}
+Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
+\newblock Isolation forest.
+\newblock In {\em 2008 Eighth IEEE International Conference on Data Mining}, pages 413--422, 2008.
+
 \bibitem{liuSwinTransformerHierarchical2021}
 Ze~Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, and Baining Guo.
 \newblock Swin {Transformer}: {Hierarchical} {Vision} {Transformer} using {Shifted} {Windows}, August 2021.
@@ -85,6 +95,11 @@ Lukas Ruff, Jacob~R. Kauffmann, Robert~A. Vandermeulen, Grégoire Montavon, Wojc
 Serge Savary, Laetitia Willocquet, Sarah~Jane Pethybridge, Paul Esker, Neil McRoberts, and Andy Nelson.
 \newblock The global burden of pathogens and pests on major food crops.
 \newblock {\em Nature Ecology \& Evolution}, 3(3):430--439, March 2019.
+
+\bibitem{scholkopf2001estimating}
+Bernhard Schölkopf, John~C. Platt, John Shawe-Taylor, Alex~J. Smola, and Robert~C. Williamson.
+\newblock Estimating the support of a high-dimensional distribution.
+\newblock {\em Neural Computation}, 13(7):1443--1471, 07 2001.
 
 \bibitem{simonyanVeryDeepConvolutional2015}
 Karen Simonyan and Andrew Zisserman.

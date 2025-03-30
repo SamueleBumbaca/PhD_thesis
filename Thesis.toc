@@ -1,15 +1,16 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Phytosanitary Products}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}EPPO Standards}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Experimental Design}{6}{subsection.1.2.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Phytosanitary Products}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}EPPO Standards}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Experimental Design}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Sampling Method and Measures Units}{9}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Statistical Analysis}{10}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Geomatics Techniques}{11}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Photogrammetry}{21}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Spectral Imaging}{24}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Machine Learning}{26}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}The Literature Gap and the Thesis Aims}{31}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Study Cases}{35}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Continuous Variables}{35}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Ordinal and Nominal Variables}{103}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Binary Variables}{150}{section.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Statistical Analysis}{11}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Geomatics Techniques}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Photogrammetry}{22}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Spectral Imaging}{25}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Machine Learning}{27}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}The Literature Gap and the Thesis Aims}{32}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Study Cases}{51}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Continuous Variables}{51}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ordinal Variables}{119}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Binary and Nominal Variables}{166}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Conclusions}{199}{chapter.3}%

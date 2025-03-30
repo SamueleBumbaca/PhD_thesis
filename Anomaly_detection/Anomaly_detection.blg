@@ -7,51 +7,48 @@ Illegal, another \bibstyle command---line 63 of file Anomaly_detection.aux
  :          {plainnat}
 I'm skipping whatever remains of this command
 Database file #1: Anomaly_detection.bib
-Warning--I didn't find a database entry for "liu2008isolation"
-Warning--I didn't find a database entry for "scholkopf2001estimating"
-Warning--I didn't find a database entry for "breunig2000lof"
 Warning--to sort, need author or key in ModelsPretrainedWeights
 Warning--to sort, need author or key in FacebookresearchDinov22025
 Warning--empty booktitle in huangDenselyConnectedConvolutional2017
-You've used 23 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            645 strings with 10261 characters,
-and the built_in function-call counts, 8517 in all, are:
-= -- 754
-> -- 618
-< -- 1
-+ -- 251
-- -- 222
-* -- 684
-:= -- 1453
-add.period$ -- 70
-call.type$ -- 23
-change.case$ -- 180
+            665 strings with 10797 characters,
+and the built_in function-call counts, 9818 in all, are:
+= -- 876
+> -- 687
+< -- 2
++ -- 278
+- -- 246
+* -- 791
+:= -- 1660
+add.period$ -- 79
+call.type$ -- 26
+change.case$ -- 201
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 217
-empty$ -- 554
-format.name$ -- 222
-if$ -- 1687
+cite$ -- 29
+duplicate$ -- 262
+empty$ -- 652
+format.name$ -- 246
+if$ -- 1963
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 11
-newline$ -- 119
-num.names$ -- 42
-pop$ -- 221
+int.to.str$ -- 26
+missing$ -- 14
+newline$ -- 134
+num.names$ -- 48
+pop$ -- 241
 preamble$ -- 1
-purify$ -- 157
+purify$ -- 175
 quote$ -- 0
-skip$ -- 187
+skip$ -- 221
 stack$ -- 0
-substring$ -- 337
-swap$ -- 34
-text.length$ -- 1
+substring$ -- 431
+swap$ -- 47
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
+type$ -- 104
 warning$ -- 3
-while$ -- 59
-width$ -- 25
-write$ -- 243
+while$ -- 69
+width$ -- 28
+write$ -- 276
 (There was 1 error message)

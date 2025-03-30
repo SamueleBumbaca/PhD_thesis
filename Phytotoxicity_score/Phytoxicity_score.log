@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  17 MAR 2025 15:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1040,10 +1040,6 @@ Underfull \hbox (badness 1231) in paragraph at lines 225--228
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Phytoxicity_score.out' has not changed.
 (rerunfilecheck)             Checksum: D665AE77E4627DA889AA28E2030EFEFE;3320.
  ) 

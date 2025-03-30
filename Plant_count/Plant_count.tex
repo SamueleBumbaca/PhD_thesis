@@ -464,13 +464,15 @@ The algorithm is divided in two sequential parts that form a detection-verificat
 named HC1 \cref{alg:H1}, performs initial plant detection by thresholding pixels within the specified color range, 
 identifying connected regions, and filtering them based on expected leaf area. HC1 outputs region polygons
 representing potential plants, but typically includes many false positives due to its simple color-based approach.
-To address this limitation, we implemented a second process named HC2 \cref{alg:H2} that applies agronomical 
+To address this limitation, we implemented a second process named HC2 (\cref{alg:H2_part1} and \cref{alg:H2_part2}) that applies agronomical 
 knowledge of field structure. HC2 filters the HC1 output by verifying that detected plants form proper row 
 patterns with expected intra-row and inter-row spacing. It uses RANSAC to identify linear alignments of plants 
 and validates that these alignments match expected field geometry (consistent row slope and spacing).
 Only tiles where HC2 confirms the expected number and arrangement of plants are retained for the final dataset.
 This two-stage approach enables automated extraction of high-confidence annotations from the orthomosaics.
 
+\begingroup
+\small
 \begin{algorithm}
     \caption{H1}
     \label{alg:H1}
@@ -577,6 +579,7 @@ This two-stage approach enables automated extraction of high-confidence annotati
   \EndFunction
   \end{algorithmic}
   \end{algorithm}
+\endgroup
 
 \subsection{Deep Learning object detectors}
 
@@ -1273,7 +1276,7 @@ Several factors may explain this gap:
 First, the domain-specific nature of aerial maize seedling imagery, where subtle 
 textural differences and high intra-class variability are prevalent, severely challenges 
 models pre-trained on general object detection datasets. As illustrated in the few-shot 
-experiments (Figure \ref{fig:shots_vs_performance}), increasing 
+experiments (Figure \ref{fig:shots_vs_performance1}), increasing 
 the number of shots leads to nonlinear improvements in metrics such as R² and $mAP$ 
 (following an arctan-like trend), yet the error metric ($RMSE$) remain significantly 
 above the benchmark. This saturation effect suggests that even with more than usual maximum tested

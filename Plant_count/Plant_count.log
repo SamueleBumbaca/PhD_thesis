@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  17 MAR 2025 15:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -712,71 +712,69 @@ LaTeX Warning: Float too large for page by 137.95003pt on input line 462.
 
 
 [40]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 477.
 
-LaTeX Warning: Reference `alg:H2' on page 1 undefined on input line 467.
-
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 475.
 
 LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
-(Font)              using `TU/Arial(0)/m/n' instead on input line 483.
+(Font)              using `TU/Arial(0)/m/n' instead on input line 485.
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 512--513
+Underfull \hbox (badness 1502) in paragraph at lines 514--515
 [] $\OML/cmm/m/it/12 clust[]cen \OMS/cmsy/m/n/12   f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 centroids[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 j []\OML/cmm/m/it/12 i \OMS/cmsy/m/n/12 2
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 524--525
+Underfull \hbox (badness 5345) in paragraph at lines 526--527
 [] $\OML/cmm/m/it/12 clust[]cen \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 regions; intra \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Overfull \hbox (24.54752pt too wide) in paragraph at lines 525--526
+Overfull \hbox (24.54752pt too wide) in paragraph at lines 527--528
 [] $\OML/cmm/m/it/12 inlier[]points; model \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 clust[]cen; intra \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 []\TU/Arial(0)/b/n/12 function \TU/Arial(0)/m/sc/12 process_observations($\OML/cmm/m/it/12 observations; inter \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 [] $\OML/cmm/m/it/12 second[]row[]centers; second[]row[]model \OMS/cmsy/m/n/12  
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 561--562
+Underfull \hbox (badness 2012) in paragraph at lines 563--564
 [] \TU/Arial(0)/b/n/12 if $\OML/cmm/m/it/12 second[]row[]model:slope \OMS/cmsy/m/n/12 ^^Y \OML/cmm/m/it/12 first[]row[]model:slope$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 [] \TU/Arial(0)/b/n/12 if $\OML/cmm/m/it/12 abs\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 second[]row[]model:intercept \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 [] \TU/Arial(0)/b/n/12 if $\OML/cmm/m/it/12 second[]row[]centers \OMS/cmsy/m/n/12 ^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
-[] $\OML/cmm/m/it/12 objects\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 tile\OT1/cmr/m/n/12 ] \OMS/cmsy/m/n/12  
+Overfull \hbox (52.94733pt too wide) in paragraph at lines 566--567
+[] $\OML/cmm/m/it/12 objects\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 tile\OT1/cmr/m/n/12 ] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 first[]row[]centers; second[]row[]centers\OT1/cmr/m/n/12 )$ 
  []
 
 
-Overfull \hbox (95.84367pt too wide) in paragraph at lines 574--575
+Overfull \hbox (95.84367pt too wide) in paragraph at lines 576--577
 [] $\OML/cmm/m/it/12 observations \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 observations; MEAN[]SLOPE\OT1/cmr/m/n/12 )$ 
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 575--576
+Underfull \hbox (badness 5954) in paragraph at lines 577--578
 [] $\OML/cmm/m/it/12 objects \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 observations; inter \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Overfull \hbox (6.76593pt too wide) in paragraph at lines 583--586
+Overfull \hbox (6.76593pt too wide) in paragraph at lines 586--589
 \TU/Arial(0)/m/sc/12 models because the implementation is open-source [[]], and it makes
  []
 
@@ -798,36 +796,36 @@ Overfull \hbox (6.76593pt too wide) in paragraph at lines 583--586
 [43]
 
 [44]
-Overfull \hbox (0.30513pt too wide) in paragraph at lines 608--611
+Overfull \hbox (0.30513pt too wide) in paragraph at lines 611--614
 []\TU/Arial(0)/m/sc/12 The training dataset was composed of the OOD or ID training dataset
  []
 
 
 
 [45]
-Overfull \hbox (17.21358pt too wide) in paragraph at lines 632--633
+Overfull \hbox (17.21358pt too wide) in paragraph at lines 635--636
 \TU/Arial(0)/m/sc/12 sions to balance open-vocabulary generalization and task-specific
  []
 
 
-Overfull \hbox (13.34953pt too wide) in paragraph at lines 635--639
+Overfull \hbox (13.34953pt too wide) in paragraph at lines 638--642
 \TU/Arial(0)/m/sc/12 scribe maize seedlings, ranging from simple terms (”maize”, ”seedling”)
  []
 
 
 
 [46]
-Underfull \hbox (badness 6016) in paragraph at lines 674--674
+Underfull \hbox (badness 6016) in paragraph at lines 677--677
 []|\TU/Arial(0)/b/n/12 s$[]$ or
  []
 
 
-Overfull \hbox (1.48318pt too wide) in paragraph at lines 674--674
+Overfull \hbox (1.48318pt too wide) in paragraph at lines 677--677
 []|\TU/Arial(0)/m/sc/12 307.0$[]$| 
  []
 
 
-Overfull \hbox (1.48318pt too wide) in paragraph at lines 674--674
+Overfull \hbox (1.48318pt too wide) in paragraph at lines 677--677
 []|\TU/Arial(0)/m/sc/12 307.0$[]$| 
  []
 
@@ -838,7 +836,7 @@ Overfull \hbox (1.48318pt too wide) in paragraph at lines 674--674
 [48]
 
 [49]
-Overfull \hbox (0.7414pt too wide) in paragraph at lines 732--733
+Overfull \hbox (0.7414pt too wide) in paragraph at lines 735--736
 []\TU/Arial(0)/m/sc/12 For object detection performance, we used the standard COCO eval-
  []
 
@@ -849,17 +847,17 @@ Overfull \hbox (0.7414pt too wide) in paragraph at lines 732--733
 [51]
 
 [52]
-Overfull \hbox (0.9383pt too wide) in paragraph at lines 815--815
+Overfull \hbox (0.9383pt too wide) in paragraph at lines 818--818
 []|$\OML/cmm/m/it/12 RMSE$| 
  []
 
 
-Overfull \hbox (1.9848pt too wide) in paragraph at lines 815--815
+Overfull \hbox (1.9848pt too wide) in paragraph at lines 818--818
 []|$\OML/cmm/m/it/12 MAPE$| 
  []
 
 
-Overfull \hbox (3.96658pt too wide) in paragraph at lines 815--815
+Overfull \hbox (3.96658pt too wide) in paragraph at lines 818--818
 []|\TU/Arial(0)/b/n/12 dataset
  []
 
@@ -872,12 +870,12 @@ File: Plots/metrics_OOD_datasets.pdf Graphic file (type pdf)
 <use Plots/metrics_OOD_datasets.pdf>
 
 
-LaTeX Warning: Float too large for page by 159.63268pt on input line 893.
+LaTeX Warning: Float too large for page by 159.63268pt on input line 896.
 
 
 
 [55]
-Overfull \hbox (8.52998pt too wide) in paragraph at lines 1009--1014
+Overfull \hbox (8.52998pt too wide) in paragraph at lines 1012--1017
 []\TU/Arial(0)/m/sc/12 For the combinations of model-architecture/dataset-size that achieved
  []
 
@@ -914,7 +912,7 @@ File: Plots/r2_ap_vs_dataset_quality.pdf Graphic file (type pdf)
 
 
 [61]
-Overfull \hbox (3.66475pt too wide) in paragraph at lines 1040--1042
+Overfull \hbox (3.66475pt too wide) in paragraph at lines 1043--1045
 \TU/Arial(0)/m/sc/12 The few-shots models were evaluated against the established bench-
  []
 
@@ -968,22 +966,22 @@ File: Plots/few_shot_annotations.pdf Graphic file (type pdf)
 
 
 [66]
-Overfull \hbox (8.28194pt too wide) in paragraph at lines 1185--1194
+Overfull \hbox (8.28194pt too wide) in paragraph at lines 1188--1197
 \TU/Arial(0)/m/sc/12 Our experiments clearly demonstrate the critical importance of dataset
  []
 
 
-Overfull \hbox (22.75969pt too wide) in paragraph at lines 1185--1194
+Overfull \hbox (22.75969pt too wide) in paragraph at lines 1188--1197
 \TU/Arial(0)/m/sc/12 tested models, regardless of architecture or parameter amount, achieved
  []
 
 
-Overfull \hbox (3.1839pt too wide) in paragraph at lines 1195--1210
+Overfull \hbox (3.1839pt too wide) in paragraph at lines 1198--1213
 \TU/Arial(0)/m/sc/12 rameters, and plant growth stages vary substantially across datasets.
  []
 
 
-Overfull \hbox (3.04626pt too wide) in paragraph at lines 1195--1210
+Overfull \hbox (3.04626pt too wide) in paragraph at lines 1198--1213
 \TU/Arial(0)/m/sc/12 play an important role in determining model performance. Both cases
  []
 
@@ -999,7 +997,7 @@ File: Plots/zeroshot.pdf Graphic file (type pdf)
 <use Plots/zeroshot.pdf>
 
 
-LaTeX Warning: Float too large for page by 52.95319pt on input line 1210.
+LaTeX Warning: Float too large for page by 52.95319pt on input line 1213.
 
 
 
@@ -1009,22 +1007,22 @@ File: Plots/zeroshot_images.pdf Graphic file (type pdf)
 
 
 [69]
-Overfull \hbox (14.68219pt too wide) in paragraph at lines 1215--1215
+Overfull \hbox (14.68219pt too wide) in paragraph at lines 1218--1218
 |[]\TU/Arial(0)/b/n/14.4 Many-Shot Object Detection: Architecture and
  []
 
 
-Overfull \hbox (11.88535pt too wide) in paragraph at lines 1216--1235
+Overfull \hbox (11.88535pt too wide) in paragraph at lines 1219--1238
 \TU/Arial(0)/m/sc/12 ture, count metrics, and minimum dataset requirements. Within YOLO-
  []
 
 
-Overfull \hbox (5.40422pt too wide) in paragraph at lines 1216--1235
+Overfull \hbox (5.40422pt too wide) in paragraph at lines 1219--1238
 \TU/Arial(0)/m/sc/12 family models, we observed that the lightweight YOLOv5n, YOLOv5s,
  []
 
 
-Overfull \hbox (9.42256pt too wide) in paragraph at lines 1216--1235
+Overfull \hbox (9.42256pt too wide) in paragraph at lines 1219--1238
 \TU/Arial(0)/m/sc/12 plexity in CNN-based architectures corresponded to increased dataset
  []
 
@@ -1042,7 +1040,7 @@ Overfull \hbox (9.42256pt too wide) in paragraph at lines 1216--1235
 ]
 
 [71]
-Overfull \hbox (4.74092pt too wide) in paragraph at lines 1243--1249
+Overfull \hbox (4.74092pt too wide) in paragraph at lines 1246--1252
 \TU/Arial(0)/m/sc/12 Our investigation into minimum dataset quality requirements revealed
  []
 
@@ -1050,28 +1048,24 @@ Overfull \hbox (4.74092pt too wide) in paragraph at lines 1243--1249
 
 [72]
 
-LaTeX Warning: Reference `fig:shots_vs_performance' on page 73 undefined on input line 1276.
-
-
-
 [73]
 
 [74]
 
 [75]
-Overfull \hbox (8.1615pt too wide) in paragraph at lines 1326--1330
+Overfull \hbox (8.1615pt too wide) in paragraph at lines 1329--1333
 \TU/Arial(0)/m/sc/12 with 65-90% of the original quality. This suggests that semi-automated
  []
 
 
-Overfull \hbox (0.10616pt too wide) in paragraph at lines 1335--1342
+Overfull \hbox (0.10616pt too wide) in paragraph at lines 1338--1345
 []\TU/Arial(0)/m/sc/12 Hybrid approaches combining handcrafted methods with deep learn-
  []
 
 
 
 [76]
-Overfull \hbox (7.44795pt too wide) in paragraph at lines 1354--1362
+Overfull \hbox (7.44795pt too wide) in paragraph at lines 1357--1365
 \TU/Arial(0)/m/sc/12 quiring unreasonable dataset size to achieve benchmark performance
  []
 
@@ -1170,21 +1164,15 @@ L3 programming layer <2024-11-02>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Plant_count.out' has not changed.
 (rerunfilecheck)             Checksum: CD84723F4DCEA1F91D28DE2BFAE76FDF;5173.
  ) 
 Here is how much of TeX's memory you used:
  18512 strings out of 475921
- 366664 string characters out of 5775722
+ 366686 string characters out of 5775722
  843165 words of memory out of 5000000
- 41072 multiletter control sequences out of 15000+600000
- 562517 words of font info for 79 fonts, out of 8000000 for 9000
+ 41071 multiletter control sequences out of 15000+600000
+ 562525 words of font info for 80 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  89i,14n,95p,1118b,778s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

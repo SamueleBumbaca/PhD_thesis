@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  30 MAR 2025 17:32
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  28 JUN 2025 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,7 +713,7 @@ Overfull \hbox (0.51788pt too wide) in paragraph at lines 103--113
 
 
 
-[169
+[173
 
 ]
 Overfull \hbox (1.2011pt too wide) in paragraph at lines 114--121
@@ -722,21 +722,21 @@ Overfull \hbox (1.2011pt too wide) in paragraph at lines 114--121
 
 
 
-[170]
+[174]
 Overfull \hbox (17.49092pt too wide) in paragraph at lines 145--146
 \TU/Arial(0)/m/n/12 of individual plant leaves photographed against controlled backgrounds.
  []
 
 
 
-[171]
+[175]
 Overfull \hbox (53.83475pt too wide) in paragraph at lines 155--168
  [][] 
  []
 
 
 
-[172]
+[176]
 
 Package hyperref Warning: Ignoring empty anchor on input line 216.
 
@@ -747,7 +747,7 @@ Overfull \hbox (1.27005pt too wide) in paragraph at lines 224--225
 
 
 
-[173]
+[177]
 Overfull \hbox (9.26662pt too wide) in paragraph at lines 226--227
 []\TU/Arial(0)/b/n/12 VGG family: \TU/Arial(0)/m/n/12 VGG11, VGG13, VGG16, VGG19, and their batch-
  []
@@ -769,9 +769,9 @@ Overfull \hbox (4.74287pt too wide) in paragraph at lines 237--238
 
 
 
-[174]
+[178]
 
-[175]
+[179]
 Overfull \hbox (10.93819pt too wide) in paragraph at lines 263--264
 \TU/Arial(0)/m/n/12 served sufficient class-discriminative information for conventional clus-
  []
@@ -788,18 +788,18 @@ Overfull \hbox (5.68025pt too wide) in paragraph at lines 271--272
 
 
 
-[176]
+[180]
 
-[177]
+[181]
 
-[178]
+[182]
 Overfull \hbox (1.63155pt too wide) in paragraph at lines 321--322
 []\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
  []
 
 
 
-[179]
+[183]
 Overfull \hbox (13.63155pt too wide) in paragraph at lines 331--332
 []\TU/Arial(0)/m/n/12 For evaluating the class-discriminative information in the feature space,
  []
@@ -816,7 +816,7 @@ Overfull \hbox (10.01202pt too wide) in paragraph at lines 336--337
 
 
 
-[180]
+[184]
 Overfull \hbox (0.53389pt too wide) in paragraph at lines 343--344
 \TU/Arial(0)/m/n/12 could comprehensively evaluate how different feature extractors per-
  []
@@ -845,7 +845,7 @@ Overfull \hbox (128.03737pt too wide) in paragraph at lines 357--360
 
 
 
-[181]
+[185]
 File: plots/anomaly_detection_plantpathology.png Graphic file (type bmp)
 <plots/anomaly_detection_plantpathology.png>
 
@@ -855,7 +855,7 @@ Overfull \hbox (128.03737pt too wide) in paragraph at lines 366--369
 
 
 
-[182]
+[186]
 File: plots/clusterization_plantvillage.png Graphic file (type bmp)
 <plots/clusterization_plantvillage.png>
 
@@ -865,7 +865,7 @@ Overfull \hbox (128.03737pt too wide) in paragraph at lines 375--378
 
 
 
-[183]
+[187]
 File: plots/clusterization_plantpathology.png Graphic file (type bmp)
 <plots/clusterization_plantpathology.png>
 
@@ -875,9 +875,9 @@ Overfull \hbox (128.03737pt too wide) in paragraph at lines 384--387
 
 
 
-[184]
+[188]
 
-[185]
+[189]
 Overfull \hbox (4.52803pt too wide) in paragraph at lines 405--414
 []\TU/Arial(0)/m/n/12 This performance gap was even more pronounced in clustering tasks,
  []
@@ -899,7 +899,7 @@ Overfull \hbox (3.68819pt too wide) in paragraph at lines 419--423
 
 
 
-[186]
+[190]
 Overfull \hbox (1.86201pt too wide) in paragraph at lines 430--441
 \TU/Arial(0)/m/n/12 consistently demonstrated strong performance across both datasets,
  []
@@ -911,7 +911,7 @@ Overfull \hbox (18.55733pt too wide) in paragraph at lines 447--448
 
 
 
-[187]
+[191]
 Overfull \hbox (8.04341pt too wide) in paragraph at lines 462--463
 []\TU/Arial(0)/b/n/12 GMM \TU/Arial(0)/m/n/12 demonstrated comparable performance with LOF on Plant
  []
@@ -923,7 +923,7 @@ Overfull \hbox (0.5257pt too wide) in paragraph at lines 466--467
 
 
 
-[188]
+[192]
 Overfull \hbox (6.54132pt too wide) in paragraph at lines 473--474
 \TU/Arial(0)/m/n/12 lage achieving benchmark with multiple backbones, but on Plant
  []
@@ -945,16 +945,16 @@ Overfull \hbox (21.41866pt too wide) in paragraph at lines 482--483
 
 
 
-[189]
+[193]
 Overfull \hbox (16.448pt too wide) in paragraph at lines 484--485
 \TU/Arial(0)/m/n/12 shapes, DBSCAN identifies arbitrarily shaped clusters based
  []
 
 
 
-[190]
+[194]
 
-[191]
+[195]
 Overfull \hbox (15.42499pt too wide) in paragraph at lines 504--505
 []\TU/Arial(0)/m/n/12 Among dimensionality reduction techniques, t-SNE consistently yielded
  []
@@ -981,14 +981,14 @@ Overfull \hbox (0.75655pt too wide) in paragraph at lines 510--511
 
 
 
-[192]
+[196]
 Overfull \hbox (10.75264pt too wide) in paragraph at lines 512--513
 []\TU/Arial(0)/m/n/12 Future research directions should explore fine-tuning strategies specif-
  []
 
 (./Anomaly_detection.bbl
 
-[193]
+[197]
 Underfull \hbox (badness 6032) in paragraph at lines 27--30
 \TU/Arial(0)/m/n/12 ing for Anomaly Detection: A Survey, January 2019.
  []
@@ -1000,7 +1000,7 @@ Underfull \hbox (badness 1057) in paragraph at lines 32--35
 
 
 
-[194
+[198
 
 ]
 Underfull \hbox (badness 1377) in paragraph at lines 57--60
@@ -1009,23 +1009,23 @@ Underfull \hbox (badness 1377) in paragraph at lines 57--60
 
 
 
-[195]
+[199]
 Underfull \hbox (badness 5756) in paragraph at lines 72--76
 \TU/Arial(0)/m/n/12 Stefano Panno, Giuseppe Scuderi, Paolo Ruisi, Paolo
  []
 
 
 
-[196]
+[200]
 Underfull \hbox (badness 1817) in paragraph at lines 100--103
 \TU/Arial(0)/m/n/12 Smola, and Robert C. Williamson.  Estimating the sup-
  []
 
 
 
-[197])
+[201])
 
-[198] (./Anomaly_detection.aux)
+[202] (./Anomaly_detection.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>

@@ -11,6 +11,6 @@
 \contentsline {section}{\numberline {1.4}The Literature Gap and the Thesis Aims}{32}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Study Cases}{51}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Continuous Variables}{51}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Ordinal Variables}{119}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Binary and Nominal Variables}{166}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Conclusions}{199}{chapter.3}%
+\contentsline {section}{\numberline {2.2}Ordinal Variables}{123}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Binary and Nominal Variables}{170}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Conclusions}{203}{chapter.3}%

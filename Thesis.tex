@@ -5,8 +5,9 @@
 \usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage{times}
-\usepackage{fontspec}
+% Font setup for Arial-like appearance with pdfLaTeX
+\usepackage[scaled=.92]{helvet} % Use Helvetica (closest to Arial for pdfLaTeX), scaled to match Arial proportions
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as default
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \usepackage{threeparttable}
@@ -19,9 +20,8 @@
 \usepackage{pdflscape}
 % Include PDF
 \usepackage{pdfpages}
-% Bibliography
-\usepackage{natbib}
-\setmainfont{Arial}
+% Bibliography - numbered citations with square brackets
+\usepackage[numbers,square,sort&compress]{natbib}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -30,9 +30,12 @@
 \renewcommand{\footrulewidth}{0pt}
 
 
-\bibliographystyle{plain}  % or another style that suits your needs
+
 \usepackage{url}
 \usepackage{hyperref}
+% Unicode support for pdfLaTeX
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 % math
 \usepackage{amsmath}
 
@@ -59,6 +62,20 @@
 % Include the first page from the PDF file
 \includepdf[pages=1]{Intestazione/t3._Thesis_first_page.pdf}
 
+\abstract{\textbf{Background and Research Gap:} Agricultural research for Plant Protection Product (PPP) development relies on hypothesis statistical testing. The European and Mediterranean Plant Protection Organizzation (EPPO) set the standards to perform tests in all its member countries. EPPO recocnized traditional statistical approaches address environmental variability through experimental design features like randomized controls. These methods require experimentalists to identify environmental variability before data collection. This a priori identification of variance sources depends heavily on experimentalist expertise rather than systematic statistical procedures, creating a significant limitation in agricultural field studies. Geostatistical methods offer an alternative approach by enabling post-hoc estimation of spatial environmental variability through variograms or spline fitting techniques. These methods are also recognized by EPPO, but they requires spatially referenced data collection.
+
+\textbf{Research Objectives:} This research investigates the applicability of geomatics technologies for generating spatially referenced datasets across all EPPO-recognized observation categories (binary, nominal, ordinal, discrete, and continuous), with the goal of demonstrating how these techniques can facilitate the adoption of geostatistical methods in hypothesis testing for agricultural research within the EPPO standard framework.
+
+\textbf{Methodology:} Three study cases were conducted addressing different variable types: (1) continuous variables through machine learning-based maize seedling counting using photogrammetry and computer vision; (2) ordinal variables through automated phytotoxicity scoring using multispectral imaging and custom feature extraction; and (3) binary/nominal variables through anomaly detection for plant health classification using pre-trained models and unsupervised learning.
+
+\textbf{Key Results:} For continuous variables, transformer-mixed architectures (RT-DETR) required fewer training samples (approximately 60) compared to pure CNN models (110-130 samples) to achieve EPPO benchmark performance ($R^2$ > 0.85), though in-domain training data proved essential regardless of architecture. For ordinal variables, machine learning effectively reproduced phytotoxicity scoring ($\kappa$ > 0.7) through photogrammetric 3D models and spectral imaging, enabling conversion from ordinal to continuous scales for enhanced statistical analysis. For binary/nominal variables, pre-trained models successfully performed plant health classification (accuracy > 0.85) using anomaly detection without task-specific training.
+
+\textbf{Novel Contribution:} This work establishes the first systematic evaluation of minimum requirements for implementing geomatics techniques within EPPO standards, providing practical guidelines for dataset size, validation protocols, and integration strategies. The research demonstrates that geomatics technologies can successfully provide spatial coordinates alongside observations for all EPPO variable types, enabling the implementation of geostatistical methods that improve environmental variability modeling compared to traditional experimental design approaches.
+
+\textbf{Practical Impact:} The findings enable agricultural researchers to adopt more robust statistical methods for PPP trials by providing clear implementation requirements for digital data collection technologies, ultimately leading to more accurate efficacy evaluations and improved crop protection strategies.}
+
+\clearpage
+
 % Table of Contents
 \tableofcontents
 \newpage
@@ -66,19 +83,95 @@
 % Main content
 \chapter{Introduction}
 
-\section{Phytosanitary Products}
+\section{Research Overview and Motivation}
 
-Phytosanitary products, commonly used as a synonym for "Plant Protection Products" (PPPs),
-are a specific category of pesticides designed primarily to maintain crop health 
+Agricultural research for plant protection product (PPP) development relies heavily on statistical hypothesis testing to establish efficacy and safety. Traditional experimental approaches in this field face a fundamental limitation: they require experimentalists to identify and control for environmental variability before data collection through experimental design features like randomized controls and blocking strategies. This a priori identification of variance sources depends heavily on experimentalist expertise and field experience rather than systematic statistical procedures, creating potential biases and limitations in agricultural field studies.
+
+The European and Mediterranean Plant Protection Organization (EPPO) has established comprehensive standards for PPP evaluation that require rigorous statistical validation across diverse data types including binary, nominal, ordinal, discrete, and continuous observations. However, classic statistical frameworks within these standards struggle to adequately address unknown spatial environmental variability that emerges during trials.
+
+Geostatistical methods offer a promising alternative approach by enabling post-hoc estimation of spatial environmental variability through mathematical techniques such as variograms and spline fitting. While this posterior analysis capability represents a significant advantage over classical experimental design approaches, geostatistics requires spatially referenced data collection, introducing the practical challenge of precise observation geolocation in agricultural field conditions.
+
+Recent advances in geomatics technologies - including photogrammetry, spectral imaging, and machine learning - present new opportunities to overcome these limitations by providing efficient methods for generating spatially referenced datasets. However, the practical implementation of these technologies within the regulatory framework of PPP evaluation remains unexplored.
+
+\section{Research Objectives and Thesis Structure}
+
+This research investigates the applicability of geomatics technologies for generating spatially referenced datasets across all EPPO-recognized observation categories, with the goal of demonstrating how these techniques can facilitate the adoption of geostatistical methods in hypothesis testing for agricultural research within the EPPO standard framework.
+
+The specific objectives of this work are:
+
+\begin{enumerate}
+    \item To establish minimum dataset requirements for implementing machine learning-based object detection in continuous variable assessment (plant counting)
+    \item To evaluate the effectiveness of digital techniques for reproducing ordinal scale assessments traditionally performed manually
+    \item To investigate the application of unsupervised learning approaches for binary and nominal variable classification in disease detection
+    \item To demonstrate the integration of geomatics-derived spatial coordinates with geostatistical methods for improved environmental variability modeling
+\end{enumerate}
+
+The thesis is structured as a collection of study cases, each addressing specific variable types within the EPPO framework:
+
+\textbf{Chapter 2} provides the theoretical foundation, covering PPP regulations, EPPO standards, and the methodological background of geostatistics, photogrammetry, spectral imaging, and machine learning techniques.
+
+\textbf{Chapter 3} presents three study cases:
+\begin{itemize}
+    \item \textbf{Continuous and Discrete Variables}: Investigation of minimum dataset require-
+ments for object detection in plant counting ("On the Minimum Dataset Requirements for Fine-Tuning an
+ Object Detector for Arable Crop Plant Counting: A Case Study
+ on Maize Seedlings" published in MDPI Remote Sensing, DOI: 10.3390/rs17132190)
+    \item \textbf{Ordinal Variables}: Evaluation of machine learning approaches for phytotoxicity scoring automation (
+        "Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI" published in MDPI Agronomy, DOI: 10.3390/agronomy14020306)  
+    \item \textbf{Binary and Nominal Variables}: Application of anomaly detection techniques for plant health classification
+\end{itemize}
+
+\textbf{Chapter 4} synthesizes findings and discusses the practical implementation requirements for integrating geomatics technologies into PPP evaluation protocols.
+
+\section{Literature Review and Research Gap}
+
+\subsection{Current Limitations in Agricultural Statistical Design}
+
+Traditional statistical analysis for PPP trials relies on Fisher's principles of experimental design \cite{fisherStatisticalMethodsResearch1992,meadStatisticalPrinciplesDesign2012,caslerFundamentalsExperimentalDesign2015}, which emphasize randomization, replication, and blocking to ensure validity of results. While this approach is well-established, it faces significant limitations in agricultural field studies where environmental heterogeneity is often unknown and difficult to predict \cite{paroliniPursuitScienceAgriculture2015,berryResistedRiseRandomisation2015}.
+
+The experimental design components that most heavily rely on human judgment are block disposal and control arrangement \cite{tocherDesignAnalysisBlock1952,williamsOptimalityContrastsBlock2015}. Block disposal should minimize environmental variability within blocks while maximizing it between blocks \cite{vanesSpatialNatureRandomization1993,brienMultiphaseExperimentsLeast2011}, while control arrangement ensures untreated controls are not influenced by adjacent treated plots \cite{piephoWhyRandomizeAgricultural2013}.
+
+Problems arise when unobserved environmental variability effects invalidate parametric statistical analysis due to heteroscedasticity of residuals \cite{schabenbergerStatisticalMethodsSpatial2004,onofriNewMethodAnalysis2010}. Shifting to non-parametric tests often results in decreased statistical power \cite{stroupRethinkingAnalysisNonNormal2015,agrestiIntroductionCategoricalData2018}.
+
+\subsection{Geostatistical Approaches in Agricultural Research}
+
+Geostatistical methods offer the potential to capture environmental variability "a posteriori" rather than requiring its prediction "a priori" \cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}. This approach should result in more robust and reliable statistical analysis, free from unexpected heterogeneity within experimental blocks \cite{richterGeostatisticalModelsAgricultural2012,lopezEfficiencyIncompleteBlock1995}.
+
+Several studies have demonstrated the effectiveness of spatial variability estimation through geostatistical approaches \cite{bullockDataIntensiveFarmManagement2019,castrignanoGeostatisticalApproachModelling2017,jinEfficientGeostatisticalAnalysis2021,puntelLeveragingDigitalAgriculture2024,trevisanSpatialVariabilityCrop2021}. However, these approaches require georeferenced observations, which are often impractical for traditional visual assessments.
+
+\subsection{Digital Technologies in Agricultural Assessment}
+
+EPPO has recognized the potential of digital technologies through the publication of PP 1/333(1) \cite{PP1333}, which provides guidelines for incorporating digital tools into PPP trials. This standard requires that digital data meet the same quality standards as manual assessments, with specific validation benchmarks depending on variable type:
+
+\begin{itemize}
+    \item \textbf{Continuous and Discrete variables}: Coefficient of determination ($R^2$) > 0.85
+    \item \textbf{Ordinal and Nominal variables}: Cohen's kappa coefficient ($\kappa$) > 0.7  
+    \item \textbf{Binary variables}: Accuracy > 0.85
+\end{itemize}
+
+Recent advances in machine learning and computer vision have shown promise for automating agricultural assessments \cite{mahleinPlantDiseaseDetection2016,kamilarisDeepLearningAgriculture2018}, particularly when combined with photogrammetric and spectral imaging techniques.
+
+\subsection{Research Gap and Innovation}
+
+Despite the clear benefits of integrating geostatistics into PPP efficacy trials, the requirement for spatial coordinates alongside observations remains a significant barrier to widespread adoption. While modern technologies, toghether with geomatics techniques can provide spatial coordinates along with observations, systematic evaluation of their implementation requirements within the EPPO framework has not been conducted.
+
+This research addresses this gap by investigating the minimum requirements needed to effectively produce georeferenced observations during efficacy trials, enabling the use of geostatistical methods to separate environmental variability from treatment effects in statistical analyses of PPP trials conducted under EPPO standards.
+
+\chapter{Theoretical Background and Methodology}
+
+\section{Regulatory Framework}
+
+\subsection{PPPs and EPPO Standards}
+PPPs are designed primarily to maintain crop health 
 and prevent destruction by diseases and infestations. While the term "pesticides" 
 is broader and also includes biocidal products used to control harmful organisms 
-and disease carriers not related to plant protection, phytosanitary products are 
+and disease carriers not related to plant protection, PPPs are 
 specifically used to control harmful organisms affecting cultivated plants (such 
 as insects, mites, fungi, bacteria, rodents, etc.), eliminate weeds, and regulate 
 plant physiological processes. Fertilizers, which serve for plant nutrition and 
-soil fertility improvement, are excluded from phytosanitary products.
+soil fertility improvement, are excluded from PPPs.
 
-Phytosanitary products contain at least one active substance, which can be either 
+PPPs contain at least one active substance, which can be either 
 chemical compounds or microorganisms, including viruses, that enable the product 
 to perform its intended function. These active substances undergo rigorous risk 
 assessment processes, with EFSA (European Food Safety Authority) playing a central 
@@ -86,9 +179,8 @@ role in conducting peer reviews at the EU level to determine if these products,
 when used correctly, might produce harmful effects on human or animal health, either 
 directly or indirectly through drinking water, food, or feed.
 
-The main categories of phytosanitary products can be distinguished based on the 
+The main categories of PPPs can be distinguished based on the 
 type of organism they target or the function they perform, including:
-
 
 \begin{itemize}
     \item Fungicides
@@ -147,7 +239,7 @@ expected variability of the data and the desired level of statistical significan
 in respect to control and reference treatments. The
 randomization of treatments within blocks should be carried out using a suitable
 randomization procedure to ensure that the treatments are assigned to plots in a
-completely random manner. The key randomization used in phytosanitary product 
+completely random manner. The key randomization used in PPP 
 evaluations include:
 
 \begin{itemize}
@@ -168,7 +260,7 @@ evaluations include:
           trials on herbicide selectivity.
 \end{itemize}
 
-When designing phytosanitary product trials, the arrangement of untreated controls 
+When designing PPP trials, the arrangement of untreated controls 
 is critical for proper efficacy assessment. According to EPPO standards, the main 
 purpose of untreated controls is to demonstrate adequate pest infestation, without 
 which efficacy cannot be meaningfully evaluated. Four distinct arrangements for 
@@ -207,8 +299,8 @@ that the results are reliable, reproducible, and statistically valid.
 
 \subsection{Sampling Method and Measures Units}
 
-After defining the experimental units through the randomization design choise,
-the next step is to define the sampling method and the measures units.
+While defining the experimental units through the randomisation design choice,
+The sampling method and the units of measurement must also be defined.
 Target and crop-specific standards point out "mode of
 assessment recording and measurements" fixing evaluation metrics in two ways:
 countable (discrete values) and measurable (continuous values) effects which must be
@@ -233,42 +325,41 @@ Weeds in cereals - Observation on the crop", phytotoxicity color modification co
 measured, or estimated as proportion in respect to the untreated, or scored in EPPO
 scale as PP 1/135(4) reports, or a scientifically accepted score as the European Weed
 Research Society phytotoxicity damage score \cite{EWRS_score} and other ones.
-In general, data types must undergo the classification presented in Table 1.1
+In general, data types must undergo the classification presented in Table \ref{tab:data_types}.
 
 \begin{table}[ht]
 \caption{Different modes of observation and types of variables}
 \label{tab:data_types}
 \centering
-\begin{tabular}{|l|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|}
 \hline
-\textbf{Type of Variable} & \textbf{Measurement} & \textbf{Visual Estimation} & \textbf{Ranking} & \textbf{Scoring} \\
+\textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
 \hline
-Binary & & & & X \\
+Binary & & & X \\
 \hline
-Nominal & & & & X \\
+Nominal & & & X \\
 \hline
-Ordinal & & & X & X \\
+Ordinal & & X & X \\
 \hline
-Discrete & X & X & & \\
+Discrete & X & & \\
 \hline
-Continuous limited & X & X & & \\
+Continuous limited & X & & \\
 \hline
-Continuous not limited & X & X & & \\
+Continuous not limited & X & & \\
 \hline
 \end{tabular}
 \end{table}
 
 \subsection{Statistical Analysis}
 
-The statistical analysis of trials is equally critical, providing objective 
-assessment of treatment effects. While PP 1/152 \cite{EPPO_PP1_152} doesn't prescribe 
+While PP 1/152 \cite{EPPO_PP1_152} doesn't prescribe 
 specific analyses for all situations, it emphasizes that analysis methods should 
 align with the experimental design and data types collected. For quantitative 
 variables (continuous or discrete), parametric methods based on Generalized 
 Linear Models (GLM) are recommended, including ANOVA and regression approaches. 
 For qualitative variables (bynary, ordinal or nominal), non-parametric methods are more 
 appropriate. Parametric analysis assumes additivity of effects, homogeneity of variance, 
-and normally distributed errors—when these assumptions aren't met, data transformations 
+and normally distributed errors. When these assumptions aren't met, data transformations 
 or alternative approaches become necessary.
 
 Statistical tests, particularly F-tests of orthogonal 
@@ -280,13 +371,37 @@ superior treatments). For efficacy trials, EPPO suggests one-sided tests since t
 aim is comparing products against references or controls, with appropriate multiple 
 comparison procedures when needed.
 
-Through adherence to these rigorous design and analysis standards, researchers can 
-generate reliable evidence to support phytosanitary product registration while ensuring 
+In pragmatic undertakings, analyses with parametric models are frequently 
+favoured over non-parametric ones because parametrics have greater statistical 
+power for the same number of 
+observations \cite{agresti_exact_2001}.
+This often results in experiments being designed that use continuous or discrete 
+variables instead of binary, nominal or ordinal ones. These continuous or 
+discrete variables are often recorded through visual estimation rather than 
+true measurements or counting because the latters are more time-consuming and require more 
+equipment \cite{bockPhytopathometryGlossaryTwentyfirst2022,chiang_quantitative_2020,
+moraes_characterizing_2022}. However, using visual estimates often results in 
+fitting parametric models that violate key assumptions, such as normally 
+distributed residuals and homoscedasticity 
+\cite{stevenson_overview_2001,acutis_perfunctory_2012,chiang_what_2014}.
+This can lead to unjustified transformations or the use of non-parametric models, resulting in a loss of statistical power.
+
+\subsection{Geomatics Methods in EPPO Standards}
+
+Through adherence to rigorous design, variables types and analysis standards, researchers can 
+generate reliable evidence to support PPP registration while ensuring 
 that products demonstrate consistent efficacy across relevant agricultural conditions.
-
-\section{Geomatics Techniques}
-
-Traditional statistical analysis for phytosanitary product trials still relies on 
+Nevertheless, the traditional statistical approaches face significant limitations in
+agricultural field studies where environmental heterogeneity is often unknown and
+difficult to predict, or even when visual estimates are used to assess
+variables that should be measured or counted.
+This is where geostatistical methods
+can provide a significant advantage by enabling post-hoc estimation of spatial
+environmental variability.
+The fundamental advantage of geomatics over traditional statistical approaches 
+lies in its ability to agnostically capture spatial variability in a continuous dimension 
+rather than predefined block and replication factors that rely on subjective experience. 
+Traditional statistical analysis for PPP trials still relies on 
 Fisher's principles of experimental design 
 \cite{fisherStatisticalMethodsResearch1992,meadStatisticalPrinciplesDesign2012,caslerFundamentalsExperimentalDesign2015},
 which emphasize the importance of randomization, replication, and blocking to 
@@ -296,26 +411,77 @@ agronomist-experimentalist knowledge and experience of the field where the trial
 is performed that can be limited and biased as any human observation 
 \cite{paroliniPursuitScienceAgriculture2015,berryResistedRiseRandomisation2015}. 
 The experimental design part 
-that mostly relies on human choice is the block disposal and the control 
+that mostly relies on human choice is the block/replication disposal and the experimental units 
 arrangement \cite{tocherDesignAnalysisBlock1952,williamsOptimalityContrastsBlock2015}. 
-The block disposal 
-should guarantee that the environmental variability is minimized within the block 
+The block and replication disposal 
+should guarantee that the environmental variability is minimized within the block
 and maximized between blocks \cite{vanesSpatialNatureRandomization1993,brienMultiphaseExperimentsLeast2011}, 
 while 
-the control arrangement ensures that the untreated control is not influenced by 
+the experimental units arrangement ensures that the treatments and untreated control are not influenced by 
 adjacent treated plots \cite{piephoWhyRandomizeAgricultural2013}.
 Problems arise when environmental variability effects, unobserved during set-up, 
 make the parametric statistical analysis invalid due to heteroscedasticity of the 
 residuals \cite{schabenbergerStatisticalMethodsSpatial2004,onofriNewMethodAnalysis2010}. 
 Often in such cases, 
 shifting to non-parametric tests could mean a decrease 
-of power \cite{stroupRethinkingAnalysisNonNormal2015,agrestiIntroductionCategoricalData2018}.
+of power \cite{stroupRethinkingAnalysisNonNormal2015,agrestiIntroductionCategoricalData2018}
+and often is not the final solution for biased trials.
 If the experimental design and the statistical model could be able to catch 
 the environmental variability "a posteriori" instead of guessing its distribution "a priori"
 \cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}, 
 the statistical analysis should be more robust, reliable and free from
-unexpected heterogeneity whithin the blocks
-\cite{richterGeostatisticalModelsAgricultural2012,lopezEfficiencyIncompleteBlock1995}.
+unexpected heterogeneity within the blocks
+\cite{richterGeostatisticalModelsAgricultural2012,lopezEfficiencyIncompleteBlock1995,aquiles_e_effect_2024}.
+
+EPPO recognizes the application of geostatistical methods in agricultural 
+experimentation recommending GLMs as the underlying 
+model structure for ANOVA.
+Geostatistical methods can be incorporated into Generalized Linear Mixed Models 
+(GLMMs) to account for spatial variability arising from replication structures 
+or pseudoreplication, thereby improving the accuracy of inferences and reducing 
+Type I errors
+\cite{slaets_linear_2021,millar_remedies_2004,Piepho_2011,schabenbergerStatisticalMethodsSpatial2004,aquiles_e_effect_2024}.
+However, in order to apply geostatistical methods, experimental observations must 
+be georeferenced, i.e. associated with spatial coordinates. This can increase 
+field data acquisition time and the need for technological instrumentation 
+(e.g. GPS, remote sensors or drones), affecting the logistical costs of 
+experimentation \cite{antoniou_chapter_2023,alexopoulos_complementary_2023,zhao_grain_2011}.
+Nevertheless, the evolution of automated digital surveying technologies, 
+such as multispectral sensors mounted on UAVs, agricultural IoT devices and 
+georeferenced mobile apps, is rapidly reducing the cost and complexity of 
+georeferencing in experimental agriculture \cite{cisternas_systematic_2020,mondino_considerazioni_2017}.
+Additionally, using real georeferenced measurements instead of subjective 
+visual estimates reduces the risk of violating the assumptions of parametric 
+statistical models (e.g. normality of residuals or homogeneity of variance) 
+\cite{stevenson_overview_2001,acutis_perfunctory_2012,chiang_what_2014}.
+Consequently, geostatistics can be a viable alternative to classical 
+block-based statistics, offering greater robustness and statistical power, 
+particularly in contexts of high spatial heterogeneity.
+
+\section{Geomatics}
+
+Geomatics is an integrated approach to the measurement, analysis, management, 
+and display of geographically referenced information 
+\cite{gomarascaBasicsGeomatics2009}.  
+This research focus on two main aspects of geomatics: the acquisition of spatially 
+referenced data and the application of geostatistical methods to analyze 
+this data. Geomatics encompasses a range of technologies and techniques that 
+enable precise spatial data acquisition, including georeferenced sensors, 
+photogrammetry, spectral imaging, and machine learning. 
+In agricultural research, georeferenced sensors integrated into machinery such 
+as harvesters and sprayers are widely employed to collect spatially explicit 
+data on crop yield, soil characteristics, and other agronomic parameters. 
+These technologies are complemented by photogrammetry, which enables geometric 
+reconstruction and the quantification of structural features from images; 
+spectral imaging, which captures reflectance across multiple wavelengths to 
+infer biological and physical attributes; and machine learning algorithms, 
+which support automated measurement, score and rank. 
+These techniques collectively provide the capability to generate 
+spatially-referenced datasets essential for implementing geostatistical methods 
+in PPP trials.
+
+\subsection{Geostatistics}
+
 Variograms are fundamental tools in geostatistics that quantify 
 the spatial dependence of a random field 
 \cite{cressieStatisticsSpatialData2015,goovaertsGeostatisticsNaturalResources1997}. 
@@ -369,7 +535,7 @@ Common models include:
 \end{itemize}
 
 Proper variogram modeling for excluding spatial variation in a parametric model
-must be fitted on control samples \cite{larkOptimizedSpatialSampling2002, minasnyEfficiencyVariousApproaches2002}
+must be fitted on control samples \cite{larkOptimizedSpatialSampling2002, minasnyEfficiencyVariousApproaches2002,aquiles_e_effect_2024}
 to avoid including treatment effects in the 
 spatial terms of the parametric model. 
 The control samples must be homogeneously distributed
@@ -393,6 +559,7 @@ resulting equivalent to an adjacent control arrangement.
 The spatial varibility estimation through variogram modeling was already proved 
 to be effective in many studies \cite{bullockDataIntensiveFarmManagement2019,castrignanoGeostatisticalApproachModelling2017,jinEfficientGeostatisticalAnalysis2021,puntelLeveragingDigitalAgriculture2024,trevisanSpatialVariabilityCrop2021}, 
 but it has the drawback of requiring a large control area. 
+
 If incorporating such large control areas is not feasible and only included 
 controls are available, 
 one can rely on Spatial Analysis of field Trials with Splines (SpATS)
@@ -424,12 +591,11 @@ where $f_1(u_j)$ and $f_2(v_j)$ are the main effects for rows and columns,
 and $f_{12}(u_j, v_j)$ represents the smooth interaction surface that accounts 
 for localized spatial patterns. The smoothing parameters controlling the flexibility 
 of these components are estimated using restricted maximum likelihood (REML).
-
 According to Rodriguez-Alvarez et al. (2018) 
 \cite{rodriguez-alvarezCorrectingSpatialHeterogeneity2018}, 
 SpATS has been effectively applied 
 to field trials with varying dimensions, but there are practical considerations 
-for minimum requirements: a minimum grid of 5×5 (25 plots) is often considered a 
+for minimum requirements: a minimum grid of 5x5 (25 plots) is often considered a 
 practical lower limit, but complex spatial variations might require a bigger grid.
 SpATS has been successfully applied to breeding trials with experimental designs 
 exceeding hundreds of rows and columns, whereas the variogram approach can be effective 
@@ -445,62 +611,15 @@ smaller than the combined model random and unexplained variation.
 For both approaches, finding the optimal model across parameters that cannot be 
 directly solved requires, 
 an iterative approach testing various settings can be deployed. 
-The bigger drawback of adopting a geostatistic approach to exclude environmental
-variability is the need for georeferenced observations 
-\cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}, 
-often impractical for traditional
-assessments like visual ones. One can argue that for trials with regular grid 
-layouts on flat fields, the geographic coordinates of the plots are not needed, as
-the distance between plots is regular and can be taken as unitary to get spatial coordinates.
-However, geostatistic models are sensitive to accuracy and precision of coordinates,
-so they must be scaled to the environmental feature minimum spatial size. 
-Since geostatistical approaches are adopted precisely to address unknown patterns 
-of environmental variability, 
-we cannot set a minimum coordinates precision "a priori".
-Today, digital technologies such as georeferenced imaging, ensure a very high precision
-of measurments \cite{mahleinPlantDiseaseDetection2016}. 
-Digital approaches can automate data collection and analysis, improving the
-reproducibility of results, ultimately accelerating the development and registration of
-effective phytosanitary products.
-While the EPPO experimental design standards provide a solid foundation for conducting
-phytosanitary product trials, the increasing availability of digital technologies
-offers new opportunities to enhance the quality (in the "Quality of a mode of observation" sense \cite{EPPO_PP1_152}) 
-and efficiency of these assessments.
 
-Another advantage of adopting digital approaches is the
-dramatic increase in the number of observations that can be collected. Unlike
-manual methods, which are inherently limited by human capacity and time
-constraints, automated and semi-automated systems can continuously gather data
-with minimal interruption. This greater volume of data not only improves the
-resolution and granularity of analysis but also significantly enhances the
-statistical power of hypothesis testing.
+\subsection{Geomatics Thecnics and Digital Technologies}
 
-The power of a statistical test, defined as the probability of correctly
-rejecting the null hypothesis when it is false, directly depends on the sample
-size (number of observations), as noted by a classical statisticians as
-Fisher \cite{fisherStatisticalMethodsResearch1992}. However effiecient technics
-to collect data does not garantee indipendency of samples. 
-In other words, having a powerfull tool to collect data does not mean that we
-can rely on a higher amount of replications.
-
-Wheter repeated observations
-per experimental unit (pseudo-replications) are produced, Generalized Linear Mixed Models 
-(GLMM) \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}
-should be used to benefit from 
-digital observations size enhancement. GLMMs are a powerful extension of GLMs that can
-account for the correlation structure of repeated observation
-by incorporating random effects, thus providing more
-accurate estimates of treatment effects and their associated uncertainty.
-All the described geostatistical techniques can be seamlessly integrated with GLMMs to
-provide a comprehensive analysis of spatial-temporal data
-\cite{slaetsLinearMixedModels2021,rodriguez-alvarezCorrectingSpatialHeterogeneity2018}, 
-enhancing the accuracy and
-reliability of treatment effect estimates.
-
-To regulate the use of this kind of technologies, the EPPO published a new standard, 
-PP 1/333(1) \cite{PP1333}, which 
-filled the gap in the use of digital technologies in phytosanitary product efficacy
-and selectivity trials. This standard provides guidelines for incorporating digital
+As already mentioned, the EPPO standards require that the
+observations are made by trained experimentalists.
+To regulate the use of technologies that can measure, rank or score instead of 
+experimentalists, the EPPO published a new standard (PP 1/333(1)\cite{PP1333}) which 
+addresses the use of digital technologies in PPP efficacy and selectivity trials.
+This standard provides guidelines for incorporating digital
 tools into trial protocols, where digital tools are intended as a combination of
 hardwares and softwares delivering data 
 in a semi-automatic or automatic fashon.
@@ -515,7 +634,7 @@ on the type of variable. For each type of variable, the congruence between
 digital and manual should be evaluated with a different metric:
 
 \begin{itemize}
-    \item \textbf{Continuous}: Coefficient of determination (R²) higher than 0.85.
+    \item \textbf{Continuous and Discrete}: Coefficient of determination ($R^2$) higher than 0.85.
     \item \textbf{Ordinal and Nominal}: Cohen's kappa Coefficient ($\kappa$) higher than 0.7.
     \item \textbf{Binary}: Accuracy higher than 0.85
 \end{itemize}
@@ -529,30 +648,26 @@ observation in the variable units.
 Quantitative variables are produced by regression models, while qualitative (categorical) 
 variables are produced by classification models. 
 Quantitative variables: continuous (limited or not) and discrete
-can be summarized as metric measurments and counts respectively. 
-Perform metric measurements in agriculture is probability the anciest
-problem that human faced with geometry and the rise of geography. 
-Photogrammetry is a geomatic technique that allows the acquisition of spatial
-data in metric scale by processing and analyzing georeferenced photographic images.
-It allows to create digital maps of agriculture landscapes. This kinds of maps
-that will be better depicted in the following sections, can be analyzed to
-track and measure the spatial distribution of the variables of interest.
-The most effective technics to do so are Machine Learning (ML) and Geostatistics.
-ML is a branch of artificial intelligence
-that allows counting and classifying.
-Through ML, it is possible to implemtent 
-digital tools that can boost the data collection.
-However, adoption of digital tools is not only a matter of data collection but also of data
-analysis. In many case, perform classical statistical analysis on digital data with 
-reduce the benefits of collecting spatial data or simply is not possible. 
-Geostatistics, as already shown, offers a wide range of statistical methods that 
-can be used to
-overcome the limitations of traditional statistical methods and to exploit the
-full potential of digital data.
-In the following sections, we will explore the opportunities and constraints of
-deploying geomatic techniques to increase the efficacy of phytosanitary products.
+can be summarized as metric measurments and counts respectively.
 
-\subsection{Photogrammetry}
+The capability of digital tools to measure and georeference harvest-related 
+parameters such as yield weight, moisture content, and hectolitric weight 
+is well established \cite{cisternas_systematic_2020,zhao_grain_2011,mahleinHyperspectralSensorsImaging2018}. However, parameters that are more complex to assess 
+digitally, including plant counts, phytotoxicity symptoms, and disease 
+incidence or severity, have garnered significant research interest in 
+recent decades \cite{bockSpecialIssuePhytopathometry2022,bockVisualEstimatesFully2020,bockPlantDiseaseSeverity2010,mahleinHyperspectralSensorsImaging2018}. 
+Despite technological advancements, a definitive consensus has yet to emerge 
+regarding the extent to which these tools can fully substitute for human 
+observers \cite{barbedoAutomaticMethodDetect2014,bockVisualEstimatesFully2020,arnalbarbedoDigitalImageProcessing2013}. Nevertheless, their adoption undoubtedly enhances field assessments 
+by incorporating georeferenced data, so enabling
+geostatistics for efficacy trials.
+This study aims to evaluate the potential of geomatics-based technologies for 
+collecting observational data in agricultural trials conducted under EPPO 
+standards. Specifically, it investigates the use of photogrammetry, 
+spectral imaging, and machine learning as digital tools for capturing trial 
+observations across all variable types recognized by EPPO guidelines.
+
+\subsubsection{Photogrammetry}
 
 Photogrammetry is a technique used to obtain reliable information about physical 
 objects and the environment through the process of recording, measuring, and interpreting 
@@ -586,9 +701,11 @@ interior orientation and exterior orientation
     calibration process.
     \item \textbf{Exterior Orientation:} This step involves determining the position 
     (X, Y, Z coordinates) and orientation (roll, pitch, yaw angles) of the camera 
-    in a global coordinate system. This is achieved by identifying and matching 
-    common points (tie points) in overlapping images and using these points to solve 
-    for the camera parameters.
+    in a global coordinate system. While tie points from overlapping images establish 
+    relative orientation between images, absolute exterior orientation requires 
+    Ground Control Points (GCPs) with known coordinates or other external reference 
+    information (such as GNSS/IMU data) to establish the relationship between image 
+    coordinates and real-world coordinates.
 \end{itemize}
 
 Once the images are oriented, the 3D coordinates of points on the object's surface 
@@ -621,8 +738,8 @@ By solving these equations for multiple images, the 3D coordinates of the object
 points can be accurately determined.
 Recognized object points can be more or less sparse depending on the approach to 
 their recognition and pairing. 
-Historically, homologous points whithin images was
-performed manually. Today many algorithms doing this task are available. 
+Historically, homologous points within images was
+performed manually. Today many algorithms for this task are available. 
 They can be divided between point-based and area-based algorithms.
 Point-based algorithms identify and match distinct points in the images, such as
 corners or edges. These algorithms rely on feature descriptors (e.g., SIFT, SURF, ORB)
@@ -652,7 +769,7 @@ Orthophotos are generated by removing the effects of
 perspective distortion and terrain relief from the original images, resulting in a
 scale-accurate representation of the area.
 
-\subsection{Spectral Imaging}
+\subsubsection{Spectral Imaging}
 Spectral imaging is a technique that captures images at multiple wavelengths
 of the electromagnetic spectrum, providing valuable information about the spectral
 characteristics of objects and materials
@@ -707,7 +824,7 @@ nutrient status, and evaluate the impact of environmental factors on plant
 growth
 \cite{jonesRemoteSensingVegetation2010,mahleinHyperspectralSensorsImaging2018}
 
-\subsection{Machine Learning}
+\subsubsection{Machine Learning}
 
 Machine Learning (ML) is a branch of artificial intelligence (AI) that 
 focuses on the development of algorithms and models capable of learning 
@@ -723,7 +840,7 @@ analysis would be impractical or inefficient.
 ML has gained substantial importance in various scientific fields, including 
 agriculture \cite{araujoMachineLearningApplications2023} and 
 plant protection \cite{bockVisualEstimatesFully2020}. 
-Within the context of phytosanitary product 
+Within the context of PPP 
 efficacy evaluation, ML offers new opportunities to enhance data processing, 
 interpretation, and decision-making by leveraging vast amounts of observational 
 data collected during field trials \cite{bockSpecialIssuePhytopathometry2022}. Integrating ML approaches into the framework 
@@ -731,7 +848,7 @@ of PP1/333 can significantly increase the robustness and accuracy of the analysi
 allowing for more data-driven and automated assessments 
 \cite{barbedoAutomaticMethodDetect2014,arnalbarbedoDigitalImageProcessing2013,bockPlantDiseaseSeverity2010}.
 
-The primary objective of employing ML techniques in phytosanitary product trials 
+The primary objective of employing ML techniques in PPP trials 
 is to improve accuracy, precision, and reproducibility while reducing manual 
 intervention and subjective bias \cite{bockVisualEstimatesFully2020}. Modern ML methods can analyze complex interactions 
 between variables and predict treatment outcomes under various conditions, thereby 
@@ -767,7 +884,7 @@ Neural Networks \cite{goodfellowDeepLearning2016}, the most active ML study area
 Computer vision (CV) is another subfield of 
 ML that focuses on enabling machines to interpret and analyze visual information. 
 CV is the more and more treated lonely with DL instead of other ML approaches. In 
-the context of phytosanitary product efficacy evaluation, computer vision methods are 
+the context of PPP efficacy evaluation, computer vision methods are 
 increasingly used for automated observation and measurement, particularly when integrated 
 with digital imaging and photogrammetry \cite{luInstanceFusionRealtimeInstancelevel2020}. The use of computer vision 
 within PP1/333 trials significantly enhances data acquisition by enabling digital sensing 
@@ -785,7 +902,7 @@ generating comprehensive visual assessments that support statistical evaluations
 Having representative big datasets is a significant challenge in DL. 
 Large-scale, high-quality datasets are crucial for training robust machine learning models, but acquiring 
 such datasets is often prohibitively expensive and time-consuming. Many domains, particularly specialized 
-fields like plant protection products and phytopathometry research, 
+fields like PPPs and phytopathometry research, 
 struggle to compile sufficiently large and diverse training datasets 
 \cite{alomStateoftheArtSurveyDeep2019}. The data collection process 
 in Supervised Learning involves manual annotation, which introduces human bias and can be extremely labor-intensive. 
@@ -805,7 +922,7 @@ the need for manual labeling, presents its own set of challenges \cite{heMomentu
 The computational resources required for training large self-supervised models are substantial, 
 often exceeding the capabilities of smaller research labs or specialized studies \cite{pattersonCarbonEmissionsLarge2021}. 
 This computational intensity creates a significant barrier to entry, particularly for domain-specific 
-research like phytosanitary product efficacy evaluation, where the computational and expertise 
+research like PPP efficacy evaluation, where the computational and expertise 
 requirements may outstrip the available resources of a typical research group 
 \cite{strubellEnergyPolicyConsiderations2019}. Despite its transformative potential, self-supervised learning remains a 
 cutting-edge approach that requires significant computational infrastructure and interdisciplinary expertise to implement effectively.
@@ -848,26 +965,26 @@ technician experience.
 Despite the clear benefits of integrating geostatistics into phytosanitary
 product efficacy trials, the requirement for spatial coordinates alongside 
 observations remains a barrier to widespread adoption.
-By leveraging geomatics techniques such as photogrammetry,
+By leveraging geomatics techniques such as georeferenced sensors, photogrammetry,
 spectral imaging, and ML, researchers can improve data collection and 
 analysis, as their synergy can provide spatial coordinates
 along with the observations.
 Through a series of study cases addressing each variable type described in 
 PP 1/152 \cite{EPPO_PP1_152} and 
 PP 1/333(1) \cite{PP1333}, 
-we will explore the opportunities and limitations of deploying geomatic techniques 
-to improve phytosanitary product effect estimation.
-First, we will describe the use of photogrammetry and ML to localize observations
+this work explores the opportunities and limitations of deploying geomatic techniques 
+to improve PPP effect estimation.
+First, the research describes the use of photogrammetry and ML to localize observations
 along with plant counting, a typical continuous variable assessment. 
 After demonstrating the viability of obtaining samples and/or subsamples spatial coordinates in a
-geographical coordinates reference system, we will establish the practicality of using a local 
+geographical coordinates reference system, the study establishes the practicality of using a local 
 coordinates reference system to deploy geostatistics in protected cultures such as in 
-a greenhouse. In the second study case, we will evaluate the effectiveness of 
+a greenhouse. Thus, in the second study case, the research evaluates the effectiveness of 
 reproducing an ordinal scale assessment like the phytotoxicity scoring with 
-ML and discuss whether digitalization can replace ordinal scale values by 
+ML and discusses whether digitalization can replace ordinal scale values by 
 converting them to continuous scale values for implementing parametric tests instead 
 of not parametric
-ones. Finally we will test the applicability of using already trained ML models 
+ones. Finally the work tests the applicability of using already trained ML models 
 on georeferenced samples or subsamples. This approach will be used to
 obtain binary or nominal variable assessments, classifying between healthy or unhealthy
 plants, or even between different diseases. These classifications will be accomplished 
@@ -877,14 +994,27 @@ In summary, this collection of study cases aims to determine the minimum require
 needed to effectively implement geomatic techniques during an efficacy trial. 
 These techniques will enable 
 the use of geostatistical methods to separate environmental variability from treatment 
-effects in statistical analyses of plant protection product trials conducted under 
+effects in statistical analyses of PPP trials conducted under 
 the EPPO standard framework.
 
-\bibliographystyle{plainnat}
+\bibliographystyle{unsrt}
 \bibliography{Phd_Thesis_SBumbaca}
 
 \chapter{Study Cases}
-\section{Continuous Variables}
+
+This chapter presents three study cases that demonstrate the possibility to get 
+georeferenced observations for different variable types within the EPPO framework
+to enable geostatistical covariates estimation. 
+Each study case addresses a specific variable type as defined in the EPPO standards.
+
+\section{Continuous and Discrete Variables: Plant Counting with Machine Learning}
+
+\textbf{Note:} The following section is based on published work:
+
+\textit{Bumbaca, S.; Borgogno-Mondino, E.C. On the Minimum Dataset Requirements for Fine-Tunining an Object Detector for Arable Crop Plant Counting: A Case Study on Maize Seedlings. Remote Sens. 2025, 17, 2190. DOI: 10.3390/rs17132190}
+
+This study investigates minimum dataset requirements for implementing machine learning-based object detection in continuous variable assessment, specifically maize seedling counting in agricultural field trials. The research addresses the critical question of training data sufficiency for deploying computer vision techniques within EPPO standards.
+
 \includepdf[pages=-]{remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf}
 
 % Include the first page from the PDF file
@@ -902,18 +1032,28 @@ the EPPO standard framework.
 % \includepdf[pages=42-43,landscape=true]{Plant_count/Plant_count.pdf}
 % \includepdf[pages=44-]{Plant_count/Plant_count.pdf}
 
-\section{Ordinal Variables}
+\section{Ordinal Variables: Phytotoxicity Scoring Automation}
+
+\textbf{Note:} The following section is based on published work:
+
+\textit{Bumbaca, S.; Borgogno-Mondino, E.C. Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI. Agronomy 2024, 14, 306. DOI: 10.3390/agronomy14020306}
+
+This study evaluates the effectiveness of digital techniques for reproducing ordinal scale assessments traditionally performed manually, specifically phytotoxicity scoring. The research explores how machine learning combined with photogrammetric and spectral imaging data can automate subjective visual assessments while maintaining EPPO compliance standards.
+
 \includepdf[pages=1-6]{Phytotoxicity_score/Phytoxicity_score.pdf}
 \includepdf[pages=7,landscape=true]{Phytotoxicity_score/Phytoxicity_score.pdf}
 \includepdf[pages=8-]{Phytotoxicity_score/Phytoxicity_score.pdf}
 
-\section{Binary and Nominal Variables}
+\section{Binary and Nominal Variables: Anomaly Detection for Plant Health Classification}
+
+This study investigates the application of unsupervised learning approaches for binary and nominal variable classification in disease detection. The research demonstrates how pre-trained models can be leveraged for plant health assessment without task-specific training, using anomaly detection techniques to classify healthy versus diseased plants within the EPPO framework.
+
 \includepdf[pages=-]{Anomaly_detection/Anomaly_detection.pdf}
 
 \chapter{Conclusions}
 
 This thesis has systematically investigated the integration of geomatics techniques 
-with geostatistical methods to improve phytosanitary product efficacy and selectivity evaluations. 
+with geostatistical methods to improve PPP efficacy and selectivity evaluations. 
 Through a series of complementary study cases, we have demonstrated the feasibility 
 and practical requirements for leveraging spatial data to more effectively model 
 and exclude environmental variability from statistical analyses.
@@ -931,42 +1071,33 @@ implications for the future of digital data collection in phytosanitary trials, 
 suggests that even with advanced models, the need for domain-specific training data
 remains critical for achieving accurate and reliable results.
 
-The second study case explored the potential of using machine learning to
-automate ordinal scale assessments, specifically phytotoxicity scoring.
-We found that machine learning can effectively reproduce ordinal scale values by 
-leveraging custom feature extraction with photogrammetric 3D models and spectral 
-imaging. However, it is essential to consider the implications of converting ordinal 
-data into continuous data for statistical analysis. 
-The study highlighted the importance of understanding
-the underlying assumptions of statistical tests and the potential impact on the
-interpretation of results. We concluded that while machine learning can enhance
-the efficiency and accuracy of phytotoxicity assessments, careful consideration
-of the statistical implications is necessary to ensure valid conclusions.
+The second study case (ordinal variables) explored the automation of phytotoxicity scoring using geomatics techniques. The integration of photogrammetric 3D modeling with multispectral imaging enabled accurate reproduction of visual assessments ($\kappa$ > 0.7) while providing precise spatial coordinates for each observation. This geomatic approach not only automated subjective evaluations but also facilitated the conversion of ordinal data to continuous scales, enabling more powerful parametric statistical analyses within geostatistical frameworks.
 
-The third study case focused on the application of machine learning for binary and
-nominal variable assessments, specifically in the context of disease detection and
-classification. We demonstrated that pre-trained models can be effectively
-utilized for this purpose, even when trained on different datasets. This finding
-suggests that the transferability of machine learning models across different
-domains is a promising avenue for future research, as it can significantly reduce
-the need for extensive domain-specific training data. However, we also emphasized 
-the importance of validating these models specifically for phytosanitary trials, 
-since prediction accuracy and reliability vary significantly based on both data 
-characteristics and the specific task.
+The third study case (binary and nominal variables) demonstrated the effectiveness of combining pre-trained machine learning models with georeferenced data for plant health classification. The geomatic workflow provided spatial context for anomaly detection algorithms, achieving accuracy > 0.85 without requiring task-specific training data. This approach particularly benefits from the spatial organization of data that geomatics provides, enabling more robust unsupervised learning strategies.
 
-In conclusion, this thesis has provided valuable insights into the integration of 
-geomatics techniques for improving phytosanitary product efficacy and selectivity 
-evaluations, enabling geostatistical methods to efficiently separate environmental 
-variability from treatment effects in the observed variables.
-The findings highlight the potential of digital technologies to enhance data collection, 
-ultimately leading to more accurate and reliable assessments.
-The research also underscores the importance of 
-considering the specific requirements and
-limitations of each approach, as well as the need for careful validation and
-interpretation of results.
-The integration of geomatics techniques with geostatistical methods represents a
-significant advancement in the field of phytosanitary product trials, offering
-new opportunities for improving the quality and efficiency of efficacy evaluations.
+\section{Geomatic Contributions and Innovations}
+
+This research has demonstrated that geomatics techniques provide three critical advantages for PPP trials:
+
+\textbf{Spatial Data Integration:} Photogrammetry and spectral imaging workflows automatically generate precise spatial coordinates alongside observations, eliminating the traditional barrier to implementing geostatistical methods in agricultural trials. Our findings show that centimeter-level accuracy is achievable across all EPPO variable types.
+
+\textbf{Enhanced Data Density:} Geomatics techniques enable collection of thousands of spatially-referenced observations compared to traditional manual methods. This dramatic increase in sample size improves statistical power while maintaining spatial independence through appropriate geostatistical modeling.
+
+\textbf{Reproducibility and Standardization:} Digital geomatics workflows provide objective, repeatable measurements that reduce human bias and improve inter-observer consistency. The georeferenced datasets enable retrospective analysis and validation, supporting regulatory requirements for data quality and traceability.
+
+\section{Future Research Directions}
+
+Several promising avenues emerge from this work:
+
+\textbf{Temporal Geostatistics:} Extending spatial modeling to include temporal dimensions using time-series drone surveys could improve understanding of treatment effects over crop development cycles.
+
+\textbf{Multi-sensor Fusion:} Combining thermal, LiDAR, and hyperspectral data within unified geomatic workflows may enable detection of subtle stress responses currently missed by visual assessments.
+
+\textbf{Real-time Processing:} Developing edge computing solutions for in-field geomatic analysis could enable adaptive trial management and early detection of experimental issues.
+
+\textbf{Regulatory Integration:} Collaborating with EPPO to develop standardized protocols for digital data validation and acceptance within regulatory frameworks.
+
+In conclusion, this thesis establishes geomatics as a transformative technology for PPP evaluation, providing practical solutions to longstanding challenges in agricultural statistics. The integration of spatial data collection with geostatistical analysis represents a paradigm shift toward more robust, objective, and statistically powerful efficacy assessments that better serve agricultural research and regulatory decision-making.
 
 \includepdf[pages=-]{Intestazione/ringraziamenti.pdf}
 \end{document}

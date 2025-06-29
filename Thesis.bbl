@@ -1,360 +1,308 @@
 \begin{thebibliography}{100}
 
-\bibitem{PP1333}
-{{PP}} 1/333 (1) {{Adoption}} of digital technology for data generation for the efficacy evaluation of plant protection products.
-\newblock {\em EPPO Bulletin}, n/a(n/a).
-
-\bibitem{agrestiIntroductionCategoricalData2018}
-Alan Agresti.
-\newblock {\em An {{Introduction}} to {{Categorical Data Analysis}}}.
-\newblock John Wiley \& Sons, November 2018.
-
-\bibitem{alomStateoftheArtSurveyDeep2019}
-Md~Zahangir Alom, Tarek~M. Taha, Chris Yakopcic, Stefan Westberg, Paheding Sidike, Mst~Shamima Nasrin, Mahmudul Hasan, Brian~C. Van~Essen, Abdul A.~S. Awwal, and Vijayan~K. Asari.
-\newblock A {{State-of-the-Art Survey}} on {{Deep Learning Theory}} and {{Architectures}}.
-\newblock {\em Electronics}, 8(3):292, March 2019.
-
-\bibitem{araujoMachineLearningApplications2023}
-Sara~Oleiro Ara{\'u}jo, Ricardo~Silva Peres, Jos{\'e}~Cochicho Ramalho, Fernando Lidon, and Jos{\'e} Barata.
-\newblock Machine {{Learning Applications}} in {{Agriculture}}: {{Current Trends}}, {{Challenges}}, and {{Future Perspectives}}.
-\newblock {\em Agronomy}, 13(12):2976, December 2023.
-
-\bibitem{arnalbarbedoDigitalImageProcessing2013}
-Jayme~Garcia Arnal~Barbedo.
-\newblock Digital image processing techniques for detecting, quantifying and classifying plant diseases.
-\newblock {\em SpringerPlus}, 2(1):660, December 2013.
-
-\bibitem{barbedoAutomaticMethodDetect2014}
-Jayme Garcia~Arnal Barbedo.
-\newblock An {{Automatic Method}} to {{Detect}} and {{Measure Leaf Disease Symptoms Using Digital Image Processing}}.
-\newblock {\em Plant Disease}, 98(12):1709--1716, December 2014.
-
-\bibitem{baySpeededUpRobustFeatures2008}
-Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc Van~Gool.
-\newblock Speeded-{{Up Robust Features}} ({{SURF}}).
-\newblock {\em Computer Vision and Image Understanding}, 110(3):346--359, June 2008.
-
-\bibitem{berryResistedRiseRandomisation2015}
-Dominic Berry.
-\newblock The resisted rise of randomisation in experimental design: {{British}} agricultural science, c.1910-1930.
-\newblock {\em History and Philosophy of the Life Sciences}, 37(3):242--260, September 2015.
-
-\bibitem{EWRS_score}
-H.~Bleiholder, T.~{van den Boom}, P.~Langel{\"u}ddeke, and R.~Stauss.
-\newblock Einheitliche codierung der ph{\"a}nologischen entwicklungsstadien mono- und dikotyler pflanzen - erweiterte {{BBCH-skala}}, allgemein.
-\newblock {\em Nachrichtenblatt des Deutschen Pflanzenschutzdienstes}, 43:265--270, 1991.
-
-\bibitem{bockPlantDiseaseSeverity2010}
-C.~H. Bock, Poole ~, G.~H., Parker ~, P.~E., and T.~R. {and Gottwald}.
-\newblock Plant {{Disease Severity Estimated Visually}}, by {{Digital Photography}} and {{Image Analysis}}, and by {{Hyperspectral Imaging}}.
-\newblock {\em Critical Reviews in Plant Sciences}, 29(2):59--107, March 2010.
-
-\bibitem{bockVisualEstimatesFully2020}
-Clive~H. Bock, Jayme G.~A. Barbedo, Emerson~M. Del~Ponte, David Bohnenkamp, and Anne-Katrin Mahlein.
-\newblock From visual estimates to fully automated sensor-based measurements of plant disease severity: Status and challenges for improving accuracy.
-\newblock {\em Phytopathology Research}, 2(1):9, April 2020.
-
-\bibitem{bockSpecialIssuePhytopathometry2022}
-Clive~H. Bock, Jayme G.~A. Barbedo, Anne-Katrin Mahlein, and Emerson~M. Del~Ponte.
-\newblock A special issue on phytopathometry --- visual assessment, remote sensing, and artificial intelligence in the twenty-first century.
-\newblock {\em Tropical Plant Pathology}, 47(1):1--4, February 2022.
-
-\bibitem{bommasaniOpportunitiesRisksFoundation2022}
-Rishi Bommasani, Drew~A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael~S. Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, Erik Brynjolfsson, Shyamal Buch, Dallas Card, Rodrigo Castellon, Niladri Chatterji, Annie Chen, Kathleen Creel, Jared~Quincy Davis, Dora Demszky, Chris Donahue, Moussa Doumbouya, Esin Durmus, Stefano Ermon, John Etchemendy, Kawin Ethayarajh, Li~{Fei-Fei}, Chelsea Finn, Trevor Gale, Lauren Gillespie, Karan Goel, Noah Goodman, Shelby Grossman, Neel Guha, Tatsunori Hashimoto, Peter Henderson, John Hewitt, Daniel~E. Ho, Jenny Hong, Kyle Hsu, Jing Huang, Thomas Icard, Saahil Jain, Dan Jurafsky, Pratyusha Kalluri, Siddharth Karamcheti, Geoff Keeling, Fereshte Khani, Omar Khattab, Pang~Wei Koh, Mark Krass, Ranjay Krishna, Rohith Kuditipudi, Ananya Kumar, Faisal Ladhak, Mina Lee, Tony Lee, Jure Leskovec, Isabelle Levent, Xiang~Lisa Li, Xuechen Li, Tengyu Ma, Ali Malik, Christopher~D. Manning, Suvir Mirchandani, Eric Mitchell, Zanele Munyikwa, Suraj Nair, Avanika Narayan, Deepak Narayanan, Ben Newman, Allen Nie, Juan~Carlos Niebles, Hamed Nilforoshan, Julian Nyarko, Giray Ogut, Laurel Orr, Isabel Papadimitriou, Joon~Sung Park, Chris Piech, Eva Portelance, Christopher Potts, Aditi Raghunathan, Rob Reich, Hongyu Ren, Frieda Rong, Yusuf Roohani, Camilo Ruiz, Jack Ryan, Christopher R{\'e}, Dorsa Sadigh, Shiori Sagawa, Keshav Santhanam, Andy Shih, Krishnan Srinivasan, Alex Tamkin, Rohan Taori, Armin~W. Thomas, Florian Tram{\`e}r, Rose~E. Wang, William Wang, Bohan Wu, Jiajun Wu, Yuhuai Wu, Sang~Michael Xie, Michihiro Yasunaga, Jiaxuan You, Matei Zaharia, Michael Zhang, Tianyi Zhang, Xikun Zhang, Yuhui Zhang, Lucia Zheng, Kaitlyn Zhou, and Percy Liang.
-\newblock On the {{Opportunities}} and {{Risks}} of {{Foundation Models}}, July 2022.
-
-\bibitem{brienMultiphaseExperimentsLeast2011}
-C.~J. Brien, B.~D. Harch, R.~L. Correll, and R.~A. Bailey.
-\newblock Multiphase {{Experiments}} with at {{Least One Later Laboratory Phase}}. {{I}}. {{Orthogonal Designs}}.
-\newblock {\em Journal of Agricultural, Biological, and Environmental Statistics}, 16(3):422--450, September 2011.
-
-\bibitem{brownCloseRangeCameraCalibration2002}
-Duane Brown.
-\newblock Close-{{Range Camera Calibration}}.
-\newblock {\em Photogramm. Eng.}, 37, December 2002.
-
-\bibitem{brownLanguageModelsAre2020}
-Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel {Herbert-Voss}, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei.
-\newblock Language {{Models}} are {{Few-Shot Learners}}, July 2020.
-
-\bibitem{bullockDataIntensiveFarmManagement2019}
-David~S. Bullock, Maria Boerngen, Haiying Tao, Bruce Maxwell, Joe~D. Luck, Luciano Shiratsuchi, Laila Puntel, and Nicolas~F. Martin.
-\newblock The {{Data-Intensive Farm Management Project}}: {{Changing Agronomic Research Through On-Farm Precision Experimentation}}.
-\newblock {\em Agronomy Journal}, 111(6):2736--2746, 2019.
-
-\bibitem{caslerFundamentalsExperimentalDesign2015}
-Michael~D. Casler.
-\newblock Fundamentals of {{Experimental Design}}: {{Guidelines}} for {{Designing Successful Experiments}}.
-\newblock {\em Agronomy Journal}, 107(2):692--705, 2015.
-
-\bibitem{castrignanoGeostatisticalApproachModelling2017}
-A.~Castrignan{\`o}, R.~Quarto, A.~Venezia, and G.~Buttafuoco.
-\newblock A geostatistical approach for modelling and combining spatial data with different support.
-\newblock {\em Advances in Animal Biosciences}, 8(2):594--599, January 2017.
-
-\bibitem{chenSimpleFrameworkContrastive2020}
-Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
-\newblock A {{Simple Framework}} for {{Contrastive Learning}} of {{Visual Representations}}, July 2020.
-
-\bibitem{colominaUnmannedAerialSystems2014}
-I.~Colomina and P.~Molina.
-\newblock Unmanned aerial systems for photogrammetry and remote sensing: {{A}} review.
-\newblock {\em ISPRS Journal of Photogrammetry and Remote Sensing}, 92:79--97, 2014.
-
-\bibitem{directive_91_414_EEC}
-{Council of the European Communities}.
-\newblock Council {{Directive}} 91/414/{{EEC}} of 15 {{July}} 1991 concerning the placing of plant protection products on the market, 1991.
-
-\bibitem{cressieStatisticsSpatialData2015}
-Noel Cressie.
-\newblock {\em Statistics for {{Spatial Data}}}.
-\newblock John Wiley \& Sons, March 2015.
-
-\bibitem{devlinBERTPretrainingDeep2019}
-Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
-\newblock {{BERT}}: {{Pre-training}} of {{Deep Bidirectional Transformers}} for {{Language Understanding}}, May 2019.
-
-\bibitem{EPPO_PP1_152}
-{EPPO}.
-\newblock {{PP}} 1/152 {{Design}} and analysis of efficacy evaluation trials.
-\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2012.
-
-\bibitem{EPPO_PP1_135}
-{EPPO}.
-\newblock {{PP}} 1/135(4) phytotoxicity assessment.
-\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2014.
-
-\bibitem{EPPO_PP1_93}
-{EPPO}.
-\newblock {{PP}} 1/93(3) weeds in cereals.
-\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2015.
-
-\bibitem{EPPO_PP1_181}
-{EPPO}.
-\newblock {{PP}} 1/181(5) {{Conduct}} and reporting of efficacy evaluation trials, including good experimental practice.
-\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2021.
-
-\bibitem{EURLex1997265}
-{European Commission}.
-\newblock Council directive 97/57/{{EC}} of 22 september 1997, uniform {{Principles}} for evaluation and authorisation of plant protection products, 1997.
-
-\bibitem{EC_Regulation_1107_2009}
-{European Parliament and Council}.
-\newblock Regulation ({{EC}}) {{No}} 1107/2009 of the {{European Parliament}} and of the {{Council}} of 21 {{October}} 2009 concerning the placing of plant protection products on the market, 2009.
-
 \bibitem{fisherStatisticalMethodsResearch1992}
 R.~A. Fisher.
 \newblock Statistical {{Methods}} for {{Research Workers}}.
 \newblock In Samuel Kotz and Norman~L. Johnson, editors, {\em Breakthroughs in {{Statistics}}: {{Methodology}} and {{Distribution}}}, pages 66--70. Springer, New York, NY, 1992.
-
-\bibitem{furukawaAccurateDenseRobust2010}
-Yasutaka Furukawa and Jean Ponce.
-\newblock Accurate, {{Dense}}, and {{Robust Multiview Stereopsis}}.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 32(8):1362--1376, August 2010.
-
-\bibitem{gburAnalysisGeneralizedLinear2020}
-Edward~E. Gbur, Walter~W. Stroup, Kevin~S. McCarter, Susan Durham, Linda~J. Young, Mary Christman, Mark West, and Matthew Kramer.
-\newblock {\em Analysis of {{Generalized Linear Mixed Models}} in the {{Agricultural}} and {{Natural Resources Sciences}}}.
-\newblock John Wiley \& Sons, January 2020.
-
-\bibitem{goodfellowDeepLearning2016}
-Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
-\newblock {\em Deep {{Learning}}}.
-\newblock MIT Press, 2016.
-
-\bibitem{goovaertsGeostatisticsNaturalResources1997}
-Pierre Goovaerts.
-\newblock {\em Geostatistics for {{Natural Resources Evaluation}}}.
-\newblock Oxford University Press, 1997.
-
-\bibitem{hartleyMultipleViewGeometry2003}
-Richard Hartley and Andrew Zisserman.
-\newblock {\em Multiple {{View Geometry}} in {{Computer Vision}}}.
-\newblock Cambridge University Press, 2003.
-
-\bibitem{hastieElementsStatisticalLearning2009}
-Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
-\newblock {\em The {{Elements}} of {{Statistical Learning}}}.
-\newblock Springer {{Series}} in {{Statistics}}. Springer, New York, NY, 2009.
-
-\bibitem{heMomentumContrastUnsupervised2020}
-Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick.
-\newblock Momentum {{Contrast}} for {{Unsupervised Visual Representation Learning}}, March 2020.
-
-\bibitem{henglPracticalGuideGeostatistical2007}
-Tomislav Hengl.
-\newblock {\em A {{Practical Guide}} to {{Geostatistical Mapping}} of {{Environmental Variables}}}.
-\newblock {European commission. Joint research centre. Institute for environment and sustainability (Ispra, Italie)}, 2007.
-
-\bibitem{hueteOverviewRadiometricBiophysical2002}
-A~Huete, K~Didan, T~Miura, E.~P Rodriguez, X~Gao, and L.~G Ferreira.
-\newblock Overview of the radiometric and biophysical performance of the {{MODIS}} vegetation indices.
-\newblock {\em Remote Sensing of Environment}, 83(1):195--213, November 2002.
-
-\bibitem{IPPC}
-{International Plant Protection Convention}.
-\newblock International standards for phytosanitary measures (ispms), 2022.
-
-\bibitem{jinEfficientGeostatisticalAnalysis2021}
-Huidong Jin, K.~Shuvo~Bakar, Brent~L. Henderson, Robert G.~V. Bramley, and David~L. Gobbett.
-\newblock An efficient geostatistical analysis tool for on-farm experiments targeted at localised treatment.
-\newblock {\em Biosystems Engineering}, 205:121--136, May 2021.
-
-\bibitem{jonesRemoteSensingVegetation2010}
-Hamlyn~G. Jones and Robin~A. Vaughan.
-\newblock {\em Remote {{Sensing}} of {{Vegetation}}: {{Principles}}, {{Techniques}}, and {{Applications}}}.
-\newblock OUP Oxford, July 2010.
-
-\bibitem{journelMiningGeostatistics2003}
-A.~G. Journel, Andre~G. Journel, and Ch~J. Huijbregts.
-\newblock {\em Mining {{Geostatistics}}}.
-\newblock Blackburn Press, 2003.
-
-\bibitem{kamilarisDeepLearningAgriculture2018}
-Andreas Kamilaris and Francesc~X. {Prenafeta-Boldu}.
-\newblock Deep learning in agriculture: {{A}} survey.
-\newblock {\em Computers and Electronics in Agriculture}, 147:70--90, April 2018.
-
-\bibitem{koldasbayevaChallengesDatadrivenGeospatial2024}
-Diana Koldasbayeva, Polina Tregubova, Mikhail Gasanov, Alexey Zaytsev, Anna Petrovskaia, and Evgeny Burnaev.
-\newblock Challenges in data-driven geospatial modeling for environmental research and practice.
-\newblock {\em Nature Communications}, 15(1):10700, December 2024.
-
-\bibitem{kornblithBetterImageNetModels2019}
-Simon Kornblith, Jonathon Shlens, and Quoc~V. Le.
-\newblock Do {{Better ImageNet Models Transfer Better}}?, June 2019.
-
-\bibitem{kozaAutomatedDesignBoth1996}
-John~R. Koza, Forrest~H. Bennett, David Andre, and Martin~A. Keane.
-\newblock Automated {{Design}} of {{Both}} the {{Topology}} and {{Sizing}} of {{Analog Electrical Circuits Using Genetic Programming}}.
-\newblock In John~S. Gero and Fay Sudweeks, editors, {\em Artificial {{Intelligence}} in {{Design}} '96}, pages 151--170. Springer Netherlands, Dordrecht, 1996.
-
-\bibitem{krausPhotogrammetryGeometryImages2007}
-Karl Kraus.
-\newblock {\em Photogrammetry: {{Geometry}} from {{Images}} and {{Laser Scans}}}.
-\newblock Walter de Gruyter, 2007.
-
-\bibitem{kumleEstimatingPowerGeneralized2021}
-Levi Kumle, Melissa L.-H. V{\~o}, and Dejan Draschkow.
-\newblock Estimating power in (generalized) linear mixed models: {{An}} open introduction and tutorial in {{R}}.
-\newblock {\em Behavior Research Methods}, 53(6):2528--2543, December 2021.
-
-\bibitem{larkOptimizedSpatialSampling2002}
-R.~M Lark.
-\newblock Optimized spatial sampling of soil for estimation of the variogram by maximum likelihood.
-\newblock {\em Geoderma}, 105(1):49--80, January 2002.
-
-\bibitem{leeEfficientTwodimensionalSmoothing2013}
-Dae-Jin Lee, Mar{\'i}a Durb{\'a}n, and Paul Eilers.
-\newblock Efficient two-dimensional smoothing with {{P}}{$<$}math{$><$}mi is="true"{$>$}{{P}}{$<$}/mi{$><$}/math{$>$}-spline {{ANOVA}} mixed models and nested bases.
-\newblock {\em Computational Statistics \& Data Analysis}, 61:22--37, May 2013.
-
-\bibitem{lopezEfficiencyIncompleteBlock1995}
-Mar{\'i}a~V. L{\'o}pez and Jos{\'e}~L. Arr{\'u}e.
-\newblock Efficiency of an {{Incomplete Block Design Based}} on {{Geostatistics}} for {{Tillage Experiments}}.
-\newblock {\em Soil Science Society of America Journal}, 59(4):1104--1111, 1995.
-
-\bibitem{loweDistinctiveImageFeatures2004}
-David~G. Lowe.
-\newblock Distinctive {{Image Features}} from {{Scale-Invariant Keypoints}}.
-\newblock {\em International Journal of Computer Vision}, 60(2):91--110, November 2004.
-
-\bibitem{luInstanceFusionRealtimeInstancelevel2020}
-Feixiang Lu, Haotian Peng, Hongyu Wu, Jun Yang, Xinhang Yang, Ruizhi Cao, Liangjun Zhang, Ruigang Yang, and Bin Zhou.
-\newblock {{InstanceFusion}}: {{Real-time Instance-level 3D Reconstruction Using}} a {{Single RGBD Camera}}.
-\newblock {\em Computer Graphics Forum}, 39(7):433--445, 2020.
-
-\bibitem{mahleinHyperspectralSensorsImaging2018}
-A.-K. Mahlein, M.T. Kuska, J.~Behmann, G.~Polder, and A.~Walter.
-\newblock Hyperspectral {{Sensors}} and {{Imaging Technologies}} in {{Phytopathology}}: {{State}} of the {{Art}}.
-\newblock {\em Annual Review of Phytopathology}, 56(Volume 56, 2018):535--558, 2018.
-
-\bibitem{mahleinPlantDiseaseDetection2016}
-Anne-Katrin Mahlein.
-\newblock Plant {{Disease Detection}} by {{Imaging Sensors}} -- {{Parallels}} and {{Specific Demands}} for {{Precision Agriculture}} and {{Plant Phenotyping}}.
-\newblock {\em Plant Disease}, 100(2):241--251, February 2016.
-
-\bibitem{matheronPrinciplesGeostatistics1963}
-{Matheron}.
-\newblock Principles of geostatistics.
-\newblock {\em Economic Geology}, 58(8):1246--1266, December 1963.
 
 \bibitem{meadStatisticalPrinciplesDesign2012}
 R.~Mead, S.~G. Gilmour, and A.~Mead.
 \newblock {\em Statistical {{Principles}} for the {{Design}} of {{Experiments}}: {{Applications}} to {{Real Experiments}}}.
 \newblock Cambridge University Press, September 2012.
 
-\bibitem{mikhailIntroductionModernPhotogrammetry2001}
-Edward~M. Mikhail, James~S. Bethel, and J.~Chris McGlone.
-\newblock {\em Introduction to {{Modern Photogrammetry}}}.
-\newblock John Wiley \& Sons, March 2001.
-
-\bibitem{minasnyEfficiencyVariousApproaches2002}
-Budiman Minasny and Alex~B McBratney.
-\newblock The efficiency of various approaches to obtaining estimates of soil hydraulic properties.
-\newblock {\em Geoderma}, 107(1):55--70, May 2002.
-
-\bibitem{mullerGeostatisticalModellingPython2022}
-Sebastian M{\"u}ller, Lennart Sch{\"u}ler, Alraune Zech, and Falk He{\ss}e.
-\newblock Geostatistical modelling in {{Python}}.
-\newblock {\em Geoscientific Model Development}, 15(7):3161--3182, April 2022.
-
-\bibitem{nexUAV3DMapping2014}
-F.~C. Nex and F.~Remondino.
-\newblock {{UAV}} for {{3D}} mapping applications : A review.
-\newblock {\em Applied geomatics}, 6(1):1--2015, 2014.
-
-\bibitem{oliverGeostatisticalApplicationsPrecision2010}
-M.A. Oliver, editor.
-\newblock {\em Geostatistical {{Applications}} for {{Precision Agriculture}}}.
-\newblock Springer Netherlands, Dordrecht, 2010.
-
-\bibitem{onofriNewMethodAnalysis2010}
-A~Onofri, F~Gresta, and F~Tei.
-\newblock A new method for the analysis of germination and emergence data of weed species.
-\newblock {\em Weed Research}, 50(3):187--198, 2010.
-
-\bibitem{paineAerialPhotographyImage2012}
-David~P. Paine and James~D. Kiser.
-\newblock {\em Aerial {{Photography}} and {{Image Interpretation}}}.
-\newblock John Wiley \& Sons, February 2012.
+\bibitem{caslerFundamentalsExperimentalDesign2015}
+Michael~D. Casler.
+\newblock Fundamentals of {{Experimental Design}}: {{Guidelines}} for {{Designing Successful Experiments}}.
+\newblock {\em Agronomy Journal}, 107(2):692--705, 2015.
 
 \bibitem{paroliniPursuitScienceAgriculture2015}
 Giuditta Parolini.
 \newblock In pursuit of a science of agriculture: The role of statistics in field experiments.
 \newblock {\em History and Philosophy of the Life Sciences}, 37(3):261--281, September 2015.
 
-\bibitem{pattersonCarbonEmissionsLarge2021}
-David Patterson, Joseph Gonzalez, Quoc Le, Chen Liang, Lluis-Miquel Munguia, Daniel Rothchild, David So, Maud Texier, and Jeff Dean.
-\newblock Carbon {{Emissions}} and {{Large Neural Network Training}}, April 2021.
+\bibitem{berryResistedRiseRandomisation2015}
+Dominic Berry.
+\newblock The resisted rise of randomisation in experimental design: {{British}} agricultural science, c.1910-1930.
+\newblock {\em History and Philosophy of the Life Sciences}, 37(3):242--260, September 2015.
+
+\bibitem{tocherDesignAnalysisBlock1952}
+K.~D. Tocher.
+\newblock The {{Design}} and {{Analysis}} of {{Block Experiments}}.
+\newblock {\em Journal of the Royal Statistical Society: Series B (Methodological)}, 14(1):45--91, 1952.
+
+\bibitem{williamsOptimalityContrastsBlock2015}
+Emlyn Williams and Hans-Peter Piepho.
+\newblock Optimality and {{Contrasts}} in {{Block Designs}} with {{Unequal Treatment Replication}}.
+\newblock {\em Australian \& New Zealand Journal of Statistics}, 57(2):203--209, 2015.
+
+\bibitem{vanesSpatialNatureRandomization1993}
+H.~M. {van Es} and C.~L. {van Es}.
+\newblock Spatial {{Nature}} of {{Randomization}} and {{Its Effect}} on the {{Outcome}} of {{Field Experiments}}.
+\newblock {\em Agronomy Journal}, 85(2):420--428, 1993.
+
+\bibitem{brienMultiphaseExperimentsLeast2011}
+C.~J. Brien, B.~D. Harch, R.~L. Correll, and R.~A. Bailey.
+\newblock Multiphase {{Experiments}} with at {{Least One Later Laboratory Phase}}. {{I}}. {{Orthogonal Designs}}.
+\newblock {\em Journal of Agricultural, Biological, and Environmental Statistics}, 16(3):422--450, September 2011.
 
 \bibitem{piephoWhyRandomizeAgricultural2013}
 H.~P. Piepho, J.~M{\"o}hring, and E.~R. Williams.
 \newblock Why {{Randomize Agricultural Experiments}}?
 \newblock {\em Journal of Agronomy and Crop Science}, 199(5):374--383, 2013.
 
-\bibitem{puntelLeveragingDigitalAgriculture2024}
-Laila~A. Puntel, Laura~J. Thompson, and Taro Mieno.
-\newblock Leveraging digital agriculture for on-farm testing of technologies.
-\newblock {\em Frontiers in Agronomy}, 6, March 2024.
+\bibitem{schabenbergerStatisticalMethodsSpatial2004}
+Oliver Schabenberger and Carol~A. Gotway.
+\newblock {\em Statistical {{Methods}} for {{Spatial Data Analysis}}}.
+\newblock CRC Press, December 2004.
 
-\bibitem{qiModifiedSoilAdjusted1994}
-J.~Qi, A.~Chehbouni, A.~R. Huete, Y.~H. Kerr, and S.~Sorooshian.
-\newblock A modified soil adjusted vegetation index.
-\newblock {\em Remote Sensing of Environment}, 48(2):119--126, May 1994.
+\bibitem{onofriNewMethodAnalysis2010}
+A~Onofri, F~Gresta, and F~Tei.
+\newblock A new method for the analysis of germination and emergence data of weed species.
+\newblock {\em Weed Research}, 50(3):187--198, 2010.
 
-\bibitem{radfordLearningTransferableVisual2021}
-Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.
-\newblock Learning {{Transferable Visual Models From Natural Language Supervision}}, February 2021.
+\bibitem{stroupRethinkingAnalysisNonNormal2015}
+Walter~W. Stroup.
+\newblock Rethinking the {{Analysis}} of {{Non-Normal Data}} in {{Plant}} and {{Soil Science}}.
+\newblock {\em Agronomy Journal}, 107(2):811--827, 2015.
 
-\bibitem{razavianCNNFeaturesOfftheshelf2014}
-Ali~Sharif Razavian, Hossein Azizpour, Josephine Sullivan, and Stefan Carlsson.
-\newblock {{CNN Features}} off-the-shelf: An {{Astounding Baseline}} for {{Recognition}}, May 2014.
+\bibitem{agrestiIntroductionCategoricalData2018}
+Alan Agresti.
+\newblock {\em An {{Introduction}} to {{Categorical Data Analysis}}}.
+\newblock John Wiley \& Sons, November 2018.
+
+\bibitem{oliverGeostatisticalApplicationsPrecision2010}
+M.A. Oliver, editor.
+\newblock {\em Geostatistical {{Applications}} for {{Precision Agriculture}}}.
+\newblock Springer Netherlands, Dordrecht, 2010.
+
+\bibitem{websterGeostatisticsEnvironmentalScientists2007}
+Richard Webster and Margaret~A. Oliver.
+\newblock {\em Geostatistics for {{Environmental Scientists}}}.
+\newblock John Wiley \& Sons, October 2007.
 
 \bibitem{richterGeostatisticalModelsAgricultural2012}
 Christel Richter and B{\"a}rbel Kroschewski.
 \newblock Geostatistical {{Models}} in {{Agricultural Field Experiments}}: {{Investigations Based}} on {{Uniformity Trials}}.
 \newblock {\em Agronomy Journal}, 104(1):91--105, 2012.
+
+\bibitem{lopezEfficiencyIncompleteBlock1995}
+Mar{\'i}a~V. L{\'o}pez and Jos{\'e}~L. Arr{\'u}e.
+\newblock Efficiency of an {{Incomplete Block Design Based}} on {{Geostatistics}} for {{Tillage Experiments}}.
+\newblock {\em Soil Science Society of America Journal}, 59(4):1104--1111, 1995.
+
+\bibitem{bullockDataIntensiveFarmManagement2019}
+David~S. Bullock, Maria Boerngen, Haiying Tao, Bruce Maxwell, Joe~D. Luck, Luciano Shiratsuchi, Laila Puntel, and Nicolas~F. Martin.
+\newblock The {{Data-Intensive Farm Management Project}}: {{Changing Agronomic Research Through On-Farm Precision Experimentation}}.
+\newblock {\em Agronomy Journal}, 111(6):2736--2746, 2019.
+
+\bibitem{castrignanoGeostatisticalApproachModelling2017}
+A.~Castrignan{\`o}, R.~Quarto, A.~Venezia, and G.~Buttafuoco.
+\newblock A geostatistical approach for modelling and combining spatial data with different support.
+\newblock {\em Advances in Animal Biosciences}, 8(2):594--599, January 2017.
+
+\bibitem{jinEfficientGeostatisticalAnalysis2021}
+Huidong Jin, K.~Shuvo~Bakar, Brent~L. Henderson, Robert G.~V. Bramley, and David~L. Gobbett.
+\newblock An efficient geostatistical analysis tool for on-farm experiments targeted at localised treatment.
+\newblock {\em Biosystems Engineering}, 205:121--136, May 2021.
+
+\bibitem{puntelLeveragingDigitalAgriculture2024}
+Laila~A. Puntel, Laura~J. Thompson, and Taro Mieno.
+\newblock Leveraging digital agriculture for on-farm testing of technologies.
+\newblock {\em Frontiers in Agronomy}, 6, March 2024.
+
+\bibitem{trevisanSpatialVariabilityCrop2021}
+R.~G. Trevisan, D.~S. Bullock, and N.~F. Martin.
+\newblock Spatial variability of crop responses to agronomic inputs in on-farm precision experimentation.
+\newblock {\em Precision Agriculture}, 22(2):342--363, April 2021.
+
+\bibitem{PP1333}
+{{PP}} 1/333 (1) {{Adoption}} of digital technology for data generation for the efficacy evaluation of plant protection products.
+\newblock {\em EPPO Bulletin}, n/a(n/a).
+
+\bibitem{mahleinPlantDiseaseDetection2016}
+Anne-Katrin Mahlein.
+\newblock Plant {{Disease Detection}} by {{Imaging Sensors}} -- {{Parallels}} and {{Specific Demands}} for {{Precision Agriculture}} and {{Plant Phenotyping}}.
+\newblock {\em Plant Disease}, 100(2):241--251, February 2016.
+
+\bibitem{kamilarisDeepLearningAgriculture2018}
+Andreas Kamilaris and Francesc~X. {Prenafeta-Boldu}.
+\newblock Deep learning in agriculture: {{A}} survey.
+\newblock {\em Computers and Electronics in Agriculture}, 147:70--90, April 2018.
+
+\bibitem{EURLex1997265}
+{European Commission}.
+\newblock Council directive 97/57/{{EC}} of 22 september 1997, uniform {{Principles}} for evaluation and authorisation of plant protection products, 1997.
+
+\bibitem{directive_91_414_EEC}
+{Council of the European Communities}.
+\newblock Council {{Directive}} 91/414/{{EEC}} of 15 {{July}} 1991 concerning the placing of plant protection products on the market, 1991.
+
+\bibitem{WTO_SPS_Agreement}
+{World Trade Organization}.
+\newblock The {{WTO}} agreement on the application of sanitary and phytosanitary measures ({{SPS}} agreement).
+\newblock {\em World Trade Organization}, 1995.
+
+\bibitem{IPPC}
+{International Plant Protection Convention}.
+\newblock International standards for phytosanitary measures (ispms), 2022.
+
+\bibitem{EC_Regulation_1107_2009}
+{European Parliament and Council}.
+\newblock Regulation ({{EC}}) {{No}} 1107/2009 of the {{European Parliament}} and of the {{Council}} of 21 {{October}} 2009 concerning the placing of plant protection products on the market, 2009.
+
+\bibitem{EPPO_PP1_181}
+{EPPO}.
+\newblock {{PP}} 1/181(5) {{Conduct}} and reporting of efficacy evaluation trials, including good experimental practice.
+\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2021.
+
+\bibitem{EPPO_PP1_135}
+{EPPO}.
+\newblock {{PP}} 1/135(4) phytotoxicity assessment.
+\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2014.
+
+\bibitem{EPPO_PP1_152}
+{EPPO}.
+\newblock {{PP}} 1/152 {{Design}} and analysis of efficacy evaluation trials.
+\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2012.
+
+\bibitem{EPPO_PP1_93}
+{EPPO}.
+\newblock {{PP}} 1/93(3) weeds in cereals.
+\newblock Technical report, {European and Mediterranean Plant Protection Organization}, 2015.
+
+\bibitem{EWRS_score}
+H.~Bleiholder, T.~{van den Boom}, P.~Langel{\"u}ddeke, and R.~Stauss.
+\newblock Einheitliche codierung der ph{\"a}nologischen entwicklungsstadien mono- und dikotyler pflanzen - erweiterte {{BBCH-skala}}, allgemein.
+\newblock {\em Nachrichtenblatt des Deutschen Pflanzenschutzdienstes}, 43:265--270, 1991.
+
+\bibitem{agresti_exact_2001}
+Alan Agresti.
+\newblock Exact inference for categorical data: recent advances and continuing controversies.
+\newblock {\em Statistics in Medicine}, 20(17-18):2709--2722, 2001.
+\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.738.
+
+\bibitem{bockPhytopathometryGlossaryTwentyfirst2022}
+Clive~H. Bock, Sarah~J. Pethybridge, Jayme G.~A. Barbedo, Paul~D. Esker, Anne-Katrin Mahlein, and Emerson~M. Del~Ponte.
+\newblock A phytopathometry glossary for the twenty-first century: Towards consistency and precision in intra- and inter-disciplinary dialogues.
+\newblock {\em Tropical Plant Pathology}, 47(1):14--24, February 2022.
+
+\bibitem{chiang_quantitative_2020}
+K.~S. Chiang, H.~I. Liu, Y.~L. Chen, M.~El~Jarroudi, and C.~H. Bock.
+\newblock Quantitative {Ordinal} {Scale} {Estimates} of {Plant} {Disease} {Severity}: {Comparing} {Treatments} {Using} a {Proportional} {Odds} {Model}.
+\newblock {\em Phytopathology®}, 110(4):734--743, April 2020.
+
+\bibitem{moraes_characterizing_2022}
+Wanderson~Bucker Moraes, Laurence~V. Madden, and Pierce~A. Paul.
+\newblock Characterizing {Heterogeneity} and {Determining} {Sample} {Sizes} for {Accurately} {Estimating} {Wheat} {Fusarium} {Head} {Blight} {Index} in {Research} {Plots}.
+\newblock {\em Phytopathology®}, 112(2):315--334, February 2022.
+
+\bibitem{stevenson_overview_2001}
+M.~Stevenson, M.~Segui-Gomez, I.~Lescohier, C.~Di~Scala, and G.~McDonald-Smith.
+\newblock An overview of the injury severity score and the new injury severity score.
+\newblock {\em Injury Prevention: Journal of the International Society for Child and Adolescent Injury Prevention}, 7(1):10--13, March 2001.
+
+\bibitem{acutis_perfunctory_2012}
+Marco Acutis, Barbara Scaglia, and Roberto Confalonieri.
+\newblock Perfunctory analysis of variance in agronomy, and its consequences in experimental results interpretation.
+\newblock {\em European Journal of Agronomy}, 43:129--135, November 2012.
+
+\bibitem{chiang_what_2014}
+Kuo-Szu Chiang, Shih-Chia Liu, Clive~H. Bock, and Tim~R. Gottwald.
+\newblock What {Interval} {Characteristics} {Make} a {Good} {Categorical} {Disease} {Assessment} {Scale}?
+\newblock {\em Phytopathology®}, 104(6):575--585, June 2014.
+
+\bibitem{aquiles_e_effect_2024}
+Darghan~C. Aquiles~E., Taborda~L. Darlley~S., González~S. Nair~J., Rivera~M. Carlos~A., and Ospina~N. Jesús~E.
+\newblock The effect of spatial lag on modeling geomatic covariates using analysis of variance.
+\newblock {\em Applied Geomatics}, 16(3):779--788, September 2024.
+
+\bibitem{slaets_linear_2021}
+Johanna I.~F. Slaets, Runa~S. Boeddinghaus, and Hans-Peter Piepho.
+\newblock Linear mixed models and geostatistics for designed experiments in soil science: {Two} entirely different methods or two sides of the same coin?
+\newblock {\em European Journal of Soil Science}, 72(1):47--68, 2021.
+\newblock \_eprint: https://bsssjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ejss.12976.
+
+\bibitem{millar_remedies_2004}
+Russell~B. Millar and Marti~J. Anderson.
+\newblock Remedies for pseudoreplication.
+\newblock {\em Fisheries Research}, 70(2):397--407, December 2004.
+
+\bibitem{Piepho_2011}
+Hans-Peter Piepho, Christel Richter, Joachim Spilke, Karin Hartung, Arndt Kunick, and Heinrich Thöle.
+\newblock Statistical aspects of on-farm experimentation.
+\newblock {\em Crop and Pasture Science}, 62:721--735, 11 2011.
+
+\bibitem{antoniou_chapter_2023}
+Vyron Antoniou.
+\newblock Chapter 8 - {On} volunteered geographic information quality: a framework for sharing data quality information.
+\newblock In Nikolaos Stathopoulos, Andreas Tsatsaris, and Kleomenis Kalogeropoulos, editors, {\em Geoinformatics for {Geosciences}}, Earth {Observation}, pages 149--160. Elsevier, January 2023.
+
+\bibitem{alexopoulos_complementary_2023}
+Angelos Alexopoulos, Konstantinos Koutras, Sihem~Ben Ali, Stefano Puccio, Alessandro Carella, Roberta Ottaviano, and Athanasios Kalogeras.
+\newblock Complementary {Use} of {Ground}-{Based} {Proximal} {Sensing} and {Airborne}/{Spaceborne} {Remote} {Sensing} {Techniques} in {Precision} {Agriculture}: {A} {Systematic} {Review}.
+\newblock {\em Agronomy}, 13(7):1942, July 2023.
+\newblock Number: 7 Publisher: Multidisciplinary Digital Publishing Institute.
+
+\bibitem{zhao_grain_2011}
+Zhan Zhao, Yaoming Li, Jin Chen, and Jiaojiao Xu.
+\newblock Grain separation loss monitoring system in combine harvester.
+\newblock {\em Computers and Electronics in Agriculture}, 76(2):183--188, 2011.
+
+\bibitem{cisternas_systematic_2020}
+Isabel Cisternas, Ignacio Velásquez, Angélica Caro, and Alfonso Rodríguez.
+\newblock Systematic literature review of implementations of precision agriculture.
+\newblock {\em Computers and Electronics in Agriculture}, 176:105626, September 2020.
+
+\bibitem{mondino_considerazioni_2017}
+Borgogno Mondino and Enrico Corrado.
+\newblock Considerazioni su costi e mercato potenziali del telerilevamento da {SAPR} in {Italia} nel settore vitivinicolo.
+\newblock {\em AIT Conference 11° Workshop tematico di Telerilevamento}, 2017.
+\newblock Accepted: 2017-06-30T09:06:36Z.
+
+\bibitem{gomarascaBasicsGeomatics2009}
+Mario~A. Gomarasca.
+\newblock {\em Basics of {{Geomatics}}}.
+\newblock Springer Science \& Business Media, September 2009.
+
+\bibitem{cressieStatisticsSpatialData2015}
+Noel Cressie.
+\newblock {\em Statistics for {{Spatial Data}}}.
+\newblock John Wiley \& Sons, March 2015.
+
+\bibitem{goovaertsGeostatisticsNaturalResources1997}
+Pierre Goovaerts.
+\newblock {\em Geostatistics for {{Natural Resources Evaluation}}}.
+\newblock Oxford University Press, 1997.
+
+\bibitem{matheronPrinciplesGeostatistics1963}
+{Matheron}.
+\newblock Principles of geostatistics.
+\newblock {\em Economic Geology}, 58(8):1246--1266, December 1963.
+
+\bibitem{journelMiningGeostatistics2003}
+A.~G. Journel, Andre~G. Journel, and Ch~J. Huijbregts.
+\newblock {\em Mining {{Geostatistics}}}.
+\newblock Blackburn Press, 2003.
+
+\bibitem{mullerGeostatisticalModellingPython2022}
+Sebastian M{\"u}ller, Lennart Sch{\"u}ler, Alraune Zech, and Falk He{\ss}e.
+\newblock Geostatistical modelling in {{Python}}.
+\newblock {\em Geoscientific Model Development}, 15(7):3161--3182, April 2022.
+
+\bibitem{larkOptimizedSpatialSampling2002}
+R.~M Lark.
+\newblock Optimized spatial sampling of soil for estimation of the variogram by maximum likelihood.
+\newblock {\em Geoderma}, 105(1):49--80, January 2002.
+
+\bibitem{minasnyEfficiencyVariousApproaches2002}
+Budiman Minasny and Alex~B McBratney.
+\newblock The efficiency of various approaches to obtaining estimates of soil hydraulic properties.
+\newblock {\em Geoderma}, 107(1):55--70, May 2002.
+
+\bibitem{henglPracticalGuideGeostatistical2007}
+Tomislav Hengl.
+\newblock {\em A {{Practical Guide}} to {{Geostatistical Mapping}} of {{Environmental Variables}}}.
+\newblock {European commission. Joint research centre. Institute for environment and sustainability (Ispra, Italie)}, 2007.
 
 \bibitem{rodriguez-alvarezCorrectingSpatialHeterogeneity2018}
 Mar{\'i}a~Xos{\'e} {Rodr{\'i}guez-{\'A}lvarez}, Martin~P. Boer, Fred~A. {van Eeuwijk}, and Paul H.~C. Eilers.
@@ -366,131 +314,272 @@ Mar{\'i}a~Xos{\'e} {Rodr{\'i}guez-{\'A}lvarez}, Dae-Jin Lee, Thomas Kneib, Mar{\
 \newblock Fast smoothing parameter separation in multidimensional generalized {{P-splines}}: The {{SAP}} algorithm.
 \newblock {\em Statistics and Computing}, 25(5):941--957, September 2015.
 
-\bibitem{rouseMonitoringVegetationSystems1974}
-J.~W. Rouse, R.~H. Haas, J.~A. Schell, and D.~W. Deering.
-\newblock Monitoring vegetation systems in the {{Great Plains}} with {{ERTS}}.
-\newblock January 1974.
+\bibitem{leeEfficientTwodimensionalSmoothing2013}
+Dae-Jin Lee, Mar{\'i}a Durb{\'a}n, and Paul Eilers.
+\newblock Efficient two-dimensional smoothing with {{P}}{$<$}math{$><$}mi is="true"{$>$}{{P}}{$<$}/mi{$><$}/math{$>$}-spline {{ANOVA}} mixed models and nested bases.
+\newblock {\em Computational Statistics \& Data Analysis}, 61:22--37, May 2013.
 
-\bibitem{rubleeORBEfficientAlternative2011}
-Ethan Rublee, Vincent Rabaud, Kurt Konolige, and Gary Bradski.
-\newblock {{ORB}}: {{An}} efficient alternative to {{SIFT}} or {{SURF}}.
-\newblock In {\em 2011 {{International Conference}} on {{Computer Vision}}}, pages 2564--2571, November 2011.
+\bibitem{gburAnalysisGeneralizedLinear2020}
+Edward~E. Gbur, Walter~W. Stroup, Kevin~S. McCarter, Susan Durham, Linda~J. Young, Mary Christman, Mark West, and Matthew Kramer.
+\newblock {\em Analysis of {{Generalized Linear Mixed Models}} in the {{Agricultural}} and {{Natural Resources Sciences}}}.
+\newblock John Wiley \& Sons, January 2020.
 
-\bibitem{salinasruizGeneralizedLinearMixed2023}
-Josafhat Salinas~Ru{\'i}z, Osval~Antonio Montesinos~L{\'o}pez, Gabriela Hern{\'a}ndez~Ram{\'i}rez, and Jose Crossa~Hiriart.
-\newblock {\em Generalized {{Linear Mixed Models}} with {{Applications}} in {{Agriculture}} and {{Biology}}}.
-\newblock Springer International Publishing AG, Cham, SWITZERLAND, 2023.
-
-\bibitem{sarviaGeometricVsSpectral2024}
-Filippo Sarvia, Samuele De~Petris, Alessandro Farbo, and Enrico {Borgogno-Mondino}.
-\newblock Geometric vs spectral content of {{Remotely Piloted Aircraft Systems}} images in the {{Precision}} agriculture context.
-\newblock {\em The Egyptian Journal of Remote Sensing and Space Sciences}, 27(3):524--531, September 2024.
-
-\bibitem{schabenbergerStatisticalMethodsSpatial2004}
-Oliver Schabenberger and Carol~A. Gotway.
-\newblock {\em Statistical {{Methods}} for {{Spatial Data Analysis}}}.
-\newblock CRC Press, December 2004.
-
-\bibitem{seitzComparisonEvaluationMultiView2006}
-S.M. Seitz, B.~Curless, J.~Diebel, D.~Scharstein, and R.~Szeliski.
-\newblock A {{Comparison}} and {{Evaluation}} of {{Multi-View Stereo Reconstruction Algorithms}}.
-\newblock In {\em 2006 {{IEEE Computer Society Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}}'06)}, volume~1, pages 519--528, June 2006.
+\bibitem{kumleEstimatingPowerGeneralized2021}
+Levi Kumle, Melissa L.-H. V{\~o}, and Dejan Draschkow.
+\newblock Estimating power in (generalized) linear mixed models: {{An}} open introduction and tutorial in {{R}}.
+\newblock {\em Behavior Research Methods}, 53(6):2528--2543, December 2021.
 
 \bibitem{slaetsLinearMixedModels2021}
 Johanna I.~F. Slaets, Runa~S. Boeddinghaus, and Hans-Peter Piepho.
 \newblock Linear mixed models and geostatistics for designed experiments in soil science: {{Two}} entirely different methods or two sides of the same coin?
 \newblock {\em European Journal of Soil Science}, 72(1):47--68, 2021.
 
-\bibitem{stroupRethinkingAnalysisNonNormal2015}
-Walter~W. Stroup.
-\newblock Rethinking the {{Analysis}} of {{Non-Normal Data}} in {{Plant}} and {{Soil Science}}.
-\newblock {\em Agronomy Journal}, 107(2):811--827, 2015.
+\bibitem{hartleyMultipleViewGeometry2003}
+Richard Hartley and Andrew Zisserman.
+\newblock {\em Multiple {{View Geometry}} in {{Computer Vision}}}.
+\newblock Cambridge University Press, 2003.
 
-\bibitem{strubellEnergyPolicyConsiderations2019}
-Emma Strubell, Ananya Ganesh, and Andrew McCallum.
-\newblock Energy and {{Policy Considerations}} for {{Deep Learning}} in {{NLP}}, June 2019.
+\bibitem{krausPhotogrammetryGeometryImages2007}
+Karl Kraus.
+\newblock {\em Photogrammetry: {{Geometry}} from {{Images}} and {{Laser Scans}}}.
+\newblock Walter de Gruyter, 2007.
 
 \bibitem{szeliskiComputerVisionAlgorithms2022}
 Richard Szeliski.
 \newblock {\em Computer {{Vision}}: {{Algorithms}} and {{Applications}}}.
 \newblock Texts in {{Computer Science}}. Springer International Publishing, Cham, 2022.
 
-\bibitem{tanEfficientNetRethinkingModel2020}
-Mingxing Tan and Quoc~V. Le.
-\newblock {{EfficientNet}}: {{Rethinking Model Scaling}} for {{Convolutional Neural Networks}}, September 2020.
+\bibitem{colominaUnmannedAerialSystems2014}
+I.~Colomina and P.~Molina.
+\newblock Unmanned aerial systems for photogrammetry and remote sensing: {{A}} review.
+\newblock {\em ISPRS Journal of Photogrammetry and Remote Sensing}, 92:79--97, 2014.
 
-\bibitem{thenkabailHyperspectralRemoteSensing2016}
-Prasad~S. Thenkabail and John~G. Lyon, editors.
-\newblock {\em Hyperspectral {{Remote Sensing}} of {{Vegetation}}}.
-\newblock CRC Press, Boca Raton, April 2016.
+\bibitem{nexUAV3DMapping2014}
+F.~C. Nex and F.~Remondino.
+\newblock {{UAV}} for {{3D}} mapping applications : A review.
+\newblock {\em Applied geomatics}, 6(1):1--2015, 2014.
 
-\bibitem{tocherDesignAnalysisBlock1952}
-K.~D. Tocher.
-\newblock The {{Design}} and {{Analysis}} of {{Block Experiments}}.
-\newblock {\em Journal of the Royal Statistical Society: Series B (Methodological)}, 14(1):45--91, 1952.
-
-\bibitem{torralbaUnbiasedLookDataset2011}
-Antonio Torralba and Alexei~A. Efros.
-\newblock Unbiased look at dataset bias.
-\newblock In {\em {{CVPR}} 2011}, pages 1521--1528, June 2011.
-
-\bibitem{trevisanSpatialVariabilityCrop2021}
-R.~G. Trevisan, D.~S. Bullock, and N.~F. Martin.
-\newblock Spatial variability of crop responses to agronomic inputs in on-farm precision experimentation.
-\newblock {\em Precision Agriculture}, 22(2):342--363, April 2021.
+\bibitem{brownCloseRangeCameraCalibration2002}
+Duane Brown.
+\newblock Close-{{Range Camera Calibration}}.
+\newblock {\em Photogramm. Eng.}, 37, December 2002.
 
 \bibitem{triggsBundleAdjustmentModern2000}
 Bill Triggs, Philip~F. McLauchlan, Richard~I. Hartley, and Andrew~W. Fitzgibbon.
 \newblock Bundle {{Adjustment}} --- {{A Modern Synthesis}}.
 \newblock In Bill Triggs, Andrew Zisserman, and Richard Szeliski, editors, {\em Vision {{Algorithms}}: {{Theory}} and {{Practice}}}, pages 298--372, Berlin, Heidelberg, 2000. Springer.
 
-\bibitem{tuckerRedPhotographicInfrared1979}
-Compton~J. Tucker.
-\newblock Red and photographic infrared linear combinations for monitoring vegetation.
-\newblock {\em Remote Sensing of Environment}, 8(2):127--150, May 1979.
-
-\bibitem{meerImagingSpectrometryBasic2001}
-F.~D. van~der Meer and S.~M. de~Jong.
-\newblock {\em Imaging Spectrometry : Basic Principles and Prospective Applications}.
-\newblock Kluwer Academic, 2001.
-
-\bibitem{vanesSpatialNatureRandomization1993}
-H.~M. {van Es} and C.~L. {van Es}.
-\newblock Spatial {{Nature}} of {{Randomization}} and {{Its Effect}} on the {{Outcome}} of {{Field Experiments}}.
-\newblock {\em Agronomy Journal}, 85(2):420--428, 1993.
-
-\bibitem{wanOptimizingUAVbasedUncooled2024}
-Quanxing Wan, Magdalena Smigaj, Benjamin Brede, and Lammert Kooistra.
-\newblock Optimizing {{UAV-based}} uncooled thermal cameras in field conditions for precision agriculture.
-\newblock {\em International Journal of applied Earth Observation and Geoinformation}, 134:104184, November 2024.
-
-\bibitem{websterGeostatisticsEnvironmentalScientists2007}
-Richard Webster and Margaret~A. Oliver.
-\newblock {\em Geostatistics for {{Environmental Scientists}}}.
-\newblock John Wiley \& Sons, October 2007.
-
-\bibitem{westobyStructurefromMotionPhotogrammetryLowcost2012}
-M.~J. Westoby, J.~Brasington, N.~F. Glasser, M.~J. Hambrey, and J.~M. Reynolds.
-\newblock `{{Structure-from-Motion}}' photogrammetry: {{A}} low-cost, effective tool for geoscience applications.
-\newblock {\em Geomorphology}, 179:300--314, December 2012.
-
-\bibitem{williamsOptimalityContrastsBlock2015}
-Emlyn Williams and Hans-Peter Piepho.
-\newblock Optimality and {{Contrasts}} in {{Block Designs}} with {{Unequal Treatment Replication}}.
-\newblock {\em Australian \& New Zealand Journal of Statistics}, 57(2):203--209, 2015.
+\bibitem{furukawaAccurateDenseRobust2010}
+Yasutaka Furukawa and Jean Ponce.
+\newblock Accurate, {{Dense}}, and {{Robust Multiview Stereopsis}}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 32(8):1362--1376, August 2010.
 
 \bibitem{wolfElementsPhotogrammetryApplication2013}
 Paul~R. Wolf, Bon~A. DeWitt, and Benjamin~E. Wilkinson.
 \newblock {\em Elements of {{Photogrammetry}} with {{Application}} in {{GIS}}, {{Fourth Edition}}}.
 \newblock McGraw Hill Professional, October 2013.
 
-\bibitem{WTO_SPS_Agreement}
-{World Trade Organization}.
-\newblock The {{WTO}} agreement on the application of sanitary and phytosanitary measures ({{SPS}} agreement).
-\newblock {\em World Trade Organization}, 1995.
+\bibitem{loweDistinctiveImageFeatures2004}
+David~G. Lowe.
+\newblock Distinctive {{Image Features}} from {{Scale-Invariant Keypoints}}.
+\newblock {\em International Journal of Computer Vision}, 60(2):91--110, November 2004.
+
+\bibitem{baySpeededUpRobustFeatures2008}
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, and Luc Van~Gool.
+\newblock Speeded-{{Up Robust Features}} ({{SURF}}).
+\newblock {\em Computer Vision and Image Understanding}, 110(3):346--359, June 2008.
+
+\bibitem{rubleeORBEfficientAlternative2011}
+Ethan Rublee, Vincent Rabaud, Kurt Konolige, and Gary Bradski.
+\newblock {{ORB}}: {{An}} efficient alternative to {{SIFT}} or {{SURF}}.
+\newblock In {\em 2011 {{International Conference}} on {{Computer Vision}}}, pages 2564--2571, November 2011.
+
+\bibitem{westobyStructurefromMotionPhotogrammetryLowcost2012}
+M.~J. Westoby, J.~Brasington, N.~F. Glasser, M.~J. Hambrey, and J.~M. Reynolds.
+\newblock `{{Structure-from-Motion}}' photogrammetry: {{A}} low-cost, effective tool for geoscience applications.
+\newblock {\em Geomorphology}, 179:300--314, December 2012.
+
+\bibitem{seitzComparisonEvaluationMultiView2006}
+S.M. Seitz, B.~Curless, J.~Diebel, D.~Scharstein, and R.~Szeliski.
+\newblock A {{Comparison}} and {{Evaluation}} of {{Multi-View Stereo Reconstruction Algorithms}}.
+\newblock In {\em 2006 {{IEEE Computer Society Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}}'06)}, volume~1, pages 519--528, June 2006.
+
+\bibitem{mikhailIntroductionModernPhotogrammetry2001}
+Edward~M. Mikhail, James~S. Bethel, and J.~Chris McGlone.
+\newblock {\em Introduction to {{Modern Photogrammetry}}}.
+\newblock John Wiley \& Sons, March 2001.
+
+\bibitem{paineAerialPhotographyImage2012}
+David~P. Paine and James~D. Kiser.
+\newblock {\em Aerial {{Photography}} and {{Image Interpretation}}}.
+\newblock John Wiley \& Sons, February 2012.
+
+\bibitem{meerImagingSpectrometryBasic2001}
+F.~D. van~der Meer and S.~M. de~Jong.
+\newblock {\em Imaging Spectrometry : Basic Principles and Prospective Applications}.
+\newblock Kluwer Academic, 2001.
+
+\bibitem{thenkabailHyperspectralRemoteSensing2016}
+Prasad~S. Thenkabail and John~G. Lyon, editors.
+\newblock {\em Hyperspectral {{Remote Sensing}} of {{Vegetation}}}.
+\newblock CRC Press, Boca Raton, April 2016.
+
+\bibitem{mahleinHyperspectralSensorsImaging2018}
+A.-K. Mahlein, M.T. Kuska, J.~Behmann, G.~Polder, and A.~Walter.
+\newblock Hyperspectral {{Sensors}} and {{Imaging Technologies}} in {{Phytopathology}}: {{State}} of the {{Art}}.
+\newblock {\em Annual Review of Phytopathology}, 56(Volume 56, 2018):535--558, 2018.
+
+\bibitem{wanOptimizingUAVbasedUncooled2024}
+Quanxing Wan, Magdalena Smigaj, Benjamin Brede, and Lammert Kooistra.
+\newblock Optimizing {{UAV-based}} uncooled thermal cameras in field conditions for precision agriculture.
+\newblock {\em International Journal of applied Earth Observation and Geoinformation}, 134:104184, November 2024.
+
+\bibitem{sarviaGeometricVsSpectral2024}
+Filippo Sarvia, Samuele De~Petris, Alessandro Farbo, and Enrico {Borgogno-Mondino}.
+\newblock Geometric vs spectral content of {{Remotely Piloted Aircraft Systems}} images in the {{Precision}} agriculture context.
+\newblock {\em The Egyptian Journal of Remote Sensing and Space Sciences}, 27(3):524--531, September 2024.
+
+\bibitem{rouseMonitoringVegetationSystems1974}
+J.~W. Rouse, R.~H. Haas, J.~A. Schell, and D.~W. Deering.
+\newblock Monitoring vegetation systems in the {{Great Plains}} with {{ERTS}}.
+\newblock January 1974.
+
+\bibitem{tuckerRedPhotographicInfrared1979}
+Compton~J. Tucker.
+\newblock Red and photographic infrared linear combinations for monitoring vegetation.
+\newblock {\em Remote Sensing of Environment}, 8(2):127--150, May 1979.
+
+\bibitem{hueteOverviewRadiometricBiophysical2002}
+A~Huete, K~Didan, T~Miura, E.~P Rodriguez, X~Gao, and L.~G Ferreira.
+\newblock Overview of the radiometric and biophysical performance of the {{MODIS}} vegetation indices.
+\newblock {\em Remote Sensing of Environment}, 83(1):195--213, November 2002.
+
+\bibitem{qiModifiedSoilAdjusted1994}
+J.~Qi, A.~Chehbouni, A.~R. Huete, Y.~H. Kerr, and S.~Sorooshian.
+\newblock A modified soil adjusted vegetation index.
+\newblock {\em Remote Sensing of Environment}, 48(2):119--126, May 1994.
+
+\bibitem{jonesRemoteSensingVegetation2010}
+Hamlyn~G. Jones and Robin~A. Vaughan.
+\newblock {\em Remote {{Sensing}} of {{Vegetation}}: {{Principles}}, {{Techniques}}, and {{Applications}}}.
+\newblock OUP Oxford, July 2010.
+
+\bibitem{kozaAutomatedDesignBoth1996}
+John~R. Koza, Forrest~H. Bennett, David Andre, and Martin~A. Keane.
+\newblock Automated {{Design}} of {{Both}} the {{Topology}} and {{Sizing}} of {{Analog Electrical Circuits Using Genetic Programming}}.
+\newblock In John~S. Gero and Fay Sudweeks, editors, {\em Artificial {{Intelligence}} in {{Design}} '96}, pages 151--170. Springer Netherlands, Dordrecht, 1996.
+
+\bibitem{hastieElementsStatisticalLearning2009}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The {{Elements}} of {{Statistical Learning}}}.
+\newblock Springer {{Series}} in {{Statistics}}. Springer, New York, NY, 2009.
+
+\bibitem{araujoMachineLearningApplications2023}
+Sara~Oleiro Ara{\'u}jo, Ricardo~Silva Peres, Jos{\'e}~Cochicho Ramalho, Fernando Lidon, and Jos{\'e} Barata.
+\newblock Machine {{Learning Applications}} in {{Agriculture}}: {{Current Trends}}, {{Challenges}}, and {{Future Perspectives}}.
+\newblock {\em Agronomy}, 13(12):2976, December 2023.
+
+\bibitem{bockVisualEstimatesFully2020}
+Clive~H. Bock, Jayme G.~A. Barbedo, Emerson~M. Del~Ponte, David Bohnenkamp, and Anne-Katrin Mahlein.
+\newblock From visual estimates to fully automated sensor-based measurements of plant disease severity: Status and challenges for improving accuracy.
+\newblock {\em Phytopathology Research}, 2(1):9, April 2020.
+
+\bibitem{bockSpecialIssuePhytopathometry2022}
+Clive~H. Bock, Jayme G.~A. Barbedo, Anne-Katrin Mahlein, and Emerson~M. Del~Ponte.
+\newblock A special issue on phytopathometry --- visual assessment, remote sensing, and artificial intelligence in the twenty-first century.
+\newblock {\em Tropical Plant Pathology}, 47(1):1--4, February 2022.
+
+\bibitem{barbedoAutomaticMethodDetect2014}
+Jayme Garcia~Arnal Barbedo.
+\newblock An {{Automatic Method}} to {{Detect}} and {{Measure Leaf Disease Symptoms Using Digital Image Processing}}.
+\newblock {\em Plant Disease}, 98(12):1709--1716, December 2014.
+
+\bibitem{arnalbarbedoDigitalImageProcessing2013}
+Jayme~Garcia Arnal~Barbedo.
+\newblock Digital image processing techniques for detecting, quantifying and classifying plant diseases.
+\newblock {\em SpringerPlus}, 2(1):660, December 2013.
+
+\bibitem{bockPlantDiseaseSeverity2010}
+C.~H. Bock, Poole ~, G.~H., Parker ~, P.~E., and T.~R. {and Gottwald}.
+\newblock Plant {{Disease Severity Estimated Visually}}, by {{Digital Photography}} and {{Image Analysis}}, and by {{Hyperspectral Imaging}}.
+\newblock {\em Critical Reviews in Plant Sciences}, 29(2):59--107, March 2010.
+
+\bibitem{salinasruizGeneralizedLinearMixed2023}
+Josafhat Salinas~Ru{\'i}z, Osval~Antonio Montesinos~L{\'o}pez, Gabriela Hern{\'a}ndez~Ram{\'i}rez, and Jose Crossa~Hiriart.
+\newblock {\em Generalized {{Linear Mixed Models}} with {{Applications}} in {{Agriculture}} and {{Biology}}}.
+\newblock Springer International Publishing AG, Cham, SWITZERLAND, 2023.
+
+\bibitem{goodfellowDeepLearning2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep {{Learning}}}.
+\newblock MIT Press, 2016.
+
+\bibitem{luInstanceFusionRealtimeInstancelevel2020}
+Feixiang Lu, Haotian Peng, Hongyu Wu, Jun Yang, Xinhang Yang, Ruizhi Cao, Liangjun Zhang, Ruigang Yang, and Bin Zhou.
+\newblock {{InstanceFusion}}: {{Real-time Instance-level 3D Reconstruction Using}} a {{Single RGBD Camera}}.
+\newblock {\em Computer Graphics Forum}, 39(7):433--445, 2020.
+
+\bibitem{koldasbayevaChallengesDatadrivenGeospatial2024}
+Diana Koldasbayeva, Polina Tregubova, Mikhail Gasanov, Alexey Zaytsev, Anna Petrovskaia, and Evgeny Burnaev.
+\newblock Challenges in data-driven geospatial modeling for environmental research and practice.
+\newblock {\em Nature Communications}, 15(1):10700, December 2024.
+
+\bibitem{alomStateoftheArtSurveyDeep2019}
+Md~Zahangir Alom, Tarek~M. Taha, Chris Yakopcic, Stefan Westberg, Paheding Sidike, Mst~Shamima Nasrin, Mahmudul Hasan, Brian~C. Van~Essen, Abdul A.~S. Awwal, and Vijayan~K. Asari.
+\newblock A {{State-of-the-Art Survey}} on {{Deep Learning Theory}} and {{Architectures}}.
+\newblock {\em Electronics}, 8(3):292, March 2019.
+
+\bibitem{torralbaUnbiasedLookDataset2011}
+Antonio Torralba and Alexei~A. Efros.
+\newblock Unbiased look at dataset bias.
+\newblock In {\em {{CVPR}} 2011}, pages 1521--1528, June 2011.
+
+\bibitem{radfordLearningTransferableVisual2021}
+Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.
+\newblock Learning {{Transferable Visual Models From Natural Language Supervision}}, February 2021.
+
+\bibitem{brownLanguageModelsAre2020}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel {Herbert-Voss}, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei.
+\newblock Language {{Models}} are {{Few-Shot Learners}}, July 2020.
+
+\bibitem{bommasaniOpportunitiesRisksFoundation2022}
+Rishi Bommasani, Drew~A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael~S. Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, Erik Brynjolfsson, Shyamal Buch, Dallas Card, Rodrigo Castellon, Niladri Chatterji, Annie Chen, Kathleen Creel, Jared~Quincy Davis, Dora Demszky, Chris Donahue, Moussa Doumbouya, Esin Durmus, Stefano Ermon, John Etchemendy, Kawin Ethayarajh, Li~{Fei-Fei}, Chelsea Finn, Trevor Gale, Lauren Gillespie, Karan Goel, Noah Goodman, Shelby Grossman, Neel Guha, Tatsunori Hashimoto, Peter Henderson, John Hewitt, Daniel~E. Ho, Jenny Hong, Kyle Hsu, Jing Huang, Thomas Icard, Saahil Jain, Dan Jurafsky, Pratyusha Kalluri, Siddharth Karamcheti, Geoff Keeling, Fereshte Khani, Omar Khattab, Pang~Wei Koh, Mark Krass, Ranjay Krishna, Rohith Kuditipudi, Ananya Kumar, Faisal Ladhak, Mina Lee, Tony Lee, Jure Leskovec, Isabelle Levent, Xiang~Lisa Li, Xuechen Li, Tengyu Ma, Ali Malik, Christopher~D. Manning, Suvir Mirchandani, Eric Mitchell, Zanele Munyikwa, Suraj Nair, Avanika Narayan, Deepak Narayanan, Ben Newman, Allen Nie, Juan~Carlos Niebles, Hamed Nilforoshan, Julian Nyarko, Giray Ogut, Laurel Orr, Isabel Papadimitriou, Joon~Sung Park, Chris Piech, Eva Portelance, Christopher Potts, Aditi Raghunathan, Rob Reich, Hongyu Ren, Frieda Rong, Yusuf Roohani, Camilo Ruiz, Jack Ryan, Christopher R{\'e}, Dorsa Sadigh, Shiori Sagawa, Keshav Santhanam, Andy Shih, Krishnan Srinivasan, Alex Tamkin, Rohan Taori, Armin~W. Thomas, Florian Tram{\`e}r, Rose~E. Wang, William Wang, Bohan Wu, Jiajun Wu, Yuhuai Wu, Sang~Michael Xie, Michihiro Yasunaga, Jiaxuan You, Matei Zaharia, Michael Zhang, Tianyi Zhang, Xikun Zhang, Yuhui Zhang, Lucia Zheng, Kaitlyn Zhou, and Percy Liang.
+\newblock On the {{Opportunities}} and {{Risks}} of {{Foundation Models}}, July 2022.
+
+\bibitem{heMomentumContrastUnsupervised2020}
+Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick.
+\newblock Momentum {{Contrast}} for {{Unsupervised Visual Representation Learning}}, March 2020.
+
+\bibitem{pattersonCarbonEmissionsLarge2021}
+David Patterson, Joseph Gonzalez, Quoc Le, Chen Liang, Lluis-Miquel Munguia, Daniel Rothchild, David So, Maud Texier, and Jeff Dean.
+\newblock Carbon {{Emissions}} and {{Large Neural Network Training}}, April 2021.
+
+\bibitem{strubellEnergyPolicyConsiderations2019}
+Emma Strubell, Ananya Ganesh, and Andrew McCallum.
+\newblock Energy and {{Policy Considerations}} for {{Deep Learning}} in {{NLP}}, June 2019.
+
+\bibitem{chenSimpleFrameworkContrastive2020}
+Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
+\newblock A {{Simple Framework}} for {{Contrastive Learning}} of {{Visual Representations}}, July 2020.
+
+\bibitem{devlinBERTPretrainingDeep2019}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock {{BERT}}: {{Pre-training}} of {{Deep Bidirectional Transformers}} for {{Language Understanding}}, May 2019.
+
+\bibitem{kornblithBetterImageNetModels2019}
+Simon Kornblith, Jonathon Shlens, and Quoc~V. Le.
+\newblock Do {{Better ImageNet Models Transfer Better}}?, June 2019.
+
+\bibitem{razavianCNNFeaturesOfftheshelf2014}
+Ali~Sharif Razavian, Hossein Azizpour, Josephine Sullivan, and Stefan Carlsson.
+\newblock {{CNN Features}} off-the-shelf: An {{Astounding Baseline}} for {{Recognition}}, May 2014.
 
 \bibitem{zophRethinkingPretrainingSelftraining2020}
 Barret Zoph, Golnaz Ghiasi, Tsung-Yi Lin, Yin Cui, Hanxiao Liu, Ekin~D. Cubuk, and Quoc~V. Le.
 \newblock Rethinking {{Pre-training}} and {{Self-training}}, November 2020.
+
+\bibitem{tanEfficientNetRethinkingModel2020}
+Mingxing Tan and Quoc~V. Le.
+\newblock {{EfficientNet}}: {{Rethinking Model Scaling}} for {{Convolutional Neural Networks}}, September 2020.
 
 \end{thebibliography}

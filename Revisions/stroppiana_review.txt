@@ -1,0 +1,138 @@
+Candidate (first name – last name): Samuele Bumbaca
+Title of the Thesis: Geomatic Techniques to Support Phytosanitary Products Tests whithin the
+EPPO Standard Framework
+Supervisor (first name – last name): Enrico Corrado Borgogno Mondino
+Name of the reviewer: Daniela Stroppiana
+Reviewer’s institution: CNR IREA Milano
+Please rate the following points
+Insufficient
+Overall scientific merit
+(originality, relevance, completeness)
+Introduction and bibliography
+(sufficient information provided by the
+introduction, appropriate cited
+references)
+Methodology
+(clearly described methods, adequate
+and exhaustive data analysis (if
+applicable)
+Results
+(convincing and clearly presented
+results, adequate number and quality of
+tables and figures)
+
+Sufficient
+
+Good
+
+Excellent
+
+X
+
+X
+
+X
+
+X
+
+Overall evaluation (please check one)
+The candidate can be admitted to the final examination
+X
+
+The candidate can be admitted to the final examination but the thesis requires
+minor revision; further evaluation by the reviewer is not required
+
+To be admitted to the final examination the thesis requires extensive revision;
+the revised version must be provided within 6 months and must be re-evaluated
+by the reviewer
+
+Specific comments and
+suggestions [mandatory]
+The thesis document presented by the candidate is not ready to be submitted; there are substantial
+revisions that should be implemented to the document before the final examination.
+Overall, the thesis text is not well structured and organized, it is difficult to follow and read. Major
+weakness is that it lacks an overall view of the scientific work carried out by the candidate, who
+should emphasize the novel contribution of his work to the scientific gap in the specific field of
+application of geomatic techniques. The candidate should also better highlight the results from the
+three case studies, and he should provide on overall summary. The text is verbose and at certain
+sections too long. I suggest the candidate to revise and to shortened where necessary. Figures and
+tables could help to summarize relevant information.
+More attention should be paid to the text's structure and style (also graphical readability of figures).
+I provide below some general comments.
+▪ Throughout the text the candidate should clearly describe his contribution to the methodology
+and to the results; he should highlight the actual contribution of the doctoral research.
+Description of the background is necessary to better highlight the innovative contribution of
+the doctoral work.
+▪ An extended abstract is missing at the beginning of the document. This abstract should be
+concise but informative on the major content of the work and on the innovative contribution
+compared to the research/operative gaps that the thesis should fill. The abstract should clarify
+research gaps, objectives, methods, results, specificity of the field of application (in this case
+of geomatic techniques) and study cases.
+▪ This abstract could guide through the very long text; a file rouge is missing in the text that is
+often verbose. Some paragraphs could be shortened.
+▪ Most of the text describes theoretical and background information, such as in the case of
+introduction to chapter 1 often loosing the focus on the actual thesis contribution. To give one
+example: in 1.3 (Geomatic Techniques) the focus should be, first, on geomatic techniques that
+are apparently introduced after six pages (‘Today, digital technologies such as georeferenced
+imaging, ensure a very high precision of measurements…”). The text should be clear on the
+topic of each section: what are geomatic techniques, what are the advantages to traditional
+techniques, etc…but again focused on the work done and not as a general description of
+background.
+▪ The same comments apply to the objectives of the work: a separate section at the beginning
+(besides the description in the abstract) is needed to let reader know what the work aimed at.
+Apparently in the text, objectives are described for the first time at page 32. Section 1.4 could
+be a good summary of the objectives if better focused: what is the advantage of geomatic
+techniques? To provide continuous spatially distributed information overcoming the need of
+randomized selected sites given by geostatistics? Specifically, what is the definition of
+geomatic techniques (please avoid imprecise and general definition as ‘geomatics techniques
+such as photogrammetry, spectral imaging’, page 32).
+The text should be more specific on the study cases; since the very early beginning, the reader
+should understand what are the study cases. Please avoid general and imprecise definitions
+such as ‘Through a series of study cases addressing each variable type described’ (page 32)
+and ‘In the second study case…’ and ‘Through a series of complementary study cases’ (page
+199) (what about the first? How many are there?).
+▪ The methodology is lost in the details of descriptions that probably can be shortened.
+▪ The concept of binary, ordinal…are very general; indeed, the study focused on specific
+variables that should be clearly stated, e.g. plant counting.
+
+▪
+
+▪
+▪
+▪
+
+▪
+
+▪
+
+The ‘Conclusions’ section provides a good overview of the work; it needs minor revisions. It
+needs to discuss also the contribution of geomatic, besides ML, since this is the core of the
+thesis. As it is now, it is more focused on the advantages of ML that are relevant but not
+essential (the title is in fact ‘Geomatic Techniques to Support Phytosanitary Products Tests
+whithin the EPPO Standard Framework’). The candidate should complement the text with the
+advantages of geomatic (specifically the data/techniques used in the work): we all agree on
+the general advantages of geomatic, but the contribution of the doctoral work is to show them
+quantitatively and in an innovative way. As suggested above also clear reference to the type
+of study cases (besides first, second and third) could improve the summary and the
+conclusions.
+Probably, there is a misspelling the title words.
+Please add ideas on future developments and further applications.
+Rephrase too general sentences (‘Unlike manual methods, which are inherently limited by
+human capacity and time constraints, automated and semi-automated systems can
+continuously gather data with minimal interruption’ (page 19) (such as? What systems are
+you referring to?); ‘nadiral or supposedly nadiral images’ (What are the supposedly
+nadiral?); ‘while also implementing a handcrafted algorithm as baseline’ (what do you mean
+with handcrafted?)
+Add clear description of what you refer with ‘validation’ throughout the text. At page 20,
+when you refer to benchmarks for validation are these values extracted from the literature? Do
+these values apply to all variables in the same category? Testing, validation, cross-validation
+and independent validation are different concepts.
+Final minor comment, the doctoral thesis is personal work, I think it is better to avoid using
+first plural pronoun (‘we’).
+
+-------------------------------------Date and Signature
+--------------------------------------
+
+17/06/2025
+
+

@@ -1,0 +1,108 @@
+Candidate (first name – last
+name): Samuele Bumbaca
+Title of the Thesis: Geomatic Techniques to Support Phytosanitary Products Tests whithin the
+EPPO Standard Framework
+Supervisor (first name – last name): Enrico Corrado Borgogno Mondino
+Name of the reviewer: Giovanna Sona
+Reviewer’s institution: Università degli Studi di Milano - DiSAA
+Please rate the following points
+Insufficient
+Overall scientific merit
+(originality, relevance, completeness)
+Introduction and bibliography
+(sufficient information provided by the
+introduction, appropriate cited
+references)
+Methodology
+(clearly described methods, adequate
+and exhaustive data analysis (if
+applicable)
+Results
+(convincing and clearly presented
+results, adequate number and quality of
+tables and figures)
+
+Sufficient
+
+Good
+
+Excellent
+
+X
+
+X
+
+X
+
+X
+
+Overall evaluation (please check one)
+The candidate can be admitted to the final examination
+The candidate can be admitted to the final examination but the thesis requires
+minor revision; further evaluation by the reviewer is not required
+To be admitted to the final examination the thesis requires extensive revision;
+the revised version must be provided within 6 months and must be re-evaluated
+by the reviewer (even not the same)
+X
+
+Specific comments and
+suggestions [mandatory]
+The thesis needs a deep revision.
+It has a very confused structure, that makes it very difficult to understand the relevance and
+originality of the research, and the results.
+Here follows a short non-exhaustive list of remarks.
+
+
+
+
+
+
+
+
+
+
+The thesis is missing of real introductory chapter, a first one that is a summary, to make the
+reader understand the main topic or the research, the purpose of the work and the workflow
+of the research.
+Then should follow a state of the art and literature review part, with a focus of the open issues
+and motivation and structure of the thesis.
+Chapter 1 indeed is not an introduction, but a list of methods and techniques that will be used
+to develop the thesis work, I suppose.
+Paragraph 1.4 must be moved at the beginning
+Many different statistical methods are mentioned in different paragraphs, and this also is
+confusing.
+Ch.1.3 could be splitted in a geostatistic part, and in a part that describe methods that make
+use of digital images, common RGB or Multispectral, in a photogrammetric processing
+workflow.
+The products (DEM and Orthophotos) then can be used to build indices, and so on.
+Vague definitions should be replaced with more appropriate and technically correct ones (f.i. :
+‘Photogrammetry is a technique used to obtain reliable information about physical objects and
+the environment…’)
+At page 23 in the description of the principal steps of a photogrammetric processing
+workflow, there is a substantial big mistake : the Exterior Orientation of images cannot be ‘
+achieved by identifying and matching common points (tie points) in overlapping images and
+using these points to solve or the camera parameters.’.
+In fact, E.O. parameters cannot be determined by using tie points only!
+
+
+
+If some parts are already published in a journal (as Ch.2.2) this should be mentioned. (is there
+any supplementary material ?)
+
+
+
+The Reference lists are in a very weird format : a mix of numbers and alphabetical order.
+Some documents are missing of true reference (f.i. [8] Alan Agresti. Analysis of Ordinal
+Categorical Data., in 2.2)
+
+
+
+Last : many typos have been found, starting from the title itself! Please revise the English
+language.
+
+--------------------------------------
+
+Date and Signature : 17 June
+2025 --------------------------------------
+
+

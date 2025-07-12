@@ -4,6 +4,11 @@
 \usepackage[a4paper,top=1.7cm,bottom=7.4cm,left=2.5cm,right=6.0cm,footskip=6.3cm]{geometry}
 \usepackage{setspace}
 \usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\thechapter}{20pt}{\Huge}
+% Remove the "Chapter" word
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{}{0pt}{\Huge}
 \usepackage{titling}
 % Font setup for Arial-like appearance with pdfLaTeX
 \usepackage[scaled=.92]{helvet} % Use Helvetica (closest to Arial for pdfLaTeX), scaled to match Arial proportions
@@ -62,17 +67,68 @@
 % Include the first page from the PDF file
 \includepdf[pages=1]{Intestazione/t3._Thesis_first_page.pdf}
 
-\abstract{\textbf{Background and Research Gap:} Agricultural research for Plant Protection Product (PPP) development relies on hypothesis statistical testing. The European and Mediterranean Plant Protection Organizzation (EPPO) set the standards to perform tests in all its member countries. EPPO recocnized traditional statistical approaches address environmental variability through experimental design features like randomized controls. These methods require experimentalists to identify environmental variability before data collection. This a priori identification of variance sources depends heavily on experimentalist expertise rather than systematic statistical procedures, creating a significant limitation in agricultural field studies. Geostatistical methods offer an alternative approach by enabling post-hoc estimation of spatial environmental variability through variograms or spline fitting techniques. These methods are also recognized by EPPO, but they requires spatially referenced data collection.
+\abstract{
 
-\textbf{Research Objectives:} This research investigates the applicability of geomatics technologies for generating spatially referenced datasets across all EPPO-recognized observation categories (binary, nominal, ordinal, discrete, and continuous), with the goal of demonstrating how these techniques can facilitate the adoption of geostatistical methods in hypothesis testing for agricultural research within the EPPO standard framework.
+\textbf{Background and Research Gap:} Agricultural research for Plant 
+Protection Product (PPP) development relies on statistical hypothesis testing. 
+The European and Mediterranean Plant Protection Organizzation (EPPO) sets the 
+standards for conducting tests in all its member countries. Traditional
+statistical approaches recognised by EPPO address environmental variability through
+experimental design features such as randomised controls. These methods require 
+experimentalists to identify sources of environmental variability prior to data 
+collection. This a priori identification of variance sources relies heavily on 
+the expertise of the experimentalist rather than on systematic statistical 
+procedures, which creates a significant limitation in agricultural field studies. 
+Geostatistical methods offer an alternative approach, enabling the estimation of 
+spatial environmental variability after data collection through variograms or 
+spline fitting techniques. These methods are recognised by EPPO, but require 
+spatially referenced data collection.
 
-\textbf{Methodology:} Three study cases were conducted addressing different variable types: (1) continuous variables through machine learning-based maize seedling counting using photogrammetry and computer vision; (2) ordinal variables through automated phytotoxicity scoring using multispectral imaging and custom feature extraction; and (3) binary/nominal variables through anomaly detection for plant health classification using pre-trained models and unsupervised learning.
+\textbf{Research Objectives:} With reference to the above-mentioned 
+geostatistical approach, this research investigates the applicability of 
+geomatics technologies for generating spatially referenced datasets across 
+all EPPO-recognized observation categories, with the goal of demonstrating how 
+these techniques can facilitate the adoption of geostatistical methods in 
+hypothesis testing for agricultural research within the EPPO standard framework.
 
-\textbf{Key Results:} For continuous variables, transformer-mixed architectures (RT-DETR) required fewer training samples (approximately 60) compared to pure CNN models (110-130 samples) to achieve EPPO benchmark performance ($R^2$ > 0.85), though in-domain training data proved essential regardless of architecture. For ordinal variables, machine learning effectively reproduced phytotoxicity scoring ($\kappa$ > 0.7) through photogrammetric 3D models and spectral imaging, enabling conversion from ordinal to continuous scales for enhanced statistical analysis. For binary/nominal variables, pre-trained models successfully performed plant health classification (accuracy > 0.85) using anomaly detection without task-specific training.
+\textbf{Methodology:} 
+This work considered three aspects of geomatics technologies applicability in 
+this context:
+\begin{enumerate}
+\item counting, using deep learning object detectors to count maize seedlings on orthomosaics;
+\item scoring, using machine learning regressors to score phytotoxicity via photogrammetric multispectral imaging and custom feature extraction;
+\item classify, using anomaly detection to classify healthy or deseased plant tissues via pre-trained models.
+\end{enumerate}
 
-\textbf{Novel Contribution:} This work establishes the first systematic evaluation of minimum requirements for implementing geomatics techniques within EPPO standards, providing practical guidelines for dataset size, validation protocols, and integration strategies. The research demonstrates that geomatics technologies can successfully provide spatial coordinates alongside observations for all EPPO variable types, enabling the implementation of geostatistical methods that improve environmental variability modeling compared to traditional experimental design approaches.
+\textbf{Key Results:} To achieve EPPO benchmark performance ($R^2$ > 0.85) in 
+maize seedling counting from orthomosaics, transformer-based object detectors 
+required approximately 60 labeled training images ($225 \times 225$ pixels at 
+$5\,\text{mm}/\text{pixel}$ resolution), with domain-specific training data 
+proving essential for agricultural applications. Machine learning successfully 
+automated phytotoxicity scoring ($\kappa$ > 0.7) with only 30 training samples 
+by combining photogrammetric 3D models with spectral imaging, converting 
+subjective ordinal assessments into objective continuous measurements suitable 
+for enhanced statistical analysis. 
+Pre-trained models achieved accurate plant deseases classification (accuracy > 0.85) 
+using anomaly detection techniques without requiring task-specific training. 
+All three approaches successfully demonstrated the feasibility of automatically 
+collecting georeferenced observations for agricultural trial assessments that 
+comply with EPPO standards, thereby enabling the implementation of geostatistical 
+methods for improved spatial analysis.
 
-\textbf{Practical Impact:} The findings enable agricultural researchers to adopt more robust statistical methods for PPP trials by providing clear implementation requirements for digital data collection technologies, ultimately leading to more accurate efficacy evaluations and improved crop protection strategies.}
+\textbf{Novel Contribution:} This work establishes the first systematic 
+evaluation of minimum requirements for implementing geomatics techniques within 
+EPPO standards, providing practical guidelines for dataset size, validation 
+protocols, and integration strategies. The research demonstrates that geomatics 
+technologies can successfully provide spatial coordinates alongside observations 
+for all EPPO variable types, enabling the implementation of geostatistical 
+methods that improve environmental variability modeling compared to traditional 
+experimental design approaches.
+
+\textbf{Practical Impact:} The findings enable agricultural researchers to adopt 
+more robust statistical methods for PPP trials by providing clear implementation 
+requirements for digital data collection technologies, ultimately leading to more 
+accurate efficacy evaluations and improved crop protection strategies.}
 
 \clearpage
 
@@ -85,43 +141,92 @@
 
 \section{Research Overview and Motivation}
 
-Agricultural research for plant protection product (PPP) development relies heavily on statistical hypothesis testing to establish efficacy and safety. Traditional experimental approaches in this field face a fundamental limitation: they require experimentalists to identify and control for environmental variability before data collection through experimental design features like randomized controls and blocking strategies. This a priori identification of variance sources depends heavily on experimentalist expertise and field experience rather than systematic statistical procedures, creating potential biases and limitations in agricultural field studies.
+Agricultural research for plant protection product (PPP) development relies heavily 
+on statistical hypothesis testing to establish efficacy and safety. Traditional 
+experimental approaches in this field face a fundamental limitation: they 
+require experimentalists to identify and control for environmental variability 
+before data collection through experimental design features like randomized 
+controls and blocking strategies. This "a priori" identification of variance 
+sources depends heavily on experimentalist expertise and field experience 
+rather than systematic statistical procedures, creating potential biases and 
+limitations in agricultural field studies.
 
-The European and Mediterranean Plant Protection Organization (EPPO) has established comprehensive standards for PPP evaluation that require rigorous statistical validation across diverse data types including binary, nominal, ordinal, discrete, and continuous observations. However, classic statistical frameworks within these standards struggle to adequately address unknown spatial environmental variability that emerges during trials.
+The European and Mediterranean Plant Protection Organization (EPPO) has 
+established comprehensive standards for PPP evaluation that require rigorous 
+statistical validation across diverse data types. However, classic statistical 
+frameworks within these standards struggle to adequately address unknown spatial 
+environmental variability that emerges during trials.
 
-Geostatistical methods offer a promising alternative approach by enabling post-hoc estimation of spatial environmental variability through mathematical techniques such as variograms and spline fitting. While this posterior analysis capability represents a significant advantage over classical experimental design approaches, geostatistics requires spatially referenced data collection, introducing the practical challenge of precise observation geolocation in agricultural field conditions.
+Geostatistical methods provide a well-established alternative approach, enabling 
+the estimation of spatial environmental variability through mathematical 
+techniques such as variograms and spline fitting. 
+This approach fundamentally shifts the traditional paradigm by eliminating the 
+need to have prior knowledge of environmental variability before starting the 
+field trial. Instead, it enables this variability to be estimated afterwards, 
+even when its effects overlap or interact with those of the treatments. While 
+this analysis capability represents a significant advantage over classical 
+experimental design approaches, geostatistics requires spatially referenced data 
+collection, introducing the practical challenge of precise observation 
+geolocation in agricultural field conditions.
 
-Recent advances in geomatics technologies - including photogrammetry, spectral imaging, and machine learning - present new opportunities to overcome these limitations by providing efficient methods for generating spatially referenced datasets. However, the practical implementation of these technologies within the regulatory framework of PPP evaluation remains unexplored.
+Recent advances in geomatics technologies - including photogrammetry, spectral 
+imaging, and machine learning - present new opportunities to overcome these 
+limitations by providing efficient methods for generating spatially referenced 
+datasets. However, the practical implementation of these technologies within the 
+regulatory framework of PPP evaluation remains unexplored.
 
-\section{Research Objectives and Thesis Structure}
+\section{Research Objectives}
 
-This research investigates the applicability of geomatics technologies for generating spatially referenced datasets across all EPPO-recognized observation categories, with the goal of demonstrating how these techniques can facilitate the adoption of geostatistical methods in hypothesis testing for agricultural research within the EPPO standard framework.
+This research investigates the applicability of geomatics technologies for 
+recording spatially referenced observations across all EPPO standard categories. 
+The overarching goal is to demonstrate how these technologies can facilitate the 
+adoption of geostatistical methods in hypothesis testing for agricultural 
+research conducted within the EPPO framework.
 
-The specific objectives of this work are:
+During my doctoral work, I categorized EPPO standard assessments into three main 
+types of variables: continuous or discrete, ordinal, and nominal or binary. I 
+selected one representative EPPO assessment for each variable type:
 
 \begin{enumerate}
-    \item To establish minimum dataset requirements for implementing machine learning-based object detection in continuous variable assessment (plant counting)
-    \item To evaluate the effectiveness of digital techniques for reproducing ordinal scale assessments traditionally performed manually
-    \item To investigate the application of unsupervised learning approaches for binary and nominal variable classification in disease detection
-    \item To demonstrate the integration of geomatics-derived spatial coordinates with geostatistical methods for improved environmental variability modeling
+\item Plant counting (continuous or discrete)
+\item Phytotoxicity scoring (ordinal)
+\item Disease detection (nominal or binary)
 \end{enumerate}
 
-The thesis is structured as a collection of study cases, each addressing specific variable types within the EPPO framework:
+Each of these assessments was addressed through the application of geomatics 
+technologies to demonstrate the feasibility of collecting georeferenced 
+observations with precision and accuracy that meet EPPO standard requirements.
 
-\textbf{Chapter 2} provides the theoretical foundation, covering PPP regulations, EPPO standards, and the methodological background of geostatistics, photogrammetry, spectral imaging, and machine learning techniques.
+\section{Thesis Structure}
 
-\textbf{Chapter 3} presents three study cases:
+The structure of the thesis is as follows:
+
+\textbf{Theoretical Background and Methodology} presents the theoretical 
+foundation, including an overview of Plant Protection Product (PPP) regulations, 
+relevant EPPO standards, and the methodological background covering geostatistics, 
+photogrammetry, spectral imaging, and machine learning techniques.
+
+\textbf{Applications Demonstration} presents three practical applications of 
+geomatics technologies in recording georeferenced EPPO standard assessments:
 \begin{itemize}
-    \item \textbf{Continuous and Discrete Variables}: Investigation of minimum dataset require-
-ments for object detection in plant counting ("On the Minimum Dataset Requirements for Fine-Tuning an
- Object Detector for Arable Crop Plant Counting: A Case Study
- on Maize Seedlings" published in MDPI Remote Sensing, DOI: 10.3390/rs17132190)
-    \item \textbf{Ordinal Variables}: Evaluation of machine learning approaches for phytotoxicity scoring automation (
-        "Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI" published in MDPI Agronomy, DOI: 10.3390/agronomy14020306)  
-    \item \textbf{Binary and Nominal Variables}: Application of anomaly detection techniques for plant health classification
+    \item \textbf{Continuous and Discrete Variables}: Investigation of minimum 
+    dataset requirements for object detection in plant counting ("On the Minimum 
+    Dataset Requirements for Fine-Tuning an
+    Object Detector for Arable Crop Plant Counting: A Case Study on Maize 
+    Seedlings" published in MDPI Remote Sensing, DOI: 10.3390/rs17132190)
+    \item \textbf{Ordinal Variables}: Evaluation of machine learning approaches 
+    for phytotoxicity scoring automation ("Supporting Screening of New Plant 
+    Protection Products through a Multispectral Photogrammetric Approach 
+    Integrated with AI" published in MDPI Agronomy, 
+    DOI: 10.3390/agronomy14020306)  
+    \item \textbf{Binary and Nominal Variables}: Application of anomaly 
+    detection techniques for plant deseases unsupervised classification 
+    (initial version of scientific paper still to be submitted). 
 \end{itemize}
 
-\textbf{Chapter 4} synthesizes findings and discusses the practical implementation requirements for integrating geomatics technologies into PPP evaluation protocols.
+\textbf{Conclusions} summarise the main findings and discuss practical 
+considerations for integrating geomatics technologies into PPP evaluation 
+protocols.
 
 \section{Literature Review and Research Gap}
 
@@ -438,7 +543,8 @@ experimentation recommending GLMs as the underlying
 model structure for ANOVA.
 Geostatistical methods can be incorporated into Generalized Linear Mixed Models 
 (GLMMs) to account for spatial variability arising from replication structures 
-or pseudoreplication, thereby improving the accuracy of inferences and reducing 
+or pseudoreplication \cite{gburAnalysisGeneralizedLinear2020,kumleEstimatingPowerGeneralized2021}, 
+thereby improving the accuracy of inferences and reducing 
 Type I errors
 \cite{slaets_linear_2021,millar_remedies_2004,Piepho_2011,schabenbergerStatisticalMethodsSpatial2004,aquiles_e_effect_2024}.
 However, in order to apply geostatistical methods, experimental observations must 
@@ -611,6 +717,12 @@ smaller than the combined model random and unexplained variation.
 For both approaches, finding the optimal model across parameters that cannot be 
 directly solved requires, 
 an iterative approach testing various settings can be deployed. 
+
+All the described geostatistical techniques can be seamlessly integrated with GLMMs to
+provide a comprehensive analysis of spatial-temporal data
+\cite{slaetsLinearMixedModels2021,rodriguez-alvarezCorrectingSpatialHeterogeneity2018}, 
+enhancing the accuracy and reliability of treatment effect estimates in orthogonal
+tests.
 
 \subsection{Geomatics Thecnics and Digital Technologies}
 
@@ -961,15 +1073,16 @@ domains \cite{tanEfficientNetRethinkingModel2020}.
 
 Geostatistics has been shown to estimate environmental variation more effectively 
 than randomization because it relies on mathematical modeling rather than field 
-technician experience.
+technician experience \cite{aquiles_e_effect_2024}.
 Despite the clear benefits of integrating geostatistics into phytosanitary
 product efficacy trials, the requirement for spatial coordinates alongside 
-observations remains a barrier to widespread adoption.
+observations remains a barrier to widespread adoption
+\cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}.
 By leveraging geomatics techniques such as georeferenced sensors, photogrammetry,
 spectral imaging, and ML, researchers can improve data collection and 
 analysis, as their synergy can provide spatial coordinates
 along with the observations.
-Through a series of study cases addressing each variable type described in 
+Through a series of case studies addressing each variable type described in 
 PP 1/152 \cite{EPPO_PP1_152} and 
 PP 1/333(1) \cite{PP1333}, 
 this work explores the opportunities and limitations of deploying geomatic techniques 
@@ -979,7 +1092,7 @@ along with plant counting, a typical continuous variable assessment.
 After demonstrating the viability of obtaining samples and/or subsamples spatial coordinates in a
 geographical coordinates reference system, the study establishes the practicality of using a local 
 coordinates reference system to deploy geostatistics in protected cultures such as in 
-a greenhouse. Thus, in the second study case, the research evaluates the effectiveness of 
+a greenhouse. Thus, in the second case study, the research evaluates the effectiveness of 
 reproducing an ordinal scale assessment like the phytotoxicity scoring with 
 ML and discusses whether digitalization can replace ordinal scale values by 
 converting them to continuous scale values for implementing parametric tests instead 
@@ -990,7 +1103,7 @@ obtain binary or nominal variable assessments, classifying between healthy or un
 plants, or even between different diseases. These classifications will be accomplished 
 without specific task-oriented training, but rather through the implementation of 
 anomaly detection and unsupervised learning techniques.
-In summary, this collection of study cases aims to determine the minimum requirements 
+In summary, this collection of case studies aims to determine the minimum requirements 
 needed to effectively implement geomatic techniques during an efficacy trial. 
 These techniques will enable 
 the use of geostatistical methods to separate environmental variability from treatment 
@@ -1000,12 +1113,12 @@ the EPPO standard framework.
 \bibliographystyle{unsrt}
 \bibliography{Phd_Thesis_SBumbaca}
 
-\chapter{Study Cases}
+\chapter{Applications Demonstration - Case Studies}
 
-This chapter presents three study cases that demonstrate the possibility to get 
+This chapter presents three case studies that demonstrate the possibility to get 
 georeferenced observations for different variable types within the EPPO framework
 to enable geostatistical covariates estimation. 
-Each study case addresses a specific variable type as defined in the EPPO standards.
+Each case study addresses a specific variable type as defined in the EPPO standards.
 
 \section{Continuous and Discrete Variables: Plant Counting with Machine Learning}
 
@@ -1044,7 +1157,7 @@ This study evaluates the effectiveness of digital techniques for reproducing ord
 \includepdf[pages=7,landscape=true]{Phytotoxicity_score/Phytoxicity_score.pdf}
 \includepdf[pages=8-]{Phytotoxicity_score/Phytoxicity_score.pdf}
 
-\section{Binary and Nominal Variables: Anomaly Detection for Plant Health Classification}
+\section{Binary and Nominal Variables: Anomaly Detection for Plant Deseases Classification}
 
 This study investigates the application of unsupervised learning approaches for binary and nominal variable classification in disease detection. The research demonstrates how pre-trained models can be leveraged for plant health assessment without task-specific training, using anomaly detection techniques to classify healthy versus diseased plants within the EPPO framework.
 
@@ -1054,11 +1167,11 @@ This study investigates the application of unsupervised learning approaches for 
 
 This thesis has systematically investigated the integration of geomatics techniques 
 with geostatistical methods to improve PPP efficacy and selectivity evaluations. 
-Through a series of complementary study cases, we have demonstrated the feasibility 
+Through a series of complementary case studies, we have demonstrated the feasibility 
 and practical requirements for leveraging spatial data to more effectively model 
 and exclude environmental variability from statistical analyses.
 
-The first study case established that photogrammetry combined with machine learning 
+The first case study established that photogrammetry combined with machine learning 
 provides a robust methodology for obtaining spatial coordinates alongside continuous 
 variable observations, specifically plant counts. Our research determined precise 
 dataset requirements for deploying these technologies within the EPPO framework. 
@@ -1071,9 +1184,9 @@ implications for the future of digital data collection in phytosanitary trials, 
 suggests that even with advanced models, the need for domain-specific training data
 remains critical for achieving accurate and reliable results.
 
-The second study case (ordinal variables) explored the automation of phytotoxicity scoring using geomatics techniques. The integration of photogrammetric 3D modeling with multispectral imaging enabled accurate reproduction of visual assessments ($\kappa$ > 0.7) while providing precise spatial coordinates for each observation. This geomatic approach not only automated subjective evaluations but also facilitated the conversion of ordinal data to continuous scales, enabling more powerful parametric statistical analyses within geostatistical frameworks.
+The second case study (ordinal variables) explored the automation of phytotoxicity scoring using geomatics techniques. The integration of photogrammetric 3D modeling with multispectral imaging enabled accurate reproduction of visual assessments ($\kappa$ > 0.7) while providing precise spatial coordinates for each observation. This geomatic approach not only automated subjective evaluations but also facilitated the conversion of ordinal data to continuous scales, enabling more powerful parametric statistical analyses within geostatistical frameworks.
 
-The third study case (binary and nominal variables) demonstrated the effectiveness of combining pre-trained machine learning models with georeferenced data for plant health classification. The geomatic workflow provided spatial context for anomaly detection algorithms, achieving accuracy > 0.85 without requiring task-specific training data. This approach particularly benefits from the spatial organization of data that geomatics provides, enabling more robust unsupervised learning strategies.
+The third case study (binary and nominal variables) demonstrated the effectiveness of combining pre-trained machine learning models with georeferenced data for plant health classification. The geomatic workflow provided spatial context for anomaly detection algorithms, achieving accuracy > 0.85 without requiring task-specific training data. This approach particularly benefits from the spatial organization of data that geomatics provides, enabling more robust unsupervised learning strategies.
 
 \section{Geomatic Contributions and Innovations}
 

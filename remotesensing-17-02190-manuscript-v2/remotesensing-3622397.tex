@@ -22,13 +22,21 @@
 
 % Include PDF
 \usepackage{pdfpages}
-% Bibliography
-\usepackage{natbib}
-\bibliographystyle{plain}  % or another style that suits your needs
+% Bibliography - numbered citations with square brackets using natbib
+\usepackage[numbers,square,sort&compress]{natbib}
+
+% Define MDPI-style commands
+\newcommand{\authorcontributions}[1]{\section*{Author Contributions}#1}
+\newcommand{\funding}[1]{\section*{Funding}#1}
+\newcommand{\conflictsofinterest}[1]{\section*{Conflicts of Interest}#1}
+\newcommand{\acknowledgments}[1]{\section*{Acknowledgments}#1}
+
 \usepackage{url}
 \usepackage{hyperref}
 % math
 \usepackage{amsmath}
+% microtype for letter spacing and typography improvements
+\usepackage{microtype}
 
 % for Plant Count section
 \usepackage{tabularx}         % For tabularx environment
@@ -77,7 +85,7 @@ on model architecture.}
 \thispagestyle{fancy}
 \section{Introduction} 
 
-\subsection{The Problem of Plant Counting}
+\subsection{Arable Crop Plant Counting by Object Detection}
 
 Plant counting is a critical operation in precision agriculture, plant breeding, 
 and agronomical evaluation. 
@@ -147,7 +155,7 @@ it suitable for automated counting. These characteristics are shared by other ro
 like sunflower ({\em Helianthus annuus} L.) and sugarbeet ({\em Beta vulgaris} L.), potentially
 making our findings applicable to a broader range of agricultural scenarios~\cite{torres-sanchez_early_2021}.
 
-\subsection{Evolution of Object Detection~Methods}
+\subsection{Evolution of Object Detection Methods}
 
 The broader field of object detection has evolved from non-machine learning methods,
 here named Handcrafted (HC) methods, 
@@ -362,8 +370,8 @@ Figure~\ref{fig:datasets} shows a sample for each dataset.
 Each ID dataset has 20 tiles to be used as the testing dataset, while the other 
 150 tiles are used as the training~dataset.
 
-\vspace{-10pt}
-\begin{figure}[H]
+\begin{landscape}
+\begin{figure}
   \centering
   \begin{adjustwidth}{-\extralength}{0cm}
   \subfloat[\centering]{\includegraphics[width=4.5cm]{Plots/DavidEtAl.png}}
@@ -385,7 +393,8 @@ Each ID dataset has 20 tiles to be used as the testing dataset, while the other
   (\textbf{g})~ID\_3.}
   \label{fig:datasets}  
 \end{figure}
-\vspace{-10pt}
+\end{landscape}
+
 \subsection{Handcrafted Object~Detector}
 
 Like other works~\cite{davidPlantDetectionCounting2021,garcia-martinezDigitalCountCorn2020,liuEstimatingMaizeSeedling2022},
@@ -811,10 +820,10 @@ No particular model size seems to provide better results with respect to the oth
 neither does the increasing dataset size seem to drive a model size performance trend.
 As no model achieved the benchmark, no study was done on the dataset quality requirements
 to achieve such~a benchmark.
-\vspace{-4pt}
-\begin{figure}[H]
-%\centering
-\includegraphics[width=\textwidth]{Plots/metrics_OOD_datasets.pdf}
+
+\begin{landscape}
+\begin{figure}
+\includegraphics[width=\linewidth]{Plots/metrics_OOD_datasets.pdf}
 \caption{The figure shows the performance of the many-shot object detection models 
 trained on 
 the different Out-of-Distribution (OOD) datasets. The~subplots represent four different metrics: 
@@ -831,13 +840,12 @@ A secondary x-axis at the top of each subplot
 shows the dataset names corresponding to the dataset sizes.}
 \label{fig:metrics_OOD_datasets}
 \end{figure}
-
-\vspace{-9pt}
+\end{landscape}
 
 \subsubsection{ID~Training}
 
 The relationship between ID training dataset size and model performance was evaluated 
-for all model architectures and sizes, as shown in Figure~\ref{fig:dataset_size_vs_performance}. 
+for all model architectures and sizes, as shown in Figures~\ref{fig:dataset_size_vs_performance_cnn} and~\ref{fig:dataset_size_vs_performance_transformer}. 
 The dataset quality was tested later, taking the combination of model architecture, model size, and
 training dataset size that achieved the benchmark and retraining that model while reducing the amount of
 annotations for each tile. 
@@ -855,21 +863,15 @@ shown in Figure~\ref{fig:dataset_quality}. The~minimum dataset quality was deter
 the quality percentage where both the empirical model prediction and the entire confidence interval 
 of the performance metrics remained above the benchmark~threshold.
 
-
-\begin{figure}[H]
-  
+\begin{landscape}
+\begin{figure}
  \begin{adjustwidth}{-\extralength}{0cm}
   \centering
-  \subfloat[\centering]{\includegraphics[width=15cm]{Plots/r2_ap_vs_dataset_size_yolov5.pdf}}\\
-  \subfloat[\centering]{\includegraphics[width=15cm]{Plots/r2_ap_vs_dataset_size_yolov8.pdf}}\\
-  \subfloat[\centering]{\includegraphics[width=15cm]{Plots/r2_ap_vs_dataset_size_yolo11.pdf}}\\
-  \subfloat[\centering]{\includegraphics[width=15cm]{Plots/r2_ap_vs_dataset_size_rtdetr.pdf}}\\
-   
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/r2_ap_vs_dataset_size_yolov5.pdf}}\\
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/r2_ap_vs_dataset_size_yolov8.pdf}}\\
 \end{adjustwidth}
- \caption{Relationship %MDPI: legend is over a part of the curves. Please check whether it affects reading. %Authors: Legend position checked and does not affect reading, curves under the legends are negligible
- between dataset size and model performance 
-  for different object detection models (YOLOv5 (\textbf{a}), YOLOv8 (\textbf{b}), 
-  YOLO11 (\textbf{c}), and~RT-DETR (\textbf{d})) trained and tested on ID datasets. 
+ \caption{Relationship between dataset size and model performance 
+  for CNN-based object detection models (YOLOv5 (\textbf{a}) and YOLOv8 (\textbf{b})) trained and tested on ID datasets. 
   On the same line, each subplot represents a different parameters size of the model,
   increasing from the left to the right. The~x-axis represents the dataset size, while
   the left and right y-axis represents the $R^2$ and $mAP$ values, respectively. 
@@ -879,14 +881,31 @@ of the performance metrics remained above the benchmark~threshold.
   The red dashed horizontal line represents the benchmark $R^2$ value of 0.85. The~combined
   legend in the lower right corner of each subplot shows the Goodness of Fit ($GoF$) for both $R^2$
   and $mAP$.}
-  \label{fig:dataset_size_vs_performance}
+  \label{fig:dataset_size_vs_performance_cnn}
 \end{figure}
+\end{landscape}
 
-
-
-
-
-
+\begin{landscape}
+\begin{figure}
+ \begin{adjustwidth}{-\extralength}{0cm}
+  \centering
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/r2_ap_vs_dataset_size_yolo11.pdf}}\\
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/r2_ap_vs_dataset_size_rtdetr.pdf}}\\
+\end{adjustwidth}
+ \caption{Relationship between dataset size and model performance 
+  for Transformer-mixed object detection models (YOLO11 (\textbf{a}) and RT-DETR (\textbf{b})) trained and tested on ID datasets. 
+  On the same line, each subplot represents a different parameters size of the model,
+  increasing from the left to the right. The~x-axis represents the dataset size, while
+  the left and right y-axis represents the $R^2$ and $mAP$ values, respectively. 
+  The solid lines represent the mean values, while the dashed lines indicate the logarithmic fit.
+  The shaded area around the solid lines represents the confidence interval (standard
+  deviation) of $R^2$ or $mAP$.
+  The red dashed horizontal line represents the benchmark $R^2$ value of 0.85. The~combined
+  legend in the lower right corner of each subplot shows the Goodness of Fit ($GoF$) for both $R^2$
+  and $mAP$.}
+  \label{fig:dataset_size_vs_performance_transformer}
+\end{figure}
+\end{landscape}
 
 Within YOLO models, YOLOv5n, YOLOv5s, and YOLOv8n achieve the benchmark $R^2$ 
 value of 0.85 with 130, 130, and 110 samples, respectively, considering the dataset
@@ -917,12 +936,11 @@ terms of dataset quality
 was achieved with RT-DETR trained on 100 images with a 35\% reduction in quality
 (see Figure~\ref{fig:annotations_many-shots_quality} for prediction examples).
 
-\begin{figure}[H]
-  
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
   \centering
-  \includegraphics[width=17cm]{Plots/r2_ap_vs_dataset_quality.pdf}
- 
+  \includegraphics[width=22cm]{Plots/r2_ap_vs_dataset_quality.pdf}
   \end{adjustwidth}   
    \caption{Relationship between dataset quality and model performance for all object detection models
   that achieved the benchmark. The~x-axis represents the dataset quality, while 
@@ -930,15 +948,13 @@ was achieved with RT-DETR trained on 100 images with a 35\% reduction in quality
   The red dashed horizontal line represents the benchmark $R^2$ value of 0.85. The~  legend in the lower right corner of the subplot shows the Goodness of Fit ($GoF$) for $R^2$.}
   \label{fig:dataset_quality}
 \end{figure}
+\end{landscape}
 
-\vspace{-18pt}
-
-
-\begin{figure}[H]
-
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
   \centering
-  \includegraphics[width=16cm]{Plots/many_shot_size_annotations.pdf}
+  \includegraphics[width=22cm]{Plots/many_shot_size_annotations.pdf}
   \end{adjustwidth}
   \vspace{-12pt}\caption{Predictions from the RT-DETR L trained on 60 images.
   From the left hand side to the right hand side, the~images show the
@@ -948,15 +964,14 @@ was achieved with RT-DETR trained on 100 images with a 35\% reduction in quality
    Black bounding boxes are the ground truth annotations, while the bounding boxes 
    in the viridis color scale are the model~predictions.}
   \label{fig:annotations_many-shots_size}
-
 \end{figure}
-\unskip
+\end{landscape}
 
-\begin{figure}[H]
-
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
   \centering
-  \includegraphics[width=17cm]{Plots/many_shot_quality_annotations.pdf}
+  \includegraphics[width=22cm]{Plots/many_shot_quality_annotations.pdf}
   \end{adjustwidth}
   \vspace{-12pt}\caption{Predictions from the RT-DETR X trained on 100 images with a reduction 
   in quality of 35\%.
@@ -967,9 +982,8 @@ was achieved with RT-DETR trained on 100 images with a 35\% reduction in quality
    Black bounding boxes are the ground truth annotations, while the bounding boxes 
    in the viridis color scale are the model~predictions.}
   \label{fig:annotations_many-shots_quality}
-
 \end{figure}
-\vspace{-9pt}
+\end{landscape}
 
 \subsection{Few-Shot Object~Detectors}
 
@@ -986,16 +1000,6 @@ The models fitted on metrics show a reliable $GoF$ for all
 the metrics, indicating that the model performance is highly predictable by the number of shots.
 These also show that any CD-ViTO size model would not achieve the
 benchmark with any shot amount, even if the number of shots were increased beyond those~tested.
-
-
-
-%\unskip
-
-
-
-
-
-\unskip
 
 \subsection{Zero-Shot Object~Detectors}
 
@@ -1018,12 +1022,12 @@ $mAP$ comparable to that of the best few-shot model (50-shots ViT-B backbone).
 Some rare cases of good predictions were even more accurate than the few-shot best performance, 
 as shown in Figure~\ref{fig:annotations_zero-shot}.
 
-\begin{figure}[H]
- 
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
    \centering
-  \subfloat[\centering]{\includegraphics[width=18cm]{Plots/r2_ap_vs_shots_cdvito.pdf}}\\
-  \subfloat[\centering]{\includegraphics[width=18cm]{Plots/rmse_ap_vs_shots_cdvito.pdf}}\\
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/r2_ap_vs_shots_cdvito.pdf}}\\
+  \subfloat[\centering]{\includegraphics[width=22cm]{Plots/rmse_ap_vs_shots_cdvito.pdf}}\\
   \end{adjustwidth}
   \caption{The figure shows the relationship between shots and model performance
   for the CD-ViTO model trained and tested on ID datasets.
@@ -1038,17 +1042,14 @@ as shown in Figure~\ref{fig:annotations_zero-shot}.
   legend in the upper right corner of each subplot shows the Goodness of Fit ($GoF$) for both $RMSE$
   and MAPE.}
   \label{fig:shots_vs_performance}
-
 \end{figure}
+\end{landscape}
 
-
-\vspace{-21pt}
-
-
-\begin{figure}[H]
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
    \centering
-  \includegraphics[width=19cm]{Plots/few_shot_annotations.pdf}
+  \includegraphics[width=22cm]{Plots/few_shot_annotations.pdf}
   \end{adjustwidth}
   \caption{The 50 shot CD-ViTO with ViT-B backbone predictions on the 
   1, 2, and 3 ID test dataset tile examples, respectively, from the left hand side to the right.
@@ -1057,16 +1058,16 @@ as shown in Figure~\ref{fig:annotations_zero-shot}.
    Black bounding boxes are the ground truth annotations, while the bounding boxes 
    in the viridis color scale are the \mbox{model predictions.}}
   \label{fig:annotations_few-shot}
-
 \end{figure}
+\end{landscape}
 
 
-
-\begin{figure}[H]
+\begin{landscape}
+\begin{figure}
  % \centering
   \begin{adjustwidth}{-\extralength}{0cm}
   \centering
-  \includegraphics[width=16cm]{Plots/zeroshot.pdf}
+  \includegraphics[width=22cm]{Plots/zeroshot.pdf}
   \end{adjustwidth}
   \caption{The figure shows the relationship between the OWLv2 model size, used prompt,
   and model performance.
@@ -1078,16 +1079,14 @@ as shown in Figure~\ref{fig:annotations_zero-shot}.
   respectively, the benchmarks of 0.85 and 0.39. 
   }
   \label{fig:zeroshots_vs_performance}
-
 \end{figure}
+\end{landscape}
 
-\vspace{-17pt}
-\unskip
-
-\begin{figure}[H]
+\begin{landscape}
+\begin{figure}
   \begin{adjustwidth}{-\extralength}{0cm}
    \centering
-  \includegraphics[width=16cm]{Plots/zeroshot_images.pdf}
+  \includegraphics[width=22cm]{Plots/zeroshot_images.pdf}
   \end{adjustwidth}
   \caption{The best predictions with the OWLv2 model.  
   The ID\_1, ID\_2, and ID\_3 datasets, respectively, from the left hand side to the right.
@@ -1099,9 +1098,8 @@ as shown in Figure~\ref{fig:annotations_zero-shot}.
   Black bounding boxes are the ground truth annotations, while the bounding boxes 
   in the viridis color scale are the model predictions.}
   \label{fig:annotations_zero-shot}
-
 \end{figure}
-\unskip
+\end{landscape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
@@ -1507,6 +1505,17 @@ GoF & Goodness of Fit\\
   \State $plants \gets \Call{HC1}{tiles}$
   \For{$tile$ in $tiles$}
     \State $regions \gets plants[tile]$
+    \State $centroids \gets \Call{region\_centroids}{regions}$
+    \State $clust\_cen \gets \Call{agglomerate\_regions}{regions, intra-row\_dist}$
+    \State $inlier\_points, model \gets \Call{extract\_ransac\_line}{clust\_cen, intra-row\_dist}$
+    \State $line\_length \gets \Call{get\_line\_length}{model}$
+    \State $expected\_number\_of\_plants \gets \frac{line\_length}{intra\_row\_dist}$
+    \If {$inlier\_points \equiv expected\_number\_of\_plants}$
+      \State $observations[tile] \gets (clust\_cen,inlier\_points,model)$
+    \EndIf
+  \EndFor
+  \State \Return $observations$
+\EndFunction
     
     \algstore{myalg}
 \end{algorithmic}
@@ -1523,19 +1532,6 @@ GoF & Goodness of Fit\\
 \begin{algorithmic}[1]
  
 \algrestore{myalg}
-
-
-    \State $centroids \gets \Call{region\_centroids}{regions}$
-    \State $clust\_cen \gets \Call{agglomerate\_regions}{regions, intra-row\_dist}$
-    \State $inlier\_points, model \gets \Call{extract\_ransac\_line}{clust\_cen, intra-row\_dist}$
-    \State $line\_length \gets \Call{get\_line\_length}{model}$
-    \State $expected\_number\_of\_plants \gets \frac{line\_length}{intra\_row\_dist}$
-    \If {$inlier\_points \equiv expected\_number\_of\_plants}$
-      \State $observations[tile] \gets (clust\_cen,inlier\_points,model)$
-    \EndIf
-  \EndFor
-  \State \Return $observations$
-\EndFunction
 \Function{Filter\_observations\_by\_slope}{$observations$}
   \State $filtered\_observations \gets \{\}$
   \For{$tile \in observations$}
@@ -1593,34 +1589,15 @@ The following are the list of prompts used for the zero-shot~models:
     \item ``orthomosaic of corn plants in rows''
 \end{itemize}
 
-%\pagebreak
-
-% \section[\appendixname~\thesection]{}
-% All appendix sections must be cited in the main text. In the appendices, Figures, 
-% Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\isPreprints{}{% This command is only used for ``preprints''.
-\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\printendnotes[custom] % Un-comment to print a list of endnotes
-
 \reftitle{References}
 
-% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
-% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
-
-%=====================================
-% References, variant A: external bibliography
-%=====================================
 \begin{thebibliography}{999}
 
 \bibitem[Blandino et~al.(2016)Blandino, Testa, Quaglini, and
 Reyneri]{blandinoeffetto2016}
 Blandino, M.; Testa, G.; Quaglini, L.; Reyneri, A.
-\newblock {\em Effetto Della Densità Colturale e Dell'Applicazione di
-Fungicidi Sulla Produzione e la Qualità del Mais da Granella e da
+\newblock {\em Effetto Della DensitÃ  Colturale e Dell'Applicazione di
+Fungicidi Sulla Produzione e la QualitÃ  del Mais da Granella e da
 Trinciato}; ITA: Rome, Italy, 
 2016.
 
@@ -1755,10 +1732,10 @@ Available online: \url{https://universe.roboflow.com/fyxdds-icloud-com/maize-see
 \newblock {\em Agricultural Production Statistics 2010--2023}; Volume Analytical Briefs; FAOSTAT:
 Rome, Italy, 2024.
 
-\bibitem[Torres-Sánchez et~al.(2021)Torres-Sánchez, Mesas-Carrascosa,
-Jiménez-Brenes, de~Castro, and López-Granados]{torres-sanchez_early_2021}
-Torres-Sánchez, J.; Mesas-Carrascosa, F.J.; Jiménez-Brenes, F.M.; de~Castro,
-A.I.; López-Granados, F.
+\bibitem[Torres-SÃ¡nchez et~al.(2021)Torres-SÃ¡nchez, Mesas-Carrascosa,
+JimÃ©nez-Brenes, de~Castro, and LÃ³pez-Granados]{torres-sanchez_early_2021}
+Torres-SÃ¡nchez, J.; Mesas-Carrascosa, F.J.; JimÃ©nez-Brenes, F.M.; de~Castro,
+A.I.; LÃ³pez-Granados, F.
 \newblock Early {Detection} of {Broad}-{Leaved} and {Grass} {Weeds} in {Wide}
 {Row} {Crops} {Using} {Artificial} {Neural} {Networks} and {UAV} {Imagery}.
 \newblock {\em Agronomy} {\bf 2021}, {\em 11},~749. [\href{http://dx.doi.org/10.3390/agronomy11040749}{CrossRef}]
@@ -1819,7 +1796,7 @@ Unterthiner, T.; Dehghani, M.; Minderer, M.; Heigold, G.; Gelly, S.;  et~al.
 \newblock [\href{https://doi.org/10.48550/arXiv.2010.11929}{CrossRef}]
 
 \bibitem[140()]{14090575ImageNetLarge}
-Russakovsky, O.; Deng, J.; Su, H.; Krause, J.; Satheesh, S.; Ma, S.; Fei-Fei, L. ImageNet Large Scale Visual Recognition Challenge. {\em Int. J. Comput. Vis.} {\bf 2014}, {\em 115}, 211–252.
+Russakovsky, O.; Deng, J.; Su, H.; Krause, J.; Satheesh, S.; Ma, S.; Fei-Fei, L. ImageNet Large Scale Visual Recognition Challenge. {\em Int. J. Comput. Vis.} {\bf 2014}, {\em 115}, 211â€“252.
  [\href{http://dx.doi.org/10.1007/s11263-015-0816-y}{CrossRef}]
 
 \bibitem[Zong et~al.(2023)Zong, Song, and
@@ -2029,9 +2006,9 @@ with {{Applications}} to {{Image Analysis}} and {{Automated Cartography}}. In
 {\em Readings in {{Computer Vision}}}; Fischler, M.A., Firschein, O., Eds.;
 Morgan Kaufmann: San Francisco, CA, USA, 1987; pp. 726--740. [\href{http://dx.doi.org/10.1016/B978-0-08-051581-6.50070-2}{CrossRef}]
 
-\bibitem[Terven et~al.(2023)Terven, Córdova-Esparza, and
-Romero-González]{tervenComprehensiveReviewYOLO2023}
-Terven, J.; Córdova-Esparza, D.M.; Romero-González, J.A.
+\bibitem[Terven et~al.(2023)Terven, CÃ³rdova-Esparza, and
+Romero-GonzÃ¡lez]{tervenComprehensiveReviewYOLO2023}
+Terven, J.; CÃ³rdova-Esparza, D.M.; Romero-GonzÃ¡lez, J.A.
 \newblock A Comprehensive Review of YOLO Architectures in Computer Vision: From
 YOLOv1 to YOLOv8 and YOLO-NAS.
 \newblock {\em Mach. Learn. Knowl. Extr.} {\bf 2023}, {\em
@@ -2080,7 +2057,7 @@ Zhu, H.; Qin, S.; Su, M.; Lin, C.; Li, A.; Gao, J.
 \bibitem[Zhou et~al.(2024)Zhou, Yan, Ding, Cai, and Zhang]{s24186109}
 Zhou, Y.; Yan, H.; Ding, K.; Cai, T.; Zhang, Y.
 \newblock Few-Shot Image Classification of Crop Diseases Based on
-Vision–Language Models.
+Visionâ€“Language Models.
 \newblock {\em Sensors} {\bf 2024}, {\em 24}, 6109. [\href{http://dx.doi.org/10.3390/s24186109}{CrossRef}]
 
 \bibitem[Chen et~al.(2024)Chen, Huang, Ni, Yun, Liu, Wen, Velasquez, Latapie,
@@ -2116,9 +2093,9 @@ Everingham, M.; Van~Gool, L.; Williams, C.K.I.; Winn, J.; Zisserman, A.
 \newblock {\em Int. J. Comput. Vis.} {\bf 2010}, {\em
 88},~303--338. [\href{http://dx.doi.org/10.1007/s11263-009-0275-4}{CrossRef}]
 
-\bibitem[Vianna et~al.(2024)Vianna, Gonçalves, and
+\bibitem[Vianna et~al.(2024)Vianna, GonÃ§alves, and
 Souza]{vianna_analysis_2024}
-Vianna, L.S.; Gonçalves, A.L.; Souza, J.A.
+Vianna, L.S.; GonÃ§alves, A.L.; Souza, J.A.
 \newblock Analysis of learning curves in predictive modeling using exponential
 curve fitting with an asymptotic approach.
 \newblock {\em PLoS ONE} {\bf 2024}, {\em 19},~e0299811. [\href{http://dx.doi.org/10.1371/journal.pone.0299811}{CrossRef}]
@@ -2151,114 +2128,7 @@ Wu, K.; Otoo, E.; Shoshani, A.
 \end{thebibliography}
 
 
-% %=====================================
-% % References, variant B: internal bibliography
-% %=====================================
+\bibliographystyle{unsrtnat}
 
-% % ACS format
-% \isAPAandChicago{}{%
-% \begin{thebibliography}{999}
-% % Reference 1
-% \bibitem[Author1(year)]{ref-journal}
-% Author~1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
-% % Reference 2
-% \bibitem[Author2(year)]{ref-book1}
-% Author~2, L. The title of the cited contribution. In {\em The Book Title}; Editor 1, F., Editor 2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
-% % Reference 3
-% \bibitem[Author1 and Author2 (year)]{ref-book2}
-% Author 1, A.; Author 2, B. \textit{Book Title}, 3rd ed.; Publisher: Publisher Location, Country, 2008; pp. 154--196.
-% % Reference 4
-% \bibitem[Author4(year)]{ref-unpublish}
-% Author 1, A.B.; Author 2, C. Title of Unpublished Work. \textit{Abbreviated Journal Name} year, \textit{phrase indicating stage of publication (submitted; accepted; in press)}.
-% % Reference 5
-% \bibitem[Author8(year)]{ref-url}
-% Title of Site. Available online: URL (accessed on Day Month Year).
-% % Reference 6
-% \bibitem[Author6(year)]{ref-proceeding}
-% Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of presentation. In Proceedings of the Name of the Conference, Location of Conference, Country, Date of Conference (Day Month Year); Abstract Number (optional), Pagination (optional).
-% % Reference 7
-% \bibitem[Author7(year)]{ref-thesis}
-% Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
-% \end{thebibliography}
-% }
-
-% % Chicago format (Used for journal: arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci)
-% \isChicagoStyle{%
-% \begin{thebibliography}{999}
-% % Reference 1
-% \bibitem[Aranceta-Bartrina(1999a)]{ref-journal}
-% Aranceta-Bartrina, Javier. 1999a. Title of the cited article. \textit{Journal Title} 6: 100--10.
-% % Reference 2
-% \bibitem[Aranceta-Bartrina(1999b)]{ref-book1}
-% Aranceta-Bartrina, Javier. 1999b. Title of the chapter. In \textit{Book Title}, 2nd ed. Edited by Editor 1 and Editor 2. Publication place: Publisher, vol. 3, pp. 54–96.
-% % Reference 3
-% \bibitem[Baranwal and Munteanu {[1921]}(1955)]{ref-book2}
-% Baranwal, Ajay K., and Costea Munteanu. 1955. \textit{Book Title}. Publication place: Publisher, pp. 154--96. First published 1921 (op-tional).
-% % Reference 4
-% \bibitem[Berry and Smith(1999)]{ref-thesis}
-% Berry, Evan, and Amy M. Smith. 1999. Title of Thesis. Level of Thesis, Degree-Granting University, City, Country. Identifi-cation information (if available).
-% % Reference 5
-% \bibitem[Cojocaru et al.(1999)]{ref-unpublish}
-% Cojocaru, Ludmila, Dragos Constatin Sanda, and Eun Kyeong Yun. 1999. Title of Unpublished Work. \textit{Journal Title}, phrase indicating stage of publication.
-% % Reference 6
-% \bibitem[Driver et al.(2000)]{ref-proceeding}
-% Driver, John P., Steffen Rohrs, and Sean Meighoo. 2000. Title of Presentation. In \textit{Title of the Collected Work} (if available). Paper presented at Name of the Conference, Location of Conference, Date of Conference.
-% % Reference 7
-% \bibitem[Harwood(2008)]{ref-url}
-% Harwood, John. 2008. Title of the cited article. Available online: URL (accessed on Day Month Year).
-% \end{thebibliography}
-% }{}
-
-% % APA format (Used for journal: admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth)
-% \isAPAStyle{%
-% \begin{thebibliography}{999}
-% % Reference 1
-% \bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020a}}]{ref-journal}
-% Azikiwe, H., \& Bello, A. (2020a). Title of the cited article. \textit{Journal Title}, \textit{Volume}(Issue), 
-% Firstpage--Lastpage/Article Number.
-% % Reference 2
-% \bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020b}}]{ref-book1}
-% Azikiwe, H., \& Bello, A. (2020b). \textit{Book title}. Publisher Name.
-% % Reference 3
-% \bibitem[Davison(1623/2019)]{ref-book2}
-% Davison, T. E. (2019). Title of the book chapter. In A. A. Editor (Ed.), \textit{Title of the book: Subtitle} 
-% (pp. Firstpage--Lastpage). Publisher Name. (Original work published 1623) (Optional).
-% % Reference 4
-% \bibitem[Fistek et al.(2017)]{ref-proceeding}
-% Fistek, A., Jester, E., \& Sonnenberg, K. (2017, Month Day). Title of contribution [Type of contribution]. Conference Name, Conference City, Conference Country.
-% % Reference 5
-% \bibitem[Hutcheson(2012)]{ref-thesis}
-% Hutcheson, V. H. (2012). \textit{Title of the thesis} [XX Thesis, Name of Institution Awarding the Degree].
-% % Reference 6
-% \bibitem[Lippincott \& Poindexter(2019)]{ref-unpublish}
-% Lippincott, T., \& Poindexter, E. K. (2019). \textit{Title of the unpublished manuscript} [Unpublished manuscript/Manuscript in prepara-tion/Manuscript submitted for publication]. Department Name, Institution Name.
-% % Reference 7
-% \bibitem[Harwood(2008)]{ref-url}
-% Harwood, J. (2008). \textit{Title of the cited article}. Available online: URL (accessed on Day Month Year).
-% \end{thebibliography}
-% }{}
-
-% If authors have biography, please use the format below
-%\section*{Short Biography of Authors}
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
-%{\textbf{Firstname Lastname} Biography of first author}
-%
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
-%{\textbf{Firstname Lastname} Biography of second author}
-
-% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
-% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
-% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% for journal Sci
-%\reviewreports{\\
-%Reviewer 1 comments and authors’ response\\
-%Reviewer 2 comments and authors’ response\\
-%Reviewer 3 comments and authors’ response
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 

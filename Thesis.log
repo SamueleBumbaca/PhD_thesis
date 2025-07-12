@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  29 JUN 2025 17:01
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,26 +526,26 @@ File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 ) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -581,7 +581,7 @@ LaTeX Font Info:    ... okay on input line 60.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 65.
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write3
 \openout3 = `Thesis.out'.
@@ -613,41 +613,50 @@ File: Intestazione/t3._Thesis_first_page.pdf Graphic file (type pdf)
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 65.
+(Font)              scaled to size 11.03998pt on input line 70.
 
 
 [1]
+Overfull \hbox (17.8147pt too wide) in paragraph at lines 98--99
+[]\T1/phv/m/n/12 counting, us-ing deep learn-ing ob-ject de-tec-tors to count maize seedlings
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 106.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 106.
+
 
 [2]
 
 [3]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 80.
+(Font)              scaled to size 22.88956pt on input line 136.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.88956pt on input line 80.
+(Font)              scaled to size 22.88956pt on input line 136.
  (./Thesis.toc
 
 [4
 
 
 ]
-Overfull \hbox (1.30246pt too wide) detected at line 26
- []\T1/phv/m/n/12 134
- []
-
-
 Overfull \hbox (1.30246pt too wide) detected at line 27
- []\T1/phv/m/n/12 181
+ []\T1/phv/m/n/12 139
  []
 
 
-Overfull \hbox (1.30246pt too wide) detected at line 29
- []\T1/phv/m/n/12 215
+Overfull \hbox (1.30246pt too wide) detected at line 28
+ []\T1/phv/m/n/12 186
  []
 
 
 Overfull \hbox (1.30246pt too wide) detected at line 30
- []\T1/phv/m/n/12 216
+ []\T1/phv/m/n/12 220
+ []
+
+
+Overfull \hbox (1.30246pt too wide) detected at line 31
+ []\T1/phv/m/n/12 221
  []
 
 )
@@ -659,11 +668,11 @@ Overfull \hbox (1.30246pt too wide) detected at line 30
 [5]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 86.
+(Font)              scaled to size 15.89755pt on input line 142.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 15.89755pt on input line 86.
+(Font)              scaled to size 15.89755pt on input line 142.
 
-Overfull \hbox (0.55275pt too wide) in paragraph at lines 88--89
+Overfull \hbox (0.55275pt too wide) in paragraph at lines 144--153
 \T1/phv/m/n/12 lies heav-ily on sta-tis-ti-cal hy-poth-e-sis test-ing to es-tab-lish ef-fi-cacy and safety.
  []
 
@@ -674,91 +683,104 @@ Overfull \hbox (0.55275pt too wide) in paragraph at lines 88--89
 ]
 
 [7]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 115.
- (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/psnfss/ts1phv.fd
+Overfull \hbox (5.34431pt too wide) in paragraph at lines 204--208
+[]\T1/phv/b/n/12 Theoretical Back-ground and Method-ol-ogy \T1/phv/m/n/12 presents the the-o-ret-i-cal foun-
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 212.
+(/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 115.
-
-Overfull \hbox (35.73143pt too wide) in paragraph at lines 115--119
-\T1/phv/m/n/12 Seedlings" pub-lished in MDPI Re-mote Sens-ing, DOI: 10.3390/rs17132190) 
- []
-
+(Font)              scaled to size 11.03998pt on input line 212.
 
 
 [8]
+Overfull \hbox (8.51665pt too wide) in paragraph at lines 217--222
+\T1/phv/m/n/12 phy-to-tox-i-c-ity scor-ing au-toma-tion ("Sup-port-ing Screen-ing of New Plant
+ []
+
+
+Overfull \hbox (45.44633pt too wide) in paragraph at lines 217--222
+\T1/phv/m/n/12 proach In-te-grated with AI" pub-lished in MDPI Agron-omy, DOI: 10.3390/agron-
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 128.
+(Font)              scaled to size 13.24796pt on input line 233.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 128.
+(Font)              scaled to size 13.24796pt on input line 233.
 
 
 [9]
-Overfull \hbox (6.69481pt too wide) in paragraph at lines 136--136
+Overfull \hbox (6.69481pt too wide) in paragraph at lines 241--241
 |[]\T1/phv/b/n/14.4 Geostatistical Ap-proaches in Agri-cul-tural Re-search| 
  []
 
 
 
 [10]
-Overfull \hbox (5.16895pt too wide) in paragraph at lines 152--153
+Overfull \hbox (5.16895pt too wide) in paragraph at lines 257--258
 \T1/phv/m/n/12 promise for au-tomat-ing agri-cul-tural as-sess-ments [[], []], par-tic-u-larly when
  []
 
 
 
 [11]
+
+[12]
 Chapter 2.
 
+Overfull \hbox (43.32555pt too wide) in paragraph at lines 265--265
+|\T1/phv/b/n/24.88 Theoretical Back-ground and Method-
+ []
 
-[12
+
+
+[13
 
 ]
 
-[13]
-
 [14]
+
+[15]
 Missing character: There is no ‘ ("2018) in font phvr8t!
 Missing character: There is no ’ ("2019) in font phvr8t!
 
-Overfull \hbox (1.60623pt too wide) in paragraph at lines 250--253
+Overfull \hbox (1.60623pt too wide) in paragraph at lines 355--358
 \T1/phv/m/n/12 ho-mo-ge-neous blocks with each treat-ment ap-pear-ing once per block;
  []
 
 
 
-[15]
-Overfull \hbox (9.88565pt too wide) in paragraph at lines 275--280
+[16]
+Overfull \hbox (9.88565pt too wide) in paragraph at lines 380--385
 []\T1/phv/b/n/12 Imbricated con-trols\T1/phv/m/n/12 : Con-trol plots are ar-ranged sys-tem-at-i-cally within
  []
 
 
 
-[16]
-
 [17]
-Overfull \hbox (2.57695pt too wide) in paragraph at lines 355--364
+
+[18]
+Overfull \hbox (2.57695pt too wide) in paragraph at lines 460--469
 \T1/phv/m/n/12 For qual-i-ta-tive vari-ables (by-nary, or-di-nal or nom-i-nal), non-parametric meth-
  []
 
 
 
-[18]
-Overfull \hbox (2.71841pt too wide) in paragraph at lines 374--388
+[19]
+Overfull \hbox (2.71841pt too wide) in paragraph at lines 479--493
 []\T1/phv/m/n/12 In prag-matic un-der-tak-ings, anal-y-ses with para-met-ric mod-els are fre-quently
  []
 
 
 
-[19]
-Overfull \hbox (2.92606pt too wide) in paragraph at lines 391--435
+[20]
+Overfull \hbox (2.92606pt too wide) in paragraph at lines 496--540
 \T1/phv/m/n/12 tra-tion while en-sur-ing that prod-ucts demon-strate con-sis-tent ef-fi-cacy across
  []
 
 
-
-[20]
 
 [21]
 
@@ -775,13 +797,13 @@ Overfull \hbox (2.92606pt too wide) in paragraph at lines 391--435
 [27]
 
 [28]
-Overfull \hbox (0.762pt too wide) in paragraph at lines 653--669
+
+[29]
+Overfull \hbox (0.762pt too wide) in paragraph at lines 765--781
 []\T1/phv/m/n/12 The ca-pa-bil-ity of dig-i-tal tools to mea-sure and geo-ref-er-ence harvest-related
  []
 
 
-
-[29]
 
 [30]
 
@@ -792,34 +814,29 @@ Overfull \hbox (0.762pt too wide) in paragraph at lines 653--669
 [33]
 
 [34]
-Overfull \hbox (8.307pt too wide) in paragraph at lines 861--864
+
+[35]
+
+[36]
+Overfull \hbox (8.307pt too wide) in paragraph at lines 973--976
 []\T1/phv/b/n/12 Supervised Learn-ing\T1/phv/m/n/12 : Mod-els are trained on la-beled datasets where
  []
 
 
-Overfull \hbox (3.87427pt too wide) in paragraph at lines 861--864
+Overfull \hbox (3.87427pt too wide) in paragraph at lines 973--976
 \T1/phv/m/n/12 sion, clas-si-fi-ca-tion, and en-sem-ble meth-ods such as Ran-dom Forests
  []
 
 
-
-[35]
-Overfull \hbox (2.36995pt too wide) in paragraph at lines 869--876
+Overfull \hbox (2.36995pt too wide) in paragraph at lines 981--988
 \T1/phv/m/n/12 al-lows mod-els to learn rich, gen-er-al-iz-able rep-re-sen-ta-tions from large
  []
 
 
 
-[36]
-Overfull \hbox (0.22337pt too wide) in paragraph at lines 902--929
-\T1/phv/m/n/12 PPPs and phy-topath-om-e-try re-search, strug-gle to com-pile suf-fi-ciently large
- []
-
-
-
 [37]
-Overfull \hbox (5.7766pt too wide) in paragraph at lines 930--959
-\T1/phv/m/n/12 lows for ef-fi-cient model adap-ta-tion, re-duc-ing the need for ex-ten-sive domain-
+Overfull \hbox (0.22337pt too wide) in paragraph at lines 1014--1041
+\T1/phv/m/n/12 PPPs and phy-topath-om-e-try re-search, strug-gle to com-pile suf-fi-ciently large
  []
 
 
@@ -827,30 +844,37 @@ Overfull \hbox (5.7766pt too wide) in paragraph at lines 930--959
 [38]
 
 [39]
+Overfull \hbox (5.7766pt too wide) in paragraph at lines 1042--1071
+\T1/phv/m/n/12 lows for ef-fi-cient model adap-ta-tion, re-duc-ing the need for ex-ten-sive domain-
+ []
 
-[40] (./Thesis.bbl
 
-[41]
+
+[40]
+
+[41] (./Thesis.bbl
+
+[42]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 11.03998pt on input line 6.
 
 
-[42
+[43
 
 ]
 
-[43]
-
 [44]
+
+[45]
 Underfull \hbox (badness 3884) in paragraph at lines 137--139
 []\T1/phv/m/n/12 Council of the Eu-ro-pean Com-mu-ni-ties.  Coun-cil Di-rec-tive
  []
 
 
 
-[45]
+[46]
 Underfull \hbox (badness 1019) in paragraph at lines 174--177
 \T1/phv/m/n/12 Ein-heitliche codierung der phä-nol-o-gis-chen en-twick-lungssta-dien
  []
@@ -872,9 +896,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
 
 
-[46]
-
 [47]
+
+[48]
 Underfull \hbox (badness 1173) in paragraph at lines 210--213
 []\T1/phv/m/n/12 Kuo-Szu Chi-ang, Shih-Chia Liu, Clive H. Bock, and Tim R.
  []
@@ -911,9 +935,9 @@ Overfull \hbox (19.92085pt too wide) in paragraph at lines 220--224
 
 
 
-[48]
-
 [49]
+
+[50]
 Underfull \hbox (badness 1924) in paragraph at lines 278--281
 []\T1/phv/m/n/12 Matheron.  Prin-ci-ples of geo-statis-tics.  \T1/phv/m/sl/12 Eco-nomic Ge-ol-ogy\T1/phv/m/n/12 ,
  []
@@ -925,7 +949,7 @@ Underfull \hbox (badness 1383) in paragraph at lines 308--311
 
 
 
-[50]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 318--321
 []\T1/phv/m/n/12 Dae-Jin Lee, María Dur-bán, and Paul Eil-ers.  Ef-fi-
  []
@@ -942,8 +966,6 @@ Underfull \hbox (badness 3148) in paragraph at lines 318--321
 
 
 
-[51]
-
 [52]
 
 [53]
@@ -953,28 +975,35 @@ Underfull \hbox (badness 3148) in paragraph at lines 318--321
 [55]
 
 [56]
+
+[57]
 Underfull \hbox (badness 1067) in paragraph at lines 542--544
 \T1/phv/m/n/12 Jared Ka-plan, Pra-fulla Dhari-wal, Arvind Nee-lakan-tan, Pranav
  []
 
 
 
-[57]
-
 [58]
+
+[59]
 Underfull \hbox (badness 3815) in paragraph at lines 566--568
 []\T1/phv/m/n/12 Jacob De-vlin, Ming-Wei Chang, Ken-ton Lee, and Kristina
  []
 
 
 
-[59])
+[60])
 
-[60]
+[61]
 Chapter 3.
 
+Overfull \hbox (20.09195pt too wide) in paragraph at lines 1116--1116
+|\T1/phv/b/n/24.88 Applications Demon-stra-tion - Case
+ []
 
-[61
+
+
+[62
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
@@ -987,7 +1016,7 @@ File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic fil
 <use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 1>
 
 
-[62]
+[63]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
 <use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 1>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
@@ -996,790 +1025,834 @@ File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic fil
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
 <use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 1>
-[63
-
-]
-File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
-File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
-
-
-File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
 [64
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 2>
 [65
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 3>
 [66
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 4>
 [67
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 5>
 [68
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 6>
 [69
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 7>
 [70
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 8>
 [71
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 9>
 [72
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 10>
 [73
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 11>
 [74
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 12>
 [75
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 13>
 [76
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 14>
 [77
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 15>
 [78
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 16>
 [79
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 17>
 [80
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 18>
 [81
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 19>
 [82
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 20>
 [83
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 21>
 [84
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 22>
 [85
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 23>
 [86
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 24>
 [87
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 25>
 [88
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 26>
 [89
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 27>
 [90
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 28>
 [91
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 29>
 [92
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 30>
 [93
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 31>
 [94
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 32>
 [95
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 33>
 [96
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 34>
 [97
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 35>
 [98
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 36>
 [99
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 37>
 [100
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 38>
 [101
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 39>
 [102
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 40>
 [103
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 41>
 [104
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 42>
 [105
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 43>
 [106
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 44>
 [107
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 45>
 [108
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 46>
 [109
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 47>
 [110
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 48>
 [111
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 49>
 [112
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 50>
 [113
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 51>
 [114
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 52>
 [115
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 53>
 [116
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 54>
 [117
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 55>
 [118
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 56>
 [119
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 57>
 [120
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 58>
 [121
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 59>
 [122
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 60>
 [123
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 61>
 [124
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 62>
 [125
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 63>
 [126
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 64>
 [127
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 65>
 [128
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 66>
 [129
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 67>
 [130
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 68>
 [131
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 69>
 [132
 
 ]
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
 
 
 File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
-<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 70>
 [133
 
 ]
-Overfull \hbox (11.82439pt too wide) in paragraph at lines 1035--1035
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+
+
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 71>
+[134
+
+]
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 72>
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 72>
+
+
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 72>
+[135
+
+]
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 73>
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 73>
+
+
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 73>
+[136
+
+]
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 74>
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 74>
+
+
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 74>
+[137
+
+]
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 75>
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 75>
+
+
+File: remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf Graphic file (type pdf)
+<use remotesensing-17-02190-manuscript-v2/remotesensing-3622397.pdf, page 75>
+[138
+
+]
+Overfull \hbox (11.82439pt too wide) in paragraph at lines 1148--1148
 |[]\T1/phv/b/n/17.28 Ordinal Vari-ables: Phy-to-tox-i-c-ity Scor-ing Au-
  []
 
 
-Overfull \hbox (3.98988pt too wide) in paragraph at lines 1039--1040
+Overfull \hbox (3.98988pt too wide) in paragraph at lines 1152--1153
 []\T1/phv/m/sl/12 Bumbaca, S.; Borgogno-Mondino, E.C. Sup-port-ing Screen-ing of New Plant
  []
 
 
-Overfull \hbox (25.90361pt too wide) in paragraph at lines 1039--1040
+Overfull \hbox (25.90361pt too wide) in paragraph at lines 1152--1153
 \T1/phv/m/sl/12 In-te-grated with AI. Agron-omy 2024, 14, 306. DOI: 10.3390/agron-omy14020306 
  []
 
@@ -1793,7 +1866,7 @@ File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 <use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
 
 
-[134]
+[139]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 <use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
@@ -1802,521 +1875,526 @@ File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
 <use Phytotoxicity_score/Phytoxicity_score.pdf, page 1>
-[135
-
-]
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
-
-
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
-[136
-
-]
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
-
-
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
-[137
-
-]
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
-
-
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
-[138
-
-]
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
-
-
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
-[139
-
-]
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
-
-
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
 [140
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 2>
 [141
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
-File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 3>
 [142
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 4>
 [143
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 5>
 [144
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 6>
 [145
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 7>
 [146
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+<use Phytotoxicity_score/Phytoxicity_score.pdf>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 8>
 [147
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 9>
 [148
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 10>
 [149
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 11>
 [150
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 12>
 [151
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 13>
 [152
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 14>
 [153
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 15>
 [154
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 16>
 [155
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 17>
 [156
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 18>
 [157
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 19>
 [158
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 20>
 [159
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 21>
 [160
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 22>
 [161
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 23>
 [162
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 24>
 [163
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 25>
 [164
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 26>
 [165
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 27>
 [166
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 28>
 [167
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 29>
 [168
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 30>
 [169
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 31>
 [170
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 32>
 [171
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 33>
 [172
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 34>
 [173
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 35>
 [174
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 36>
 [175
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 37>
 [176
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 38>
 [177
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 39>
 [178
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 40>
 [179
 
 ]
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
 
 
 File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
-<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 41>
 [180
 
 ]
-Overfull \hbox (8.63376pt too wide) in paragraph at lines 1049--1050
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 42>
+[181
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 43>
+[182
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 44>
+[183
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 45>
+[184
+
+]
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+
+
+File: Phytotoxicity_score/Phytoxicity_score.pdf Graphic file (type pdf)
+<use Phytotoxicity_score/Phytoxicity_score.pdf, page 46>
+[185
+
+]
+Overfull \hbox (4.70265pt too wide) in paragraph at lines 1160--1160
+\T1/phv/b/n/17.28 De-tec-tion for Plant De-seases Clas-si-fi-ca-tion| 
+ []
+
+
+Overfull \hbox (8.63376pt too wide) in paragraph at lines 1162--1163
 \T1/phv/m/n/12 This study in-ves-ti-gates the ap-pli-ca-tion of un-su-per-vised learn-ing ap-proaches
  []
 
@@ -2330,7 +2408,7 @@ File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 <use Anomaly_detection/Anomaly_detection.pdf, page 1>
 
 
-[181]
+[186]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 <use Anomaly_detection/Anomaly_detection.pdf, page 1>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
@@ -2339,337 +2417,337 @@ File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 <use Anomaly_detection/Anomaly_detection.pdf, page 1>
-[182
-
-]
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 2>
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 2>
-
-
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 2>
-[183
-
-]
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 3>
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 3>
-
-
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 3>
-[184
-
-]
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 4>
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 4>
-
-
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 4>
-[185
-
-]
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 5>
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 5>
-
-
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 5>
-[186
-
-]
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 6>
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 6>
-
-
-File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 6>
 [187
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 7>
+<use Anomaly_detection/Anomaly_detection.pdf, page 2>
 [188
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 8>
+<use Anomaly_detection/Anomaly_detection.pdf, page 3>
 [189
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 9>
+<use Anomaly_detection/Anomaly_detection.pdf, page 4>
 [190
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 10>
+<use Anomaly_detection/Anomaly_detection.pdf, page 5>
 [191
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 11>
+<use Anomaly_detection/Anomaly_detection.pdf, page 6>
 [192
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 12>
+<use Anomaly_detection/Anomaly_detection.pdf, page 7>
 [193
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 13>
+<use Anomaly_detection/Anomaly_detection.pdf, page 8>
 [194
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 14>
+<use Anomaly_detection/Anomaly_detection.pdf, page 9>
 [195
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 15>
+<use Anomaly_detection/Anomaly_detection.pdf, page 10>
 [196
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 16>
+<use Anomaly_detection/Anomaly_detection.pdf, page 11>
 [197
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 17>
+<use Anomaly_detection/Anomaly_detection.pdf, page 12>
 [198
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 18>
+<use Anomaly_detection/Anomaly_detection.pdf, page 13>
 [199
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 19>
+<use Anomaly_detection/Anomaly_detection.pdf, page 14>
 [200
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 20>
+<use Anomaly_detection/Anomaly_detection.pdf, page 15>
 [201
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 21>
+<use Anomaly_detection/Anomaly_detection.pdf, page 16>
 [202
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 22>
+<use Anomaly_detection/Anomaly_detection.pdf, page 17>
 [203
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 23>
+<use Anomaly_detection/Anomaly_detection.pdf, page 18>
 [204
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 24>
+<use Anomaly_detection/Anomaly_detection.pdf, page 19>
 [205
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 25>
+<use Anomaly_detection/Anomaly_detection.pdf, page 20>
 [206
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 26>
+<use Anomaly_detection/Anomaly_detection.pdf, page 21>
 [207
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+<use Anomaly_detection/Anomaly_detection.pdf, page 22>
 [208
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+<use Anomaly_detection/Anomaly_detection.pdf, page 23>
 [209
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+<use Anomaly_detection/Anomaly_detection.pdf, page 24>
 [210
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+<use Anomaly_detection/Anomaly_detection.pdf, page 25>
 [211
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
 
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
-<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+<use Anomaly_detection/Anomaly_detection.pdf, page 26>
 [212
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 27>
+[213
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 28>
+[214
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 29>
+[215
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 30>
+[216
+
+]
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+
+
+File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
+<use Anomaly_detection/Anomaly_detection.pdf, page 31>
+[217
 
 ]
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
@@ -2680,29 +2758,29 @@ File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 
 File: Anomaly_detection/Anomaly_detection.pdf Graphic file (type pdf)
 <use Anomaly_detection/Anomaly_detection.pdf, page 32>
-[213
+[218
 
 ]
 Chapter 4.
 
 
-[214
+[219
 
 ]
 
-[215]
-Overfull \hbox (3.84247pt too wide) in paragraph at lines 1084--1085
+[220]
+Overfull \hbox (3.84247pt too wide) in paragraph at lines 1197--1198
 []\T1/phv/b/n/12 Enhanced Data Den-sity: \T1/phv/m/n/12 Ge-o-mat-ics tech-niques en-able col-lec-tion of thou-
  []
 
 
-Overfull \hbox (0.61pt too wide) in paragraph at lines 1094--1095
+Overfull \hbox (0.61pt too wide) in paragraph at lines 1207--1208
 []\T1/phv/b/n/12 Multi-sensor Fu-sion: \T1/phv/m/n/12 Com-bin-ing ther-mal, Li-DAR, and hy-per-spec-tral data
  []
 
 
 
-[216]
+[221]
 File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
 <use Intestazione/ringraziamenti.pdf>
 File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
@@ -2713,7 +2791,7 @@ File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
 <use Intestazione/ringraziamenti.pdf, page 1>
 
 
-[217]
+[222]
 File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
 <use Intestazione/ringraziamenti.pdf, page 1>
 File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
@@ -2722,23 +2800,30 @@ File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
 
 File: Intestazione/ringraziamenti.pdf Graphic file (type pdf)
 <use Intestazione/ringraziamenti.pdf, page 1>
-[218
+[223
 
 ] (./Thesis.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 93688114460A48F57F097EB431C1B377;6200.
+
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: AF57D8A9732EE3A1C8B7F220ECF96456;6383
+(rerunfilecheck)             After:  7803EB69C7B78BA1AA68B023F268F387;6393.
  ) 
 Here is how much of TeX's memory you used:
- 17772 strings out of 475921
- 323316 string characters out of 5775722
- 719113 words of memory out of 5000000
- 40334 multiletter control sequences out of 15000+600000
- 577435 words of font info for 60 fonts, out of 8000000 for 9000
+ 17782 strings out of 475921
+ 323986 string characters out of 5775722
+ 719064 words of memory out of 5000000
+ 40344 multiletter control sequences out of 15000+600000
+ 580907 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 86i,17n,133p,1831b,915s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,17n,133p,1831b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (219 pages).
+Output written on Thesis.pdf (224 pages).

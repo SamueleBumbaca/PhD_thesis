@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  28 JUN 2025 10:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,82 +405,107 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2024/12/12 v3.2 Micro-typographical refinements (RS)
+\MT@toks=\toks32
+\MT@tempbox=\box63
+\MT@count=\count326
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1075.
+LaTeX Info: Redefining \leftprotrusion on input line 1076.
+\MT@prot@toks=\toks33
+LaTeX Info: Redefining \rightprotrusion on input line 1095.
+LaTeX Info: Redefining \textls on input line 1437.
+\MT@outer@kern=\dimen180
+LaTeX Info: Redefining \microtypecontext on input line 2041.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2058.
+\MT@listname@count=\count327
+ (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2024/12/12 v3.2 Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip77
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2024/12/12 v3.2 microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3053.
 ) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
  (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen180
-\ar@mcellbox=\box63
-\extrarowheight=\dimen181
-\NC@list=\toks32
-\extratabsurround=\skip77
-\backup@length=\skip78
-\ar@cellbox=\box64
+\col@sep=\dimen181
+\ar@mcellbox=\box64
+\extrarowheight=\dimen182
+\NC@list=\toks34
+\extratabsurround=\skip78
+\backup@length=\skip79
+\ar@cellbox=\box65
 )
-\TX@col@width=\dimen182
-\TX@old@table=\dimen183
-\TX@old@col=\dimen184
-\TX@target=\dimen185
-\TX@delta=\dimen186
-\TX@cols=\count326
-\TX@ftn=\toks33
+\TX@col@width=\dimen183
+\TX@old@table=\dimen184
+\TX@old@col=\dimen185
+\TX@target=\dimen186
+\TX@delta=\dimen187
+\TX@cols=\count328
+\TX@ftn=\toks35
 ) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
  (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen187
-\captionmargin=\dimen188
-\caption@leftmargin=\dimen189
-\caption@rightmargin=\dimen190
-\caption@width=\dimen191
-\caption@indent=\dimen192
-\caption@parindent=\dimen193
-\caption@hangindent=\dimen194
+\caption@tempdima=\dimen188
+\captionmargin=\dimen189
+\caption@leftmargin=\dimen190
+\caption@rightmargin=\dimen191
+\caption@width=\dimen192
+\caption@indent=\dimen193
+\caption@parindent=\dimen194
+\caption@hangindent=\dimen195
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count327
-\c@continuedfloat=\count328
+\c@caption@flags=\count329
+\c@continuedfloat=\count330
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count329
-\sf@farskip=\skip79
-\sf@captopadj=\dimen195
-\sf@capskip=\skip80
-\sf@nearskip=\skip81
-\c@subfigure=\count330
-\c@subfigure@save=\count331
-\c@lofdepth=\count332
-\c@subtable=\count333
-\c@subtable@save=\count334
-\c@lotdepth=\count335
-\sf@top=\skip82
-\sf@bottom=\skip83
+\c@KVtest=\count331
+\sf@farskip=\skip80
+\sf@captopadj=\dimen196
+\sf@capskip=\skip81
+\sf@nearskip=\skip82
+\c@subfigure=\count332
+\c@subfigure@save=\count333
+\c@lofdepth=\count334
+\c@subtable=\count335
+\c@subtable@save=\count336
+\c@lotdepth=\count337
+\sf@top=\skip83
+\sf@bottom=\skip84
 ) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count336
-\cp@tempcnt=\count337
+\c@cp@cntr=\count338
+\cp@tempcnt=\count339
 ) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen196
-\lightrulewidth=\dimen197
-\cmidrulewidth=\dimen198
-\belowrulesep=\dimen199
-\belowbottomsep=\dimen256
-\aboverulesep=\dimen257
-\abovetopsep=\dimen258
-\cmidrulesep=\dimen259
-\cmidrulekern=\dimen260
-\defaultaddspace=\dimen261
-\@cmidla=\count338
-\@cmidlb=\count339
-\@aboverulesep=\dimen262
-\@belowrulesep=\dimen263
-\@thisruleclass=\count340
-\@lastruleclass=\count341
-\@thisrulewidth=\dimen264
+\heavyrulewidth=\dimen197
+\lightrulewidth=\dimen198
+\cmidrulewidth=\dimen199
+\belowrulesep=\dimen256
+\belowbottomsep=\dimen257
+\aboverulesep=\dimen258
+\abovetopsep=\dimen259
+\cmidrulesep=\dimen260
+\cmidrulekern=\dimen261
+\defaultaddspace=\dimen262
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen263
+\@belowrulesep=\dimen264
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen265
 ) (/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -497,7 +522,7 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `algorithmicx' support loaded on input line 3120.
 Package cleveref Info: `subfig' support loaded on input line 3164.
 )
-\extralength=\skip84
+\extralength=\skip85
  (./remotesensing-3622397.aux
 
 LaTeX Warning: Label `alg:H2' multiply defined.
@@ -508,26 +533,26 @@ LaTeX Warning: Label `alg:H2@cref' multiply defined.
 )
 \openout1 = `remotesensing-3622397.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -570,74 +595,95 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
-LaTeX Font Info:    Redeclaring math accent \check on input line 54.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 62.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 62.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 62.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 62.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 62.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 62.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 62.
+LaTeX Font Info:    Redeclaring math accent \check on input line 62.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 62.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 62.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 62.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 62.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 54.
+(Font)              `operators' in the math version `normal' on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 54.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 62.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 54.
+(Font)              `operators' in the math version `bold' on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 54.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 54.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 54.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 54.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 54.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
-Package hyperref Info: Link coloring OFF on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 62.
+Package hyperref Info: Link coloring OFF on input line 62.
 (./remotesensing-3622397.out) (./remotesensing-3622397.out)
 \@outlinefile=\write3
 \openout3 = `remotesensing-3622397.out'.
 
+LaTeX Info: Redefining \microtypecontext on input line 62.
+Package microtype Info: Applying patch `item' on input line 62.
+Package microtype Info: Applying patch `toc' on input line 62.
+Package microtype Info: Applying patch `eqnum' on input line 62.
+Package microtype Info: Applying patch `footnote' on input line 62.
+Package microtype Info: Applying patch `verbatim' on input line 62.
+LaTeX Info: Redefining \microtypesetup on input line 62.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Arial' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen265
-\caption@adjustwidth@linewidth=\dimen266
+\caption@adjustwidth@hsize=\dimen266
+\caption@adjustwidth@linewidth=\dimen267
 Package caption Info: End \AtBeginDocument code.
 
-Overfull \hbox (2.1654pt too wide) in paragraph at lines 56--74
+Overfull \hbox (5.20958pt too wide) in paragraph at lines 64--82
+\TU/Arial(0)/m/n/12 Effective object detection in precision agriculture requires understand-
+ []
+
+
+Overfull \hbox (2.1654pt too wide) in paragraph at lines 64--82
 \TU/Arial(0)/m/n/12 also implementing a handcrafted algorithm as baseline. Models were
  []
 
 
-Overfull \hbox (4.7503pt too wide) in paragraph at lines 56--74
+Overfull \hbox (4.7503pt too wide) in paragraph at lines 64--82
 \TU/Arial(0)/m/n/12 of-distribution trained model achieved benchmark performance, while
  []
 
@@ -646,18 +692,13 @@ Overfull \hbox (4.7503pt too wide) in paragraph at lines 56--74
 [1
 
 ]
-Overfull \hbox (7.27705pt too wide) in paragraph at lines 87--89
+Overfull \hbox (7.27705pt too wide) in paragraph at lines 95--97
 []\TU/Arial(0)/m/n/12 Crop Establishment Assessment: Early-season seedling counts
  []
 
 
-Overfull \hbox (5.52705pt too wide) in paragraph at lines 89--91
+Overfull \hbox (3.52306pt too wide) in paragraph at lines 97--99
 []\TU/Arial(0)/m/n/12 Precision Agriculture: Individual plant locations enable variable-
- []
-
-
-Overfull \hbox (2.97649pt too wide) in paragraph at lines 102--109
-\TU/Arial(0)/m/n/12 ing accuracy, international standards, or comparison with established
  []
 
 
@@ -665,103 +706,130 @@ Overfull \hbox (2.97649pt too wide) in paragraph at lines 102--109
 [53
 
 ]
+Overfull \hbox (2.97649pt too wide) in paragraph at lines 110--117
+\TU/Arial(0)/m/n/12 ing accuracy, international standards, or comparison with established
+ []
+
+(/home/samuelebumbaca/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Overfull \hbox (2.74864pt too wide) in paragraph at lines 127--140
+[]\TU/Arial(0)/m/n/12 Georeferenced orthomosaics—created through aerial photogramme-
+ []
+
+
+Overfull \hbox (3.93289pt too wide) in paragraph at lines 127--140
+\TU/Arial(0)/m/n/12 case in datasets derived from unmanned aerial vehicles [[], []]. More-
+ []
+
+
 
 [54]
 
 [55]
-Overfull \hbox (6.95576pt too wide) in paragraph at lines 163--169
+Overfull \hbox (4.95177pt too wide) in paragraph at lines 171--177
 \TU/Arial(0)/m/n/12 ages are processed—CNNs use grid-based convolutions while Trans-
- []
-
-
-Overfull \hbox (21.65303pt too wide) in paragraph at lines 180--186
-[]\TU/Arial(0)/m/n/12 For our comparative analysis of agricultural object detection approaches,
- []
-
-
-Overfull \hbox (20.14197pt too wide) in paragraph at lines 180--186
-\TU/Arial(0)/m/n/12 we selected representative architectures from both paradigms. From the
- []
-
-
-Overfull \hbox (0.73163pt too wide) in paragraph at lines 180--186
-\TU/Arial(0)/m/n/12 CNN family, we chose YOLOv5 and YOLOv8 due to their widespread
  []
 
 
 
 [56]
+Overfull \hbox (19.98503pt too wide) in paragraph at lines 188--194
+[]\TU/Arial(0)/m/n/12 For our comparative analysis of agricultural object detection approaches,
+ []
+
+
+Overfull \hbox (19.70996pt too wide) in paragraph at lines 188--194
+\TU/Arial(0)/m/n/12 we selected representative architectures from both paradigms. From the
+ []
+
+
+Overfull \hbox (0.73163pt too wide) in paragraph at lines 188--194
+\TU/Arial(0)/m/n/12 CNN family, we chose YOLOv5 and YOLOv8 due to their widespread
+ []
+
+
+Overfull \hbox (33.36655pt too wide) in paragraph at lines 209--215
+\TU/Arial(0)/m/n/12 classes [[]]. State-of-the-art zero-shot detectors include YOLO-World [[]],
+ []
+
+
 
 [57]
+Overfull \hbox (29.777pt too wide) in paragraph at lines 222--222
+|[]\TU/Arial(0)/b/n/14.4 Dataset Requirements for Agricultural Object De-
+ []
+
+
 
 [58]
+Overfull \hbox (2.00154pt too wide) in paragraph at lines 244--250
+[]\TU/Arial(0)/m/n/12 The most critical factor, however, appears to be dataset source. Stud-
+ []
+
+
 
 [59]
-Overfull \hbox (15.6507pt too wide) in paragraph at lines 271--278
+Overfull \hbox (4.84149pt too wide) in paragraph at lines 276--277
+[]\TU/Arial(0)/m/n/12 The potential role of handcrafted methods in modern deep learn-
+ []
+
+
+Overfull \hbox (13.6467pt too wide) in paragraph at lines 279--286
 \TU/Arial(0)/m/n/12 notation quality (10–100%), and evaluating diverse architectures (CNN-
  []
 
 
 
 [60]
-! Undefined control sequence.
-l.290 \textls
-             [-15]{This study uses two dataset sources as training sets: the...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (6.0699pt too wide) in paragraph at lines 290--307
-\TU/Arial(0)/m/n/12 above ground for a Ground Sampling Distance (GSD) of 2.7 mm/pixel.
+Overfull \hbox (24.47536pt too wide) in paragraph at lines 314--315
+[]\TU/Arial(0)/m/n/12/-15ls This study uses two dataset sources as training sets: the Out-of-Distribution
  []
 
 
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/b/n/12 Train
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/b/n/12 Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 182
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 596
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 216
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 174
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 150
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 150
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/m/n/12 150
  []
 
@@ -770,6 +838,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--345
 [62]
 
 [63]
+
+[64]
 File: Plots/DavidEtAl.png Graphic file (type bmp)
 <Plots/DavidEtAl.png>
 File: Plots/LiuEtAl.png Graphic file (type bmp)
@@ -778,11 +848,6 @@ File: Plots/maize_seedling.png Graphic file (type bmp)
 <Plots/maize_seedling.png>
 File: Plots/maize_seedling_detection.png Graphic file (type bmp)
 <Plots/maize_seedling_detection.png>
-
-Overfull \hbox (156.49013pt too wide) in paragraph at lines 369--372
-[][][][][][][][] 
- []
-
 File: Plots/ID_1.png Graphic file (type bmp)
 <Plots/ID_1.png>
 File: Plots/ID_2.png Graphic file (type bmp)
@@ -790,56 +855,51 @@ File: Plots/ID_2.png Graphic file (type bmp)
 File: Plots/ID_3.png Graphic file (type bmp)
 <Plots/ID_3.png>
 
-Overfull \hbox (156.4901pt too wide) in paragraph at lines 373--376
-[][][][][][] 
- []
+
+LaTeX Warning: Float too large for page by 38.08708pt on input line 395.
 
 
 
-[64]
-Overfull \hbox (2.29189pt too wide) in paragraph at lines 391--407
+[65]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (1.0559pt too wide) in paragraph at lines 400--416
 \TU/Arial(0)/m/n/12 tion is accessible from []$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][][] []
  []
 
 
 
-[65]
-Overfull \hbox (0.98116pt too wide) in paragraph at lines 408--419
-[]\TU/Arial(0)/m/n/12 The algorithm is divided in two sequential parts that form a detection–
- []
+[66
 
 
-
-[66]
-Overfull \hbox (2.36494pt too wide) in paragraph at lines 422--433
+]
+Overfull \hbox (2.36494pt too wide) in paragraph at lines 431--442
 \TU/Arial(0)/b/n/12 Many-shot model selection criteria\TU/Arial(0)/m/n/12 : From the extensive landscape
  []
 
 
-Overfull \hbox (6.9753pt too wide) in paragraph at lines 435--444
+Overfull \hbox (6.9753pt too wide) in paragraph at lines 444--453
 \TU/Arial(0)/m/n/12 architecture due to its dominance in agricultural applications [[]]
  []
 
 
-Overfull \hbox (7.60811pt too wide) in paragraph at lines 435--444
+Overfull \hbox (5.60411pt too wide) in paragraph at lines 444--453
 \TU/Arial(0)/m/n/12 ence point for minimum dataset requirements in agricultural con-
  []
 
 
 
 [67]
-Overfull \hbox (6.0406pt too wide) in paragraph at lines 461--471
+Overfull \hbox (6.0406pt too wide) in paragraph at lines 470--480
 []\TU/Arial(0)/b/n/12 RT-DETR \TU/Arial(0)/m/n/12 with model descriptions represents a hybrid approach
  []
 
 
-Overfull \hbox (5.09491pt too wide) in paragraph at lines 461--471
-\TU/Arial(0)/m/n/12 pure CNN-based YOLO variants, RT-DETR’s Transformer com-
- []
-
-
-Overfull \hbox (0.93318pt too wide) in paragraph at lines 461--471
-\TU/Arial(0)/m/n/12 DETR) due to its real-time capabilities and proven performance
+Overfull \hbox (1.4864pt too wide) in paragraph at lines 470--480
+\TU/Arial(0)/m/n/12 jects. We selected it over pure Transformer models (like DETR)
  []
 
 
@@ -847,58 +907,53 @@ Overfull \hbox (0.93318pt too wide) in paragraph at lines 461--471
 [68]
 
 [69]
-Overfull \hbox (4.06476pt too wide) in paragraph at lines 512--518
+Overfull \hbox (3.26076pt too wide) in paragraph at lines 521--527
 \TU/Arial(0)/m/n/12 type matching, where a small set of annotated examples (shots)
  []
 
 
 
 [70]
-Overfull \hbox (9.40741pt too wide) in paragraph at lines 544--548
+Overfull \hbox (7.40341pt too wide) in paragraph at lines 553--557
 \TU/Arial(0)/m/n/12 OWL-ST method, generating pseudo-box annotations from web-
  []
 
 
-Overfull \hbox (17.21358pt too wide) in paragraph at lines 551--554
-\TU/Arial(0)/m/n/12 sions to balance open-vocabulary generalization and task-specific
+Overfull \hbox (7.92744pt too wide) in paragraph at lines 560--563
+[]\TU/Arial(0)/b/n/12 Ensemble models\TU/Arial(0)/m/n/12 : Combining multiple weight-trained versions
  []
 
 
 
 [71]
-! Undefined control sequence.
-l.575 \textls
-             [-15]{\cref{tab:architectures} shows the architectures used in ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (8.91382pt too wide) in paragraph at lines 570--583
+[]\TU/Arial(0)/m/n/12 The choice of text prompt significantly influences OWLv2 performance,
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--593
+Underfull \hbox (badness 10000) in paragraph at lines 602--602
 []|\TU/Arial(0)/m/n/12 307.0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--593
+Underfull \hbox (badness 10000) in paragraph at lines 602--602
 []|\TU/Arial(0)/m/n/12 307.0
  []
 
 
 
 [72]
-Overfull \hbox (1.75056pt too wide) in paragraph at lines 600--600
+Overfull \hbox (1.75056pt too wide) in paragraph at lines 609--609
 |[]\TU/Arial(0)/b/n/14.4 Minimum Dataset Size and Quality Modelling| 
  []
 
 
-Overfull \hbox (3.51868pt too wide) in paragraph at lines 601--624
+Overfull \hbox (1.85068pt too wide) in paragraph at lines 610--633
 \TU/Arial(0)/m/n/12 size and quality. To evaluate the HC object detector on the ID dataset,
  []
 
 
-Overfull \hbox (2.78389pt too wide) in paragraph at lines 601--624
+Overfull \hbox (1.11589pt too wide) in paragraph at lines 610--633
 \TU/Arial(0)/m/n/12 this number as a percentage of the total available dataset (dataset%),
  []
 
@@ -907,14 +962,9 @@ Overfull \hbox (2.78389pt too wide) in paragraph at lines 601--624
 [73]
 
 [74]
-Overfull \hbox (0.7414pt too wide) in paragraph at lines 655--656
-[]\TU/Arial(0)/m/n/12 For object detection performance, we used the standard COCO eval-
- []
-
-
 
 [75]
-Overfull \hbox (4.33955pt too wide) in paragraph at lines 674--678
+Overfull \hbox (4.33955pt too wide) in paragraph at lines 683--687
 []\TU/Arial(0)/b/n/12 Logarithmic function: \TU/Arial(0)/m/n/12 Models the diminishing returns pattern where
  []
 
@@ -925,506 +975,495 @@ Overfull \hbox (4.33955pt too wide) in paragraph at lines 674--678
 [77]
 
 [78]
-Overfull \hbox (6.87589pt too wide) in paragraph at lines 782--782
+Overfull \hbox (6.87589pt too wide) in paragraph at lines 791--791
 []|$\OML/cmm/b/it/12 RMSE$| 
  []
 
 
-Overfull \hbox (8.42587pt too wide) in paragraph at lines 782--782
+Overfull \hbox (8.42587pt too wide) in paragraph at lines 791--791
 []|$\OML/cmm/b/it/12 MAPE$| 
  []
 
 
-Overfull \hbox (5.30252pt too wide) in paragraph at lines 782--782
+Overfull \hbox (5.30252pt too wide) in paragraph at lines 791--791
 []|\TU/Arial(0)/b/n/12 Dataset
  []
 
 
 
 [79]
-Overfull \hbox (3.59901pt too wide) in paragraph at lines 785--790
-\TU/Arial(0)/m/n/12 on this set, with $\OML/cmm/m/it/12 R[]$ \TU/Arial(0)/m/n/12 values above 0.85 for all the datasets. The $\OML/cmm/m/it/12 RMSE$
- []
-
-
-Overfull \hbox (25.5658pt too wide) in paragraph at lines 785--790
-\TU/Arial(0)/m/n/12 values were below 0.2, while the $\OML/cmm/m/it/12 mAP$ \TU/Arial(0)/m/n/12 values were above 0.7. The MAPE
- []
-
-
-Overfull \hbox (30.57295pt too wide) in paragraph at lines 798--802
+Overfull \hbox (28.24495pt too wide) in paragraph at lines 807--811
 \TU/Arial(0)/m/n/12 combination was tested on the testing dataset tiles of the three ID datasets. 
  []
 
-File: Plots/metrics_OOD_datasets.pdf Graphic file (type pdf)
-<use Plots/metrics_OOD_datasets.pdf>
 
 
 [80]
 
 [81]
+File: Plots/metrics_OOD_datasets.pdf Graphic file (type pdf)
+<use Plots/metrics_OOD_datasets.pdf>
+
+
+LaTeX Warning: Float too large for page by 161.09998pt on input line 842.
+
+
 
 [82]
-Overfull \hbox (8.52998pt too wide) in paragraph at lines 852--857
+Overfull \hbox (8.52998pt too wide) in paragraph at lines 860--865
 []\TU/Arial(0)/m/n/12 For the combinations of model-architecture/dataset-size that achieved
  []
 
+
+
+[83
+
+
+]
 File: Plots/r2_ap_vs_dataset_size_yolov5.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolov5.pdf>
 
-Overfull \hbox (71.13187pt too wide) in paragraph at lines 863--863
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 870--870
  [] 
  []
 
 File: Plots/r2_ap_vs_dataset_size_yolov8.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolov8.pdf>
 
-Overfull \hbox (71.13187pt too wide) in paragraph at lines 864--864
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 871--871
  [][] 
  []
 
+
+LaTeX Warning: Float too large for page by 130.32742pt on input line 885.
+
+
+
+[84]
 File: Plots/r2_ap_vs_dataset_size_yolo11.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolo11.pdf>
 
-Overfull \hbox (71.13187pt too wide) in paragraph at lines 865--865
- [][] 
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 892--892
+ [] 
  []
 
 File: Plots/r2_ap_vs_dataset_size_rtdetr.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_rtdetr.pdf>
 
-Overfull \hbox (71.13187pt too wide) in paragraph at lines 866--866
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 893--893
  [][] 
  []
 
 
-
-[83]
-Overfull \vbox (164.16365pt too high) has occurred while \output is active []
+LaTeX Warning: Float too large for page by 130.32742pt on input line 907.
 
 
-
-[84]
 
 [85]
+
+[86
+
+
+
+
+]
+
+[87]
 File: Plots/r2_ap_vs_dataset_quality.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_quality.pdf>
 
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 924--925
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 943--944
  [] 
- []
-
-File: Plots/many_shot_size_annotations.pdf Graphic file (type pdf)
-<use Plots/many_shot_size_annotations.pdf>
-
-Overfull \hbox (99.58461pt too wide) in paragraph at lines 941--942
- [] 
- []
-
-File: Plots/many_shot_quality_annotations.pdf Graphic file (type pdf)
-<use Plots/many_shot_quality_annotations.pdf>
-
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 959--960
- [] 
- []
-
-
-
-[86]
-
-[87]
-File: Plots/r2_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
-<use Plots/r2_ap_vs_shots_cdvito.pdf>
-
-Overfull \hbox (156.49013pt too wide) in paragraph at lines 1025--1025
- [] 
- []
-
-File: Plots/rmse_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
-<use Plots/rmse_ap_vs_shots_cdvito.pdf>
-
-Overfull \hbox (156.49013pt too wide) in paragraph at lines 1026--1026
- [][] 
  []
 
 
 
 [88]
-File: Plots/few_shot_annotations.pdf Graphic file (type pdf)
-<use Plots/few_shot_annotations.pdf>
+File: Plots/many_shot_size_annotations.pdf Graphic file (type pdf)
+<use Plots/many_shot_size_annotations.pdf>
 
-Overfull \hbox (184.94289pt too wide) in paragraph at lines 1051--1052
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 957--958
  [] 
  []
 
 
 
 [89]
-File: Plots/zeroshot.pdf Graphic file (type pdf)
-<use Plots/zeroshot.pdf>
+File: Plots/many_shot_quality_annotations.pdf Graphic file (type pdf)
+<use Plots/many_shot_quality_annotations.pdf>
 
-Overfull \hbox (99.58461pt too wide) in paragraph at lines 1069--1070
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 974--975
  [] 
  []
 
 
 
 [90]
-File: Plots/zeroshot_images.pdf Graphic file (type pdf)
-<use Plots/zeroshot_images.pdf>
 
-Overfull \hbox (99.58461pt too wide) in paragraph at lines 1090--1091
+[91
+
+
+
+
+
+
+]
+
+[92]
+File: Plots/r2_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
+<use Plots/r2_ap_vs_shots_cdvito.pdf>
+
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 1029--1029
+ [] 
+ []
+
+File: Plots/rmse_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
+<use Plots/rmse_ap_vs_shots_cdvito.pdf>
+
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 1030--1030
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 144.82742pt on input line 1045.
+
+
+
+[93]
+File: Plots/few_shot_annotations.pdf Graphic file (type pdf)
+<use Plots/few_shot_annotations.pdf>
+
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 1052--1053
  [] 
  []
 
 
 
-[91]
-Overfull \hbox (22.05914pt too wide) in paragraph at lines 1110--1110
-|[]\TU/Arial(0)/b/n/14.4 Dataset Source Impact on Object Detection Per-
- []
-
-
-Overfull \hbox (8.28194pt too wide) in paragraph at lines 1111--1120
-\TU/Arial(0)/m/n/12 Our experiments clearly demonstrate the critical importance of dataset
- []
-
-
-Overfull \hbox (22.75969pt too wide) in paragraph at lines 1111--1120
-\TU/Arial(0)/m/n/12 tested models, regardless of architecture or parameter amount, achieved
- []
-
-
-
-[92]
-Overfull \hbox (3.1839pt too wide) in paragraph at lines 1121--1136
-\TU/Arial(0)/m/n/12 rameters, and plant growth stages vary substantially across datasets.
- []
-
-
-Overfull \hbox (3.04626pt too wide) in paragraph at lines 1121--1136
-\TU/Arial(0)/m/n/12 play an important role in determining model performance. Both cases
- []
-
-
-Overfull \hbox (14.68219pt too wide) in paragraph at lines 1141--1141
-|[]\TU/Arial(0)/b/n/14.4 Many-Shot Object Detection: Architecture and
- []
-
-
-
-[93]
-Overfull \hbox (4.49835pt too wide) in paragraph at lines 1150--1159
-\TU/Arial(0)/m/n/12 served better performances with lower training dataset sizes, with RT-
- []
-
-
-Overfull \hbox (9.6908pt too wide) in paragraph at lines 1150--1159
-\TU/Arial(0)/m/n/12 performance with limited training data in agricultural contexts. The em-
- []
-
-
-
 [94]
-Overfull \hbox (7.79951pt too wide) in paragraph at lines 1167--1173
-\TU/Arial(0)/m/n/12 computational resources for a transformer-mixed model like RT-DETR
+File: Plots/zeroshot.pdf Graphic file (type pdf)
+<use Plots/zeroshot.pdf>
+
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 1070--1071
+ [] 
  []
 
 
-Overfull \hbox (3.54822pt too wide) in paragraph at lines 1174--1184
-\TU/Arial(0)/m/n/12 challenges documented in [[], []]. The relationship between dataset
- []
+LaTeX Warning: Float too large for page by 8.13687pt on input line 1082.
 
 
 
 [95]
-Overfull \hbox (4.74092pt too wide) in paragraph at lines 1186--1193
-\TU/Arial(0)/m/n/12 Our investigation into minimum dataset quality requirements revealed
- []
+File: Plots/zeroshot_images.pdf Graphic file (type pdf)
+<use Plots/zeroshot_images.pdf>
 
-
-Overfull \hbox (4.13853pt too wide) in paragraph at lines 1194--1201
-\TU/Arial(0)/m/n/12 proportion of the total learning signal. In contrast, RT-DETR X, with its
+Overfull \hbox (39.83357pt too wide) in paragraph at lines 1089--1090
+ [] 
  []
 
 
 
 [96]
-Overfull \hbox (2.26398pt too wide) in paragraph at lines 1210--1215
-\TU/Arial(0)/m/n/12 zero-shot models like OWLv2 performed poorly, regardless of prompt
+Overfull \hbox (19.65434pt too wide) in paragraph at lines 1108--1108
+|[]\TU/Arial(0)/b/n/14.4 Dataset Source Impact on Object Detection Per-
  []
 
 
-Overfull \hbox (11.3496pt too wide) in paragraph at lines 1216--1240
-\TU/Arial(0)/m/n/12 marks [[], []]. Several factors may explain this gap: First, the domain-
+Overfull \hbox (8.28194pt too wide) in paragraph at lines 1109--1118
+\TU/Arial(0)/m/n/12 Our experiments clearly demonstrate the critical importance of dataset
+ []
+
+
+Overfull \hbox (22.75969pt too wide) in paragraph at lines 1109--1118
+\TU/Arial(0)/m/n/12 tested models, regardless of architecture or parameter amount, achieved
+ []
+
+
+Overfull \hbox (0.8559pt too wide) in paragraph at lines 1119--1134
+\TU/Arial(0)/m/n/12 rameters, and plant growth stages vary substantially across datasets.
+ []
+
+
+Overfull \hbox (3.04626pt too wide) in paragraph at lines 1119--1134
+\TU/Arial(0)/m/n/12 play an important role in determining model performance. Both cases
  []
 
 
 
-[97]
-Overfull \hbox (15.62558pt too wide) in paragraph at lines 1241--1241
-|[]\TU/Arial(0)/b/n/14.4 Handcrafted Methods in the Deep Learning Era| 
+[97
+
+
+
+
+
+
+
+
+]
+Overfull \hbox (14.68219pt too wide) in paragraph at lines 1139--1139
+|[]\TU/Arial(0)/b/n/14.4 Many-Shot Object Detection: Architecture and
+ []
+
+
+Overfull \hbox (10.45343pt too wide) in paragraph at lines 1148--1157
+[]\TU/Arial(0)/m/n/12 Conversely, for transformer-mixed models like RT-DETR, we observed
+ []
+
+
+Overfull \hbox (0.9671pt too wide) in paragraph at lines 1148--1157
+\TU/Arial(0)/m/n/12 transformer-based models corroborates recent findings [[], []], who
  []
 
 
 
 [98]
+Overfull \hbox (7.79951pt too wide) in paragraph at lines 1165--1171
+\TU/Arial(0)/m/n/12 computational resources for a transformer-mixed model like RT-DETR
+ []
+
+
 
 [99]
-! Undefined control sequence.
-l.1275 \textls
-              [-25]{Our results also demonstrate that some reduction in anno...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (3.54822pt too wide) in paragraph at lines 1172--1182
+\TU/Arial(0)/m/n/12 challenges documented in [[], []]. The relationship between dataset
+ []
 
 
-Overfull \hbox (0.10616pt too wide) in paragraph at lines 1281--1288
-[]\TU/Arial(0)/m/n/12 Hybrid approaches combining handcrafted methods with deep learn-
+Overfull \hbox (4.74092pt too wide) in paragraph at lines 1184--1191
+\TU/Arial(0)/m/n/12 Our investigation into minimum dataset quality requirements revealed
  []
 
 
 
 [100]
-Overfull \hbox (4.77374pt too wide) in paragraph at lines 1290--1296
-\TU/Arial(0)/m/n/12 vant features for crop detection tasks, potentially reducing the amount
+Overfull \hbox (4.13853pt too wide) in paragraph at lines 1192--1199
+\TU/Arial(0)/m/n/12 proportion of the total learning signal. In contrast, RT-DETR X, with its
  []
 
 
-Overfull \hbox (7.44795pt too wide) in paragraph at lines 1300--1308
-\TU/Arial(0)/m/n/12 quiring unreasonable dataset size to achieve benchmark performance
+Overfull \hbox (2.26398pt too wide) in paragraph at lines 1208--1213
+\TU/Arial(0)/m/n/12 zero-shot models like OWLv2 performed poorly, regardless of prompt
  []
 
 
 
 [101]
-! Undefined control sequence.
-l.1357 \authorcontributions
-                           {Conceptualization, S.B. and E.B.-M.; methodology...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1359 \funding
-               {This research was conducted as part of a PhD program support...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (9.3456pt too wide) in paragraph at lines 1214--1238
+\TU/Arial(0)/m/n/12 marks [[], []]. Several factors may explain this gap: First, the domain-
+ []
 
 
 
 [102]
-! Undefined control sequence.
-l.1392 \dataavailability
-                        {The code for the handcrafted methods used
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (95.29051pt too wide) in paragraph at lines 1392--1400
-\TU/Arial(0)/m/n/12 at []$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]
+Overfull \hbox (15.62558pt too wide) in paragraph at lines 1239--1239
+|[]\TU/Arial(0)/b/n/14.4 Handcrafted Methods in the Deep Learning Era| 
  []
-
-
-Overfull \hbox (18.06204pt too wide) in paragraph at lines 1392--1400
-[][][] [] [][] [] [][][][] [] [][][][][][] [] [][][][][][][][]$[] \TU/Arial(0)/m/n/12 (accessed on 20 June 2025). The other
- []
-
-! Undefined control sequence.
-l.1418 \conflictsofinterest
-                           {The authors declare
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1452 \appendixtitles
-                      {no} % Leave argument "no" if all appendix headings st...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 
 [103]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 1458.
-
-
-LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
-(Font)              using `TU/Arial(0)/m/n' instead on input line 1466.
-
-
 
 [104]
-! Undefined control sequence.
-l.1497   \State \textls
-                       [-30]{$clusters \gets \text{HierarchicalClustering}(c...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 1497--1498
-[] \TU/Arial(0)/m/sc/10.95 [-30]$\OML/cmm/m/it/10.95 clusters \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 centroids; threshold \OT1/cmr/m/n/10.95 =
+Overfull \hbox (4.47374pt too wide) in paragraph at lines 1288--1294
+\TU/Arial(0)/m/n/12 vant features for crop detection tasks, potentially reducing the amount
  []
 
 
 
 [105]
-Underfull \hbox (badness 10000) in paragraph at lines 1549--1550
-[]\TU/Arial(0)/b/n/10.95 function \TU/Arial(0)/m/sc/10.95 process_observations($\OML/cmm/m/it/10.95 observations; inter \OMS/cmsy/m/n/10.95 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
-[] $\OML/cmm/m/it/10.95 second[]row[]centers; second[]row[]model \OMS/cmsy/m/n/10.95  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1560--1561
-[] \TU/Arial(0)/b/n/10.95 if $\OML/cmm/m/it/10.95 abs\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 second[]row[]model:intercept \OMS/cmsy/m/n/10.95 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1562
-[] \TU/Arial(0)/b/n/10.95 if $\OML/cmm/m/it/10.95 second[]row[]centers \OMS/cmsy/m/n/10.95 ^^Q
- []
-
-
-Overfull \hbox (23.3212pt too wide) in paragraph at lines 1562--1563
-[] $\OML/cmm/m/it/10.95 objects\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 tile\OT1/cmr/m/n/10.95 ] \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 first[]row[]centers; second[]row[]centers\OT1/cmr/m/n/10.95 )$ 
- []
-
-
-Overfull \hbox (61.9559pt too wide) in paragraph at lines 1572--1573
-[] $\OML/cmm/m/it/10.95 observations \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 observations; MEAN[]SLOPE\OT1/cmr/m/n/10.95 )$ 
- []
-
-
 
 [106]
-Overfull \vbox (278.10262pt too high) has occurred while \output is active []
+! Undefined control sequence.
+l.1390 \dataavailability
+                        {The code for the handcrafted methods used
+? 
+
+Overfull \hbox (95.29051pt too wide) in paragraph at lines 1390--1398
+\TU/Arial(0)/m/n/12 at []$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]
+ []
+
+
+Overfull \hbox (17.85805pt too wide) in paragraph at lines 1390--1398
+[][][] [] [][] [] [][][][] [] [][][][][][] [] [][][][][][][][]$[] \TU/Arial(0)/m/n/12 (accessed on 20 June 2025). The other
+ []
 
 
 
 [107]
 ! Undefined control sequence.
-l.1609 \reftitle
-                {References}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+l.1450 \appendixtitles
+                      {no} % Leave argument "no" if all appendix headings st...
+? 
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 1456.
+
+LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
+(Font)              using `TU/Arial(0)/m/n' instead on input line 1464.
 
 
 
 [108]
 
-[109
+Package microtype Warning: OML/cmm/m/it/10.95 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OML/cmm/m/it/8 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OML/cmm/m/it/6 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMS/cmsy/m/n/10.95 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMS/cmsy/m/n/8 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMS/cmsy/m/n/6 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMX/cmex/m/n/10.95 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMX/cmex/m/n/8 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OMX/cmex/m/n/6 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OT1/cmr/m/n/10.95 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OT1/cmr/m/n/8 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Package microtype Warning: OT1/cmr/m/n/6 is a legacy font.
+(microtype)                Cannot letterspace it on input line 1495.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
+[] $\OML/cmm/m/it/10.95 clusters \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 centroids; threshold \OT1/cmr/m/n/10.95 =
+ []
+
+
+
+[109]
+Overfull \vbox (45.92168pt too high) has occurred while \output is active []
+
+
+
+[110]
+Underfull \hbox (badness 10000) in paragraph at lines 1545--1546
+[]\TU/Arial(0)/b/n/10.95 function \TU/Arial(0)/m/sc/10.95 process_observations($\OML/cmm/m/it/10.95 observations; inter \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1552--1553
+[] $\OML/cmm/m/it/10.95 second[]row[]centers; second[]row[]model \OMS/cmsy/m/n/10.95  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
+[] \TU/Arial(0)/b/n/10.95 if $\OML/cmm/m/it/10.95 abs\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 second[]row[]model:intercept \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1558
+[] \TU/Arial(0)/b/n/10.95 if $\OML/cmm/m/it/10.95 second[]row[]centers \OMS/cmsy/m/n/10.95 ^^Q
+ []
+
+
+Overfull \hbox (22.04004pt too wide) in paragraph at lines 1558--1559
+[] $\OML/cmm/m/it/10.95 objects\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 tile\OT1/cmr/m/n/10.95 ] \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 first[]row[]centers; second[]row[]centers\OT1/cmr/m/n/10.95 )$ 
+ []
+
+
+Overfull \hbox (60.67474pt too wide) in paragraph at lines 1568--1569
+[] $\OML/cmm/m/it/10.95 observations \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 observations; MEAN[]SLOPE\OT1/cmr/m/n/10.95 )$ 
+ []
+
+
+Overfull \vbox (91.39613pt too high) has occurred while \output is active []
+
+
+
+[111]
+! Undefined control sequence.
+l.1592 \reftitle
+                {References}
+? 
+
+
+[112]
+Underfull \hbox (badness 1028) in paragraph at lines 1616--1620
+[]\TU/Arial(0)/m/n/12 Saatkamp, A.; Cochrane, A.; Commander, L.; Guja, L.;
+ []
+
+
+
+[113
 
 ]
 
-[110]
+[114]
 
-[111]
-Underfull \hbox (badness 2772) in paragraph at lines 1743--1746
+[115]
+Underfull \hbox (badness 3158) in paragraph at lines 1720--1723
 []\TU/Arial(0)/m/sc/12 Maize_seeding Dataset $\OML/cmm/m/it/12 >$ \TU/Arial(0)/m/sc/12 Overview.  Available online:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1743--1746
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1723
 []$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 4543) in paragraph at lines 1749--1752
-[]\TU/Arial(0)/m/sc/12 Maize-Seedling-Detection Dataset $\OML/cmm/m/it/12 >$ \TU/Arial(0)/m/sc/12 Overview.  Avail-
+Underfull \hbox (badness 1270) in paragraph at lines 1737--1742
+[]\TU/Arial(0)/m/sc/12 Torres-SÃ¡nchez, J.; Mesas-Carrascosa, F.J.; JimÃ©nez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1752
-\TU/Arial(0)/m/sc/12 able online: []$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] [] [][][] []
- []
-
-
-Underfull \hbox (badness 5504) in paragraph at lines 1760--1765
-[]\TU/Arial(0)/m/sc/12 Torres-Sánchez, J.; Mesas-Carrascosa, F.J.; Jiménez-
- []
-
-
-
-[112]
-
-[113]
-Underfull \hbox (badness 1028) in paragraph at lines 1796--1798
-[]\TU/Arial(0)/m/sc/12 You Only Look Once: Unified, Real-Time Object Detec-
- []
-
-
-
-[114]
-Underfull \hbox (badness 1540) in paragraph at lines 1876--1880
-[]\TU/Arial(0)/m/sc/12 Li, Z.; Zhou, F.; Chen, F.; Li, H.  Meta-SGD: Learn-
- []
-
-
-
-[115]
 
 [116]
 
 [117]
+Underfull \hbox (badness 1253) in paragraph at lines 1773--1775
+[]\TU/Arial(0)/m/sc/12 You Only Look Once: Unified, Real-Time Object Detec-
+ []
+
+
 
 [118]
 
 [119]
 
 [120]
-Underfull \hbox (badness 1533) in paragraph at lines 2121--2125
-\TU/Arial(0)/m/sc/12 fitting with an asymptotic approach.  \TU/Arial(0)/m/it/12 PLoS ONE \TU/Arial(0)/b/n/12 2024\TU/Arial(0)/m/sc/12 ,
+
+[121]
+
+[122]
+
+[123]
+
+[124]
+Underfull \hbox (badness 1365) in paragraph at lines 2098--2102
+[]\TU/Arial(0)/m/sc/12 Vianna, L.S.; GonÃ§alves, A.L.; Souza, J.A.  Analysis
  []
 
 
 
-[121]
+[125]
 
-! LaTeX Error: \begin{list} on input line 1605 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2263 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
-[122] (./remotesensing-3622397.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[126] (./remotesensing-3622397.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1437,20 +1476,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `remotesensing-3622397.out' has not changed.
-(rerunfilecheck)             Checksum: 7E5C78E994D36B48B1BAF804D63E4899;5690.
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 1605 (\begingroup)
-### semi simple group (level 1) entered at line 1605 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: 62D19316100670EE043537CA039FDA4B;5781.
+ ) 
 Here is how much of TeX's memory you used:
- 18531 strings out of 475921
- 365850 string characters out of 5775722
- 837185 words of memory out of 5000000
- 41081 multiletter control sequences out of 15000+600000
- 566215 words of font info for 93 fonts, out of 8000000 for 9000
+ 20363 strings out of 475921
+ 400374 string characters out of 5775722
+ 888429 words of memory out of 5000000
+ 42892 multiletter control sequences out of 15000+600000
+ 566255 words of font info for 98 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,13n,95p,1153b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,13n,95p,1153b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on remotesensing-3622397.pdf (71 pages).
+Output written on remotesensing-3622397.pdf (75 pages).

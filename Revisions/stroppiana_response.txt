@@ -1,0 +1,177 @@
+RESPONSE TO REVIEWER: PROFESSOR DANIELA STROPPIANA
+================================================
+
+Dear Professor Stroppiana,
+
+Thank you for your detailed and constructive review of my PhD thesis "Geomatic Techniques to Support Phytosanitary Products Tests within the EPPO Standard Framework." I greatly appreciate your thorough evaluation and valuable suggestions for improvement. Below is my detailed point-by-point response to each of your comments, with specific references to the revisions made.
+
+**1. RESPONSE TO: "The thesis document presented by the candidate is not ready to be submitted; there are substantial revisions that should be implemented to the document before the final examination. Overall, the thesis text is not well structured and organized, it is difficult to follow and read."**
+
+**REVISION MADE:** I have completely restructured the thesis to provide a coherent and logical flow. The new structure includes:
+
+- **Extended Abstract** (pages 2-3 in revised version vs. absent in original): Provides comprehensive overview of background, objectives, methodology, results, and contributions
+- **Reorganized Introduction** (pages 4-10 in revised version vs. pages 2-4 in original): Now includes clear research motivation, objectives, structure, and literature review
+- **Enhanced Theoretical Background** (pages 10-47 in revised version): Better organized with logical progression from regulatory framework to technical methods
+- **Improved Case Studies Section** (pages 47-52 in revised version): Clearer presentation of the three applications with better contextualization
+
+**2. RESPONSE TO: "Major weakness is that it lacks an overall view of the scientific work carried out by the candidate, who should emphasize the novel contribution of his work to the scientific gap in the specific field of application of geomatic techniques."**
+
+**REVISION MADE:** The thesis now prominently features the novel contributions:
+
+- **In the Abstract** (pages 2-3): "Novel Contribution" subsection explicitly states: "This work establishes the first systematic evaluation of minimum requirements for implementing geomatics techniques within EPPO standards, providing practical guidelines for dataset size, validation protocols, and integration strategies."
+
+- **In the Conclusions** (pages 52-55): Added "Geomatic Contributions and Innovations" section that clearly articulates three critical advantages provided by geomatics techniques: spatial data integration, enhanced data density, and reproducibility/standardization.
+
+**3. RESPONSE TO: "The candidate should also better highlight the results from the three case studies, and he should provide an overall summary."**
+
+**REVISION MADE:** 
+
+- **In the Abstract** (pages 2-3): "Key Results" subsection now provides quantitative summary of all three case studies with specific performance metrics
+- **In the Applications Demonstration chapter** (pages 47-52): Each case study now has clearer results presentation with EPPO benchmark achievements highlighted
+- **In the Conclusions** (pages 52-55): Comprehensive summary of findings from all three case studies with their implications for the field
+
+**4. RESPONSE TO: "The text is verbose and at certain sections too long. I suggest the candidate to revise and to shortened where necessary."**
+
+**REVISION MADE:** The thesis has been significantly condensed while maintaining scientific rigor:
+- Removed redundant background descriptions
+- Streamlined methodological sections to focus on novel contributions
+- Consolidated repetitive content
+- Improved conciseness throughout while preserving technical accuracy
+
+**5. RESPONSE TO: "An extended abstract is missing at the beginning of the document. This abstract should be concise but informative on the major content of the work and on the innovative contribution..."**
+
+**REVISION MADE:** Added comprehensive extended abstract (pages 2-3) that includes:
+- **Background and Research Gap**: Clear statement of the problem and limitations of current approaches
+- **Research Objectives**: Specific aims with reference to EPPO standards
+- **Methodology**: Overview of the three-pronged approach (counting, scoring, classification)
+- **Key Results**: Quantitative results with specific performance metrics
+- **Novel Contribution**: Explicit statement of the first systematic evaluation of geomatics requirements
+- **Practical Impact**: Clear implications for agricultural research and regulatory frameworks
+
+**6. RESPONSE TO: "Throughout the text the candidate should clearly describe his contribution to the methodology and to the results; he should highlight the actual contribution of the doctoral research."**
+
+**REVISION MADE:** Personal contributions are now clearly highlighted throughout:
+- **In the Abstract**: "Novel Contribution" section explicitly states original research contributions
+- **In the Introduction**: Research objectives clearly delineate the candidate's specific investigations
+- **In the Methodology**: Distinguishes between established techniques and novel applications/combinations
+- **In the Results**: Emphasizes original findings and their significance for the field
+- **Language**: Changed from first person plural to appropriate academic voice while maintaining clarity about personal contributions
+
+**7. RESPONSE TO: "Most of the text describes theoretical and background information, such as in the case of introduction to chapter 1 often losing the focus on the actual thesis contribution."**
+
+**REVISION MADE:** Rebalanced the content to emphasize original research:
+- **Theoretical Background chapter**: Streamlined to focus on methods relevant to the thesis applications
+- **Introduction**: Now clearly connects background to specific research gaps addressed
+- **Literature Review**: Focused on identifying gaps that the thesis addresses rather than general background
+- **Results sections**: Expanded to better highlight novel findings and their implications
+
+**8. RESPONSE TO: "In 1.3 (Geomatic Techniques) the focus should be, first, on geomatic techniques that are apparently introduced after six pages..."**
+
+**REVISION MADE:** The Geomatics section (now Section 2.3, pages 21-47) has been reorganized with:
+- **Clear definition upfront**: Geomatic techniques are introduced immediately with their relevance to the research
+- **Logical progression**: From basic principles to specific applications in agricultural assessment
+- **Focus on thesis applications**: Each technique is presented in the context of how it addresses the research objectives
+
+**9. RESPONSE TO: "The same comments apply to the objectives of the work: a separate section at the beginning (besides the description in the abstract) is needed to let reader know what the work aimed at."**
+
+**REVISION MADE:** Added dedicated "Research Objectives" section (pages 5-6) that clearly states:
+- The overarching goal of investigating geomatics applicability for EPPO standards
+- The three specific variable types addressed (continuous/discrete, ordinal, binary/nominal)
+- The representative assessments selected for each type
+- The feasibility demonstration goals
+
+**10. RESPONSE TO: "The text should be more specific on the study cases; since the very early beginning, the reader should understand what are the study cases."**
+
+**REVISION MADE:** Study cases are now clearly identified from the beginning:
+- **In the Abstract**: Specific mention of "counting, scoring, and classification" applications
+- **In the Introduction**: Clear enumeration of the three case studies with their specific applications
+- **In the Thesis Structure section**: Explicit listing of each case study with publication status
+- **Eliminated vague references**: No more ambiguous terms like "series of study cases" or "second study case"
+
+**11. RESPONSE TO: "The methodology is lost in the details of descriptions that probably can be shortened."**
+
+**REVISION MADE:** Methodology sections have been streamlined:
+- **Focus on novel aspects**: Emphasis on original contributions rather than standard procedures
+- **Clearer organization**: Logical flow from general principles to specific applications
+- **Reduced redundancy**: Eliminated repetitive descriptions of standard techniques
+- **Enhanced clarity**: Better integration of methodological choices with research objectives
+
+**12. RESPONSE TO: "The concept of binary, ordinal...are very general; indeed, the study focused on specific variables that should be clearly stated, e.g. plant counting."**
+
+**REVISION MADE:** Variable types are now clearly connected to specific applications:
+- **Continuous/Discrete Variables**: Explicitly identified as plant counting applications
+- **Ordinal Variables**: Clearly stated as phytotoxicity scoring
+- **Binary/Nominal Variables**: Specified as plant disease detection/classification
+- **Throughout the text**: Consistent use of specific variable names rather than general categories
+
+**13. RESPONSE TO: "The 'Conclusions' section provides a good overview of the work; it needs minor revisions. It needs to discuss also the contribution of geomatic, besides ML, since this is the core of the thesis."**
+
+**REVISION MADE:** Enhanced Conclusions section (pages 52-55) now includes:
+- **Dedicated "Geomatic Contributions and Innovations" section**: Three critical advantages provided by geomatics techniques
+- **Balanced discussion**: Equal emphasis on geomatics and ML contributions
+- **Clear connection to thesis title**: Emphasis on how geomatics enables spatial data integration for EPPO standards
+- **Specific geomatics benefits**: Spatial data integration, enhanced data density, reproducibility/standardization
+
+**14. RESPONSE TO: "Probably, there is a misspelling in the title words."**
+
+**REVISION MADE:** Title corrected from "whithin" to "within" throughout the document.
+
+**15. RESPONSE TO: "Please add ideas on future developments and further applications."**
+
+**REVISION MADE:** Added "Future Research Directions" section (pages 54-55) that includes:
+- **Temporal Geostatistics**: Extending spatial modeling to include temporal dimensions
+- **Multi-sensor Fusion**: Combining thermal, LiDAR, and hyperspectral data
+- **Unsupervised ML**: ML enhancement for unsupervised classification 
+- **Regulatory Integration**: Collaboration with EPPO for standardized digital protocols
+
+**16. RESPONSE TO: "Rephrase too general sentences" and specific examples provided**
+
+**REVISION MADE:** All identified general statements have been revised:
+- Replaced vague terms like "supposedly nadiral" with precise technical language
+- Clarified "handcrafted algorithm" references with specific algorithmic approaches
+- Eliminated overly broad generalizations about automated systems
+- Enhanced technical precision throughout the document
+
+**17. RESPONSE TO: "Add clear description of what you refer with 'validation' throughout the text."**
+
+**REVISION MADE:** Validation terminology has been clarified:
+- **Clear definitions**: Distinguished between testing, validation, cross-validation, and independent validation
+- **Specific benchmarks**: EPPO validation standards are explicitly referenced with their sources
+- **Methodological clarity**: Validation approaches are described with specific reference to their application context
+
+**18. RESPONSE TO: "Final minor comment, the doctoral thesis is personal work, I think it is better to avoid using first plural pronoun ('we')."**
+
+**REVISION MADE:** Revised throughout to use appropriate academic voice:
+- Eliminated first person plural pronouns
+- Used passive voice where appropriate
+- Maintained clarity while emphasizing the personal nature of the doctoral research
+- Balanced between personal contribution acknowledgment and professional academic tone
+
+**SUMMARY OF MAJOR IMPROVEMENTS:**
+
+**Structural Enhancements:**
+- Added comprehensive extended abstract
+- Reorganized Introduction with clear research motivation and objectives
+- Enhanced literature review with focused gap identification
+- Improved case study presentation with clearer results
+
+**Content Improvements:**
+- Emphasized novel geomatics contributions alongside ML applications
+- Clarified specific applications for each variable type
+- Enhanced conclusions with future research directions
+- Corrected technical inaccuracies and improved precision
+
+**Language and Style:**
+- Corrected title spelling error
+- Improved academic voice and tone
+- Enhanced clarity and conciseness
+- Eliminated vague generalizations
+
+The revised thesis now provides a much clearer presentation of the research contributions, with better organization, enhanced focus on geomatics innovations, and clearer connection between methodology and results. The document should now be much more accessible and informative for readers while maintaining scientific rigor.
+
+Thank you again for your thorough and constructive review. These revisions have significantly strengthened the thesis and better highlight the contributions of geomatics techniques to agricultural research.
+
+Sincerely,
+Samuele Bumbaca
+
+Date: [Current Date]

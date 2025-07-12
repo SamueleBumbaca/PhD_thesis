@@ -26,6 +26,6 @@
 \contentsline {section}{\numberline {3.1}Continuous and Discrete Variables: Plant Counting with Machine Learning}{62}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Ordinal Variables: Phytotoxicity Scoring Automation}{139}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Binary and Nominal Variables: Anomaly Detection for Plant Deseases Classification}{186}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusions}{219}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Geomatic Contributions and Innovations}{220}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Future Research Directions}{221}{section.4.2}%
+\contentsline {chapter}{\numberline {4}Conclusions}{221}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Geomatic Contributions and Innovations}{222}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Future Research Directions}{223}{section.4.2}%

@@ -74,7 +74,7 @@ challenge of developing robust field-deployable systems. The lightweight Shuffle
 }
 
 \clearpage
-\setcounter{page}{173}
+\setcounter{page}{189}
 \thispagestyle{fancy}
 
 \section{Introduction}
@@ -168,6 +168,19 @@ To enable fair comparison between the datasets, several preprocessing steps were
 \end{table}
 
 The dataset combination provides an opportunity to assess how feature extraction methods perform across different imaging conditions while maintaining consistent disease classes. The laboratory-acquired Plant Village images offer an idealized, controlled scenario, while the field-acquired Plant Pathology images present a more challenging real-world testing environment.
+
+Figure~\ref{fig:dataset_examples} illustrates representative samples from both datasets, clearly showing the substantial differences in imaging conditions between laboratory and field acquisitions. The controlled Plant Village images feature isolated leaves against uniform backgrounds with consistent lighting, while the Plant Pathology images exhibit natural field conditions with variable lighting, complex backgrounds, and diverse perspectives.
+
+\newpage
+\begin{landscape}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth]{plots/Datasets_anomaly.png}
+    \caption{Representative examples from the apple leaf disease datasets used in this study. Top row shows Plant Village dataset samples: healthy leaf (left), cedar apple rust (center), and apple scab (right). Bottom row shows Plant Pathology dataset samples: healthy leaf (left), cedar apple rust (center), and apple scab (right). Note the controlled laboratory conditions with uniform backgrounds in Plant Village images versus the natural field conditions with variable lighting and complex backgrounds in Plant Pathology images.}
+    \label{fig:dataset_examples}
+\end{figure}
+\end{landscape}
+\newpage
 
 \subsection{Tested Backbones}
 

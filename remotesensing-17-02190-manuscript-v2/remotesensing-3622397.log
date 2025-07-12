@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 10:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,7 +703,7 @@ Overfull \hbox (3.52306pt too wide) in paragraph at lines 97--99
 
 
 
-[53
+[65
 
 ]
 Overfull \hbox (2.97649pt too wide) in paragraph at lines 110--117
@@ -724,16 +724,16 @@ Overfull \hbox (3.93289pt too wide) in paragraph at lines 127--140
 
 
 
-[54]
+[66]
 
-[55]
+[67]
 Overfull \hbox (4.95177pt too wide) in paragraph at lines 171--177
 \TU/Arial(0)/m/n/12 ages are processed—CNNs use grid-based convolutions while Trans-
  []
 
 
 
-[56]
+[68]
 Overfull \hbox (19.98503pt too wide) in paragraph at lines 188--194
 []\TU/Arial(0)/m/n/12 For our comparative analysis of agricultural object detection approaches,
  []
@@ -755,21 +755,21 @@ Overfull \hbox (33.36655pt too wide) in paragraph at lines 209--215
 
 
 
-[57]
+[69]
 Overfull \hbox (29.777pt too wide) in paragraph at lines 222--222
 |[]\TU/Arial(0)/b/n/14.4 Dataset Requirements for Agricultural Object De-
  []
 
 
 
-[58]
+[70]
 Overfull \hbox (2.00154pt too wide) in paragraph at lines 244--250
 []\TU/Arial(0)/m/n/12 The most critical factor, however, appears to be dataset source. Stud-
  []
 
 
 
-[59]
+[71]
 Overfull \hbox (4.84149pt too wide) in paragraph at lines 276--277
 []\TU/Arial(0)/m/n/12 The potential role of handcrafted methods in modern deep learn-
  []
@@ -781,14 +781,14 @@ Overfull \hbox (13.6467pt too wide) in paragraph at lines 279--286
 
 
 
-[60]
+[72]
 Overfull \hbox (24.47536pt too wide) in paragraph at lines 314--315
 []\TU/Arial(0)/m/n/12/-15ls This study uses two dataset sources as training sets: the Out-of-Distribution
  []
 
 
 
-[61]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\TU/Arial(0)/b/n/12 Train
  []
@@ -835,11 +835,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--353
 
 
 
-[62]
+[74]
 
-[63]
+[75]
 
-[64]
+[76]
 File: Plots/DavidEtAl.png Graphic file (type bmp)
 <Plots/DavidEtAl.png>
 File: Plots/LiuEtAl.png Graphic file (type bmp)
@@ -860,7 +860,7 @@ LaTeX Warning: Float too large for page by 38.08708pt on input line 395.
 
 
 
-[65]
+[77]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -872,7 +872,7 @@ Overfull \hbox (1.0559pt too wide) in paragraph at lines 400--416
 
 
 
-[66
+[78
 
 
 ]
@@ -892,7 +892,7 @@ Overfull \hbox (5.60411pt too wide) in paragraph at lines 444--453
 
 
 
-[67]
+[79]
 Overfull \hbox (6.0406pt too wide) in paragraph at lines 470--480
 []\TU/Arial(0)/b/n/12 RT-DETR \TU/Arial(0)/m/n/12 with model descriptions represents a hybrid approach
  []
@@ -904,16 +904,16 @@ Overfull \hbox (1.4864pt too wide) in paragraph at lines 470--480
 
 
 
-[68]
+[80]
 
-[69]
+[81]
 Overfull \hbox (3.26076pt too wide) in paragraph at lines 521--527
 \TU/Arial(0)/m/n/12 type matching, where a small set of annotated examples (shots)
  []
 
 
 
-[70]
+[82]
 Overfull \hbox (7.40341pt too wide) in paragraph at lines 553--557
 \TU/Arial(0)/m/n/12 OWL-ST method, generating pseudo-box annotations from web-
  []
@@ -925,7 +925,7 @@ Overfull \hbox (7.92744pt too wide) in paragraph at lines 560--563
 
 
 
-[71]
+[83]
 Overfull \hbox (8.91382pt too wide) in paragraph at lines 570--583
 []\TU/Arial(0)/m/n/12 The choice of text prompt significantly influences OWLv2 performance,
  []
@@ -942,7 +942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 602--602
 
 
 
-[72]
+[84]
 Overfull \hbox (1.75056pt too wide) in paragraph at lines 609--609
 |[]\TU/Arial(0)/b/n/14.4 Minimum Dataset Size and Quality Modelling| 
  []
@@ -959,22 +959,22 @@ Overfull \hbox (1.11589pt too wide) in paragraph at lines 610--633
 
 
 
-[73]
+[85]
 
-[74]
+[86]
 
-[75]
+[87]
 Overfull \hbox (4.33955pt too wide) in paragraph at lines 683--687
 []\TU/Arial(0)/b/n/12 Logarithmic function: \TU/Arial(0)/m/n/12 Models the diminishing returns pattern where
  []
 
 
 
-[76]
+[88]
 
-[77]
+[89]
 
-[78]
+[90]
 Overfull \hbox (6.87589pt too wide) in paragraph at lines 791--791
 []|$\OML/cmm/b/it/12 RMSE$| 
  []
@@ -991,16 +991,16 @@ Overfull \hbox (5.30252pt too wide) in paragraph at lines 791--791
 
 
 
-[79]
+[91]
 Overfull \hbox (28.24495pt too wide) in paragraph at lines 807--811
 \TU/Arial(0)/m/n/12 combination was tested on the testing dataset tiles of the three ID datasets. 
  []
 
 
 
-[80]
+[92]
 
-[81]
+[93]
 File: Plots/metrics_OOD_datasets.pdf Graphic file (type pdf)
 <use Plots/metrics_OOD_datasets.pdf>
 
@@ -1009,14 +1009,14 @@ LaTeX Warning: Float too large for page by 161.09998pt on input line 842.
 
 
 
-[82]
+[94]
 Overfull \hbox (8.52998pt too wide) in paragraph at lines 860--865
 []\TU/Arial(0)/m/n/12 For the combinations of model-architecture/dataset-size that achieved
  []
 
 
 
-[83
+[95
 
 
 ]
@@ -1039,7 +1039,7 @@ LaTeX Warning: Float too large for page by 130.32742pt on input line 885.
 
 
 
-[84]
+[96]
 File: Plots/r2_ap_vs_dataset_size_yolo11.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_size_yolo11.pdf>
 
@@ -1059,16 +1059,16 @@ LaTeX Warning: Float too large for page by 130.32742pt on input line 907.
 
 
 
-[85]
+[97]
 
-[86
+[98
 
 
 
 
 ]
 
-[87]
+[99]
 File: Plots/r2_ap_vs_dataset_quality.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_dataset_quality.pdf>
 
@@ -1078,7 +1078,7 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 943--944
 
 
 
-[88]
+[100]
 File: Plots/many_shot_size_annotations.pdf Graphic file (type pdf)
 <use Plots/many_shot_size_annotations.pdf>
 
@@ -1088,7 +1088,7 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 957--958
 
 
 
-[89]
+[101]
 File: Plots/many_shot_quality_annotations.pdf Graphic file (type pdf)
 <use Plots/many_shot_quality_annotations.pdf>
 
@@ -1098,9 +1098,9 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 974--975
 
 
 
-[90]
+[102]
 
-[91
+[103
 
 
 
@@ -1109,7 +1109,7 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 974--975
 
 ]
 
-[92]
+[104]
 File: Plots/r2_ap_vs_shots_cdvito.pdf Graphic file (type pdf)
 <use Plots/r2_ap_vs_shots_cdvito.pdf>
 
@@ -1129,7 +1129,7 @@ LaTeX Warning: Float too large for page by 144.82742pt on input line 1045.
 
 
 
-[93]
+[105]
 File: Plots/few_shot_annotations.pdf Graphic file (type pdf)
 <use Plots/few_shot_annotations.pdf>
 
@@ -1139,7 +1139,7 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 1052--1053
 
 
 
-[94]
+[106]
 File: Plots/zeroshot.pdf Graphic file (type pdf)
 <use Plots/zeroshot.pdf>
 
@@ -1152,7 +1152,7 @@ LaTeX Warning: Float too large for page by 8.13687pt on input line 1082.
 
 
 
-[95]
+[107]
 File: Plots/zeroshot_images.pdf Graphic file (type pdf)
 <use Plots/zeroshot_images.pdf>
 
@@ -1162,7 +1162,7 @@ Overfull \hbox (39.83357pt too wide) in paragraph at lines 1089--1090
 
 
 
-[96]
+[108]
 Overfull \hbox (19.65434pt too wide) in paragraph at lines 1108--1108
 |[]\TU/Arial(0)/b/n/14.4 Dataset Source Impact on Object Detection Per-
  []
@@ -1189,7 +1189,7 @@ Overfull \hbox (3.04626pt too wide) in paragraph at lines 1119--1134
 
 
 
-[97
+[109
 
 
 
@@ -1215,14 +1215,14 @@ Overfull \hbox (0.9671pt too wide) in paragraph at lines 1148--1157
 
 
 
-[98]
+[110]
 Overfull \hbox (7.79951pt too wide) in paragraph at lines 1165--1171
 \TU/Arial(0)/m/n/12 computational resources for a transformer-mixed model like RT-DETR
  []
 
 
 
-[99]
+[111]
 Overfull \hbox (3.54822pt too wide) in paragraph at lines 1172--1182
 \TU/Arial(0)/m/n/12 challenges documented in [[], []]. The relationship between dataset
  []
@@ -1234,7 +1234,7 @@ Overfull \hbox (4.74092pt too wide) in paragraph at lines 1184--1191
 
 
 
-[100]
+[112]
 Overfull \hbox (4.13853pt too wide) in paragraph at lines 1192--1199
 \TU/Arial(0)/m/n/12 proportion of the total learning signal. In contrast, RT-DETR X, with its
  []
@@ -1246,32 +1246,32 @@ Overfull \hbox (2.26398pt too wide) in paragraph at lines 1208--1213
 
 
 
-[101]
+[113]
 Overfull \hbox (9.3456pt too wide) in paragraph at lines 1214--1238
 \TU/Arial(0)/m/n/12 marks [[], []]. Several factors may explain this gap: First, the domain-
  []
 
 
 
-[102]
+[114]
 Overfull \hbox (15.62558pt too wide) in paragraph at lines 1239--1239
 |[]\TU/Arial(0)/b/n/14.4 Handcrafted Methods in the Deep Learning Era| 
  []
 
 
 
-[103]
+[115]
 
-[104]
+[116]
 Overfull \hbox (4.47374pt too wide) in paragraph at lines 1288--1294
 \TU/Arial(0)/m/n/12 vant features for crop detection tasks, potentially reducing the amount
  []
 
 
 
-[105]
+[117]
 
-[106]
+[118]
 ! Undefined control sequence.
 l.1390 \dataavailability
                         {The code for the handcrafted methods used
@@ -1288,7 +1288,7 @@ Overfull \hbox (17.85805pt too wide) in paragraph at lines 1390--1398
 
 
 
-[107]
+[119]
 ! Undefined control sequence.
 l.1450 \appendixtitles
                       {no} % Leave argument "no" if all appendix headings st...
@@ -1300,7 +1300,7 @@ LaTeX Font Warning: Font shape `TU/Arial(0)/m/sc' undefined
 
 
 
-[108]
+[120]
 
 Package microtype Warning: OML/cmm/m/it/10.95 is a legacy font.
 (microtype)                Cannot letterspace it on input line 1495.
@@ -1356,12 +1356,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
 
 
 
-[109]
+[121]
 Overfull \vbox (45.92168pt too high) has occurred while \output is active []
 
 
 
-[110]
+[122]
 Underfull \hbox (badness 10000) in paragraph at lines 1545--1546
 []\TU/Arial(0)/b/n/10.95 function \TU/Arial(0)/m/sc/10.95 process_observations($\OML/cmm/m/it/10.95 observations; inter \OMS/cmsy/m/n/10.95 ^^@
  []
@@ -1396,27 +1396,27 @@ Overfull \vbox (91.39613pt too high) has occurred while \output is active []
 
 
 
-[111]
+[123]
 ! Undefined control sequence.
 l.1592 \reftitle
                 {References}
 ? 
 
 
-[112]
+[124]
 Underfull \hbox (badness 1028) in paragraph at lines 1616--1620
 []\TU/Arial(0)/m/n/12 Saatkamp, A.; Cochrane, A.; Commander, L.; Guja, L.;
  []
 
 
 
-[113
+[125
 
 ]
 
-[114]
+[126]
 
-[115]
+[127]
 Underfull \hbox (badness 3158) in paragraph at lines 1720--1723
 []\TU/Arial(0)/m/sc/12 Maize_seeding Dataset $\OML/cmm/m/it/12 >$ \TU/Arial(0)/m/sc/12 Overview.  Available online:
  []
@@ -1433,37 +1433,37 @@ Underfull \hbox (badness 1270) in paragraph at lines 1737--1742
 
 
 
-[116]
+[128]
 
-[117]
+[129]
 Underfull \hbox (badness 1253) in paragraph at lines 1773--1775
 []\TU/Arial(0)/m/sc/12 You Only Look Once: Unified, Real-Time Object Detec-
  []
 
 
 
-[118]
+[130]
 
-[119]
+[131]
 
-[120]
+[132]
 
-[121]
+[133]
 
-[122]
+[134]
 
-[123]
+[135]
 
-[124]
+[136]
 Underfull \hbox (badness 1365) in paragraph at lines 2098--2102
 []\TU/Arial(0)/m/sc/12 Vianna, L.S.; GonÃ§alves, A.L.; Souza, J.A.  Analysis
  []
 
 
 
-[125]
+[137]
 
-[126] (./remotesensing-3622397.aux)
+[138] (./remotesensing-3622397.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1485,6 +1485,6 @@ Here is how much of TeX's memory you used:
  42892 multiletter control sequences out of 15000+600000
  566255 words of font info for 98 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,13n,95p,1153b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,13n,95p,1154b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on remotesensing-3622397.pdf (75 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  28 JUN 2025 11:18
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,7 +713,7 @@ Overfull \hbox (0.51788pt too wide) in paragraph at lines 103--113
 
 
 
-[173
+[189
 
 ]
 Overfull \hbox (1.2011pt too wide) in paragraph at lines 114--121
@@ -722,273 +722,288 @@ Overfull \hbox (1.2011pt too wide) in paragraph at lines 114--121
 
 
 
-[174]
+[190]
 Overfull \hbox (17.49092pt too wide) in paragraph at lines 145--146
 \TU/Arial(0)/m/n/12 of individual plant leaves photographed against controlled backgrounds.
  []
 
 
 
-[175]
+[191]
 Overfull \hbox (53.83475pt too wide) in paragraph at lines 155--168
  [][] 
  []
 
 
-
-[176]
-
-Package hyperref Warning: Ignoring empty anchor on input line 216.
-
-
-Overfull \hbox (1.27005pt too wide) in paragraph at lines 224--225
-[]\TU/Arial(0)/b/n/12 ResNet family: \TU/Arial(0)/m/n/12 ResNet18, ResNet34, ResNet50, ResNet101,
- []
-
-
-
-[177]
-Overfull \hbox (9.26662pt too wide) in paragraph at lines 226--227
-[]\TU/Arial(0)/b/n/12 VGG family: \TU/Arial(0)/m/n/12 VGG11, VGG13, VGG16, VGG19, and their batch-
- []
-
-
-Overfull \hbox (9.52434pt too wide) in paragraph at lines 228--229
-[]\TU/Arial(0)/b/n/12 DenseNet family: \TU/Arial(0)/m/n/12 DenseNet121, DenseNet161, DenseNet169,
- []
-
-
-Overfull \hbox (26.78741pt too wide) in paragraph at lines 228--229
-\TU/Arial(0)/m/n/12 DenseNet201, featuring dense connectivity patterns that strengthen
- []
-
-
-Overfull \hbox (4.74287pt too wide) in paragraph at lines 237--238
-[]\TU/Arial(0)/m/n/12 We also examined vision transformers that have demonstrated strong
- []
-
-
-
-[178]
-
-[179]
-Overfull \hbox (10.93819pt too wide) in paragraph at lines 263--264
-\TU/Arial(0)/m/n/12 served sufficient class-discriminative information for conventional clus-
- []
-
-
-Overfull \hbox (12.84541pt too wide) in paragraph at lines 269--270
-[]\TU/Arial(0)/b/n/12 Hierarchical Clustering: \TU/Arial(0)/m/n/12 An agglomerative approach that builds
- []
-
-
-Overfull \hbox (5.68025pt too wide) in paragraph at lines 271--272
-[]\TU/Arial(0)/b/n/12 Gaussian Mixture Models: \TU/Arial(0)/m/n/12 A probabilistic model that assumes
- []
-
-
-
-[180]
-
-[181]
-
-[182]
-Overfull \hbox (1.63155pt too wide) in paragraph at lines 321--322
-[]\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
- []
-
-
-
-[183]
-Overfull \hbox (13.63155pt too wide) in paragraph at lines 331--332
-[]\TU/Arial(0)/m/n/12 For evaluating the class-discriminative information in the feature space,
- []
-
-
-Overfull \hbox (1.63155pt too wide) in paragraph at lines 334--335
-[]\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
- []
-
-
-Overfull \hbox (10.01202pt too wide) in paragraph at lines 336--337
-[]\TU/Arial(0)/m/n/12 Apply various clustering algorithms (K-Means, Hierarchical Clus-
- []
-
-
-
-[184]
-Overfull \hbox (0.53389pt too wide) in paragraph at lines 343--344
-\TU/Arial(0)/m/n/12 could comprehensively evaluate how different feature extractors per-
- []
-
-
-Overfull \hbox (3.63545pt too wide) in paragraph at lines 347--354
-\TU/Arial(0)/m/n/12 Our analysis of anomaly detection and clustering performance across
- []
-
-
-Overfull \hbox (9.67023pt too wide) in paragraph at lines 347--354
-\TU/Arial(0)/m/n/12 different backbone architectures, dimensionality reduction techniques,
- []
-
-
-Overfull \hbox (10.76436pt too wide) in paragraph at lines 347--354
-\TU/Arial(0)/m/n/12 and anomaly detection algorithms revealed several combination achiv-
- []
-
-File: plots/anomaly_detection_plantvillage.png Graphic file (type bmp)
-<plots/anomaly_detection_plantvillage.png>
-
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 357--360
- [][] 
- []
-
-
-
-[185]
-File: plots/anomaly_detection_plantpathology.png Graphic file (type bmp)
-<plots/anomaly_detection_plantpathology.png>
-
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 366--369
- [][] 
- []
-
-
-
-[186]
-File: plots/clusterization_plantvillage.png Graphic file (type bmp)
-<plots/clusterization_plantvillage.png>
-
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 375--378
- [][] 
- []
-
-
-
-[187]
-File: plots/clusterization_plantpathology.png Graphic file (type bmp)
-<plots/clusterization_plantpathology.png>
-
-Overfull \hbox (128.03737pt too wide) in paragraph at lines 384--387
- [][] 
- []
-
-
-
-[188]
-
-[189]
-Overfull \hbox (4.52803pt too wide) in paragraph at lines 405--414
-[]\TU/Arial(0)/m/n/12 This performance gap was even more pronounced in clustering tasks,
- []
-
-
-Overfull \hbox (9.45148pt too wide) in paragraph at lines 415--418
-[]\TU/Arial(0)/m/n/12 The Plant Pathology dataset’s variable lighting, complex backgrounds,
- []
-
-
-Overfull \hbox (19.65498pt too wide) in paragraph at lines 415--418
-\TU/Arial(0)/m/n/12 lenging scenario for feature extraction focusing on diseseas sympthoms. 
- []
-
-
-Overfull \hbox (3.68819pt too wide) in paragraph at lines 419--423
-[]\TU/Arial(0)/m/n/12 These findings highlight the significant challenge of transitioning plant
- []
-
-
-
-[190]
-Overfull \hbox (1.86201pt too wide) in paragraph at lines 430--441
-\TU/Arial(0)/m/n/12 consistently demonstrated strong performance across both datasets,
- []
-
-
-Overfull \hbox (18.55733pt too wide) in paragraph at lines 447--448
-\TU/Arial(0)/m/n/12 tasks and datasets when in combination with ShuffleNet_v2_x1_0. 
- []
-
-
-
-[191]
-Overfull \hbox (8.04341pt too wide) in paragraph at lines 462--463
-[]\TU/Arial(0)/b/n/12 GMM \TU/Arial(0)/m/n/12 demonstrated comparable performance with LOF on Plant
- []
-
-
-Overfull \hbox (0.5257pt too wide) in paragraph at lines 466--467
-\TU/Arial(0)/m/n/12 compared to Plant Village across all algorithms, reflecting the greater
+Overfull \hbox (5.17023pt too wide) in paragraph at lines 172--173
+[]\TU/Arial(0)/m/n/12 Figure []1[] illustrates representative samples from both datasets, clearly
  []
 
 
 
 [192]
-Overfull \hbox (6.54132pt too wide) in paragraph at lines 473--474
-\TU/Arial(0)/m/n/12 lage achieving benchmark with multiple backbones, but on Plant
- []
-
-
-Overfull \hbox (0.76007pt too wide) in paragraph at lines 474--475
-\TU/Arial(0)/m/n/12 backbones in respect the other methods, while on Plant Pathol-
- []
-
-
-Overfull \hbox (3.18233pt too wide) in paragraph at lines 477--478
-\TU/Arial(0)/m/n/12 with significant differences in algorithm performance across datasets. 
- []
-
-
-Overfull \hbox (21.41866pt too wide) in paragraph at lines 482--483
-\TU/Arial(0)/m/n/12 unique performance profile can be attributed to DBSCAN’s density-
- []
-
-
 
 [193]
-Overfull \hbox (16.448pt too wide) in paragraph at lines 484--485
-\TU/Arial(0)/m/n/12 shapes, DBSCAN identifies arbitrarily shaped clusters based
- []
-
+File: plots/Datasets_anomaly.png Graphic file (type bmp)
+<plots/Datasets_anomaly.png>
 
 
 [194]
 
-[195]
-Overfull \hbox (15.42499pt too wide) in paragraph at lines 504--505
-[]\TU/Arial(0)/m/n/12 Among dimensionality reduction techniques, t-SNE consistently yielded
+Package hyperref Warning: Ignoring empty anchor on input line 229.
+
+
+Overfull \hbox (1.27005pt too wide) in paragraph at lines 237--238
+[]\TU/Arial(0)/b/n/12 ResNet family: \TU/Arial(0)/m/n/12 ResNet18, ResNet34, ResNet50, ResNet101,
  []
 
 
-Overfull \hbox (12.29413pt too wide) in paragraph at lines 508--509
-[]\TU/Arial(0)/m/n/12 For clustering-based classification, DBSCAN with ShuffleNet_v2_x1_0
+
+[195
+
+
+]
+Overfull \hbox (9.26662pt too wide) in paragraph at lines 239--240
+[]\TU/Arial(0)/b/n/12 VGG family: \TU/Arial(0)/m/n/12 VGG11, VGG13, VGG16, VGG19, and their batch-
  []
 
 
-Overfull \hbox (7.04236pt too wide) in paragraph at lines 508--509
-\TU/Arial(0)/m/n/12 combinations. This density-based approach appears particularly well-
+Overfull \hbox (9.52434pt too wide) in paragraph at lines 241--242
+[]\TU/Arial(0)/b/n/12 DenseNet family: \TU/Arial(0)/m/n/12 DenseNet121, DenseNet161, DenseNet169,
  []
 
 
-Overfull \hbox (7.22296pt too wide) in paragraph at lines 510--511
-\TU/Arial(0)/m/n/12 tectures like ShuffleNet_v2_x1_0, developers can create deployment-
+Overfull \hbox (26.78741pt too wide) in paragraph at lines 241--242
+\TU/Arial(0)/m/n/12 DenseNet201, featuring dense connectivity patterns that strengthen
  []
 
 
-Overfull \hbox (0.75655pt too wide) in paragraph at lines 510--511
-\TU/Arial(0)/m/n/12 ready solutions for resource-constrained environments such as edge
+Overfull \hbox (4.74287pt too wide) in paragraph at lines 250--251
+[]\TU/Arial(0)/m/n/12 We also examined vision transformers that have demonstrated strong
  []
 
 
 
 [196]
-Overfull \hbox (10.75264pt too wide) in paragraph at lines 512--513
+
+[197]
+Overfull \hbox (10.93819pt too wide) in paragraph at lines 276--277
+\TU/Arial(0)/m/n/12 served sufficient class-discriminative information for conventional clus-
+ []
+
+
+Overfull \hbox (12.84541pt too wide) in paragraph at lines 282--283
+[]\TU/Arial(0)/b/n/12 Hierarchical Clustering: \TU/Arial(0)/m/n/12 An agglomerative approach that builds
+ []
+
+
+Overfull \hbox (5.68025pt too wide) in paragraph at lines 284--285
+[]\TU/Arial(0)/b/n/12 Gaussian Mixture Models: \TU/Arial(0)/m/n/12 A probabilistic model that assumes
+ []
+
+
+
+[198]
+
+[199]
+
+[200]
+
+[201]
+Overfull \hbox (1.63155pt too wide) in paragraph at lines 334--335
+[]\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
+ []
+
+
+Overfull \hbox (13.63155pt too wide) in paragraph at lines 344--345
+[]\TU/Arial(0)/m/n/12 For evaluating the class-discriminative information in the feature space,
+ []
+
+
+Overfull \hbox (1.63155pt too wide) in paragraph at lines 347--348
+[]\TU/Arial(0)/m/n/12 Extract features from the dataset using the backbone networks. 
+ []
+
+
+Overfull \hbox (10.01202pt too wide) in paragraph at lines 349--350
+[]\TU/Arial(0)/m/n/12 Apply various clustering algorithms (K-Means, Hierarchical Clus-
+ []
+
+
+
+[202]
+Overfull \hbox (0.53389pt too wide) in paragraph at lines 356--357
+\TU/Arial(0)/m/n/12 could comprehensively evaluate how different feature extractors per-
+ []
+
+
+Overfull \hbox (3.63545pt too wide) in paragraph at lines 360--367
+\TU/Arial(0)/m/n/12 Our analysis of anomaly detection and clustering performance across
+ []
+
+
+Overfull \hbox (9.67023pt too wide) in paragraph at lines 360--367
+\TU/Arial(0)/m/n/12 different backbone architectures, dimensionality reduction techniques,
+ []
+
+
+Overfull \hbox (10.76436pt too wide) in paragraph at lines 360--367
+\TU/Arial(0)/m/n/12 and anomaly detection algorithms revealed several combination achiv-
+ []
+
+
+
+[203]
+File: plots/anomaly_detection_plantvillage.png Graphic file (type bmp)
+<plots/anomaly_detection_plantvillage.png>
+
+Overfull \hbox (128.03737pt too wide) in paragraph at lines 370--373
+ [][] 
+ []
+
+File: plots/anomaly_detection_plantpathology.png Graphic file (type bmp)
+<plots/anomaly_detection_plantpathology.png>
+
+Overfull \hbox (128.03737pt too wide) in paragraph at lines 379--382
+ [][] 
+ []
+
+
+
+[204]
+File: plots/clusterization_plantvillage.png Graphic file (type bmp)
+<plots/clusterization_plantvillage.png>
+
+Overfull \hbox (128.03737pt too wide) in paragraph at lines 388--391
+ [][] 
+ []
+
+
+
+[205]
+File: plots/clusterization_plantpathology.png Graphic file (type bmp)
+<plots/clusterization_plantpathology.png>
+
+Overfull \hbox (128.03737pt too wide) in paragraph at lines 397--400
+ [][] 
+ []
+
+
+
+[206]
+
+[207]
+Overfull \hbox (4.52803pt too wide) in paragraph at lines 418--427
+[]\TU/Arial(0)/m/n/12 This performance gap was even more pronounced in clustering tasks,
+ []
+
+
+Overfull \hbox (9.45148pt too wide) in paragraph at lines 428--431
+[]\TU/Arial(0)/m/n/12 The Plant Pathology dataset’s variable lighting, complex backgrounds,
+ []
+
+
+Overfull \hbox (19.65498pt too wide) in paragraph at lines 428--431
+\TU/Arial(0)/m/n/12 lenging scenario for feature extraction focusing on diseseas sympthoms. 
+ []
+
+
+Overfull \hbox (3.68819pt too wide) in paragraph at lines 432--436
+[]\TU/Arial(0)/m/n/12 These findings highlight the significant challenge of transitioning plant
+ []
+
+
+
+[208]
+Overfull \hbox (1.86201pt too wide) in paragraph at lines 443--454
+\TU/Arial(0)/m/n/12 consistently demonstrated strong performance across both datasets,
+ []
+
+
+Overfull \hbox (18.55733pt too wide) in paragraph at lines 460--461
+\TU/Arial(0)/m/n/12 tasks and datasets when in combination with ShuffleNet_v2_x1_0. 
+ []
+
+
+
+[209]
+Overfull \hbox (8.04341pt too wide) in paragraph at lines 475--476
+[]\TU/Arial(0)/b/n/12 GMM \TU/Arial(0)/m/n/12 demonstrated comparable performance with LOF on Plant
+ []
+
+
+Overfull \hbox (0.5257pt too wide) in paragraph at lines 479--480
+\TU/Arial(0)/m/n/12 compared to Plant Village across all algorithms, reflecting the greater
+ []
+
+
+
+[210]
+Overfull \hbox (6.54132pt too wide) in paragraph at lines 486--487
+\TU/Arial(0)/m/n/12 lage achieving benchmark with multiple backbones, but on Plant
+ []
+
+
+Overfull \hbox (0.76007pt too wide) in paragraph at lines 487--488
+\TU/Arial(0)/m/n/12 backbones in respect the other methods, while on Plant Pathol-
+ []
+
+
+Overfull \hbox (3.18233pt too wide) in paragraph at lines 490--491
+\TU/Arial(0)/m/n/12 with significant differences in algorithm performance across datasets. 
+ []
+
+
+Overfull \hbox (21.41866pt too wide) in paragraph at lines 495--496
+\TU/Arial(0)/m/n/12 unique performance profile can be attributed to DBSCAN’s density-
+ []
+
+
+
+[211]
+Overfull \hbox (16.448pt too wide) in paragraph at lines 497--498
+\TU/Arial(0)/m/n/12 shapes, DBSCAN identifies arbitrarily shaped clusters based
+ []
+
+
+
+[212]
+
+[213]
+Overfull \hbox (15.42499pt too wide) in paragraph at lines 517--518
+[]\TU/Arial(0)/m/n/12 Among dimensionality reduction techniques, t-SNE consistently yielded
+ []
+
+
+Overfull \hbox (12.29413pt too wide) in paragraph at lines 521--522
+[]\TU/Arial(0)/m/n/12 For clustering-based classification, DBSCAN with ShuffleNet_v2_x1_0
+ []
+
+
+Overfull \hbox (7.04236pt too wide) in paragraph at lines 521--522
+\TU/Arial(0)/m/n/12 combinations. This density-based approach appears particularly well-
+ []
+
+
+Overfull \hbox (7.22296pt too wide) in paragraph at lines 523--524
+\TU/Arial(0)/m/n/12 tectures like ShuffleNet_v2_x1_0, developers can create deployment-
+ []
+
+
+Overfull \hbox (0.75655pt too wide) in paragraph at lines 523--524
+\TU/Arial(0)/m/n/12 ready solutions for resource-constrained environments such as edge
+ []
+
+
+
+[214]
+Overfull \hbox (10.75264pt too wide) in paragraph at lines 525--526
 []\TU/Arial(0)/m/n/12 Future research directions should explore fine-tuning strategies specif-
  []
 
 (./Anomaly_detection.bbl
 
-[197]
+[215]
 Underfull \hbox (badness 6032) in paragraph at lines 27--30
 \TU/Arial(0)/m/n/12 ing for Anomaly Detection: A Survey, January 2019.
  []
@@ -1000,7 +1015,7 @@ Underfull \hbox (badness 1057) in paragraph at lines 32--35
 
 
 
-[198
+[216
 
 ]
 Underfull \hbox (badness 1377) in paragraph at lines 57--60
@@ -1009,23 +1024,23 @@ Underfull \hbox (badness 1377) in paragraph at lines 57--60
 
 
 
-[199]
+[217]
 Underfull \hbox (badness 5756) in paragraph at lines 72--76
 \TU/Arial(0)/m/n/12 Stefano Panno, Giuseppe Scuderi, Paolo Ruisi, Paolo
  []
 
 
 
-[200]
+[218]
 Underfull \hbox (badness 1817) in paragraph at lines 100--103
 \TU/Arial(0)/m/n/12 Smola, and Robert C. Williamson.  Estimating the sup-
  []
 
 
 
-[201])
+[219])
 
-[202] (./Anomaly_detection.aux)
+[220] (./Anomaly_detection.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1038,12 +1053,12 @@ Package rerunfilecheck Info: File `Anomaly_detection.out' has not changed.
 (rerunfilecheck)             Checksum: 060AF5F4E7E1125493AD92305ECF034D;1317.
  ) 
 Here is how much of TeX's memory you used:
- 19353 strings out of 475921
- 377584 string characters out of 5775722
- 857822 words of memory out of 5000000
- 41891 multiletter control sequences out of 15000+600000
+ 19366 strings out of 475921
+ 377971 string characters out of 5775722
+ 858822 words of memory out of 5000000
+ 41903 multiletter control sequences out of 15000+600000
  562501 words of font info for 77 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  86i,12n,133p,1083b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Anomaly_detection.pdf (32 pages).
+Output written on Anomaly_detection.pdf (34 pages).

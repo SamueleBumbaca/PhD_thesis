@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  12 JUL 2025 16:24
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  13 JUL 2025 21:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -814,14 +814,14 @@ File: Images/agronomy-14-00306-g003.png Graphic file (type bmp)
 
 
 [155]
-Overfull \hbox (2.50897pt too wide) in paragraph at lines 268--270
+Overfull \hbox (2.50897pt too wide) in paragraph at lines 270--272
 []\TU/Arial(0)/m/n/12 where H is the camera-to-target distance, f is the camera focal length,
  []
 
 
 
 [156]
-Overfull \hbox (7.21515pt too wide) in paragraph at lines 271--276
+Overfull \hbox (7.21515pt too wide) in paragraph at lines 273--278
 []\TU/Arial(0)/m/n/12 When planning an acquisition, it is important to ensure that the coarser
  []
 
@@ -839,7 +839,7 @@ File: Images/agronomy-14-00306-g005.png Graphic file (type bmp)
 [159]
 
 [160]
-Overfull \hbox (2.27556pt too wide) in paragraph at lines 329--329
+Overfull \hbox (2.27556pt too wide) in paragraph at lines 331--331
 |[]\TU/Arial(0)/b/n/14.4 Radiometric Calibration of the Multi-Spectral
  []
 
@@ -853,40 +853,35 @@ File: Images/agronomy-14-00306-g006.png Graphic file (type bmp)
 [162]
 
 [163]
-Underfull \hbox (badness 6995) in paragraph at lines 390--390
+Underfull \hbox (badness 6995) in paragraph at lines 392--392
 \TU/Arial(0)/m/n/12 calibrated reflectance values
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 390--390
+Underfull \hbox (badness 6995) in paragraph at lines 392--392
 \TU/Arial(0)/m/n/12 calibrated reflectance values
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 390--390
+Underfull \hbox (badness 1122) in paragraph at lines 392--392
 \OML/cmm/m/it/12 H[]$ \TU/Arial(0)/m/n/12 is the absolute height of
  []
 
 
 
 [164]
-Overfull \hbox (55.35852pt too wide) in paragraph at lines 417--417
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
 []|$[][] [][] \OT1/cmr/m/n/12 +
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 417--417
-\OML/cmm/m/it/12 L[] \OT1/cmr/m/n/12 = []; \OML/cmm/m/it/12 L[] \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--417
+Overfull \hbox (1.35463pt too wide) in paragraph at lines 419--419
 []|\TU/Arial(0)/m/it/12 LogisticFunction
  []
 
 
-Overfull \hbox (27.029pt too wide) in paragraph at lines 417--417
-[]|$[][] [] \OT1/cmr/m/n/12 =
+Overfull \hbox (21.77357pt too wide) in alignment at lines 419--419
+[][][] 
  []
 
 
@@ -896,7 +891,7 @@ Overfull \hbox (27.029pt too wide) in paragraph at lines 417--417
 [166]
 
 [167]
-Overfull \hbox (7.73318pt too wide) in paragraph at lines 469--479
+Overfull \hbox (7.73318pt too wide) in paragraph at lines 471--481
  [][] 
  []
 
@@ -910,7 +905,7 @@ File: Images/agronomy-14-00306-g007.png Graphic file (type bmp)
 [169]
 
 [170]
-Overfull \hbox (0.75421pt too wide) in paragraph at lines 545--552
+Overfull \hbox (0.75421pt too wide) in paragraph at lines 549--556
 []\TU/Arial(0)/m/n/12 The stacked model predictions ensure a mean absolute error, slightly
  []
 
@@ -922,7 +917,7 @@ File: Images/agronomy-14-00306-g008.png Graphic file (type bmp)
 
 
 [172]
-Overfull \hbox (2.74054pt too wide) in paragraph at lines 568--578
+Overfull \hbox (2.74054pt too wide) in paragraph at lines 572--582
 \TU/Arial(0)/m/n/12 acquired images more similar, partially overcoming one of the biggest
  []
 
@@ -1030,10 +1025,6 @@ Underfull \hbox (badness 1231) in paragraph at lines 225--228
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Phytoxicity_score.out' has not changed.
 (rerunfilecheck)             Checksum: D665AE77E4627DA889AA28E2030EFEFE;3320.
  ) 

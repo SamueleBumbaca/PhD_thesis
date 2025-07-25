@@ -1,0 +1,345 @@
+% filepath: /home/samuelebumbaca/repositories/PhD_thesis/Presentazione/PhD_Thesis_Presentation.tex
+\documentclass[aspectratio=43]{beamer}
+
+% Theme and color scheme
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% Custom colors
+\definecolor{uniblue}{RGB}{0,51,102}
+\definecolor{highlight}{RGB}{255,153,0}
+
+% Set theme colors
+\setbeamercolor{structure}{fg=uniblue}
+\setbeamercolor{frametitle}{bg=white,fg=black}
+
+% Custom headline: white background + thin uniblue line at the bottom
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,left]{frametitle}
+    \vspace*{0.5ex}\strut\insertframetitle\strut
+  \end{beamercolorbox}
+  {\color{uniblue}\rule{\paperwidth}{0.7mm}}
+}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Remove footline
+\setbeamertemplate{footline}{}
+
+% Custom title page
+\setbeamertemplate{title page}{
+    \begin{picture}(0,0)
+        \put(25,-220){\includegraphics[width=0.8\paperwidth]{Imgs/Loghi.png}}
+    \end{picture}
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+        \usebeamerfont{title}\inserttitle\par%
+        \ifx\insertsubtitle\@empty%
+        \else%
+            \vskip0.25em%
+            {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        \fi%
+    \end{beamercolorbox}%
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center]{author}
+        \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center]{institute}
+        \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+        \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    \vfill
+}
+
+% Document information
+\title{Geomatic Techniques to Support Phytosanitary Products Tests whithin the EPPO Standard Framework}
+% \subtitle{Geomatics Technologies for Enhanced Plant Protection Product Registration}
+\author{Samuele Bumbaca}
+\institute{University of Turin}
+\date{July 17, 2025}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Slide 2: Presentation Outline
+\begin{frame}
+    \frametitle{Presentation Structure (40 minutes)}
+    
+    \begin{enumerate}
+        \item \textbf{Introduction \& Background} (20 minutes)
+        \begin{itemize}
+            \item Research problem and motivation
+            \item Theoretical framework  
+            \item Methodology overview
+        \end{itemize}
+        
+        \item \textbf{Three Case Studies} (18 minutes total)
+        \begin{itemize}
+            \item Plant Counting (6 minutes)
+            \item Phytotoxicity Scoring (6 minutes)
+            \item Anomaly Detection (6 minutes)
+        \end{itemize}
+        
+        \item \textbf{Conclusions \& Future Work} (2 minutes)
+    \end{enumerate}
+\end{frame}
+
+% Slide 3: The Problem
+\begin{frame}
+    \frametitle{Current Limitations in Agricultural Statistics}
+    
+    \begin{block}{Traditional Approach Issues:}
+        \begin{itemize}
+            \item \textbf{Human-dependent blocking}: Environmental variability assessment relies on experimenter experience
+            \item \textbf{A priori identification}: Must identify variance sources BEFORE data collection
+            \item \textbf{Limited statistical power}: When assumptions fail, must resort to non-parametric tests
+            \item \textbf{Regulatory requirements}: EPPO standards demand R² > 0.85 performance
+        \end{itemize}
+    \end{block}
+    
+    \begin{alertblock}{The Challenge:}
+        \textit{How can we capture environmental variability mathematically rather than through human judgment?}
+    \end{alertblock}
+\end{frame}
+
+% Slide 4: Research Gap
+\begin{frame}
+    \frametitle{The Missing Link: Spatial Coordinates}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Geostatistical Methods Advantages:}
+                \begin{itemize}
+                    \item[\textcolor{green}{\checkmark}] \textbf{Mathematical modeling} of environmental variability
+                    \item[\textcolor{green}{\checkmark}] \textbf{Post-hoc analysis} - no need for prior knowledge
+                    \item[\textcolor{green}{\checkmark}] \textbf{Superior performance} in handling spatial heterogeneity
+                    \item[\textcolor{green}{\checkmark}] \textbf{EPPO recognized} approach
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Current Barrier:}
+                \begin{itemize}
+                    \item[\textcolor{red}{\times}] \textbf{Requires spatially referenced observations}
+                    \item[\textcolor{red}{\times}] \textbf{Traditional manual assessments lack coordinates}
+                    \item[\textcolor{red}{\times}] \textbf{Implementation gap} in practical field trials
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 5: Research Question
+\begin{frame}
+    \frametitle{Central Research Question}
+    
+    \begin{exampleblock}{}
+        \large
+        \textbf{Can geomatics technologies provide spatially referenced observations that enable geostatistical analysis within EPPO-compliant Plant Protection Product trials?}
+    \end{exampleblock}
+    
+    \vspace{1em}
+    
+    \begin{block}{Specific Objectives:}
+        \begin{enumerate}
+            \item Establish minimum dataset requirements for digital data collection
+            \item Demonstrate feasibility across all EPPO variable types
+            \item Validate performance against traditional methods
+            \item Provide practical implementation guidelines
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+% Slide 6: EPPO Standards Framework
+\begin{frame}
+    \frametitle{European Plant Protection Organization (EPPO)}
+    
+    \begin{block}{Key Standards:}
+        \begin{itemize}
+            \item \textbf{PP 1/152(4)}: Design and analysis of efficacy evaluation trials
+            \item \textbf{PP 1/333(1)}: Digital technology adoption guidelines
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Variable Types in EPPO Assessments:}
+        \begin{enumerate}
+            \item \textbf{Continuous/Discrete}: Plant counts, measurements
+            \item \textbf{Ordinal}: Severity scales (0-100\%), damage ratings
+            \item \textbf{Binary/Nominal}: Healthy/diseased, disease classification
+        \end{enumerate}
+    \end{block}
+    
+    \begin{alertblock}{Benchmark: R² > 0.85 compared to manual assessment}
+    \end{alertblock}
+\end{frame}
+
+% Continue with more slides...
+% For brevity, I'll show a few more key slides and provide the structure
+
+% Slide 7: Plant Protection Products Context
+\begin{frame}
+    \frametitle{PPP Development \& Regulation}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{PPP Categories:}
+                \begin{itemize}
+                    \item Fungicides
+                    \item Insecticides
+                    \item Herbicides
+                    \item Plant growth regulators
+                    \item Acaricides
+                    \item Nematicides
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Critical Evaluation Needs:}
+                \begin{itemize}
+                    \item \textbf{Efficacy}: Does it work?
+                    \item \textbf{Selectivity}: Is it safe for crops?
+                    \item \textbf{Environmental impact}: Side effects?
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide with image example
+\begin{frame}
+    \frametitle{Technical Arsenal}
+    
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{Core Technologies:}
+                \begin{itemize}
+                    \item \textbf{Photogrammetry}: 3D model generation from 2D images
+                    \item \textbf{Spectral Imaging}: Multi/hyperspectral sensors
+                    \item \textbf{Machine Learning}: Object detection, classification, regression
+                    \item \textbf{GNSS/UAV}: Precise spatial positioning
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            % Example of how to include an image
+            % \includegraphics[width=\textwidth]{images/technology_overview.png}
+            \begin{center}
+                \textit{[Technology diagram would go here]}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Study 1 Section
+\section{Study 1: Plant Counting}
+
+\begin{frame}
+    \frametitle{Study 1: Automated Plant Counting}
+    
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{Problem Statement:}
+                Manual plant counting is:
+                \begin{itemize}
+                    \item \textbf{Time-consuming}: Hours per plot
+                    \item \textbf{Subjective}: Inter-observer variability
+                    \item \textbf{Error-prone}: Missed or double-counted plants
+                    \item \textbf{Non-spatial}: No coordinate information
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Solution Approach:}
+                \begin{itemize}
+                    \item UAV photogrammetry
+                    \item Deep learning object detection
+                    \item Automatic spatial referencing
+                    \item R² > 0.85 validation
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            % Image placeholder
+            \begin{center}
+                \textit{[Plant counting example image]}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Results slide with table
+\begin{frame}
+    \frametitle{Minimum Dataset Findings}
+    
+    \begin{table}
+        \centering
+        \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Architecture} & \textbf{Images Needed} & \textbf{R²} \\
+        \hline
+        RT-DETR (Transformer-mixed) & 60 & 0.89 \\
+        YOLOv8 (CNN) & 110 & 0.87 \\
+        YOLOv5 (CNN) & 130 & 0.86 \\
+        Few-shot models & N/A & < 0.85 \\
+        Zero-shot models & N/A & < 0.85 \\
+        \hline
+        \end{tabular}
+        \caption{Performance comparison across architectures}
+    \end{table}
+    
+    \begin{alertblock}{Critical Finding:}
+        \textbf{NO out-of-distribution trained model achieved R² > 0.85}\\
+        \textit{In-domain training data is essential for agricultural applications}
+    \end{alertblock}
+\end{frame}
+
+% Thank you slide
+\begin{frame}
+    \frametitle{Thank You}
+    
+    \begin{center}
+        \Huge Questions \& Discussion
+    \end{center}
+    
+    \vspace{2em}
+    
+    \begin{block}{Contact Information:}
+        \textbf{Samuele Bumbaca}\\
+        University of Turin\\
+        Email: samuele.bumbaca@unito.it
+    \end{block}
+    
+    \begin{block}{Key Publications:}
+        \begin{enumerate}
+            \item "On the Minimum Dataset Requirements..." - \textit{Remote Sensing} (2025)
+            \item "Supporting Screening of New Plant Protection Products..." - \textit{Agronomy} (2024)
+            \item "Anomaly Detection for Plant Disease Classification" - \textit{In preparation}
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\end{document}

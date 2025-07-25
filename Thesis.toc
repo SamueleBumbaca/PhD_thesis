@@ -7,25 +7,25 @@
 \contentsline {subsection}{\numberline {1.4.2}Geostatistical Approaches in Agricultural Research}{10}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Digital Technologies in Agricultural Assessment}{11}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}Research Gap and Innovation}{11}{subsection.1.4.4}%
-\contentsline {chapter}{\numberline {2}Theoretical Background and Methodology}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Regulatory Framework}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}PPPs and EPPO Standards}{13}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}EPPO Standards}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Experimental Design}{16}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Sampling Method and Measures Units}{18}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Statistical Analysis}{20}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Geomatics Methods in EPPO Standards}{21}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Geomatics}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Geostatistics}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Geomatics Thecnics and Digital Technologies}{29}{subsection.2.3.2}%
-\contentsline {subsubsection}{Photogrammetry}{31}{subsubsection*.3}%
-\contentsline {subsubsection}{Spectral Imaging}{34}{subsubsection*.4}%
-\contentsline {subsubsection}{Machine Learning}{36}{subsubsection*.5}%
-\contentsline {section}{\numberline {2.4}The Literature Gap and the Thesis Aims}{41}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Applications Demonstration - Case Studies}{62}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Continuous and Discrete Variables: Plant Counting with Machine Learning}{62}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Ordinal Variables: Phytotoxicity Scoring Automation}{139}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Binary and Nominal Variables: Anomaly Detection for Plant Deseases Classification}{186}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusions}{221}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Geomatic Contributions and Innovations}{222}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Future Research Directions}{223}{section.4.2}%
+\contentsline {chapter}{\numberline {2}Theoretical Background and Methodology}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Regulatory Framework}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}PPPs and EPPO Standards}{12}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}EPPO Standards}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Experimental Design}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Sampling Method and Measures Units}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Statistical Analysis}{19}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Geomatics Methods in EPPO Standards}{20}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Geomatics}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Geostatistics}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Geomatics Thecnics and Digital Technologies}{28}{subsection.2.3.2}%
+\contentsline {subsubsection}{Photogrammetry}{30}{subsubsection*.3}%
+\contentsline {subsubsection}{Spectral Imaging}{33}{subsubsection*.4}%
+\contentsline {subsubsection}{Machine Learning}{35}{subsubsection*.5}%
+\contentsline {section}{\numberline {2.4}The Literature Gap and the Thesis Aims}{40}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Applications Demonstration - Case Studies}{61}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Continuous and Discrete Variables: Plant Counting with Machine Learning}{61}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Ordinal Variables: Phytotoxicity Scoring Automation}{138}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Binary and Nominal Variables: Anomaly Detection for Plant Deseases Classification}{185}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusions}{220}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Geomatic Contributions and Innovations}{221}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Future Research Directions}{222}{section.4.2}%

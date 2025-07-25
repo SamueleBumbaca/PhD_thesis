@@ -208,7 +208,9 @@ Vertical Footprint\textsuperscript{1}	& 152–207 cm \\
 \bottomrule
 \label{tab:system_specifics}
 \end{tabular}
-\footnotesize{\textsuperscript{1} at a 1.1–1.5 m distance.}
+\begin{tablenotes}
+\item[1] \footnotesize{\textsuperscript{1} at a 1.1–1.5 m distance.}
+\end{tablenotes}
 \end{table}
 
 \subsection{Experimental Design}
@@ -407,12 +409,12 @@ with initial values inferred from the PHYGEN distribution. The optimization aime
 \begin{table}[H]
     \centering
     \caption{Models, their loss functions, and model outputs.}
-    \begin{tabularx}{\textwidth}{XXX}
+    \begin{tabularx}{\textwidth}{p{3cm}p{6cm}p{3cm}}
     \toprule
     \textbf{Model} & \textbf{Loss function} & \textbf{Model output} \\
     \midrule
-    \textit{LASSO} & $\sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + L_1 = \min; L_1 = \lambda \sum_{j=1}^{p} |\beta_j|$ & $\hat{\beta}_j, \hat{\beta}_0$ (7) \\
-    \textit{LogisticFunction (LF)} & $\sum_{i=1}^{n} \left( y_i - \frac{L}{1 + e^{-k(\hat{y}_i - y_0)}} \right) = \min$ & $\hat{L}, \hat{k}, \hat{y}_0$ (8) \\
+    \textit{LASSO} & $\sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + L_1 = \min$; $L_1 = \lambda \sum_{j=1}^{p} |\beta_j|$ & $\hat{\beta}_j$, $\hat{\beta}_0$ (7) \\
+    \textit{LogisticFunction (LF)} & $\sum_{i=1}^{n} \left( y_i - \frac{L}{1 + e^{-k(\hat{y}_i - y_0)}} \right)^2 = \min$ & $\hat{L}$, $\hat{k}$, $\hat{y}_0$ (8) \\
     \bottomrule
     \end{tabularx}
     \label{tab:models}
@@ -514,7 +516,9 @@ strategy was performed to generate an estimate for the mean and the standard dev
     \bottomrule
     \end{tabular}
     \label{tab:LASSO}
-    \footnotesize{\textsuperscript{1} Coef.Var. is calculated with the absolute value of the mean.}
+    \begin{tablenotes}
+    \item[1] \footnotesize{\textsuperscript{1} Coef.Var. is calculated with the absolute value of the mean.}
+    \end{tablenotes}
 \end{table}
 
 nsights into the stability of the model can be gained by observing the coefficient of variation (Coef.Var.) of the most influencing parameters as estimated through the 10-fold strategy. Low values of Coef.Var. across all parameters proved that model stability is ensured. Bands and spectral indices showed the highest values of Coef.Var. This can be related to the significant uncertainty of calibrated reflectance, thus confirming the strict correspondence between measurement errors and the stability of the model (Barbedo et al.

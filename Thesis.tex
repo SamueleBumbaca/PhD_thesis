@@ -69,27 +69,34 @@
 
 \abstract{
 
-\textbf{Background and Research Gap:} Agricultural research for Plant 
-Protection Product (PPP) development relies on statistical hypothesis testing. 
-The European and Mediterranean Plant Protection Organizzation (EPPO) sets the 
-standards for conducting tests in all its member countries. Traditional
-statistical approaches recognised by EPPO address environmental variability through
-experimental design features such as randomised controls. These methods require 
-experimentalists to identify sources of environmental variability prior to data 
-collection. This a priori identification of variance sources relies heavily on 
-the expertise of the experimentalist rather than on systematic statistical 
-procedures, which creates a significant limitation in agricultural field studies. 
-Geostatistical methods offer an alternative approach, enabling the estimation of 
-spatial environmental variability after data collection through variograms or 
-spline fitting techniques. These methods are recognised by EPPO, but require 
-spatially referenced data collection.
+\textbf{Background and Research Gap:} European agricultural research for Plant 
+Protection Product (PPP) development relies on statistical hypothesis testing under 
+European and Mediterranean Plant Protection Organization (EPPO) standards. 
+Traditional statistical approaches recognized by EPPO attempt to address environmental 
+variability through experimental design features such as randomized controls and blocking. 
+These methods are fundamentally limited by their reliance on a priori identification 
+of variance sources, where experimentalists must subjectively identify environmental 
+variability patterns before data collection based solely on human experience and field 
+observation. Geostatistical methods offer a mathematically rigorous alternative by 
+enabling the estimation of spatial environmental variability after data collection 
+through variograms or spline fitting techniques. While these methods are recognized 
+by EPPO and have demonstrated superior performance in modeling environmental 
+heterogeneity, they require spatially referenced observations (each data point must 
+have precise spatial coordinates). This requirement creates a significant 
+implementation barrier, as traditional manual assessment methods used in PPP trials 
+typically do not capture spatial coordinates, making it practically impossible to 
+apply geostatistical approaches despite their theoretical advantages. This research 
+gap (the absence of practical methods to generate spatially referenced datasets that 
+would enable geostatistical analysis within EPPO-compliant trials) has prevented the 
+widespread adoption of more robust statistical approaches in agricultural field studies.
 
-\textbf{Research Objectives:} With reference to the above-mentioned 
-geostatistical approach, this research investigates the applicability of 
-geomatics technologies for generating spatially referenced datasets across 
-all EPPO-recognized observation categories, with the goal of demonstrating how 
-these techniques can facilitate the adoption of geostatistical methods in 
-hypothesis testing for agricultural research within the EPPO standard framework.
+\textbf{Research Objectives:} This research addresses the identified gap by 
+investigating the applicability of geomatics technologies for recording spatially 
+referenced observations in compliance with EPPO standards. The objective 
+is to establish practical methods for generating georeferenced datasets that enable 
+geostatistical analysis, demonstrating how these techniques can facilitate the 
+adoption of more robust statistical approaches in agricultural research within 
+the EPPO standard framework.
 
 \textbf{Methodology:} 
 This work considered three aspects of geomatics technologies applicability in 
@@ -232,29 +239,23 @@ protocols.
 
 \subsection{Current Limitations in Agricultural Statistical Design}
 
-Traditional statistical analysis for PPP trials relies on Fisher's principles of experimental design \cite{fisherStatisticalMethodsResearch1992,meadStatisticalPrinciplesDesign2012,caslerFundamentalsExperimentalDesign2015}, which emphasize randomization, replication, and blocking to ensure validity of results. While this approach is well-established, it faces significant limitations in agricultural field studies where environmental heterogeneity is often unknown and difficult to predict \cite{paroliniPursuitScienceAgriculture2015,berryResistedRiseRandomisation2015}.
+Traditional statistical analysis of PPP trials is based on Fisher's principles of experimental design \cite{fisherStatisticalMethodsResearch1992,meadStatisticalPrinciplesDesign2012,caslerFundamentalsExperimentalDesign2015}, which emphasise randomisation, replication and blocking to ensure the validity of the results. Although this approach is well established, it has significant limitations in agricultural field studies, where environmental heterogeneity is often unknown or difficult to assess when setting up the trial because it relies mostly on human judgement \cite{paroliniPursuitScienceAgriculture2015,berryResistedRiseRandomisation2015}.
 
 The experimental design components that most heavily rely on human judgment are block disposal and control arrangement \cite{tocherDesignAnalysisBlock1952,williamsOptimalityContrastsBlock2015}. Block disposal should minimize environmental variability within blocks while maximizing it between blocks \cite{vanesSpatialNatureRandomization1993,brienMultiphaseExperimentsLeast2011}, while control arrangement ensures untreated controls are not influenced by adjacent treated plots \cite{piephoWhyRandomizeAgricultural2013}.
 
-Problems arise when unobserved environmental variability effects invalidate parametric statistical analysis due to heteroscedasticity of residuals \cite{schabenbergerStatisticalMethodsSpatial2004,onofriNewMethodAnalysis2010}. Shifting to non-parametric tests often results in decreased statistical power \cite{stroupRethinkingAnalysisNonNormal2015,agrestiIntroductionCategoricalData2018}.
+Problems arise when environmental variability that was not previously assessed invalidates the parametric statistical analysis because this results in residual heteroscedasticity \cite{schabenbergerStatisticalMethodsSpatial2004,onofriNewMethodAnalysis2010}. Shifting to non-parametric tests often results in decreased statistical power \cite{stroupRethinkingAnalysisNonNormal2015,agrestiIntroductionCategoricalData2018}, so it is not a total solution.
 
 \subsection{Geostatistical Approaches in Agricultural Research}
 
-Geostatistical methods offer the potential to capture environmental variability "a posteriori" rather than requiring its prediction "a priori" \cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}. This approach should result in more robust and reliable statistical analysis, free from unexpected heterogeneity within experimental blocks \cite{richterGeostatisticalModelsAgricultural2012,lopezEfficiencyIncompleteBlock1995}.
+Geostatistical methods offer the potential to capture environmental variability mathematically rather than requiring human judgement \cite{oliverGeostatisticalApplicationsPrecision2010,websterGeostatisticsEnvironmentalScientists2007}. This approach should result in more robust and reliable statistical analysis, free from unexpected heterogeneity within experimental blocks \cite{richterGeostatisticalModelsAgricultural2012,lopezEfficiencyIncompleteBlock1995}.
 
-Several studies have demonstrated the effectiveness of spatial variability estimation through geostatistical approaches \cite{bullockDataIntensiveFarmManagement2019,castrignanoGeostatisticalApproachModelling2017,jinEfficientGeostatisticalAnalysis2021,puntelLeveragingDigitalAgriculture2024,trevisanSpatialVariabilityCrop2021}. However, these approaches require georeferenced observations, which are often impractical for traditional visual assessments.
+Several studies have demonstrated the effectiveness of spatial variability estimation through geostatistical approaches \cite{bullockDataIntensiveFarmManagement2019,castrignanoGeostatisticalApproachModelling2017,jinEfficientGeostatisticalAnalysis2021,puntelLeveragingDigitalAgriculture2024,trevisanSpatialVariabilityCrop2021}. However, these approaches require georeferenced observations, which are often impractical for traditional visual assessments. 
+Although some geomatics-related digital technologies can provide georeferenced observations, few studies have been conducted to demonstrate their use in experimental trials that meet EPPO standards.
 
 \subsection{Digital Technologies in Agricultural Assessment}
 
-EPPO has recognized the potential of digital technologies through the publication of PP 1/333(1) \cite{PP1333}, which provides guidelines for incorporating digital tools into PPP trials. This standard requires that digital data meet the same quality standards as manual assessments, with specific validation benchmarks depending on variable type:
-
-\begin{itemize}
-    \item \textbf{Continuous and Discrete variables}: Coefficient of determination ($R^2$) > 0.85
-    \item \textbf{Ordinal and Nominal variables}: Cohen's kappa coefficient ($\kappa$) > 0.7  
-    \item \textbf{Binary variables}: Accuracy > 0.85
-\end{itemize}
-
-Recent advances in machine learning and computer vision have shown promise for automating agricultural assessments \cite{mahleinPlantDiseaseDetection2016,kamilarisDeepLearningAgriculture2018}, particularly when combined with photogrammetric and spectral imaging techniques.
+EPPO has recognised the potential of digital technologies by publishing PP 1/333(1) \cite{PP1333}, which sets out guidelines for incorporating digital tools into PPP trials. This standard stipulates that digital data must adhere to the same quality benchmarks as manual assessments, with specific validation criteria depending on the type of variable.
+This allows data to be recorded in a georeferenced digital format, enabling the feasible use of geostatistical methods for PPP trial analysis.
 
 \subsection{Research Gap and Innovation}
 
@@ -746,7 +747,7 @@ on the type of variable. For each type of variable, the congruence between
 digital and manual should be evaluated with a different metric:
 
 \begin{itemize}
-    \item \textbf{Continuous and Discrete}: Coefficient of determination ($R^2$) higher than 0.85.
+    \item \textbf{Continuous and Discrete}: Coefficient of determination ($R^2$) higher than 0.85 (when fitting a 1:1 relationship model (y = x) between digital and manual measurements).
     \item \textbf{Ordinal and Nominal}: Cohen's kappa Coefficient ($\kappa$) higher than 0.7.
     \item \textbf{Binary}: Accuracy higher than 0.85
 \end{itemize}
@@ -888,10 +889,10 @@ characteristics of objects and materials
 \cite{meerImagingSpectrometryBasic2001,thenkabailHyperspectralRemoteSensing2016}. 
 Multispectral images are typically acquired using specialized
 cameras or sensors that can capture light in different spectral bands, ranging
-from ultraviolet (UV) to infrared (IR) wavelengths
+from ultraviolet wavelengths (UV, 200-380 nm) to near infrared wavelengths (NIR 750-1400 nm) or short-wavelength infrared (SWIR 1.4-3 \ensuremath{\mu\text{m}}) 
 \cite{thenkabailHyperspectralRemoteSensing2016,mahleinHyperspectralSensorsImaging2018}. 
 Some study tested also the 
-feasibility to use bands in the termal infrared (TIR) range \cite{wanOptimizingUAVbasedUncooled2024}.
+feasibility to use bands in the termal infrared (TIR, 3-15 \ensuremath{\mu\text{m}}) range \cite{wanOptimizingUAVbasedUncooled2024}.
 Each spectral band corresponds
 to a specific range of wavelengths, allowing for the analysis of the spectral
 signature of objects in the scene.
@@ -914,8 +915,9 @@ results.
 The resulting multispectral images can be analyzed to derive various indices
 and metrics that provide insights into the health and condition of vegetation.
 One of the most commonly used indices in agriculture is the Normalized Difference
-Vegetation Index (NDVI), which is calculated using the red and near-infrared
-(NIR) bands of the multispectral image \cite{rouseMonitoringVegetationSystems1974,tuckerRedPhotographicInfrared1979}. 
+Vegetation Index (NDVI), which is calculated using the red and NIR
+bands of the multispectral image,
+usually with 650-680 nm and 855-875 nm bands respectivelly \cite{rouseMonitoringVegetationSystems1974,tuckerRedPhotographicInfrared1979}. 
 NDVI is a measure of vegetation
 greenness and is widely used to assess plant health, monitor crop growth, and
 detect stress conditions. The NDVI is calculated using the following formula:
@@ -927,9 +929,8 @@ bands, respectively. NDVI values range from -1 to +1, with higher values indicat
 greater vegetation density and health. NDVI is particularly useful for monitoring
 crop growth, assessing drought conditions, and detecting plant diseases.
 Other indices derived from multispectral images include the Enhanced
-Vegetation Index (EVI), Soil-Adjusted Vegetation Index (SAVI), and Leaf Area
-Index (LAI), each providing specific information about vegetation health and
-condition
+Vegetation Index (EVI) and Soil-Adjusted Vegetation Index (SAVI) each providing 
+specific information about vegetation health and condition
 \cite{hueteOverviewRadiometricBiophysical2002,qiModifiedSoilAdjusted1994}. 
 These indices can be used to monitor crop performance, assess
 nutrient status, and evaluate the impact of environmental factors on plant

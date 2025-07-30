@@ -15,6 +15,7 @@
 \usepackage{multicol}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{colortbl}
 
 % Custom colors
 \definecolor{uniblue}{RGB}{0,51,102}
@@ -568,7 +569,7 @@
         \end{enumerate}
     \end{block}
 \end{frame}
-% ...existing code...
+
 % Slide 10: Geomatic Techniques
 \begin{frame}
     \frametitle{\small Geomatic Technologies: Workflow for Spatially Referenced Observations}
@@ -639,6 +640,44 @@
         \end{tikzpicture}
     \end{center}
 
+\end{frame}
+
+% Slide 11: Georeferencing EPPO standard assessments
+\begin{frame}
+    \frametitle{Georeferencing EPPO Standard Assessments}
+    
+    \begin{table}[ht]
+        \caption{\small Different modes of observation and types of variables}
+        \label{tab:data_types_slide}
+        \centering
+        \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{red!20} Binary & & & X \\
+        \hline
+        \rowcolor{red!20} Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} Ordinal & & X & X \\
+        \hline
+        \rowcolor{red!20} Discrete & X & & \\
+        \hline
+        \rowcolor{red!20} Continuous limited & X & & \\
+        \hline
+        \rowcolor{green!20} Continuous not limited & X & & \\
+        \hline
+        \end{tabular}
+        \end{table}
+        
+    \begin{flushleft}
+        \hspace{1.5cm}{\tiny Summary from EPPO PP 1/152: Design and analysis of efficacy evaluation trials}
+    \end{flushleft}
+    
+    \vspace{1em}
+    
+    \begin{block}{Current State of Georeferencing in Agricultural Trials:}
+        \small EPPO's continuous, unbounded measurements are typically tool-collected and easily georeferenced (e.g., yield harvesters), whereas other regulated variables depend on experimenters' visual assessments, complicating spatial integration.
+    \end{block}
 \end{frame}
 
 \end{document}

@@ -2,11 +2,16 @@
 # This script creates PNG files showing trial design with environmental gradients
 # and model-specific effects overlaid in different colors
 
+# Set library path to user directory
+.libPaths(c("C:/Users/samuele.bumbaca/Documents/R/win-library/4.5", .libPaths()))
+
 # Load required packages
 library(ggplot2)
 library(dplyr)
 library(gridExtra)
 library(metR)  # For geom_text_contour
+library(png)   # For reading PNG images
+library(grid)  # For rasterGrob
 
 # Set up plotting parameters
 plot_width <- 12
@@ -14,23 +19,81 @@ plot_height <- 8
 dpi <- 300
 
 # Create directory for images if it doesn't exist
-if (!dir.exists("Imgs")) {
-  dir.create("Imgs")
+if (!dir.exists("Presentazione/Imgs")) {
+  dir.create("Presentazione/Imgs")
 }
 
 # Load the generated data and models
-load("trial_models.RData")
-dataset1 <- read.csv("dataset1_detailed.csv")
-dataset2 <- read.csv("dataset2_plots.csv")
+load("Presentazione/trial_models.RData")
+dataset1 <- read.csv("Presentazione/dataset1_detailed.csv")
+dataset2 <- read.csv("Presentazione/dataset2_plots.csv")
+
+# Convert dataset2 coordinates to plot coordinates (scale from grid to field coordinates)
+# Original grid: 9 cols x 6 rows -> Field: 45m x 30m
+dataset2$x_plot <- dataset2$x_center * 5  # Scale x: 9 grid units -> 45m
+dataset2$y_plot <- dataset2$y_center * 5  # Scale y: 6 grid units -> 30m
+
+# Function to add corn cobs with integrated ggplot legend using emoji
+add_wheat_spikes_with_legend <- function(plot_obj, data) {
+  # Normalize yield values to discrete categories for legend
+  yield_range <- range(data$yield)
+  
+  # Create discrete yield categories
+  data$yield_category <- cut(data$yield, 
+                            breaks = 3, 
+                            labels = c("Low", "Medium", "High"),
+                            include.lowest = TRUE)
+  
+  # Define corresponding sizes for each category
+  size_mapping <- c("Low" = 3, "Medium" = 5, "High" = 7)
+  data$spike_size <- size_mapping[data$yield_category]
+  
+  # Add wheat spike emoji annotations to the plot
+  for(i in 1:nrow(data)) {
+    plot_obj <- plot_obj + 
+      annotate("text", x = data$x_plot[i], y = data$y_plot[i], 
+               label = "🌽", size = data$spike_size[i], hjust = 0.5, vjust = 0.5)
+  }
+  
+  # Create invisible points for ggplot legend with corn cob emoji
+  plot_obj <- plot_obj + 
+    geom_point(data = data, 
+               aes(x = x_plot, y = y_plot, size = yield_category),
+               shape = 15, color = "wheat4", alpha = 0) +  # Invisible base points
+    scale_size_manual(
+      name = "Corn Cobs\nYield (t/ha)", 
+      values = c("Low" = 3, "Medium" = 5, "High" = 7),  # Sizes for legend
+      labels = c("Low" = sprintf("%.1f", yield_range[1]),
+                "Medium" = sprintf("%.1f", mean(yield_range)),
+                "High" = sprintf("%.1f", yield_range[2])),
+      guide = guide_legend(
+        override.aes = list(
+          alpha = 1,
+          shape = c("🌽", "🌽", "🌽"),  # Corn emoji as symbols
+          color = c("gold2", "gold3", "gold4"),
+          size = c(4, 6, 8)
+        ),
+        title.position = "top",
+        title.hjust = 0.5,
+        label.position = "right",
+        keywidth = unit(1.2, "cm"),
+        keyheight = unit(1, "cm"),
+        title.theme = element_text(size = 12, face = "bold"),
+        label.theme = element_text(size = 10)
+      )
+    )
+  
+  return(plot_obj)
+}
 
 # Define plot coordinates and treatments
 plot_coords <- data.frame(
   plot_id = 1:9,
   x_center = rep(c(7.5, 22.5, 37.5), 3),
   y_center = rep(c(25, 15, 5), each = 3),
-  treatment = c("Test", "Control", "Reference",
-                "Reference", "Test", "Control", 
-                "Control", "Reference", "Test"),
+  treatment = c("T", "C", "R",
+                "R", "T", "C", 
+                "C", "R", "T"),
   block = rep(c("Block 1", "Block 2", "Block 3"), each = 3)
 )
 
@@ -46,7 +109,7 @@ create_base_plot <- function() {
               aes(xmin = x_center - 7.5, xmax = x_center + 7.5,
                   ymin = y_center - 5, ymax = y_center + 5,
                   fill = treatment), 
-              color = "black", alpha = 0.3, size = 1) +
+              color = "black", alpha = 0.3, linewidth = 1) +
     scale_fill_manual(values = treatment_colors, name = "Treatment") +
     # Plot labels
     geom_text(data = plot_coords,
@@ -58,7 +121,7 @@ create_base_plot <- function() {
     labs(x = "X coordinate (m)", y = "Y coordinate (m)") +
     theme_minimal() +
     theme(
-      panel.grid.major = element_line(color = "#000000", size = 0.5),
+      panel.grid.major = element_line(color = "#000000", linewidth = 0.5),
       panel.grid.minor = element_blank(),
       axis.text = element_text(size = 12),
       axis.title = element_text(size = 14, face = "bold"),
@@ -97,7 +160,7 @@ create_rcbd_plot <- function() {
               aes(xmin = x_center - 7.5, xmax = x_center + 7.5,
                   ymin = y_center - 5, ymax = y_center + 5,
                   color = block), 
-              fill = NA, size = 3, alpha = 0.8) +
+              fill = NA, linewidth = 3, alpha = 0.8) +
     scale_color_manual(values = block_colors, name = "Block Effect") +
     # Treatment labels
     geom_text(data = plot_coords,
@@ -110,7 +173,7 @@ create_rcbd_plot <- function() {
          title = "RCBD: Environmental Gradient vs Block Effects") +
     theme_minimal() +
     theme(
-      panel.grid.major = element_line(color = "gray90", size = 0.5),
+      panel.grid.major = element_line(color = "gray90", linewidth = 0.5),
       panel.grid.minor = element_blank(),
       axis.text = element_text(size = 12),
       axis.title = element_text(size = 14, face = "bold"),
@@ -118,6 +181,9 @@ create_rcbd_plot <- function() {
       legend.text = element_text(size = 11),
       plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
     )
+  
+  # Add wheat spikes with ggplot legend
+  p <- add_wheat_spikes_with_legend(p, dataset2)
   
   return(p)
 }
@@ -146,7 +212,7 @@ create_variogram_plot <- function() {
                         midpoint = 0, name = "True Gradient\n(t/ha)") +
     # Spatial effect contours
     geom_contour(data = grid_data, aes(x = x, y = y, z = spatial_effect), 
-                color = "orange", size = 1.5, alpha = 0.8) +
+                color = "orange", linewidth = 1.5, alpha = 0.8) +
     # Spatial effect contour labels
     geom_text_contour(data = grid_data, aes(x = x, y = y, z = spatial_effect),
                      color = "darkorange", size = 3, fontface = "bold") +
@@ -154,7 +220,7 @@ create_variogram_plot <- function() {
     geom_rect(data = plot_coords, 
               aes(xmin = x_center - 7.5, xmax = x_center + 7.5,
                   ymin = y_center - 5, ymax = y_center + 5), 
-              fill = NA, color = "black", size = 1) +
+              fill = NA, color = "black", linewidth = 1) +
     # Treatment labels
     geom_text(data = plot_coords,
               aes(x = x_center, y = y_center, label = treatment),
@@ -166,7 +232,7 @@ create_variogram_plot <- function() {
          title = "Variogram: Environmental Gradient vs Spatial Effects") +
     theme_minimal() +
     theme(
-      panel.grid.major = element_line(color = "gray90", size = 0.5),
+      panel.grid.major = element_line(color = "gray90", linewidth = 0.5),
       panel.grid.minor = element_blank(),
       axis.text = element_text(size = 12),
       axis.title = element_text(size = 14, face = "bold"),
@@ -177,6 +243,9 @@ create_variogram_plot <- function() {
     # Add legend for spatial effect
     annotate("text", x = 35, y = 28, label = "Orange contours:\nSpatial effects", 
              size = 4, hjust = 0, color = "orange", fontface = "bold")
+  
+  # Add wheat spikes with ggplot legend
+  p <- add_wheat_spikes_with_legend(p, dataset2)
   
   return(p)
 }
@@ -206,7 +275,7 @@ create_spats_plot <- function() {
                         midpoint = 0, name = "True Gradient\n(t/ha)") +
     # Spline effect contours
     geom_contour(data = grid_data, aes(x = x, y = y, z = spline_effect), 
-                color = "green", size = 1.5, alpha = 0.8) +
+                color = "green", linewidth = 1.5, alpha = 0.8) +
     # Spline effect contour labels
     geom_text_contour(data = grid_data, aes(x = x, y = y, z = spline_effect),
                      color = "darkgreen", size = 3, fontface = "bold") +
@@ -214,7 +283,7 @@ create_spats_plot <- function() {
     geom_rect(data = plot_coords, 
               aes(xmin = x_center - 7.5, xmax = x_center + 7.5,
                   ymin = y_center - 5, ymax = y_center + 5), 
-              fill = NA, color = "black", size = 1) +
+              fill = NA, color = "black", linewidth = 1) +
     # Treatment labels
     geom_text(data = plot_coords,
               aes(x = x_center, y = y_center, label = treatment),
@@ -226,7 +295,7 @@ create_spats_plot <- function() {
          title = "SpATS: Environmental Gradient vs Spline Effects") +
     theme_minimal() +
     theme(
-      panel.grid.major = element_line(color = "gray90", size = 0.5),
+      panel.grid.major = element_line(color = "gray90", linewidth = 0.5),
       panel.grid.minor = element_blank(),
       axis.text = element_text(size = 12),
       axis.title = element_text(size = 14, face = "bold"),
@@ -237,6 +306,9 @@ create_spats_plot <- function() {
     # Add legend for spline effect
     annotate("text", x = 35, y = 28, label = "Green contours:\nSpline effects", 
              size = 4, hjust = 0, color = "darkgreen", fontface = "bold")
+  
+  # Add wheat spikes with ggplot legend
+  p <- add_wheat_spikes_with_legend(p, dataset2)
   
   return(p)
 }

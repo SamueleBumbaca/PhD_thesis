@@ -12,8 +12,8 @@ library(dplyr)
 set.seed(123)
 
 # Define trial parameters
-n_rows <- 10
-n_cols <- 15
+n_rows <- 6
+n_cols <- 9
 n_treatments <- 3
 n_blocks <- 3
 
@@ -38,15 +38,15 @@ spatial_gradient <- with(coordinates,
 )
 
 # Assign treatments to plots (3x3 blocks, each block has 5x3.33 cells approximately)
-# Block 1: rows 1-3, columns 1-15
-# Block 2: rows 4-6, columns 1-15  
-# Block 3: rows 7-10, columns 1-15
+# Block 1: rows 1-2, columns 1-15
+# Block 2: rows 3-4 columns 1-15  
+# Block 3: rows 5-6, columns 1-15
 
 create_treatment_assignment <- function(x, y) {
   # Determine block based on row
-  if (y <= 3) {
+  if (y <= 2) {
     block <- 1
-  } else if (y <= 6) {
+  } else if (y <= 4) {
     block <- 2
   } else {
     block <- 3
@@ -54,9 +54,9 @@ create_treatment_assignment <- function(x, y) {
   
   # Within each block, assign treatments in a systematic pattern
   # Each treatment gets 5 columns
-  if (x <= 5) {
+  if (x <= 3) {
     treatment <- "Control"
-  } else if (x <= 10) {
+  } else if (x <= 6) {
     treatment <- "Test"
   } else {
     treatment <- "Reference"

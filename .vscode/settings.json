@@ -19,5 +19,14 @@
       ]
     }
   ],
-  "latex-workshop.latex.autoBuild.run": "onFileChange"
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "r.rpath.windows": "C:\\Program Files\\R\\R-4.5.1\\bin\\R.exe",
+  "r.rterm.windows": "C:\\Program Files\\R\\R-4.5.1\\bin\\R.exe",
+  "r.rterm.option": [
+    "--no-save",
+    "--no-restore"
+  ],
+  "r.sessionWatcher": true,
+  "r.bracketedPaste": true,
+  "r.plot.useHttpgd": true
 }

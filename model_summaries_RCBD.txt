@@ -1,0 +1,47 @@
+=== RCBD MODEL SUMMARY ===
+Date: 2025-08-03 16:15:57 
+
+Linear Model Summary:
+Formula: yield ~ treatment + block
+
+
+Call:
+lm(formula = yield ~ treatment + block_factor, data = dataset1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.92832 -0.27642  0.04433  0.28170  0.73241 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         11.1375     0.1150  96.822  < 2e-16 ***
+treatmentReference   1.6305     0.1260  12.940  < 2e-16 ***
+treatmentTest        1.4704     0.1260  11.669 9.39e-16 ***
+block_factor2        0.4117     0.1260   3.267  0.00199 ** 
+block_factor3        1.1069     0.1260   8.784 1.24e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.378 on 49 degrees of freedom
+Multiple R-squared:  0.8521,	Adjusted R-squared:   0.84 
+F-statistic: 70.58 on 4 and 49 DF,  p-value: < 2.2e-16
+
+
+
+ANOVA:
+Analysis of Variance Table
+
+Response: yield
+             Df  Sum Sq Mean Sq F value    Pr(>F)    
+treatment     2 29.0785 14.5392 101.740 < 2.2e-16 ***
+block_factor  2 11.2679  5.6339  39.424 6.248e-11 ***
+Residuals    49  7.0024  0.1429                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+Treatment Effects:
+       (Intercept) treatmentReference      treatmentTest      block_factor2 
+        11.1375007          1.6305234          1.4704360          0.4116867 
+     block_factor3 
+         1.1068840 

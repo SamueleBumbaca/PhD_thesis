@@ -1,0 +1,78 @@
+=== SpATS MODEL SUMMARY ===
+Date: 2025-08-03 16:15:57 
+
+
+Spatial analysis of trials with splines 
+
+Response:                   yield     
+Genotypes (as fixed):       treatment 
+Spatial:                    ~PSANOVA(x, y, nseg = c(15, 15))
+Fixed:                      ~1        
+
+
+Number of observations:        54
+Number of missing data:        0
+Effective dimension:           11.52
+Deviance:                      -74.741
+
+Dimensions:
+              Effective     Model     Nominal     Ratio     Type
+treatment           2.0         2           2      1.00        F
+Intercept           1.0         1           1      1.00        F
+x                   1.0         1           1      1.00        S
+y                   1.0         1           1      1.00        S
+yx                  1.0         1           1      1.00        S
+f(x)                0.0        16          16      0.00        S
+f(y)                1.4        16          16      0.09        S
+f(x):y              1.4        16          16      0.09        S
+x:f(y)              0.0        16          16      0.00        S
+f(x):f(y)           2.7       256         256      0.01        S
+                                                                
+Total              11.5       326         326      0.04         
+Residual           42.5                                         
+Nobs                 54                                         
+
+Type codes: F 'Fixed'    R 'Random'    S 'Smooth/Semiparametric'
+
+
+Spatial analysis of trials with splines 
+
+Response:                   yield     
+Genotypes (as fixed):       treatment 
+Spatial:                    ~PSANOVA(x, y, nseg = c(15, 15))
+Fixed:                      ~1        
+
+
+Number of observations:        54
+Number of missing data:        0
+Effective dimension:           11.52
+Deviance:                      -74.741
+
+Dimensions:
+              Effective     Model     Nominal     Ratio     Type
+treatment           2.0         2           2      1.00        F
+Intercept           1.0         1           1      1.00        F
+x                   1.0         1           1      1.00        S
+y                   1.0         1           1      1.00        S
+yx                  1.0         1           1      1.00        S
+f(x)                0.0        16          16      0.00        S
+f(y)                1.4        16          16      0.09        S
+f(x):y              1.4        16          16      0.09        S
+x:f(y)              0.0        16          16      0.00        S
+f(x):f(y)           2.7       256         256      0.01        S
+                                                                
+Total              11.5       326         326      0.04         
+Residual           42.5                                         
+Nobs                 54                                         
+
+Type codes: F 'Fixed'    R 'Random'    S 'Smooth/Semiparametric'
+
+
+
+Model Information:
+Response variable: yield 
+Spatial terms: PSANOVA(x, y) 
+Fixed effects: treatment + intercept 
+Effective dimensions: 2 1 1 1 1 0.0003801946 1.417421 1.38349 0.0001948695 2.715188 
+Deviance: -74.74098 
+AIC: 

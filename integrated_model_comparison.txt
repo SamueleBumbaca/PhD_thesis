@@ -1,0 +1,73 @@
+=== INTEGRATED MODEL COMPARISON SUMMARY ===
+Date: 2025-08-03 17:40:24 
+
+Comparison of RCBD vs SpATS Spatial Model
+Dataset: 54 observations, 3 treatments, 3 blocks
+RCBD Model: Linear Mixed Model with random block effects
+SpATS Model: Spatial spline model with PSANOVA smoothing
+
+OVERALL MODEL PERFORMANCE (Mean Absolute Errors):
+=================================================
+
+Model                Treatment_Error      Environmental_Error      
+-----                ---------------      ------------------       
+RCBD_Model           0.2075               1.1237                   
+SpATS_Spatial        0.0506               1.0937                   
+
+
+ESTIMATED vs TRUE TREATMENT EFFECTS:
+====================================
+
+Treatment    True_Effect  RCBD_Estimate   SpATS_Estimate  RCBD_Error   SpATS_Error 
+---------    -----------  -------------   --------------  ----------   ----------- 
+Control      0.000        0.000           0.000           0.000        0.000       
+Test         1.000        0.894           1.024           0.106        0.024       
+Reference    0.500        1.016           0.627           0.516        0.127       
+
+
+BLOCK EFFECTS vs SPATIAL MODELING:
+===================================
+
+RCBD Block Effects:
+(Random Effects from Mixed Model)
+Block 1: +0.2675 t/ha
+Block 2: -0.1327 t/ha
+Block 3: -0.1348 t/ha
+
+SpATS Spatial Modeling:
+- Uses PSANOVA splines to model continuous spatial variation
+- Spatial effect range: 11.635 to 13.660 t/ha 
+
+
+MODEL ASSUMPTION TESTS:
+=======================
+
+RCBD Model:
+-----------
+(Linear Mixed Model with random block effects)
+Normality (Shapiro-Wilk): W = 0.9111, p-value = 0.0007
+Interpretation: Non-normal residuals (p ≤ 0.05)
+Homoscedasticity (Bartlett): K-squared = 0.4842, p-value = 0.7850
+Interpretation: Homoscedastic residuals (p > 0.05)
+
+SpATS Model:
+------------
+Normality (Shapiro-Wilk): W = 0.9567, p-value = 0.0489
+Interpretation: Non-normal residuals (p ≤ 0.05)
+Homoscedasticity (Bartlett): K-squared = 4.1230, p-value = 0.1273
+Interpretation: Homoscedastic residuals (p > 0.05)
+Spatial Autocorrelation (Moran's I): I = -0.1890, p-value = 0.9720
+Interpretation: No significant spatial autocorrelation (p > 0.05)
+
+
+MODEL COMPARISON INTERPRETATION:
+================================
+
+Treatment Effect Estimation: SpATS performs better (lower error)
+Environmental Effect Estimation: SpATS performs better (lower error)
+
+Key Differences:
+- RCBD: Captures environmental variation through discrete block effects
+- SpATS: Models continuous spatial variation using smooth splines
+- Mixed Model: Accounts for pseudoreplication with random effects (if convergent)
+- Spatial Model: Explicitly models spatial correlation structure

@@ -1,5 +1,5 @@
-# Integrated Trial Analysis: RCBD vs SpATS Comparison
-# This script generates trial data and creates a comprehensive comparison plot
+# Integrated Trial Analysis: RCBD vs SpATS Comparison (Irregular Environmental Gradient)
+# This script generates trial data with irregular environmental gradient matching the presentation slide
 # showing both block effects (RCBD) and spatial spline effects (SpATS)
 
 # Set library path to user directory
@@ -37,7 +37,7 @@ n_blocks <- 3
 # Treatment effects (additive)
 treatment_effects <- c(Control = 0, Test = 1, Reference = 0.5)
 
-# Spatial gradient parameters
+# Spatial gradient parameters - irregular pattern matching slide
 spatial_gradient_range <- c(-1.5, 1.5)  # tons/ha
 base_yield <- 12  # tons/ha (baseline yield)
 
@@ -46,83 +46,136 @@ x_coords <- rep(1:n_cols, n_rows)
 y_coords <- rep(1:n_rows, each = n_cols)
 coordinates <- data.frame(x = x_coords, y = y_coords)
 
-# Create complex spatial gradient with two focal points
+# Create irregular spatial gradient matching the presentation slide pattern
 # Convert plot coordinates to field coordinates (multiply by 5 and adjust)
 x_field <- coordinates$x * 5 - 2.5  # Convert to field scale
 y_field <- coordinates$y * 5 - 2.5  # Convert to field scale
 
-# Define focal points in field coordinates
-focal_point1 <- c(x = 15, y = 20)  # Single focal point
+# Normalize coordinates to match TikZ coordinate system (0-6 for x, 0-4.5 for y approximately)
+x_tikz <- (x_field + 2.5) * 6 / 45  # Scale to 0-6 range
+y_tikz <- (y_field + 2.5) * 4.5 / 30  # Scale to 0-4.5 range
 
-# Calculate distances from the focal point
-dist_to_focal1 <- sqrt((x_field - focal_point1["x"])^2 + (y_field - focal_point1["y"])^2)
+# Define irregular environmental zones based on TikZ patterns from slide
+# Initialize with medium gradient (0) as default
+spatial_gradient <- rep(0, nrow(coordinates))
 
-# Use the distance to the focal point for gradient calculation
-min_distance <- dist_to_focal1
+# Define the irregular zones using polygon membership functions
+# LOW environmental gradient (-1.5) - irregular diagonal patches (bottom area)
+is_in_low_zone <- function(x, y) {
+  # Approximate the irregular polygon from TikZ: 
+  # \fill[envlow] ({0+\xoffset},{0+\yoffset}) -- ({2+\xoffset},{1+\yoffset}) -- ({3+\xoffset},{0.5+\yoffset}) -- ({4+\xoffset},{1.5+\yoffset}) -- ({6+\xoffset},{1+\yoffset}) -- ({6+\xoffset},{-0.5+\yoffset}) -- ({0+\xoffset},{-0.5+\yoffset}) -- cycle;
+  
+  # Check if point is within the irregular low zone (simplified polygon approximation)
+  # Lower boundary: y >= -0.5
+  # Upper boundary: complex curve approximately following the zigzag pattern
+  lower_bound <- -0.5
+  
+  # Approximate upper boundary with piecewise linear function
+  if (x <= 2) {
+    upper_bound <- 0 + 0.5 * x  # Linear increase from 0 to 1
+  } else if (x <= 3) {
+    upper_bound <- 1 - 0.5 * (x - 2)  # Decrease from 1 to 0.5
+  } else if (x <= 4) {
+    upper_bound <- 0.5 + 1 * (x - 3)  # Increase from 0.5 to 1.5
+  } else {
+    upper_bound <- 1.5 - 0.5 * (x - 4)  # Decrease from 1.5 to 1
+  }
+  
+  return(y >= lower_bound & y <= upper_bound)
+}
 
-# Create radial gradient: center = -1.5, increase by +0.3 every 2 spatial units
-# Base value at centers: -1.5
-# Increase rate: +0.3 per 2 spatial units = +0.15 per spatial unit
-gradient_increment <- min_distance * 0.15  # 0.15 per spatial unit = 0.3 per 2 units
+# HIGH environmental gradient (+1.5) - irregular top patches
+is_in_high_zone <- function(x, y) {
+  # Approximate the irregular polygon from TikZ:
+  # \fill[envhigh] ({-0.5+\xoffset},{2.8+\yoffset}) -- ({2+\xoffset},{3.5+\yoffset}) -- ({4+\xoffset},{3.2+\yoffset}) -- ({6.5+\xoffset},{4.5+\yoffset}) -- ({6.5+\xoffset},{2.5+\yoffset}) -- ({5+\xoffset},{2.8+\yoffset}) -- ({3.5+\xoffset},{2.2+\yoffset}) -- ({1.5+\xoffset},{1.8+\yoffset}) -- ({-0.5+\xoffset},{1.2+\yoffset}) -- cycle;
+  
+  # Lower boundary: complex curve
+  if (x <= 1.5) {
+    lower_bound <- 1.2 + 0.4 * x  # Increase from 1.2 to 1.8
+  } else if (x <= 3.5) {
+    lower_bound <- 1.8 + 0.2 * (x - 1.5)  # Increase from 1.8 to 2.2
+  } else if (x <= 5) {
+    lower_bound <- 2.2 + 0.4 * (x - 3.5)  # Increase from 2.2 to 2.8
+  } else {
+    lower_bound <- 2.8 - 0.3 * (x - 5)  # Decrease from 2.8 to 2.5
+  }
+  
+  # Upper boundary: complex curve
+  if (x <= 2) {
+    upper_bound <- 2.8 + 0.35 * x  # Increase from 2.8 to 3.5
+  } else if (x <= 4) {
+    upper_bound <- 3.5 - 0.15 * (x - 2)  # Decrease from 3.5 to 3.2
+  } else {
+    upper_bound <- 3.2 + 0.65 * (x - 4)  # Increase from 3.2 to 4.5
+  }
+  
+  return(y >= lower_bound & y <= upper_bound)
+}
 
-# Calculate final gradient values, starting from homogeneous +1.5 baseline
-baseline_gradient <- 1.5
-focal_effect <- -1.5 + gradient_increment  # Start from -1.5 at centers, increase radially
+# Apply the irregular zone classification
+for (i in 1:nrow(coordinates)) {
+  x <- x_tikz[i]
+  y <- y_tikz[i]
+  
+  if (is_in_low_zone(x, y)) {
+    spatial_gradient[i] <- -1.5  # Low environmental gradient
+  } else if (is_in_high_zone(x, y)) {
+    spatial_gradient[i] <- 1.5   # High environmental gradient
+  }
+  # else remains 0 (medium environmental gradient)
+}
 
-# Combine baseline with focal effects (focal effects override in their vicinity)
-# Use a smooth transition where focal effects dominate within reasonable distance
-max_focal_distance <- 20  # Maximum distance where focal effects are significant
-focal_weight <- pmax(0, 1 - min_distance / max_focal_distance)  # Weight decreases with distance
+# Assign treatments to plots (Proper RCBD design)
+# Create a proper randomized complete block design
+set.seed(456)  # Different seed for treatment assignment to avoid confounding
+
+# First, determine blocks based on rows
+block_assignment <- function(y) {
+  if (y <= 2) {
+    return(1)
+  } else if (y <= 4) {
+    return(2)
+  } else {
+    return(3)
+  }
+}
+
+# Apply block assignment
+blocks <- sapply(coordinates$y, block_assignment)
+
+# Create proper RCBD treatment assignment
+# Each block should have equal representation of each treatment
+treatments <- rep(NA, nrow(coordinates))
+
+for (block_num in 1:3) {
+  block_indices <- which(blocks == block_num)
+  n_plots_per_block <- length(block_indices)
+  
+  # Create balanced treatment assignment within block
+  n_per_treatment <- n_plots_per_block / 3
+  block_treatments <- rep(c("Control", "Test", "Reference"), each = n_per_treatment)
+  
+  # Randomize the order within block
+  block_treatments <- sample(block_treatments)
+  
+  # Assign to the block
+  treatments[block_indices] <- block_treatments
+}
+
+# Calculate treatment effects
+treatment_effect_values <- treatment_effects[treatments]
 
 # Create heteroscedastic pattern for RCBD to fail assumption tests
 # Add position-dependent variance multiplier
 x_norm <- (coordinates$x - 1) / (9 - 1)  # Normalize x coordinates to 0-1
 y_norm <- (coordinates$y - 1) / (6 - 1)  # Normalize y coordinates to 0-1
-variance_multiplier <- 1 + 2 * x_norm + 1.5 * y_norm  # Increasing variance from left to right and bottom to top
 
-spatial_gradient <- baseline_gradient * (1 - focal_weight) + focal_effect * focal_weight
-
-# Ensure gradient stays within the specified bounds (-1.5 to +1.5)
-spatial_gradient <- pmax(-1.5, pmin(1.5, spatial_gradient))
-
-# Assign treatments to plots (RCBD design)
-create_treatment_assignment <- function(x, y) {
-  # Determine block based on row
-  if (y <= 2) {
-    block <- 1
-  } else if (y <= 4) {
-    block <- 2
-  } else {
-    block <- 3
-  }
-  
-  # Within each block, assign treatments systematically
-  if (x <= 3) {
-    treatment <- "Control"
-  } else if (x <= 6) {
-    treatment <- "Test"
-  } else {
-    treatment <- "Reference"
-  }
-  
-  return(list(treatment = treatment, block = block))
-}
-
-# Apply treatment assignment
-assignments <- mapply(create_treatment_assignment, coordinates$x, coordinates$y, SIMPLIFY = FALSE)
-treatments <- sapply(assignments, function(x) x$treatment)
-blocks <- sapply(assignments, function(x) x$block)
-
-# Calculate treatment effects
-treatment_effect_values <- treatment_effects[treatments]
-
-# Add heteroscedastic random error (varies by position to make RCBD fail homoscedasticity)
-# Different error variance based on position to create heteroscedasticity
+# Random error generation
 base_error_sd <- 0.2
-heteroscedastic_error <- rnorm(nrow(coordinates), mean = 0, sd = base_error_sd * variance_multiplier)
+random_error <- rnorm(nrow(coordinates), mean = 0, sd = base_error_sd)
 
 # Calculate final yield values
-yield_values <- base_yield + spatial_gradient + treatment_effect_values + heteroscedastic_error
+yield_values <- base_yield + spatial_gradient + treatment_effect_values + random_error
 
 # Ensure yield values are within reasonable range
 yield_values <- pmax(9.6, pmin(14.2, yield_values))
@@ -147,7 +200,8 @@ cat("=== DATA GENERATION COMPLETED ===\n")
 cat("Dataset dimensions:", nrow(dataset1), "observations\n")
 cat("Treatments:", unique(dataset1$treatment), "\n")
 cat("Blocks:", unique(dataset1$block), "\n")
-cat("Yield range:", round(range(dataset1$yield), 2), "tons/ha\n\n")
+cat("Yield range:", round(range(dataset1$yield), 2), "tons/ha\n")
+cat("Environmental gradient values:", unique(dataset1$spatial_gradient), "tons/ha\n\n")
 
 # =============================================================================
 # MODEL FITTING
@@ -256,15 +310,6 @@ block_labels$normalized_effect <- suppressWarnings(
   scales::rescale(block_labels$block_effect, to = spline_range)
 )
 
-# Define treatment effect colors for plot borders
-plot_coords_extended <- plot_coords
-plot_coords_extended$treatment_full <- sapply(plot_coords_extended$treatment, function(x) {
-  switch(x, "T" = "Test", "C" = "Control", "R" = "Reference")
-})
-plot_coords_extended$true_treatment_effect <- sapply(plot_coords_extended$treatment_full, function(x) {
-  switch(x, "Control" = 0, "Reference" = 0.5, "Test" = 1)
-})
-
 # Function to add individual observations with yield-based sizing
 add_wheat_spikes_with_legend <- function(plot_obj, data) {
   # Scale coordinates to match field layout
@@ -311,7 +356,7 @@ add_wheat_spikes_with_legend <- function(plot_obj, data) {
   
   plot_obj <- plot_obj + 
     geom_point(data = individual_data, 
-               aes(x = x_scaled, y = y_scaled, size = yield_category),
+               aes(x = x_scaled, y = y_scaled, size = yield_category), 
                shape = 15, color = "wheat4", alpha = 0) +  # Invisible base points
     scale_size_manual(
       name = "Observation\nYield (t/ha)", 
@@ -344,46 +389,45 @@ add_wheat_spikes_with_legend <- function(plot_obj, data) {
 # =============================================================================
 
 create_integrated_plot <- function() {
-  # Environmental gradient background with single focal point
+  # Environmental gradient background with irregular pattern matching slide
   x_seq <- seq(0, 45, length.out = 100)
   y_seq <- seq(0, 30, length.out = 100)
   grid_data <- expand.grid(x = x_seq, y = y_seq)
   
-  # Define focal point in field coordinates
-  focal_point1 <- c(x = 15, y = 20)
+  # Convert to TikZ coordinate system for zone classification
+  x_tikz_grid <- (grid_data$x + 2.5) * 6 / 45
+  y_tikz_grid <- (grid_data$y + 2.5) * 4.5 / 30
   
-  # Calculate distances from the focal point
-  dist_to_focal1 <- sqrt((grid_data$x - focal_point1["x"])^2 + (grid_data$y - focal_point1["y"])^2)
+  # Initialize with medium gradient (0) as default
+  grid_data$env_gradient <- 0
   
-  # Use distance to the focal point
-  min_distance <- dist_to_focal1
-  
-  # Create radial gradient: center = -1.5, increase by +0.15 per spatial unit
-  gradient_increment <- min_distance * 0.15
-  baseline_gradient <- 1.5
-  focal_effect <- -1.5 + gradient_increment
-  
-  # Smooth transition between baseline and focal effects
-  max_focal_distance <- 20
-  focal_weight <- pmax(0, 1 - min_distance / max_focal_distance)
-  grid_data$env_gradient <- baseline_gradient * (1 - focal_weight) + focal_effect * focal_weight
-  
-  # Ensure gradient stays within the specified bounds (-1.5 to +1.5)
-  grid_data$env_gradient <- pmax(-1.5, pmin(1.5, grid_data$env_gradient))
+  # Apply the irregular zone classification to grid
+  for (i in 1:nrow(grid_data)) {
+    x <- x_tikz_grid[i]
+    y <- y_tikz_grid[i]
+    
+    if (is_in_low_zone(x, y)) {
+      grid_data$env_gradient[i] <- -1.5  # Low environmental gradient
+    } else if (is_in_high_zone(x, y)) {
+      grid_data$env_gradient[i] <- 1.5   # High environmental gradient
+    }
+    # else remains 0 (medium environmental gradient)
+  }
   
   # Debug: Print gradient range for verification
   cat("Environmental gradient range:", range(grid_data$env_gradient, na.rm = TRUE), "\n")
   cat("Gradient values summary:\n")
-  print(summary(grid_data$env_gradient))
+  print(table(grid_data$env_gradient))
   
   p <- ggplot() +
     # Environmental gradient background
     geom_raster(data = grid_data, aes(x = x, y = y, fill = env_gradient), alpha = 0.6) +
     scale_fill_gradient2(low = "#FFF5EB", mid = "#FDAE61", high = "#D7301F", 
-                        midpoint = 0, name = "Environmental\nSpatial Effect\n(t/ha)") +
+                        midpoint = 0, name = "Environmental\nSpatial Effect\n(t/ha)",
+                        breaks = c(-1.5, 0, 1.5), labels = c("Low (-1.5)", "Medium (0)", "High (+1.5)")) +
     # Spline effect contours from SpATS model (only for finite values)
     geom_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
-                aes(x = x_scaled, y = y_scaled, z = spline_effect), 
+                aes(x = x_scaled, y = y_scaled, z = spline_effect),
                 color = "purple", linewidth = 1.5, alpha = 0.8) +
     # Spline effect contour labels (only for finite values)
     geom_text_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
@@ -421,19 +465,16 @@ create_integrated_plot <- function() {
     coord_fixed(ratio = 1) +
     xlim(-8, 45) + ylim(0, 30) +
     labs(x = "X coordinate (m)", y = "Y coordinate (m)",
-         title = "Integrated Analysis: RCBD Block Effects vs SpATS Spatial Splines",
-         subtitle = "Purple contours: SpATS spatial effects | Single-focal-point environmental gradient | Block effects colored by RCBD estimates") +
+         title = "Irregular Environmental Gradient Trial Design",
+         subtitle = "Purple contours: SpATS spatial effects | Irregular environmental pattern matching presentation slide") +
     theme_minimal() +
     theme(
-      panel.grid.major = element_line(color = "gray90", linewidth = 0.5),
-      panel.grid.minor = element_blank(),
-      axis.text = element_text(size = 12),
-      axis.title = element_text(size = 14, face = "bold"),
-      legend.title = element_text(size = 11, face = "bold"),
-      legend.text = element_text(size = 10),
-      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
-      plot.subtitle = element_text(size = 12, hjust = 0.5, color = "gray30"),
-      legend.position = "right"
+      plot.title = element_text(size = 16, face = "bold"),
+      plot.subtitle = element_text(size = 12),
+      axis.title = element_text(size = 12),
+      legend.title = element_text(size = 10),
+      legend.text = element_text(size = 9),
+      panel.grid = element_line(color = "gray90", linewidth = 0.5)
     ) 
 
   # Add individual observations
@@ -448,29 +489,13 @@ create_integrated_plot <- function() {
 
 calculate_comprehensive_comparison <- function() {
   # True treatment effects
-  true_treatment_effects <- c("Control" = 0, "Test" = 1, "Reference" = 0.5)
+  true_treatment_effects <- c("Control" = 0, "Reference" = 0.5, "Test" = 1)
   
-  # Calculate true environmental gradient for each observation
-  # Convert to field coordinates
-  dataset1$x_field <- dataset1$x * 5 - 2.5
-  dataset1$y_field <- dataset1$y * 5 - 2.5
+  # Define consistent treatment order
+  treatment_names <- c("Control", "Reference", "Test")
   
-  # Define focal point
-  focal_point1 <- c(x = 15, y = 20)
-  
-  # Calculate distances from focal point
-  dist_to_focal1 <- sqrt((dataset1$x_field - focal_point1["x"])^2 + (dataset1$y_field - focal_point1["y"])^2)
-  
-  # Use distance and calculate true environmental effect
-  min_distance <- dist_to_focal1
-  gradient_increment <- min_distance * 0.15
-  baseline_gradient <- 1.5
-  focal_effect <- -1.5 + gradient_increment
-  max_focal_distance <- 20
-  focal_weight <- pmax(0, 1 - min_distance / max_focal_distance)
-  dataset1$true_env_effect <- baseline_gradient * (1 - focal_weight) + focal_effect * focal_weight
-  dataset1$true_env_effect <- pmax(-1.5, pmin(1.5, dataset1$true_env_effect))
-  
+  # The environmental gradient is now discrete (irregular zones)
+  dataset1$true_env_effect <- dataset1$spatial_gradient
   dataset1$true_treatment_effect <- sapply(dataset1$treatment, function(x) true_treatment_effects[x])
   
   # ===== RCBD MIXED MODEL EVALUATION =====
@@ -497,8 +522,13 @@ calculate_comprehensive_comparison <- function() {
     rcbd_treatment_est["Reference"] <- 0
   }
   
-  # Calculate treatment errors
-  rcbd_treatment_errors <- abs(rcbd_treatment_est - true_treatment_effects)
+  # Calculate treatment errors - ensure proper alignment
+  # Order both vectors the same way
+  rcbd_treatment_est_ordered <- rcbd_treatment_est[treatment_names]
+  true_treatment_effects_ordered <- true_treatment_effects[treatment_names]
+  
+  rcbd_treatment_errors <- abs(rcbd_treatment_est_ordered - true_treatment_effects_ordered)
+  names(rcbd_treatment_errors) <- treatment_names
   rcbd_mean_treatment_error <- mean(rcbd_treatment_errors, na.rm = TRUE)
   
   # Get predictions for environmental effect calculation
@@ -509,6 +539,14 @@ calculate_comprehensive_comparison <- function() {
   # Calculate environmental errors
   rcbd_env_errors <- abs(dataset1$rcbd_env_est - dataset1$true_env_effect)
   rcbd_mean_env_error <- mean(rcbd_env_errors, na.rm = TRUE)
+  
+  # Debug: Print treatment estimates and errors for verification
+  cat("RCBD Treatment estimates:\n")
+  print(rcbd_treatment_est)
+  cat("True treatment effects:\n")
+  print(true_treatment_effects)
+  cat("RCBD Treatment errors:\n")
+  print(rcbd_treatment_errors)
   
   # RCBD Assumption Tests
   rcbd_residuals <- residuals(rcbd_mixed_model)
@@ -544,9 +582,20 @@ calculate_comprehensive_comparison <- function() {
     spats_treatment_est["Reference"] <- spats_coef["treatmentReference"]
   }
   
-  # Calculate treatment errors
-  spats_treatment_errors <- abs(spats_treatment_est - true_treatment_effects)
+  # Calculate treatment errors - ensure proper alignment
+  # Order both vectors the same way
+  spats_treatment_est_ordered <- spats_treatment_est[treatment_names]
+  true_treatment_effects_ordered <- true_treatment_effects[treatment_names]
+  
+  spats_treatment_errors <- abs(spats_treatment_est_ordered - true_treatment_effects_ordered)
+  names(spats_treatment_errors) <- treatment_names
   spats_mean_treatment_error <- mean(spats_treatment_errors, na.rm = TRUE)
+  
+  # Debug: Print treatment estimates and errors for verification
+  cat("SpATS Treatment estimates:\n")
+  print(spats_treatment_est)
+  cat("SpATS Treatment errors:\n")
+  print(spats_treatment_errors)
   
   # Calculate environmental effects
   dataset1$spats_treatment_component <- sapply(dataset1$treatment, function(x) spats_treatment_est[x])
@@ -565,7 +614,7 @@ calculate_comprehensive_comparison <- function() {
     if (length(spats_residuals) > 3 && length(spats_residuals) <= 5000) {
       shapiro.test(spats_residuals)
     } else {
-      list(p.value = NA, method = "Sample size inappropriate")
+      list(p.value = NA, method = "Shapiro-Wilk not applicable (sample size)")
     }
   }, error = function(e) list(p.value = NA, method = "Test failed"))
   
@@ -587,11 +636,15 @@ calculate_comprehensive_comparison <- function() {
   }, error = function(e) list(p.value = NA, method = "Moran test failed"))
   
   # Write comprehensive summary
-  sink("integrated_model_comparison.txt")
-  cat("=== INTEGRATED MODEL COMPARISON SUMMARY ===\n")
+  sink("integrated_model_comparison_irregular.txt")
+  cat("=== INTEGRATED MODEL COMPARISON SUMMARY (IRREGULAR PATTERN) ===\n")
   cat("Date:", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n\n")
   cat("Comparison of RCBD vs SpATS Spatial Model\n")
   cat("Dataset: 54 observations, 3 treatments, 3 blocks\n")
+  cat("Environmental Pattern: Irregular zones matching presentation slide\n")
+  cat("- Low zone: -1.5 t/ha (irregular diagonal patches)\n")
+  cat("- Medium zone: 0 t/ha (middle areas)\n")
+  cat("- High zone: +1.5 t/ha (irregular top patches)\n\n")
   if (is_mixed_model) {
     cat("RCBD Model: Linear Mixed Model with random block effects\n")
   } else {
@@ -615,18 +668,23 @@ calculate_comprehensive_comparison <- function() {
   cat(sprintf("%-12s %-12s %-15s %-15s %-12s %-12s\n", 
               "---------", "-----------", "-------------", "--------------", "----------", "-----------"))
   
-  for(trt in names(true_treatment_effects)) {
+  for(trt in treatment_names) {
     cat(sprintf("%-12s %-12.3f %-15.3f %-15.3f %-12.3f %-12.3f\n",
-                trt, 
-                true_treatment_effects[trt],
-                rcbd_treatment_est[trt],
-                spats_treatment_est[trt],
-                rcbd_treatment_errors[trt],
-                spats_treatment_errors[trt]))
+                trt, true_treatment_effects_ordered[trt], rcbd_treatment_est_ordered[trt], spats_treatment_est_ordered[trt],
+                rcbd_treatment_errors[trt], spats_treatment_errors[trt]))
   }
   
+  # Environmental pattern analysis
+  cat("\n\nENVIRONMENTAL PATTERN ANALYSIS:\n")
+  cat("===============================\n\n")
+  cat("Irregular Environmental Zones:\n")
+  zone_counts <- table(dataset1$spatial_gradient)
+  cat("- Low zone (-1.5 t/ha):", zone_counts["-1.5"], "observations\n")
+  cat("- Medium zone (0 t/ha):", zone_counts["0"], "observations\n") 
+  cat("- High zone (+1.5 t/ha):", zone_counts["1.5"], "observations\n\n")
+  
   # Block effects vs spatial modeling
-  cat("\n\nBLOCK EFFECTS vs SPATIAL MODELING:\n")
+  cat("BLOCK EFFECTS vs SPATIAL MODELING:\n")
   cat("===================================\n\n")
   cat("RCBD Block Effects:\n")
   if (is_mixed_model) {
@@ -636,15 +694,17 @@ calculate_comprehensive_comparison <- function() {
   }
   for(i in 1:nrow(block_effects_df)) {
     cat(sprintf("Block %d: %+.4f t/ha\n", 
-                block_effects_df$block[i], 
-                block_effects_df$block_effect[i]))
+                block_effects_df$block[i], block_effects_df$block_effect[i]))
   }
   
   cat("\nSpATS Spatial Modeling:\n")
   cat("- Uses PSANOVA splines to model continuous spatial variation\n")
+  # Calculate relative spatial effects (remove intercept to show spatial variation)
+  intercept_val <- if("Intercept" %in% names(spats_coef)) spats_coef["Intercept"] else mean(pred_grid_fine$spline_effect, na.rm = TRUE)
+  relative_spatial_effects <- pred_grid_fine$spline_effect - intercept_val
   cat("- Spatial effect range:", sprintf("%.3f to %.3f t/ha", 
-                                         min(pred_grid_fine$spline_effect, na.rm = TRUE),
-                                         max(pred_grid_fine$spline_effect, na.rm = TRUE)), "\n")
+                                         min(relative_spatial_effects, na.rm = TRUE),
+                                         max(relative_spatial_effects, na.rm = TRUE)), "\n")
   
   # Assumption testing
   cat("\n\nMODEL ASSUMPTION TESTS:\n")
@@ -659,54 +719,45 @@ calculate_comprehensive_comparison <- function() {
   }
   if (!is.null(rcbd_assumptions$normality) && !is.na(rcbd_assumptions$normality$p.value)) {
     cat(sprintf("Normality (Shapiro-Wilk): W = %.4f, p-value = %.4f\n",
-                rcbd_assumptions$normality$statistic,
-                rcbd_assumptions$normality$p.value))
+                rcbd_assumptions$normality$statistic, rcbd_assumptions$normality$p.value))
     cat(sprintf("Interpretation: %s\n",
-                ifelse(rcbd_assumptions$normality$p.value > 0.05,
-                       "Residuals normally distributed (p > 0.05)",
-                       "Non-normal residuals (p ≤ 0.05)")))
+                ifelse(rcbd_assumptions$normality$p.value > 0.05, "Normality assumption satisfied", "Normality assumption violated")))
   }
   
   if (!is.null(rcbd_assumptions$homoscedasticity_bartlett) && !is.na(rcbd_assumptions$homoscedasticity_bartlett$p.value)) {
     cat(sprintf("Homoscedasticity (Bartlett): K-squared = %.4f, p-value = %.4f\n",
-                rcbd_assumptions$homoscedasticity_bartlett$statistic,
-                rcbd_assumptions$homoscedasticity_bartlett$p.value))
+                rcbd_assumptions$homoscedasticity_bartlett$statistic, rcbd_assumptions$homoscedasticity_bartlett$p.value))
     cat(sprintf("Interpretation: %s\n",
-                ifelse(rcbd_assumptions$homoscedasticity_bartlett$p.value > 0.05,
-                       "Homoscedastic residuals (p > 0.05)",
-                       "Heteroscedastic residuals (p ≤ 0.05)")))
+                ifelse(rcbd_assumptions$homoscedasticity_bartlett$p.value > 0.05, "Homoscedasticity assumption satisfied", "Homoscedasticity assumption violated")))
   }
   
   cat("\nSpATS Model:\n")
   cat("------------\n")
   if (!is.null(spats_assumptions$normality) && !is.na(spats_assumptions$normality$p.value)) {
     cat(sprintf("Normality (Shapiro-Wilk): W = %.4f, p-value = %.4f\n",
-                spats_assumptions$normality$statistic,
-                spats_assumptions$normality$p.value))
+                spats_assumptions$normality$statistic, spats_assumptions$normality$p.value))
     cat(sprintf("Interpretation: %s\n",
-                ifelse(spats_assumptions$normality$p.value > 0.05,
-                       "Residuals normally distributed (p > 0.05)",
-                       "Non-normal residuals (p ≤ 0.05)")))
+                ifelse(spats_assumptions$normality$p.value > 0.05, "Normality assumption satisfied", "Normality assumption violated")))
   }
   
   if (!is.null(spats_assumptions$homoscedasticity_bartlett) && !is.na(spats_assumptions$homoscedasticity_bartlett$p.value)) {
     cat(sprintf("Homoscedasticity (Bartlett): K-squared = %.4f, p-value = %.4f\n",
-                spats_assumptions$homoscedasticity_bartlett$statistic,
-                spats_assumptions$homoscedasticity_bartlett$p.value))
+                spats_assumptions$homoscedasticity_bartlett$statistic, spats_assumptions$homoscedasticity_bartlett$p.value))
     cat(sprintf("Interpretation: %s\n",
-                ifelse(spats_assumptions$homoscedasticity_bartlett$p.value > 0.05,
-                       "Homoscedastic residuals (p > 0.05)",
-                       "Heteroscedastic residuals (p ≤ 0.05)")))
+                ifelse(spats_assumptions$homoscedasticity_bartlett$p.value > 0.05, "Homoscedasticity assumption satisfied", "Homoscedasticity assumption violated")))
   }
   
   if (!is.null(spats_assumptions$spatial_autocorr_moran) && !is.na(spats_assumptions$spatial_autocorr_moran$p.value)) {
+    # Extract the Moran's I statistic (first element if multiple)
+    moran_i_value <- if(is.numeric(spats_assumptions$spatial_autocorr_moran$estimate)) {
+      spats_assumptions$spatial_autocorr_moran$estimate[1]
+    } else {
+      spats_assumptions$spatial_autocorr_moran$estimate["Moran I statistic"]
+    }
     cat(sprintf("Spatial Autocorrelation (Moran's I): I = %.4f, p-value = %.4f\n",
-                spats_assumptions$spatial_autocorr_moran$estimate[1],
-                spats_assumptions$spatial_autocorr_moran$p.value))
+                moran_i_value, spats_assumptions$spatial_autocorr_moran$p.value))
     cat(sprintf("Interpretation: %s\n",
-                ifelse(spats_assumptions$spatial_autocorr_moran$p.value > 0.05,
-                       "No significant spatial autocorrelation (p > 0.05)",
-                       "Significant spatial autocorrelation present (p ≤ 0.05)")))
+                ifelse(spats_assumptions$spatial_autocorr_moran$p.value > 0.05, "No significant spatial autocorrelation", "Significant spatial autocorrelation detected")))
   }
   
   # Model comparison interpretation
@@ -725,31 +776,32 @@ calculate_comprehensive_comparison <- function() {
     cat("Environmental Effect Estimation: RCBD Model performs better (lower error)\n")
   }
   
-  cat("\nKey Differences:\n")
-  cat("- RCBD: Captures environmental variation through discrete block effects\n")
+  cat("\nKey Differences with Irregular Pattern:\n")
+  cat("- RCBD: Attempts to capture environmental variation through discrete block effects\n")
   cat("- SpATS: Models continuous spatial variation using smooth splines\n")
-  cat("- Mixed Model: Accounts for pseudoreplication with random effects (if convergent)\n")
-  cat("- Spatial Model: Explicitly models spatial correlation structure\n")
+  cat("- Irregular Pattern: Creates challenging conditions for both models\n")
+  cat("- Zone Classification: True environmental effects are discrete (-1.5, 0, +1.5)\n")
+  cat("- Spatial Continuity: SpATS assumes smooth transitions; irregular zones violate this\n")
   
   sink()
   
-  cat("Comprehensive model comparison written to: integrated_model_comparison.txt\n")
+  cat("Comprehensive model comparison written to: integrated_model_comparison_irregular.txt\n")
 }
 
 # =============================================================================
 # MAIN EXECUTION
 # =============================================================================
 
-cat("=== GENERATING INTEGRATED PLOT ===\n")
+cat("=== GENERATING INTEGRATED PLOT WITH IRREGULAR ENVIRONMENTAL PATTERN ===\n")
 integrated_plot <- create_integrated_plot()
 
 # Save the plot
 suppressMessages(suppressWarnings(
-  ggsave("integrated_rcbd_spats_comparison.png", integrated_plot, 
+  ggsave("integrated_rcbd_spats_comparison_irregular.png", integrated_plot, 
          width = 14, height = 10, dpi = 300)
 ))
 
-cat("Integrated plot saved as: integrated_rcbd_spats_comparison.png\n\n")
+cat("Integrated plot saved as: integrated_rcbd_spats_comparison_irregular.png\n\n")
 
 # Calculate comprehensive comparison
 cat("=== CALCULATING COMPREHENSIVE MODEL COMPARISON ===\n")
@@ -772,10 +824,11 @@ if (length(warnings()) > 0) {
 }
 
 cat("Files generated:\n")
-cat("1. integrated_rcbd_spats_comparison.png - Comprehensive visualization\n")
-cat("2. integrated_model_comparison.txt - Detailed statistical comparison\n")
+cat("1. integrated_rcbd_spats_comparison_irregular.png - Comprehensive visualization\n")
+cat("2. integrated_model_comparison_irregular.txt - Detailed statistical comparison\n")
 cat("\nThe plot shows:\n")
-cat("- Background: True environmental gradient\n")
+cat("- Background: Irregular environmental gradient matching presentation slide\n")
+cat("- Environmental zones: Low (-1.5), Medium (0), High (+1.5) t/ha\n")
 cat("- Purple contours: SpATS estimated spatial effects\n")
 cat("- Colored block labels: RCBD estimated block effects\n")
 cat("- Plot borders: Treatment effects (colored by magnitude)\n")

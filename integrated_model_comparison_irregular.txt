@@ -1,0 +1,87 @@
+=== INTEGRATED MODEL COMPARISON SUMMARY (IRREGULAR PATTERN) ===
+Date: 2025-08-04 18:05:55 
+
+Comparison of RCBD vs SpATS Spatial Model
+Dataset: 54 observations, 3 treatments, 3 blocks
+Environmental Pattern: Irregular zones matching presentation slide
+- Low zone: -1.5 t/ha (irregular diagonal patches)
+- Medium zone: 0 t/ha (middle areas)
+- High zone: +1.5 t/ha (irregular top patches)
+
+RCBD Model: Linear Mixed Model with random block effects
+SpATS Model: Spatial spline model with PSANOVA smoothing
+
+OVERALL MODEL PERFORMANCE (Mean Absolute Errors):
+=================================================
+
+Model                Treatment_Error      Environmental_Error      
+-----                ---------------      ------------------       
+RCBD_Model           0.1384               0.6277                   
+SpATS_Spatial        0.0360               0.4488                   
+
+
+ESTIMATED vs TRUE TREATMENT EFFECTS:
+====================================
+
+Treatment    True_Effect  RCBD_Estimate   SpATS_Estimate  RCBD_Error   SpATS_Error 
+---------    -----------  -------------   --------------  ----------   ----------- 
+Control      0.000        0.000           0.000           0.000        0.000       
+Reference    0.500        0.399           0.452           0.101        0.048       
+Test         1.000        0.686           0.940           0.314        0.060       
+
+
+ENVIRONMENTAL PATTERN ANALYSIS:
+===============================
+
+Irregular Environmental Zones:
+- Low zone (-1.5 t/ha): 6 observations
+- Medium zone (0 t/ha): 30 observations
+- High zone (+1.5 t/ha): 18 observations
+
+BLOCK EFFECTS vs SPATIAL MODELING:
+===================================
+
+RCBD Block Effects:
+(Random Effects from Mixed Model)
+Block 1: -0.6795 t/ha
+Block 2: +0.7564 t/ha
+Block 3: -0.0769 t/ha
+
+SpATS Spatial Modeling:
+- Uses PSANOVA splines to model continuous spatial variation
+- Spatial effect range: -1.726 to 1.367 t/ha 
+
+
+MODEL ASSUMPTION TESTS:
+=======================
+
+RCBD Model:
+-----------
+(Linear Mixed Model with random block effects)
+Normality (Shapiro-Wilk): W = 0.9653, p-value = 0.1191
+Interpretation: Normality assumption satisfied
+Homoscedasticity (Bartlett): K-squared = 3.3288, p-value = 0.1893
+Interpretation: Homoscedasticity assumption satisfied
+
+SpATS Model:
+------------
+Normality (Shapiro-Wilk): W = 0.9607, p-value = 0.0742
+Interpretation: Normality assumption satisfied
+Homoscedasticity (Bartlett): K-squared = 5.1737, p-value = 0.0753
+Interpretation: Homoscedasticity assumption satisfied
+Spatial Autocorrelation (Moran's I): I = -0.1630, p-value = 0.9489
+Interpretation: No significant spatial autocorrelation
+
+
+MODEL COMPARISON INTERPRETATION:
+================================
+
+Treatment Effect Estimation: SpATS performs better (lower error)
+Environmental Effect Estimation: SpATS performs better (lower error)
+
+Key Differences with Irregular Pattern:
+- RCBD: Attempts to capture environmental variation through discrete block effects
+- SpATS: Models continuous spatial variation using smooth splines
+- Irregular Pattern: Creates challenging conditions for both models
+- Zone Classification: True environmental effects are discrete (-1.5, 0, +1.5)
+- Spatial Continuity: SpATS assumes smooth transitions; irregular zones violate this

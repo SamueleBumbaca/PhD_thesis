@@ -1,9 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.26)  3 AUG 2025 11:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.26)  4 AUG 2025 18:34
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./PhD_Thesis_Presentation_clean.tex
-(PhD_Thesis_Presentation_clean.tex
+**"c:/Users/samuele.bumbaca/OneDrive - SAGEA Group/Desktop/PhD_thesis/Presentaz
+ione/PhD_Thesis_Presentation_clean.tex"
+
+(c:/Users/samuele.bumbaca/OneDrive - SAGEA Group/Desktop/PhD_thesis/Presentazio
+ne/PhD_Thesis_Presentation_clean.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
 
@@ -16,20 +20,20 @@ basemodes.sty
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoo
 lbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count275
+\etb@tempcnta=\count271
 )
 \beamer@tempbox=\box53
-\beamer@tempcount=\count276
-\c@beamerpauses=\count277
+\beamer@tempcount=\count272
+\c@beamerpauses=\count273
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basedecode.sty
-\beamer@slideinframe=\count278
-\beamer@minimum=\count279
+\beamer@slideinframe=\count274
+\beamer@minimum=\count275
 \beamer@decode@box=\box54
 )
 \beamer@commentbox=\box55
-\beamer@modecount=\count280
+\beamer@modecount=\count276
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex
 .sty
@@ -58,26 +62,26 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \beamer@sectionbox=\box59
 \beamer@logobox=\box60
 \beamer@linebox=\box61
-\beamer@sectioncount=\count281
-\beamer@subsubsectionmax=\count282
-\beamer@subsectionmax=\count283
-\beamer@sectionmax=\count284
-\beamer@totalheads=\count285
-\beamer@headcounter=\count286
-\beamer@partstartpage=\count287
-\beamer@sectionstartpage=\count288
-\beamer@subsectionstartpage=\count289
-\beamer@animationtempa=\count290
-\beamer@animationtempb=\count291
-\beamer@xpos=\count292
-\beamer@ypos=\count293
-\beamer@ypos@offset=\count294
-\beamer@showpartnumber=\count295
-\beamer@currentsubsection=\count296
-\beamer@coveringdepth=\count297
-\beamer@sectionadjust=\count298
-\beamer@toclastsection=\count299
-\beamer@tocsectionnumber=\count300
+\beamer@sectioncount=\count277
+\beamer@subsubsectionmax=\count278
+\beamer@subsectionmax=\count279
+\beamer@sectionmax=\count280
+\beamer@totalheads=\count281
+\beamer@headcounter=\count282
+\beamer@partstartpage=\count283
+\beamer@sectionstartpage=\count284
+\beamer@subsectionstartpage=\count285
+\beamer@animationtempa=\count286
+\beamer@animationtempb=\count287
+\beamer@xpos=\count288
+\beamer@ypos=\count289
+\beamer@ypos@offset=\count290
+\beamer@showpartnumber=\count291
+\beamer@currentsubsection=\count292
+\beamer@coveringdepth=\count293
+\beamer@sectionadjust=\count294
+\beamer@toclastsection=\count295
+\beamer@tocsectionnumber=\count296
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseoptions.sty
@@ -97,9 +101,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 x.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
+\Gm@cnth=\count297
+\Gm@cntv=\count298
+\c@Gm@tempcnt=\count299
 \Gm@bindingoffset=\dimen164
 \Gm@wd@mp=\dimen165
 \Gm@odd@mp=\dimen166
@@ -155,15 +159,15 @@ fmathutil.code.tex
 \pgf@ya=\dimen179
 \pgf@yb=\dimen180
 \pgf@yc=\dimen181
-\c@pgf@counta=\count304
-\c@pgf@countb=\count305
-\c@pgf@countc=\count306
-\c@pgf@countd=\count307
+\c@pgf@counta=\count300
+\c@pgf@countb=\count301
+\c@pgf@countc=\count302
+\c@pgf@countd=\count303
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pg
 fmathparser.code.tex
 \pgfmath@dimen=\dimen182
-\pgfmath@count=\count308
+\pgfmath@count=\count304
 \pgfmath@box=\box63
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
@@ -191,7 +195,7 @@ fmathfunctions.integerarithmetics.code.tex)
 fmathcalc.code.tex)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pg
 fmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count309
+\c@pgfmathroundto@lastzeros=\count305
 )))
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.c
 lo
@@ -215,11 +219,11 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: xetex.def on input line 106.
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\
-pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
@@ -241,34 +245,40 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen194
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count310
-\c@pgf@countb=\count311
-\c@pgf@countc=\count312
-\c@pgf@countd=\count313
+\c@pgf@counta=\count306
+\c@pgf@countb=\count307
+\c@pgf@countc=\count308
+\c@pgf@countd=\count309
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count314
+\pgf@sys@id@count=\count310
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
 ayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
-ayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ayer\pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
+ayer\pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
 ayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count311
 )))
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
 ayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count315
-\pgfsyssoftpath@bigbuffer@items=\count316
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systeml
 ayer\pgfsysprotocol.code.tex
@@ -282,12 +292,11 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: xetex.def on input line 274.
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\math
 color.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
@@ -338,7 +347,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count317
+\pgf@picture@serial@count=\count314
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicla
 yer\pgfcoregraphicstate.code.tex
@@ -373,8 +382,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 yer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen274
-\pgf@sys@shading@range@num=\count318
-\pgf@shadingcount=\count319
+\pgf@sys@shading@range@num=\count315
+\pgf@shadingcount=\count316
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicla
 yer\pgfcoreimage.code.tex
@@ -404,8 +413,8 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities
 \xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count320
-\XC@countmixins=\count321
+\XC@nummixins=\count317
+\XC@countmixins=\count318
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi
 -ltx.sty
@@ -443,7 +452,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 ))
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycol
 or.sty
@@ -465,7 +474,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 ptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count322
+\c@section@level=\count319
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\s
 tringenc.sty
@@ -473,26 +482,22 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen275
-\Hy@linkcounter=\count323
-\Hy@pagecounter=\count324
+\Hy@linkcounter=\count320
+\Hy@pagecounter=\count321
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1e
 nc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\int
 calc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count325
+\Hy@SavedSpaceFactor=\count322
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puen
 c.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Option `bookmarks' set `true' on input line 4066.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 4066.
@@ -504,7 +509,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count326
+\c@Hy@tempcnt=\count323
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
@@ -522,7 +527,7 @@ bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count327
+\Fld@menulength=\count324
 \Field@Width=\dimen277
 \Fld@charsize=\dimen278
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -532,19 +537,22 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count328
+\Hy@abspage=\count325
 
 
 Package hyperref Message: Stopped early.
 
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hxetex.
 
-(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdf
-tex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count329
-\c@bookmark@seq@number=\count330
+(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxet
+ex.def
+File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
+\pdfm@box=\box68
+\c@Hy@AnnotLevel=\count326
+\HyField@AnnotCount=\count327
+\Fld@listcount=\count328
+\c@bookmark@seq@number=\count329
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilechec
 k\rerunfilecheck.sty
@@ -606,36 +614,36 @@ basemisc.sty)
 basetwoscreens.sty)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseoverlay.sty
-\beamer@argscount=\count331
+\beamer@argscount=\count330
 \beamer@lastskipcover=\skip52
-\beamer@trivlistdepth=\count332
+\beamer@trivlistdepth=\count331
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basetitle.sty)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basesection.sty
-\c@lecture=\count333
-\c@part=\count334
-\c@section=\count335
-\c@subsection=\count336
-\c@subsubsection=\count337
+\c@lecture=\count332
+\c@part=\count333
+\c@section=\count334
+\c@subsection=\count335
+\c@subsubsection=\count336
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseframe.sty
-\beamer@framebox=\box68
-\beamer@frametitlebox=\box69
-\beamer@zoombox=\box70
-\beamer@zoomcount=\count338
-\beamer@zoomframecount=\count339
+\beamer@framebox=\box69
+\beamer@frametitlebox=\box70
+\beamer@zoombox=\box71
+\beamer@zoomcount=\count337
+\beamer@zoomframecount=\count338
 \beamer@frametextheight=\dimen279
-\c@subsectionslide=\count340
+\c@subsectionslide=\count339
 \beamer@frametopskip=\skip53
 \beamer@framebottomskip=\skip54
 \beamer@frametopskipautobreak=\skip55
 \beamer@framebottomskipautobreak=\skip56
 \beamer@envbody=\toks30
 \framewidth=\dimen280
-\c@framenumber=\count341
+\c@framenumber=\count340
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseverbatim.sty
@@ -643,21 +651,21 @@ baseverbatim.sty
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseframesize.sty
-\beamer@splitbox=\box71
-\beamer@autobreakcount=\count342
+\beamer@splitbox=\box72
+\beamer@autobreakcount=\count341
 \beamer@autobreaklastheight=\dimen281
 \beamer@frametitletoks=\toks31
 \beamer@framesubtitletoks=\toks32
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseframecomponents.sty
-\beamer@footins=\box72
+\beamer@footins=\box73
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basecolor.sty)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basenotes.sty
-\beamer@frameboxcopy=\box73
+\beamer@frameboxcopy=\box74
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basetoc.sty)
@@ -669,8 +677,8 @@ basetemplates.sty
 baseauxtemplates.sty
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 baseboxes.sty
-\bmb@box=\box74
-\bmb@colorbox=\box75
+\bmb@box=\box75
+\bmb@colorbox=\box76
 \bmb@boxwidth=\dimen282
 \bmb@boxheight=\dimen283
 \bmb@prevheight=\dimen284
@@ -689,8 +697,8 @@ Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks34
 )
 \beamer@bibiconwidth=\skip57
-\c@figure=\count343
-\c@table=\count344
+\c@figure=\count342
+\c@table=\count343
 \abovecaptionskip=\skip58
 \belowcaptionskip=\skip59
 )
@@ -728,19 +736,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 n.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count345
+\inf@bad=\count344
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count346
-\leftroot@=\count347
+\uproot@=\count345
+\leftroot@=\count346
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count348
-\DOTSCASE@=\count349
+\classnum@=\count347
+\DOTSCASE@=\count348
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box76
-\strutbox@=\box77
+\Mathstrutbox@=\box77
+\strutbox@=\box78
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -748,20 +756,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen293
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count350
+\macc@depth=\count349
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count351
+\c@MaxMatrixCols=\count350
 \dotsspace@=\muskip18
-\c@parentequation=\count352
-\dspbrk@lvl=\count353
+\c@parentequation=\count351
+\dspbrk@lvl=\count352
 \tag@help=\toks36
-\row@=\count354
-\column@=\count355
-\maxfields@=\count356
+\row@=\count353
+\column@=\count354
+\maxfields@=\count355
 \andhelp@=\toks37
 \eqnshift@=\dimen294
 \alignsep@=\dimen295
@@ -789,7 +797,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip65
 \dth@everypar=\toks45
 )
-\c@theorem=\count357
+\c@theorem=\count356
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer
 basethemes.sty))
@@ -821,37 +829,45 @@ outerthemeinfolines.sty))
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks46
 \inpenc@posthook=\toks47
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.
 sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-)
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+16.
+
+(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/tools\multico
 l.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count358
-\mult@box=\box78
+\c@tracingmulticols=\count357
+\mult@box=\box79
 \multicol@leftmargin=\dimen302
-\c@unbalance=\count359
-\c@collectmore=\count360
-\doublecol@number=\count361
-\multicoltolerance=\count362
-\multicolpretolerance=\count363
+\c@unbalance=\count358
+\c@collectmore=\count359
+\doublecol@number=\count360
+\multicoltolerance=\count361
+\multicolpretolerance=\count362
 \full@width=\dimen303
 \page@free=\dimen304
 \premulticols=\dimen305
 \postmulticols=\dimen306
 \multicolsep=\skip66
 \multicolbaselineskip=\skip67
-\partial@page=\box79
-\last@line=\box80
-\mc@boxedresult=\box81
+\partial@page=\box80
+\last@line=\box81
+\mc@boxedresult=\box82
 \maxbalancingoverflow=\dimen307
-\mult@rightbox=\box82
-\mult@grightbox=\box83
-\mult@firstbox=\box84
-\mult@gfirstbox=\box85
-\@tempa=\box86
+\mult@rightbox=\box83
+\mult@grightbox=\box84
+\mult@firstbox=\box85
+\mult@gfirstbox=\box86
 \@tempa=\box87
 \@tempa=\box88
 \@tempa=\box89
@@ -887,16 +903,17 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \@tempa=\box119
 \@tempa=\box120
 \@tempa=\box121
-\c@minrows=\count364
-\c@columnbadness=\count365
-\c@finalcolumnbadness=\count366
+\@tempa=\box122
+\c@minrows=\count363
+\c@columnbadness=\count364
+\c@finalcolumnbadness=\count365
 \last@try=\dimen308
 \multicolovershoot=\dimen309
 \multicolundershoot=\dimen310
-\mult@nat@firstbox=\box122
-\colbreak@box=\box123
-\mc@col@check@num=\count367
-\g__mc_curr_col_int=\count368
+\mult@nat@firstbox=\box123
+\colbreak@box=\box124
+\mc@col@check@num=\count366
+\g__mc_curr_col_int=\count367
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendl
 ayer\tikz.sty
@@ -907,7 +924,7 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules
 \pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box124
+\pgfnodeparttextbox=\box125
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules
 \pgfmoduleplot.code.tex
@@ -940,7 +957,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librari
 es\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count369
+\pgf@plot@mark@count=\count368
 \pgfplotmarksize=\dimen315
 )
 \tikz@lastx=\dimen316
@@ -951,23 +968,23 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@lastmovetoy=\dimen321
 \tikzleveldistance=\dimen322
 \tikzsiblingdistance=\dimen323
-\tikz@figbox=\box125
-\tikz@figbox@bg=\box126
-\tikz@tempbox=\box127
-\tikz@tempbox@bg=\box128
-\tikztreelevel=\count370
-\tikznumberofchildren=\count371
-\tikznumberofcurrentchild=\count372
-\tikz@fig@count=\count373
+\tikz@figbox=\box126
+\tikz@figbox@bg=\box127
+\tikz@tempbox=\box128
+\tikz@tempbox@bg=\box129
+\tikztreelevel=\count369
+\tikznumberofchildren=\count370
+\tikznumberofcurrentchild=\count371
+\tikz@fig@count=\count372
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules
 \pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count374
-\pgfmatrixcurrentcolumn=\count375
-\pgf@matrix@numberofcolumns=\count376
+\pgfmatrixcurrentrow=\count373
+\pgfmatrixcurrentcolumn=\count374
+\pgf@matrix@numberofcolumns=\count375
 )
-\tikz@expandcount=\count377
+\tikz@expandcount=\count376
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronten
 dlayer/tikz/libraries\tikzlibrarytopaths.code.tex
@@ -981,21 +998,23 @@ Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 ty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen324
-\ar@mcellbox=\box129
+\ar@mcellbox=\box130
 \extrarowheight=\dimen325
 \NC@list=\toks50
 \extratabsurround=\skip68
 \backup@length=\skip69
-\ar@cellbox=\box130
+\ar@cellbox=\box131
 )
 \everycr=\toks51
 \minrowclearance=\skip70
-\rownum=\count378
+\rownum=\count377
 )
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3b
-ackend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count379
+ackend-xetex.def
+File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count378
+\g__pdfannot_backend_int=\count379
+\g__pdfannot_backend_link_int=\count380
 ) (PhD_Thesis_Presentation_clean.aux)
 \openout1 = `PhD_Thesis_Presentation_clean.aux'.
 
@@ -1009,6 +1028,8 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
@@ -1019,21 +1040,21 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* h-part:(L,W,R)=(10.95pt, 342.29536pt, 10.95pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=342.2953pt
+* \textwidth=342.29536pt
 * \textheight=244.6939pt
-* \oddsidemargin=-61.31996pt
-* \evensidemargin=-61.31996pt
+* \oddsidemargin=-61.31999pt
+* \evensidemargin=-61.31999pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1052,35 +1073,8 @@ LaTeX Font Info:    ... okay on input line 86.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\s
-upp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count380
-\scratchdimen=\dimen326
-\scratchbox=\box131
-\nofMPsegments=\count381
-\nofMParguments=\count382
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count383
-\MPscratchDim=\dimen327
-\MPnumerator=\count384
-\makeMPintoPDFobject=\count385
-\everyMPtoPDFconversion=\toks53
-)
-(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\
-epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epst
-opdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
 Package hyperref Info: Link coloring OFF on input line 86.
- (PhD_Thesis_Presentation_clean.out)
-(PhD_Thesis_Presentation_clean.out)
+(PhD_Thesis_Presentation_clean.out) (PhD_Thesis_Presentation_clean.out)
 \@outlinefile=\write5
 \openout5 = `PhD_Thesis_Presentation_clean.out'.
 
@@ -1091,56 +1085,41 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 86.
+(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 86.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 86.
+(Font)                  OT1/cmr/bx/n --> T1/lmss/b/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 86.
+(Font)                  OT1/cmr/bx/n --> T1/lmss/b/n on input line 86.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 86.
+(Font)                  OT1/cmss/m/n --> T1/lmss/m/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 86.
+(Font)                  OT1/cmss/bx/n --> T1/lmss/m/n on input line 86.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 86.
+(Font)                  OT1/cmr/m/it --> T1/lmss/m/it on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 86.
+(Font)                  OT1/cmr/bx/it --> T1/lmss/m/it on input line 86.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 86.
+(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 86.
+(Font)                  OT1/cmtt/m/n --> T1/lmtt/m/n on input line 86.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 86.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 86.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 86.
+(Font)                  OT1/cmss/b/n --> T1/lmr/b/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 86.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 86.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 86.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 86
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 86
-.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 86.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 86
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 86.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 86.
 
 (C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/translator\tr
 anslator-basic-dictionary-English.dict
@@ -1166,17 +1145,13 @@ Dictionary: translator-numbers-dictionary, Language: English
 anslator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (PhD_Thesis_Presentation_clean.nav)
-<Imgs/Loghi.png, id=12, 364.19528pt x 54.62929pt>
-File: Imgs/Loghi.png Graphic file (type png)
-<use Imgs/Loghi.png>
-Package pdftex.def Info: Imgs/Loghi.png  used on input line 91.
-(pdftex.def)             Requested size: 291.35739pt x 43.7043pt.
+File: Imgs/Loghi.png Graphic file (type bmp)
+<Imgs/Loghi.png>
 
 
 [1
 
-{C:/Users/samuele.bumbaca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./
-Imgs/Loghi.png>]
+]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 171
 .
 
@@ -1191,15 +1166,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 171
 .fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
 
-(C:\Users\samuele.bumbaca\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccen
-t\ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-Overfull \vbox (1.1045pt too high) detected at line 171
+Overfull \vbox (0.76503pt too high) detected at line 171
  []
 
 
@@ -1215,7 +1195,7 @@ Overfull \vbox (1.1045pt too high) detected at line 171
 [4
 
 ]
-Overfull \vbox (4.27771pt too high) detected at line 390
+Overfull \vbox (4.29836pt too high) detected at line 390
  []
 
 
@@ -1227,7 +1207,7 @@ Overfull \vbox (4.27771pt too high) detected at line 390
 [6
 
 ]
-Overfull \vbox (6.04333pt too high) detected at line 524
+Overfull \vbox (6.36864pt too high) detected at line 524
  []
 
 
@@ -1235,15 +1215,27 @@ Overfull \vbox (6.04333pt too high) detected at line 524
 [7
 
 ]
+Overfull \vbox (63.60489pt too high) detected at line 568
+ []
+
+
 
 [8
 
 ]
+File: ../integrated_rcbd_spats_comparison_irregular.png Graphic file (type bmp)
+
+<../integrated_rcbd_spats_comparison_irregular.png>
+
+Overfull \vbox (129.98663pt too high) detected at line 611
+ []
+
+
 
 [9
 
 ]
-Overfull \hbox (7.19022pt too wide) in paragraph at lines 647--647
+Overfull \hbox (50.08305pt too wide) in paragraph at lines 673--673
  [] 
  []
 
@@ -1256,15 +1248,11 @@ Overfull \hbox (7.19022pt too wide) in paragraph at lines 647--647
 [11
 
 ]
-Overfull \vbox (1.40265pt too high) detected at line 723
- []
-
-
 
 [12
 
 ]
-Overfull \hbox (3.49217pt too wide) in paragraph at lines 769--769
+Overfull \hbox (7.23679pt too wide) in paragraph at lines 794--794
  [] 
  []
 
@@ -1273,88 +1261,8 @@ Overfull \hbox (3.49217pt too wide) in paragraph at lines 769--769
 [13
 
 ]
-Overfull \hbox (1.92197pt too wide) in paragraph at lines 829--829
-[][]  
- []
-
-
-Overfull \vbox (47.5074pt too high) detected at line 829
- []
-
-
 
 [14
-
-]
-Overfull \vbox (62.9899pt too high) detected at line 883
- []
-
-
-
-[15
-
-]
-Overfull \vbox (91.66002pt too high) detected at line 939
- []
-
-
-
-[16
-
-]
-
-[17
-
-]
-
-[18
-
-]
-<Imgs/rcbd_trial_design_blocks.png, id=671, 867.24pt x 578.16pt>
-File: Imgs/rcbd_trial_design_blocks.png Graphic file (type png)
-<use Imgs/rcbd_trial_design_blocks.png>
-Package pdftex.def Info: Imgs/rcbd_trial_design_blocks.png  used on input line 
-1074.
-(pdftex.def)             Requested size: 178.8497pt x 119.22932pt.
-
-
-[19
-
- <./Imgs/rcbd_trial_design_blocks.png>]
-<Imgs/variogram_trial_design_spatial.png, id=703, 867.24pt x 578.16pt>
-File: Imgs/variogram_trial_design_spatial.png Graphic file (type png)
-<use Imgs/variogram_trial_design_spatial.png>
-Package pdftex.def Info: Imgs/variogram_trial_design_spatial.png  used on input
- line 1103.
-(pdftex.def)             Requested size: 178.8497pt x 119.22932pt.
-
-Overfull \hbox (2.74086pt too wide) detected at line 1103
-[]
- []
-
-
-
-[20
-
- <./Imgs/variogram_trial_design_spatial.png>]
-<Imgs/spats_trial_design_spline.png, id=734, 867.24pt x 578.16pt>
-File: Imgs/spats_trial_design_spline.png Graphic file (type png)
-<use Imgs/spats_trial_design_spline.png>
-Package pdftex.def Info: Imgs/spats_trial_design_spline.png  used on input line
- 1132.
-(pdftex.def)             Requested size: 178.8497pt x 119.22932pt.
-
-
-[21
-
- <./Imgs/spats_trial_design_spline.png>]
-Overfull \hbox (104.54517pt too wide) in paragraph at lines 1156--1156
- [] 
- []
-
-
-
-[22
 
 ]
 \tf@nav=\write6
@@ -1376,47 +1284,12 @@ hanged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26080 strings out of 468148
- 532768 string characters out of 5426221
- 917172 words of memory out of 5000000
- 54117 multiletter control sequences out of 15000+600000
- 649829 words of font info for 94 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,18n,123p,449b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcss1000.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\samuele.bumbaca\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\sa
-muele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.
-pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecsx0800.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecsx0600.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\samuele.bumbaca\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\s
-amuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200
-.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecsx1095.pk> <C:\Users\samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/lj
-four/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\samuele.bumbaca\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\samuele.bumbaca\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\
-samuele.bumbaca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss144
-0.pk><C:/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/samuele.bumbaca/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/samuele.b
-umbaca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-<C:/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmss8.pfb><C:/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/samuele.bumbaca/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/samuele.bumb
-aca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb><C:/Users/samuele.bumbaca/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on PhD_Thesis_Presentation_clean.pdf (22 pages, 1715819 bytes).
-PDF statistics:
- 1408 PDF objects out of 1440 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 1899 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25435 strings out of 403264
+ 502879 string characters out of 5459139
+ 929721 words of memory out of 5000000
+ 53396 multiletter control sequences out of 15000+600000
+ 698400 words of font info for 95 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 128i,14n,123p,530b,1140s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on PhD_Thesis_Presentation_clean.pdf (14 pages).

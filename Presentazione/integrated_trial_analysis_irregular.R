@@ -3,7 +3,7 @@
 # showing both block effects (RCBD) and spatial spline effects (SpATS)
 
 # Set library path to user directory
-.libPaths(c("C:/Users/samuele.bumbaca/Documents/R/win-library/4.5", .libPaths()))
+#.libPaths(c("C:/Users/samuele.bumbaca/Documents/R/win-library/4.5", .libPaths()))
 
 # Load required packages
 library(ggplot2)

@@ -1,5 +1,5 @@
 === INTEGRATED MODEL COMPARISON SUMMARY (IRREGULAR PATTERN) ===
-Date: 2025-08-04 18:05:55 
+Date: 2025-08-08 11:13:31 
 
 Comparison of RCBD vs SpATS Spatial Model
 Dataset: 54 observations, 3 treatments, 3 blocks

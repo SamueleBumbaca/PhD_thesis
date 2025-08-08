@@ -52,7 +52,7 @@
 % Custom title page
 \setbeamertemplate{title page}{
     \begin{picture}(0,0)
-        \put(25,-220){\includegraphics[width=0.8\paperwidth]{Imgs/Loghi.png}}
+        \put(25,-220){\includegraphics[width=0.8\paperwidth]{Presentazione/Imgs/Loghi.png}}
     \end{picture}
     \vfill
     \centering
@@ -535,11 +535,10 @@
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Synthetic Dataset:}
                 \begin{itemize}
-                    \item \textbf{54 observations} (6×9 grid)
-                    \item \textbf{3 treatments}: Control (0 t/ha), Reference (0.5 t/ha), Test (1.0 t/ha)
-                    \item \textbf{3 blocks} (18 plots each)
-                    \item \textbf{Irregular environmental pattern} matching presentation slide design
-                    \item \textbf{Environmental zones}: Low (-1.5 t/ha), Medium (0 t/ha), High (+1.5 t/ha)
+                    \item \textbf{\small 54 observations}\small (6×9 grid)
+                    \item \textbf{\small 3 treatments}\small : Control (0 t/ha), Reference (0.5 t/ha), Test (1.0 t/ha)
+                    \item \textbf{\small 3 blocks}\small (18 plots each)
+                    \item \textbf{\small Environmental zones}\small : Low (-1.5 t/ha), Medium (0 t/ha), High (+1.5 t/ha)
                 \end{itemize}
             \end{exampleblock}
         \end{column}
@@ -572,7 +571,7 @@
     \frametitle{Statistical Methods Comparison: The Field Trial Design}
     
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{../integrated_rcbd_spats_comparison_irregular.png}
+        \includegraphics[width=0.95\textwidth]{Presentazione/Imgs/integrated_rcbd_spats_comparison_irregular.png}
     \end{center}
     
     \begin{block}{\small Legend Interpretation:}
@@ -622,10 +621,10 @@
                     \scriptsize
                     \begin{tabular}{lcc}
                         \hline
-                        \textbf{Model} & \textbf{Treatment Error} & \textbf{Environmental Error} \\
+                        \textbf{Model} & \textbf{Treat. Error} & \textbf{Env. Error} \\
                         \hline
                         RCBD Model & 0.1384 & 0.6277 \\
-                        SpATS Spatial & \textcolor{green}{\textbf{0.0360}} & \textcolor{green}{\textbf{0.4488}} \\
+                        SpATS Spatial & 0.0360 & 0.4488 \\
                         \hline
                     \end{tabular}
                 \end{table}
@@ -640,8 +639,8 @@
                         \textbf{Treatment} & \textbf{True} & \textbf{RCBD} & \textbf{SpATS} \\
                         \hline
                         Control & 0.000 & 0.000 & 0.000 \\
-                        Reference & 0.500 & 0.399 & \textcolor{green}{\textbf{0.452}} \\
-                        Test & 1.000 & 0.686 & \textcolor{green}{\textbf{0.940}} \\
+                        Reference & 0.500 & 0.399 & 0.452 \\
+                        Test & 1.000 & 0.686 & 0.940 \\
                         \hline
                     \end{tabular}
                 \end{table}
@@ -683,7 +682,7 @@
                     \item[\textcolor{green}{\checkmark}] \textbf{Mathematical modeling} of environmental variability
                     \item[\textcolor{green}{\checkmark}] \textbf{Post-hoc analysis} - no need for prior knowledge of the environment variables and of their distribution
                     \item[\textcolor{green}{\checkmark}] \textbf{Superior performance} in handling spatial heterogeneity
-                    \item[\textcolor{green}{\checkmark}] \textbf{EPPO recognized} approach
+                    \item[\textcolor{green}{\checkmark}] \textbf{EPPO recognized} approach \scriptsize (PP1/152(4) - Design and analysis of efficacy evaluation trials)
                 \end{itemize}
             \end{block}
         \end{column}
@@ -734,15 +733,15 @@
             
             % Background grouping rectangles
             % Light blue background for Visual assessments
-            \node[groupbox, fill=cyan!10, text width=8.5cm, minimum height=2.8cm] (visual_group) at (5,0.5) {};
-            \node[below] at (visual_group.north) {\scriptsize \textbf{Visual assessments (counts, ranks and scores)}};
+            \node[groupbox, fill=cyan!10, text width=2.6cm, minimum height=2cm] (visual_group) at (-1,-2) {};
+            \node[below] at (visual_group.south) {\scriptsize \textbf{Visual assessments (counts, ranks and scores)}};
             
             % Light orange background for Continuous values
-            \node[groupbox, fill=orange!15, text width=3cm, minimum height=2.8cm] (continuous_group) at (0,-3) {};
-            \node[above] at (continuous_group.south) {\scriptsize \textbf{Measurments}};
+            \node[groupbox, fill=orange!15, text width=10cm, minimum height=4.25cm] (continuous_group) at (2.5,1.5) {};
+            \node[above] at (continuous_group.north west) {\scriptsize \textbf{Measurments}};
             
             % GNSS Block
-            \node[block] (gnss) at (-1.5,1) {
+            \node[block] (gnss) at (2.5,2.5) {
                 \textbf{\scriptsize GNSS Positioning}\\
                 \tiny
                 $\bullet$ Global Navigation Satellite System\\
@@ -751,7 +750,7 @@
             };
             
             % Spectral Photogrammetry Block
-            \node[block] (photogrammetry) at (3,0.5) {
+            \node[block] (photogrammetry) at (-1,0.8) {
                 \textbf{\scriptsize Photogrammetry}\\
                 \tiny
                 $\bullet$ Derives spatial coordinates of the pictured trial\\
@@ -759,14 +758,14 @@
             };
             
             % ML Inference Block
-            \node[block] (ml) at (7.85,0.5) {
+            \node[block] (ml) at (-1,-2) {
                 \textbf{\scriptsize Machine Learning}\\
                 \tiny
                 $\bullet$ Reproduces human visual assessments\\
             };
             
             % Georeferenced Measuring Tools
-            \node[block] (tools) at (0,-2.8) {
+            \node[block] (tools) at (6,0.8) {
                 \textbf{\scriptsize Measuring Tools}\\
                 \tiny
                 $\bullet$ Spatially referenced measurements\\
@@ -774,7 +773,7 @@
             };
             
             % Output Block
-            \node[block, fill=green!20, text width=4.5cm] (output) at (6.8,-2.8) {
+            \node[block, fill=green!20, text width=4.5cm] (output) at (5.8,-2.8) {
                 \textbf{\scriptsize EPPO-Compliant Observations}\\
                 \tiny
                 $\bullet$ Spatially referenced data\\
@@ -782,11 +781,11 @@
             };
 
             % Arrows with proper syntax
-            \draw[arrow] (gnss) -- (photogrammetry) node[midway,above] {\tiny Spatial Reference};
-            \draw[arrow] (photogrammetry) -- (ml) node[midway,above] {\tiny Georeferenced Data};
-            \draw[arrow] (ml.south) -- (output.north) node[midway,left] {\tiny Georeferenced Observations};
-            \draw[arrow] (gnss.south) -- (tools.north) node[midway,left] {\tiny Spatial Reference};
-            \draw[arrow] (tools.east) -- (output.west) node[midway,below] {\tiny Georeferenced Observations};
+            \draw[arrow] (gnss) -- (photogrammetry.north) node[midway,above] {\tiny Spatial Reference};
+            \draw[arrow] (photogrammetry) -- (ml) node[midway,right] {\tiny Georeferenced Data};
+            \draw[arrow] (ml.east) -- (output.west) node[midway,above] {\tiny Georeferenced Observations};
+            \draw[arrow] (gnss) -- (tools.north) node[midway,above] {\tiny Spatial Reference};
+            \draw[arrow] (tools.south) -- (output.north) node[midway,left] {\tiny Georeferenced Observations};
 
         \end{tikzpicture}
     \end{center}

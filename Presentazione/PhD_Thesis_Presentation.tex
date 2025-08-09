@@ -1,473 +1,877 @@
+\documentclass[aspectratio=43]{beamer}
 
-% NEW SLIDES: Statistical Methods Comparison
+% Theme and color scheme
+\usetheme{Madrid}
+\usecolortheme{default}
 
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+% Custom colors
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{lightgray}{RGB}{211,211,211}
+\definecolor{uniblue}{RGB}{0,51,102}
+\definecolor{highlight}{RGB}{255,153,0}
+
+% Environmental gradient colors (define globally)
+\definecolor{envlow}{RGB}{255,245,235}     % Light orange
+\definecolor{envmed}{RGB}{253,174,97}      % Medium orange
+\definecolor{envhigh}{RGB}{215,48,31}      % Dark red
+
+% Set theme colors
+\setbeamercolor{structure}{fg=uniblue}
+\setbeamercolor{frametitle}{bg=white,fg=black}
+
+% Custom headline: white background + thin uniblue line at the bottom
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,left]{frametitle}
+    \hspace*{2em} % Move text right
+    \vspace*{-1.5ex}\strut\insertframetitle\strut
+  \end{beamercolorbox}
+  \hspace*{-2em} % Move line right
+  {\color{uniblue}\rule{\paperwidth}{0.7mm}}
+}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Remove footline
+\setbeamertemplate{footline}{}
+
+% Custom title page
+\setbeamertemplate{title page}{
+    \begin{picture}(0,0)
+        \put(25,-220){\includegraphics[width=0.8\paperwidth]{Imgs/Loghi.png}}
+    \end{picture}
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+        \usebeamerfont{title}\inserttitle\par%
+        \ifx\insertsubtitle\@empty%
+        \else%
+            \vskip0.25em%
+            {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        \fi%
+    \end{beamercolorbox}%
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center]{author}
+        \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center]{institute}
+        \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+        \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    \vfill
+}
+
+% Document information
+\title{Geomatic Techniques to Support Phytosanitary Products Tests whithin the EPPO Standard Framework}
+\author{Samuele Bumbaca}
+\institute{University of Turin}
+\date{August 28, 2025}
+
+\begin{document}
+
+% Title slide
 \begin{frame}
-    \frametitle{Statistical Analysis Methods in Field Trials}
-    
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Traditional Approach}
-                \textbf{Randomized Complete Block Design (RCBD)}
-                \begin{itemize}
-                    \item Assumes blocks capture all spatial variation
-                    \item Fixed block effects
-                    \item Cannot model continuous spatial patterns
-                    \item Residual spatial structure ignored
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Geostatistical Approach}
-                \textbf{Spatial Analysis Methods}
-                \begin{itemize}
-                    \item Model spatial correlation explicitly
-                    \item Continuous spatial trends
-                    \item Better residual structure
-                    \item Improved precision
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-    
-    \vspace{1em}
-    
-    \begin{alertblock}{Research Question}
-        Can geostatistical methods provide better estimates when environmental variation is not perfectly captured by experimental blocks?
-    \end{alertblock}
+    \titlepage
 \end{frame}
 
+% Slide 2: The Traditional Approach to Agricultural Trials
 \begin{frame}
-    \frametitle{Simulated Trial Design}
+    \frametitle{The Traditional Approach to Agricultural Trials}
     
-    \begin{columns}[T]
-        \begin{column}{0.6\textwidth}
-            \begin{block}{Experimental Setup}
-                \begin{itemize}
-                    \item 3 treatments × 3 blocks (9 plots)
-                    \item 15m × 10m plots with 17 measurement points each
-                    \item \textbf{Spatial gradient:} -1.5 to +1.5 t/ha across field
-                    \item \textbf{Treatment effects:} Control (0), Test (+2), Reference (+1) t/ha
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Key Issue}
-                Blocks are \textcolor{red}{not perfectly aligned} with environmental gradient, creating spatial confounding
-            \end{block}
+    \begin{columns}
+        \begin{column}{0.65\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[scale=0.8]
+                    % Define colors for treatments
+                    \definecolor{control}{RGB}{220,220,220}
+                    \definecolor{tested}{RGB}{173,216,230}
+                    \definecolor{reference}{RGB}{255,182,193}
+                    
+                    % Draw grid and plots
+                    \foreach \row in {0,1,2} {
+                        \foreach \col in {0,1,2} {
+                            % Calculate position
+                            \pgfmathsetmacro{\x}{\col*2}
+                            \pgfmathsetmacro{\y}{\row*1.5}
+                            
+                            % Assign treatments (Latin square-like design)
+                            \pgfmathsetmacro{\treatment}{int(mod(\col + \row, 3))}
+                            \ifnum\treatment=0
+                                \def\plotcolor{control}
+                                \def\plotlabel{C}
+                            \fi
+                            \ifnum\treatment=1
+                                \def\plotcolor{tested}
+                                \def\plotlabel{T}
+                            \fi
+                            \ifnum\treatment=2
+                                \def\plotcolor{reference}
+                                \def\plotlabel{R}
+                            \fi
+                            
+                            % Draw plot
+                            \fill[\plotcolor] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \draw[black, thick] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \node at (\x+0.75,\y+0.5) {\Large\textbf{\plotlabel}};
+                        }
+                        % Block labels
+                        \node[left] at (-0.3,\row*1.5+0.5) {\textbf{Block \pgfmathprint{int(\row+1)}}};
+                    }
+                    
+                    % Legend
+                    \node[below] at (3,-0.5) {
+                        \begin{tabular}{ll}
+                            \textbf{C} & Control \\
+                            \textbf{T} & Tested Product \\
+                            \textbf{R} & Reference Product
+                        \end{tabular}
+                    };
+                \end{tikzpicture}
+            \end{center}
         \end{column}
         
-        \begin{column}{0.4\textwidth}
-            \begin{table}[h]
-                \centering
-                \scriptsize
-                \begin{tabular}{|c|c|c|}
-                    \hline
-                    \rowcolor{lightblue} \textbf{Block 1} & \textbf{Block 2} & \textbf{Block 3} \\
-                    \hline
-                    Test & Control & Reference \\
-                    Reference & Test & Control \\
-                    Control & Reference & Test \\
-                    \hline
-                \end{tabular}
-                \caption{Randomization Layout}
-            \end{table}
-            
-            \vspace{0.5em}
-            
-            \begin{block}{Spatial Pattern}
+        \begin{column}{0.35\textwidth}
+            \begin{block}{ANOVA Model:}
+                \begin{equation*}
+                    y_{ij} = \mu + \alpha_i + \beta_j + \varepsilon_{ij}
+                \end{equation*}
+                
                 \small
-                \textbf{Environmental gradient:}\\
-                West → East: 10.3 → 14.2 t/ha
+                Where:
+                \begin{itemize}
+                    \item $y_{ij}$ = response
+                    \item $\mu$ = overall mean
+                    \item $\alpha_i$ = treatment effect
+                    \item $\beta_j$ = block effect
+                    \item $\varepsilon_{ij}$ = random error
+                \end{itemize}
             \end{block}
+            
+            \begin{alertblock}{\tiny Note:}
+                {\tiny This is the \textbf{additive model}. Modern approaches may include interaction terms: $\alpha_i \times \beta_j$}
+            \end{alertblock}
         \end{column}
     \end{columns}
 \end{frame}
 
+% Slide 3: Key Assumptions of Traditional ANOVA
 \begin{frame}
-    \frametitle{RCBD Analysis Results}
+    \frametitle{Key Assumptions of Traditional ANOVA}
     
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Model Specification}
-                $$Y_{ij} = \mu + \tau_i + \beta_j + \varepsilon_{ij}$$
-                \begin{itemize}
-                    \item $\mu$: overall mean
-                    \item $\tau_i$: treatment effect
-                    \item $\beta_j$: block effect
-                    \item $\varepsilon_{ij}$: random error
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Treatment Estimates}
-                \scriptsize
-                \begin{tabular}{lcc}
-                    \hline
-                    Treatment & Effect & SE \\
-                    \hline
-                    Control & 0.00 & -- \\
-                    Reference & +2.03 & 0.089 \\
-                    Test & +2.41 & 0.089 \\
-                    \hline
-                \end{tabular}
-            \end{block}
+    \begin{block}{Statistical Assumptions:}
+        \begin{itemize}
+            \item \textbf{Randomization}: Treatments randomly assigned within blocks
+            \item \textbf{Replication}: Each treatment appears in each block
+            \item \textbf{Independence}: Observations are independent given the design
+            \item \textbf{Homoscedasticity }: Equal variances across treatments
+            \item \textbf{Normality}: Residuals follow normal distribution
+        \end{itemize}
+    \end{block}
+
+    \begin{alertblock}{Consequences of Assumption Violations:}
+        \begin{itemize}
+            \item \textbf{Invalid conclusions of parametric tests}: Need for non-parametric tests leading to reduced statistical power
+        \end{itemize}
+    \end{alertblock}
+    
+    \vfill
+    {\tiny
+    \begin{flushleft}
+        Based on R. A. Fisher, Statistical Methods for Research Workers, in S. Kotz \& N. L. Johnson (eds.), Breakthroughs in Statistics: Methodology and Distribution, pp. 66--70, Springer, New York, 1992.
+    \end{flushleft}
+    }
+\end{frame}
+
+% Slide 4: Right Blocking
+\begin{frame}
+    \frametitle{The Right Blocking: Capturing Environmental Variability}
+    
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[scale=0.8]
+                    % Define colors for treatments
+                    \definecolor{control}{RGB}{220,220,220}
+                    \definecolor{tested}{RGB}{173,216,230}
+                    \definecolor{reference}{RGB}{255,182,193}
+                    
+                    % Draw environmental variability strips (background)
+                    \def\xoffset{0.1}
+                    \def\yoffset{-0.15}
+                    \fill[envlow] ({-0.5+\xoffset},{-0.5+\yoffset}) rectangle ({6.5+\xoffset},{1.5+\yoffset});
+                    \fill[envmed] ({-0.5+\xoffset},{1.5+\yoffset}) rectangle ({6.5+\xoffset},{3+\yoffset});
+                    \fill[envhigh] ({-0.5+\xoffset},{3+\yoffset}) rectangle ({6.5+\xoffset},{4.5+\yoffset});
+                    
+                    % Draw grid and plots
+                    \foreach \row in {0,1,2} {
+                        \foreach \col in {0,1,2} {
+                            % Calculate position
+                            \pgfmathsetmacro{\x}{\col*2}
+                            \pgfmathsetmacro{\y}{\row*1.5}
+                            
+                            % Assign treatments (Latin square-like design)
+                            \pgfmathsetmacro{\treatment}{int(mod(\col + \row, 3))}
+                            \ifnum\treatment=0
+                                \def\plotcolor{control}
+                                \def\plotlabel{C}
+                            \fi
+                            \ifnum\treatment=1
+                                \def\plotcolor{tested}
+                                \def\plotlabel{T}
+                            \fi
+                            \ifnum\treatment=2
+                                \def\plotcolor{reference}
+                                \def\plotlabel{R}
+                            \fi
+                            
+                            % Draw plot with some transparency to show environment
+                            \fill[\plotcolor,opacity=0.8] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \draw[black, thick] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \node at (\x+0.75,\y+0.5) {\Large\textbf{\plotlabel}};
+                        }
+                        % Block labels
+                        \node[left] at (-0.3,\row*1.5+0.5) {\textbf{Block \pgfmathprint{int(\row+1)}}};
+                    }
+                    
+                    % Legend for treatments
+                    \node[below] at (2,-1) {
+                        \begin{tabular}{ll}
+                            \textbf{C} & Control \\
+                            \textbf{T} & Tested Product \\
+                            \textbf{R} & Reference Product
+                        \end{tabular}
+                    };
+                \end{tikzpicture}
+            \end{center}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
-            \begin{block}{ANOVA Table}
+        \begin{column}{0.3\textwidth}
+            \begin{block}{\small Environmental Gradient:}
                 \scriptsize
-                \begin{tabular}{lcccc}
-                    \hline
-                    Source & DF & MS & F & P-value \\
-                    \hline
-                    Treatment & 2 & 5.034 & 316.2 & <0.001 \\
-                    Block & 2 & 0.623 & 39.1 & 0.002 \\
-                    Error & 4 & 0.016 & -- & -- \\
-                    \hline
-                \end{tabular}
-            \end{block}
-            
-            \begin{block}{Model Performance}
-                \begin{itemize}
-                    \item $R^2 = 0.994$
-                    \item Residual SE = 0.126
-                    \item \textcolor{red}{Spatial structure in residuals ignored}
-                \end{itemize}
+                \begin{tikzpicture}[scale=0.8]
+                    % Color scale bar
+                    \fill[envlow] (0,0) rectangle (1,0.5);
+                    \fill[envmed] (0,0.5) rectangle (1,1);
+                    \fill[envhigh] (0,1) rectangle (1,1.5);
+                    \draw[black] (0,0) rectangle (1,1.5);
+                    
+                    % Labels
+                    \node[right] at (1.1,0.25) {Low};
+                    \node[right] at (1.1,0.75) {Medium};
+                    \node[right] at (1.1,1.25) {High};
+                    \node[below] at (0.5,-0.2) {\tiny Variability};
+                \end{tikzpicture}
             \end{block}
         \end{column}
     \end{columns}
     
-    \vspace{1em}
+    \begin{exampleblock}{\small Success of Blocking Strategy:}
+        \begin{itemize}
+            \scriptsize
+            \item \textbf{Within-block homogeneity}: Treatments compared under similar conditions
+            \item \textbf{Between-block heterogeneity}: Environmental gradient captured by block effects
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+% Slide 5: The Wrong Blocking
+\begin{frame}
+    \frametitle{The Wrong Blocking: Assumption Violation}
     
-    \begin{alertblock}{Limitation}
-        RCBD assumes blocks capture all spatial variation, but residuals may still contain spatial autocorrelation
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[scale=0.8]
+                    % Define colors for treatments
+                    \definecolor{control}{RGB}{220,220,220}
+                    \definecolor{tested}{RGB}{173,216,230}
+                    \definecolor{reference}{RGB}{255,182,193}
+                    
+                    % Draw irregular environmental variability shapes (background)
+                    \def\xoffset{0.1}
+                    \def\yoffset{-0.15}
+                    
+                    % Irregular environmental patches that don't align with blocks
+                    % Low variability (diagonal patches)
+                    \fill[envlow] ({0+\xoffset},{0+\yoffset}) -- ({2+\xoffset},{1+\yoffset}) -- ({3+\xoffset},{0.5+\yoffset}) -- ({4+\xoffset},{1.5+\yoffset}) -- ({6+\xoffset},{1+\yoffset}) -- ({6+\xoffset},{-0.5+\yoffset}) -- ({0+\xoffset},{-0.5+\yoffset}) -- cycle;
+                    
+                    % Medium variability (curved patches)
+                    \fill[envmed] ({-0.5+\xoffset},{1.2+\yoffset}) -- ({1.5+\xoffset},{1.8+\yoffset}) -- ({3.5+\xoffset},{2.2+\yoffset}) -- ({5+\xoffset},{2.8+\yoffset}) -- ({6.5+\xoffset},{2.5+\yoffset}) -- ({6.5+\xoffset},{1+\yoffset}) -- ({4+\xoffset},{1.5+\yoffset}) -- ({3+\xoffset},{0.5+\yoffset}) -- ({2+\xoffset},{1+\yoffset}) -- ({0+\xoffset},{0+\yoffset}) -- ({-0.5+\xoffset},{0.8+\yoffset}) -- cycle;
+                    
+                    % High variability (irregular top patches)
+                    \fill[envhigh] ({-0.5+\xoffset},{2.8+\yoffset}) -- ({2+\xoffset},{3.5+\yoffset}) -- ({4+\xoffset},{3.2+\yoffset}) -- ({6.5+\xoffset},{4.5+\yoffset}) -- ({6.5+\xoffset},{2.5+\yoffset}) -- ({5+\xoffset},{2.8+\yoffset}) -- ({3.5+\xoffset},{2.2+\yoffset}) -- ({1.5+\xoffset},{1.8+\yoffset}) -- ({-0.5+\xoffset},{1.2+\yoffset}) -- cycle;
+                    
+                    % Draw grid and plots
+                    \foreach \row in {0,1,2} {
+                        \foreach \col in {0,1,2} {
+                            % Calculate position
+                            \pgfmathsetmacro{\x}{\col*2}
+                            \pgfmathsetmacro{\y}{\row*1.5}
+                            
+                            % Assign treatments (Latin square-like design)
+                            \pgfmathsetmacro{\treatment}{int(mod(\col + \row, 3))}
+                            \ifnum\treatment=0
+                                \def\plotcolor{control}
+                                \def\plotlabel{C}
+                            \fi
+                            \ifnum\treatment=1
+                                \def\plotcolor{tested}
+                                \def\plotlabel{T}
+                            \fi
+                            \ifnum\treatment=2
+                                \def\plotcolor{reference}
+                                \def\plotlabel{R}
+                            \fi
+                            
+                            % Draw plot with some transparency to show environment
+                            \fill[\plotcolor,opacity=0.8] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \draw[black, thick] (\x,\y) rectangle (\x+1.5,\y+1);
+                            \node at (\x+0.75,\y+0.5) {\Large\textbf{\plotlabel}};
+                        }
+                        % Block labels
+                        \node[left] at (-0.3,\row*1.5+0.5) {\textbf{Block \pgfmathprint{int(\row+1)}}};
+                    }
+                    
+                    % Legend for treatments
+                    \node[below] at (2,-1) {
+                        \begin{tabular}{ll}
+                            \textbf{C} & Control \\
+                            \textbf{T} & Tested Product \\
+                            \textbf{R} & Reference Product
+                        \end{tabular}
+                    };
+                \end{tikzpicture}
+            \end{center}
+        \end{column}
+        
+        \begin{column}{0.3\textwidth}
+            \begin{block}{\small Environmental Gradient:}
+                \scriptsize
+                \begin{tikzpicture}[scale=0.8]
+                    % Color scale bar
+                    \fill[envlow] (0,0) rectangle (1,0.5);
+                    \fill[envmed] (0,0.5) rectangle (1,1);
+                    \fill[envhigh] (0,1) rectangle (1,1.5);
+                    \draw[black] (0,0) rectangle (1,1.5);
+                    
+                    % Labels
+                    \node[right] at (1.1,0.25) {Low};
+                    \node[right] at (1.1,0.75) {Medium};
+                    \node[right] at (1.1,1.25) {High};
+                    \node[below] at (0.5,-0.2) {\tiny Variability};
+                \end{tikzpicture}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \begin{alertblock}{\small Heteroscedasticity Assumption Violation Problem:}
+        \scriptsize
+        \begin{itemize}
+            \item \textbf{Blocks fail to capture environmental variability}: Treatments compared under different conditions
+            \item \textbf{Invalid parametric test}: Residual variance differs across treatments
+        \end{itemize}
     \end{alertblock}
 \end{frame}
 
+% Slide 6: The Problem
 \begin{frame}
-    \frametitle{Variogram Analysis}
+    \frametitle{Current Limitations in Statistics for Agricultural Trials}
     
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Geostatistical Approach}
+    \begin{block}{Traditional Approach Issues:}
+        \begin{itemize}
+            \item \textbf{Human-dependent blocking}: Environmental variability assessment relies on experimenter experience
+            \item \textbf{A priori identification}: Must identify variance sources BEFORE data collection
+        \end{itemize}
+    \end{block}
+    
+    \begin{alertblock}{The Challenge:}
+        \textit{How can we capture environmental variability mathematically rather than through human judgment?}
+    \end{alertblock}
+\end{frame}
+
+% Slide 7: Geostatistical Approach
+\begin{frame}
+    \frametitle{Geostatistical Approach: Spatial Linear Mixed Models}
+    
+    \begin{columns}
+        \begin{column}{0.65\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[scale=1]
+                    % Define colors for treatments
+                    \definecolor{control}{RGB}{220,220,220}
+                    \definecolor{tested}{RGB}{173,216,230}
+                    \definecolor{reference}{RGB}{255,182,193}
+                    
+                    % Draw irregular environmental variability shapes (background)
+                    \def\xoffset{0.1}
+                    \def\yoffset{-0.15}
+                    
+                    % Same irregular environmental patches as slide 5
+                    \fill[envlow] ({0+\xoffset},{0+\yoffset}) -- ({2+\xoffset},{1+\yoffset}) -- ({3+\xoffset},{0.5+\yoffset}) -- ({4+\xoffset},{1.5+\yoffset}) -- ({6+\xoffset},{1+\yoffset}) -- ({6+\xoffset},{-0.5+\yoffset}) -- ({0+\xoffset},{-0.5+\yoffset}) -- cycle;
+                    
+                    \fill[envmed] ({-0.5+\xoffset},{1.2+\yoffset}) -- ({1.5+\xoffset},{1.8+\yoffset}) -- ({3.5+\xoffset},{2.2+\yoffset}) -- ({5+\xoffset},{2.8+\yoffset}) -- ({6.5+\xoffset},{2.5+\yoffset}) -- ({6.5+\xoffset},{1+\yoffset}) -- ({4+\xoffset},{1.5+\yoffset}) -- ({3+\xoffset},{0.5+\yoffset}) -- ({2+\xoffset},{1+\yoffset}) -- ({0+\xoffset},{0+\yoffset}) -- ({-0.5+\xoffset},{0.8+\yoffset}) -- cycle;
+                    
+                    \fill[envhigh] ({-0.5+\xoffset},{2.8+\yoffset}) -- ({2+\xoffset},{3.5+\yoffset}) -- ({4+\xoffset},{3.2+\yoffset}) -- ({6.5+\xoffset},{4.5+\yoffset}) -- ({6.5+\xoffset},{2.5+\yoffset}) -- ({5+\xoffset},{2.8+\yoffset}) -- ({3.5+\xoffset},{2.2+\yoffset}) -- ({1.5+\xoffset},{1.8+\yoffset}) -- ({-0.5+\xoffset},{1.2+\yoffset}) -- cycle;
+                    
+                    % Add treatment rectangles in center Y of plot (larger rectangles)
+                    \pgfmathsetmacro{\midY}{1.8}
+                    \fill[color=control,opacity=0.8] (0.3,\midY-0.7) rectangle (1.7,\midY+0.7);
+                    \draw[black, thick] (0.3,\midY-0.7) rectangle (1.7,\midY+0.7);
+                    \node at (1,\midY) {\Large\textbf{C}};
+                    
+                    \fill[color=tested,opacity=0.8] (2.3,\midY-0.7) rectangle (3.7,\midY+0.7);
+                    \draw[black, thick] (2.3,\midY-0.7) rectangle (3.7,\midY+0.7);
+                    \node at (3,\midY) {\Large\textbf{T}};
+                    
+                    \fill[color=reference,opacity=0.8] (4.3,\midY-0.7) rectangle (5.7,\midY+0.7);
+                    \draw[black, thick] (4.3,\midY-0.7) rectangle (5.7,\midY+0.7);
+                    \node at (5,\midY) {\Large\textbf{R}};
+                    
+                    % Draw grid of observation points with coordinates (denser grid)
+                    \foreach \row in {0,1,2,3,4,5,6} {
+                        \foreach \col in {0,1,2,3,4,5,6,7} {
+                            % Calculate position (adjusted for denser grid)
+                            \pgfmathsetmacro{\x}{\col*0.9}
+                            \pgfmathsetmacro{\y}{\row*0.6}
+                            
+                            % Draw observation point
+                            \fill[black] (\x,\y) circle (0.03);
+                            
+                            % Add coordinate labels for some points (adjusted for new grid)
+                            \ifnum\row=0
+                                \ifnum\col=0
+                                    \node[below, font=\tiny] at (\x,\y-0.1) {(0,0)};
+                                \fi
+                                \ifnum\col=4
+                                    \node[below, font=\tiny] at (\x,\y-0.1) {(4,0)};
+                                \fi
+                                \ifnum\col=7
+                                    \node[below, font=\tiny] at (\x,\y-0.1) {(7,0)};
+                                \fi
+                            \fi
+                            \ifnum\col=0
+                                \ifnum\row=3
+                                    \node[left, font=\tiny] at (\x-0.1,\y) {(0,3)};
+                                \fi
+                                \ifnum\row=6
+                                    \node[left, font=\tiny] at (\x-0.1,\y) {(0,6)};
+                                \fi
+                            \fi
+                        }
+                    }
+                    
+                    % Axis labels
+                    \node[below, font=\small] at (3.15,-0.5) {\textbf{x}};
+                    \node[left, font=\small, rotate=90] at (-0.8,1.8) {\textbf{y}};
+                    
+                    % Legend for treatments and spatial data
+                    \node[below, font=\tiny] at (3,-1.1) {
+                        \begin{tabular}{ll}
+                            \textbf{C/T/R} & Control/Tested/Reference \\
+                            \textbf{\(\bullet\)} & Georeferenced observations
+                        \end{tabular}
+                    };
+
+                \end{tikzpicture}
+            \end{center}
+        \end{column}
+        
+        \begin{column}{0.35\textwidth}
+            \begin{block}{\small Spatial LMM:}
+                \begin{equation*}
+                    y(s_i) = \mu + \alpha_j + f(s_i) + \varepsilon_i
+                \end{equation*}
+                
+                \scriptsize
+                Where:
                 \begin{itemize}
-                    \item Model spatial correlation explicitly
-                    \item Variogram: $\gamma(h) = \frac{1}{2}E[(Z(s) - Z(s+h))^2]$
-                    \item Fitted model: Linear variogram
-                    \item Parameters:
-                    \begin{itemize}
-                        \scriptsize
-                        \item Nugget: 0.000
-                        \item Sill: 0.121
-                        \item Range: 1.35m
-                    \end{itemize}
+                    \item $y(s_i)$ = response at $s_i$
+                    \item $\mu$ = overall mean
+                    \item $\alpha_j$ = treatment effect
+                    \item $f(s_i)$ = spatial random field
+                    \item $\varepsilon_i$ = error
+                    \item $s_i = (x_i, y_i)$  = coordinates
                 \end{itemize}
             \end{block}
             
-            \begin{block}{Spatial Model}
-                $$Y(s) = \mu + X(s)\beta + Z(s)$$
-                where $Z(s)$ follows spatial covariance
-            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \begin{exampleblock}{\scriptsize Benefits:}
+        \tiny
+        \begin{itemize}
+            \item \textbf{No blocking}: Spatial correlation captures variability
+            \item \textbf{Post-hoc}: No a priori variance identification
+            \item \textbf{Homoscedasticity}: Assumption satisfied in more cases in respect blocking
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+% Slide 8: Statistical Methods Comparison: Introduction
+\begin{frame}
+    \frametitle{Statistical Methods Comparison: Introduction}
+    
+    \begin{block}{Comparison Objective:}
+        Evaluate the performance of \textbf{traditional RCBD} versus \textbf{spatial geostatistical methods} (SpATS) in capturing environmental variability and estimating treatment effects.
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Synthetic Dataset:}
+                \begin{itemize}
+                    \item \textbf{\small 54 observations}\small (6×9 grid)
+                    \item \textbf{\small 3 treatments}\small : Control (0 t/ha), Reference (0.5 t/ha), Test (1.0 t/ha)
+                    \item \textbf{\small 3 blocks}\small (18 plots each)
+                    \item \textbf{\small Environmental zones}\small : Low (-1.5 t/ha), Medium (0 t/ha), High (+1.5 t/ha)
+                \end{itemize}
+            \end{exampleblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{block}{Advantages over RCBD}
+            \begin{alertblock}{Tested Models:}
+                \begin{enumerate}
+                    \item \textbf{RCBD Model}: Linear Mixed Model with random block effects
+                    \begin{equation*}
+                        y_{ij} = \mu + \alpha_i + \beta_j + \varepsilon_{ij}
+                    \end{equation*}
+                    
+                    \item \textbf{SpATS Model}: Spatial model with PSANOVA splines
+                    \begin{equation*}
+                        y(s) = \mu + \alpha_i + f(s) + \varepsilon(s)
+                    \end{equation*}
+                \end{enumerate}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.3cm}
+    \begin{center}
+        \small Where: $\alpha_i$ = treatment effects, $\beta_j$ = block effects, $f(s)$ = spatial smooth function, $s$ = coordinates
+    \end{center}
+\end{frame}
+
+% Slide 9: Statistical Methods Comparison: The Field Trial
+\begin{frame}
+    \frametitle{Statistical Methods Comparison: The Field Trial Design}
+    
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{Imgs/integrated_rcbd_spats_comparison_irregular.png}
+    \end{center}
+    
+    \begin{block}{\small Legend Interpretation:}
+        \begin{columns}
+            \begin{column}{0.33\textwidth}
+                \textbf{Background Raster:}
                 \begin{itemize}
+                    \scriptsize
+                    \item Environmental spatial effects
+                    \item Irregular zones: Low/Medium/High
+                    \item White to orange to red gradient
+                \end{itemize}
+            \end{column}
+            
+            \begin{column}{0.33\textwidth}
+                \textbf{Purple Contours:}
+                \begin{itemize}
+                    \scriptsize
+                    \item SpATS estimated spatial effects
+                    \item Smooth spline interpolation
                     \item Continuous spatial modeling
-                    \item Better prediction at unsampled locations
-                    \item Accounts for spatial autocorrelation
-                    \item More efficient parameter estimation
                 \end{itemize}
+            \end{column}
+            
+            \begin{column}{0.33\textwidth}
+                \textbf{Plot Elements:}
+                \begin{itemize}
+                    \scriptsize
+                    \item \textbf{Rectangles}: Treatment effect magnitude (colored borders)
+                    \item \textbf{Letters}: C/T/R treatments
+                    \item \textbf{Corn symbols}: Individual yield observations (sized by value)
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+\end{frame}
+
+% Slide 10: Statistical Methods Comparison: Results
+\begin{frame}
+    \frametitle{Statistical Methods Comparison: Results}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{\small Model Performance \scriptsize (Mean Absolute Errors tonn/ha):}
+                \begin{table}[h]
+                    \centering
+                    \scriptsize
+                    \begin{tabular}{lcc}
+                        \hline
+                        \textbf{Model} & \textbf{Treat. Error} & \textbf{Env. Error} \\
+                        \hline
+                        RCBD Model & 0.13 & 0.62 \\
+                        SpATS Spatial & 0.03 & 0.45 \\
+                        \hline
+                    \end{tabular}
+                \end{table}
             \end{block}
             
-            \begin{block}{Treatment Effects}
-                Similar estimates to RCBD but with:
+            \begin{exampleblock}{\small Treatment Effect Estimation (tonn/ha):}
+                \begin{table}[h]
+                    \centering
+                    \scriptsize
+                    \begin{tabular}{lccc}
+                        \hline
+                        \textbf{Treatment} & \textbf{True} & \textbf{RCBD} & \textbf{SpATS} \\
+                        \hline
+                        Control & 0.00 & 0.00 & 0.00 \\
+                        Reference & 0.50 & 0.40 & 0.45 \\
+                        Test & 1.0 & 0.69 & 0.94 \\
+                        \hline
+                    \end{tabular}
+                \end{table}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{\small Key Findings:}
                 \begin{itemize}
-                    \item Spatial correction applied
-                    \item Reduced standard errors
-                    \item Better residual structure
+                    \footnotesize
+                    \item \textbf{Both models satisfied assumptions}
+                    \item \textbf{SpATS outperformed RCBD}:
+                    \begin{itemize}
+                        \scriptsize
+                        \item 3.8× better treatment effect estimation
+                        \item 1.4× better environmental effect estimation
+                    \end{itemize}
+                    \item \textbf{RCBD underestimated} by 20-31\%
+                    \item \textbf{SpATS <6\% error}
                 \end{itemize}
+            \end{alertblock}
+            
+            \begin{block}{\small Implications:}
+                \scriptsize
+                Even when traditional RCBD meets statistical assumptions, \textbf{spatial modeling provides superior accuracy} in treatment effect estimation by properly accounting for environmental spatial variability.
             \end{block}
         \end{column}
     \end{columns}
-    
-    \vspace{1em}
-    
-    \begin{exampleblock}{Key Insight}
-        Variogram analysis reveals spatial structure that RCBD blocks failed to capture completely
-    \end{exampleblock}
 \end{frame}
 
+% Slide 11: Research Gap
 \begin{frame}
-    \frametitle{P-Splines Analysis (SpATS)}
+    \frametitle{The Missing Link: Spatial Coordinates}
     
-    \begin{columns}[T]
+    \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Spatial Splines Model}
+            \begin{block}{Geostatistical Methods Advantages:}
                 \begin{itemize}
-                    \item Smooth spatial trends using P-splines
-                    \item Flexible non-parametric approach
-                    \item Automatic smoothing parameter selection
-                    \item Handles complex spatial patterns
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Model Specification}
-                $$Y = X\beta + f(x,y) + \varepsilon$$
-                \begin{itemize}
-                    \item $f(x,y)$: smooth spatial surface
-                    \item Penalized B-splines basis
-                    \item Effective dimensions estimated
+                    \item[\textcolor{green}{\checkmark}] \textbf{Mathematical modeling} of environmental variability
+                    \item[\textcolor{green}{\checkmark}] \textbf{Post-hoc analysis} - no need for prior knowledge of the environment variables and of their distribution
+                    \item[\textcolor{green}{\checkmark}] \textbf{Superior performance} in handling spatial heterogeneity
+                    \item[\textcolor{green}{\checkmark}] \textbf{EPPO recognized} approach \scriptsize (PP1/152(4) - Design and analysis of efficacy evaluation trials)
                 \end{itemize}
             \end{block}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{block}{Model Results}
+            \begin{alertblock}{Current Barrier:}
                 \begin{itemize}
-                    \item Spatial variance explained: 6.8\%
-                    \item Error variance: 0.068
-                    \item Effective dimensions:
-                    \begin{itemize}
-                        \scriptsize
-                        \item f(x,y)|x: 0.790
-                        \item f(x,y)|y: 1.344
-                    \end{itemize}
-                    \item Deviance: -231.86
+                    \item[\textcolor{red}{\(\times\)}] \textbf{Requires spatially referenced observations}
+                    \item[\textcolor{red}{\(\times\)}] \textbf{Traditional manual assessments lack coordinates}
+                    \item[\textcolor{red}{\(\times\)}] \textbf{Implementation gap} in practical field trials
                 \end{itemize}
-            \end{block}
-            
-            \begin{block}{Interpretation}
-                \begin{itemize}
-                    \item Moderate spatial pattern detected
-                    \item Stronger trend in Y direction
-                    \item Complements RCBD block structure
-                \end{itemize}
-            \end{block}
+            \end{alertblock}
         \end{column}
     \end{columns}
+\end{frame}
+
+% Slide 12: Research Question
+\begin{frame}
+    \frametitle{Central Research Question}
+    
+    \begin{exampleblock}{}
+        \large
+        \textbf{Can geomatics technologies provide spatially referenced observations that enable geostatistical analysis within EPPO-compliant Plant Protection Product trials?}
+    \end{exampleblock}
     
     \vspace{1em}
     
-    \begin{exampleblock}{Advantage}
-        SpATS provides flexible spatial modeling without prior assumptions about spatial structure
-    \end{exampleblock}
+    \begin{block}{Specific Objectives:}
+        \begin{enumerate}
+            \item Establish which geomatics technologies can be used to collect spatially referenced observations
+            \item Demonstrate the feasibility of collect spatially referenced observations in compliant with EPPO standards
+            \item Validate performance against traditional methods
+            \item Provide practical implementation guidelines
+        \end{enumerate}
+    \end{block}
 \end{frame}
 
+% Slide 13: Geomatic Techniques
 \begin{frame}
-    \frametitle{Methods Comparison Summary}
+    \frametitle{\small Geomatic Technologies: Workflow for Spatially Referenced Observations}
     
-    \begin{table}[h]
+    \begin{center}
+        \begin{tikzpicture}[
+            block/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1.3cm},
+            arrow/.style={thick,->,>=stealth},
+            groupbox/.style={rectangle, draw, rounded corners, very thick, dashed}
+        ]
+            
+            % Background grouping rectangles
+            % Light blue background for Visual assessments
+            \node[groupbox, fill=cyan!10, text width=2.6cm, minimum height=2cm] (visual_group) at (-1,-2) {};
+            \node[below] at (visual_group.south) {\scriptsize \textbf{Counts/Ranks/Scores}};
+            
+            % Light orange background for Continuous values
+            \node[groupbox, fill=orange!15, text width=10cm, minimum height=4.25cm] (continuous_group) at (2.5,1.5) {};
+            \node[above] at (continuous_group.north) {\scriptsize \textbf{Measurments}};
+            
+            % GNSS Block
+            \node[block] (gnss) at (2.5,2.5) {
+                \textbf{\scriptsize GNSS Positioning}\\
+                \tiny
+                $\bullet$ Global Navigation Satellite System\\
+                $\bullet$ RTK accuracy: 1-2 cm\\
+                $\bullet$ Provides spatial component\\
+            };
+            
+            % Spectral Photogrammetry Block
+            \node[block] (photogrammetry) at (-1,0.8) {
+                \textbf{\scriptsize Photogrammetry}\\
+                \tiny
+                $\bullet$ Derives spatial coordinates of the pictured trial\\
+                $\bullet$ Coupled with spectral imaging for reflectance measurements\\
+            };
+            
+            % ML Inference Block
+            \node[block] (ml) at (-1,-2) {
+                \textbf{\scriptsize Machine Learning}\\
+                \tiny
+                $\bullet$ Reproduces human visual qualitative assessments\\
+            };
+            
+            % Georeferenced Measuring Tools
+            \node[block] (tools) at (6,1.5) {
+                \textbf{\scriptsize Measuring Tools}\\
+                \tiny
+                $\bullet$ Spatially referenced measurements\\
+                $\bullet$ e.g. Georeferenced harvesters\\
+            };
+            
+            % Output Block
+            \node[block, fill=green!20, text width=4.5cm] (output) at (5.8,-2) {
+                \textbf{\scriptsize EPPO-Compliant Observations}\\
+                \tiny
+                $\bullet$ Spatially referenced data\\
+                $\bullet$ Geostatistical analysis\\
+            };
+
+            % Arrows with proper syntax
+            \draw[arrow] (gnss) -- (photogrammetry.north) node[midway,above] {\tiny Spatial Reference};
+            \draw[arrow] (photogrammetry) -- (ml) node[midway,right] {\tiny Georeferenced Data};
+            \draw[arrow] (ml.east) -- (output.west) node[midway,above] {\tiny Georeferenced Observations};
+            \draw[arrow] (gnss) -- (tools.north) node[midway,above] {\tiny Spatial Reference};
+            \draw[arrow] (tools.south) -- (output.north) node[midway,left] {\tiny Georeferenced Observations};
+            \draw[arrow] (photogrammetry.east) -- (output.north west) node[near start,right] {\tiny Georeferenced Observations};
+            % You can use [below], [above], [left], [right], [pos=0.5], [near start], [near end], [very near start], [very near end], [midway], [sloped], [bend left], [bend right], [out=angle], [in=angle], [loop], [shorten >=<length>], [shorten <=<length>], [looseness=<factor>], [distance=<length>], [swap], [auto], [anchor=<anchor>], [at end], [at start], [name path=<name>], [name intersections={of=<nameA> and <nameB>}], etc.
+            % Example: \draw[->] (A) -- (B) node[midway, above] {Label};
+        \end{tikzpicture}
+    \end{center}
+
+\end{frame}
+
+% Slide 14: Georeferencing EPPO standard assessments
+\begin{frame}
+    \frametitle{Georeferencing EPPO Standard Assessments}
+    
+    \begin{table}[ht]
+        \caption{\small EPPO's types of variables}
+        \label{tab:data_types_slide}
         \centering
-        \scriptsize
         \begin{tabular}{|l|c|c|c|}
-            \hline
-            \rowcolor{lightblue}
-            \textbf{Method} & \textbf{Spatial Modeling} & \textbf{Flexibility} & \textbf{Assumptions} \\
-            \hline
-            \rowcolor{lightgray}
-            RCBD & Discrete blocks & Low & Blocks capture all variation \\
-            \hline
-            Variogram & Continuous correlation & Medium & Stationary covariance \\
-            \hline
-            \rowcolor{lightgray}
-            P-Splines (SpATS) & Smooth surfaces & High & Minimal assumptions \\
-            \hline
+        \hline
+        \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{red!20} Binary & & & X \\
+        \hline
+        \rowcolor{red!20} Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} Ordinal & & X & X \\
+        \hline
+        \rowcolor{yellow!20} Discrete & X & & \\
+        \hline
+        \rowcolor{green!20} Continuous limited & X & & \\
+        \hline
+        \rowcolor{green!20} Continuous not limited & X & & \\
+        \hline
         \end{tabular}
-    \end{table}
-    
-    \vspace{1em}
-    
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{When RCBD Fails}
-                \begin{itemize}
-                    \item Blocks don't align with gradients
-                    \item Complex spatial patterns
-                    \item Residual spatial autocorrelation
-                    \item Underestimated treatment precision
-                \end{itemize}
-            \end{block}
-        \end{column}
+        \end{table}
         
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Geostatistical Benefits}
-                \begin{itemize}
-                    \item Model true spatial structure
-                    \item Improved parameter estimation
-                    \item Better experimental precision
-                    \item Spatial prediction capability
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
+    \begin{flushleft}
+        \hspace{1.5cm}{\tiny Summary from EPPO PP 1/152: Design and analysis of efficacy evaluation trials}
+    \end{flushleft}
+
+    \begin{block}{Current State of Georeferencing in Agricultural Trials:}
+        \small Measurements that can be tool-collected can be also easily georeferenced (e.g., yield harvesters). Whereas observation depends on experimenters' visual assessments (all not measurement variables, except visual counts), ML is required to spatial integration.
+    \end{block}
+\end{frame}
+
+% Slide 15: EPPO ML integration
+\begin{frame}
+    \frametitle{EPPO ML integration}
     
-    \vspace{1em}
+    \begin{block}{EPPO PP 1/333(1): Digital Technologies in PPP Trials}
+        \small
+        ML integrated assessments must meet the same quality standards as manual assessments and require validation through comparison with manual assessments (golden sample).
+    \end{block}
     
-    \begin{alertblock}{Conclusion}
-        Geostatistical methods provide superior analysis when environmental variation exceeds the capacity of experimental blocking
-    \end{alertblock}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Practical Implications for PPP Trials}
-    
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Current Practice}
-                \begin{itemize}
-                    \item RCBD widely used in regulatory trials
-                    \item Fixed blocking strategies
-                    \item Spatial information often ignored
-                    \item Conservative approach to meet EPPO standards
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Regulatory Requirements}
-                \begin{itemize}
-                    \item $R^2 > 0.85$ for model acceptance
-                    \item All methods achieved this threshold
-                    \item Focus on treatment effect precision
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Recommended Approach}
-                \begin{itemize}
-                    \item Collect spatial coordinates
-                    \item Use RCBD as baseline
-                    \item Apply geostatistical diagnostics
-                    \item Consider spatial methods when:
-                    \begin{itemize}
-                        \scriptsize
-                        \item Residual spatial correlation
-                        \item Complex field gradients
-                        \item Precision requirements
-                    \end{itemize}
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Future Directions}
-                \begin{itemize}
-                    \item Integration in regulatory guidelines
-                    \item Automated spatial analysis tools
-                    \item Training for practitioners
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% --- RCBD Model: Trial Design and Block Effects ---
-\begin{frame}
-    \frametitle{RCBD: Trial Design and Block Effects}
-    \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
-            \begin{block}{Trial Design with Environmental Gradient}
-                \centering
-                % Replace with actual plot file
-                \includegraphics[width=0.95\textwidth]{Imgs/rcbd_trial_design_blocks.png}
-                \vspace{0.5em}
-                \scriptsize
-                \textcolor{blue}{Blue: True environmental gradient}
-                \textcolor{red}{Red: Estimated block effects}
-            \end{block}
-        \end{column}
-        \begin{column}{0.45\textwidth}
-            \begin{block}{Model Formula}
-                \vspace{0.5em}
-                \begin{align*}
-                    Y_{ij} &= \mu + \tau_i + \beta_j + \varepsilon_{ij} \\
-                    \mu &: \text{Overall mean} \\
-                    \tau_i &: \text{Treatment effect} \\
-                    \beta_j &: \text{Block effect} \\
-                    \varepsilon_{ij} &: \text{Random error}
-                \end{align*}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% --- Variogram Model: Trial Design and Spatial Effects ---
-\begin{frame}
-    \frametitle{Variogram: Trial Design and Spatial Effects}
-    \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
-            \begin{block}{Trial Design with Environmental Gradient}
-                \centering
-                % Replace with actual plot file
-                \includegraphics[width=0.95\textwidth]{Imgs/variogram_trial_design_spatial.png}
-                \vspace{0.5em}
-                \scriptsize
-                \textcolor{blue}{Blue: True environmental gradient}
-                \textcolor{orange}{Orange: Estimated spatial effect}
-            \end{block}
-        \end{column}
-        \begin{column}{0.45\textwidth}
-            \begin{block}{Model Formula}
-                \vspace{0.5em}
-                \begin{align*}
-                    Y(s) &= \mu + X(s)\beta + Z(s) \\
-                    \mu &: \text{Overall mean} \\
-                    X(s)\beta &: \text{Treatment effect} \\
-                    Z(s) &: \text{Spatial effect (covariance)}
-                \end{align*}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% --- SpATS Model: Trial Design and Spline Effects ---
-\begin{frame}
-    \frametitle{SpATS: Trial Design and Spline Effects}
-    \begin{columns}[T]
-        \begin{column}{0.55\textwidth}
-            \begin{block}{Trial Design with Environmental Gradient}
-                \centering
-                % Replace with actual plot file
-                \includegraphics[width=0.95\textwidth]{Imgs/spats_trial_design_spline.png}
-                \vspace{0.5em}
-                \scriptsize
-                \textcolor{blue}{Blue: True environmental gradient}
-                \textcolor{green}{Green: Estimated spline spatial effect}
-            \end{block}
-        \end{column}
-        \begin{column}{0.45\textwidth}
-            \begin{block}{Model Formula}
-                \vspace{0.5em}
-                \begin{align*}
-                    Y &= X\beta + f(x, y) + \varepsilon \\
-                    X\beta &: \text{Treatment effect} \\
-                    f(x, y) &: \text{Smooth spatial surface} \\
-                    \varepsilon &: \text{Random error}
-                \end{align*}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% --- Summary Table: Estimated Effects ---
-\begin{frame}
-    \frametitle{Summary of Estimated Effects}
-    \begin{table}[h]
-        \centering
+    \begin{exampleblock}{\small Validation Benchmarks\footnote{\tiny Based on EPPO PP 1/333(1): Use of digital technologies in efficacy and selectivity trials}}
         \scriptsize
-        \begin{tabular}{|l|c|c|c|c|}
-            \hline
-            \rowcolor{lightblue}
-            \textbf{Model} & \textbf{Treatment Effect (Test)} & \textbf{Treatment Effect (Reference)} & \textbf{Environmental Effect} & \textbf{R$^2$} \\
-            \hline
-            \rowcolor{lightgray}
-            RCBD & +2.41 & +2.03 & Block (0.47, 0.91) & 0.994 \\
-            \hline
-            Variogram & +2.41 & +2.03 & Spatial (Sill: 0.121, Range: 1.35m) & 0.994 \\
-            \hline
-            \rowcolor{lightgray}
-            SpATS & +2.41 & +2.03 & Spline (6.8\% variance) & 0.994 \\
-            \hline
-        \end{tabular}
-        \caption{Comparison of estimated effects for each model}
-    \end{table}
+        \begin{itemize}
+            \item \textbf{\large Continuous/Discrete}\large : $R^2 > 0.85$ (1:1 relationship)
+            \item \textbf{\large Ordinal/Nominal}\large : Cohen's $\kappa > 0.7$
+            \item \textbf{\large Binary}\large : Accuracy $> 0.85$
+        \end{itemize}
+    \end{exampleblock}
 \end{frame}
 
+% Slide 16: 
+\begin{frame}
+    \begin{table}[ht]
+        \caption{\small EPPO's types of variables}
+        \label{tab:data_types_slide}
+        \centering
+        \begin{tabular}{|c|l|c|c|c|}
+        \hline
+        & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{red!20} & Binary & & & X \\
+        \hline
+        \rowcolor{red!20} & Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} & Ordinal & & X & X \\
+        \hline
+        \rowcolor{yellow!75} $\rightarrow$ & Discrete & X & & \\
+        \hline
+        \rowcolor{green!20} & Continuous limited & X & & \\
+        \hline
+        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 \end{document}

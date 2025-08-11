@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.5)  9 AUG 2025 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.5)  11 AUG 2025 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,37 +846,34 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \minrowclearance=\skip69
 \rownum=\count355
 )
+\c@slidecite=\count356
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count356
+\l__color_backend_stack_int=\count357
 \l__pdf_internal_box=\box129
 )
-(./PhD_Thesis_Presentation.aux
-
-LaTeX Warning: Label `tab:data_types_slide' multiply defined.
-
-)
+No file PhD_Thesis_Presentation.aux.
 \openout1 = `PhD_Thesis_Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -913,16 +910,16 @@ LaTeX Font Info:    ... okay on input line 86.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
+\scratchcounter=\count358
 \scratchdimen=\dimen318
 \scratchbox=\box130
-\nofMPsegments=\count358
-\nofMParguments=\count359
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count360
+\MPscratchCnt=\count361
 \MPscratchDim=\dimen319
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -933,54 +930,52 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 86.
-
-(./PhD_Thesis_Presentation.out) (./PhD_Thesis_Presentation.out)
+Package hyperref Info: Link coloring OFF on input line 143.
 \@outlinefile=\write5
 \openout5 = `PhD_Thesis_Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 86.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 86.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 143.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 86.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 86.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 86.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 86.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 86.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 86.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 86.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 86.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 86.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 86.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 86.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 86.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 86.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 86.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 86.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 86.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 86.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 86.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 143.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1005,28 +1000,29 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./PhD_Thesis_Presentation.nav)
+)
+No file PhD_Thesis_Presentation.nav.
 <Imgs/Loghi.png, id=13, 364.19528pt x 54.62929pt>
 File: Imgs/Loghi.png Graphic file (type png)
 <use Imgs/Loghi.png>
-Package pdftex.def Info: Imgs/Loghi.png  used on input line 91.
+Package pdftex.def Info: Imgs/Loghi.png  used on input line 148.
 (pdftex.def)             Requested size: 291.35739pt x 43.7043pt.
- [1
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imgs/Loghi.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 171
+LaTeX Font Info:    Trying to load font information for U+msa on input line 228
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 171
+LaTeX Font Info:    Trying to load font information for U+msb on input line 228
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (1.30928pt too high) detected at line 171
+Overfull \vbox (1.30928pt too high) detected at line 228
  []
 
 [2
@@ -1036,7 +1032,7 @@ Overfull \vbox (1.30928pt too high) detected at line 171
 ] [4
 
 ]
-Overfull \vbox (4.27771pt too high) detected at line 390
+Overfull \vbox (4.27771pt too high) detected at line 447
  []
 
 [5
@@ -1044,18 +1040,18 @@ Overfull \vbox (4.27771pt too high) detected at line 390
 ] [6
 
 ]
-Overfull \vbox (6.04333pt too high) detected at line 524
+Overfull \vbox (6.04333pt too high) detected at line 581
  []
 
 [7
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-567.
+624.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \vbox (16.53642pt too high) detected at line 567
+Overfull \vbox (16.53642pt too high) detected at line 624
  []
 
 [8
@@ -1067,16 +1063,16 @@ File: Imgs/integrated_rcbd_spats_comparison_irregular.png Graphic file (type pn
 g)
 <use Imgs/integrated_rcbd_spats_comparison_irregular.png>
 Package pdftex.def Info: Imgs/integrated_rcbd_spats_comparison_irregular.png  u
-sed on input line 610.
+sed on input line 667.
 (pdftex.def)             Requested size: 325.17949pt x 232.27222pt.
 
-Overfull \vbox (130.21837pt too high) detected at line 610
+Overfull \vbox (130.21837pt too high) detected at line 667
  []
 
 [9
 
  <./Imgs/integrated_rcbd_spats_comparison_irregular.png>]
-Overfull \hbox (1.9116pt too wide) in paragraph at lines 672--672
+Overfull \hbox (1.9116pt too wide) in paragraph at lines 729--729
  [] 
  []
 
@@ -1092,13 +1088,122 @@ Overfull \hbox (1.9116pt too wide) in paragraph at lines 672--672
 
 ] [15
 
+] [16
+
+] [17
+
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{tab:data_type
-s_slide}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.876 \end{frame}
-                  [16
+Overfull \vbox (8.49347pt too high) detected at line 1008
+ []
+
+[18
+
+] [19
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+071.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Overfull \vbox (116.96266pt too high) detected at line 1071
+ []
+
+[20
+
+]
+Overfull \vbox (164.35059pt too high) detected at line 1117
+ []
+
+[21
+
+]
+Overfull \vbox (117.28899pt too high) detected at line 1166
+ []
+
+[22
+
+]
+Overfull \vbox (256.67834pt too high) detected at line 1205
+ []
+
+[23
+
+]
+Overfull \vbox (5.64856pt too high) detected at line 1256
+ []
+
+[24
+
+]
+Overfull \vbox (11.5014pt too high) detected at line 1279
+ []
+
+[25
+
+] [26
+
+]
+Overfull \vbox (9.37999pt too high) detected at line 1375
+ []
+
+[27
+
+] [28
+
+]
+Overfull \vbox (25.63884pt too high) detected at line 1486
+ []
+
+[29
+
+]
+Overfull \vbox (27.56555pt too high) detected at line 1531
+ []
+
+[30
+
+]
+Overfull \vbox (81.95879pt too high) detected at line 1584
+ []
+
+[31
+
+]
+Overfull \vbox (15.91856pt too high) detected at line 1638
+ []
+
+[32
+
+]
+Overfull \vbox (9.49281pt too high) detected at line 1685
+ []
+
+[33
+
+]
+Overfull \vbox (85.73172pt too high) detected at line 1733
+ []
+
+[34
+
+]
+Overfull \vbox (33.48132pt too high) detected at line 1783
+ []
+
+[35
+
+]
+Overfull \vbox (24.62231pt too high) detected at line 1839
+ []
+
+[36
+
+]
+Overfull \vbox (127.23386pt too high) detected at line 1866
+ []
+
+[37
 
 ]
 \tf@nav=\write6
@@ -1117,59 +1222,72 @@ L3 programming layer <2024-01-22>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `PhD_Thesis_Presentation.out' has not changed
-.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package rerunfilecheck Warning: File `PhD_Thesis_Presentation.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PhD_Thesis_Presentation.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25634 strings out of 476182
- 509297 string characters out of 5795596
+ 26133 strings out of 476182
+ 529437 string characters out of 5795596
  1955975 words of memory out of 5000000
- 47082 multiletter control sequences out of 15000+600000
- 589091 words of font info for 105 fonts, out of 8000000 for 9000
+ 47544 multiletter control sequences out of 15000+600000
+ 588435 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,14n,107p,459b,1142s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecs
-i1200.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecsx1200.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/lj
-four/jknappen/ec/tcss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecss0900.600pk> </home/samuelebumbaca/.texlive2023/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0900.600pk> </home/samuelebumbaca/.tex
-live2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600pk> </home/samuelebu
-mbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0600.600pk> </home
-/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600
-pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-sx0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecsi0500.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecsx0600.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/
-fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </home/samuelebumbaca/.texlive2023/
-texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0700.600pk> </home/samuelebumbaca/.te
-xlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600pk> </home/samueleb
-umbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </hom
-e/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.60
+ 101i,15n,107p,459b,1142s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcs
+i1000.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/tcsx1000.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/lj
+four/jknappen/ec/tcsx0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/f
+onts/pk/ljfour/jknappen/ec/tcss1095.600pk> </home/samuelebumbaca/.texlive2023/t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/samuelebumbaca/.tex
+live2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </home/samuelebu
+mbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1200.600pk> </home
+/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600
+pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tc
+ss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecss0900.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecsx0900.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/
+fonts/pk/ljfour/jknappen/ec/tcss1000.600pk> </home/samuelebumbaca/.texlive2023/
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0600.600pk> </home/samuelebumbaca/.te
+xlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600pk> </home/samueleb
+umbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0800.600pk> </hom
+e/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0500.60
 0pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-csi1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecss1200.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecsx1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/samuelebumbaca/.texlive2023
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/samuelebumbaca/.t
-exlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/samuele
-bumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msam10.pfb>
-Output written on PhD_Thesis_Presentation.pdf (16 pages, 1088791 bytes).
+csx0600.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecss0600.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecsi0700.600pk> </home/samuelebumbaca/.texlive2023/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecsi1000.600pk> </home/samuelebumbaca/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/samuelebumbaca/.t
+exlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.600pk> </home/samuele
+bumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </ho
+me/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.6
+00pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecsx1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecsx1440.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/samuelebumbaca/.texlive202
+3/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on PhD_Thesis_Presentation.pdf (37 pages, 1341501 bytes).
 PDF statistics:
- 1156 PDF objects out of 1200 (max. 8388607)
- 367 compressed objects within 4 object streams
- 34 named destinations out of 1000 (max. 500000)
- 1055 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2467 PDF objects out of 2487 (max. 8388607)
+ 930 compressed objects within 10 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 3671 words of extra memory for PDF output out of 10000 (max. 10000000)
 

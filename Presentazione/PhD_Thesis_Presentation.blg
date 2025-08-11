@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PhD_Thesis_Presentation.aux
+The style file: unsrt.bst
+Database file #1: ../merged_bibliography.bib
+Warning--I didn't find a database entry for "tanEfficientDetScalableEfficient2020"
+Warning--I didn't find a database entry for "zhangComparisonYOLObasedSorghum2025"
+Warning--I didn't find a database entry for "huangSurveySelfSupervisedFewShot2022"
+Warning--I didn't find a database entry for "jiangDeepSeedlingDeepConvolutional2019"
+Warning--I didn't find a database entry for "brigatoCloseLookDeep2020"
+Warning--I didn't find a database entry for "roggiolaniDomainSpecificPreTraining2023"
+You've used 23 entries,
+            1791 wiz_defined-function locations,
+            606 strings with 9742 characters,
+and the built_in function-call counts, 6029 in all, are:
+= -- 498
+> -- 372
+< -- 5
++ -- 133
+- -- 110
+* -- 409
+:= -- 971
+add.period$ -- 73
+call.type$ -- 23
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 259
+empty$ -- 527
+format.name$ -- 110
+if$ -- 1342
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 21
+newline$ -- 122
+num.names$ -- 20
+pop$ -- 80
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 341
+swap$ -- 76
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 46
+width$ -- 25
+write$ -- 257
+(There were 6 warnings)

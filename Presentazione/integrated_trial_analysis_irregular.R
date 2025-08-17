@@ -464,9 +464,9 @@ create_integrated_plot <- function() {
     # Coordinate system
     coord_fixed(ratio = 1) +
     xlim(-8, 45) + ylim(0, 30) +
-    labs(x = "X coordinate (m)", y = "Y coordinate (m)",
-         title = "Irregular Environmental Gradient Trial Design",
-         subtitle = "Purple contours: SpATS spatial effects | Irregular environmental pattern matching presentation slide") +
+    # labs(x = "X coordinate (m)", y = "Y coordinate (m)",
+    #     title = "Irregular Environmental Gradient Trial Design",
+    #     subtitle = "Purple contours: SpATS spatial effects | Irregular environmental pattern matching presentation slide") +
     theme_minimal() +
     theme(
       plot.title = element_text(size = 16, face = "bold"),

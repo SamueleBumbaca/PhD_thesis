@@ -105,6 +105,39 @@
 \newcommand{\citeTerven}{Terven et al. A Comprehensive Review of YOLO Architectures in Computer Vision: From YOLOv1 to YOLOv8 and YOLO-NAS. \textit{Mach. Learn. Knowl. Extr.}, 2023}
 \newcommand{\citeJocher}{Jocher, Glenn; Qiu, Jiarui; Chaurasia, Anil. GitHub Ultralytics YOLO.  2023. Available online: \url{https://github.com/ultralytics/ultralytics}}
 
+% Phytotoxicity scoring citations
+\newcommand{\citeEPPODigital}{EPPO. PP 1/333(1) - Adoption of Digital Technology for Data Generation for the Efficacy Evaluation of Plant Protection Products. \textit{EPPO Bull.}, 55:14--19, 2025}
+\newcommand{\citeEPPODesign}{EPPO. PP 1/135(2) - Design and analysis of efficacy evaluation trials. \textit{EPPO Bull.}, 42:367--381, 2014}
+\newcommand{\citeChiangBias}{Chiang, K.-S.; et al. Effects of rater bias and assessment method on disease severity estimation. \textit{Plant Dis.}, 100:2530--2538, 2016}
+\newcommand{\citeChiangQuantitative}{Chiang, K.-S.; et al. Understanding the ramifications of quantitative ordinal-scale measures. \textit{Plant Dis.}, 106:1051--1063, 2022}
+\newcommand{\citeStevens}{Stevens, S.S. On the Theory of Scales of Measurement. \textit{Science}, 103:677--680, 1946}
+\newcommand{\citeAgresti}{Agresti, A. Analysis of Ordinal Categorical Data. 2nd ed.; John Wiley \& Sons: Hoboken, NJ, USA, 2010}
+\newcommand{\citeMahleinDetection}{Mahlein, A.-K. Plant disease detection and diagnosis by imaging sensors. \textit{Annu. Rev. Phytopathol.}, 54:373--393, 2016}
+\newcommand{\citeMahleinHyperspectral}{Mahlein, A.-K.; et al. Hyperspectral sensors and imaging technologies in phytopathometry. \textit{Annu. Rev. Phytopathol.}, 56:535--558, 2018}
+\newcommand{\citeGates}{Gates, D.M.; et al. Spectral properties of plants. \textit{Appl. Opt.}, 4:11--20, 1965}
+\newcommand{\citeCarter}{Carter, G.A.; Knapp, A.K. Leaf optical properties in higher plants. \textit{Oecologia}, 128:442--452, 2001}
+\newcommand{\citeGhosal}{Ghosal, S.; et al. An explainable deep machine vision framework for plant stress phenotyping. \textit{Proc. Natl. Acad. Sci. USA}, 115:4613--4618, 2018}
+\newcommand{\citeGomezZamanillo}{Gómez-Zamanillo, A.; et al. Damage assessment in soybean and redroot pigweed plants exposed to herbicides. \textit{Agronomy}, 13:2523, 2023}
+
+% Anomaly detection citations
+\newcommand{\citeSavaryGlobal}{Savary et al. The global burden of pathogens and pests on major food crops. \textit{Nat. Ecol. Evol.}, 3:430--439, 2019}
+\newcommand{\citeMartinelliAdvanced}{Martinelli et al. Advanced methods of plant disease detection. \textit{Agron. Sustain. Dev.}, 35:1--25, 2015}
+\newcommand{\citeBarbedoFactors}{Barbedo, J.G.A. Factors influencing the use of deep learning for plant disease recognition. \textit{Biosyst. Eng.}, 172:84--91, 2018}
+\newcommand{\citeFerentinosDeep}{Ferentinos, K.P. Deep learning models for plant disease detection and diagnosis. \textit{Comput. Electron. Agric.}, 145:311--318, 2018}
+\newcommand{\citeMohantyUsing}{Mohanty et al. Using deep learning for image-based plant disease detection. \textit{Front. Plant Sci.}, 7:1419, 2016}
+\newcommand{\citeSinghEffective}{Singh et al. Effective plant disease diagnosis using robust CNN architectures. \textit{Plant Methods}, 20:15, 2024}
+\newcommand{\citeVallabhajosyulaNovel}{Vallabhajosyula et al. Novel hierarchical framework for plant disease classification. \textit{Appl. Sci.}, 14:3721, 2024}
+\newcommand{\citeRuffUnifying}{Ruff et al. A unifying review of deep and shallow anomaly detection. \textit{Proc. IEEE}, 109:756--795, 2021}
+\newcommand{\citeChalapathyDeep}{Chalapathy \& Chawla. Deep learning for anomaly detection: A survey. \textit{arXiv:1901.03407}, 2019}
+\newcommand{\citeKatafuchiImage}{Katafuchi et al. Image-based plant disease detection using deep learning. \textit{Plant Pathol.}, 70:1021--1032, 2021}
+\newcommand{\citeBumbacaSupporting}{Bumbaca et al. Supporting screening of new plant protection products. \textit{Agronomy}, 14:306, 2024}
+\newcommand{\citeTodaHow}{Toda \& Okura. How convolutional neural networks diagnose plant disease. \textit{Plant Methods}, 15:9, 2019}
+\newcommand{\citeHughesOpen}{Hughes \& Salathé. An open access repository of images on plant health. \textit{arXiv:1511.08060}, 2015}
+\newcommand{\citeThapaPlant}{Thapa et al. The Plant Pathology 2020 challenge dataset. \textit{arXiv:2004.11958}, 2020}
+\newcommand{\citeBreunigLOF}{Breunig et al. LOF: identifying density-based local outliers. \textit{SIGMOD}, 2000}
+\newcommand{\citeScholkopfEstimating}{Schölkopf et al. Estimating the support of a high-dimensional distribution. \textit{Neural Comput.}, 13:1443--1471, 2001}
+\newcommand{\citeLiuIsolation}{Liu et al. Isolation forest. \textit{IEEE ICDM}, 2008}
+
 % Custom footnote citation command - ensures numeric-only marks
 \newcommand{\fcite}[1]{%
   \stepcounter{footnote}%
@@ -630,7 +663,7 @@
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Synthetic Dataset:}
                 \begin{itemize}
-                    \item \textbf{\small 54 observations}\small (6×9 grid)
+                    \item \textbf{\small 54 observations}\small (6\ensuremath{\times}9 grid)
                     \item \textbf{\small 3 treatments}\small : Control (0 t/ha), Reference (0.5 t/ha), Test (1.0 t/ha)
                     \item \textbf{\small 3 blocks}\small (18 plots each)
                     \item \textbf{\small Environmental zones}\small : Low (-1.5 t/ha), Medium (0 t/ha), High (+1.5 t/ha)
@@ -750,8 +783,8 @@
                     \item \textbf{SpATS outperformed RCBD}:
                     \begin{itemize}
                         \scriptsize
-                        \item 3.8× better treatment effect estimation
-                        \item 1.4× better environmental effect estimation
+                        \item 3.8\ensuremath{\times} better treatment effect estimation
+                        \item 1.4\ensuremath{\times} better environmental effect estimation
                     \end{itemize}
                     \item \textbf{RCBD underestimated} by 20-31\%
                     \item \textbf{SpATS <6\% error}
@@ -1012,6 +1045,8 @@
     \end{block}
 \end{frame}
 
+% PLANT COUNTING CASE STUDY
+
 % Slide 17: Georeferencing Counts (Discrete Variable) 
 \begin{frame}
     \frametitle{Georeferencing Counts (Discrete Variable)}
@@ -1044,8 +1079,6 @@
         \end{itemize}
     \end{block}
 \end{frame}
-
-% PLANT COUNTING CASE STUDY
 
 % Slide 18: Plant Counting Introduction - The Problem
 \begin{frame}
@@ -1143,42 +1176,45 @@
 \end{frame}
 
 % Slide 22: Plant Counting - Object Detection Paradigms
-\begin{frame}
-    \frametitle{Plant Counting - Object Detection Paradigms}
-    The State-Of-The-Art (SOTA) methods to count plants by orthomosaics rely on object detectors. Historically, for most of the tasks, object detectors increased their performance in this order:
-    \begin{block}
-        \small
-        \begin{itemize}
-            \item \textbf{Traditional Methods}: Handcrafted features (hardcoded) - untill 1990s
-            \item \textbf{Machine Learning Approaches}: 1990s to 2010s
-            \item \textbf{Deep Learning Approaches}: Convolutional Neural Networks (CNNs) - 2010s to 2020s 
-            \item \textbf{Transformer Architectures}: Attention mechanisms introduction - 2020s
-            \item \textbf{Data-Efficient Methods}: Few-Shot and Zero-Shot Detection - Now
-        \end{itemize}
-    \end{block}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
+%\begin{frame}
+%    \frametitle{Plant Counting - Object Detection Paradigms}
+%    The State-Of-The-Art (SOTA) methods to count plants by orthomosaics rely on object detectors. Historically, for most of the tasks, object detectors increased their performance in this order:
+%    \begin{block}
+%        \small
+%        \begin{itemize}
+%            \item \textbf{Traditional Methods}: Handcrafted features (hardcoded) - untill 1990s
+%            \item \textbf{Machine Learning Approaches}: 1990s to 2010s
+%            \item \textbf{Deep Learning Approaches}: Convolutional Neural Networks (CNNs) - 2010s to 2020s 
+%            \item \textbf{Transformer Architectures}: Attention mechanisms introduction - 2020s
+%            \item \textbf{Data-Efficient Methods}: Few-Shot and Zero-Shot Detection - Now
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
 
 % Slide 23: Plant Counting - Classic Object Detection Methods
-\begin{frame}
-    \frametitle{Plant Counting - Classic Object Detection Methods}
-    
-    \begin{block}{Handcrafted Methods (HC):}
-        \scriptsize
-        \begin{itemize}
-            \item \textbf{Traditional approach}: Still used in agricultural applications \fcite{\citeDavid} \fcite{\citeGarcia}
-            \item \textbf{Explicit programming}: Color thresholding, edge detection, morphological operations
-            \item \textbf{Advantages}: Domain expertise, interpretability, computational efficiency
-        \end{itemize}
-    \end{block}
-    \begin{center}
-        \includegraphics[width=1\textwidth]{Imgs/F2.large.jpg}
-    \end{center}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
+%\begin{frame}
+%    \frametitle{Plant Counting - Classic Object Detection Methods}
+%    
+%    \begin{block}{Handcrafted Methods (HC):}
+%        \scriptsize
+%        \begin{itemize}
+%            \item \textbf{Traditional approach}: Still used in agricultural applications \fcite{\citeDavid} \fcite{\citeGarcia}
+%            \item \textbf{Explicit programming}: Color thresholding, edge detection, morphological operations
+%            \item \textbf{Advantages}: Domain expertise, interpretability, computational efficiency
+%        \end{itemize}
+%    \end{block}
+%    \begin{center}
+%        \includegraphics[width=1\textwidth]{Imgs/F2.large.jpg}
+%    \end{center}
+%\end{frame}
 
 % Slide 24: Plant Counting - Classic Object Detection Methods
+% MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-    \frametitle{Plant Counting - Classic Object Detection Methods}
-
+%    \frametitle{Plant Counting - Classic Object Detection Methods}
+    \frametitle{Plant Counting - Object Detection Methods}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Machine (Deep) Learning Approaches:}
@@ -1260,58 +1296,61 @@
 \end{frame}
 
 % Slide 25: Plant Counting - Data-Efficient Detection Methods
-\begin{frame}
-    \frametitle{Plant Counting - Data-Efficient Detection Methods}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Few-Shot Detection:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Learning from minimal examples}: 1-30 annotated instances
-                    \item \textbf{Meta-learning} approach \fcite{\citeLiMeta}
-                    \item \textbf{Advantage}: Reduce annotation burden for new classes
-                    \item \textbf{Limited studies}: Only two for maize seedlings \fcite{\citeKarami} \fcite{\citeWang}
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \includegraphics[width=1\textwidth]{Imgs/fewshot.png}
-            \fcite{https://si-analytics.tistory.com/}
-        \end{column}
-    \end{columns}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
+%\begin{frame}
+%    \frametitle{Plant Counting - Data-Efficient Detection Methods}
+%    
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{block}{Few-Shot Detection:}
+%                \small
+%                \begin{itemize}
+%                    \item \textbf{Learning from minimal examples}: 1-30 annotated instances
+%                    \item \textbf{Meta-learning} approach \fcite{\citeLiMeta}
+%                    \item \textbf{Advantage}: Reduce annotation burden for new classes
+%                    \item \textbf{Limited studies}: Only two for maize seedlings \fcite{\citeKarami} \fcite{\citeWang}
+%                \end{itemize}
+%            \end{block}
+%        \end{column}
+%        \begin{column}{0.5\textwidth}
+%            \includegraphics[width=1\textwidth]{Imgs/fewshot.png}
+%            \fcite{https://si-analytics.tistory.com/}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
 
 % Slide 25: Plant Counting - Data-Efficient Detection Methods - Zero-Shot Detection
-\begin{frame}
-    \frametitle{Plant Counting - Data-Efficient Detection Methods}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Zero-Shot Detection:}
-                \small
-                \begin{itemize}
-                    \item \textbf{No labeled examples}: Detect novel objects without training data
-                    \item \textbf{Semantic relationships}: Exploit contextual information \fcite{\citeBansal}
-                    \item \textbf{State-of-the-art}: OWLv2 \fcite{\citeMinderer}, Grounding DINO \fcite{\citeLiuGrounding}
-                    \item \textbf{Agricultural gap}: No studies for maize seedling counting
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \includegraphics[width=0.8\textwidth]{Imgs/OWL2v.png}
-            \fcite{\citeMinderer}
-        \end{column}
-    \end{columns}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
+%\begin{frame}
+%    \frametitle{Plant Counting - Data-Efficient Detection Methods}
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{block}{Zero-Shot Detection:}
+%                \small
+%                \begin{itemize}
+%                    \item \textbf{No labeled examples}: Detect novel objects without training data
+%                    \item \textbf{Semantic relationships}: Exploit contextual information \fcite{\citeBansal}
+%                    \item \textbf{State-of-the-art}: OWLv2 \fcite{\citeMinderer}, Grounding DINO \fcite{\citeLiuGrounding}
+%                    \item \textbf{Agricultural gap}: No studies for maize seedling counting
+%                \end{itemize}
+%            \end{block}
+%        \end{column}
+%        \begin{column}{0.5\textwidth}
+%            \includegraphics[width=0.8\textwidth]{Imgs/OWL2v.png}
+%            \fcite{\citeMinderer}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
 
 % Slide 26: Plant Counting - Data Scarcity Challenge
+% MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
     \frametitle{Plant Counting - Research Gap}
     \begin{alertblock}{Critical Research Gaps:}
         \begin{itemize}
             \item \textbf{Minimum dataset requirements} None of the studies taken into account systematically tested\fcite{\citeSun} the minimum dataset requirements for robust plant detectors (EPPO benchmark).
-            \item \textbf{In-domain vs. out-of-distribution data} Despite some author already studied the impact\fcite{\citeDavid} \fcite{\citeAndvaag} none did it in a systematic way.
-            \item \textbf{Architecture influence} Many studies compared different architectures, someone claiming few-shot performances \fcite{\citeWang} \fcite{\citeKarami}, but none systematically tested the minimum dataset capability and none tested the zero-shot possibility.
+            \item \textbf{In-domain vs. out-of-distribution data} Despite some author already studied the impact\fcite{\citeDavid} \fcite{\citeAndvaag} none did it in a quantitative and systematic way.
+%            \item \textbf{Architecture influence} Many studies compared different architectures, someone claiming few-shot performances \fcite{\citeWang} \fcite{\citeKarami}, but none systematically tested the minimum dataset capability and none tested the zero-shot possibility.
         \end{itemize}
     \end{alertblock}
 
@@ -1343,22 +1382,23 @@
 \end{frame}
 
 % Slide 28: Plant Counting - Material and Methods - The Systematic Approach
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
     \frametitle{Plant Counting - Material and Methods - Research Methodology}
     \small
     \begin{itemize}
         \item \textbf{Objective}: Investigate minimum dataset size and quality for robust object detection
-        %\item \textbf{Handcrafted Method}: Test Handcrafted (HC) algorithm performances on test dataset.
+%        \item \textbf{Handcrafted Method}: Test Handcrafted (HC) algorithm performances on test dataset.
         \item \textbf{Classic Object Detectors requirements}:
             \begin{itemize}
                 \item with out-of-distribution (OOD) training datasets.
                 \item with in-domain (ID) training datasets.
             \end{itemize} 
-        \item \textbf{Data-efficient Methods}: 
-            \begin{itemize}
-                \item Test Few-Shot Detector requirements with ID training samples.
-                \item Test Zero-Shot Detector performances.
-            \end{itemize}
+%        \item \textbf{Data-efficient Methods}: 
+%            \begin{itemize}
+%                \item Test Few-Shot Detector requirements with ID training samples.
+%                \item Test Zero-Shot Detector performances.
+%            \end{itemize}
         \item \textbf{Empirical Modeling Approach}:
             \begin{itemize}
                 \item Analyze the relationship between dataset size/quality and model performance
@@ -1398,7 +1438,7 @@
             
             \begin{exampleblock}{Key Processing Parameters:}
                 \scriptsize
-                    All dataset preprocessed to get standard \textbf{tile size}: 224×224 pixels (1.12×1.12 m field coverage for georeferenced)
+                    All dataset preprocessed to get standard \textbf{tile size}: 224\ensuremath{\times}224 pixels (1.12\ensuremath{\times}1.12 m field coverage for georeferenced)
             \end{exampleblock}
         \end{column}
     \end{columns}
@@ -1435,7 +1475,6 @@
 \begin{frame}
 \begin{figure}
   \centering
-    \begin{adjustwidth}
         \subfloat[\centering]{\includegraphics[width=2.5cm]{Imgs/DavidEtAl.png}}
         \subfloat[\centering]{\includegraphics[width=2.5cm]{Imgs/LiuEtAl.png}}
         \subfloat[\centering]{\includegraphics[width=2.5cm]{Imgs/maize_seedling.png}}
@@ -1443,7 +1482,6 @@
         \subfloat[\centering]{\includegraphics[width=3.33cm]{Imgs/ID_1.png}}
         \subfloat[\centering]{\includegraphics[width=3.33cm]{Imgs/ID_2.png}}
         \subfloat[\centering]{\includegraphics[width=3.33cm]{Imgs/ID_3.png}}
-    \end{adjustwidth}
   \caption{Image examples taken from each dataset, ground truth bounding boxes are shown  in red. %MDPI: please confirm whether red frame in this figure need explanation. %Authors: Red frame shows bounding box annotations, explanation added
     (\textbf{a})~DavidEtAl.2021, 
     (\textbf{b}) LiuEtAl.2022, 
@@ -1456,6 +1494,7 @@
 \end{frame}
 
 % Slide 30: Performance Metrics and Mathematical Framework
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF RMSE AND MAPE METRICS
 \begin{frame}
     \frametitle{Plant Counting - Material and Methods - Performance Metrics}
     
@@ -1469,18 +1508,18 @@
                 \scriptsize
                 \textbf{Coefficient of Determination:}
                 $$R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}$$
-                %\vspace{0.2cm}
-                %\textbf{Root Mean Square Error:}
-                %$$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
+%                \vspace{0.2cm}
+%                \textbf{Root Mean Square Error:}
+%                $$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
             \end{exampleblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            %\begin{exampleblock}
+%            \begin{exampleblock}
                 \scriptsize
-                %\textbf{\scriptsize Mean Absolute Percentage Error:}
-                %\scriptsize $$MAPE = \frac{100\%}{n}\sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right|$$
-            %\end{exampleblock}
+%                \textbf{\scriptsize Mean Absolute Percentage Error:}
+%                \scriptsize $$MAPE = \frac{100\%}{n}\sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right|$$
+%            \end{exampleblock}
             \begin{alertblock}{Detection (Spatial) Metric:}
                 \scriptsize
                 \textbf{Mean Average Precision:}
@@ -1496,13 +1535,14 @@
 \end{frame}
 
 % Slide 33: HC Method Algorithm
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
 %    \frametitle{Plant Counting - Material and Methods - HC Method Algorithm}
-    
+%    
 %    \begin{block}{Handcrafted Object Detector Overview:}
 %        \small Two-stage detection-verification pipeline based on agronomical knowledge and color thresholding
 %    \end{block}
-    
+%    
 %    \begin{columns}
 %        \begin{column}{0.5\textwidth}
 %            \begin{exampleblock}{Stage 1 - HC1 (Detection):}
@@ -1514,7 +1554,7 @@
 %                    \item \textbf{Output}: Potential plant polygons (with false positives)
 %                \end{enumerate}
 %            \end{exampleblock}
-            
+%            
 %            \begin{alertblock}{Required Parameters:}
 %                \scriptsize
 %                \begin{itemize}
@@ -1525,7 +1565,7 @@
 %                \end{itemize}
 %            \end{alertblock}
 %        \end{column}
-        
+%        
 %        \begin{column}{0.5\textwidth}
 %            \begin{block}{Stage 2 - HC2 (Verification):}
 %                \scriptsize
@@ -1536,7 +1576,7 @@
 %                    \item \textbf{Quality control}: Retain only high-confidence annotations
 %                \end{enumerate}
 %            \end{block}
-            
+%            
 %            \begin{exampleblock}{Target Conditions:}
 %                \scriptsize
 %                \begin{itemize}
@@ -1548,20 +1588,21 @@
 %            \end{exampleblock}
 %        \end{column}
 %    \end{columns}
-    
+%    
 %    \begin{alertblock}{Pipeline Advantage:}
 %        \small Combines simple color-based detection with agronomical field structure knowledge for automated high-confidence annotation extraction
 %    \end{alertblock}
 %\end{frame}
 
 % Slide 34: HC Method Results
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
 %    \frametitle{Plant Counting - Results - HC Method }
-    
+%    
 %    \begin{block}{HC Object Detector Performance on Test Dataset:}
 %        \small Metrics computed on testing dataset tiles
 %    \end{block}
-    
+%    
 %    \begin{center}
 %        \scriptsize
 %        \begin{tabular}{|l|c|c|c|c|c|c|}
@@ -1577,7 +1618,7 @@
 %        \hline
 %        \end{tabular}
 %    \end{center}
-    
+%    
 %    \begin{columns}
 %        \begin{column}{0.5\textwidth}
 %            \begin{exampleblock}{Key Findings:}
@@ -1590,7 +1631,7 @@
 %                \end{itemize}
 %            \end{exampleblock}
 %        \end{column}
-        
+%        
 %        \begin{column}{0.5\textwidth}
 %            \begin{alertblock}{Limitations:}
 %                \scriptsize
@@ -1602,7 +1643,7 @@
 %            \end{alertblock}
 %        \end{column}
 %    \end{columns}
-    
+%    
 %    \begin{block}{Overall Assessment:}
 %        \scriptsize HC algorithm demonstrates excellent accuracy on selected tiles but processes only a small fraction of available data, indicating \textbf{high precision with limited coverage}
 %    \end{block}
@@ -1611,25 +1652,28 @@
 % Slide 29: Dataset Split and Training Protocols
 \begin{frame}
     \frametitle{Plant Counting - Material and Methods - Training Protocols}
-    
+% MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
+  
     \begin{block}{Training Dataset Configuration:}
         \small
-        \begin{itemize}
-            \item \textbf{Many-shot models}: 90\% training / 10\% validation split
-            \item \textbf{Few-shot models}: Number of shots determines training samples
-            \item \textbf{Zero-shot learning}: Natural language descriptions only
-        \end{itemize}
+        90\% training / 10\% validation split
+%        \begin{itemize}
+%            \item \textbf{Many-shot models}: 90\% training / 10\% validation split
+%            \item \textbf{Few-shot models}: Number of shots determines training samples
+%            \item \textbf{Zero-shot learning}: Natural language descriptions only
+%        \end{itemize}
     \end{block}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{block}{Dataset Size Evaluation:}
                 \scriptsize
-                \begin{itemize}
-                    \item \textbf{Many-shot}: 10 to 150 images (15 steps of 10)
-                    \item \textbf{Few-shot}: 1, 5, 10, 30, and 50 shots
-                    \item \textbf{Zero-shot}: Multiple text prompt variations
-                \end{itemize}
+                10 to 150 images (15 steps of 10)
+%                \begin{itemize}
+%                    \item \textbf{Many-shot}: 10 to 150 images (15 steps of 10)
+%                    \item \textbf{Few-shot}: 1, 5, 10, 30, and 50 shots
+%                    \item \textbf{Zero-shot}: Multiple text prompt variations
+%                \end{itemize}
             \end{block}
         \end{column}
         
@@ -1694,31 +1738,32 @@
 \end{frame}
 
 % Slide 32: SAHI Testing Protocol
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF SAHI METHOD  
 %\begin{frame}
 %    \frametitle{Plant Counting - Material and Methods - SAHI Testing Protocol}
-    
+%
 %    \begin{block}{SAHI Method Implementation:}
 %        \small All trained models tested using Slicing Aided Hyper Inference (SAHI) technique
 %    \end{block}
-    
+%    
 %    \begin{columns}
 %        \begin{column}{0.5\textwidth}
 %            \begin{exampleblock}{SAHI Process:}
 %                \scriptsize
 %                \begin{enumerate}
-%                    \item \textbf{Image slicing}: High-resolution images into 224×224 overlapping patches
+%                    \item \textbf{Image slicing}: High-resolution images into 224\ensuremath{\times}224 overlapping patches
 %                    \item \textbf{Independent inference}: Model applied to each patch separately  
 %                    \item \textbf{Result merging}: Non-maximum suppression eliminates duplicates
 %                    \item \textbf{Boundary cropping}: Final results matched to original tile boundaries
 %                \end{enumerate}
 %            \end{exampleblock}
 %        \end{column}
-        
+%        
 %        \begin{column}{0.5\textwidth}
 %            \begin{alertblock}{SAHI Justification:}
 %                \scriptsize
 %                \begin{itemize}
-%                    \item \textbf{Scale consistency}: Training (224×224) vs inference (large orthomosaics)
+%                    \item \textbf{Scale consistency}: Training (224\ensuremath{\times}224) vs inference (large orthomosaics)
 %                    \item \textbf{Boundary effects}: Complete object evaluation vs fragmentation
 %                    \item \textbf{Occlusion handling}: Objects partially cut by tile boundaries
 %                    \item \textbf{Performance enhancement}: Better than single tile inference
@@ -1726,7 +1771,7 @@
 %            \end{alertblock}
 %        \end{column}
 %    \end{columns}
-    
+%    
 %    \begin{block}{Confidence Threshold Evaluation:}
 %        \scriptsize
 %        \textbf{Score thresholds}: 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.29, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99 | \textbf{Performance metric}: Highest $R^2$ value within thresholds
@@ -1802,9 +1847,11 @@
     \end{alertblock}
 \end{frame}
 
-% Slide 35: Plant Counting - Materials and Methods - Classic Detectors Training Configuration
+% Slide 35: Plant Counting - Materials and Methods - Detectors Training Configuration
+% MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 \begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Classic Detectors Architecture}
+%    \frametitle{Plant Counting - Materials and Methods - Classic Detectors Architecture}
+    \frametitle{Plant Counting - Materials and Methods - Detectors Architecture}
 
     \begin{block}{Unified Training Configuration and Implementation:}
         \scriptsize
@@ -1846,81 +1893,84 @@
 \end{frame}
 
 % Slide 36: Plant Counting - Materials and Methods - Few-Shot Detection (CD-ViTO)
-\begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
-    \framesubtitle{Few-Shot Detection: CD-ViTO Architecture}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{CD-ViTO - Cross-Domain Vision Transformer:}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Paradigm}: Cross-domain prototype matching approach
-                    \item \textbf{Training data}: Small set of annotated examples (shots) as class prototypes
-                    \item \textbf{State-of-the-art}: Leading performance in few-shot detection
-                \end{itemize}
-            \end{block}
-            
-            \begin{exampleblock}{Implementation Details:}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Shot definition}: 1 image with single annotated plant
-                    \item \textbf{Tested shots}: 1, 5, 10, 30, and 50 shots 
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            % CD-ViTO architecture image
-            \begin{center}
-                \includegraphics[width=0.9\textwidth]{Imgs/CDVITO2.png}
-                \fcite{\citeFu}
-            \end{center}
-        \end{column}
-    \end{columns}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
+%\begin{frame}
+%    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
+%    \framesubtitle{Few-Shot Detection: CD-ViTO Architecture}
+%    
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{block}{CD-ViTO - Cross-Domain Vision Transformer:}
+%                \scriptsize
+%                \begin{itemize}
+%                    \item \textbf{Paradigm}: Cross-domain prototype matching approach
+%                    \item \textbf{Training data}: Small set of annotated examples (shots) as class prototypes
+%                    \item \textbf{State-of-the-art}: Leading performance in few-shot detection
+%                \end{itemize}
+%            \end{block}
+%            
+%            \begin{exampleblock}{Implementation Details:}
+%                \scriptsize
+%                \begin{itemize}
+%                    \item \textbf{Shot definition}: 1 image with single annotated plant
+%                    \item \textbf{Tested shots}: 1, 5, 10, 30, and 50 shots 
+%                \end{itemize}
+%            \end{exampleblock}
+%        \end{column}
+%        
+%        \begin{column}{0.5\textwidth}
+%            % CD-ViTO architecture image
+%            \begin{center}
+%                \includegraphics[width=0.9\textwidth]{Imgs/CDVITO2.png}
+%                \fcite{\citeFu}
+%            \end{center}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
 
 % Slide 37: Plant Counting - Materials and Methods - Zero-Shot Detection (OWLv2)
-\begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
-    \framesubtitle{Zero-Shot Detection: OWLv2 Architecture}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{OWLv2 - Open-Vocabulary Detection:}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Paradigm}: Object detection based solely on text prompts
-                    \item \textbf{State-of-the-art}: Leading performance in open-vocabulary detection \fcite{\citeMinderer} \fcite{\citeLiuGrounding}
-                \end{itemize}
-            \end{block}
-            
-            \begin{alertblock}{Text Prompt Strategy:}
-                \scriptsize
-                \textbf{Prompt variety}: Simple terms ("maize", "seedling") to descriptive phrases ("aerial view of maize seedlings")
-                \textbf{Systematic evaluation}: 11 different prompts tested, best-performing reported
-            \end{alertblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{\tiny Model Variants Tested:}
-                \tiny
-                \begin{itemize}
-                    \item \textbf{Encoder sizes}: ViT-B/16, ViT-L/14
-                    \item \textbf{Base models}: Self-supervised OWL-ST method training
-                    \item \textbf{Fine-tuned models}: Further trained on human-annotated datasets
-                    \item \textbf{Ensemble models}: Multiple weight combinations for balanced performance
-                \end{itemize}
-            \end{exampleblock}
-            % Space reserved for image
-            \begin{center}
-                \includegraphics[width=0.9\textwidth]{Imgs/OWLv2.png}
-            \end{center}
-        \end{column}
-    \end{columns}
-\end{frame}
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
+%\begin{frame}
+%    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
+%    \framesubtitle{Zero-Shot Detection: OWLv2 Architecture}
+%    
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{block}{OWLv2 - Open-Vocabulary Detection:}
+%                \scriptsize
+%                \begin{itemize}
+%                    \item \textbf{Paradigm}: Object detection based solely on text prompts
+%                    \item \textbf{State-of-the-art}: Leading performance in open-vocabulary detection \fcite{\citeMinderer} \fcite{\citeLiuGrounding}
+%                \end{itemize}
+%            \end{block}
+%            
+%            \begin{alertblock}{Text Prompt Strategy:}
+%                \scriptsize
+%                \textbf{Prompt variety}: Simple terms ("maize", "seedling") to descriptive phrases ("aerial view of maize seedlings")
+%                \textbf{Systematic evaluation}: 11 different prompts tested, best-performing reported
+%            \end{alertblock}
+%        \end{column}
+%        
+%        \begin{column}{0.5\textwidth}
+%            \begin{exampleblock}{\tiny Model Variants Tested:}
+%                \tiny
+%                \begin{itemize}
+%                    \item \textbf{Encoder sizes}: ViT-B/16, ViT-L/14
+%                    \item \textbf{Base models}: Self-supervised OWL-ST method training
+%                    \item \textbf{Fine-tuned models}: Further trained on human-annotated datasets
+%                    \item \textbf{Ensemble models}: Multiple weight combinations for balanced performance
+%                \end{itemize}
+%            \end{exampleblock}
+%            % Space reserved for image
+%            \begin{center}
+%                \includegraphics[width=0.9\textwidth]{Imgs/OWLv2.png}
+%            \end{center}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
 
 % Slide 38: Plant Counting - Materials and Methods - Architecture Summary Table
+% COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 \begin{frame}
     \frametitle{Plant Counting - Materials and Methods - Architecture Summary}
     
@@ -1929,23 +1979,24 @@
         \caption{Summary of tested architectures and model sizes (millions of parameters)}
         \begin{tabularx}{\textwidth}{lXXXXXX}
         \toprule
-        \textbf{Architecture} &\textbf{Shots} & \textbf{n} & \textbf{s/S} & \textbf{m/B} & \textbf{l/L} & \textbf{x} \\
+%        \textbf{Architecture} &\textbf{Shots} & \textbf{n} & \textbf{s/S} & \textbf{m/B} & \textbf{l/L} & \textbf{x} \\
+        \textbf{Architecture} &\textbf{Shots} & \textbf{n} & \textbf{s} & \textbf{m} & \textbf{l} & \textbf{x} \\
         \midrule
         YOLOv5 & many & 1.9 & 7.2 & 21.2 & 46.5 & 86.7 \\
         YOLOv8 & many & 3.2 & 11.2 & 25.9 & 43.7 & 68.2 \\
         YOLO11 & many & 4.0 & 12.5 & 28.0 & 50.0 & 75.0 \\
         RT-DETR & many & - & - & - & 60.0 & 80.0 \\
-        CD-ViTO & few & - & 22.0 & 86.0 & 307. & - \\
-        OWLv2 & zero & - & - & 86.0 & 307.0 & - \\
+ %       CD-ViTO & few & - & 22.0 & 86.0 & 307. & - \\
+ %       OWLv2 & zero & - & - & 86.0 & 307.0 & - \\
         \bottomrule
         \end{tabularx}
     \end{table}
     
         \scriptsize
         \textbf{n}: nano, \textbf{s}: small, \textbf{m}: medium, \textbf{l}: large, \textbf{x}: extra-large
-        \textbf{S}: ViT-S (Small) backbone
-        \textbf{B}: ViT-B (Base) backbone
-        \textbf{L}: ViT-L (Large) backbone
+%        \textbf{S}: ViT-S (Small) backbone
+%        \textbf{B}: ViT-B (Base) backbone
+%        \textbf{L}: ViT-L (Large) backbone
 
     
     \begin{alertblock}{Architecture Selection Strategy:}
@@ -2061,798 +2112,1446 @@
     \end{block}
 \end{frame}
 
-%NEW SLIDES
-
-
-% Slide 39: Plant Counting - Dataset Requirements Challenge
+% Slide 47: Plant Counting - Discussion
+% MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-    \frametitle{The Dataset Requirements Challenge in Agriculture}
+    \frametitle{Plant Counting - Discussion: Key Findings}
     
-    \begin{block}{\small Known Performance Factors:}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Critical Findings - Dataset Source Impact:}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{In-domain data mandatory}: No OOD-trained model achieved R\ensuremath{^2} = 0.85 benchmark
+                    \item \textbf{GoF limitation}: OOD models showed GoF < 0.2, indicating poor predictability with limited datasets (1168 images)
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Architecture vs Dataset Requirements:}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{CNN complexity trade-off}: Higher parameters = higher dataset needs
+                    \item \textbf{Transformer superiority}: RT-DETR L achieves benchmark with only 60 samples 
+                    \item \textbf{Predictable scaling}: GoF > 0.3 enables practical annotation planning
+                \end{itemize}
+            \end{exampleblock}
+            
+%            \begin{alertblock}{Data-Efficient Methods Limitations:}
+%                \scriptsize
+%                \textbf{Current reality}: Few-shot (CD-ViTO: RMSE 3.9 vs. 0.39 needed) and zero-shot (OWLv2) fail agricultural precision requirements
+%            \end{alertblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Quality vs Quantity Trade-offs:}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Quality tolerance}: Models maintain benchmark with 65-90\% annotation quality
+                    \item \textbf{Strategic flexibility}: RT-DETR offers choice between minimal high-quality (60 images, 100\%) or abundant low-quality data (100 images, 65\%)
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    \end{frame}
+
+% Slide 48: Plant Counting - Conclusions and Future Directions
+\begin{frame}
+    \frametitle{Plant Counting - Conclusions and Future Directions}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Practical Implementation Guidelines:}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Minimum requirements}: Focus on minimum viable dataset of 60 images with high annotation quality or 100 images with 65\% quality
+                    \item \textbf{Architecture selection}: Use CNNs models with few parameters or RT-DETR when allowed by computational resources 
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Future Research Directions:}
+                \scriptsize
+                \textbf{Domain-specific pre-training}: Agricultural aerial orthomosaic imagery backbones may further reduce dataset requirements
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \begin{alertblock}{Core Conclusion:}
         \scriptsize
+        \textbf{EPPO compliance}: The minimum dataset size of 60-100 images (about 75 to 125 m$^2$) is achievable for any efficacy or selectivity trial (about 500-1000 m$^2$), enabling practical implementation of geostatistic in EPPO standard framework
+    \end{alertblock}
+\end{frame}
+
+
+
+% Slide: Georeferencing Rankings (Ordinal Variable) 
+\begin{frame}
+    \frametitle{Georeferencing Rankings (Ordinal Variable)}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|l|c|c|c|}
+        \hline
+        & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \hline
+        \rowcolor{green!20} & Continuous limited & X & & \\
+        \hline
+        \rowcolor{yellow!20} & Discrete & X & & \\
+        \hline
+        \rowcolor{red!20} $\rightarrow$ & Ordinal & & X & X \\
+        \hline
+        \rowcolor{red!20} & Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} & Binary & & & X \\
+        \hline
+        \end{tabular}
+    \end{table}
+    \begin{block}{Georeferencing Rankings:}
+        \small
         \begin{itemize}
-            \item \textbf{Dataset size}: Performance directly related to training data amount \fcite{\citeSun}
-            \item \textbf{Data quality}: Annotation accuracy critically affects model performance \fcite{\citeAlhazmi}
-            \item \textbf{Model architecture}: Different models require different dataset sizes for same performance \fcite{\citeNguyen} \fcite{\citeBrigato}
+            \item \textbf{Rankings} are ordinal variables required for estimating phytotoxicity sympthoms (e.g. PP 1/135 (4) Phytotoxicity assessment).
+            \item the \textbf{Case Study}: Ranking phytotoxicity sympthoms from georeferenced photogrammetric orthomosaics by ML regression. 
+            \item this study is discussed in the scientific article \textbf{\scriptsize Bumbaca, S.; Borgogno-Mondino, E. Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI. Agronomy 2024, 14, 306. DOI: 10.3390/agronomy14020306}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% PHYTOTOXICITY SCORING SECTION
+
+% Introduction Slides (2 slides)
+
+% Slide 1: Introduction - PHYGEN and Statistical Concerns
+\begin{frame}
+    \frametitle{Georeferencing Rankings (Ordinal Variable): Phytotoxicity Scoring}
+    
+    \begin{block}{PHYGEN: General Phytotoxicity Index}
+        \small
+        \begin{itemize}
+            \item \textbf{Definition}: Aggregate indicator summarizing phytotoxicity symptoms as percentage of damage compared to healthy reference plant
+            \item \textbf{EPPO Symptoms}: (i) development cycle modifications, (ii) thinning, (iii) color modifications, (iv) necrosis, (v) deformation, (vi) yield effects\fcite{\citeEPPODesign}
+            \item \textbf{Selectivity Assessment}: Critical for Plant Protection Product (PPP) market approval
+        \end{itemize}
+    \end{block}
+    
+    \begin{alertblock}{Statistical Measurement Theory Concerns}
+        \small
+        \textbf{Stevens Scale Theory Problem}\fcite{\citeStevens}: 
+        \begin{itemize}
+            \item \textbf{Current practice}: Ordinal discrete scales (0\%, 13\%, 38\%, 63\%, 88\%)
+            \item \textbf{Statistical limitation}: Ordinal data violates ANOVA assumptions\fcite{\citeAgresti}
+            \item \textbf{Rater variability}: 10\% inter-rater error commonly accepted\fcite{\citeChiangBias}
+        \end{itemize}
+    \end{alertblock}
+    
+    \begin{exampleblock}{Research Objective}
+        \small Transform discrete ordinal PHYGEN rankings into continuous measurements suitable for parametric statistical analysis
+    \end{exampleblock}
+\end{frame}
+
+% Slide 2: Introduction - State of the Art and Challenges
+\begin{frame}
+    \frametitle{State of the Art in Automated Phytotoxicity Assessment}
+    
+    \begin{block}{Current Approaches Limitations}
+        \small
+        \begin{itemize}
+            \item \textbf{Human assessment}: Subjective, 10\% maximum error\fcite{\citeChiangBias}
+            \item \textbf{CNN methods}: Require thousands of images for training\fcite{\citeGomezZamanillo}
+            \item \textbf{Deep learning}: Not suitable for new PPPs with limited training data
         \end{itemize}
     \end{block}
     
     \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Domain-Specific Factors:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Backbone importance} \fcite{\citeDu}
-                    \item \textbf{Domain-specific pre-training} benefits \fcite{\citeRoggiolani}
-                    \item \textbf{Data augmentation} strategies \fcite{\citeShorten}
-                \end{itemize}
-            \end{exampleblock}
+        \begin{column}{0.6\textwidth}
+            \begin{table}[H]
+                \centering
+                \scriptsize
+                \caption{Related works comparison}
+                \begin{tabular}{|l|l|l|}
+                \hline
+                \textbf{Method} & \textbf{Accuracy} & \textbf{New PPP Suitability} \\
+                \hline
+                Human raters & 90\% (\ensuremath{\pm}10\%) & Traditional \\
+                \hline
+                CNN (Ghosal et al.) & 50-90\% & Destructive \\
+                \hline
+                CNN (Gómez-Z. et al.) & 93.26\% & Not suitable \\
+                \hline
+                \textbf{This work} & \textbf{89.34\%} & \textbf{Suitable} \\
+                \hline
+                \end{tabular}
+            \end{table}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
-            \begin{alertblock}{Most Critical Factor:}
-                \small
-                \textbf{Dataset source} \fcite{\citeSun}: In-domain vs. out-of-distribution dramatically affects accuracy and dataset size requirements \fcite{\citeDavid} \fcite{\citeAndvaag}
+        \begin{column}{0.4\textwidth}
+            \begin{alertblock}{New PPP Challenge}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Unique symptoms}: Unpredictable for new products
+                    \item \textbf{Small datasets}: Few hundred plants typical
+                    \item \textbf{No pre-training}: Symptoms not cataloged
+                \end{itemize}
             \end{alertblock}
         \end{column}
     \end{columns}
 \end{frame}
 
+% Materials and Methods Slides (7 slides)
 
-% Slide 22: Deep Learning Architectures Comparison
+% Slide 3: Methods - Workflow Overview
 \begin{frame}
-    \frametitle{Deep Learning Architectures Comparison}
+    \frametitle{Methodology: Workflow Overview}
     
-    \begin{block}{Architecture Analysis:}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{Imgs/agronomy-14-00306-g003.png}
+    \end{center}
+    
+    \begin{exampleblock}{Workflow Steps}
+        \small
+        \begin{enumerate}
+            \item \textbf{Acquisition planning}: Stereoscopic multispectral imaging
+            \item \textbf{3D reconstruction}: Bundle adjustment and point cloud generation
+            \item \textbf{Parameter extraction}: Geometric and spectral features from 3D model
+            \item \textbf{ML training}: LASSO + Logistic Function on extracted parameters
+            \item \textbf{Validation}: K-fold cross-validation for robustness
+        \end{enumerate}
+    \end{exampleblock}
+\end{frame}
+
+% Slide 4: Methods - Hardware Platform
+\begin{frame}
+    \frametitle{Hardware Platform: Controlled Greenhouse System}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g001.png}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Platform Components}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{MAPIR Survey3W}: Multispectral camera (Green, Red, NIR)
+                    \item \textbf{LED lighting}: GODOX FL150R panels + 850nm NIR strip
+                    \item \textbf{Motion system}: DC motor pulley system (0.08 m/s)
+                    \item \textbf{Positioning}: 3-axis adjustable (1.1-1.5m height)
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{System Specifications}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Sensor}: 3000\ensuremath{\times}4000 pixels, 1.55 \ensuremath{\mu}m pixel size
+                    \item \textbf{Footprint}: 202-276 cm horizontal
+                    \item \textbf{GSD}: 0.37-0.69 mm/pixel
+                    \item \textbf{Overlap}: 95\% forward, strip distance = 20cm
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 5: Methods - Radiometric Calibration
+\begin{frame}
+    \frametitle{Radiometric Calibration and Spectral Validation}
+    
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{Imgs/agronomy-14-00306-g002.png}
+    \end{center}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Calibration Process}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Reference panels}: MAPIR calibrated panels (4 gray levels)
+                    \item \textbf{Method}: Empirical line approach with OLS
+                    \item \textbf{Validation}: RS-5400 Spectroradiometer comparison
+                    \item \textbf{Error metric}: Mean Absolute Percentage Error (MAPE)
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Calibration Challenges}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{White balancing}: Increased Red/NIR, reduced Green sensitivity
+                    \item \textbf{Band-specific errors}: Higher MAPE for Green band
+                    \item \textbf{Controlled lighting}: LED spectrum consistency verified
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 6: Methods - Geometric Validation and Alignment
+\begin{frame}
+    \frametitle{Geometric Validation and Bundle Adjustment}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g005.png}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Geometric Control}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Ground Control Points}: \ensuremath{\geq}9 GCPs per acquisition
+                    \item \textbf{Height levels}: 0m, 0.35m, 0.7m distribution
+                    \item \textbf{Metered tapes}: 4 reference tapes for validation
+                    \item \textbf{Bundle adjustment}: Agisoft Metashape 2.1.0
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Precision Estimation}
+                \scriptsize
+                Z-coordinate precision:
+                $$\sigma_z = \frac{H^2}{Bf} \sigma_x$$
+                \begin{itemize}
+                    \item H: camera-target distance
+                    \item B: baseline (0.2m)
+                    \item f: focal length (3.37mm)
+                    \item $\sigma_x$: parallax precision (0.775 \ensuremath{\mu}m)
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 7: Methods - Products and Segmentation
+\begin{frame}
+    \frametitle{Products Generation and Plant Segmentation}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g006.png}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Generated Products}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{DSM}: Digital Surface Model from point cloud
+                    \item \textbf{MSO}: Multi-Spectral Orthomosaic (calibrated)
+                    \item \textbf{Vegetation Mask}: Isolated plant pixels
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Segmentation Process}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Bimodal thresholding}: Otsu method on Green band
+                    \item \textbf{Refinement}: Semi-automatic GrabCut technique
+                    \item \textbf{Output}: Binary mask separating plants from soil
+                    \item \textbf{Quality control}: Manual validation and correction
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 8: Methods - Experimental Design
+\begin{frame}
+    \frametitle{Experimental Design and Observations}
+    
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{Experimental Setup}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Crop}: Oilseed rape (OSR) in greenhouse
+                    \item \textbf{Sample size}: 44 pots (40\ensuremath{\times}30 cm each)
+                    \item \textbf{Treatment}: Herbicide with unknown mode of action
+                    \item \textbf{Design}: Multiple concentrations + control group
+                    \item \textbf{Assessment}: 3 time points (3, 7, 14 DAA)
+                \end{itemize}
+            \end{block}
+            
+            \begin{table}[H]
+                \centering
+                \scriptsize
+                \caption{PHYGEN observations distribution}
+                \begin{tabular}{|l|c|c|c|c|c|}
+                \hline
+                \textbf{DAA} & \textbf{0\%} & \textbf{13\%} & \textbf{38\%} & \textbf{63\%} & \textbf{88\%} \\
+                \hline
+                3 & 11 & 9 & 8 & 7 & 9 \\
+                7 & 5 & 4 & 15 & 10 & 10 \\
+                14 & 15 & 14 & 9 & 6 & 0 \\
+                \hline
+                \textbf{Total} & \textbf{31} & \textbf{27} & \textbf{32} & \textbf{23} & \textbf{19} \\
+                \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            \begin{alertblock}{Data Characteristics}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Discrete values}: Only 5 PHYGEN levels used
+                    \item \textbf{Uneven intervals}: 25\% between most levels, 13\% for first
+                    \item \textbf{Temporal variation}: Imbalanced distribution over time
+                    \item \textbf{Total dataset}: 132 multivariate observations
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 9: Methods - ML Model and Predictors
+\begin{frame}
+    \frametitle{Machine Learning Model: LASSO + Logistic Function}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Extracted Predictors (14 variables)}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Spectral bands}: Red, Green, NIR (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Vegetation indices}: NDVI, SAVI (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Geometric}: Plant area (LAI proxy), height (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Temporal}: Days After Application (DAA)
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Model Architecture}
+                \scriptsize
+                \textbf{Two-stage approach}:
+                \begin{itemize}
+                    \item \textbf{Stage 1}: LASSO regression with L\ensuremath{_1} regularization
+                    \item \textbf{Stage 2}: Logistic function on LASSO output
+                    \item \textbf{Cross-validation}: K-fold (K=10) for hyperparameter tuning
+                    \item \textbf{Split}: 80\% training, 20\% testing (stratified)
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{table}[H]
+                \centering
+                \scriptsize
+                \caption{Model equations and objectives}
+                \begin{tabular}{|p{2cm}|p{3cm}|}
+                \hline
+                \textbf{Model} & \textbf{Description} \\
+                \hline
+                LASSO & RSS + L\ensuremath{_{1}} penalty regularization \\
+                \hline
+                Logistic & Nonlinear least squares with sigmoid curve \\
+                \hline
+                \end{tabular}
+            \end{table}
+            
+            \begin{alertblock}{Advantages for New PPPs}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Small dataset suitable}: Only 132 observations needed
+                    \item \textbf{Regularization}: Prevents overfitting with limited data
+                    \item \textbf{Interpretability}: Physical meaning of predictors maintained
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Results and Discussion Slides (3 slides)
+
+% Slide 10: Results - Measurement Errors and Stability
+\begin{frame}
+    \frametitle{Results: Measurement Errors and Model Stability}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Geometric Assessment}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Precision}: Sub-millimeter accuracy achieved
+                    \item \textbf{X-axis MAE}: 0.57-0.67 mm across all DAA
+                    \item \textbf{Y-axis MAE}: 0.61-0.70 mm across all DAA
+                    \item \textbf{Z-axis MAE}: 0.62-0.91 mm across all DAA
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Radiometric Calibration}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Best performance}: White reference (4.1-18.1\% MAPE)
+                    \item \textbf{Challenging}: Black reference (76.7-119.6\% MAPE)
+                    \item \textbf{NIR band}: Highest variability across targets
+                    \item \textbf{Overall}: Acceptable for relative measurements
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Model Stability (10-fold CV)}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{LASSO coefficients}: All CV \ensuremath{<} 0.25
+                    \item \textbf{DAA parameter}: CV = 0.17 (very stable)
+                    \item \textbf{NDVI parameter}: CV = 0.14 (excellent)
+                    \item \textbf{Area parameter}: CV = 0.13 (excellent)
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Key Findings}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Geometric accuracy}: Sub-millimeter precision achieved
+                    \item \textbf{Model stability}: Low coefficient of variation (\ensuremath{<}0.25)
+                    \item \textbf{Logistic parameters}: Very stable (CV \ensuremath{<} 0.1)
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 11: Results - Model Performance
+\begin{frame}
+    \frametitle{Results: Model Performance and Accuracy}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Performance Metrics}
+                \scriptsize
+                \begin{table}[H]
+                    \centering
+                    \begin{tabular}{|l|c|c|c|}
+                    \hline
+                    \textbf{Model} & \textbf{MAE (\%)} & \textbf{R\ensuremath{^2}} & \textbf{Adj R\ensuremath{^2}} \\
+                    \hline
+                    LASSO & 11.77 \ensuremath{\pm} 0.67 & - & 0.89 \ensuremath{\pm} 0.03 \\
+                    LASSO + LF & \textbf{10.66 \ensuremath{\pm} 0.83} & \textbf{0.9 \ensuremath{\pm} 0.03} & - \\
+                    \hline
+                    \end{tabular}
+                \end{table}
+            \end{block}
+            
+            \begin{exampleblock}{Benchmark Comparison}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Human raters}: 10\% accepted error threshold\fcite{\citeChiangBias}
+                    \item \textbf{Our model}: 10.66\% MAE (\ensuremath{\approx} human performance)
+                    \item \textbf{SOTA CNN}: 6.74\% MAE (but requires huge datasets)
+                    \item \textbf{Correlation}: R\ensuremath{^2} = 0.9 (excellent agreement)
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Performance Analysis}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Accuracy achievement}: Meets EPPO standards for new PPPs
+                    \item \textbf{Small dataset advantage}: Only 132 observations vs. thousands for CNNs
+                    \item \textbf{Stability proven}: Robust across different training samples
+                    \item \textbf{Practical applicability}: Suitable for operational new PPP screening
+                \end{itemize}
+            \end{alertblock}
+            
+            \begin{block}{Operational Context}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Target application}: New PPP screening (limited data)
+                    \item \textbf{Infrastructure}: Greenhouse platform required
+                    \item \textbf{Skills needed}: Photogrammetry + AI expertise
+                    \item \textbf{Processing time}: Automated after setup
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 12: Results - ANOVA Compliance and Continuous Output
+\begin{frame}
+    \frametitle{Results: ANOVA Compliance and Statistical Advancement}
+    
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{Imgs/agronomy-14-00306-g008.png}
+    \end{center}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Statistical Advancement}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Input}: Discrete ordinal PHYGEN scores (left)
+                    \item \textbf{Output}: Continuous PHYGEN estimates (right)
+                    \item \textbf{Compliance}: Now suitable for parametric ANOVA testing
+                    \item \textbf{Benefit}: Enables proper statistical analysis of treatment effects
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Statistical Theory Resolution}
+                \scriptsize
+                \textbf{Stevens Scale Problem Solved}\fcite{\citeStevens}:
+                \begin{itemize}
+                    \item \textbf{Before}: Ordinal data → Non-parametric tests only
+                    \item \textbf{After}: Continuous data → ANOVA, t-tests enabled
+                    \item \textbf{Implication}: Proper variance analysis for PPP trials
+                    \item \textbf{Geostatistics}: Compatible with LMM spatial analysis
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+    
+    \begin{block}{Integration with Spatial Analysis}
+        \small This continuous PHYGEN output enables integration with geostatistical Linear Mixed Models for environmental variability estimation, completing the georeferencing framework for EPPO-compliant trials
+    \end{block}
+\end{frame}
+
+% Conclusions Slide (1 slide)
+
+% Slide 13: Conclusions
+\begin{frame}
+    \frametitle{Conclusions: Automated PHYGEN Assessment for New PPPs}
+    
+    \begin{exampleblock}{Key Achievements}
         \small
         \begin{itemize}
-            \item \textbf{Trade-off}: High precision on subset vs. limited generalizability
+            \item \textbf{Accuracy}: 10.66\% MAE, R\ensuremath{^2} = 0.9 (comparable to human raters)
+            \item \textbf{Small dataset capability}: Only 132 observations vs. thousands for CNNs
+            \item \textbf{Stability}: Robust model performance across different training samples
+            \item \textbf{Statistical compliance}: Converts ordinal to continuous data for ANOVA
         \end{itemize}
-    \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{CNN-based Models:}
-                \small
-                \textbf{Convolutional Neural Networks} \fcite{\citeLeCun}
-                \begin{itemize}
-                    \item \textbf{YOLO family}: YOLOv5, YOLOv8
-                    \item \textbf{Faster R-CNN} \fcite{\citeFasterRCNN}
-                    \item Grid-like image processing
-                    \item Efficient for small images
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Transformer-based:}
-                \small
-                \textbf{Attention mechanisms} \fcite{\citeVaswani}
-                \begin{itemize}
-                    \item \textbf{DETR} \fcite{\citeCarion}
-                    \item \textbf{RT-DETR}: Real-time performance
-                    \item Sequence of patches processing
-                    \item Superior with scarce data \fcite{\citeRekavandi}
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{alertblock}{Key Insight:}
-        \small Transformer-based models outperform CNN-based on common benchmarks \fcite{\citeZong} and show better fine-tuning performance with limited data
-    \end{alertblock}
-\end{frame}
-
-% Slide 21: Plant Counting - YOLO vs RT-DETR Architecture
-\begin{frame}
-    \frametitle{Representative Architectures: YOLO vs RT-DETR}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{YOLO Family (Pure CNN):}
-                \small
-                \textbf{Why chosen as representatives:}
-                \begin{itemize}
-                    \item \textbf{Large adoption} in agriculture \fcite{\citeBadgujar}
-                    \item \textbf{Good precision} and low dataset requirements vs. other CNNs \fcite{\citeTan} \fcite{\citeZhang}
-                    \item \textbf{Speed-accuracy} optimizations
-                \end{itemize}
-                
-                \textbf{Variants tested:}
-                \begin{itemize}
-                    \item \textbf{YOLOv5}: CSPDarknet53 backbone
-                    \item \textbf{YOLOv8}: Improved architecture with decoupled head
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{RT-DETR (Transformer-mixed):}
-                \small
-                \textbf{Why chosen:}
-                \begin{itemize}
-                    \item \textbf{Outperforms} YOLOv5 and YOLOv8 \fcite{\citeZhao}
-                    \item \textbf{Real-time} transformer detector
-                    \item \textbf{Hybrid approach}: CNN backbone + transformer decoder
-                \end{itemize}
-                
-                \textbf{Architecture advantages:}
-                \begin{itemize}
-                    \item Enhanced feature extraction
-                    \item Better handling of spatial relationships
-                    \item Improved performance with limited data
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{block}{Emerging Paradigms:}
-        \small
-        \textbf{Zero-shot} \fcite{\citeBansal} and \textbf{few-shot} \fcite{\citeHuang} detection aim to reduce annotation burden through semantic relationships and meta-learning
-    \end{block}
-\end{frame}
-
-
-% Slide 23: Plant Counting Introduction - Object Detection Approaches
-\begin{frame}
-    \frametitle{Object Detection Paradigms for Plant Counting}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Many-Shot Models:}
-                \small
-                \begin{itemize}
-                    \item \textbf{CNN-based}: YOLOv5, YOLOv8
-                    \item \textbf{Transformer-mixed}: RT-DETR, YOLO11
-                    \item Require extensive labeled datasets
-                    \item State-of-the-art performance
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Few-Shot Models:}
-                \small
-                \begin{itemize}
-                    \item \textbf{CD-ViTO}: Cross-domain adaptation
-                    \item Meta-learning approaches
-                    \item 1-50 training examples
-                    \item Promising but unvalidated for agriculture
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Zero-Shot Models:}
-                \small
-                \begin{itemize}
-                    \item \textbf{OWLv2}: Open-vocabulary detection
-                    \item Vision-language foundation models
-                    \item Text prompt-based detection
-                    \item No training data required
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Handcrafted Methods:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Color thresholding} + agronomic knowledge
-                    \item High precision in constrained scenarios
-                    \item Still used as baseline/annotation tool
-                    \item Limited generalizability
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 24: Plant Counting Introduction - Study Objectives
-\begin{frame}
-    \frametitle{Study Objectives and Research Questions}
-    
-    \begin{exampleblock}{Primary Objective:}
-        Determine minimum dataset size and quality required to achieve EPPO benchmarks (R² $\geq$ 0.85) for maize seedling detection across different object detection paradigms.
     \end{exampleblock}
     
-    \begin{block}{Specific Research Questions:}
-        \begin{enumerate}
-            \item What is the impact of \textbf{dataset source} (in-domain vs. out-of-distribution)?
-            \item How do \textbf{model architectures} affect dataset requirements?
-            \item What is the minimum acceptable \textbf{annotation quality}?
-            \item Can \textbf{few-shot/zero-shot} approaches meet agricultural benchmarks?
-            \item What role do \textbf{handcrafted methods} play in the DL era?
-        \end{enumerate}
+    \begin{block}{Methodological Contributions}
+        \small
+        \begin{itemize}
+            \item \textbf{Controlled environment}: Reduced sensor and environmental variability
+            \item \textbf{Multispectral photogrammetry}: Geometric + spectral feature integration
+            \item \textbf{LASSO + Logistic model}: Optimized for limited training data scenarios
+            \item \textbf{Validation framework}: Comprehensive error assessment and stability testing
+        \end{itemize}
     \end{block}
     
-    \begin{alertblock}{Case Study Focus:}
-        \textbf{Maize seedlings} (Zea mays L.) at V3-V5 growth stage from georeferenced orthomosaics
+    \begin{alertblock}{Impact for EPPO Framework}
+        \small
+        \textbf{Enables geostatistical analysis}: Continuous PHYGEN scores are now compatible with Linear Mixed Models for spatial environmental variability estimation, fulfilling the georeferencing requirements for modern EPPO-compliant Plant Protection Product trials
     \end{alertblock}
 \end{frame}
 
-% Slide 25: Materials and Methods - Dataset Overview
+% Slide: Georeferencing Rankings (Ordinal Variable) 
 \begin{frame}
-    \frametitle{Dataset Collection and Preparation}
-    
-    \begin{columns}
-        \begin{column}{0.6\textwidth}
-            \begin{block}{Dataset Sources:}
-                \small
-                \textbf{Out-of-Distribution (OOD):}
-                \begin{itemize}
-                    \item Scientific literature: 778 tiles
-                    \item Internet repositories: 390 tiles
-                    \item Pre-annotated datasets
-                \end{itemize}
-                
-                \textbf{In-Domain (ID):}
-                \begin{itemize}
-                    \item 3 study sites: 450 training + 60 test tiles
-                    \item Phantom 4 Pro v2.0 @ 10m AGL
-                    \item Bundle adjustment error: 38mm (GNSS VRS-NRTK)
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.4\textwidth}
-            \begin{block}{Technical Specs:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Resolution}: 5 mm/pixel
-                    \item \textbf{Tile size}: 224×224 pixels
-                    \item \textbf{Coverage}: 1.12×1.12 meters
-                    \item \textbf{Content}: ~2 maize rows per tile
-                    \item \textbf{Annotation}: Squared bounding boxes centered on stems
-                \end{itemize}
-            \end{block}
-            
-            \begin{alertblock}{\small Key Insight:}
-                \small Tile size optimized for row pattern identification and model compatibility
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 26: Materials and Methods - Handcrafted Algorithm
-\begin{frame}
-    \frametitle{Handcrafted Object Detector: Two-Stage Pipeline}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Stage 1 - HC1 (Detection):}
-                \small
-                \begin{enumerate}
-                    \item \textbf{Color thresholding} in HSV space
-                    \item \textbf{Connected components} analysis
-                    \item \textbf{Size filtering} based on leaf area
-                    \item Outputs: Potential plant regions
-                \end{enumerate}
-                
-                \textit{Result: High recall, many false positives}
-            \end{block}
-            
-            \begin{block}{Stage 2 - HC2 (Verification):}
-                \small
-                \begin{enumerate}
-                    \item \textbf{RANSAC} line fitting for row detection
-                    \item \textbf{Row spacing} validation
-                    \item \textbf{Plant count} verification per row
-                    \item \textbf{Agronomic knowledge} application
-                \end{enumerate}
-                
-                \textit{Result: High precision, limited coverage}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Algorithm Performance:}
-                \small
-                \begin{center}
-                    \scriptsize
-                    \begin{tabular}{lccc}
-                        \textbf{Dataset} & \textbf{R²} & \textbf{Coverage} \\
-                        \hline
-                        ID\_1 & 0.95 & 7.8\% \\
-                        ID\_2 & 0.93 & 4.2\% \\
-                        ID\_3 & 0.87 & 1.8\% \\
-                    \end{tabular}
-                \end{center}
-            \end{exampleblock}
-            
-            \begin{alertblock}{\small Trade-off:}
-                Excellent accuracy on subset of data vs. limited generalizability
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 27: Materials and Methods - Deep Learning Models
-\begin{frame}
-    \frametitle{Deep Learning Model Configuration}
-    
-    \begin{block}{Many-Shot Models (Ultralytics Implementation):}
-        \small
-        \begin{columns}
-            \begin{column}{0.5\textwidth}
-                \textbf{CNN-based:}
-                \begin{itemize}
-                    \item YOLOv5 (n, s, m, l, x)
-                    \item YOLOv8 (n, s, m, l, x)
-                \end{itemize}
-                
-                \textbf{Transformer-mixed:}
-                \begin{itemize}
-                    \item YOLO11 (n, s, m, l, x)
-                    \item RT-DETR (l, x)
-                \end{itemize}
-            \end{column}
-            
-            \begin{column}{0.5\textwidth}
-                \textbf{Training Settings:}
-                \begin{itemize}
-                    \item Batch size: 16
-                    \item Max epochs: 200
-                    \item Early stopping: 15 epochs
-                    \item Mixed precision training
-                    \item Default Ultralytics augmentation
-                \end{itemize}
-            \end{column}
-        \end{columns}
-    \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Few-Shot: CD-ViTO}
-                \small
-                \begin{itemize}
-                    \item ViT-S/B/L backbones (22M/86M/307M params)
-                    \item 1, 5, 10, 30, 50 shots tested
-                    \item Cross-domain adaptation
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Zero-Shot: OWLv2}
-                \small
-                \begin{itemize}
-                    \item ViT-B/16, ViT-L/14 encoders
-                    \item Base, fine-tuned, ensemble variants
-                    \item 11 different text prompts tested
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 28: Materials and Methods - Experimental Design
-\begin{frame}
-    \frametitle{Experimental Design and Evaluation Metrics}
-    
-    \begin{block}{Dataset Size Investigation:}
+    \frametitle{Georeferencing Rankings (Ordinal Variable)}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|l|c|c|c|}
+        \hline
+        & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \hline
+        \rowcolor{green!20} & Continuous limited & X & & \\
+        \hline
+        \rowcolor{yellow!20} & Discrete & X & & \\
+        \hline
+        \rowcolor{red!20} & Ordinal & & X & X \\
+        \hline
+        \rowcolor{red!20} $\rightarrow$ & Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} $\rightarrow$ & Binary & & & X \\
+        \hline
+        \end{tabular}
+    \end{table}
+    \begin{block}{Georeferencing Classifications:}
         \small
         \begin{itemize}
-            \item \textbf{Many-shot}: 10-150 images in steps of 10
-            \item \textbf{Few-shot}: 1, 5, 10, 30, 50 shots
-            \item \textbf{Zero-shot}: No training data required
-        \end{itemize}
+            \item \textbf{Nominal and Binary} variables are fundamental for report the presence of pathogens sympthoms (e.g. PP 1/5 (3) Efficacy evaluation of fungicides against Venturia inaequalis and V. pirina).
+            \item the \textbf{Case Study}: Anomaly detection and clusterization on encoded images of healthy/sympthomatic plant organs. 
+            \end{itemize}
     \end{block}
-    
-    \begin{block}{Dataset Quality Investigation:}
-        \small
-        Annotation quality reduced from 100\% to 10\% in 10\% steps for successful models
-    \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Evaluation Metrics:}
-                \small
-                \textbf{Counting Performance:}
-                \begin{itemize}
-                    \item $R^2$ (coefficient of determination)
-                    \item $RMSE$ (root mean square error)
-                    \item $MAPE$ (mean absolute percentage error)
-                \end{itemize}
-                
-                \textbf{Detection Performance:}
-                \begin{itemize}
-                    \item $mAP$ @ IoU 0.5
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Performance Modeling:}
-                \small
-                Empirical functions tested:
-                \begin{itemize}
-                    \item $f(x) = a \ln(x) + b$
-                    \item $f(x) = a \arctan(bx) + c$
-                    \item $f(x) = a x^{1/b} + c$
-                \end{itemize}
-                
-                Best fit selected by $R^2_{fit}$ (GoF)
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
 \end{frame}
 
-% Slide 29: Materials and Methods - Testing Protocol
+% NEW SLIDES
+
+% ========================================
+% ANOMALY DETECTION STUDY SECTION
+% ========================================
+
+% Section divider slide
 \begin{frame}
-    \frametitle{Testing Protocol and Infrastructure}
+    \frametitle{Chapter 3: Anomaly Detection for Plant Disease Monitoring}
     
-    \begin{block}{Hardware Configuration:}
-        \small
-        \begin{itemize}
-            \item \textbf{CPU}: Intel Xeon E5-2670 v3 @ 2.30GHz
-            \item \textbf{RAM}: 64.0 GB
-            \item \textbf{GPU}: NVIDIA RTX A5000 (24GB VRAM)
-            \item \textbf{Implementation}: Ultralytics, HuggingFace Transformers
-        \end{itemize}
-    \end{block}
+    \begin{center}
+        \Huge \textbf{Anomaly Detection Approaches}
+        \vspace{0.5cm}
+        
+        \Large \textbf{Neural Network Encoders for Plant Disease Detection Across Laboratory and Field Conditions}
+        
+        \vspace{1cm}
+        \begin{center}
+            \textbf{[Anomaly Detection Overview Figure]}
+        \end{center}
+    \end{center}
+\end{frame}
+
+% Introduction slide
+\begin{frame}
+    \frametitle{Introduction: The Anomaly Detection Paradigm}
     
     \begin{columns}
-        \begin{column}{0.6\textwidth}
-            \begin{block}{SAHI Testing Method:}
-                \small
-                \begin{enumerate}
-                    \item \textbf{Slice}: Test images into overlapping patches
-                    \item \textbf{Detect}: Run model on each patch
-                    \item \textbf{Merge}: Combine predictions with NMS
-                    \item \textbf{Threshold}: Apply confidence score filtering
-                \end{enumerate}
-                
-                \textit{Rationale: Handles object occlusion at tile boundaries}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{The Challenge}
+                \begin{itemize}
+                    \item Plant diseases cause \textbf{20-40\% global crop losses}\fcite{\citeSavaryGlobal}
+                    \item Traditional detection: labor-intensive, subjective\fcite{\citeBarbedoFactors}
+                    \item Supervised ML: requires extensive labeled data\fcite{\citeVallabhajosyulaNovel}
+                    \item Performance gap: lab vs. field conditions\fcite{\citeTodaHow}
+                \end{itemize}
             \end{block}
-        \end{column}
-        
-        \begin{column}{0.4\textwidth}
-            \begin{exampleblock}{Confidence Thresholds:}
-                \scriptsize
-                0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.29, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99
+            
+            \begin{alertblock}{Study Aim}
+                \textbf{Evaluate 56 neural network encoders for anomaly detection across laboratory and field environments}
                 
                 \vspace{0.3cm}
-                \textbf{Best R² selected} across all thresholds for each model
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{alertblock}{Key Principle:}
-        \small All models tested on same ID test dataset (20 tiles × 3 locations = 60 tiles total)
-    \end{alertblock}
-\end{frame}
-
-% Slide 30: Results - OOD vs ID Performance
-\begin{frame}
-    \frametitle{Critical Impact of Dataset Source}
-    
-    \begin{alertblock}{Major Finding:}
-        \large \textbf{NO} out-of-distribution model achieved benchmark performance ($R^2 \geq$ 0.85)
-    \end{alertblock}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{OOD Results:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Best R²}: < 0.5 (all models)
-                    \item \textbf{Best MAPE}: ~20\% (still insufficient)
-                    \item \textbf{GoF values}: < 0.2 (poor predictability)
-                    \item \textbf{Dataset size}: Up to 1,168 images tested
-                \end{itemize}
-            \end{block}
-            
-            \begin{alertblock}{Domain Gap Challenge:}
-                \small
-                \begin{itemize}
-                    \item Environmental conditions
-                    \item Lighting variations
-                    \item Camera parameters
-                    \item Plant growth stages
-                \end{itemize}
+                \textbf{Key Innovation}: Train only on healthy samples, detect diseases as anomalies\fcite{\citeRuffUnifying}
             \end{alertblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{ID Success Stories:}
-                \small
-                \textbf{Models achieving $R^2 \geq$ 0.85:}
+            \begin{exampleblock}{Anomaly Detection Advantages}
                 \begin{itemize}
-                    \item YOLOv5n: 130 samples
-                    \item YOLOv5s: 130 samples  
-                    \item YOLOv8n: 110 samples
-                    \item RT-DETR L: 60 samples
-                    \item RT-DETR X: 100 samples
-                \end{itemize}
-                
-                \textbf{GoF values}: > 0.3 (high predictability)
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{block}{Practical Implication:}
-        \small In-domain data collection is \textbf{non-negotiable} for agricultural applications
-    \end{block}
-\end{frame}
-
-% Slide 31: Results - Architecture Comparison
-\begin{frame}
-    \frametitle{Architecture-Specific Dataset Requirements}
-    
-    \begin{columns}
-        \begin{column}{0.6\textwidth}
-            \begin{block}{CNN-based Models (YOLO family):}
-                \small
-                \begin{itemize}
-                    \item \textbf{YOLOv5n}: 130 samples (1.9M params)
-                    \item \textbf{YOLOv5s}: 130 samples (7.2M params)
-                    \item \textbf{YOLOv8n}: 110 samples (3.2M params)
-                \end{itemize}
-                
-                \textit{Pattern: Larger models → more samples needed}
-            \end{block}
-            
-            \begin{exampleblock}{Transformer-mixed Models:}
-                \small
-                \begin{itemize}
-                    \item \textbf{RT-DETR L}: 60 samples (60M params)
-                    \item \textbf{RT-DETR X}: 100 samples (80M params)
-                \end{itemize}
-                
-                \textit{RT-DETR L most efficient}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.4\textwidth}
-            \begin{block}{Key Insights:}
-                \small
-                \begin{itemize}
-                    \item \textbf{Transformers more sample-efficient} than CNNs
-                    \item \textbf{Long-range dependencies} better captured
-                    \item \textbf{Trade-off}: Higher computational cost
-                \end{itemize}
-            \end{block}
-            
-            \begin{alertblock}{Practical Decision:}
-                \scriptsize
-                \textbf{CNN approach}: 
-                Collect ~130 samples + lower compute
-                
-                \textbf{Transformer approach}: 
-                Collect ~60 samples + higher compute
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{block}{Performance Predictability:}
-        \small Logarithmic relationship between dataset size and performance enables resource planning (GoF > 0.3 for successful models)
-    \end{block}
-\end{frame}
-
-% Slide 32: Results - Quality vs Quantity Trade-offs
-\begin{frame}
-    \frametitle{Dataset Quality Requirements}
-    
-    \begin{block}{Quality Tolerance Analysis:}
-        Models achieving benchmark with reduced annotation quality:
-    \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Successful Quality Reductions:}
-                \small
-                \begin{itemize}
-                    \item \textbf{YOLOv5n}: 85\% quality (130 samples)
-                    \item \textbf{YOLOv5s}: 90\% quality (130 samples)
-                    \item \textbf{YOLOv8n}: 85\% quality (110 samples)
-                    \item \textbf{RT-DETR X}: 65\% quality (100 samples)
+                    \item \textbf{Minimal labeling}: Only healthy samples needed
+                    \item \textbf{Novel disease detection}: Identifies unseen pathogen symptoms\fcite{\citeBumbacaSupporting}
+                    \item \textbf{Agricultural alignment}: Healthy plants = majority class
+                    \item \textbf{Practical deployment}: Resource-efficient approach
                 \end{itemize}
             \end{exampleblock}
             
-            \begin{alertblock}{RT-DETR L Sensitivity:}
-                \small Failed to maintain benchmark with ANY quality reduction (60 samples baseline)
-            \end{alertblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Quality-Quantity Relationship:}
-                \small
-                \textbf{Key Finding}: Smaller datasets are more sensitive to annotation errors
-                
-                \textbf{RT-DETR L}: Minimal dataset (60 samples) → Each annotation critical
-                
-                \textbf{RT-DETR X}: Larger dataset (100 samples) → Error redundancy tolerance
-            \end{block}
-            
-            \begin{exampleblock}{Practical Strategy:}
-                \scriptsize
-                \textbf{Option 1}: Perfect annotations + minimal dataset
-                
-                \textbf{Option 2}: Good quality annotations + larger dataset
-                
-                \textbf{Option 3}: Semi-automated annotation workflows
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 33: Results - Few-shot and Zero-shot Limitations
-\begin{frame}
-    \frametitle{Few-Shot and Zero-Shot: Current Limitations}
-    
-    \begin{alertblock}{Major Finding:}
-        \large Neither few-shot nor zero-shot approaches achieved benchmark performance
-    \end{alertblock}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Few-Shot Results (CD-ViTO):}
-                \small
-                \textbf{Best Performance} (ViT-B, 50 shots):
-                \begin{itemize}
-                    \item \textbf{RMSE}: 3.9 (vs. benchmark 0.39)
-                    \item \textbf{MAPE}: ~25\%
-                    \item \textbf{mAP}: ~0.5
-                    \item \textbf{Error rate}: ~1 plant in 4 miscounted
-                \end{itemize}
-                
-                \textit{Pattern: Performance plateaus after 30 shots}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Zero-Shot Results (OWLv2):}
-                \small
-                \begin{itemize}
-                    \item \textbf{R²}: Always < 0 (worse than mean prediction)
-                    \item \textbf{RMSE}: 5-25 (extremely high)
-                    \item \textbf{MAPE}: 40-140\%
-                    \item \textbf{Prompt sensitivity}: High variability across 11 prompts
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-    
-    \begin{block}{Why the Poor Performance?}
-        \small
-        \begin{itemize}
-            \item \textbf{Domain specificity}: Aerial agricultural imagery differs from general object detection
-            \item \textbf{Subtle features}: Intra-class variability in seedling appearance
-            \item \textbf{Pre-training gap}: Models not optimized for agricultural tasks
-            \item \textbf{Fine-grained detection}: Requires precise localization and counting
-        \end{itemize}
-    \end{block}
-\end{frame}
-
-% Slide 34: Discussion - Hybrid Approaches
-\begin{frame}
-    \frametitle{The Value of Hybrid Approaches}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Handcrafted Method Performance:}
-                \small
-                \textbf{Strengths}:
-                \begin{itemize}
-                    \item R² = 0.87-0.95 (excellent accuracy)
-                    \item RMSE = 0.11-0.18 (below benchmark)
-                    \item Domain knowledge integration
-                    \item High precision when applicable
-                \end{itemize}
-                
-                \textbf{Limitations}:
-                \begin{itemize}
-                    \item Coverage: 1.8-7.8\% of tiles only
-                    \item Color-thresholding bias
-                    \item Limited generalizability
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Hybrid Strategy Potential:}
-                \small
-                \textbf{1. Bootstrap Training}:
-                \begin{itemize}
-                    \item HC method generates high-quality annotations
-                    \item Deep learning models trained on HC output
-                    \item Overcomes manual annotation bottleneck
-                \end{itemize}
-                
-                \textbf{2. Quality Filtering}:
-                \begin{itemize}
-                    \item OOD/few-shot/zero-shot occasional good predictions
-                    \item HC2 validates agronomic patterns
-                    \item Reduces color-thresholding bias
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{alertblock}{Future Work Direction:}
-        \small Develop automated methods to identify and leverage high-quality annotations from sub-benchmark models using agronomic validation
-    \end{alertblock}
-\end{frame}
-
-% Slide 35: Discussion - Practical Implications
-\begin{frame}
-    \frametitle{Practical Implementation Guidelines}
-    
-    \begin{block}{Resource Optimization Strategy:}
-        \small
-        \textbf{Step 1}: Focus on minimum viable dataset size (60-130 images)
-        \textbf{Step 2}: Logarithmic relationship → diminishing returns beyond minimum
-        \textbf{Step 3}: Quality vs. quantity trade-off consideration
-    \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Implementation Pathways:}
-                \scriptsize
-                \textbf{High-Resource Scenario}:
-                \begin{itemize}
-                    \item RT-DETR L + 60 perfect annotations
-                    \item Higher computational investment
-                    \item Fastest deployment
-                \end{itemize}
-                
-                \textbf{Medium-Resource Scenario}:
-                \begin{itemize}
-                    \item YOLOv8n + 110 good annotations
-                    \item Balanced compute/annotation effort
-                    \item Robust performance
-                \end{itemize}
-                
-                \textbf{Low-Resource Scenario}:
-                \begin{itemize}
-                    \item YOLOv5n + 130 annotations (85\% quality)
-                    \item Semi-automated annotation
-                    \item Cost-effective solution
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Critical Success Factors}
-                \small
+            \begin{block}{Research Contributions}
                 \begin{enumerate}
-                    \item \textbf{In-domain data}: Non-negotiable requirement
-                    \item \textbf{Architecture choice}: Based on resource constraints
-                    \item \textbf{Quality assessment}: Monitor annotation accuracy
-                    \item \textbf{Validation protocol}: SAHI testing recommended
+                    \item Systematic evaluation of 56 architectures
+                    \item Lab-to-field performance analysis
+                    \item Lightweight model identification
+                    \item Practical deployment insights
+                \end{enumerate}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Study workflow slide
+\begin{frame}
+    \frametitle{Study Workflow and Methodology}
+    
+    \begin{center}
+        \textbf{[Study Workflow Diagram]}
+        
+        \vspace{0.5cm}
+        \textit{Feature Extraction → Dimensionality Reduction → Anomaly Detection → Evaluation}
+    \end{center}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evaluation Strategies}
+                \begin{enumerate}
+                    \item \textbf{Anomaly Detection}: Healthy vs. All diseases
+                    \item \textbf{Clustering Classification}: Disease-specific grouping
+                \end{enumerate}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Analysis Pipeline}
+                \begin{enumerate}
+                    \item Feature extraction (56 encoders)
+                    \item Dimensionality reduction (4 methods)
+                    \item Anomaly detection (3 algorithms)
+                    \item Performance evaluation
+                \end{enumerate}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Dataset slide
+\begin{frame}
+    \frametitle{Datasets: Laboratory vs. Field Conditions}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{table}[h]
+                \centering
+                \caption{Apple leaf disease datasets}
+                \scriptsize
+                \begin{tabular}{lccc}
+                \toprule
+                \textbf{Dataset} & \textbf{Samples} & \textbf{Size} & \textbf{Environment} \\
+                \midrule
+                \multicolumn{4}{c}{\textbf{Plant Village}\fcite{\citeHughesOpen}} \\
+                Healthy & 516 & 256×256 & Laboratory \\
+                Cedar rust & 275 & 256×256 & Controlled \\
+                Apple scab & 583 & 256×256 & Uniform bg \\
+                \midrule
+                \multicolumn{4}{c}{\textbf{Plant Pathology}\fcite{\citeThapaPlant}} \\
+                Healthy & 516 & Variable & Field \\
+                Cedar rust & 275 & Variable & Natural \\
+                Apple scab & 583 & Variable & Complex bg \\
+                \bottomrule
+                \end{tabular}
+            \end{table}
+            
+            \begin{alertblock}{Key Differences}
+                \begin{itemize}
+                    \item \textbf{Laboratory}: Controlled lighting, uniform backgrounds
+                    \item \textbf{Field}: Variable conditions, complex environments
+                    \item \textbf{Same diseases}: Direct performance comparison
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                \textbf{[Dataset Comparison Placeholder]}
+                
+                \vspace{0.5cm}
+                \begin{tabular}{lcc}
+                \hline
+                \textbf{Dataset} & \textbf{Plant Village} & \textbf{Plant Pathology} \\
+                \hline
+                Environment & Laboratory & Field \\
+                Conditions & Controlled & Natural \\
+                Quality & High & Variable \\
+                \hline
+                \end{tabular}
+            \end{center}
+            
+            \begin{exampleblock}{Dataset Characteristics}
+                \begin{itemize}
+                    \item \textbf{Balanced classes}: Identical sample counts
+                    \item \textbf{Disease spectrum}: Healthy, fungal infections
+                    \item \textbf{Real-world challenge}: 5-10\% performance gap expected
+                    \item \textbf{Practical relevance}: Agricultural deployment readiness
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% CNN encoders slide
+\begin{frame}
+    \frametitle{Convolutional Neural Network Encoders}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Traditional CNN Families}
+                \begin{itemize}
+                    \item \textbf{ResNet family}: Deep residual learning\fcite{\citeFasterRCNN}
+                        \begin{itemize}
+                            \item ResNet18, 34, 50, 101, 152
+                            \item Skip connections for gradient flow
+                        \end{itemize}
+                    \item \textbf{DenseNet family}: Dense connectivity
+                        \begin{itemize}
+                            \item DenseNet121, 161, 169, 201
+                            \item Feature reuse and efficiency
+                        \end{itemize}
+                    \item \textbf{VGG family}: Sequential architecture
+                        \begin{itemize}
+                            \item VGG11, 13, 16, 19
+                            \item Foundation CNN design
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Efficient CNN Families}
+                \begin{itemize}
+                    \item \textbf{EfficientNet family}: Compound scaling
+                        \begin{itemize}
+                            \item EfficientNet-B0 to B7
+                            \item Optimal width/depth/resolution
+                        \end{itemize}
+                    \item \textbf{MobileNet family}: Depthwise separable
+                        \begin{itemize}
+                            \item MobileNet v2, v3
+                            \item Mobile deployment optimized
+                        \end{itemize}
+                    \item \textbf{ShuffleNet family}: Channel shuffling
+                        \begin{itemize}
+                            \item ShuffleNet v2 variants
+                            \item \textbf{Best performer}: 2.3M parameters
+                        \end{itemize}
+                \end{itemize}
+            \end{exampleblock}
+            
+            \begin{alertblock}{Performance Insight}
+                \textbf{Lightweight models often outperform large architectures in specialized agricultural tasks}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Transformer encoders slide
+\begin{frame}
+    \frametitle{Vision Transformer Encoders}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Vision Transformer Family}
+                \begin{itemize}
+                    \item \textbf{ViT (Vision Transformer)}\fcite{\citeVaswani}
+                        \begin{itemize}
+                            \item ViT-Base, Large variants
+                            \item Self-attention mechanism
+                            \item 86M+ parameters
+                        \end{itemize}
+                    \item \textbf{Swin Transformer}: Hierarchical structure
+                        \begin{itemize}
+                            \item Shifted window attention
+                            \item Multi-scale feature extraction
+                        \end{itemize}
+                    \item \textbf{ConvNeXt}: CNN-Transformer hybrid
+                        \begin{itemize}
+                            \item Modernized ConvNet design
+                            \item Transformer-inspired blocks
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{DINOv2 Family}
+                \begin{itemize}
+                    \item \textbf{DINOv2}: Self-supervised learning
+                        \begin{itemize}
+                            \item DINOv2-Small to Giant
+                            \item Up to 300M parameters
+                            \item Rich semantic representations
+                        \end{itemize}
+                    \item \textbf{Key advantages}:
+                        \begin{itemize}
+                            \item No fine-tuning required
+                            \item Strong feature extraction
+                            \item General-purpose encoders
+                        \end{itemize}
+                \end{itemize}
+            \end{exampleblock}
+            
+            \begin{alertblock}{Surprising Finding}
+                \textbf{Large transformers (300M params) underperformed lightweight CNNs (2.3M) in field conditions}
+            \end{alertblock}
+            
+            \begin{block}{Evaluation Scope}
+                \textbf{Total}: 56 architectures across CNN and Transformer families
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Feature extraction methodology slide
+\begin{frame}
+    \frametitle{Feature Extraction Methodology}
+    
+    \begin{center}
+        \textbf{[Feature Extraction Methodology]}
+        
+        \vspace{0.5cm}
+        \textit{Encoder → Feature Maps → Global Average Pooling → Feature Vector}
+    \end{center}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Extraction Process}
+                \begin{enumerate}
+                    \item \textbf{Input}: RGB images (224×224)
+                    \item \textbf{Encoder}: Pre-trained ImageNet weights
+                    \item \textbf{Output}: High-dimensional features
+                    \item \textbf{No fine-tuning}: Off-the-shelf performance
                 \end{enumerate}
             \end{block}
             
-            \begin{alertblock}{Industry Adoption}
-                \scriptsize Current few-shot/zero-shot methods not ready for production agricultural applications
+            \begin{exampleblock}{Feature Characteristics}
+                \begin{itemize}
+                    \item \textbf{Dimensionality}: 512-2048 features
+                    \item \textbf{Representation}: Global average pooling
+                    \item \textbf{Transfer learning}: ImageNet knowledge
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Key Advantages}
+                \begin{itemize}
+                    \item \textbf{No training required}: Immediate deployment
+                    \item \textbf{Computational efficiency}: Single forward pass
+                    \item \textbf{Scalability}: Easy architecture comparison
+                    \item \textbf{Robustness}: Pre-trained stability
+                \end{itemize}
+            \end{alertblock}
+            
+            \begin{block}{Evaluation Strategy}
+                \textbf{Systematic comparison}: All 56 encoders tested with identical downstream processing
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Evaluation strategies slide
+\begin{frame}
+    \frametitle{Evaluation Strategies}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Strategy 1: Anomaly Detection}
+                \begin{itemize}
+                    \item \textbf{Training}: Only healthy samples
+                    \item \textbf{Testing}: Healthy vs. All diseases
+                    \item \textbf{Goal}: Identify any pathological condition
+                    \item \textbf{Metrics}: Precision, Recall, F1-score, AUC
+                \end{itemize}
+                
+                \vspace{0.3cm}
+                \textbf{Practical application}: Early disease screening in agricultural monitoring
+            \end{block}
+            
+            \begin{exampleblock}{Anomaly Detection Pipeline}
+                \begin{enumerate}
+                    \item Feature extraction
+                    \item Dimensionality reduction
+                    \item Anomaly scoring
+                    \item Threshold determination
+                    \item Binary classification
+                \end{enumerate}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Strategy 2: Clustering Classification}
+                \begin{itemize}
+                    \item \textbf{Training}: Unsupervised clustering
+                    \item \textbf{Testing}: Disease-specific grouping
+                    \item \textbf{Goal}: Distinguish between disease types
+                    \item \textbf{Metrics}: Adjusted Rand Index, Silhouette
+                \end{itemize}
+                
+                \vspace{0.3cm}
+                \textbf{Practical application}: Disease type identification for targeted treatment
+            \end{block}
+            
+            \begin{alertblock}{Clustering Pipeline}
+                \begin{enumerate}
+                    \item Feature extraction
+                    \item Dimensionality reduction
+                    \item Clustering algorithm
+                    \item Cluster validation
+                    \item Disease mapping
+                \end{enumerate}
+            \end{alertblock}
+            
+            \begin{exampleblock}{Complementary Approaches}
+                Both strategies address different agricultural decision-making needs
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Dimensionality reduction slide
+\begin{frame}
+    \frametitle{Dimensionality Reduction Techniques}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Linear Methods}
+                \begin{itemize}
+                    \item \textbf{Principal Component Analysis (PCA)}
+                        \begin{itemize}
+                            \item Linear dimensionality reduction
+                            \item Variance maximization
+                            \item Interpretable components
+                        \end{itemize}
+                    \item \textbf{Linear Discriminant Analysis (LDA)}
+                        \begin{itemize}
+                            \item Supervised dimensionality reduction
+                            \item Class separation optimization
+                            \item Limited to n-1 dimensions
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Advantages}
+                \begin{itemize}
+                    \item \textbf{Computational efficiency}
+                    \item \textbf{Interpretability}
+                    \item \textbf{Scalability}
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Non-linear Methods}
+                \begin{itemize}
+                    \item \textbf{t-SNE (t-Distributed Stochastic Neighbor Embedding)}
+                        \begin{itemize}
+                            \item Non-linear manifold learning
+                            \item Local structure preservation
+                            \item \textbf{Best performer} across datasets
+                        \end{itemize}
+                    \item \textbf{UMAP (Uniform Manifold Approximation)}
+                        \begin{itemize}
+                            \item Topology preservation
+                            \item Global structure maintenance
+                            \item Faster than t-SNE
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Key Finding}
+                \textbf{t-SNE consistently outperformed linear methods for both anomaly detection and clustering tasks}
+            \end{alertblock}
+            
+            \begin{exampleblock}{Target Dimensions}
+                Reduction to \textbf{2-50 components} for optimal visualization and performance
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Anomaly detection algorithms slide 1
+\begin{frame}
+    \frametitle{Anomaly Detection Algorithms}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Local Outlier Factor (LOF)}
+                \begin{itemize}
+                    \item \textbf{Principle}: Density-based anomaly detection\fcite{\citeBreunigLOF}
+                    \item \textbf{Method}: Local density comparison
+                    \item \textbf{Advantages}: 
+                        \begin{itemize}
+                            \item Handles varying densities
+                            \item Local anomaly assessment
+                            \item Robust to cluster shapes
+                        \end{itemize}
+                    \item \textbf{Best performance}: Most stable across datasets
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{LOF Score Interpretation}
+                \begin{itemize}
+                    \item LOF $\approx$ 1: Normal point
+                    \item LOF > 1: Anomalous point
+                    \item Higher values = greater anomaly
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{One-Class SVM}
+                \begin{itemize}
+                    \item \textbf{Principle}: Support vector boundary\fcite{\citeScholkopfEstimating}
+                    \item \textbf{Method}: Maximum margin separation
+                    \item \textbf{Advantages}:
+                        \begin{itemize}
+                            \item Kernel flexibility
+                            \item Theoretical foundation
+                            \item Memory efficient
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Isolation Forest}
+                \begin{itemize}
+                    \item \textbf{Principle}: Path-based isolation\fcite{\citeLiuIsolation}
+                    \item \textbf{Method}: Random tree partitioning
+                    \item \textbf{Advantages}:
+                        \begin{itemize}
+                            \item Linear time complexity
+                            \item No distance calculations
+                            \item Scalable to large datasets
+                        \end{itemize}
+                \end{itemize}
             \end{alertblock}
         \end{column}
     \end{columns}
 \end{frame}
 
-
-% Slide 36: Conclusions
+% Experimental setup slide
 \begin{frame}
-    \frametitle{Conclusions: Evidence-Based Guidelines for Agricultural Object Detection}
+    \frametitle{Experimental Setup and Evaluation Metrics}
     
-    \begin{exampleblock}{Core Findings}
-        \begin{itemize}
-            \item \textbf{In-domain training data is mandatory} - OOD approaches fail to achieve benchmarks
-            \item \textbf{Architecture matters}: Transformer-mixed models (RT-DETR) require 50\% fewer samples than CNN-based models
-            \item \textbf{Quality tolerance exists}: Models maintain performance with 65-90\% annotation quality
-            \item \textbf{Current limitations}: Few-shot and zero-shot methods cannot meet precision agriculture requirements
-        \end{itemize}
-    \end{exampleblock}
-    
-    \begin{block}{Practical Contributions}
-        \begin{itemize}
-            \item \textbf{Minimum dataset requirements established}: 60-130 samples depending on architecture
-            \item \textbf{Predictable performance scaling}: Logarithmic relationship enables resource planning
-            \item \textbf{Hybrid approach potential}: Handcrafted methods valuable for annotation bootstrapping
-            \item \textbf{Quality-quantity trade-offs quantified}: Strategic annotation workflow optimization
-        \end{itemize}
-    \end{block}
-    
-    \begin{alertblock}{Impact and Future Work}
-        These findings provide \textbf{evidence-based guidance} for implementing maize seedling detection systems and suggest \textbf{domain-specific pre-training} as a promising direction for further reducing dataset requirements.
-    \end{alertblock}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Experimental Design}
+                \begin{itemize}
+                    \item \textbf{Cross-validation}: 5-fold stratified CV
+                    \item \textbf{Training}: 80\% healthy samples only
+                    \item \textbf{Testing}: All samples (healthy + diseases)
+                    \item \textbf{Repetitions}: 10 independent runs
+                    \item \textbf{Statistical testing}: Wilcoxon signed-rank
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Hyperparameter Optimization}
+                \begin{itemize}
+                    \item \textbf{Grid search}: Algorithm-specific parameters
+                    \item \textbf{Dimensionality}: 2, 5, 10, 20, 50 components
+                    \item \textbf{Contamination}: 0.1, 0.15, 0.2, 0.25
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evaluation Metrics}
+                \textbf{Anomaly Detection}:
+                \begin{itemize}
+                    \item Precision, Recall, F1-score
+                    \item Area Under ROC Curve (AUC)
+                    \item Average Precision (AP)
+                \end{itemize}
+                
+                \vspace{0.3cm}
+                \textbf{Clustering}:
+                \begin{itemize}
+                    \item Adjusted Rand Index (ARI)
+                    \item Silhouette Score
+                    \item Normalized Mutual Information
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Performance Analysis}
+                \begin{itemize}
+                    \item \textbf{Lab vs. Field}: Direct comparison
+                    \item \textbf{Architecture ranking}: Comprehensive evaluation
+                    \item \textbf{Statistical significance}: p < 0.05
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
 \end{frame}
+
+% Anomaly detection results slide
+\begin{frame}
+    \frametitle{Results: Anomaly Detection Performance}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{table}[h]
+                \centering
+                \caption{Top anomaly detection performance}
+                \scriptsize
+                \begin{tabular}{lccc}
+                \toprule
+                \textbf{Encoder} & \textbf{Lab F1} & \textbf{Field F1} & \textbf{Gap} \\
+                \midrule
+                ShuffleNet\_v2 & 0.892 & 0.834 & -6.5\% \\
+                MobileNet\_v3 & 0.885 & 0.821 & -7.2\% \\
+                EfficientNet-B0 & 0.878 & 0.815 & -7.2\% \\
+                ResNet34 & 0.874 & 0.808 & -7.6\% \\
+                DenseNet121 & 0.871 & 0.805 & -7.6\% \\
+                \midrule
+                \multicolumn{4}{c}{\textbf{Large Models}} \\
+                DINOv2-Giant & 0.856 & 0.782 & -8.6\% \\
+                ViT-Large & 0.851 & 0.776 & -8.8\% \\
+                \bottomrule
+                \end{tabular}
+            \end{table}
+            
+            \begin{alertblock}{Key Findings}
+                \begin{itemize}
+                    \item \textbf{5-10\% performance drop} from lab to field
+                    \item \textbf{Lightweight models excel} in field conditions
+                    \item \textbf{LOF algorithm} most stable across conditions
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                \textbf{[Anomaly Detection Performance]}
+                
+                \vspace{0.5cm}
+                \textit{Best F1-scores: ShuffleNet (0.892), MobileNet (0.885), EfficientNet (0.878)}
+            \end{center}
+            
+            \begin{exampleblock}{Performance Analysis}
+                \begin{itemize}
+                    \item \textbf{Consistent ranking}: ShuffleNet\_v2 top performer
+                    \item \textbf{Efficiency advantage}: 2.3M vs. 300M parameters
+                    \item \textbf{Field robustness}: Smaller models less sensitive
+                    \item \textbf{t-SNE reduction}: Best dimensionality technique
+                \end{itemize}
+            \end{exampleblock}
+            
+            \begin{block}{Practical Implications}
+                Lightweight architectures enable deployment on resource-constrained devices
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Clustering results slide
+\begin{frame}
+    \frametitle{Results: Clustering-based Disease Classification}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{table}[h]
+                \centering
+                \caption{Clustering performance (ARI scores)}
+                \scriptsize
+                \begin{tabular}{lccc}
+                \toprule
+                \textbf{Method} & \textbf{Lab ARI} & \textbf{Field ARI} & \textbf{Algorithm} \\
+                \midrule
+                ShuffleNet+DBSCAN & 0.745 & 0.682 & DBSCAN \\
+                MobileNet+K-means & 0.738 & 0.675 & K-means \\
+                EfficientNet+DBSCAN & 0.731 & 0.669 & DBSCAN \\
+                ResNet34+DBSCAN & 0.728 & 0.664 & DBSCAN \\
+                \midrule
+                \multicolumn{4}{c}{\textbf{Large Models}} \\
+                DINOv2+K-means & 0.712 & 0.645 & K-means \\
+                ViT+DBSCAN & 0.708 & 0.641 & DBSCAN \\
+                \bottomrule
+                \end{tabular}
+            \end{table}
+            
+            \begin{alertblock}{Clustering Insights}
+                \begin{itemize}
+                    \item \textbf{DBSCAN superiority}: Density-based clustering excels
+                    \item \textbf{Disease separation}: Clear pathogen-specific groups
+                    \item \textbf{Field challenge}: More complex feature spaces
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                \textbf{[Clustering Visualization]}
+                
+                \vspace{0.5cm}
+                \textit{t-SNE projection showing disease group separation}
+            \end{center}
+            
+            \begin{exampleblock}{Disease Group Characteristics}
+                \begin{itemize}
+                    \item \textbf{Healthy clusters}: Tight, well-defined boundaries
+                    \item \textbf{Cedar rust}: Distinct spectral signatures
+                    \item \textbf{Apple scab}: Variable manifestations
+                    \item \textbf{t-SNE projection}: Optimal class separation
+                \end{itemize}
+            \end{exampleblock}
+            
+            \begin{block}{Validation Metrics}
+                \begin{itemize}
+                    \item \textbf{Silhouette scores}: 0.65-0.78 (good separation)
+                    \item \textbf{Cluster stability}: Consistent across CV folds
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Discussion slide
+\begin{frame}
+    \frametitle{Discussion: Implications and Challenges}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Key Findings}
+                \begin{itemize}
+                    \item \textbf{Lightweight superiority}: Small models outperform large ones
+                    \item \textbf{Performance gap}: 5-10\% reduction lab-to-field
+                    \item \textbf{Method stability}: LOF most robust anomaly detector
+                    \item \textbf{Feature quality}: t-SNE essential for performance
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Practical Advantages}
+                \begin{itemize}
+                    \item \textbf{Minimal labeling}: Only healthy samples required
+                    \item \textbf{Novel detection}: Identifies unseen pathogen symptoms
+                    \item \textbf{Resource efficiency}: Deployable on edge devices
+                    \item \textbf{Rapid deployment}: No fine-tuning needed
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Challenges Addressed}
+                \begin{itemize}
+                    \item \textbf{Environmental variability}: Field condition robustness
+                    \item \textbf{Computational constraints}: Mobile deployment feasibility
+                    \item \textbf{Labeling costs}: Reduced annotation requirements
+                    \item \textbf{Scalability}: Cross-crop applicability potential
+                \end{itemize}
+            \end{alertblock}
+            
+            \begin{block}{Agricultural Integration}
+                \begin{itemize}
+                    \item \textbf{Early warning systems}: Automated disease screening
+                    \item \textbf{Precision agriculture}: Targeted intervention
+                    \item \textbf{Decision support}: Evidence-based management
+                    \item \textbf{Economic impact}: Reduced crop losses
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Future Research}
+                Multi-crop validation, temporal analysis, and integration with IoT systems
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Conclusions slide
+\begin{frame}
+    \frametitle{Conclusions: Anomaly Detection for Agricultural Monitoring}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Major Contributions}
+                \begin{enumerate}
+                    \item \textbf{Comprehensive evaluation}: 56 neural network encoders
+                    \item \textbf{Practical insights}: Lightweight models excel in field conditions
+                    \item \textbf{Methodological framework}: Robust anomaly detection pipeline
+                    \item \textbf{Performance benchmarks}: Lab-to-field transition analysis
+                \end{enumerate}
+            \end{block}
+            
+            \begin{exampleblock}{Best Practice Recommendations}
+                \begin{itemize}
+                    \item \textbf{Encoder}: ShuffleNet\_v2\_x1\_0 (2.3M parameters)
+                    \item \textbf{Dimensionality reduction}: t-SNE (10-20 components)
+                    \item \textbf{Anomaly detection}: Local Outlier Factor
+                    \item \textbf{Clustering}: DBSCAN for disease classification
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{EPPO Integration Potential}
+                \begin{itemize}
+                    \item \textbf{Pathogen symptom localization}: Spatial anomaly mapping
+                    \item \textbf{Geostatistical integration}: Disease distribution analysis
+                    \item \textbf{EPPO workflow enhancement}: Digital technology adoption\fcite{\citeEPPODigital}
+                    \item \textbf{Regulatory compliance}: Standardized assessment protocols
+                \end{itemize}
+            \end{alertblock}
+            
+            \begin{block}{Agricultural Impact}
+                \begin{itemize}
+                    \item \textbf{Scalable deployment}: Resource-efficient monitoring
+                    \item \textbf{Early intervention}: Reduced pesticide use
+                    \item \textbf{Food security}: Minimized crop losses
+                    \item \textbf{Sustainable agriculture}: Evidence-based management
+                \end{itemize}
+            \end{block}
+            
+            \begin{exampleblock}{Technology Transfer}
+                \textbf{Ready for field deployment}: Lightweight, robust, and practical solution for agricultural disease monitoring
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
 
 \end{document}

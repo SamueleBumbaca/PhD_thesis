@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{tikz}
+\usetikzlibrary{calc,positioning}
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage{tabularx}
@@ -106,6 +107,7 @@
 \newcommand{\citeJocher}{Jocher, Glenn; Qiu, Jiarui; Chaurasia, Anil. GitHub Ultralytics YOLO.  2023. Available online: \url{https://github.com/ultralytics/ultralytics}}
 
 % Phytotoxicity scoring citations
+\newcommand{\citeWangPHYTO}{Wang et al. (2021). Structure-based ligand design and discovery of novel tenuazonic acid derivatives with high herbicidal activity. \textit{Journal of Advanced Research}. 40. 10.1016/j.jare.2021.12.001.} 
 \newcommand{\citeEPPODigital}{EPPO. PP 1/333(1) - Adoption of Digital Technology for Data Generation for the Efficacy Evaluation of Plant Protection Products. \textit{EPPO Bull.}, 55:14--19, 2025}
 \newcommand{\citeEPPODesign}{EPPO. PP 1/135(2) - Design and analysis of efficacy evaluation trials. \textit{EPPO Bull.}, 42:367--381, 2014}
 \newcommand{\citeChiangBias}{Chiang, K.-S.; et al. Effects of rater bias and assessment method on disease severity estimation. \textit{Plant Dis.}, 100:2530--2538, 2016}
@@ -117,9 +119,10 @@
 \newcommand{\citeGates}{Gates, D.M.; et al. Spectral properties of plants. \textit{Appl. Opt.}, 4:11--20, 1965}
 \newcommand{\citeCarter}{Carter, G.A.; Knapp, A.K. Leaf optical properties in higher plants. \textit{Oecologia}, 128:442--452, 2001}
 \newcommand{\citeGhosal}{Ghosal, S.; et al. An explainable deep machine vision framework for plant stress phenotyping. \textit{Proc. Natl. Acad. Sci. USA}, 115:4613--4618, 2018}
-\newcommand{\citeGomezZamanillo}{Gómez-Zamanillo, A.; et al. Damage assessment in soybean and redroot pigweed plants exposed to herbicides. \textit{Agronomy}, 13:2523, 2023}
+\newcommand{\citeGomezZamanillo}{Gómez-Zamanillo, A.; et al. Damage assessment in soybean and redroot pigweed plants exposed to herbicides. \textit{Smart Agricultural Technology}, 13:2523, 2023}
 
 % Anomaly detection citations
+\newcommand{\citeKatafuchi}{Katafuchi et al. Image-based plant disease diagnosis with unsupervised anomaly detection based on reconstructability of colors. \textit{arXiv preprint} arXiv:2011.14306, 2020.}
 \newcommand{\citeSavaryGlobal}{Savary et al. The global burden of pathogens and pests on major food crops. \textit{Nat. Ecol. Evol.}, 3:430--439, 2019}
 \newcommand{\citeMartinelliAdvanced}{Martinelli et al. Advanced methods of plant disease detection. \textit{Agron. Sustain. Dev.}, 35:1--25, 2015}
 \newcommand{\citeBarbedoFactors}{Barbedo, J.G.A. Factors influencing the use of deep learning for plant disease recognition. \textit{Biosyst. Eng.}, 172:84--91, 2018}
@@ -1045,8 +1048,6 @@
     \end{block}
 \end{frame}
 
-% PLANT COUNTING CASE STUDY
-
 % Slide 17: Georeferencing Counts (Discrete Variable) 
 \begin{frame}
     \frametitle{Georeferencing Counts (Discrete Variable)}
@@ -1078,6 +1079,21 @@
             \item this study is discussed in the scientific article \textbf{\scriptsize Bumbaca, S.; Borgogno-Mondino, E.C. On the Minimum Dataset Requirements for Fine-Tunining an Object Detector for Arable Crop Plant Counting: A Case Study on Maize Seedlings. Remote Sens. 2025, 17, 2190. DOI: 10.3390/rs1713219061}
         \end{itemize}
     \end{block}
+\end{frame}
+
+% PLANT COUNTING CASE STUDY
+\begin{frame}
+    \begin{center}
+        \Huge \textbf{Plant Counting}
+        \vspace{0.5cm}
+        
+        \Large \textbf{On the Minimum Dataset Requirements for Fine-Tunining an Object Detector for Arable Crop Plant Counting: A Case Study on Maize Seedlings}
+        
+        \vspace{1cm}
+        \begin{center}
+            \includegraphics[width=0.8\textwidth]{Imgs/dataset_example.png}
+        \end{center}
+    \end{center}
 \end{frame}
 
 % Slide 18: Plant Counting Introduction - The Problem
@@ -2005,9 +2021,18 @@
     \end{alertblock}
 \end{frame}
 
-% Slide 39: Plant Counting - Results - YOLOv5 Performance vs Dataset Size
+% Slide 39: Plant Counting - Results - OOD Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv5 dataset size}
+    \frametitle{Plant Counting - Results - OOD Dataset Size}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{Imgs/metrics_OOD_datasets.pdf}
+    \end{center}
+    \small OOD training does not ensure benchmark achievement with any of the datasets or any dataset size.
+\end{frame}
+
+% Slide 39: Plant Counting - Results - YOLOv5 Performance vs ID Dataset Size
+\begin{frame}
+    \frametitle{Plant Counting - Results - YOLOv5 ID dataset size}
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_size_yolov5.pdf}
     \end{center}
@@ -2015,7 +2040,7 @@
 
 % Slide 40: Plant Counting - Results - YOLOv5 Performance vs Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv5 dataset size}
+    \frametitle{Plant Counting - Results - YOLOv5 ID dataset size}
     
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf}
@@ -2027,7 +2052,7 @@
 
 % Slide 40: Plant Counting - Results - YOLOv8 Performance vs Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv8 dataset size}
+    \frametitle{Plant Counting - Results - YOLOv8 ID dataset size}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{center}
@@ -2049,7 +2074,7 @@
 
 % Slide 41: Plant Counting - Results - RT-DETR Performance and Predictions
 \begin{frame}
-    \frametitle{Plant Counting - Results - RT-DETR dataset size}
+    \frametitle{Plant Counting - Results - RT-DETR ID dataset size}
     \begin{center}
         \includegraphics[width=0.7\textwidth]{Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf}
     \end{center}
@@ -2058,7 +2083,7 @@
 % Slide 42: Plant Counting - Results - Dataset Size
 
 \begin{frame}
-    \frametitle{Plant Counting - Results - Dataset Size}
+    \frametitle{Plant Counting - Results - ID Dataset Size}
 
     \begin{table}[H]
         \scriptsize
@@ -2087,14 +2112,14 @@
 
 % Slide 42: Plant Counting - Results - Dataset Quality Analysis
 \begin{frame}
-    \frametitle{Plant Counting - Results - Dataset Quality Requirements}
+    \frametitle{Plant Counting - Results - ID Dataset Quality Requirements}
         
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_quality_2.pdf}
     \end{center}
 \end{frame}
 \begin{frame}
-    \frametitle{Plant Counting - Results - Dataset Quality Requirements}
+    \frametitle{Plant Counting - Results - ID Dataset Quality Requirements}
         
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_quality_3.pdf}
@@ -2206,11 +2231,11 @@
         \hline
         \end{tabular}
     \end{table}
-    \begin{block}{Georeferencing Rankings:}
+    \begin{block}{Georeferencing Scores:}
         \small
         \begin{itemize}
-            \item \textbf{Rankings} are ordinal variables required for estimating phytotoxicity sympthoms (e.g. PP 1/135 (4) Phytotoxicity assessment).
-            \item the \textbf{Case Study}: Ranking phytotoxicity sympthoms from georeferenced photogrammetric orthomosaics by ML regression. 
+            \item \textbf{Scores and Ranks} can be ordinal variables required for estimating phytotoxicity sympthoms (e.g. PP 1/135 (4) Phytotoxicity assessment).
+            \item the \textbf{Case Study}: Scoring phytotoxicity sympthoms from georeferenced photogrammetric orthomosaics by ML regression. 
             \item this study is discussed in the scientific article \textbf{\scriptsize Bumbaca, S.; Borgogno-Mondino, E. Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI. Agronomy 2024, 14, 306. DOI: 10.3390/agronomy14020306}
         \end{itemize}
     \end{block}
@@ -2218,46 +2243,71 @@
 
 % PHYTOTOXICITY SCORING SECTION
 
+\begin{frame}
+    \begin{center}
+        \Huge \textbf{Phytotoxicity Scoring}
+        \vspace{0.5cm}
+        
+        \Large \textbf{Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with ML}
+        
+        \vspace{1cm}
+        \begin{center}
+            \includegraphics[width=0.8\textwidth]{Imgs/agronomy-14-00306-g001.png}
+        \end{center}
+    \end{center}
+\end{frame}
+
 % Introduction Slides (2 slides)
 
 % Slide 1: Introduction - PHYGEN and Statistical Concerns
 \begin{frame}
-    \frametitle{Georeferencing Rankings (Ordinal Variable): Phytotoxicity Scoring}
+    \frametitle{\small Phytotoxicity Scoring - Introduction - PHYGEN: General Phytotoxicity Index}
+    \scriptsize
+    \begin{itemize}
+        \item \textbf{Definition}: Aggregate indicator summarizing phytotoxicity symptoms as percentage of damage compared to healthy reference plant
+        \item \textbf{Scale}: 0\% (no damage) to 100\% (complete plant death)
+        \item \textbf{Symptoms}: Chlorosis, necrosis, stunting, malformations, etc.
+        \item \textbf{Assessment}: Visual scoring by trained raters
+        \item \textbf{Selectivity Assessment}: Critical for Plant Protection Product (PPP) market approval
+    \end{itemize}
     
-    \begin{block}{PHYGEN: General Phytotoxicity Index}
+    \center
+    \includegraphics[width=1\textwidth]{Imgs/phyto.png}
+    \fcite{\citeWangPHYTO}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Phytotoxicity Scoring - Introduction - Georeferencing PHYGEN}
+
+    \begin{alertblock}{\small Statistical Concerns}
         \small
         \begin{itemize}
-            \item \textbf{Definition}: Aggregate indicator summarizing phytotoxicity symptoms as percentage of damage compared to healthy reference plant
-            \item \textbf{EPPO Symptoms}: (i) development cycle modifications, (ii) thinning, (iii) color modifications, (iv) necrosis, (v) deformation, (vi) yield effects\fcite{\citeEPPODesign}
-            \item \textbf{Selectivity Assessment}: Critical for Plant Protection Product (PPP) market approval
-        \end{itemize}
-    \end{block}
-    
-    \begin{alertblock}{Statistical Measurement Theory Concerns}
-        \small
-        \textbf{Stevens Scale Theory Problem}\fcite{\citeStevens}: 
-        \begin{itemize}
-            \item \textbf{Current practice}: Ordinal discrete scales (0\%, 13\%, 38\%, 63\%, 88\%)
-            \item \textbf{Statistical limitation}: Ordinal data violates ANOVA assumptions\fcite{\citeAgresti}
+            \item \textbf{Statistical limitation}: Ordinal data violates ANOVA assumptions\fcite{\citeStevens} \fcite{\citeAgresti}
             \item \textbf{Rater variability}: 10\% inter-rater error commonly accepted\fcite{\citeChiangBias}
+            \item \textbf{Spatial limitation}: No established method to derive georeferenced PHYGEN from limited size imagery
         \end{itemize}
     \end{alertblock}
     
-    \begin{exampleblock}{Research Objective}
-        \small Transform discrete ordinal PHYGEN rankings into continuous measurements suitable for parametric statistical analysis
+    \begin{exampleblock}{\small Research Objective}
+        \small
+        \begin{itemize}
+            \item \textbf{Ordinal to Continuous}: Transform discrete ordinal PHYGEN scores into continuous measurements suitable for parametric statistical analysis
+            \item \textbf{Benchmark}: Achieve EPPO benchmark and accepted human error (R\ensuremath{^2} \ensuremath{\geq} 0.85, MAE \ensuremath{\leq} 10\%)
+            \item \textbf{Spatial retrieval}: Develop a ML model to predict PHYGEN from photogrammetric data to enable georeferenced phytotoxicity mapping
+        \end{itemize}
     \end{exampleblock}
 \end{frame}
 
 % Slide 2: Introduction - State of the Art and Challenges
 \begin{frame}
-    \frametitle{State of the Art in Automated Phytotoxicity Assessment}
+    \frametitle{\small Phytotoxicity Scoring - Introduction - State of the Art}
     
     \begin{block}{Current Approaches Limitations}
         \small
         \begin{itemize}
             \item \textbf{Human assessment}: Subjective, 10\% maximum error\fcite{\citeChiangBias}
-            \item \textbf{CNN methods}: Require thousands of images for training\fcite{\citeGomezZamanillo}
-            \item \textbf{Deep learning}: Not suitable for new PPPs with limited training data
+            \item \textbf{Deep learning}: Require thousands of images for training\fcite{\citeGomezZamanillo}-\fcite{\citeGhosal}
         \end{itemize}
     \end{block}
     
@@ -2266,24 +2316,24 @@
             \begin{table}[H]
                 \centering
                 \scriptsize
-                \caption{Related works comparison}
+                \caption{Comparison of PHYGEN scoring methods}
                 \begin{tabular}{|l|l|l|}
                 \hline
-                \textbf{Method} & \textbf{Accuracy} & \textbf{New PPP Suitability} \\
+                \textbf{Method} & \textbf{Mean Absolute} & \textbf{New PPP} \\ & \textbf{Error (MAE \%)} & \textbf{Suitability} \\
                 \hline
-                Human raters & 90\% (\ensuremath{\pm}10\%) & Traditional \\
+                Human raters & 10\% & Traditional \\
                 \hline
-                CNN (Ghosal et al.) & 50-90\% & Destructive \\
+                CNN (Ghosal et al.) & 50-10\% & Destructive \\
                 \hline
-                CNN (Gómez-Z. et al.) & 93.26\% & Not suitable \\
+                CNN (Gómez-Z. et al.) & 6.74\% & Not suitable \\
                 \hline
-                \textbf{This work} & \textbf{89.34\%} & \textbf{Suitable} \\
+                \textbf{This work} & \textbf{10.66\%} & \textbf{Suitable} \\
                 \hline
                 \end{tabular}
             \end{table}
         \end{column}
         
-        \begin{column}{0.4\textwidth}
+        \begin{column}{0.3\textwidth}
             \begin{alertblock}{New PPP Challenge}
                 \scriptsize
                 \begin{itemize}
@@ -2300,161 +2350,115 @@
 
 % Slide 3: Methods - Workflow Overview
 \begin{frame}
-    \frametitle{Methodology: Workflow Overview}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Workflow Overview}
     
     \begin{center}
         \includegraphics[width=0.9\textwidth]{Imgs/agronomy-14-00306-g003.png}
     \end{center}
-    
-    \begin{exampleblock}{Workflow Steps}
-        \small
-        \begin{enumerate}
-            \item \textbf{Acquisition planning}: Stereoscopic multispectral imaging
-            \item \textbf{3D reconstruction}: Bundle adjustment and point cloud generation
-            \item \textbf{Parameter extraction}: Geometric and spectral features from 3D model
-            \item \textbf{ML training}: LASSO + Logistic Function on extracted parameters
-            \item \textbf{Validation}: K-fold cross-validation for robustness
-        \end{enumerate}
-    \end{exampleblock}
 \end{frame}
 
 % Slide 4: Methods - Hardware Platform
 \begin{frame}
-    \frametitle{Hardware Platform: Controlled Greenhouse System}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Hardware Platform}
     
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.7\textwidth}
             \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g001.png}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Platform Components}
+        \begin{column}{0.3\textwidth}
+            \begin{block}{Specifics}
                 \scriptsize
                 \begin{itemize}
                     \item \textbf{MAPIR Survey3W}: Multispectral camera (Green, Red, NIR)
-                    \item \textbf{LED lighting}: GODOX FL150R panels + 850nm NIR strip
-                    \item \textbf{Motion system}: DC motor pulley system (0.08 m/s)
-                    \item \textbf{Positioning}: 3-axis adjustable (1.1-1.5m height)
-                \end{itemize}
-            \end{block}
-            
-            \begin{exampleblock}{System Specifications}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Sensor}: 3000\ensuremath{\times}4000 pixels, 1.55 \ensuremath{\mu}m pixel size
-                    \item \textbf{Footprint}: 202-276 cm horizontal
+                    \item \textbf{LED lighting}: Visible + 850nm NIR strip
+                    \item \textbf{Y-axis}: motorized translation (0.08 m/s)
+                    \item \textbf{X-axis}: manual translation
+                    \item \textbf{Z-axis}: manual height adjustment
                     \item \textbf{GSD}: 0.37-0.69 mm/pixel
-                    \item \textbf{Overlap}: 95\% forward, strip distance = 20cm
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Slide 5: Methods - Radiometric Calibration
-\begin{frame}
-    \frametitle{Radiometric Calibration and Spectral Validation}
-    
-    \begin{center}
-        \includegraphics[width=0.9\textwidth]{Imgs/agronomy-14-00306-g002.png}
-    \end{center}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Calibration Process}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Reference panels}: MAPIR calibrated panels (4 gray levels)
-                    \item \textbf{Method}: Empirical line approach with OLS
-                    \item \textbf{Validation}: RS-5400 Spectroradiometer comparison
-                    \item \textbf{Error metric}: Mean Absolute Percentage Error (MAPE)
                 \end{itemize}
             \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{alertblock}{Calibration Challenges}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{White balancing}: Increased Red/NIR, reduced Green sensitivity
-                    \item \textbf{Band-specific errors}: Higher MAPE for Green band
-                    \item \textbf{Controlled lighting}: LED spectrum consistency verified
-                \end{itemize}
-            \end{alertblock}
         \end{column}
     \end{columns}
 \end{frame}
 
 % Slide 6: Methods - Geometric Validation and Alignment
 \begin{frame}
-    \frametitle{Geometric Validation and Bundle Adjustment}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Bundle Adjustment}
     
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.7\textwidth}
             \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g005.png}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.3\textwidth}
             \begin{block}{Geometric Control}
                 \scriptsize
                 \begin{itemize}
                     \item \textbf{Ground Control Points}: \ensuremath{\geq}9 GCPs per acquisition
-                    \item \textbf{Height levels}: 0m, 0.35m, 0.7m distribution
                     \item \textbf{Metered tapes}: 4 reference tapes for validation
                     \item \textbf{Bundle adjustment}: Agisoft Metashape 2.1.0
                 \end{itemize}
             \end{block}
-            
-            \begin{exampleblock}{Precision Estimation}
-                \scriptsize
-                Z-coordinate precision:
-                $$\sigma_z = \frac{H^2}{Bf} \sigma_x$$
-                \begin{itemize}
-                    \item H: camera-target distance
-                    \item B: baseline (0.2m)
-                    \item f: focal length (3.37mm)
-                    \item $\sigma_x$: parallax precision (0.775 \ensuremath{\mu}m)
-                \end{itemize}
-            \end{exampleblock}
         \end{column}
     \end{columns}
 \end{frame}
 
+% Slide 5: Methods - Radiometric Calibration
+\begin{frame}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Radiometric Calibration}
+    
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{Imgs/agronomy-14-00306-g002.png}
+    \end{center}
+    \tiny (a) Sensor system emitted light spectrum; (b) MAPIR calibrated panels reflectance; (c) MAPIR Survey3W filter transmission curve.
+    
+    \begin{block}{Calibration Process}
+        \scriptsize
+        \begin{itemize}
+            \item \textbf{Reference panels}: MAPIR calibrated panels (4 gray levels)
+            \item \textbf{Method}: Empirical line approach with OLS
+            \item \textbf{Error metric}: Mean Absolute Percentage Error (MAPE)
+        \end{itemize}
+    \end{block}
+\end{frame}
+
 % Slide 7: Methods - Products and Segmentation
 \begin{frame}
-    \frametitle{Products Generation and Plant Segmentation}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Products}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \includegraphics[width=\textwidth]{Imgs/agronomy-14-00306-g006.png}
+        \center
+            \tiny MSO (raw); MSO (calibrated); Vegetation Mask
         \end{column}
         
         \begin{column}{0.5\textwidth}
             \begin{block}{Generated Products}
                 \scriptsize
                 \begin{itemize}
-                    \item \textbf{DSM}: Digital Surface Model from point cloud
-                    \item \textbf{MSO}: Multi-Spectral Orthomosaic (calibrated)
-                    \item \textbf{Vegetation Mask}: Isolated plant pixels
+                    \item \textbf{DSM}: Digital Surface Model from point cloud -> geometric features
+                    \item \textbf{MSO}: Multi-Spectral Orthomosaic (calibrated) -> spectral features
+                    \item \textbf{Vegetation Mask}: Green thresholding + morphological ops -> LAI proxy
                 \end{itemize}
             \end{block}
-            
-            \begin{exampleblock}{Segmentation Process}
+            \begin{block}{Extracted Predictors (14 variables)}
                 \scriptsize
                 \begin{itemize}
-                    \item \textbf{Bimodal thresholding}: Otsu method on Green band
-                    \item \textbf{Refinement}: Semi-automatic GrabCut technique
-                    \item \textbf{Output}: Binary mask separating plants from soil
-                    \item \textbf{Quality control}: Manual validation and correction
+                    \item \textbf{Spectral bands}: Red, Green, NIR (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Vegetation indices}: NDVI, SAVI (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Geometric}: Plant area (LAI proxy), height (\ensuremath{\mu}, \ensuremath{\sigma})
+                    \item \textbf{Temporal}: Days After Application (DAA)
                 \end{itemize}
-            \end{exampleblock}
+            \end{block}
         \end{column}
     \end{columns}
 \end{frame}
 
 % Slide 8: Methods - Experimental Design
 \begin{frame}
-    \frametitle{Experimental Design and Observations}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - Experimental Design and Observations}
     
     \begin{columns}
         \begin{column}{0.6\textwidth}
@@ -2488,6 +2492,9 @@
         \end{column}
         
         \begin{column}{0.4\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{Imgs/agronomy-14-00306-g006.png}
+            \tiny Example of pot at 3 DAA
             \begin{alertblock}{Data Characteristics}
                 \scriptsize
                 \begin{itemize}
@@ -2503,20 +2510,10 @@
 
 % Slide 9: Methods - ML Model and Predictors
 \begin{frame}
-    \frametitle{Machine Learning Model: LASSO + Logistic Function}
+    \frametitle{\small Phytotoxicity Scoring - Materials and Methods - ML Model}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Extracted Predictors (14 variables)}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Spectral bands}: Red, Green, NIR (\ensuremath{\mu}, \ensuremath{\sigma})
-                    \item \textbf{Vegetation indices}: NDVI, SAVI (\ensuremath{\mu}, \ensuremath{\sigma})
-                    \item \textbf{Geometric}: Plant area (LAI proxy), height (\ensuremath{\mu}, \ensuremath{\sigma})
-                    \item \textbf{Temporal}: Days After Application (DAA)
-                \end{itemize}
-            \end{block}
-            
             \begin{exampleblock}{Model Architecture}
                 \scriptsize
                 \textbf{Two-stage approach}:
@@ -2538,30 +2535,36 @@
                 \hline
                 \textbf{Model} & \textbf{Description} \\
                 \hline
-                LASSO & RSS + L\ensuremath{_{1}} penalty regularization \\
+                LASSO \includegraphics[width=0.8cm,height=0.5cm,keepaspectratio]{Imgs/lin.png} & RSS + L\ensuremath{_{1}} penalty regularization \\
                 \hline
-                Logistic & Nonlinear least squares with sigmoid curve \\
+                Logistic \includegraphics[width=0.7cm,height=0.45cm,keepaspectratio]{Imgs/log.png} & Nonlinear least squares with sigmoid curve \\
                 \hline
                 \end{tabular}
             \end{table}
-            
-            \begin{alertblock}{Advantages for New PPPs}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Small dataset suitable}: Only 132 observations needed
-                    \item \textbf{Regularization}: Prevents overfitting with limited data
-                    \item \textbf{Interpretability}: Physical meaning of predictors maintained
-                \end{itemize}
-            \end{alertblock}
         \end{column}
     \end{columns}
+\begin{table}[H]
+    \centering
+    \tiny
+    \caption{Models, their loss functions, and model outputs.}
+    \scriptsize
+    \begin{tabularx}{\textwidth}{p{2cm}p{5cm}p{2.5cm}}
+    \toprule
+    \textbf{Model} & \textbf{Loss function} & \textbf{Model output} \\
+    \midrule
+    \textit{LASSO} & $\sum_{i=1}^{n} \left( y_i - \beta_0 - \sum_{j=1}^{p} \beta_j x_{ij} \right)^2 + L_1 = \min$; $L_1 = \lambda \sum_{j=1}^{p} |\beta_j|$ & $\hat{\beta}_j$, $\hat{\beta}_0$ (7) \\
+    \textit{LogisticFunction (LF)} & $\sum_{i=1}^{n} \left( y_i - \frac{L}{1 + e^{-k(\hat{y}_i - y_0)}} \right)^2 = \min$ & $\hat{L}$, $\hat{k}$, $\hat{y}_0$ (8) \\
+    \bottomrule
+    \end{tabularx}
+    \label{tab:models}
+\end{table}
 \end{frame}
 
 % Results and Discussion Slides (3 slides)
 
 % Slide 10: Results - Measurement Errors and Stability
 \begin{frame}
-    \frametitle{Results: Measurement Errors and Model Stability}
+    \frametitle{\small Phytotoxicity Scoring - Results - Measurement Errors}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -2586,6 +2589,21 @@
             \end{exampleblock}
         \end{column}
         
+        \begin{column}{0.5\textwidth}            
+            \begin{alertblock}{Key Findings}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Geometric accuracy}: Sub-millimeter precision achieved
+                    \item \textbf{Radiometric accuracy}: High variation in dark targets, acceptable overall
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Phytotoxicity Scoring - Results - Model Stability}
+    \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{block}{Model Stability (10-fold CV)}
                 \scriptsize
@@ -2596,47 +2614,48 @@
                     \item \textbf{Area parameter}: CV = 0.13 (excellent)
                 \end{itemize}
             \end{block}
-            
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
             \begin{alertblock}{Key Findings}
                 \scriptsize
                 \begin{itemize}
-                    \item \textbf{Geometric accuracy}: Sub-millimeter precision achieved
-                    \item \textbf{Model stability}: Low coefficient of variation (\ensuremath{<}0.25)
-                    \item \textbf{Logistic parameters}: Very stable (CV \ensuremath{<} 0.1)
+                    \item \textbf{LASSO parameters stability}: Low coefficient of variation (\ensuremath{<}0.25)
+                    \item \textbf{Logistic parameters stabilit}: Very stable (CV \ensuremath{<} 0.1)
                 \end{itemize}
             \end{alertblock}
         \end{column}
     \end{columns}
+\includegraphics[width=1\textwidth]{Imgs/agronomy-14-00306-g007.png}
+\tiny Mean values of LASSO $\beta$ coefficients from the 10-fold approach, given for all the predictors. Whisker bars show 1-sigma LASSO $\beta$ estimates.
 \end{frame}
 
 % Slide 11: Results - Model Performance
 \begin{frame}
-    \frametitle{Results: Model Performance and Accuracy}
+    \frametitle{\small Phytotoxicity Scoring - Results - Model Performance}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Performance Metrics}
-                \scriptsize
-                \begin{table}[H]
-                    \centering
-                    \begin{tabular}{|l|c|c|c|}
-                    \hline
-                    \textbf{Model} & \textbf{MAE (\%)} & \textbf{R\ensuremath{^2}} & \textbf{Adj R\ensuremath{^2}} \\
-                    \hline
-                    LASSO & 11.77 \ensuremath{\pm} 0.67 & - & 0.89 \ensuremath{\pm} 0.03 \\
-                    LASSO + LF & \textbf{10.66 \ensuremath{\pm} 0.83} & \textbf{0.9 \ensuremath{\pm} 0.03} & - \\
-                    \hline
-                    \end{tabular}
-                \end{table}
-            \end{block}
+            \scriptsize
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|c|c|c|}
+                \hline
+                \textbf{Model} & \textbf{MAE (\%)} & \textbf{R\ensuremath{^2}} & \textbf{Adj R\ensuremath{^2}} \\
+                \hline
+                LASSO & 11.77 \ensuremath{\pm} 0.67 & - & 0.89 \ensuremath{\pm} 0.03 \\
+                LASSO + LF & \textbf{10.66 \ensuremath{\pm} 0.83} & \textbf{0.9 \ensuremath{\pm} 0.03} & - \\
+                \hline
+                \end{tabular}
+            \end{table}
             
             \begin{exampleblock}{Benchmark Comparison}
                 \scriptsize
                 \begin{itemize}
                     \item \textbf{Human raters}: 10\% accepted error threshold\fcite{\citeChiangBias}
                     \item \textbf{Our model}: 10.66\% MAE (\ensuremath{\approx} human performance)
-                    \item \textbf{SOTA CNN}: 6.74\% MAE (but requires huge datasets)
-                    \item \textbf{Correlation}: R\ensuremath{^2} = 0.9 (excellent agreement)
+                    \item \textbf{SOTA CNN}: 6.74\% MAE\fcite{\citeGomezZamanillo} (but requires huge datasets)
+                    \item \textbf{Correlation}: R\ensuremath{^2} = 0.9 (EPPO compliance)
                 \end{itemize}
             \end{exampleblock}
         \end{column}
@@ -2645,17 +2664,16 @@
             \begin{alertblock}{Performance Analysis}
                 \scriptsize
                 \begin{itemize}
-                    \item \textbf{Accuracy achievement}: Meets EPPO standards for new PPPs
-                    \item \textbf{Small dataset advantage}: Only 132 observations vs. thousands for CNNs
+                    \item \textbf{Benchmark compliance}: Meets EPPO standards compliance for continuous variables
+                    \item \textbf{Small dataset advantage}: Only 105 training observations vs. thousands for CNNs
                     \item \textbf{Stability proven}: Robust across different training samples
-                    \item \textbf{Practical applicability}: Suitable for operational new PPP screening
+                    \item \textbf{Practical applicability}: Suitable for operational new PPP selectivity screening
                 \end{itemize}
             \end{alertblock}
             
             \begin{block}{Operational Context}
                 \scriptsize
                 \begin{itemize}
-                    \item \textbf{Target application}: New PPP screening (limited data)
                     \item \textbf{Infrastructure}: Greenhouse platform required
                     \item \textbf{Skills needed}: Photogrammetry + AI expertise
                     \item \textbf{Processing time}: Automated after setup
@@ -2667,79 +2685,59 @@
 
 % Slide 12: Results - ANOVA Compliance and Continuous Output
 \begin{frame}
-    \frametitle{Results: ANOVA Compliance and Statistical Advancement}
+   \frametitle{\small Phytotoxicity Scoring - Discussion and Conclusions - ANOVA Compliance and Statistical Advancement}
     
     \begin{center}
         \includegraphics[width=0.8\textwidth]{Imgs/agronomy-14-00306-g008.png}
     \end{center}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Statistical Advancement}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Input}: Discrete ordinal PHYGEN scores (left)
-                    \item \textbf{Output}: Continuous PHYGEN estimates (right)
-                    \item \textbf{Compliance}: Now suitable for parametric ANOVA testing
-                    \item \textbf{Benefit}: Enables proper statistical analysis of treatment effects
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{alertblock}{Statistical Theory Resolution}
-                \scriptsize
-                \textbf{Stevens Scale Problem Solved}\fcite{\citeStevens}:
-                \begin{itemize}
-                    \item \textbf{Before}: Ordinal data → Non-parametric tests only
-                    \item \textbf{After}: Continuous data → ANOVA, t-tests enabled
-                    \item \textbf{Implication}: Proper variance analysis for PPP trials
-                    \item \textbf{Geostatistics}: Compatible with LMM spatial analysis
-                \end{itemize}
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-    
-    \begin{block}{Integration with Spatial Analysis}
-        \small This continuous PHYGEN output enables integration with geostatistical Linear Mixed Models for environmental variability estimation, completing the georeferencing framework for EPPO-compliant trials
-    \end{block}
+    \begin{exampleblock}{Statistical Theory Resolution}
+        \scriptsize
+        \textbf{Solved Problems}:
+        \begin{itemize}
+            \item \textbf{Before}: Ordinal data → Non-parametric tests only\fcite{\citeStevens}
+            \item \textbf{After}: Continuous data → ANOVA, t-tests enabled
+            \item \textbf{Implication}: Proper variance analysis for PPP trials
+            \item \textbf{Geostatistics}: Compatible with LMM spatial analysis
+        \end{itemize}
+    \end{exampleblock}
+
 \end{frame}
 
 % Conclusions Slide (1 slide)
-
+% COMMENTED OUT BECAUSE REPEATS CONTENT FROM THE PREVIOUS SLIDE
 % Slide 13: Conclusions
-\begin{frame}
-    \frametitle{Conclusions: Automated PHYGEN Assessment for New PPPs}
-    
-    \begin{exampleblock}{Key Achievements}
-        \small
-        \begin{itemize}
-            \item \textbf{Accuracy}: 10.66\% MAE, R\ensuremath{^2} = 0.9 (comparable to human raters)
-            \item \textbf{Small dataset capability}: Only 132 observations vs. thousands for CNNs
-            \item \textbf{Stability}: Robust model performance across different training samples
-            \item \textbf{Statistical compliance}: Converts ordinal to continuous data for ANOVA
-        \end{itemize}
-    \end{exampleblock}
-    
-    \begin{block}{Methodological Contributions}
-        \small
-        \begin{itemize}
-            \item \textbf{Controlled environment}: Reduced sensor and environmental variability
-            \item \textbf{Multispectral photogrammetry}: Geometric + spectral feature integration
-            \item \textbf{LASSO + Logistic model}: Optimized for limited training data scenarios
-            \item \textbf{Validation framework}: Comprehensive error assessment and stability testing
-        \end{itemize}
-    \end{block}
-    
-    \begin{alertblock}{Impact for EPPO Framework}
-        \small
-        \textbf{Enables geostatistical analysis}: Continuous PHYGEN scores are now compatible with Linear Mixed Models for spatial environmental variability estimation, fulfilling the georeferencing requirements for modern EPPO-compliant Plant Protection Product trials
-    \end{alertblock}
-\end{frame}
+%\begin{frame}
+%    \frametitle{\small Phytotoxicity Scoring - Conclusions - Automated PHYGEN Assessment for New PPPs}
+%    
+%    \begin{exampleblock}{Key Achievements}
+%        \small
+%       \begin{itemize}
+%            \item \textbf{Accuracy}: 10.66\% MAE, R\ensuremath{^2} = 0.9 (comparable to human raters)
+%            \item \textbf{Small dataset capability}: Only 132 observations vs. thousands for CNNs
+%            \item \textbf{Stability}: Robust model performance across different training samples
+%            \item \textbf{Statistical compliance}: Converts ordinal to continuous data for ANOVA
+%        \end{itemize}
+%    \end{exampleblock}
+%    
+%    \begin{block}{Methodological Contributions}
+%        \small
+%        \begin{itemize}
+%            \item \textbf{Controlled environment}: Reduced sensor and environmental variability
+%            \item \textbf{Multispectral photogrammetry}: Geometric + spectral feature integration
+%            \item \textbf{LASSO + Logistic model}: Optimized for limited training data scenarios
+%            \item \textbf{Validation framework}: Comprehensive error assessment and stability testing
+%        \end{itemize}
+%    \end{block}
+%    
+%    \begin{alertblock}{Impact for EPPO Framework}
+%        \small
+%        \textbf{Enables geostatistical analysis}: Continuous PHYGEN scores are now compatible with Linear Mixed Models for spatial environmental variability estimation, fulfilling the georeferencing requirements for modern EPPO-compliant Plant Protection Product trials
+%    \end{alertblock}
+%\end{frame}
 
 % Slide: Georeferencing Rankings (Ordinal Variable) 
 \begin{frame}
-    \frametitle{Georeferencing Rankings (Ordinal Variable)}
+    \frametitle{Georeferencing Nominal and Binary Variables}
     \begin{table}[ht]
         \centering
         \begin{tabular}{|c|l|c|c|c|}
@@ -2764,7 +2762,7 @@
         \small
         \begin{itemize}
             \item \textbf{Nominal and Binary} variables are fundamental for report the presence of pathogens sympthoms (e.g. PP 1/5 (3) Efficacy evaluation of fungicides against Venturia inaequalis and V. pirina).
-            \item the \textbf{Case Study}: Anomaly detection and clusterization on encoded images of healthy/sympthomatic plant organs. 
+            \item the \textbf{Case Study}: Anomaly detection and unsupervised classification on encoded images of healthy/sympthomatic plant organs. 
             \end{itemize}
     \end{block}
 \end{frame}
@@ -2777,24 +2775,22 @@
 
 % Section divider slide
 \begin{frame}
-    \frametitle{Chapter 3: Anomaly Detection for Plant Disease Monitoring}
-    
     \begin{center}
-        \Huge \textbf{Anomaly Detection Approaches}
+        \Large \textbf{Disease Detection by Anomaly Detection \& Unsupervised Classification}
         \vspace{0.5cm}
         
-        \Large \textbf{Neural Network Encoders for Plant Disease Detection Across Laboratory and Field Conditions}
+        \small \textbf{Pre-Trained Neural Network Encoders for Plant Disease Detection Across Laboratory and Field Conditions}
         
         \vspace{1cm}
         \begin{center}
-            \textbf{[Anomaly Detection Overview Figure]}
+            \includegraphics[width=0.8\textwidth]{Imgs/anomalyPix2Pix.png}\fcite{\citeKatafuchi}
         \end{center}
     \end{center}
 \end{frame}
 
 % Introduction slide
 \begin{frame}
-    \frametitle{Introduction: The Anomaly Detection Paradigm}
+    \frametitle{\small Disease Detection - Introduction - The Unsupervision Paradigm}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -2818,62 +2814,74 @@
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Anomaly Detection Advantages}
                 \begin{itemize}
-                    \item \textbf{Minimal labeling}: Only healthy samples needed
+                    \item \textbf{Minimal labeling}: Only healthy or control samples needed
                     \item \textbf{Novel disease detection}: Identifies unseen pathogen symptoms\fcite{\citeBumbacaSupporting}
-                    \item \textbf{Agricultural alignment}: Healthy plants = majority class
-                    \item \textbf{Practical deployment}: Resource-efficient approach
                 \end{itemize}
             \end{exampleblock}
-            
-            \begin{block}{Research Contributions}
-                \begin{enumerate}
-                    \item Systematic evaluation of 56 architectures
-                    \item Lab-to-field performance analysis
-                    \item Lightweight model identification
-                    \item Practical deployment insights
-                \end{enumerate}
-            \end{block}
         \end{column}
     \end{columns}
 \end{frame}
 
 % Study workflow slide
 \begin{frame}
-    \frametitle{Study Workflow and Methodology}
-    
-    \begin{center}
-        \textbf{[Study Workflow Diagram]}
-        
-        \vspace{0.5cm}
-        \textit{Feature Extraction → Dimensionality Reduction → Anomaly Detection → Evaluation}
-    \end{center}
+    \frametitle{\small Disease Detection - Materials and Methods - Study Workflow}
     
     \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Evaluation Strategies}
-                \begin{enumerate}
-                    \item \textbf{Anomaly Detection}: Healthy vs. All diseases
-                    \item \textbf{Clustering Classification}: Disease-specific grouping
-                \end{enumerate}
-            \end{block}
+        \begin{column}{0.4\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[
+                    workflowblock/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1cm},
+                    arrow/.style={thick,->,>=stealth, blue!70},
+                    node distance=1.5cm
+                ]
+                    
+                    % Workflow blocks from top to bottom
+                    \node[workflowblock] (datasets) at (0,8) {\small\textbf{Datasets}};
+                    
+                    \node[workflowblock] (feature) at (0,6.5) {\small\textbf{Feature Extraction}};
+                    
+                    \node[workflowblock] (reduction) at (0,5) {\small\textbf{Dimensionality Reduction}};
+                    
+                    \node[workflowblock] (detection) at (0,3.5) {\small\textbf{Anomaly Detection \& Classification}};
+                    
+                    \node[workflowblock] (evaluation) at (0,2) {\small\textbf{Evaluation}};
+                    
+                    % Arrows connecting the workflow
+                    \draw[arrow] (datasets) -- (feature);
+                    \draw[arrow] (feature) -- (reduction);
+                    \draw[arrow] (reduction) -- (detection);
+                    \draw[arrow] (detection) -- (evaluation);
+                    
+                \end{tikzpicture}
+            \end{center}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Analysis Pipeline}
-                \begin{enumerate}
-                    \item Feature extraction (56 encoders)
-                    \item Dimensionality reduction (4 methods)
-                    \item Anomaly detection (3 algorithms)
-                    \item Performance evaluation
-                \end{enumerate}
-            \end{exampleblock}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{\small Step Descriptions:}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Datasets}: Laboratory vs. field pathogen sympthoms on apple leafs
+                    
+                    \vspace{0.3cm}
+                    \item \textbf{Feature Extraction}: Raw images into numerical representations using pre-trained neural networks
+                    
+                    \vspace{0.3cm}
+                    \item \textbf{Dimensionality Reduction}: Compress high-dimensional features
+                    
+                    \vspace{0.3cm}
+                    \item \textbf{Anomaly Detection \& Classification}: Identify diseased samples as anomalies from healthy baseline and group diseases by similarity patterns without supervision
+                    
+                    \vspace{0.3cm}
+                    \item \textbf{Evaluation}: Assess performance using statistical metrics (EPPO benchmarks) to validate effectiveness across laboratory and field conditions
+                \end{itemize}
+            \end{block}
         \end{column}
     \end{columns}
 \end{frame}
 
-% Dataset slide
+% Dataset slide 1 - Dataset Overview
 \begin{frame}
-    \frametitle{Datasets: Laboratory vs. Field Conditions}
+    \frametitle{\small Disease Detection - Materials and Methods - Datasets}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -2886,19 +2894,30 @@
                 \textbf{Dataset} & \textbf{Samples} & \textbf{Size} & \textbf{Environment} \\
                 \midrule
                 \multicolumn{4}{c}{\textbf{Plant Village}\fcite{\citeHughesOpen}} \\
-                Healthy & 516 & 256×256 & Laboratory \\
-                Cedar rust & 275 & 256×256 & Controlled \\
-                Apple scab & 583 & 256×256 & Uniform bg \\
+                Healthy & 516 & 256×256 & \\
+                Cedar rust & 275 & 256×256 & Lab \\
+                Apple scab & 583 & 256×256 & \\
                 \midrule
                 \multicolumn{4}{c}{\textbf{Plant Pathology}\fcite{\citeThapaPlant}} \\
-                Healthy & 516 & Variable & Field \\
-                Cedar rust & 275 & Variable & Natural \\
-                Apple scab & 583 & Variable & Complex bg \\
+                Healthy & 516 & Variable & \\
+                Cedar rust & 275 & Variable & Field \\
+                Apple scab & 583 & Variable & \\
                 \bottomrule
                 \end{tabular}
             \end{table}
+        \end{column}
+        
+        \begin{column}{0.3\textwidth}
+            \scriptsize
+            \begin{block}{\scriptsize Pathogen Identification}
+                \begin{itemize}
+                    \item \textbf{Apple Cedar Rust}: \textit{Gymnosporangium juniperi-virginianae} Schw.
+                    \item \textbf{Apple Scab}: \textit{Venturia inaequalis} Cooke (Wint.)
+                \end{itemize}
+            \end{block}
             
-            \begin{alertblock}{Key Differences}
+            \begin{alertblock}{\scriptsize Datasets Selection Rationale}
+                \scriptsize
                 \begin{itemize}
                     \item \textbf{Laboratory}: Controlled lighting, uniform backgrounds
                     \item \textbf{Field}: Variable conditions, complex environments
@@ -2906,257 +2925,222 @@
                 \end{itemize}
             \end{alertblock}
         \end{column}
+    \end{columns}
+\end{frame}
+
+% Dataset slide 2 - Dataset Characteristics
+\begin{frame}
+    \includegraphics[width=\textwidth]{Imgs/Datasets_anomaly.pdf}
+\end{frame}
+
+% Experimental setup slide
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Experimental Setup}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{\small Anomaly Detection}
+                \scriptsize
+                \begin{itemize}
+                    \item \textbf{Training}: 10\% of dataset healthy samples (52 images per dataset)
+                    \item \textbf{Testing}: All samples - training samples (total 1322 images per dataset)
+                    \item \textbf{Cross-validation}: 5-fold for robustness
+                    \item \textbf{Metrics}: Accuracy\\ (TP+TN)/(TP+TN+FP+FN)
+                \end{itemize}
+                \tiny TP: True Positive, TN: True Negative, FP: False Positive, FN: False Negative
+            \end{block}
+        \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{center}
-                \textbf{[Dataset Comparison Placeholder]}
-                
-                \vspace{0.5cm}
-                \begin{tabular}{lcc}
-                \hline
-                \textbf{Dataset} & \textbf{Plant Village} & \textbf{Plant Pathology} \\
-                \hline
-                Environment & Laboratory & Field \\
-                Conditions & Controlled & Natural \\
-                Quality & High & Variable \\
-                \hline
-                \end{tabular}
-            \end{center}
-            
-            \begin{exampleblock}{Dataset Characteristics}
+            \begin{block}{\small Unsupervised Classification}
+                \scriptsize
                 \begin{itemize}
-                    \item \textbf{Balanced classes}: Identical sample counts
-                    \item \textbf{Disease spectrum}: Healthy, fungal infections
-                    \item \textbf{Real-world challenge}: 5-10\% performance gap expected
-                    \item \textbf{Practical relevance}: Agricultural deployment readiness
+                    \item \textbf{Parameter Initialization}: 3 classes/clusters/components
+                    \item \textbf{Testing}: All samples (1374 images per dataset)
+                    \item \textbf{Unsupervised Classification}: Group diseases by similarity patterns without supervision
+                    \item \textbf{Benchmarks}: Cohen's $\kappa$
                 \end{itemize}
-            \end{exampleblock}
+            \end{block}
         \end{column}
     \end{columns}
 \end{frame}
 
-% CNN encoders slide
+% Encoders slide
 \begin{frame}
-    \frametitle{Convolutional Neural Network Encoders}
-    
+    \frametitle{\small Disease Detection - Materials and Methods - Encoders}
+    \vspace{-0.3cm}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Traditional CNN Families}
+            \tiny
+            \begin{block}{\tiny \textbf{CNN Families} (34 architectures):}
                 \begin{itemize}
-                    \item \textbf{ResNet family}: Deep residual learning\fcite{\citeFasterRCNN}
+                    \item \textbf{ResNet family}: Deep residual learning
                         \begin{itemize}
+                            \tiny
                             \item ResNet18, 34, 50, 101, 152
-                            \item Skip connections for gradient flow
+                            \item Wide ResNet50/101\_2
                         \end{itemize}
                     \item \textbf{DenseNet family}: Dense connectivity
                         \begin{itemize}
+                            \tiny
                             \item DenseNet121, 161, 169, 201
-                            \item Feature reuse and efficiency
+                        \end{itemize}
+                    \item \textbf{EfficientNet family}: Compound scaling
+                        \begin{itemize}
+                            \tiny
+                            \item EfficientNet-B0 to B7 (8 variants)
+                            \item EfficientNetV2-S/M/L (3 variants)
+                        \end{itemize}
+                    \item \textbf{MobileNet family}: Lightweight design
+                        \begin{itemize}
+                            \tiny
+                            \item MobileNetV2, V3-Small/Large
                         \end{itemize}
                     \item \textbf{VGG family}: Sequential architecture
                         \begin{itemize}
-                            \item VGG11, 13, 16, 19
-                            \item Foundation CNN design
+                            \tiny
+                            \item VGG11/13/16/19 + BatchNorm variants
+                        \end{itemize}
+                    \item \textbf{RegNet family}: Regular networks
+                        \begin{itemize}
+                            \tiny
+                            \item RegNet-X (7 variants)
+                            \item RegNet-Y (7 variants)
                         \end{itemize}
                 \end{itemize}
             \end{block}
         \end{column}
-        
         \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Efficient CNN Families}
+            \tiny
+            \begin{block}{\tiny \textbf{Transformer}-based Families (8 architectures):}
                 \begin{itemize}
-                    \item \textbf{EfficientNet family}: Compound scaling
+                    \item \textbf{Vision Transformer (ViT)}: Patch-based attention
                         \begin{itemize}
-                            \item EfficientNet-B0 to B7
-                            \item Optimal width/depth/resolution
+                            \tiny
+                            \item ViT-B/L (16×16, 32×32 patches)
+                            \item ViT-H/14 (14×14 patches)
                         \end{itemize}
-                    \item \textbf{MobileNet family}: Depthwise separable
+                    \item \textbf{Swin Transformer}: Hierarchical attention
                         \begin{itemize}
-                            \item MobileNet v2, v3
-                            \item Mobile deployment optimized
+                            \tiny
+                            \item Swin-T/S/B (3 variants)
+                            \item SwinV2-T/S/B (3 variants)
                         \end{itemize}
-                    \item \textbf{ShuffleNet family}: Channel shuffling
+                    \item \textbf{DINOv2}: Self-supervised vision
                         \begin{itemize}
-                            \item ShuffleNet v2 variants
-                            \item \textbf{Best performer}: 2.3M parameters
-                        \end{itemize}
-                \end{itemize}
-            \end{exampleblock}
-            
-            \begin{alertblock}{Performance Insight}
-                \textbf{Lightweight models often outperform large architectures in specialized agricultural tasks}
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Transformer encoders slide
-\begin{frame}
-    \frametitle{Vision Transformer Encoders}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Vision Transformer Family}
-                \begin{itemize}
-                    \item \textbf{ViT (Vision Transformer)}\fcite{\citeVaswani}
-                        \begin{itemize}
-                            \item ViT-Base, Large variants
-                            \item Self-attention mechanism
-                            \item 86M+ parameters
-                        \end{itemize}
-                    \item \textbf{Swin Transformer}: Hierarchical structure
-                        \begin{itemize}
-                            \item Shifted window attention
-                            \item Multi-scale feature extraction
-                        \end{itemize}
-                    \item \textbf{ConvNeXt}: CNN-Transformer hybrid
-                        \begin{itemize}
-                            \item Modernized ConvNet design
-                            \item Transformer-inspired blocks
+                            \tiny
+                            \item DINOv2-ViT-S/B/L (3 variants)
                         \end{itemize}
                 \end{itemize}
             \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{DINOv2 Family}
+            \vspace{-0.3cm}
+            \begin{block}{\tiny Specialized CNN Architectures (14):}
                 \begin{itemize}
-                    \item \textbf{DINOv2}: Self-supervised learning
-                        \begin{itemize}
-                            \item DINOv2-Small to Giant
-                            \item Up to 300M parameters
-                            \item Rich semantic representations
-                        \end{itemize}
-                    \item \textbf{Key advantages}:
-                        \begin{itemize}
-                            \item No fine-tuning required
-                            \item Strong feature extraction
-                            \item General-purpose encoders
-                        \end{itemize}
+                    \tiny
+                    \item \textbf{ShuffleNet}: Channel shuffling (4 variants)
+                    \item \textbf{SqueezeNet}: Fire modules (2 variants)
+                    \item \textbf{Inception}: Multi-scale features
+                    \item \textbf{GoogleNet}: Network-in-network
+                    \item \textbf{MaxViT}: Hybrid conv-attention
+                    \item \textbf{MNASNet}: Neural architecture search
+                    \item \textbf{ResNeXt}: Grouped convolutions
                 \end{itemize}
-            \end{exampleblock}
-            
-            \begin{alertblock}{Surprising Finding}
-                \textbf{Large transformers (300M params) underperformed lightweight CNNs (2.3M) in field conditions}
-            \end{alertblock}
-            
-            \begin{block}{Evaluation Scope}
-                \textbf{Total}: 56 architectures across CNN and Transformer families
             \end{block}
         \end{column}
     \end{columns}
+    \begin{exampleblock}{\tiny Total Evaluation Scope:}
+                \textbf{56 pre-trained encoders} ImageNet pre-training (except DINOv2: self-supervised)
+    \end{exampleblock}
 \end{frame}
 
 % Feature extraction methodology slide
 \begin{frame}
-    \frametitle{Feature Extraction Methodology}
+    \frametitle{\small Disease Detection - Materials and Methods - Feature Extraction}
     
     \begin{center}
-        \textbf{[Feature Extraction Methodology]}
-        
-        \vspace{0.5cm}
-        \textit{Encoder → Feature Maps → Global Average Pooling → Feature Vector}
-    \end{center}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Extraction Process}
-                \begin{enumerate}
-                    \item \textbf{Input}: RGB images (224×224)
-                    \item \textbf{Encoder}: Pre-trained ImageNet weights
-                    \item \textbf{Output}: High-dimensional features
-                    \item \textbf{No fine-tuning}: Off-the-shelf performance
-                \end{enumerate}
-            \end{block}
-            
-            \begin{exampleblock}{Feature Characteristics}
-                \begin{itemize}
-                    \item \textbf{Dimensionality}: 512-2048 features
-                    \item \textbf{Representation}: Global average pooling
-                    \item \textbf{Transfer learning}: ImageNet knowledge
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{alertblock}{Key Advantages}
-                \begin{itemize}
-                    \item \textbf{No training required}: Immediate deployment
-                    \item \textbf{Computational efficiency}: Single forward pass
-                    \item \textbf{Scalability}: Easy architecture comparison
-                    \item \textbf{Robustness}: Pre-trained stability
-                \end{itemize}
-            \end{alertblock}
-            
-            \begin{block}{Evaluation Strategy}
-                \textbf{Systematic comparison}: All 56 encoders tested with identical downstream processing
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
+    \begin{tikzpicture}[
+        scale=0.9,
+        level0/.style={rectangle, draw, fill=blue!20, text width=1.8cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
+        level1/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
+        level2/.style={rectangle, draw, fill=green!20, text width=2.4cm, text centered, rounded corners, minimum height=1.4cm, inner sep=8pt},
+        level3/.style={rectangle, draw, fill=orange!20, text width=2.6cm, text centered, rounded corners, minimum height=1.0cm, inner sep=6pt},
+        level4/.style={rectangle, draw, fill=red!20, text width=3.0cm, text centered, rounded corners, minimum height=0.8cm, inner sep=6pt},
+        arrow/.style={thick,->,>=stealth, blue!70},
+        smalltext/.style={font=\scriptsize}
+    ]
 
-% Evaluation strategies slide
-\begin{frame}
-    \frametitle{Evaluation Strategies}
+    %  Level 0: Datasets
+    \node[level0] (datasets) at (0,6.5) {\textbf{Datasets}};
     
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Strategy 1: Anomaly Detection}
-                \begin{itemize}
-                    \item \textbf{Training}: Only healthy samples
-                    \item \textbf{Testing}: Healthy vs. All diseases
-                    \item \textbf{Goal}: Identify any pathological condition
-                    \item \textbf{Metrics}: Precision, Recall, F1-score, AUC
-                \end{itemize}
-                
-                \vspace{0.3cm}
-                \textbf{Practical application}: Early disease screening in agricultural monitoring
-            \end{block}
-            
-            \begin{exampleblock}{Anomaly Detection Pipeline}
-                \begin{enumerate}
-                    \item Feature extraction
-                    \item Dimensionality reduction
-                    \item Anomaly scoring
-                    \item Threshold determination
-                    \item Binary classification
-                \end{enumerate}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Strategy 2: Clustering Classification}
-                \begin{itemize}
-                    \item \textbf{Training}: Unsupervised clustering
-                    \item \textbf{Testing}: Disease-specific grouping
-                    \item \textbf{Goal}: Distinguish between disease types
-                    \item \textbf{Metrics}: Adjusted Rand Index, Silhouette
-                \end{itemize}
-                
-                \vspace{0.3cm}
-                \textbf{Practical application}: Disease type identification for targeted treatment
-            \end{block}
-            
-            \begin{alertblock}{Clustering Pipeline}
-                \begin{enumerate}
-                    \item Feature extraction
-                    \item Dimensionality reduction
-                    \item Clustering algorithm
-                    \item Cluster validation
-                    \item Disease mapping
-                \end{enumerate}
-            \end{alertblock}
-            
-            \begin{exampleblock}{Complementary Approaches}
-                Both strategies address different agricultural decision-making needs
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
+    % Level 1: Feature Extraction (detailed)
+    \node[level2] (cnn) at (-3.5,4.8) {\textbf{CNN Models}\\
+        \begin{tikzpicture}[scale=0.4]
+            % CNN encoder stack with decreasing layer sizes (left to right)
+            \draw[fill=blue!40] (0,0.1) rectangle (0.4,1.9);
+            \draw[fill=green!40] (0.5,0.2) rectangle (0.8,1.8);
+            \draw[fill=orange!40] (0.9,0.3) rectangle (1.1,1.7);
+            \draw[fill=purple!40] (1.2,0.5) rectangle (1.35,1.5);
+            \draw[fill=red!40] (1.45,0.7) rectangle (1.55,1.3);
+            % Global average pooling arrow
+            \draw[->, thick, gray] (1.8,1.0) -- (2.2,1.0);
+            \node[smalltext, align=center] at (3.6,1.0) {\tiny Global\\Avg\\Pool};
+        \end{tikzpicture}\\
+        \tiny 48 models};
+    
+    \node[level2] (transformer) at (3.5,4.8) {\textbf{Transformers}\\
+        \begin{tikzpicture}[scale=0.4]
+            % Query, Key, Value representation
+            \draw[fill=blue!50, thick] (0,0.1) rectangle (0.4,1.7);
+            \node[rotate=90, smalltext] at (0.2,0.9) {\tiny Q};
+            \draw[fill=green!50, thick] (0.6,0.1) rectangle (1.0,1.7);
+            \node[rotate=90, smalltext] at (0.8,0.9) {\tiny K};
+            \draw[fill=orange!50, thick] (1.2,0.1) rectangle (1.6,1.7);
+            \node[rotate=90, smalltext] at (1.4,0.9) {\tiny V};
+            % Attention mechanism arrow
+            \draw[->, thick, purple] (1.8,0.9) -- (2.4,0.9);
+            % CLS token
+            \draw[fill=red!60, thick] (2.6,0.5) rectangle (3.0,1.3);
+            \node[smalltext, align=center] at (4,1.2) {\tiny [class]\\Token};
+        \end{tikzpicture}\\
+        \tiny 8 models};
+    
+    \node[level1] (features) at (0,3.0) {\scriptsize\textbf{Feature Vectors}};
+    
+    % Level 2: Dimensionality Reduction (simplified)
+    \node[level1] (dimred) at (0,1.8) {\scriptsize\textbf{Dimensionality Reduction}};
+    
+    % Level 3: Analysis Methods
+    \node[level3] (anomaly) at (-4,0.6) {\scriptsize\textbf{Anomaly Detection}};
+    \node[level3] (clustering) at (4,0.6) {\scriptsize\textbf{Unsupervised Classification}};
+    
+    % Level 4: Evaluation
+    \node[level4] (evaluation) at (0,-0.5) {\scriptsize\textbf{Evaluation}};
+    
+    % Arrows from Level 0 to Level 1
+    \draw[arrow] (datasets) -- (cnn);
+    \draw[arrow] (datasets) -- (transformer);
+
+    % Arrows from detailed feature extraction to feature vectors
+    \draw[arrow] (cnn) -- (features);
+    \draw[arrow] (transformer) -- (features);
+    
+    % Arrow from feature vectors to dimensionality reduction
+    \draw[arrow] (features) -- (dimred);
+    
+    % Arrows from Level 2 to Level 3
+    \draw[arrow] (dimred) -- (anomaly);
+    \draw[arrow] (dimred) -- (clustering);
+    
+    % Arrows from Level 3 to Level 4
+    \draw[arrow] (anomaly) -- (evaluation);
+    \draw[arrow] (clustering) -- (evaluation);
+    
+    \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 % Dimensionality reduction slide
 \begin{frame}
-    \frametitle{Dimensionality Reduction Techniques}
+    \frametitle{\small Disease Detection - Materials and Methods - Dimensionality Reduction}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -3164,26 +3148,11 @@
                 \begin{itemize}
                     \item \textbf{Principal Component Analysis (PCA)}
                         \begin{itemize}
-                            \item Linear dimensionality reduction
                             \item Variance maximization
                             \item Interpretable components
                         \end{itemize}
-                    \item \textbf{Linear Discriminant Analysis (LDA)}
-                        \begin{itemize}
-                            \item Supervised dimensionality reduction
-                            \item Class separation optimization
-                            \item Limited to n-1 dimensions
-                        \end{itemize}
                 \end{itemize}
             \end{block}
-            
-            \begin{exampleblock}{Advantages}
-                \begin{itemize}
-                    \item \textbf{Computational efficiency}
-                    \item \textbf{Interpretability}
-                    \item \textbf{Scalability}
-                \end{itemize}
-            \end{exampleblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
@@ -3191,311 +3160,505 @@
                 \begin{itemize}
                     \item \textbf{t-SNE (t-Distributed Stochastic Neighbor Embedding)}
                         \begin{itemize}
-                            \item Non-linear manifold learning
                             \item Local structure preservation
-                            \item \textbf{Best performer} across datasets
                         \end{itemize}
                     \item \textbf{UMAP (Uniform Manifold Approximation)}
                         \begin{itemize}
                             \item Topology preservation
                             \item Global structure maintenance
-                            \item Faster than t-SNE
                         \end{itemize}
                 \end{itemize}
             \end{block}
-            
-            \begin{alertblock}{Key Finding}
-                \textbf{t-SNE consistently outperformed linear methods for both anomaly detection and clustering tasks}
-            \end{alertblock}
-            
-            \begin{exampleblock}{Target Dimensions}
-                Reduction to \textbf{2-50 components} for optimal visualization and performance
-            \end{exampleblock}
         \end{column}
     \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Dimensionality Reduction Workflow}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        scale=0.9,
+        level0/.style={rectangle, draw, fill=blue!20, text width=2cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level1/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level2/.style={rectangle, draw, fill=green!20, text width=2.8cm, text centered, rounded corners, minimum height=1.8cm, inner sep=10pt},
+        level3/.style={rectangle, draw, fill=orange!20, text width=3cm, text centered, rounded corners, minimum height=1.2cm, inner sep=8pt},
+        level4/.style={rectangle, draw, fill=red!20, text width=3.5cm, text centered, rounded corners, minimum height=1cm, inner sep=8pt},
+        title/.style={rectangle, draw, fill=green!10, text width=6cm, text centered, rounded corners, minimum height=0.6cm},
+        arrow/.style={thick,->,>=stealth, blue!70},
+        crossarrow/.style={thick,<->,>=stealth, gray!70}
+    ]
+
+    %  Level 0: Datasets
+    \node[level0] (datasets) at (0,7.75) {\textbf{Datasets}};
+    
+    % Level 1: Feature Vectors
+
+    \node[level1] (features) at (0,6.5) {\scriptsize\textbf{Feature Extraction}};
+    
+    % Level 2: Dimensionality Reduction Methods
+    \node[level2] (pca) at (-4,4.5) {\textbf{PCA}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[->] (0,0) -- (2,0);
+            \draw[->] (0,0) -- (0,2);
+            \fill[blue!60] (0.3,1.6) circle (0.1);
+            \fill[blue!60] (0.5,1.3) circle (0.1);
+            \fill[blue!60] (0.7,1.1) circle (0.1);
+            \fill[green!60] (1.1,0.8) circle (0.1);
+            \fill[green!60] (1.3,0.6) circle (0.1);
+            \fill[green!60] (1.5,0.4) circle (0.1);
+            \draw[red, thick] (0,1.8) -- (1.8,0);
+        \end{tikzpicture}};
+    
+    \node[level2] (umap) at (0,4.5) {\textbf{UMAP}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[->] (0,0) -- (2,0);
+            \draw[->] (0,0) -- (0,2);
+            \fill[blue] (0.4,1.6) circle (0.1);
+            \fill[blue] (0.5,1.4) circle (0.1);
+            \fill[blue] (0.6,1.5) circle (0.1);
+            \fill[orange] (1.3,1.1) circle (0.1);
+            \fill[orange] (1.4,0.9) circle (0.1);
+            \fill[orange] (1.5,1.0) circle (0.1);
+            \fill[green!70!black] (0.8,0.5) circle (0.1);
+            \fill[green!70!black] (0.9,0.4) circle (0.1);
+            \fill[green!70!black] (1.0,0.3) circle (0.1);
+        \end{tikzpicture}};
+    
+    \node[level2] (tsne) at (4,4.5) {\textbf{t-SNE}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[->] (0,0) -- (2,0);
+            \draw[->] (0,0) -- (0,2);
+            \fill[blue] (0.5,1.6) circle (0.1);
+            \fill[blue] (0.6,1.5) circle (0.1);
+            \fill[blue] (0.7,1.7) circle (0.1);
+            \fill[orange] (1.6,1.5) circle (0.1);
+            \fill[orange] (1.7,1.6) circle (0.1);
+            \fill[orange] (1.8,1.4) circle (0.1);
+            \fill[green!70!black] (1.1,0.4) circle (0.1);
+            \fill[green!70!black] (1.2,0.5) circle (0.1);
+            \fill[green!70!black] (1.3,0.3) circle (0.1);
+        \end{tikzpicture}};
+    
+    % Level 3: Analysis Methods
+    \node[level3] (anomaly) at (-2,1.5) {\textbf{Anomaly Detection}};
+    \node[level3] (clustering) at (2,1.5) {\textbf{Unsupervised Classification}};
+    
+    % Level 4: Evaluation
+    \node[level4] (evaluation) at (0,-0.35) {\textbf{Evaluation}};
+    
+    % Arrows from Level 0 to Level 1
+    \draw[arrow] (datasets) -- (features);
+
+    % Arrows from Level 1 to Level 2
+    \draw[arrow] (features) -- (pca);
+    \draw[arrow] (features) -- (umap);
+    \draw[arrow] (features) -- (tsne);
+    
+    % Arrows from Level 2 to Level 3
+    \draw[arrow] (pca) -- (anomaly);
+    \draw[arrow] (pca) -- (clustering);
+    \draw[arrow] (umap) -- (anomaly);
+    \draw[arrow] (umap) -- (clustering);
+    \draw[arrow] (tsne) -- (anomaly);
+    \draw[arrow] (tsne) -- (clustering);
+    
+    % Arrows from Level 3 to Level 4
+    \draw[arrow] (anomaly) -- (evaluation);
+    \draw[arrow] (clustering) -- (evaluation);
+    
+    \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 % Anomaly detection algorithms slide 1
 \begin{frame}
-    \frametitle{Anomaly Detection Algorithms}
+    \frametitle{\small Disease Detection - Materials and Methods - Anomaly Detection}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Local Outlier Factor (LOF)}
+            \begin{block}{Statistical Methods}
                 \begin{itemize}
-                    \item \textbf{Principle}: Density-based anomaly detection\fcite{\citeBreunigLOF}
-                    \item \textbf{Method}: Local density comparison
-                    \item \textbf{Advantages}: 
+                    \item \textbf{IQR with Confidence Interval}
                         \begin{itemize}
-                            \item Handles varying densities
-                            \item Local anomaly assessment
-                            \item Robust to cluster shapes
-                        \end{itemize}
-                    \item \textbf{Best performance}: Most stable across datasets
-                \end{itemize}
-            \end{block}
-            
-            \begin{exampleblock}{LOF Score Interpretation}
-                \begin{itemize}
-                    \item LOF $\approx$ 1: Normal point
-                    \item LOF > 1: Anomalous point
-                    \item Higher values = greater anomaly
-                \end{itemize}
-            \end{exampleblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{One-Class SVM}
-                \begin{itemize}
-                    \item \textbf{Principle}: Support vector boundary\fcite{\citeScholkopfEstimating}
-                    \item \textbf{Method}: Maximum margin separation
-                    \item \textbf{Advantages}:
-                        \begin{itemize}
-                            \item Kernel flexibility
-                            \item Theoretical foundation
-                            \item Memory efficient
+                            \tiny
+                            \item Interquartile range outlier detection
+                            \item 95\% confidence interval around inliers
                         \end{itemize}
                 \end{itemize}
             \end{block}
             
-            \begin{alertblock}{Isolation Forest}
+            \begin{block}{Machine Learning Methods}
                 \begin{itemize}
-                    \item \textbf{Principle}: Path-based isolation\fcite{\citeLiuIsolation}
-                    \item \textbf{Method}: Random tree partitioning
-                    \item \textbf{Advantages}:
+                    \item \textbf{Local Outlier Factor (LOF)}\fcite{\citeBreunigLOF}
                         \begin{itemize}
-                            \item Linear time complexity
-                            \item No distance calculations
-                            \item Scalable to large datasets
+                            \tiny
+                            \item Local density comparison
+                            \item Novelty detection mode
                         \end{itemize}
                 \end{itemize}
-            \end{alertblock}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-% Experimental setup slide
-\begin{frame}
-    \frametitle{Experimental Setup and Evaluation Metrics}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Experimental Design}
-                \begin{itemize}
-                    \item \textbf{Cross-validation}: 5-fold stratified CV
-                    \item \textbf{Training}: 80\% healthy samples only
-                    \item \textbf{Testing}: All samples (healthy + diseases)
-                    \item \textbf{Repetitions}: 10 independent runs
-                    \item \textbf{Statistical testing}: Wilcoxon signed-rank
-                \end{itemize}
             \end{block}
-            
-            \begin{exampleblock}{Hyperparameter Optimization}
-                \begin{itemize}
-                    \item \textbf{Grid search}: Algorithm-specific parameters
-                    \item \textbf{Dimensionality}: 2, 5, 10, 20, 50 components
-                    \item \textbf{Contamination}: 0.1, 0.15, 0.2, 0.25
-                \end{itemize}
-            \end{exampleblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{block}{Evaluation Metrics}
-                \textbf{Anomaly Detection}:
+            \begin{block}{\small Machine Learning Methods}
                 \begin{itemize}
-                    \item Precision, Recall, F1-score
-                    \item Area Under ROC Curve (AUC)
-                    \item Average Precision (AP)
-                \end{itemize}
-                
-                \vspace{0.3cm}
-                \textbf{Clustering}:
-                \begin{itemize}
-                    \item Adjusted Rand Index (ARI)
-                    \item Silhouette Score
-                    \item Normalized Mutual Information
+                    \item \textbf{Isolation Forest}\fcite{\citeLiuIsolation}
+                        \begin{itemize}
+                            \tiny
+                            \item Random feature selection and splitting
+                            \item Path-based anomaly scoring
+                            \item Contamination parameter: 0.1
+                        \end{itemize}
+                    \item \textbf{One-Class SVM}\fcite{\citeScholkopfEstimating}
+                        \begin{itemize}
+                            \tiny
+                            \item RBF kernel boundary learning
+                            \item Support vector separation
+                            \item Nu parameter: 0.1
+                        \end{itemize}
+                    \item \textbf{Gaussian Mixture Model (GMM)}
+                        \begin{itemize}
+                            \tiny
+                            \item Single-component probabilistic model
+                            \item Low probability density detection
+                            \item 1st percentile threshold
+                        \end{itemize}
                 \end{itemize}
             \end{block}
-            
-            \begin{alertblock}{Performance Analysis}
-                \begin{itemize}
-                    \item \textbf{Lab vs. Field}: Direct comparison
-                    \item \textbf{Architecture ranking}: Comprehensive evaluation
-                    \item \textbf{Statistical significance}: p < 0.05
-                \end{itemize}
-            \end{alertblock}
         \end{column}
     \end{columns}
+    \begin{alertblock}{Evaluation Metric}
+        \scriptsize
+        \textbf{Accuracy}: Proportion of correctly identified healthy and diseased samples (EPPO benchmark 0.85)
+    \end{alertblock}
 \end{frame}
 
-% Anomaly detection results slide
 \begin{frame}
-    \frametitle{Results: Anomaly Detection Performance}
+    \frametitle{\small Disease Detection - Materials and Methods - Anomaly Detection}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        scale=0.9,
+        level0/.style={rectangle, draw, fill=blue!20, text width=2cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level1/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level2/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=0.5cm, inner sep=10pt},
+        level3/.style={rectangle, draw, fill=orange!20, text width=1.8cm, text centered, rounded corners, minimum height=1.2cm, inner sep=4pt},
+        level4/.style={rectangle, draw, fill=red!20, text width=3.5cm, text centered, rounded corners, minimum height=1cm, inner sep=8pt},
+        title/.style={rectangle, draw, fill=green!10, text width=6cm, text centered, rounded corners, minimum height=0.6cm},
+        arrow/.style={thick,->,>=stealth, blue!70},
+        crossarrow/.style={thick,<->,>=stealth, gray!70}
+    ]
+
+    %  Level 0: Datasets
+    \node[level0] (datasets) at (0,7.75) {\textbf{Datasets}};
+    
+    % Level 1: Feature Vectors
+
+    \node[level1] (features) at (0,6.5) {\scriptsize\textbf{Feature Extraction}};
+    
+    % Level 2: Dimensionality Reduction Methods
+    \node[level2] (dimensions) at (0,4.5) {\textbf{Dimensionality Reduction}};
+    
+    % Level 3: Analysis Methods - Anomaly Detection
+    \node[level3] (iqr) at (-5,1.5) {\tiny\textbf{IQR}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[thick] (0,0) rectangle (2,1.5);
+            \draw[red,thick] (0.4,0.8) -- (1.6,0.8);
+            \fill[blue] (0.2,0.8) circle (0.08);
+            \fill[blue] (0.8,0.8) circle (0.08);
+            \fill[blue] (1.2,0.8) circle (0.08);
+            \fill[blue] (1.8,0.8) circle (0.08);
+            \fill[red] (0.1,1.2) circle (0.08);
+            \fill[red] (1.9,0.3) circle (0.08);
+        \end{tikzpicture}};
+    
+    \node[level3] (lof) at (-2.5,1.5) {\tiny\textbf{LOF}\\
+        \begin{tikzpicture}[scale=0.5]
+            \fill[blue!20] (1,0.8) circle (0.5);
+            \fill[blue] (0.8,0.8) circle (0.08);
+            \fill[blue] (1.2,0.8) circle (0.08);
+            \fill[blue] (1.0,0.6) circle (0.08);
+            \fill[blue] (1.0,1.0) circle (0.08);
+            \fill[red] (0.2,1.3) circle (0.08);
+            \draw[red,dashed] (0.2,1.3) circle (0.2);
+        \end{tikzpicture}};
+    
+    \node[level3] (isolation) at (0,1.5) {\tiny\textbf{Isolation Forest}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[thick] (0,0) -- (2,1.5);
+            \draw[thick] (0.5,0) -- (0.5,1.0);
+            \draw[thick] (1.5,0.5) -- (1.5,1.5);
+            \fill[blue] (0.3,0.3) circle (0.08);
+            \fill[blue] (0.7,0.8) circle (0.08);
+            \fill[blue] (1.3,1.2) circle (0.08);
+            \fill[red] (1.7,0.3) circle (0.08);
+        \end{tikzpicture}};
+    
+    \node[level3] (svm) at (2.5,1.5) {\tiny\textbf{One-Class SVM}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[blue,thick] (1,0.8) circle (0.6);
+            \fill[blue] (0.8,0.8) circle (0.08);
+            \fill[blue] (1.2,0.8) circle (0.08);
+            \fill[blue] (1.0,0.6) circle (0.08);
+            \fill[blue] (1.0,1.0) circle (0.08);
+            \fill[red] (0.2,1.3) circle (0.08);
+            \fill[red] (1.8,0.3) circle (0.08);
+        \end{tikzpicture}};
+    
+    \node[level3] (gmm) at (5,1.5) {\tiny\textbf{GMM}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[blue,thick] (1,0.8) ellipse (0.6 and 0.4);
+            \draw[orange,thick] (1.5,0.5) ellipse (0.5 and 0.3);
+            \fill[blue] (0.8,0.8) circle (0.08);
+            \fill[blue] (1.2,0.8) circle (0.08);
+            \fill[blue] (1.0,0.6) circle (0.08);
+            \fill[blue] (1.0,1.0) circle (0.08);
+            \fill[orange] (1.3,0.5) circle (0.08);
+            \fill[orange] (1.7,0.5) circle (0.08);
+            \fill[orange] (1.5,0.3) circle (0.08);
+        \end{tikzpicture}};
+    
+    % Level 4: Evaluation
+    \node[level4] (evaluation) at (0,-0.35) {\textbf{Evaluation\\\scriptsize (Accuracy > 0.85)}};
+    
+    % Arrows from Level 0 to Level 1
+    \draw[arrow] (datasets) -- (features);
+
+    % Arrows from Level 1 to Level 2
+    \draw[arrow] (features) -- (dimensions);
+    
+    % Arrows from Level 2 to Level 3
+    \draw[arrow] (dimensions) -- (iqr);
+    \draw[arrow] (dimensions) -- (lof);
+    \draw[arrow] (dimensions) -- (isolation);
+    \draw[arrow] (dimensions) -- (svm);
+    \draw[arrow] (dimensions) -- (gmm);
+    
+    % Arrows from Level 3 to Level 4
+    \draw[arrow] (iqr) -- (evaluation);
+    \draw[arrow] (lof) -- (evaluation);
+    \draw[arrow] (isolation) -- (evaluation);
+    \draw[arrow] (svm) -- (evaluation);
+    \draw[arrow] (gmm) -- (evaluation);
+    
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Disease Detection - Results - Lab Anomaly Detection}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Disease Detection - Results - Field Anomaly Detection}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf}
+\end{frame}
+
+% Slide Unsupervised Classification
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Unsupervised Classification}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{table}[h]
-                \centering
-                \caption{Top anomaly detection performance}
-                \scriptsize
-                \begin{tabular}{lccc}
-                \toprule
-                \textbf{Encoder} & \textbf{Lab F1} & \textbf{Field F1} & \textbf{Gap} \\
-                \midrule
-                ShuffleNet\_v2 & 0.892 & 0.834 & -6.5\% \\
-                MobileNet\_v3 & 0.885 & 0.821 & -7.2\% \\
-                EfficientNet-B0 & 0.878 & 0.815 & -7.2\% \\
-                ResNet34 & 0.874 & 0.808 & -7.6\% \\
-                DenseNet121 & 0.871 & 0.805 & -7.6\% \\
-                \midrule
-                \multicolumn{4}{c}{\textbf{Large Models}} \\
-                DINOv2-Giant & 0.856 & 0.782 & -8.6\% \\
-                ViT-Large & 0.851 & 0.776 & -8.8\% \\
-                \bottomrule
-                \end{tabular}
-            \end{table}
-            
-            \begin{alertblock}{Key Findings}
+            \begin{block}{Distance-Based Clustering}
                 \begin{itemize}
-                    \item \textbf{5-10\% performance drop} from lab to field
-                    \item \textbf{Lightweight models excel} in field conditions
-                    \item \textbf{LOF algorithm} most stable across conditions
+                    \item \textbf{K-Means Clustering}
+                        \begin{itemize}
+                            \tiny
+                            \item Centroid-based partitioning
+                            \item Euclidean distance minimization
+                            \item k=number of disease classes
+                        \end{itemize}
+                    \item \textbf{Hierarchical Clustering}
+                        \begin{itemize}
+                            \tiny
+                            \item Agglomerative approach
+                            \item Ward linkage criterion
+                            \item Dendrogram-based cutting
+                        \end{itemize}
                 \end{itemize}
-            \end{alertblock}
+            \end{block}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{center}
-                \textbf{[Anomaly Detection Performance]}
-                
-                \vspace{0.5cm}
-                \textit{Best F1-scores: ShuffleNet (0.892), MobileNet (0.885), EfficientNet (0.878)}
-            \end{center}
-            
-            \begin{exampleblock}{Performance Analysis}
+            \begin{block}{Density & Model-Based Methods}
                 \begin{itemize}
-                    \item \textbf{Consistent ranking}: ShuffleNet\_v2 top performer
-                    \item \textbf{Efficiency advantage}: 2.3M vs. 300M parameters
-                    \item \textbf{Field robustness}: Smaller models less sensitive
-                    \item \textbf{t-SNE reduction}: Best dimensionality technique
+                    \item \textbf{DBSCAN}
+                        \begin{itemize}
+                            \tiny
+                            \item Density-based spatial clustering
+                            \item Noise point identification
+                            \item Automatic cluster number detection
+                        \end{itemize}
+                    \item \textbf{Gaussian Mixture Model (GMM)}
+                        \begin{itemize}
+                            \tiny
+                            \item Probabilistic clustering
+                            \item Multiple Gaussian components
+                            \item EM algorithm optimization
+                        \end{itemize}
                 \end{itemize}
-            \end{exampleblock}
-            
-            \begin{block}{Practical Implications}
-                Lightweight architectures enable deployment on resource-constrained devices
             \end{block}
         \end{column}
     \end{columns}
+            
+    \begin{alertblock}{Evaluation Metric}
+        \scriptsize
+        \textbf{Cohen's Kappa coefficient}: Measures agreement between cluster assignments and ground truth disease classifications beyond chance (EPPO benchmark 0.7)
+    \end{alertblock}
 \end{frame}
 
-% Clustering results slide
 \begin{frame}
-    \frametitle{Results: Clustering-based Disease Classification}
+    \frametitle{\small Disease Detection - Materials and Methods - Unsupervised Classification}
     
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{table}[h]
-                \centering
-                \caption{Clustering performance (ARI scores)}
-                \scriptsize
-                \begin{tabular}{lccc}
-                \toprule
-                \textbf{Method} & \textbf{Lab ARI} & \textbf{Field ARI} & \textbf{Algorithm} \\
-                \midrule
-                ShuffleNet+DBSCAN & 0.745 & 0.682 & DBSCAN \\
-                MobileNet+K-means & 0.738 & 0.675 & K-means \\
-                EfficientNet+DBSCAN & 0.731 & 0.669 & DBSCAN \\
-                ResNet34+DBSCAN & 0.728 & 0.664 & DBSCAN \\
-                \midrule
-                \multicolumn{4}{c}{\textbf{Large Models}} \\
-                DINOv2+K-means & 0.712 & 0.645 & K-means \\
-                ViT+DBSCAN & 0.708 & 0.641 & DBSCAN \\
-                \bottomrule
-                \end{tabular}
-            \end{table}
-            
-            \begin{alertblock}{Clustering Insights}
-                \begin{itemize}
-                    \item \textbf{DBSCAN superiority}: Density-based clustering excels
-                    \item \textbf{Disease separation}: Clear pathogen-specific groups
-                    \item \textbf{Field challenge}: More complex feature spaces
-                \end{itemize}
-            \end{alertblock}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{center}
-                \textbf{[Clustering Visualization]}
-                
-                \vspace{0.5cm}
-                \textit{t-SNE projection showing disease group separation}
-            \end{center}
-            
-            \begin{exampleblock}{Disease Group Characteristics}
-                \begin{itemize}
-                    \item \textbf{Healthy clusters}: Tight, well-defined boundaries
-                    \item \textbf{Cedar rust}: Distinct spectral signatures
-                    \item \textbf{Apple scab}: Variable manifestations
-                    \item \textbf{t-SNE projection}: Optimal class separation
-                \end{itemize}
-            \end{exampleblock}
-            
-            \begin{block}{Validation Metrics}
-                \begin{itemize}
-                    \item \textbf{Silhouette scores}: 0.65-0.78 (good separation)
-                    \item \textbf{Cluster stability}: Consistent across CV folds
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
+    \begin{center}
+    \begin{tikzpicture}[
+        scale=0.9,
+        level0/.style={rectangle, draw, fill=blue!20, text width=2cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level1/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=0.5cm, inner sep=8pt},
+        level2/.style={rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=0.5cm, inner sep=10pt},
+        level3/.style={rectangle, draw, fill=orange!20, text width=1.8cm, text centered, rounded corners, minimum height=1.2cm, inner sep=4pt},
+        level4/.style={rectangle, draw, fill=red!20, text width=3.5cm, text centered, rounded corners, minimum height=1cm, inner sep=8pt},
+        title/.style={rectangle, draw, fill=green!10, text width=6cm, text centered, rounded corners, minimum height=0.6cm},
+        arrow/.style={thick,->,>=stealth, blue!70},
+        crossarrow/.style={thick,<->,>=stealth, gray!70}
+    ]
+
+    %  Level 0: Datasets
+    \node[level0] (datasets) at (0,7.75) {\textbf{Datasets}};
+    
+    % Level 1: Feature Vectors
+
+    \node[level1] (features) at (0,6.5) {\scriptsize\textbf{Feature Extraction}};
+    
+    % Level 2: Dimensionality Reduction Methods
+    \node[level2] (dimensions) at (0,4.5) {\textbf{Dimensionality Reduction}};
+    
+    % Level 3: Analysis Methods - Anomaly Detection
+    \node[level3] (hc) at (-5,1.5) {\tiny\textbf{Hierarchical Clustering}\\
+        \begin{tikzpicture}[scale=0.5]
+            \fill[blue] (0.5,2.4) circle (0.08);
+            \fill[blue] (0.7,2.2) circle (0.08);
+            \fill[blue] (0.3,2.6) circle (0.08);
+            \fill[orange] (1.5,2) circle (0.08);
+            \fill[orange] (1.7,1.8) circle (0.08);
+            \fill[orange] (1.3,2.2) circle (0.08);
+            \fill[green] (0.5,1.5) circle (0.08);
+            \fill[green] (0.7,1.7) circle (0.08);
+            \draw[blue,thick] (0.5,1.2) node[above] {\scriptsize×};
+            \draw[orange,thick] (1.5,0.8) node[above] {\scriptsize×};
+            \draw[green,thick] (0.6,0.4) node[above] {\scriptsize×};
+        \end{tikzpicture}};
+
+    \node[level3] (gmm) at (-2,1.5) {\tiny\textbf{GMM}\\
+        \begin{tikzpicture}[scale=0.5]
+            \draw[blue,thick] (1,0.8) ellipse (0.6 and 0.4);
+            \draw[orange,thick] (1.5,0.5) ellipse (0.5 and 0.3);
+            \fill[blue] (0.8,0.8) circle (0.08);
+            \fill[blue] (1.2,0.8) circle (0.08);
+            \fill[blue] (1.0,0.6) circle (0.08);
+            \fill[blue] (1.0,1.0) circle (0.08);
+            \fill[orange] (1.3,0.5) circle (0.08);
+            \fill[orange] (1.7,0.5) circle (0.08);
+            \fill[orange] (1.5,0.3) circle (0.08);
+        \end{tikzpicture}};
+    
+    \node[level3] (dbscan) at (2,1.5) {\tiny\textbf{DBSCAN}\\
+        \begin{tikzpicture}[scale=0.5]
+            \fill[blue!20] (0.6,1.1) ellipse (0.4 and 0.3);
+            \fill[orange!20] (1.4,0.6) ellipse (0.4 and 0.3);
+            \fill[blue] (0.6,1.1) circle (0.08);
+            \fill[blue] (0.8,1.0) circle (0.08);
+            \fill[blue] (0.4,1.2) circle (0.08);
+            \fill[orange] (1.4,0.6) circle (0.08);
+            \fill[orange] (1.6,0.5) circle (0.08);
+            \fill[black] (0.2,0.3) circle (0.05);
+            \fill[black] (1.8,1.3) circle (0.05);
+        \end{tikzpicture}};    
+
+    \node[level3] (kmeans) at (5,1.5) {\tiny\textbf{K-Means}\\
+        \begin{tikzpicture}[scale=0.5]
+            \fill[blue] (0.5,2.4) circle (0.08);
+            \fill[blue] (0.7,2.2) circle (0.08);
+            \fill[blue] (0.3,2.6) circle (0.08);
+            \fill[orange] (1.5,2) circle (0.08);
+            \fill[orange] (1.7,1.8) circle (0.08);
+            \fill[orange] (1.3,2.2) circle (0.08);
+            \fill[green] (0.5,1.5) circle (0.08);
+            \fill[green] (0.7,1.7) circle (0.08);
+            \draw[blue,thick] (0.5,1.2) node[above] {\scriptsize×};
+            \draw[orange,thick] (1.5,0.8) node[above] {\scriptsize×};
+            \draw[green,thick] (0.6,0.4) node[above] {\scriptsize×};
+        \end{tikzpicture}};
+    
+    % Level 4: Evaluation
+    \node[level4] (evaluation) at (0,-0.35) {\textbf{Evaluation\\\scriptsize (Cohen's $\kappa$ > 0.7)}};
+    
+    % Arrows from Level 0 to Level 1
+    \draw[arrow] (datasets) -- (features);
+
+    % Arrows from Level 1 to Level 2
+    \draw[arrow] (features) -- (dimensions);
+    
+    % Arrows from Level 2 to Level 3
+    \draw[arrow] (dimensions) -- (hc);
+    \draw[arrow] (dimensions) -- (gmm);
+    \draw[arrow] (dimensions) -- (dbscan);
+    \draw[arrow] (dimensions) -- (kmeans);
+    
+    % Arrows from Level 3 to Level 4
+    \draw[arrow] (hc) -- (evaluation);
+    \draw[arrow] (gmm) -- (evaluation);
+    \draw[arrow] (dbscan) -- (evaluation);
+    \draw[arrow] (kmeans) -- (evaluation);
+
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Disease Detection - Results - Lab Classification}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Imgs/Plant_Village_Dataset_Clustering_Performance.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Disease Detection - Results - Field Classification}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf}
 \end{frame}
 
 % Discussion slide
 \begin{frame}
-    \frametitle{Discussion: Implications and Challenges}
+    \frametitle{\small Disease Detection - Discussion}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{block}{Key Findings}
                 \begin{itemize}
-                    \item \textbf{Lightweight superiority}: Small models outperform large ones
+                    \item \textbf{Lightweight superiority}: ShuffleNet outperform large models
                     \item \textbf{Performance gap}: 5-10\% reduction lab-to-field
                     \item \textbf{Method stability}: LOF most robust anomaly detector
                     \item \textbf{Feature quality}: t-SNE essential for performance
                 \end{itemize}
             \end{block}
-            
-            \begin{exampleblock}{Practical Advantages}
-                \begin{itemize}
-                    \item \textbf{Minimal labeling}: Only healthy samples required
-                    \item \textbf{Novel detection}: Identifies unseen pathogen symptoms
-                    \item \textbf{Resource efficiency}: Deployable on edge devices
-                    \item \textbf{Rapid deployment}: No fine-tuning needed
-                \end{itemize}
-            \end{exampleblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
             \begin{alertblock}{Challenges Addressed}
                 \begin{itemize}
                     \item \textbf{Environmental variability}: Field condition robustness
-                    \item \textbf{Computational constraints}: Mobile deployment feasibility
                     \item \textbf{Labeling costs}: Reduced annotation requirements
                     \item \textbf{Scalability}: Cross-crop applicability potential
                 \end{itemize}
             \end{alertblock}
             
-            \begin{block}{Agricultural Integration}
-                \begin{itemize}
-                    \item \textbf{Early warning systems}: Automated disease screening
-                    \item \textbf{Precision agriculture}: Targeted intervention
-                    \item \textbf{Decision support}: Evidence-based management
-                    \item \textbf{Economic impact}: Reduced crop losses
-                \end{itemize}
-            \end{block}
-            
             \begin{exampleblock}{Future Research}
-                Multi-crop validation, temporal analysis, and integration with IoT systems
+                Multi-crop validation, temporal analysis, and integration with photogrammetric systems
             \end{exampleblock}
         \end{column}
     \end{columns}
@@ -3503,18 +3666,10 @@
 
 % Conclusions slide
 \begin{frame}
-    \frametitle{Conclusions: Anomaly Detection for Agricultural Monitoring}
+    \frametitle{\small Disease Detection - Conclusions}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Major Contributions}
-                \begin{enumerate}
-                    \item \textbf{Comprehensive evaluation}: 56 neural network encoders
-                    \item \textbf{Practical insights}: Lightweight models excel in field conditions
-                    \item \textbf{Methodological framework}: Robust anomaly detection pipeline
-                    \item \textbf{Performance benchmarks}: Lab-to-field transition analysis
-                \end{enumerate}
-            \end{block}
             
             \begin{exampleblock}{Best Practice Recommendations}
                 \begin{itemize}
@@ -3529,21 +3684,11 @@
         \begin{column}{0.5\textwidth}
             \begin{alertblock}{EPPO Integration Potential}
                 \begin{itemize}
-                    \item \textbf{Pathogen symptom localization}: Spatial anomaly mapping
+                    \item \textbf{Pathogen symptom localization}: Spatial anomaly mapping in fields with photogrammetry
                     \item \textbf{Geostatistical integration}: Disease distribution analysis
-                    \item \textbf{EPPO workflow enhancement}: Digital technology adoption\fcite{\citeEPPODigital}
-                    \item \textbf{Regulatory compliance}: Standardized assessment protocols
+                    \item \textbf{EPPO compliance}: Benchmarks achieved
                 \end{itemize}
             \end{alertblock}
-            
-            \begin{block}{Agricultural Impact}
-                \begin{itemize}
-                    \item \textbf{Scalable deployment}: Resource-efficient monitoring
-                    \item \textbf{Early intervention}: Reduced pesticide use
-                    \item \textbf{Food security}: Minimized crop losses
-                    \item \textbf{Sustainable agriculture}: Evidence-based management
-                \end{itemize}
-            \end{block}
             
             \begin{exampleblock}{Technology Transfer}
                 \textbf{Ready for field deployment}: Lightweight, robust, and practical solution for agricultural disease monitoring
@@ -3551,7 +3696,5 @@
         \end{column}
     \end{columns}
 \end{frame}
-
-
 
 \end{document}

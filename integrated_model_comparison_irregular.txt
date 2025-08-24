@@ -1,5 +1,5 @@
 === INTEGRATED MODEL COMPARISON SUMMARY (IRREGULAR PATTERN) ===
-Date: 2025-08-08 11:13:31 
+Date: 2025-08-24 21:58:16 
 
 Comparison of RCBD vs SpATS Spatial Model
 Dataset: 54 observations, 3 treatments, 3 blocks
@@ -69,7 +69,7 @@ Normality (Shapiro-Wilk): W = 0.9607, p-value = 0.0742
 Interpretation: Normality assumption satisfied
 Homoscedasticity (Bartlett): K-squared = 5.1737, p-value = 0.0753
 Interpretation: Homoscedasticity assumption satisfied
-Spatial Autocorrelation (Moran's I): I = -0.1630, p-value = 0.9489
+Spatial Autocorrelation (Moran's I): I = -0.1753, p-value = 0.9616
 Interpretation: No significant spatial autocorrelation
 
 

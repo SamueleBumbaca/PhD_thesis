@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.5)  24 AUG 2025 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.5)  24 AUG 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,24 +989,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 (./PhD_Thesis_Presentation.aux)
 \openout1 = `PhD_Thesis_Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1064,54 +1064,54 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 217.
+Package hyperref Info: Link coloring OFF on input line 219.
 
 (./PhD_Thesis_Presentation.out) (./PhD_Thesis_Presentation.out)
 \@outlinefile=\write5
 \openout5 = `PhD_Thesis_Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 217.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 219.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 217.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 219.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 217.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 217.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 219.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 217.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 217.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 217.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 219.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 217.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 217.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 217.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 219.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 217.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 217.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 217.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 219.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 217.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 217.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 219.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 217.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 219.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 217.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 217.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 217.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 217.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 217.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 219.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 217.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 219.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1144,592 +1144,635 @@ Package caption Info: End \AtBeginDocument code.
 <Imgs/Loghi.png, id=13, 364.19528pt x 54.62929pt>
 File: Imgs/Loghi.png Graphic file (type png)
 <use Imgs/Loghi.png>
-Package pdftex.def Info: Imgs/Loghi.png  used on input line 222.
+Package pdftex.def Info: Imgs/Loghi.png  used on input line 224.
 (pdftex.def)             Requested size: 291.35739pt x 43.7043pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imgs/Loghi.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 302
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imgs/Loghi.png>] [2
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 252
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 302
+LaTeX Font Info:    Trying to load font information for U+msb on input line 252
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (1.30928pt too high) detected at line 302
- []
+<Imgs/application in vines2.jpg, id=35, 1445.4pt x 963.6pt>
+File: Imgs/application in vines2.jpg Graphic file (type jpg)
+<use Imgs/application in vines2.jpg>
+Package pdftex.def Info: Imgs/application in vines2.jpg  used on input line 252
+.
+(pdftex.def)             Requested size: 239.60567pt x 159.737pt.
+ [3
 
-[2
+ <./Imgs/application in vines2.jpg>]
+<Imgs/application in vines.jpg, id=44, 1316.2776pt x 876.876pt>
+File: Imgs/application in vines.jpg Graphic file (type jpg)
+<use Imgs/application in vines.jpg>
+Package pdftex.def Info: Imgs/application in vines.jpg  used on input line 262.
 
-] [3
+(pdftex.def)             Requested size: 273.83728pt x 182.42337pt.
+ [4
 
-] [4
+ <./Imgs/application in vines.jpg>] [5
 
 ]
-Overfull \vbox (4.27771pt too high) detected at line 521
- []
+<Imgs/Fisher.png, id=55, 501.875pt x 301.125pt>
+File: Imgs/Fisher.png Graphic file (type png)
+<use Imgs/Fisher.png>
+Package pdftex.def Info: Imgs/Fisher.png  used on input line 289.
+(pdftex.def)             Requested size: 154.03183pt x 92.41963pt.
+<Imgs/panoramica_prova_cereals.jpeg, id=56, 1535.7375pt x 368.87813pt>
+File: Imgs/panoramica_prova_cereals.jpeg Graphic file (type jpg)
+<use Imgs/panoramica_prova_cereals.jpeg>
+Package pdftex.def Info: Imgs/panoramica_prova_cereals.jpeg  used on input line
+ 289.
+(pdftex.def)             Requested size: 342.2953pt x 82.21724pt.
+ [6
 
-[5
-
-] [6
-
-]
-Overfull \vbox (6.04333pt too high) detected at line 655
+ <./Imgs/Fisher.png> <./Imgs/panoramica_prova_cereals.jpeg>]
+Overfull \vbox (1.30928pt too high) detected at line 369
  []
 
 [7
 
-]
-Overfull \vbox (16.53642pt too high) detected at line 698
- []
+] [8
 
-[8
+] [9
 
 ]
-<Imgs/integrated_rcbd_spats_comparison_irregular.png, id=267, 1011.78pt x 722.7
-pt>
-File: Imgs/integrated_rcbd_spats_comparison_irregular.png Graphic file (type pn
-g)
-<use Imgs/integrated_rcbd_spats_comparison_irregular.png>
-Package pdftex.def Info: Imgs/integrated_rcbd_spats_comparison_irregular.png  u
-sed on input line 741.
-(pdftex.def)             Requested size: 325.17949pt x 232.27222pt.
-
-Overfull \vbox (130.21837pt too high) detected at line 741
- []
-
-[9
-
- <./Imgs/integrated_rcbd_spats_comparison_irregular.png>]
-Overfull \hbox (1.9116pt too wide) in paragraph at lines 803--803
- [] 
+Overfull \vbox (4.27771pt too high) detected at line 588
  []
 
 [10
 
 ] [11
 
-] [12
+]
+Overfull \vbox (6.04333pt too high) detected at line 722
+ []
 
-] [13
+[12
 
-] [14
+]
+Overfull \vbox (16.53642pt too high) detected at line 765
+ []
 
-] [15
+[13
+
+]
+<Imgs/integrated_rcbd_spats_comparison_irregular.png, id=303, 1011.78pt x 722.7
+pt>
+File: Imgs/integrated_rcbd_spats_comparison_irregular.png Graphic file (type pn
+g)
+<use Imgs/integrated_rcbd_spats_comparison_irregular.png>
+Package pdftex.def Info: Imgs/integrated_rcbd_spats_comparison_irregular.png  u
+sed on input line 808.
+(pdftex.def)             Requested size: 325.17949pt x 232.27222pt.
+
+Overfull \vbox (130.21837pt too high) detected at line 808
+ []
+
+[14
+
+ <./Imgs/integrated_rcbd_spats_comparison_irregular.png>]
+Overfull \hbox (1.9116pt too wide) in paragraph at lines 870--870
+ [] 
+ []
+
+[15
 
 ] [16
 
 ] [17
 
-]
-Overfull \vbox (8.49347pt too high) detected at line 1082
- []
+] [18
 
-[18
+] [19
 
-]
-<Imgs/dataset_example.png, id=501, 952.7595pt x 320.397pt>
-File: Imgs/dataset_example.png Graphic file (type png)
-<use Imgs/dataset_example.png>
-Package pdftex.def Info: Imgs/dataset_example.png  used on input line 1097.
-(pdftex.def)             Requested size: 273.83728pt x 92.08653pt.
- [19
+] [20
 
- <./Imgs/dataset_example.png>] [20
-
-]
-File: Imgs/dataset_example.png Graphic file (type png)
-<use Imgs/dataset_example.png>
-Package pdftex.def Info: Imgs/dataset_example.png  used on input line 1133.
-(pdftex.def)             Requested size: 342.2953pt x 115.10815pt.
- [21
+] [21
 
 ] [22
 
-]
-<Imgs/BBCH_Maize1315.png, id=599, 596.82974pt x 364.9635pt>
-File: Imgs/BBCH_Maize1315.png Graphic file (type png)
-<use Imgs/BBCH_Maize1315.png>
-Package pdftex.def Info: Imgs/BBCH_Maize1315.png  used on input line 1165.
-(pdftex.def)             Requested size: 136.91603pt x 83.72264pt.
- [23
-
- <./Imgs/BBCH_Maize1315.png>] [24
+] [23
 
 ]
-Overfull \vbox (6.21947pt too high) detected at line 1312
- []
+<Imgs/dataset_example.png, id=534, 952.7595pt x 320.397pt>
+File: Imgs/dataset_example.png Graphic file (type png)
+<use Imgs/dataset_example.png>
+Package pdftex.def Info: Imgs/dataset_example.png  used on input line 1166.
+(pdftex.def)             Requested size: 273.83728pt x 92.08653pt.
+ [24
 
+ <./Imgs/dataset_example.png>]
 [25
 
-] [26
+]
+File: Imgs/dataset_example.png Graphic file (type png)
+<use Imgs/dataset_example.png>
+Package pdftex.def Info: Imgs/dataset_example.png  used on input line 1202.
+(pdftex.def)             Requested size: 342.2953pt x 115.10815pt.
+ [26
 
 ] [27
 
-] [28
-
-] [29
-
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-488.
+<Imgs/BBCH_Maize1315.png, id=645, 596.82974pt x 364.9635pt>
+File: Imgs/BBCH_Maize1315.png Graphic file (type png)
+<use Imgs/BBCH_Maize1315.png>
+Package pdftex.def Info: Imgs/BBCH_Maize1315.png  used on input line 1245.
+(pdftex.def)             Requested size: 136.91603pt x 83.72264pt.
+ [28
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [30
+ <./Imgs/BBCH_Maize1315.png>]
+<Imgs/orthomosaic_example.pdf, id=664, 597.23125pt x 845.1575pt>
+File: Imgs/orthomosaic_example.pdf Graphic file (type pdf)
+<use Imgs/orthomosaic_example.pdf>
+Package pdftex.def Info: Imgs/orthomosaic_example.pdf  used on input line 1280.
 
-]
-<Imgs/DavidEtAl.png, id=803, 594.72188pt x 594.72188pt>
-File: Imgs/DavidEtAl.png Graphic file (type png)
-<use Imgs/DavidEtAl.png>
-Package pdftex.def Info: Imgs/DavidEtAl.png  used on input line 1510.
-(pdftex.def)             Requested size: 71.13188pt x 71.1276pt.
-<Imgs/LiuEtAl.png, id=804, 594.72188pt x 594.72188pt>
-File: Imgs/LiuEtAl.png Graphic file (type png)
-<use Imgs/LiuEtAl.png>
-Package pdftex.def Info: Imgs/LiuEtAl.png  used on input line 1510.
-(pdftex.def)             Requested size: 71.13188pt x 71.1276pt.
-<Imgs/maize_seedling.png, id=805, 570.933pt x 570.933pt>
-File: Imgs/maize_seedling.png Graphic file (type png)
-<use Imgs/maize_seedling.png>
-Package pdftex.def Info: Imgs/maize_seedling.png  used on input line 1510.
-(pdftex.def)             Requested size: 71.13188pt x 71.13123pt.
-<Imgs/maize_seedling_detection.png, id=806, 570.933pt x 570.933pt>
-File: Imgs/maize_seedling_detection.png Graphic file (type png)
-<use Imgs/maize_seedling_detection.png>
-Package pdftex.def Info: Imgs/maize_seedling_detection.png  used on input line 
-1510.
-(pdftex.def)             Requested size: 71.13188pt x 71.13123pt.
-<Imgs/ID_1.png, id=807, 594.72188pt x 594.72188pt>
-File: Imgs/ID_1.png Graphic file (type png)
-<use Imgs/ID_1.png>
-Package pdftex.def Info: Imgs/ID_1.png  used on input line 1510.
-(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
-<Imgs/ID_2.png, id=808, 594.72188pt x 594.72188pt>
-File: Imgs/ID_2.png Graphic file (type png)
-<use Imgs/ID_2.png>
-Package pdftex.def Info: Imgs/ID_2.png  used on input line 1510.
-(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
-<Imgs/ID_3.png, id=809, 594.72188pt x 594.72188pt>
-File: Imgs/ID_3.png Graphic file (type png)
-<use Imgs/ID_3.png>
-Package pdftex.def Info: Imgs/ID_3.png  used on input line 1510.
-(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
+(pdftex.def)             Requested size: 119.80544pt x 169.53145pt.
 
-Overfull \vbox (6.72461pt too high) detected at line 1510
+Overfull \vbox (5.70897pt too high) detected at line 1280
  []
 
-[31
+[29
 
- <./Imgs/DavidEtAl.png> <./Imgs/LiuEtAl.png> <./Imgs/maize_seedling.png> <./Img
-s/maize_seedling_detection.png> <./Imgs/ID_1.png> <./Imgs/ID_2.png> <./Imgs/ID_
-3.png>] [32
+ <./Imgs/orthomosaic_example.pdf>]
+Overfull \vbox (6.21947pt too high) detected at line 1400
+ []
+
+[30
+
+] [31
+
+] [32
 
 ] [33
 
+] [34
+
 ]
-Overfull \vbox (3.56908pt too high) detected at line 1754
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+565.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [35
+
+]
+<Imgs/DavidEtAl.png, id=832, 594.72188pt x 594.72188pt>
+File: Imgs/DavidEtAl.png Graphic file (type png)
+<use Imgs/DavidEtAl.png>
+Package pdftex.def Info: Imgs/DavidEtAl.png  used on input line 1587.
+(pdftex.def)             Requested size: 71.13188pt x 71.1276pt.
+<Imgs/LiuEtAl.png, id=833, 594.72188pt x 594.72188pt>
+File: Imgs/LiuEtAl.png Graphic file (type png)
+<use Imgs/LiuEtAl.png>
+Package pdftex.def Info: Imgs/LiuEtAl.png  used on input line 1587.
+(pdftex.def)             Requested size: 71.13188pt x 71.1276pt.
+<Imgs/maize_seedling.png, id=834, 570.933pt x 570.933pt>
+File: Imgs/maize_seedling.png Graphic file (type png)
+<use Imgs/maize_seedling.png>
+Package pdftex.def Info: Imgs/maize_seedling.png  used on input line 1587.
+(pdftex.def)             Requested size: 71.13188pt x 71.13123pt.
+<Imgs/maize_seedling_detection.png, id=835, 570.933pt x 570.933pt>
+File: Imgs/maize_seedling_detection.png Graphic file (type png)
+<use Imgs/maize_seedling_detection.png>
+Package pdftex.def Info: Imgs/maize_seedling_detection.png  used on input line 
+1587.
+(pdftex.def)             Requested size: 71.13188pt x 71.13123pt.
+<Imgs/ID_1.png, id=836, 594.72188pt x 594.72188pt>
+File: Imgs/ID_1.png Graphic file (type png)
+<use Imgs/ID_1.png>
+Package pdftex.def Info: Imgs/ID_1.png  used on input line 1587.
+(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
+<Imgs/ID_2.png, id=837, 594.72188pt x 594.72188pt>
+File: Imgs/ID_2.png Graphic file (type png)
+<use Imgs/ID_2.png>
+Package pdftex.def Info: Imgs/ID_2.png  used on input line 1587.
+(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
+<Imgs/ID_3.png, id=838, 594.72188pt x 594.72188pt>
+File: Imgs/ID_3.png Graphic file (type png)
+<use Imgs/ID_3.png>
+Package pdftex.def Info: Imgs/ID_3.png  used on input line 1587.
+(pdftex.def)             Requested size: 94.74773pt x 94.74pt.
+
+Overfull \vbox (6.72461pt too high) detected at line 1587
  []
 
-[34
+[36
 
-] [35
-
-] [36
-
-] [37
+ <./Imgs/DavidEtAl.png> <./Imgs/LiuEtAl.png> <./Imgs/maize_seedling.png> <./Img
+s/maize_seedling_detection.png> <./Imgs/ID_1.png> <./Imgs/ID_2.png> <./Imgs/ID_
+3.png>] [37
 
 ] [38
 
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
 ]
-<Imgs/metrics_OOD_datasets.pdf, id=1135, 1006.76125pt x 425.59pt>
+<Imgs/metrics_OOD_datasets.pdf, id=1165, 1006.76125pt x 425.59pt>
 File: Imgs/metrics_OOD_datasets.pdf Graphic file (type pdf)
 <use Imgs/metrics_OOD_datasets.pdf>
-Package pdftex.def Info: Imgs/metrics_OOD_datasets.pdf  used on input line 2031
+Package pdftex.def Info: Imgs/metrics_OOD_datasets.pdf  used on input line 2103
 .
 (pdftex.def)             Requested size: 342.2953pt x 144.69867pt.
- [39
+ [44
 
  <./Imgs/metrics_OOD_datasets.pdf>]
-<Imgs/r2_ap_vs_dataset_size_yolov5.pdf, id=1228, 1734.48pt x 433.62pt>
+<Imgs/r2_ap_vs_dataset_size_yolov5.pdf, id=1257, 1746.525pt x 436.63126pt>
 File: Imgs/r2_ap_vs_dataset_size_yolov5.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_size_yolov5.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_size_yolov5.pdf  used on input l
-ine 2039.
-(pdftex.def)             Requested size: 342.2953pt x 85.57118pt.
- [40
+ine 2111.
+(pdftex.def)             Requested size: 342.2953pt x 85.57248pt.
+ [45
 
  <./Imgs/r2_ap_vs_dataset_size_yolov5.pdf>]
-<Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf, id=1294, 2081.7775pt x 1126.2075pt>
+<Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf, id=1534, 2081.7775pt x 1126.2075pt>
 File: Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf  used on input
- line 2051.
+ line 2123.
 (pdftex.def)             Requested size: 342.2953pt x 185.16321pt.
- [41
+ [46
 
  <./Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf>]
-<Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf, id=1625, 789.95125pt x 861.2175pt>
+<Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf, id=1865, 789.95125pt x 861.2175pt>
 File: Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf  used on input
- line 2073.
+ line 2145.
 (pdftex.def)             Requested size: 171.14764pt x 186.59053pt.
- [42
+ [47
 
  <./Imgs/r2_ap_vs_dataset_size_yolov8_2.pdf>]
-<Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf, id=1700, 1103.12125pt x 1025.8325pt>
+<Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf, id=1940, 1103.12125pt x 1025.8325pt>
 File: Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf  used on input
- line 2081.
+ line 2153.
 (pdftex.def)             Requested size: 239.60567pt x 222.81937pt.
- [43
+
+[48
 
  <./Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf>]
-<Imgs/many_shot_size_annotations.pdf, id=1833, 1084.05pt x 361.35pt>
+<Imgs/many_shot_size_annotations.pdf, id=2072, 1084.05pt x 361.35pt>
 File: Imgs/many_shot_size_annotations.pdf Graphic file (type pdf)
 <use Imgs/many_shot_size_annotations.pdf>
 Package pdftex.def Info: Imgs/many_shot_size_annotations.pdf  used on input lin
-e 2111.
+e 2183.
 (pdftex.def)             Requested size: 342.2953pt x 114.09602pt.
 
-Overfull \vbox (7.06842pt too high) detected at line 2111
+Overfull \vbox (7.06842pt too high) detected at line 2183
  []
 
-[44
+[49
 
  <./Imgs/many_shot_size_annotations.pdf>]
-<Imgs/r2_ap_vs_dataset_quality_2.pdf, id=2208, 1889.0575pt x 670.505pt>
+<Imgs/r2_ap_vs_dataset_quality_2.pdf, id=2448, 1889.0575pt x 670.505pt>
 File: Imgs/r2_ap_vs_dataset_quality_2.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_quality_2.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_quality_2.pdf  used on input lin
-e 2120.
+e 2192.
 (pdftex.def)             Requested size: 342.2953pt x 121.49394pt.
- [45
+ [50
 
  <./Imgs/r2_ap_vs_dataset_quality_2.pdf>]
-<Imgs/r2_ap_vs_dataset_quality_3.pdf, id=2434, 2067.725pt x 1597.97pt>
+<Imgs/r2_ap_vs_dataset_quality_3.pdf, id=2674, 2067.725pt x 1597.97pt>
 File: Imgs/r2_ap_vs_dataset_quality_3.pdf Graphic file (type pdf)
 <use Imgs/r2_ap_vs_dataset_quality_3.pdf>
 Package pdftex.def Info: Imgs/r2_ap_vs_dataset_quality_3.pdf  used on input lin
-e 2127.
+e 2199.
 (pdftex.def)             Requested size: 342.2953pt x 264.50708pt.
 
-Overfull \vbox (36.28197pt too high) detected at line 2127
- []
-
-[46
-
- <./Imgs/r2_ap_vs_dataset_quality_3.pdf>]
-<Imgs/many_shot_quality_annotations.pdf, id=2710, 1084.05pt x 361.35pt>
-File: Imgs/many_shot_quality_annotations.pdf Graphic file (type pdf)
-<use Imgs/many_shot_quality_annotations.pdf>
-Package pdftex.def Info: Imgs/many_shot_quality_annotations.pdf  used on input 
-line 2138.
-(pdftex.def)             Requested size: 342.2953pt x 114.09602pt.
- [47
-
- <./Imgs/many_shot_quality_annotations.pdf>] [48
-
-] [49
-
-]
-Overfull \vbox (8.49347pt too high) detected at line 2242
- []
-
-[50
-
-]
-<Imgs/agronomy-14-00306-g001.png, id=3032, 2313.3928pt x 1636.61438pt>
-File: Imgs/agronomy-14-00306-g001.png Graphic file (type png)
-<use Imgs/agronomy-14-00306-g001.png>
-Package pdftex.def Info: Imgs/agronomy-14-00306-g001.png  used on input line 22
-58.
-(pdftex.def)             Requested size: 273.83728pt x 193.71317pt.
-
-Overfull \vbox (67.03864pt too high) detected at line 2258
+Overfull \vbox (36.28197pt too high) detected at line 2199
  []
 
 [51
 
- <./Imgs/agronomy-14-00306-g001.png>]
-<Imgs/phyto.png, id=3039, 489.32813pt x 181.42781pt>
-File: Imgs/phyto.png Graphic file (type png)
-<use Imgs/phyto.png>
-Package pdftex.def Info: Imgs/phyto.png  used on input line 2278.
-(pdftex.def)             Requested size: 342.2953pt x 126.91554pt.
+ <./Imgs/r2_ap_vs_dataset_quality_3.pdf>]
+<Imgs/many_shot_quality_annotations.pdf, id=2950, 1084.05pt x 361.35pt>
+File: Imgs/many_shot_quality_annotations.pdf Graphic file (type pdf)
+<use Imgs/many_shot_quality_annotations.pdf>
+Package pdftex.def Info: Imgs/many_shot_quality_annotations.pdf  used on input 
+line 2210.
+(pdftex.def)             Requested size: 342.2953pt x 114.09602pt.
  [52
 
- <./Imgs/phyto.png>]
-Overfull \vbox (10.47787pt too high) detected at line 2300
- []
+ <./Imgs/many_shot_quality_annotations.pdf>] [53
 
-[53
+] [54
+
+] [55
 
 ]
-Overfull \hbox (17.61717pt too wide) in paragraph at lines 2347--2347
+<Imgs/phyto_intro.png, id=3272, 2313.3928pt x 1636.61438pt>
+File: Imgs/phyto_intro.png Graphic file (type png)
+<use Imgs/phyto_intro.png>
+Package pdftex.def Info: Imgs/phyto_intro.png  used on input line 2330.
+(pdftex.def)             Requested size: 136.91603pt x 96.8441pt.
+ [56
+
+ <./Imgs/phyto_intro.png>]
+<Imgs/phyto.png, id=3279, 489.32813pt x 181.42781pt>
+File: Imgs/phyto.png Graphic file (type png)
+<use Imgs/phyto.png>
+Package pdftex.def Info: Imgs/phyto.png  used on input line 2350.
+(pdftex.def)             Requested size: 342.2953pt x 126.91554pt.
+ [57
+
+ <./Imgs/phyto.png>]
+Overfull \vbox (10.47787pt too high) detected at line 2372
+ []
+
+[58
+
+]
+Overfull \hbox (17.61717pt too wide) in paragraph at lines 2419--2419
  [] 
  []
 
-[54
+[59
 
 ]
-<Imgs/agronomy-14-00306-g003.png, id=3105, 2231.33624pt x 1527.7075pt>
+<Imgs/agronomy-14-00306-g003.png, id=3345, 2231.33624pt x 1527.7075pt>
 File: Imgs/agronomy-14-00306-g003.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g003.png>
-Package pdftex.def Info: Imgs/agronomy-14-00306-g003.png  used on input line 23
-58.
+Package pdftex.def Info: Imgs/agronomy-14-00306-g003.png  used on input line 24
+30.
 (pdftex.def)             Requested size: 308.06367pt x 210.9171pt.
- [55
+ [60
 
  <./Imgs/agronomy-14-00306-g003.png>]
+<Imgs/agronomy-14-00306-g001.png, id=3352, 2313.3928pt x 1636.61438pt>
 File: Imgs/agronomy-14-00306-g001.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g001.png>
-Package pdftex.def Info: Imgs/agronomy-14-00306-g001.png  used on input line 23
-83.
+Package pdftex.def Info: Imgs/agronomy-14-00306-g001.png  used on input line 24
+55.
 (pdftex.def)             Requested size: 239.60567pt x 169.48965pt.
- [56
+ [61
 
-]
-<Imgs/agronomy-14-00306-g005.png, id=3130, 2354.7975pt x 1656.1875pt>
+ <./Imgs/agronomy-14-00306-g001.png>]
+<Imgs/agronomy-14-00306-g005.png, id=3372, 2354.7975pt x 1656.1875pt>
 File: Imgs/agronomy-14-00306-g005.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g005.png>
 Package pdftex.def Info: Imgs/agronomy-14-00306-g005.png  used on input line 24
-05.
+77.
 (pdftex.def)             Requested size: 239.60567pt x 168.50938pt.
- [57
+ [62
 
  <./Imgs/agronomy-14-00306-g005.png>]
-<Imgs/agronomy-14-00306-g002.png, id=3149, 394.3533pt x 269.0853pt>
+<Imgs/agronomy-14-00306-g002.png, id=3391, 394.3533pt x 269.0853pt>
 File: Imgs/agronomy-14-00306-g002.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g002.png>
 Package pdftex.def Info: Imgs/agronomy-14-00306-g002.png  used on input line 24
-24.
+96.
 (pdftex.def)             Requested size: 205.37926pt x 140.13866pt.
- [58
+ [63
 
  <./Imgs/agronomy-14-00306-g002.png>]
-<Imgs/agronomy-14-00306-g006.png, id=3167, 1738.495pt x 1396.21625pt>
+<Imgs/agronomy-14-00306-g006.png, id=3409, 1738.495pt x 1396.21625pt>
 File: Imgs/agronomy-14-00306-g006.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g006.png>
-Package pdftex.def Info: Imgs/agronomy-14-00306-g006.png  used on input line 24
-57.
+Package pdftex.def Info: Imgs/agronomy-14-00306-g006.png  used on input line 25
+29.
 (pdftex.def)             Requested size: 171.14764pt x 137.43544pt.
- [59
+ [64
 
  <./Imgs/agronomy-14-00306-g006.png>]
 File: Imgs/agronomy-14-00306-g006.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g006.png>
 Package pdftex.def Info: Imgs/agronomy-14-00306-g006.png  used on input line 25
-09.
+81.
 (pdftex.def)             Requested size: 109.53323pt x 87.96634pt.
- [60
+ [65
 
 ]
-<Imgs/lin.png, id=3240, 45.771pt x 36.73724pt>
+<Imgs/lin.png, id=3481, 45.771pt x 36.73724pt>
 File: Imgs/lin.png Graphic file (type png)
 <use Imgs/lin.png>
-Package pdftex.def Info: Imgs/lin.png  used on input line 2561.
+Package pdftex.def Info: Imgs/lin.png  used on input line 2633.
 (pdftex.def)             Requested size: 17.7249pt x 14.22655pt.
-<Imgs/log.png, id=3241, 45.771pt x 36.73724pt>
+<Imgs/log.png, id=3482, 45.771pt x 36.73724pt>
 File: Imgs/log.png Graphic file (type png)
 <use Imgs/log.png>
-Package pdftex.def Info: Imgs/log.png  used on input line 2561.
+Package pdftex.def Info: Imgs/log.png  used on input line 2633.
 (pdftex.def)             Requested size: 15.95233pt x 12.80383pt.
 
-Overfull \hbox (1.28307pt too wide) in paragraph at lines 2561--2561
+Overfull \hbox (1.28307pt too wide) in paragraph at lines 2633--2633
 []|\T1/cmss/m/it/8 LogisticFunction
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2561--2561
+Underfull \hbox (badness 10000) in alignment at lines 2633--2633
 [][][] 
  []
 
 
-Overfull \vbox (0.20139pt too high) detected at line 2561
+Overfull \vbox (0.20139pt too high) detected at line 2633
  []
 
-[61
+[66
 
- <./Imgs/lin.png> <./Imgs/log.png>] [62
+ <./Imgs/lin.png> <./Imgs/log.png>] [67
 
 ]
-<Imgs/agronomy-14-00306-g007.png, id=3317, 395.5578pt x 123.5817pt>
+<Imgs/agronomy-14-00306-g007.png, id=3559, 395.5578pt x 123.5817pt>
 File: Imgs/agronomy-14-00306-g007.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g007.png>
-Package pdftex.def Info: Imgs/agronomy-14-00306-g007.png  used on input line 26
-31.
+Package pdftex.def Info: Imgs/agronomy-14-00306-g007.png  used on input line 27
+03.
 (pdftex.def)             Requested size: 342.2953pt x 106.94759pt.
- [63
+ [68
 
  <./Imgs/agronomy-14-00306-g007.png>]
-Overfull \hbox (59.0303pt too wide) in paragraph at lines 2684--2684
+Overfull \hbox (59.0303pt too wide) in paragraph at lines 2756--2756
  [] 
  []
 
-[64
+[69
 
 ]
-<Imgs/agronomy-14-00306-g008.png, id=3364, 4263.93pt x 1676.2625pt>
+<Imgs/agronomy-14-00306-g008.png, id=3606, 4263.93pt x 1676.2625pt>
 File: Imgs/agronomy-14-00306-g008.png Graphic file (type png)
 <use Imgs/agronomy-14-00306-g008.png>
 Package pdftex.def Info: Imgs/agronomy-14-00306-g008.png  used on input line 27
-04.
+76.
 (pdftex.def)             Requested size: 273.83728pt x 107.63084pt.
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-2704.
+2776.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [65
+) [70
 
- <./Imgs/agronomy-14-00306-g008.png>] [66
+ <./Imgs/agronomy-14-00306-g008.png>] [71
 
 ]
-<Imgs/anomalyPix2Pix.png, id=3400, 545.03625pt x 184.89075pt>
+<Imgs/anomalyPix2Pix.png, id=3642, 545.03625pt x 184.89075pt>
 File: Imgs/anomalyPix2Pix.png Graphic file (type png)
 <use Imgs/anomalyPix2Pix.png>
-Package pdftex.def Info: Imgs/anomalyPix2Pix.png  used on input line 2789.
+Package pdftex.def Info: Imgs/anomalyPix2Pix.png  used on input line 2861.
 (pdftex.def)             Requested size: 273.83728pt x 92.89088pt.
- [67
+ [72
 
- <./Imgs/anomalyPix2Pix.png>]
-Overfull \vbox (161.481pt too high) detected at line 2823
- []
+ <./Imgs/anomalyPix2Pix.png>] [73
 
-[68
-
-] [69
+] [74
 
 ]
-Overfull \hbox (26.24829pt too wide) in paragraph at lines 2929--2929
+Overfull \hbox (26.24829pt too wide) in paragraph at lines 2995--2995
  [] 
  []
 
-[70
+[75
 
 ]
-<Imgs/Datasets_anomaly.pdf, id=3496, 747.79375pt x 372.39125pt>
+<Imgs/Datasets_anomaly.pdf, id=3726, 747.79375pt x 372.39125pt>
 File: Imgs/Datasets_anomaly.pdf Graphic file (type pdf)
 <use Imgs/Datasets_anomaly.pdf>
-Package pdftex.def Info: Imgs/Datasets_anomaly.pdf  used on input line 2934.
+Package pdftex.def Info: Imgs/Datasets_anomaly.pdf  used on input line 3000.
 (pdftex.def)             Requested size: 342.2953pt x 170.4554pt.
- [71
+ [76
 
- <./Imgs/Datasets_anomaly.pdf>] [72
-
-]
-Overfull \vbox (2.49115pt too high) detected at line 3053
- []
-
-[73
-
-]
-Overfull \hbox (13.5906pt too wide) in paragraph at lines 3139--3139
+ <./Imgs/Datasets_anomaly.pdf>]
+Overfull \hbox (13.5906pt too wide) in paragraph at lines 3086--3086
  [][] 
- []
-
-[74
-
-] [75
-
-]
-Overfull \vbox (5.6221pt too high) detected at line 3272
- []
-
-[76
-
-]
-Overfull \vbox (10.80878pt too high) detected at line 3335
  []
 
 [77
 
 ]
-Overfull \hbox (2.28162pt too wide) in paragraph at lines 3447--3447
- [][]\T1/cmss/bx/n/10.95 Dimensionality 
- []
-
-
-Overfull \vbox (11.1782pt too high) detected at line 3447
+Overfull \vbox (2.49115pt too high) detected at line 3174
  []
 
 [78
 
 ]
-<Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf, id=3698, 1519.93
+Overfull \vbox (5.6221pt too high) detected at line 3273
+ []
+
+[79
+
+] [80
+
+]
+Overfull \hbox (2.28162pt too wide) in paragraph at lines 3421--3421
+ [][]\T1/cmss/bx/n/10.95 Dimensionality 
+ []
+
+
+Overfull \vbox (11.1782pt too high) detected at line 3421
+ []
+
+[81
+
+]
+Overfull \vbox (10.80878pt too high) detected at line 3484
+ []
+
+[82
+
+] [83
+
+]
+<Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf, id=3902, 1519.93
 567pt x 1154.4958pt>
 File: Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf Graphic file
  (type pdf)
 <use Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf>
 Package pdftex.def Info: Imgs/Plant_Village_Dataset_Anomaly_Detection_Performan
-ce.pdf  used on input line 3453.
+ce.pdf  used on input line 3503.
 (pdftex.def)             Requested size: 308.06367pt x 233.99551pt.
- [79
+ [84
 
  <./Imgs/Plant_Village_Dataset_Anomaly_Detection_Performance.pdf>]
-<Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf, id=3765, 1540.
+<Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf, id=3968, 1540.
 11899pt x 1152.84192pt>
 File: Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf Graphic fi
 le (type pdf)
 <use Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf>
 Package pdftex.def Info: Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Perform
-ance.pdf  used on input line 3459.
+ance.pdf  used on input line 3509.
 (pdftex.def)             Requested size: 308.06367pt x 230.59947pt.
-
-[80
+[85
 
  <./Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf>]
-! Misplaced alignment tab character &.
-\insertblocktitle ->Density &
-                              Model-Based Methods
-l.3513 \end{frame}
-                  
-? 
-[81
-
-]
-Overfull \hbox (2.28162pt too wide) in paragraph at lines 3621--3621
+Overfull \hbox (2.28162pt too wide) in paragraph at lines 3618--3618
  [][]\T1/cmss/bx/n/10.95 Dimensionality 
  []
 
 
-Overfull \vbox (11.1782pt too high) detected at line 3621
+Overfull \vbox (11.1782pt too high) detected at line 3618
  []
 
-[82
+[86
+
+] [87
+
+] [88
 
 ]
-<Imgs/Plant_Village_Dataset_Clustering_Performance.pdf, id=3875, 1530.51021pt x
+<Imgs/Plant_Village_Dataset_Clustering_Performance.pdf, id=4084, 1530.51021pt x
  1153.27518pt>
 File: Imgs/Plant_Village_Dataset_Clustering_Performance.pdf Graphic file (type 
 pdf)
 <use Imgs/Plant_Village_Dataset_Clustering_Performance.pdf>
 Package pdftex.def Info: Imgs/Plant_Village_Dataset_Clustering_Performance.pdf 
- used on input line 3627.
+ used on input line 3690.
 (pdftex.def)             Requested size: 308.06367pt x 232.12914pt.
- [83
+ [89
 
  <./Imgs/Plant_Village_Dataset_Clustering_Performance.pdf>]
-<Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf, id=3943, 1536.37587pt
+<Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf, id=4151, 1536.37587pt
  x 1153.27518pt>
 File: Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf Graphic file (typ
 e pdf)
 <use Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf>
 Package pdftex.def Info: Imgs/Plant_Pathology_Dataset_Clustering_Performance.pd
-f  used on input line 3633.
+f  used on input line 3696.
 (pdftex.def)             Requested size: 308.06367pt x 231.24927pt.
- [84
 
- <./Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf>] [85
+[90
 
-] [86
+ <./Imgs/Plant_Pathology_Dataset_Clustering_Performance.pdf>] [91
+
+]
+<Imgs/Anomaly_conclusion.png, id=4255, 829.59938pt x 770.88pt>
+File: Imgs/Anomaly_conclusion.png Graphic file (type png)
+<use Imgs/Anomaly_conclusion.png>
+Package pdftex.def Info: Imgs/Anomaly_conclusion.png  used on input line 3749.
+(pdftex.def)             Requested size: 171.14764pt x 159.03125pt.
+ [92
+
+ <./Imgs/Anomaly_conclusion.png>] [93
+
+] [94
+
+] [95
+
+]
+File: Imgs/Loghi.png Graphic file (type png)
+<use Imgs/Loghi.png>
+Package pdftex.def Info: Imgs/Loghi.png  used on input line 3799.
+(pdftex.def)             Requested size: 342.2953pt x 51.34485pt.
+ [96
 
 ]
 \tf@nav=\write6
@@ -1741,8 +1784,7 @@ f  used on input line 3633.
 \tf@snm=\write8
 \openout8 = `PhD_Thesis_Presentation.snm'.
 
-
-(./PhD_Thesis_Presentation.aux)
+ (./PhD_Thesis_Presentation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1752,59 +1794,60 @@ Package rerunfilecheck Info: File `PhD_Thesis_Presentation.out' has not changed
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30039 strings out of 476182
- 608912 string characters out of 5795596
+ 30104 strings out of 476182
+ 609777 string characters out of 5795596
  1956975 words of memory out of 5000000
- 51284 multiletter control sequences out of 15000+600000
- 588573 words of font info for 101 fonts, out of 8000000 for 9000
+ 51328 multiletter control sequences out of 15000+600000
+ 589347 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,19n,133p,459b,1336s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcs
 s0600.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknap
 pen/ec/tcss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/lj
 four/jknappen/ec/ectt0800.450pk> </home/samuelebumbaca/.texlive2023/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecsx2488.600pk> </home/samuelebumbaca/.texlive2023/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1200.600pk> </home/samuelebumbaca/.tex
-live2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0500.600pk> </home/samuelebu
-mbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </home
+onts/pk/ljfour/jknappen/ec/ecsx0700.600pk> </home/samuelebumbaca/.texlive2023/t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </home/samuelebumbaca/.tex
+live2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2488.600pk> </home/samuelebu
+mbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1200.600pk> </home
 /samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600
 pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 ss0900.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecsx0900.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecsi0600.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/
-fonts/pk/ljfour/jknappen/ec/ecsx1000.600pk> </home/samuelebumbaca/.texlive2023/
-texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0800.600pk> </home/samuelebumbaca/.te
-xlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0500.600pk> </home/samueleb
-umbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0600.600pk> </hom
-e/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.60
+jfour/jknappen/ec/ecsx0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecsi0500.600pk> </home/samuelebumbaca/.texlive2023/
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0600.600pk> </home/samuelebumbaca/.te
+xlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0700.600pk> </home/samueleb
+umbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600pk> </hom
+e/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.60
 0pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-csi0700.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecsi1000.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecss1000.600pk> </home/samuelebumbaca/.texlive2023/texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecsi0800.600pk> </home/samuelebumbaca/.texlive2023
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </home/samuelebumbaca/.t
-exlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </home/samuele
-bumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </ho
-me/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.6
+csi1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecss1200.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecsx1440.600pk> </home/samuelebumbaca/.texlive2023/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecsi0600.600pk> </home/samuelebumbaca/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </home/samuelebumbaca/.t
+exlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0500.600pk> </home/samuele
+bumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600pk> </ho
+me/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.6
 00pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecss1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on PhD_Thesis_Presentation.pdf (86 pages, 51661187 bytes).
+ecss1000.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecss0800.600pk> </home/samuelebumbaca/.texlive2023/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecss1095.600pk> </home/samuelebumbaca/.texlive2023/texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on PhD_Thesis_Presentation.pdf (96 pages, 112532716 bytes).
 PDF statistics:
- 5268 PDF objects out of 6186 (max. 8388607)
- 2465 compressed objects within 25 object streams
- 175 named destinations out of 1000 (max. 500000)
- 4933 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5508 PDF objects out of 6186 (max. 8388607)
+ 2674 compressed objects within 27 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 4818 words of extra memory for PDF output out of 10000 (max. 10000000)
 

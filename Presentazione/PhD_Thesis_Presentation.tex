@@ -50,6 +50,8 @@
 \renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 \makeatother
 
+% Intro citation
+\newcommand{\citeFisherStatistical}{Fisher, R.A. Statistical Methods for Research Workers. In: Kotz, S., Johnson, N.L. (eds) Breakthroughs in Statistics: Methodology and Distribution. Springer, New York, pp. 66--70, 1992}
 % Define citation texts as commands for reuse
 \newcommand{\citeDavid}{David et al. Plant detection and counting from high-resolution RGB images acquired from UAVs. \textit{bioRxiv}, 2021}
 \newcommand{\citeLiu}{Liu et al. IntegrateNet: A deep learning network for maize stand counting from UAV imagery. \textit{IEEE Geosci. Remote Sens. Lett.}, 19:6512605, 2022}
@@ -221,9 +223,74 @@
     \titlepage
 \end{frame}
 
+% SUMMARY SLIDE
+\begin{frame}
+    \frametitle{\small Summary}
+    \begin{itemize}
+        \item \textbf{PPPs Evaluation Trials}
+        \item \textbf{The Traditional Statistical Approach to Agricultural Trials}
+        \item \textbf{Modern Statistical Approaches to Agricultural Trials}
+        \item \textbf{Research Objectives}
+        \begin{itemize}
+            \item \textbf{Maize Seedling Counting}
+            \item \textbf{Phytotoxicity Scoring}
+            \item \textbf{Anomaly Detection and Unsupervised Classification for Disease Assessment}
+        \end{itemize}
+        \item \textbf{Conclusions and Future Developments}
+    \end{itemize}
+\end{frame}
+
+% INTRODUCTORY SLIDE
+\begin{frame}
+    \frametitle{\small PPPs Evaluation Trials}
+    \centering
+    \textbf{Plant Protection Products (PPPs)} are crucial for safeguarding crops against pests and diseases, ensuring food security and agricultural productivity\fcite{\citeFAO}.
+    
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Imgs/application in vines2.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small PPPs Evaluation Trials}
+    \centering
+    \textbf{PPPs efficacy and selectivity trials} are conducted to assess the effectiveness and the safety of these products.
+    
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Imgs/application in vines.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small PPPs Evaluation Trials}
+    \centering
+    All the PPPs efficacy and selectivity trials aim to test the hypothesis that the \textbf{tested product} is more effective than the \textbf{control} and not inferior to a \textbf{reference product}\fcite{\citeEPPODesign}.
+    
+    \vspace{0.5cm}
+
+    In the European and Mediterranean countries, these trials must comply with the \textbf{European and Mediterranean Plant Protection Organization (EPPO) Standards}. 
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small PPPs Evaluation Trials}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            The method to carry out an efficacy and selectivity trial way back to Ronald A. Fisher in the 1920s\fcite{\citeFisherStatistical}. It is based on the exclusion of esogenous variability through \textbf{replication} and \textbf{randomization} of the experiment.
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.9\textwidth]{Imgs/Fisher.png}
+        \end{column}
+    \end{columns}
+
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{Imgs/panoramica_prova_cereals.jpeg}
+\end{frame}
+
 % Slide 2: The Traditional Approach to Agricultural Trials
 \begin{frame}
-    \frametitle{The Traditional Approach to Agricultural Trials}
+    \frametitle{\small The Traditional Approach to Agricultural Trials}
     
     \begin{columns}
         \begin{column}{0.65\textwidth}
@@ -303,7 +370,7 @@
 
 % Slide 3: Key Assumptions of Traditional ANOVA
 \begin{frame}
-    \frametitle{Key Assumptions of Traditional ANOVA}
+    \frametitle{\small Key Assumptions of Traditional ANOVA}
     
     \begin{block}{Statistical Assumptions:}
         \begin{itemize}
@@ -331,7 +398,7 @@
 
 % Slide 4: Right Blocking
 \begin{frame}
-    \frametitle{The Right Blocking: Capturing Environmental Variability}
+    \frametitle{\small The Right Blocking: Capturing Environmental Variability}
     
     \begin{columns}
         \begin{column}{0.7\textwidth}
@@ -423,7 +490,7 @@
 
 % Slide 5: The Wrong Blocking
 \begin{frame}
-    \frametitle{The Wrong Blocking: Assumption Violation}
+    \frametitle{\small The Wrong Blocking: Assumption Violation}
     
     \begin{columns}
         \begin{column}{0.7\textwidth}
@@ -522,7 +589,7 @@
 
 % Slide 6: The Problem
 \begin{frame}
-    \frametitle{Current Limitations in Statistics for Agricultural Trials}
+    \frametitle{\small Current Limitations in Statistics for Agricultural Trials}
     
     \begin{block}{Traditional Approach Issues:}
         \begin{itemize}
@@ -538,7 +605,7 @@
 
 % Slide 7: Geostatistical Approach
 \begin{frame}
-    \frametitle{Geostatistical Approach: Spatial Linear Mixed Models}
+    \frametitle{\small Geostatistical Approach: Spatial Linear Mixed Models}
     
     \begin{columns}
         \begin{column}{0.65\textwidth}
@@ -582,7 +649,7 @@
                             \pgfmathsetmacro{\y}{\row*0.6}
                             
                             % Draw observation point
-                            \fill[black] (\x,\y) circle (0.03);
+                            \fill[black] (\x,\y) circle (0.055);
                             
                             % Add coordinate labels for some points (adjusted for new grid)
                             \ifnum\row=0
@@ -656,7 +723,7 @@
 
 % Slide 8: Statistical Methods Comparison: Introduction
 \begin{frame}
-    \frametitle{Statistical Methods Comparison: Introduction}
+    \frametitle{\small Statistical Methods Comparison: Introduction}
     
     \begin{block}{Comparison Objective:}
         Evaluate the performance of \textbf{traditional RCBD} versus \textbf{spatial geostatistical methods} (SpATS) in capturing environmental variability and estimating treatment effects.
@@ -699,7 +766,7 @@
 
 % Slide 9: Statistical Methods Comparison: The Field Trial
 \begin{frame} %TODO: modify the R script to include all the legends reported in the slide in beamer tex language
-    \frametitle{Statistical Methods Comparison: The Field Trial Design}
+    \frametitle{\small Statistical Methods Comparison: The Field Trial Design}
     
     \begin{center}
         \includegraphics[width=0.95\textwidth]{Imgs/integrated_rcbd_spats_comparison_irregular.png}
@@ -742,7 +809,7 @@
 
 % Slide 10: Statistical Methods Comparison: Results
 \begin{frame}
-    \frametitle{Statistical Methods Comparison: Results}
+    \frametitle{\small Statistical Methods Comparison: Results}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -804,7 +871,7 @@
 
 % Slide 11: Research Gap
 \begin{frame}
-    \frametitle{The Missing Link: Spatial Coordinates}
+    \frametitle{\small The Missing Link: Spatial Coordinates}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -832,7 +899,7 @@
 
 % Slide 12: Research Question
 \begin{frame}
-    \frametitle{Central Research Question}
+    \frametitle{\small Central Research Question}
     
     \begin{exampleblock}{}
         \large
@@ -900,7 +967,7 @@
                 \textbf{\scriptsize Measuring Tools}\\
                 \tiny
                 $\bullet$ Spatially referenced measurements\\
-                $\bullet$ e.g. Georeferenced harvesters, LiDAR with embedded GNSS\\
+                $\bullet$ e.g. Georeferenced harvesters, NDVI measuring tool with embedded GNSS\\
             };
             
             % Output Block
@@ -927,7 +994,7 @@
 
 % Slide 14: Georeferencing EPPO standard assessments
 \begin{frame}
-    \frametitle{Georeferencing EPPO Standard Assessments}
+    \frametitle{\small Georeferencing EPPO Standard Assessments}
     
     \begin{table}[ht]
         \caption{\small EPPO's types of variables}
@@ -957,13 +1024,13 @@
     \end{flushleft}
 
     \begin{block}{Current State of Georeferencing in Agricultural Trials:}
-        \small Tool-based measurements (e.g., yield harvesters) can be easily georeferenced by integrating GNSS receivers on the tool. For visual assessments as counting, scoring or ranking, a method to transform georeferenced data to georeferenced observations is needed.
+        \small Tool-based \textbf{measurements} (e.g., yield harvesters) can be easily georeferenced by integrating GNSS receivers on the tool. For \textbf{visual assessments} as counting, scoring or ranking, a method to transform georeferenced data to georeferenced observations is needed.
     \end{block}
 \end{frame}
 
 % Slide 15: ML Inference on Georeferenced Data
 \begin{frame}
-    \frametitle{Machine Learning Inference on Georeferenced Data}
+    \frametitle{\small Machine Learning Inference on Georeferenced Data}
     
     \begin{center}
         \begin{tikzpicture}[
@@ -998,14 +1065,16 @@
 
 % Slide 15: EPPO ML integration
 \begin{frame}
-    \frametitle{EPPO ML integration}
-    
+    \frametitle{\small EPPO ML integration}
+    \small Untill 2024 it was not possible to use ML for generating georeferenced observations in EPPO compliant trials.
+    \vspace{0.3cm}
+    In November 2024, EPPO released:
     \begin{block}{EPPO PP 1/333(1): Digital Technologies in PPP Trials}
         \small
-        ML integrated assessments must meet the same quality standards as manual assessments and require validation through comparison with manual assessments (golden sample).
+        ML integrated assessments must meet the same quality standards as manual assessments and require \textbf{validation} through comparison with manual assessments (golden sample).
     \end{block}
     
-    \begin{exampleblock}{\small Validation Benchmarks\footnote{\tiny Based on EPPO PP 1/333(1): Use of digital technologies in efficacy and selectivity trials}}
+    \begin{exampleblock}{Validation Benchmarks\footnote{\tiny Based on EPPO PP 1/333(1): Use of digital technologies in efficacy and selectivity trials}}
         \scriptsize
         \begin{itemize}
             \item \textbf{\large Continuous/Discrete}\large : $R^2 > 0.85$ (1:1 relationship)
@@ -1017,16 +1086,16 @@
 
 % Slide 16: Georeferencing EPPO Standard Assessments: Case Studies
 \begin{frame}
-    \frametitle{Georeferencing Gap in EPPO Standard Assessments}
+    \frametitle{\small Georeferencing Gap in EPPO Standard Assessments}
     \begin{table}[ht]
         \centering
         \begin{tabular}{|c|l|c|c|c|}
         \hline
         & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
         \hline
-        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous not limited & X & & \\
         \hline
-        \rowcolor{green!20} & Continuous limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous limited & X & & \\
         \hline
         \rowcolor{yellow!20} $\rightarrow$ & Discrete & X & & \\
         \hline
@@ -1039,7 +1108,7 @@
         \end{tabular}
     \end{table}
     \begin{block}{Case Studies:}
-        \small This thesis aim to prove the reliability of georeferencing every EPPO standard assessmentEach case study addresses a specific variable type as defined in the EPPO standards
+        \small This thesis aims to prove the reliability of georeferencing every EPPO standard assessment. Each case study addresses a specific variable type as defined in the EPPO standards.
         \begin{itemize}
             \item \textbf{Discrete (Counts)} : Plant counting
             \item \textbf{Ordinal} : Phytotoxicity scoring
@@ -1050,16 +1119,16 @@
 
 % Slide 17: Georeferencing Counts (Discrete Variable) 
 \begin{frame}
-    \frametitle{Georeferencing Counts (Discrete Variable)}
+    \frametitle{\small Georeferencing Counts (Discrete Variable)}
     \begin{table}[ht]
         \centering
         \begin{tabular}{|c|l|c|c|c|}
         \hline
         & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
         \hline
-        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous not limited & X & & \\
         \hline
-        \rowcolor{green!20} & Continuous limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous limited & X & & \\
         \hline
         \rowcolor{yellow!20} $\rightarrow$ & Discrete & X & & \\
         \hline
@@ -1076,7 +1145,7 @@
         \begin{itemize}
             \item \textbf{Counts} are discrete variables required for measuring density of individuals (e.g. plant density in PP1/46 (3) - Wireworms).
             \item the \textbf{Case Study}: Counting plants from georeferenced photogrammetric orthomosaics by ML Object Detection. 
-            \item this study is discussed in the scientific article \textbf{\scriptsize Bumbaca, S.; Borgogno-Mondino, E.C. On the Minimum Dataset Requirements for Fine-Tunining an Object Detector for Arable Crop Plant Counting: A Case Study on Maize Seedlings. Remote Sens. 2025, 17, 2190. DOI: 10.3390/rs1713219061}
+            \item \scriptsize this study is discussed in the scientific article \textbf{\tiny Bumbaca, S.; Borgogno-Mondino, E.C. On the Minimum Dataset Requirements for Fine-Tunining an Object Detector for Arable Crop Plant Counting: A Case Study on Maize Seedlings. Remote Sens. 2025, 17, 2190. DOI: 10.3390/rs1713219061}
         \end{itemize}
     \end{block}
 \end{frame}
@@ -1098,18 +1167,18 @@
 
 % Slide 18: Plant Counting Introduction - The Problem
 \begin{frame}
-    \frametitle{Arable Crop Plant Counting by Object Detection}
+    \frametitle{\small Arable Crop Plant Counting by Object Detection}
     
     \begin{block}{The Critical Need after EPPO Assessments:}
         \begin{itemize}
-            \item Plant counting is \textbf{fundamental} also in precision agriculture and plant breeding
-            \item Traditional manual counting is \textbf{time-consuming} and bring \textbf{human error} risks
+            \item Plant counting is fundamental also in \textbf{precision agriculture} and \textbf{plant breeding}.
+            \item Traditional manual counting is \textbf{time-consuming} and bring \textbf{human error} risks.
             \item \textbf{Computer vision} offers a solution, but requires \textbf{dataset size and quality} characterization to prove the reliability for this task.
         \end{itemize}
     \end{block}
     
     \begin{exampleblock}{EPPO Benchmark Standards:}
-        Coefficient of determination ($R^2$) $\geq$ 0.85 of ML method w.r.t. manual counting (no bias nor slope linear first order relation)
+        Coefficient of determination \textbf{($R^2$) $\geq$ 0.85} of ML method w.r.t. manual counting (no bias nor slope linear first order relation)
     \end{exampleblock}
     
     \begin{alertblock}{Research Gap:}
@@ -1119,7 +1188,7 @@
 
 % Slide 19: Georeferenced Orthomosaics
 \begin{frame}
-    \frametitle{Photogrammetric Orthomosaics for Plant Counting}
+    \frametitle{\small Photogrammetric Orthomosaics for Plant Counting}
     
     \begin{block}{Advantages over other kind of data:}
         \begin{itemize}
@@ -1134,21 +1203,32 @@
 
 % Slide 20:
 \begin{frame}
-    \begin{alertblock}{Limitations:}
-        \begin{itemize}
-            \item \textbf{Occlusions}\small : Overlapping vegetation canopy issues \fcite{\citeHabib} -> Target crop and phenological stage selection
-            \item \textbf{Georeferencing errors}\small : Due to low-quality/insufficient GNSS embedded systems or Ground Control Points (GCPs) \fcite{\citePugh} -> Hardware requirements
-            \item \textbf{Computational demand}\small : Processing time constraints for large-area orthomosaics -> Not real-time suitable
-        \end{itemize}
-    \end{alertblock}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}                    
+            \begin{alertblock}{Limitations:}
+                \begin{itemize}
+                    \item \textbf{Occlusions}\small : Overlapping vegetation canopy issues \fcite{\citeHabib}
+                    \item \textbf{Georeferencing errors}\small : Due to low-quality/insufficient GNSS embedded systems or Ground Control Points (GCPs) \fcite{\citePugh}
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Solutions:}
+                \begin{itemize}
+                    \item \textbf{Target selection}\small : Target crop and phenological stage selection
+                    \item \textbf{Hardware requirements and Picturing Setup}\small : RTK/PPK systems for GCP surveying and adequate image capture
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 
 % Slide 20: Plant Counting - Case Study Selection
 \begin{frame}
-    %\frametitle{Case Study: Maize Seedling Counting}
+    %\frametitle{\small Case Study: Maize Seedling Counting}
     
-    \begin{block}{\small Plants Occlusion Solution: Maize Seedlings at BBCH 13-15 Stage}
+    \begin{block}{\small Target selection: Maize Seedlings at BBCH 13-15 Stage}
         \small
         \begin{itemize}
             \item \textbf{\scriptsize Optimal detection conditions}\scriptsize : Regular planting pattern, minimal plant overlapping at BBCH 13-15 stage \fcite{\citeMeier}
@@ -1166,20 +1246,28 @@
 
 % Slide 21: Suitable Hardware and Picturing
 \begin{frame}
-    \begin{block}{\small Suitable Hardware and Photogrammetric Picturing}
-        \small
-        \begin{itemize}
-            \item \textbf{UAV Platform}: Phantom 4 Pro v2.0 (DJI, Shenzhen, China)
-            \item \textbf{Camera}: Default series RGB camera
-            \item \textbf{Flight Altitude}: ~10 m above ground level
-            \item \textbf{Original GSD}: 2.7 mm/pixel
-            \item \textbf{GNSS Mode}: VRS-NRTK for GCP surveying
-            \item \textbf{Bundle Adjustment Error}: 38 mm
-            \item \textbf{Final Orthomosaic GSD}: 5 mm/pixel
-            \item \textbf{Reference System}: WGS84/UTM 32 N
-        \end{itemize}
-    \end{block}
-    
+    \begin{columns}
+        \begin{column}{0.65\textwidth}
+                \begin{block}{\small Hardware requirements and Picturing Setup}
+                    \small
+                    \begin{itemize}
+                        \item \textbf{UAV Platform}: Phantom 4 Pro v2.0 (DJI, Shenzhen, China)
+                        \item \textbf{Camera}: Default series RGB camera
+                        \item \textbf{Flight Altitude}: ~10 m above ground level
+                        \item \textbf{Original GSD}: 2.7 mm/pixel
+                        \item \textbf{GNSS Mode}: VRS-NRTK for GCP surveying
+                        \item \textbf{Bundle Adjustment Error}: 38 mm
+                        \item \textbf{Final Orthomosaic GSD}: 5 mm/pixel
+                        \item \textbf{Reference System}: WGS84/UTM 32 N
+                    \end{itemize}
+                \end{block}
+        \end{column}        
+        \begin{column}{0.35\textwidth}
+            \begin{center}
+                \includegraphics[width=1\textwidth]{Imgs/orthomosaic_example.pdf}
+            \end{center}
+        \end{column}
+    \end{columns}
     \begin{block}{\small Key Processing Steps:}
         \small
         \begin{enumerate}
@@ -1194,7 +1282,7 @@
 % Slide 22: Plant Counting - Object Detection Paradigms
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Object Detection Paradigms}
+%    \frametitle{\small Plant Counting - Object Detection Paradigms}
 %    The State-Of-The-Art (SOTA) methods to count plants by orthomosaics rely on object detectors. Historically, for most of the tasks, object detectors increased their performance in this order:
 %    \begin{block}
 %        \small
@@ -1211,7 +1299,7 @@
 % Slide 23: Plant Counting - Classic Object Detection Methods
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Classic Object Detection Methods}
+%    \frametitle{\small Plant Counting - Classic Object Detection Methods}
 %    
 %    \begin{block}{Handcrafted Methods (HC):}
 %        \scriptsize
@@ -1229,8 +1317,8 @@
 % Slide 24: Plant Counting - Classic Object Detection Methods
 % MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-%    \frametitle{Plant Counting - Classic Object Detection Methods}
-    \frametitle{Plant Counting - Object Detection Methods}
+%    \frametitle{\small Plant Counting - Classic Object Detection Methods}
+    \frametitle{\small Plant Counting - Object Detection Methods}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Machine (Deep) Learning Approaches:}
@@ -1314,7 +1402,7 @@
 % Slide 25: Plant Counting - Data-Efficient Detection Methods
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Data-Efficient Detection Methods}
+%    \frametitle{\small Plant Counting - Data-Efficient Detection Methods}
 %    
 %    \begin{columns}
 %        \begin{column}{0.5\textwidth}
@@ -1338,7 +1426,7 @@
 % Slide 25: Plant Counting - Data-Efficient Detection Methods - Zero-Shot Detection
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Data-Efficient Detection Methods}
+%    \frametitle{\small Plant Counting - Data-Efficient Detection Methods}
 %    \begin{columns}
 %        \begin{column}{0.5\textwidth}
 %            \begin{block}{Zero-Shot Detection:}
@@ -1361,7 +1449,7 @@
 % Slide 26: Plant Counting - Data Scarcity Challenge
 % MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-    \frametitle{Plant Counting - Research Gap}
+    \frametitle{\small Plant Counting - Research Gap}
     \begin{alertblock}{Critical Research Gaps:}
         \begin{itemize}
             \item \textbf{Minimum dataset requirements} None of the studies taken into account systematically tested\fcite{\citeSun} the minimum dataset requirements for robust plant detectors (EPPO benchmark).
@@ -1374,7 +1462,7 @@
 
 % Slide 27: Study Aim
 \begin{frame}
-    \frametitle{Study Aim}
+    \frametitle{\small Study Aim}
     
     \begin{exampleblock}{Primary Objective:}
         Establish the \textbf{minimum dataset requirements} for accurate maize seedling detection (EPPO benchmark) in georeferenced orthomosaics across different object detection paradigms
@@ -1400,7 +1488,7 @@
 % Slide 28: Plant Counting - Material and Methods - The Systematic Approach
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-    \frametitle{Plant Counting - Material and Methods - Research Methodology}
+    \frametitle{\small Plant Counting - Material and Methods - Research Methodology}
     \small
     \begin{itemize}
         \item \textbf{Objective}: Investigate minimum dataset size and quality for robust object detection
@@ -1415,7 +1503,7 @@
 %                \item Test Few-Shot Detector requirements with ID training samples.
 %                \item Test Zero-Shot Detector performances.
 %            \end{itemize}
-        \item \textbf{Empirical Modeling Approach}:
+        \item \textbf{Empirical Modeling Approach \fcite{\citeSun} \fcite{\citeAlhazmi} \fcite{\citeHestness} \fcite{\citeMahmood}}:
             \begin{itemize}
                 \item Analyze the relationship between dataset size/quality and model performance
                 \item Fit empirical functions to characterize this relationship
@@ -1426,44 +1514,33 @@
 
 % Slide 31: Plant Counting - Material and Methods - Dataset
 \begin{frame}
-    \frametitle{Plant Counting - Material and Methods - Dataset}
+    \frametitle{\small Plant Counting - Material and Methods - Dataset}
     
     \begin{block}{Dataset Classification:}
         \small
         \begin{itemize}
             \item \textbf{Out-of-Distribution (OOD)}: Training datasets from different sources than inference target
+                \begin{itemize}
+                    \item \textbf{Scientific Datasets}: From scientific articles
+                    \item \textbf{Internet Datasets}: From internet repositories
+                \end{itemize}
             \item \textbf{In-Domain (ID)}: Training datasets from same source/distribution as testing dataset
+                \begin{itemize}
+                    \item Collected by the author
+                \end{itemize}
         \end{itemize}
     \end{block}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{OOD Scientific Datasets:}
-                    \textbf{Source}: Scientific literature
-            \end{block}
             
-            \begin{block}{OOD Internet Datasets:}
-                \textbf{Source}: Internet repositories
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{ID Datasets:}
-                \textbf{Source}: Collected by the author
-            \end{block}
-            
-            \begin{exampleblock}{Key Processing Parameters:}
-                \scriptsize
-                    All dataset preprocessed to get standard \textbf{tile size}: 224\ensuremath{\times}224 pixels (1.12\ensuremath{\times}1.12 m field coverage for georeferenced)
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
+    \begin{exampleblock}{Key Processing Parameters:}
+            All dataset preprocessed to get standard \textbf{tile size}: 224\ensuremath{\times}224 pixels (1.12\ensuremath{\times}1.12 m field coverage for georeferenced)
+    \end{exampleblock}
+
 \end{frame}
 
 % Slide 32: Plant Counting - Material and Methods - Dataset
 \begin{frame}
     \scriptsize
-    \frametitle{Plant Counting - Material and Methods - Datasets}
+    \frametitle{\small Plant Counting - Material and Methods - Datasets}
     \begin{table}[H]
         \begin{tabularx}{\textwidth}{llXX}
         \toprule
@@ -1512,7 +1589,7 @@
 % Slide 30: Performance Metrics and Mathematical Framework
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF RMSE AND MAPE METRICS
 \begin{frame}
-    \frametitle{Plant Counting - Material and Methods - Performance Metrics}
+    \frametitle{\small Plant Counting - Material and Methods - Performance Metrics}
     
     \begin{block}{Primary Evaluation Metrics:}
         \small Performance assessed using $R^2$ and $mAP$ for counting and detection respectively
@@ -1553,7 +1630,7 @@
 % Slide 33: HC Method Algorithm
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Material and Methods - HC Method Algorithm}
+%    \frametitle{\small Plant Counting - Material and Methods - HC Method Algorithm}
 %    
 %    \begin{block}{Handcrafted Object Detector Overview:}
 %        \small Two-stage detection-verification pipeline based on agronomical knowledge and color thresholding
@@ -1613,7 +1690,7 @@
 % Slide 34: HC Method Results
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 %\begin{frame}
-%    \frametitle{Plant Counting - Results - HC Method }
+%    \frametitle{\small Plant Counting - Results - HC Method }
 %    
 %    \begin{block}{HC Object Detector Performance on Test Dataset:}
 %        \small Metrics computed on testing dataset tiles
@@ -1667,24 +1744,23 @@
 
 % Slide 29: Dataset Split and Training Protocols
 \begin{frame}
-    \frametitle{Plant Counting - Material and Methods - Training Protocols}
+    \frametitle{\small Plant Counting - Material and Methods - Training Protocols}
 % MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
   
     \begin{block}{Training Dataset Configuration:}
         \small
-        90\% training / 10\% validation split
-%        \begin{itemize}
-%            \item \textbf{Many-shot models}: 90\% training / 10\% validation split
-%            \item \textbf{Few-shot models}: Number of shots determines training samples
-%            \item \textbf{Zero-shot learning}: Natural language descriptions only
-%        \end{itemize}
+        \begin{itemize}
+            \item \textbf{Training dataset}: based on experiment
+            \item \textbf{Testing dataset }: 20 tiles reserved for testing from each ID dataset
+        \end{itemize}
     \end{block}
     
     \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Dataset Size Evaluation:}
+        \begin{column}{0.4\textwidth}
+            \begin{block}{Minimum Dataset Size Evaluation:}
                 \scriptsize
-                10 to 150 images (15 steps of 10)
+                \textbf{OOD test}: dataset size depending on test\\
+                \textbf{ID test}: from 10 to 150 images (15 steps of 10)
 %                \begin{itemize}
 %                    \item \textbf{Many-shot}: 10 to 150 images (15 steps of 10)
 %                    \item \textbf{Few-shot}: 1, 5, 10, 30, and 50 shots
@@ -1693,14 +1769,10 @@
             \end{block}
         \end{column}
         
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Quality Assessment:}
+        \begin{column}{0.4\textwidth}
+            \begin{block}{Minimum Quality Evaluation:}
                 \scriptsize
-                \begin{itemize}
-                    \item \textbf{Annotation reduction}: 100\% to 10\% (10 steps)
-                    \item \textbf{Constant dataset size}: During quality evaluation
-                    \item \textbf{OOD vs ID influence}: Same experimental protocol
-                \end{itemize}
+                \textbf{Annotation reduction}: 100\% to 10\% (10 steps), with \textbf{constant dataset size}
             \end{block}
         \end{column}
     \end{columns}
@@ -1708,7 +1780,7 @@
 
 % Slide 31: Empirical Modeling Approach
 \begin{frame}
-    \frametitle{Plant Counting - Material and Methods - Predictive Modeling}
+    \frametitle{\small Plant Counting - Material and Methods - Predictive Modeling}
     
     \begin{block}{Empirical Function Testing:}
         \small Three mathematical functions tested to model dataset size/quality vs performance relationships
@@ -1719,8 +1791,8 @@
             \begin{exampleblock}{Logarithmic:}
                 \scriptsize
                 $$f(x) = a \ln(x) + b$$
-                \textbf{Behavior}: Diminishing returns pattern
-                \textbf{Theory}: Asymptotic performance approach
+                %\textbf{Behavior}: Diminishing returns pattern
+                %\textbf{Theory}: Asymptotic performance approach
             \end{exampleblock}
         \end{column}
         
@@ -1728,8 +1800,8 @@
             \begin{alertblock}{Arctangent:}
                 \scriptsize
                 $$f(x) = a \arctan(bx) + c$$
-                \textbf{Behavior}: Saturating performance
-                \textbf{Theory}: Bounded metrics plateau
+                %\textbf{Behavior}: Saturating performance
+                %\textbf{Theory}: Bounded metrics plateau
             \end{alertblock}
         \end{column}
         
@@ -1737,8 +1809,8 @@
             \begin{block}{Algebraic Root:}
                 \scriptsize
                 $$f(x) = a x^{1/b} + c$$
-                \textbf{Behavior}: Power-law relationships
-                \textbf{Theory}: Flexible scaling dynamics
+                %\textbf{Behavior}: Power-law relationships
+                %\textbf{Theory}: Flexible scaling dynamics
             \end{block}
         \end{column}
     \end{columns}
@@ -1756,7 +1828,7 @@
 % Slide 32: SAHI Testing Protocol
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF SAHI METHOD  
 %\begin{frame}
-%    \frametitle{Plant Counting - Material and Methods - SAHI Testing Protocol}
+%    \frametitle{\small Plant Counting - Material and Methods - SAHI Testing Protocol}
 %
 %    \begin{block}{SAHI Method Implementation:}
 %        \small All trained models tested using Slicing Aided Hyper Inference (SAHI) technique
@@ -1797,7 +1869,7 @@
 
 % Slide 33: Plant Counting - Materials and Methods - Classic Detectors Architecture - YOLO Family (CNN-based)
 \begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Classic Detectors Architecture}
+    \frametitle{\small Plant Counting - Materials and Methods - Classic Detectors Architecture}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -1831,7 +1903,7 @@
 
 % Slide 34: Plant Counting - Materials and Methods - Classic Detectors Architecture - Transformer-mixed
 \begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Classic Detectors Architecture}
+    \frametitle{\small Plant Counting - Materials and Methods - Classic Detectors Architecture}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -1866,8 +1938,8 @@
 % Slide 35: Plant Counting - Materials and Methods - Detectors Training Configuration
 % MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 \begin{frame}
-%    \frametitle{Plant Counting - Materials and Methods - Classic Detectors Architecture}
-    \frametitle{Plant Counting - Materials and Methods - Detectors Architecture}
+%    \frametitle{\small Plant Counting - Materials and Methods - Classic Detectors Architecture}
+    \frametitle{\small Plant Counting - Materials and Methods - Detectors Architecture}
 
     \begin{block}{Unified Training Configuration and Implementation:}
         \scriptsize
@@ -1911,7 +1983,7 @@
 % Slide 36: Plant Counting - Materials and Methods - Few-Shot Detection (CD-ViTO)
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 %\begin{frame}
-%    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
+%    \frametitle{\small Plant Counting - Materials and Methods - Data-Efficient Detection}
 %    \framesubtitle{Few-Shot Detection: CD-ViTO Architecture}
 %    
 %    \begin{columns}
@@ -1947,7 +2019,7 @@
 % Slide 37: Plant Counting - Materials and Methods - Zero-Shot Detection (OWLv2)
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 %\begin{frame}
-%    \frametitle{Plant Counting - Materials and Methods - Data-Efficient Detection}
+%    \frametitle{\small Plant Counting - Materials and Methods - Data-Efficient Detection}
 %    \framesubtitle{Zero-Shot Detection: OWLv2 Architecture}
 %    
 %    \begin{columns}
@@ -1988,7 +2060,7 @@
 % Slide 38: Plant Counting - Materials and Methods - Architecture Summary Table
 % COMMENTED OUT DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS  
 \begin{frame}
-    \frametitle{Plant Counting - Materials and Methods - Architecture Summary}
+    \frametitle{\small Plant Counting - Materials and Methods - Architecture Summary}
     
     \begin{table}[H]
         \scriptsize
@@ -2023,7 +2095,7 @@
 
 % Slide 39: Plant Counting - Results - OOD Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - OOD Dataset Size}
+    \frametitle{\small Plant Counting - Results - OOD Dataset Size}
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/metrics_OOD_datasets.pdf}
     \end{center}
@@ -2032,7 +2104,7 @@
 
 % Slide 39: Plant Counting - Results - YOLOv5 Performance vs ID Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv5 ID dataset size}
+    \frametitle{\small Plant Counting - Results - YOLOv5 ID dataset size}
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_size_yolov5.pdf}
     \end{center}
@@ -2040,7 +2112,7 @@
 
 % Slide 40: Plant Counting - Results - YOLOv5 Performance vs Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv5 ID dataset size}
+    \frametitle{\small Plant Counting - Results - YOLOv5 ID dataset size}
     
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_size_yolov5_2.pdf}
@@ -2052,7 +2124,7 @@
 
 % Slide 40: Plant Counting - Results - YOLOv8 Performance vs Dataset Size
 \begin{frame}
-    \frametitle{Plant Counting - Results - YOLOv8 ID dataset size}
+    \frametitle{\small Plant Counting - Results - YOLOv8 ID dataset size}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{center}
@@ -2074,7 +2146,7 @@
 
 % Slide 41: Plant Counting - Results - RT-DETR Performance and Predictions
 \begin{frame}
-    \frametitle{Plant Counting - Results - RT-DETR ID dataset size}
+    \frametitle{\small Plant Counting - Results - RT-DETR ID dataset size}
     \begin{center}
         \includegraphics[width=0.7\textwidth]{Imgs/r2_ap_vs_dataset_size_rtdetr_3.pdf}
     \end{center}
@@ -2083,7 +2155,7 @@
 % Slide 42: Plant Counting - Results - Dataset Size
 
 \begin{frame}
-    \frametitle{Plant Counting - Results - ID Dataset Size}
+    \frametitle{\small Plant Counting - Results - ID Dataset Size}
 
     \begin{table}[H]
         \scriptsize
@@ -2112,14 +2184,14 @@
 
 % Slide 42: Plant Counting - Results - Dataset Quality Analysis
 \begin{frame}
-    \frametitle{Plant Counting - Results - ID Dataset Quality Requirements}
+    \frametitle{\small Plant Counting - Results - ID Dataset Quality Requirements}
         
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_quality_2.pdf}
     \end{center}
 \end{frame}
 \begin{frame}
-    \frametitle{Plant Counting - Results - ID Dataset Quality Requirements}
+    \frametitle{\small Plant Counting - Results - ID Dataset Quality Requirements}
         
     \begin{center}
         \includegraphics[width=1\textwidth]{Imgs/r2_ap_vs_dataset_quality_3.pdf}
@@ -2140,7 +2212,7 @@
 % Slide 47: Plant Counting - Discussion
 % MODIFIED DUE TO EXCLUSION FROM THE PRESENTATION OF HC, FEW-SHOT AND ZERO-SHOT METHODS
 \begin{frame}
-    \frametitle{Plant Counting - Discussion: Key Findings}
+    \frametitle{\small Plant Counting - Discussion: Key Findings}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -2181,7 +2253,7 @@
 
 % Slide 48: Plant Counting - Conclusions and Future Directions
 \begin{frame}
-    \frametitle{Plant Counting - Conclusions and Future Directions}
+    \frametitle{\small Plant Counting - Conclusions and Future Directions}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{exampleblock}{Practical Implementation Guidelines:}
@@ -2210,18 +2282,18 @@
 
 % Slide: Georeferencing Rankings (Ordinal Variable) 
 \begin{frame}
-    \frametitle{Georeferencing Rankings (Ordinal Variable)}
+    \frametitle{\small Georeferencing Rankings (Ordinal Variable)}
     \begin{table}[ht]
         \centering
         \begin{tabular}{|c|l|c|c|c|}
         \hline
         & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
         \hline
-        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous not limited & X & & \\
         \hline
-        \rowcolor{green!20} & Continuous limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous limited & X & & \\
         \hline
-        \rowcolor{yellow!20} & Discrete & X & & \\
+        \rowcolor{yellow!20} \textcolor{green}{\checkmark} & Discrete & X & & \\
         \hline
         \rowcolor{red!20} $\rightarrow$ & Ordinal & & X & X \\
         \hline
@@ -2236,7 +2308,7 @@
         \begin{itemize}
             \item \textbf{Scores and Ranks} can be ordinal variables required for estimating phytotoxicity sympthoms (e.g. PP 1/135 (4) Phytotoxicity assessment).
             \item the \textbf{Case Study}: Scoring phytotoxicity sympthoms from georeferenced photogrammetric orthomosaics by ML regression. 
-            \item this study is discussed in the scientific article \textbf{\scriptsize Bumbaca, S.; Borgogno-Mondino, E. Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI. Agronomy 2024, 14, 306. DOI: 10.3390/agronomy14020306}
+            \item \scriptsize this study is discussed in the scientific article \textbf{\tiny Bumbaca, S.; Borgogno-Mondino, E. Supporting Screening of New Plant Protection Products through a Multispectral Photogrammetric Approach Integrated with AI. Agronomy 2024, 14, 306. DOI: 10.3390/agronomy14020306}
         \end{itemize}
     \end{block}
 \end{frame}
@@ -2252,7 +2324,7 @@
         
         \vspace{1cm}
         \begin{center}
-            \includegraphics[width=0.8\textwidth]{Imgs/agronomy-14-00306-g001.png}
+            \includegraphics[width=0.4\textwidth]{Imgs/phyto_intro.png}
         \end{center}
     \end{center}
 \end{frame}
@@ -2737,20 +2809,20 @@
 
 % Slide: Georeferencing Rankings (Ordinal Variable) 
 \begin{frame}
-    \frametitle{Georeferencing Nominal and Binary Variables}
+    \frametitle{\small Georeferencing Nominal and Binary Variables}
     \begin{table}[ht]
         \centering
         \begin{tabular}{|c|l|c|c|c|}
         \hline
         & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
         \hline
-        \rowcolor{green!20} & Continuous not limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous not limited & X & & \\
         \hline
-        \rowcolor{green!20} & Continuous limited & X & & \\
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous limited & X & & \\
         \hline
-        \rowcolor{yellow!20} & Discrete & X & & \\
+        \rowcolor{yellow!20} \textcolor{green}{\checkmark} & Discrete & X & & \\
         \hline
-        \rowcolor{red!20} & Ordinal & & X & X \\
+        \rowcolor{red!20} \textcolor{green}{\checkmark} & Ordinal & & X & X \\
         \hline
         \rowcolor{red!20} $\rightarrow$ & Nominal & & & X \\
         \hline
@@ -2790,32 +2862,26 @@
 
 % Introduction slide
 \begin{frame}
-    \frametitle{\small Disease Detection - Introduction - The Unsupervision Paradigm}
+    \frametitle{\small Disease Detection - Introduction - The Gap}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{The Challenge}
+            \begin{alertblock}{Problem}
                 \begin{itemize}
-                    \item Plant diseases cause \textbf{20-40\% global crop losses}\fcite{\citeSavaryGlobal}
-                    \item Traditional detection: labor-intensive, subjective\fcite{\citeBarbedoFactors}
-                    \item Supervised ML: requires extensive labeled data\fcite{\citeVallabhajosyulaNovel}
-                    \item Performance gap: lab vs. field conditions\fcite{\citeTodaHow}
+                    \item 20-40\% crops global losses from diseases and pests\fcite{\citeSavaryGlobal}
+                    \item Traditional assessing methods: labor-intensive\fcite{\citeBarbedoFactors}
+                    \item Supervised ML: needs extensive labels\fcite{\citeVallabhajosyulaNovel}
                 \end{itemize}
-            \end{block}
-            
-            \begin{alertblock}{Study Aim}
-                \textbf{Evaluate 56 neural network encoders for anomaly detection across laboratory and field environments}
-                
-                \vspace{0.3cm}
-                \textbf{Key Innovation}: Train only on healthy samples, detect diseases as anomalies\fcite{\citeRuffUnifying}
             \end{alertblock}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Anomaly Detection Advantages}
+            \begin{exampleblock}{Solution}
                 \begin{itemize}
-                    \item \textbf{Minimal labeling}: Only healthy or control samples needed
-                    \item \textbf{Novel disease detection}: Identifies unseen pathogen symptoms\fcite{\citeBumbacaSupporting}
+                    \item \textbf{Anomaly detection}: Train on healthy samples only\fcite{\citeRuffUnifying}
+                    \item \textbf{Unsupervised clustering}: Group diseases automatically
+                    \item \textbf{Benefits}: Novel disease detection, image-based assessment\fcite{\citeBumbacaSupporting}
+                    \item \textbf{Validation}: EPPO statistical benchmarks
                 \end{itemize}
             \end{exampleblock}
         \end{column}
@@ -2933,35 +2999,90 @@
     \includegraphics[width=\textwidth]{Imgs/Datasets_anomaly.pdf}
 \end{frame}
 
-% Experimental setup slide
+% Feature extraction methodology slide
 \begin{frame}
-    \frametitle{\small Disease Detection - Materials and Methods - Experimental Setup}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{\small Anomaly Detection}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Training}: 10\% of dataset healthy samples (52 images per dataset)
-                    \item \textbf{Testing}: All samples - training samples (total 1322 images per dataset)
-                    \item \textbf{Cross-validation}: 5-fold for robustness
-                    \item \textbf{Metrics}: Accuracy\\ (TP+TN)/(TP+TN+FP+FN)
-                \end{itemize}
-                \tiny TP: True Positive, TN: True Negative, FP: False Positive, FN: False Negative
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{\small Unsupervised Classification}
-                \scriptsize
-                \begin{itemize}
-                    \item \textbf{Parameter Initialization}: 3 classes/clusters/components
-                    \item \textbf{Testing}: All samples (1374 images per dataset)
-                    \item \textbf{Unsupervised Classification}: Group diseases by similarity patterns without supervision
-                    \item \textbf{Benchmarks}: Cohen's $\kappa$
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
+    \frametitle{\small Disease Detection - Materials and Methods - Feature Extraction}
+    
+    \begin{center}
+    \begin{tikzpicture}[
+        scale=0.9,
+        level0/.style={rectangle, draw, fill=blue!20, text width=1.8cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
+        level1/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
+        level2/.style={rectangle, draw, fill=green!20, text width=2.4cm, text centered, rounded corners, minimum height=1.4cm, inner sep=8pt},
+        level3/.style={rectangle, draw, fill=orange!20, text width=2.6cm, text centered, rounded corners, minimum height=1.0cm, inner sep=6pt},
+        level4/.style={rectangle, draw, fill=red!20, text width=3.0cm, text centered, rounded corners, minimum height=0.8cm, inner sep=6pt},
+        arrow/.style={thick,->,>=stealth, blue!70},
+        smalltext/.style={font=\scriptsize}
+    ]
+
+    %  Level 0: Datasets
+    \node[level0] (datasets) at (0,6.5) {\textbf{Datasets}};
+    
+    % Level 1: Feature Extraction (detailed)
+    \node[level2] (cnn) at (-3.5,4.8) {\textbf{CNN Models}\\
+        \begin{tikzpicture}[scale=0.4]
+            % CNN encoder stack with decreasing layer sizes (left to right)
+            \draw[fill=blue!40] (0,0.1) rectangle (0.4,1.9);
+            \draw[fill=green!40] (0.5,0.2) rectangle (0.8,1.8);
+            \draw[fill=orange!40] (0.9,0.3) rectangle (1.1,1.7);
+            \draw[fill=purple!40] (1.2,0.5) rectangle (1.35,1.5);
+            \draw[fill=red!40] (1.45,0.7) rectangle (1.55,1.3);
+            % Global average pooling arrow
+            \draw[->, thick, gray] (1.8,1.0) -- (2.2,1.0);
+            \node[smalltext, align=center] at (3.6,1.0) {\tiny Global\\Avg\\Pool};
+        \end{tikzpicture}\\
+        \tiny 48 models};
+    
+    \node[level2] (transformer) at (3.5,4.8) {\textbf{Transformers}\\
+        \begin{tikzpicture}[scale=0.4]
+            % Query, Key, Value representation
+            \draw[fill=blue!50, thick] (0,0.1) rectangle (0.4,1.7);
+            \node[rotate=90, smalltext] at (0.2,0.9) {\tiny Q};
+            \draw[fill=green!50, thick] (0.6,0.1) rectangle (1.0,1.7);
+            \node[rotate=90, smalltext] at (0.8,0.9) {\tiny K};
+            \draw[fill=orange!50, thick] (1.2,0.1) rectangle (1.6,1.7);
+            \node[rotate=90, smalltext] at (1.4,0.9) {\tiny V};
+            % Attention mechanism arrow
+            \draw[->, thick, purple] (1.8,0.9) -- (2.4,0.9);
+            % CLS token
+            \draw[fill=red!60, thick] (2.6,0.5) rectangle (3.0,1.3);
+            \node[smalltext, align=center] at (4,1.2) {\tiny [class]\\Token};
+        \end{tikzpicture}\\
+        \tiny 8 models};
+    
+    \node[level1] (features) at (0,3.0) {\scriptsize\textbf{Feature Vectors}};
+    
+    % Level 2: Dimensionality Reduction (simplified)
+    \node[level1] (dimred) at (0,1.8) {\scriptsize\textbf{Dimensionality Reduction}};
+    
+    % Level 3: Analysis Methods
+    \node[level3] (anomaly) at (-4,0.6) {\scriptsize\textbf{Anomaly Detection}};
+    \node[level3] (clustering) at (4,0.6) {\scriptsize\textbf{Unsupervised Classification}};
+    
+    % Level 4: Evaluation
+    \node[level4] (evaluation) at (0,-0.5) {\scriptsize\textbf{Evaluation}};
+    
+    % Arrows from Level 0 to Level 1
+    \draw[arrow] (datasets) -- (cnn);
+    \draw[arrow] (datasets) -- (transformer);
+
+    % Arrows from detailed feature extraction to feature vectors
+    \draw[arrow] (cnn) -- (features);
+    \draw[arrow] (transformer) -- (features);
+    
+    % Arrow from feature vectors to dimensionality reduction
+    \draw[arrow] (features) -- (dimred);
+    
+    % Arrows from Level 2 to Level 3
+    \draw[arrow] (dimred) -- (anomaly);
+    \draw[arrow] (dimred) -- (clustering);
+    
+    % Arrows from Level 3 to Level 4
+    \draw[arrow] (anomaly) -- (evaluation);
+    \draw[arrow] (clustering) -- (evaluation);
+    
+    \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 % Encoders slide
@@ -3052,127 +3173,7 @@
     \end{exampleblock}
 \end{frame}
 
-% Feature extraction methodology slide
-\begin{frame}
-    \frametitle{\small Disease Detection - Materials and Methods - Feature Extraction}
-    
-    \begin{center}
-    \begin{tikzpicture}[
-        scale=0.9,
-        level0/.style={rectangle, draw, fill=blue!20, text width=1.8cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
-        level1/.style={rectangle, draw, fill=orange!20, text width=2.2cm, text centered, rounded corners, minimum height=0.4cm, inner sep=6pt},
-        level2/.style={rectangle, draw, fill=green!20, text width=2.4cm, text centered, rounded corners, minimum height=1.4cm, inner sep=8pt},
-        level3/.style={rectangle, draw, fill=orange!20, text width=2.6cm, text centered, rounded corners, minimum height=1.0cm, inner sep=6pt},
-        level4/.style={rectangle, draw, fill=red!20, text width=3.0cm, text centered, rounded corners, minimum height=0.8cm, inner sep=6pt},
-        arrow/.style={thick,->,>=stealth, blue!70},
-        smalltext/.style={font=\scriptsize}
-    ]
-
-    %  Level 0: Datasets
-    \node[level0] (datasets) at (0,6.5) {\textbf{Datasets}};
-    
-    % Level 1: Feature Extraction (detailed)
-    \node[level2] (cnn) at (-3.5,4.8) {\textbf{CNN Models}\\
-        \begin{tikzpicture}[scale=0.4]
-            % CNN encoder stack with decreasing layer sizes (left to right)
-            \draw[fill=blue!40] (0,0.1) rectangle (0.4,1.9);
-            \draw[fill=green!40] (0.5,0.2) rectangle (0.8,1.8);
-            \draw[fill=orange!40] (0.9,0.3) rectangle (1.1,1.7);
-            \draw[fill=purple!40] (1.2,0.5) rectangle (1.35,1.5);
-            \draw[fill=red!40] (1.45,0.7) rectangle (1.55,1.3);
-            % Global average pooling arrow
-            \draw[->, thick, gray] (1.8,1.0) -- (2.2,1.0);
-            \node[smalltext, align=center] at (3.6,1.0) {\tiny Global\\Avg\\Pool};
-        \end{tikzpicture}\\
-        \tiny 48 models};
-    
-    \node[level2] (transformer) at (3.5,4.8) {\textbf{Transformers}\\
-        \begin{tikzpicture}[scale=0.4]
-            % Query, Key, Value representation
-            \draw[fill=blue!50, thick] (0,0.1) rectangle (0.4,1.7);
-            \node[rotate=90, smalltext] at (0.2,0.9) {\tiny Q};
-            \draw[fill=green!50, thick] (0.6,0.1) rectangle (1.0,1.7);
-            \node[rotate=90, smalltext] at (0.8,0.9) {\tiny K};
-            \draw[fill=orange!50, thick] (1.2,0.1) rectangle (1.6,1.7);
-            \node[rotate=90, smalltext] at (1.4,0.9) {\tiny V};
-            % Attention mechanism arrow
-            \draw[->, thick, purple] (1.8,0.9) -- (2.4,0.9);
-            % CLS token
-            \draw[fill=red!60, thick] (2.6,0.5) rectangle (3.0,1.3);
-            \node[smalltext, align=center] at (4,1.2) {\tiny [class]\\Token};
-        \end{tikzpicture}\\
-        \tiny 8 models};
-    
-    \node[level1] (features) at (0,3.0) {\scriptsize\textbf{Feature Vectors}};
-    
-    % Level 2: Dimensionality Reduction (simplified)
-    \node[level1] (dimred) at (0,1.8) {\scriptsize\textbf{Dimensionality Reduction}};
-    
-    % Level 3: Analysis Methods
-    \node[level3] (anomaly) at (-4,0.6) {\scriptsize\textbf{Anomaly Detection}};
-    \node[level3] (clustering) at (4,0.6) {\scriptsize\textbf{Unsupervised Classification}};
-    
-    % Level 4: Evaluation
-    \node[level4] (evaluation) at (0,-0.5) {\scriptsize\textbf{Evaluation}};
-    
-    % Arrows from Level 0 to Level 1
-    \draw[arrow] (datasets) -- (cnn);
-    \draw[arrow] (datasets) -- (transformer);
-
-    % Arrows from detailed feature extraction to feature vectors
-    \draw[arrow] (cnn) -- (features);
-    \draw[arrow] (transformer) -- (features);
-    
-    % Arrow from feature vectors to dimensionality reduction
-    \draw[arrow] (features) -- (dimred);
-    
-    % Arrows from Level 2 to Level 3
-    \draw[arrow] (dimred) -- (anomaly);
-    \draw[arrow] (dimred) -- (clustering);
-    
-    % Arrows from Level 3 to Level 4
-    \draw[arrow] (anomaly) -- (evaluation);
-    \draw[arrow] (clustering) -- (evaluation);
-    
-    \end{tikzpicture}
-    \end{center}
-\end{frame}
-
 % Dimensionality reduction slide
-\begin{frame}
-    \frametitle{\small Disease Detection - Materials and Methods - Dimensionality Reduction}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Linear Methods}
-                \begin{itemize}
-                    \item \textbf{Principal Component Analysis (PCA)}
-                        \begin{itemize}
-                            \item Variance maximization
-                            \item Interpretable components
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Non-linear Methods}
-                \begin{itemize}
-                    \item \textbf{t-SNE (t-Distributed Stochastic Neighbor Embedding)}
-                        \begin{itemize}
-                            \item Local structure preservation
-                        \end{itemize}
-                    \item \textbf{UMAP (Uniform Manifold Approximation)}
-                        \begin{itemize}
-                            \item Topology preservation
-                            \item Global structure maintenance
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-\end{frame}
-
 \begin{frame}
     \frametitle{\small Disease Detection - Materials and Methods - Dimensionality Reduction Workflow}
     
@@ -3271,69 +3272,42 @@
     \end{center}
 \end{frame}
 
-% Anomaly detection algorithms slide 1
+% Dimensionality reduction slide
 \begin{frame}
-    \frametitle{\small Disease Detection - Materials and Methods - Anomaly Detection}
+    \frametitle{\small Disease Detection - Materials and Methods - Dimensionality Reduction}
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{block}{Statistical Methods}
+            \begin{block}{Linear Methods}
                 \begin{itemize}
-                    \item \textbf{IQR with Confidence Interval}
+                    \item \textbf{Principal Component Analysis (PCA)}
                         \begin{itemize}
-                            \tiny
-                            \item Interquartile range outlier detection
-                            \item 95\% confidence interval around inliers
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-            
-            \begin{block}{Machine Learning Methods}
-                \begin{itemize}
-                    \item \textbf{Local Outlier Factor (LOF)}\fcite{\citeBreunigLOF}
-                        \begin{itemize}
-                            \tiny
-                            \item Local density comparison
-                            \item Novelty detection mode
+                            \item Variance maximization
+                            \item Interpretable components
                         \end{itemize}
                 \end{itemize}
             \end{block}
         \end{column}
         
         \begin{column}{0.5\textwidth}
-            \begin{block}{\small Machine Learning Methods}
+            \begin{block}{Non-linear Methods}
                 \begin{itemize}
-                    \item \textbf{Isolation Forest}\fcite{\citeLiuIsolation}
+                    \item \textbf{t-SNE (t-Distributed Stochastic Neighbor Embedding)}
                         \begin{itemize}
-                            \tiny
-                            \item Random feature selection and splitting
-                            \item Path-based anomaly scoring
-                            \item Contamination parameter: 0.1
+                            \item Local structure preservation
                         \end{itemize}
-                    \item \textbf{One-Class SVM}\fcite{\citeScholkopfEstimating}
+                    \item \textbf{UMAP (Uniform Manifold Approximation)}
                         \begin{itemize}
-                            \tiny
-                            \item RBF kernel boundary learning
-                            \item Support vector separation
-                            \item Nu parameter: 0.1
-                        \end{itemize}
-                    \item \textbf{Gaussian Mixture Model (GMM)}
-                        \begin{itemize}
-                            \tiny
-                            \item Single-component probabilistic model
-                            \item Low probability density detection
-                            \item 1st percentile threshold
+                            \item Topology preservation
+                            \item Global structure maintenance
                         \end{itemize}
                 \end{itemize}
             \end{block}
         \end{column}
     \end{columns}
-    \begin{alertblock}{Evaluation Metric}
-        \scriptsize
-        \textbf{Accuracy}: Proportion of correctly identified healthy and diseased samples (EPPO benchmark 0.85)
-    \end{alertblock}
 \end{frame}
 
+% Anomaly detection methodology slide
 \begin{frame}
     \frametitle{\small Disease Detection - Materials and Methods - Anomaly Detection}
     
@@ -3446,6 +3420,82 @@
     \end{center}
 \end{frame}
 
+% Anomaly detection algorithms slide 1
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Anomaly Detection}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Statistical Methods}
+                \begin{itemize}
+                    \item \textbf{IQR with Confidence Interval}
+                        \begin{itemize}
+                            \tiny
+                            \item Interquartile range outlier detection
+                            \item 95\% confidence interval around inliers
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Machine Learning Methods}
+                \begin{itemize}
+                    \item \textbf{Local Outlier Factor (LOF)}\fcite{\citeBreunigLOF}
+                        \begin{itemize}
+                            \tiny
+                            \item Local density comparison
+                            \item Novelty detection mode
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{\small Machine Learning Methods}
+                \begin{itemize}
+                    \item \textbf{Isolation Forest}\fcite{\citeLiuIsolation}
+                        \begin{itemize}
+                            \tiny
+                            \item Random feature selection and splitting
+                            \item Path-based anomaly scoring
+                            \item Contamination parameter: 0.1
+                        \end{itemize}
+                    \item \textbf{One-Class SVM}\fcite{\citeScholkopfEstimating}
+                        \begin{itemize}
+                            \tiny
+                            \item RBF kernel boundary learning
+                            \item Support vector separation
+                            \item Nu parameter: 0.1
+                        \end{itemize}
+                    \item \textbf{Gaussian Mixture Model (GMM)}
+                        \begin{itemize}
+                            \tiny
+                            \item Single-component probabilistic model
+                            \item Low probability density detection
+                            \item 1st percentile threshold
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{alertblock}{Evaluation Metric}
+        \scriptsize
+        \textbf{Accuracy}: Proportion of correctly identified healthy and diseased samples (EPPO benchmark 0.85)
+    \end{alertblock}
+\end{frame}
+
+% Experimental setup slide
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Experimental Setup}
+    \textbf{Anomaly Detection}
+    \begin{itemize}
+        \item \textbf{Training}: 10\% of dataset healthy samples (52 images per dataset)
+        \item \textbf{Testing}: All samples - training samples (total 1322 images per dataset)
+        \item \textbf{Cross-validation}: 5-fold for robustness
+        \item \textbf{Metrics}: Accuracy\\ (TP+TN)/(TP+TN+FP+FN)
+    \end{itemize}
+    \tiny TP: True Positive, TN: True Negative, FP: False Positive, FN: False Negative
+\end{frame}
+
 \begin{frame}
     \frametitle{\small Disease Detection - Results - Lab Anomaly Detection}
         \centering
@@ -3458,60 +3508,7 @@
         \includegraphics[width=0.9\linewidth]{Imgs/Plant_Pathology_Dataset_Anomaly_Detection_Performance.pdf}
 \end{frame}
 
-% Slide Unsupervised Classification
-\begin{frame}
-    \frametitle{\small Disease Detection - Materials and Methods - Unsupervised Classification}
-    
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Distance-Based Clustering}
-                \begin{itemize}
-                    \item \textbf{K-Means Clustering}
-                        \begin{itemize}
-                            \tiny
-                            \item Centroid-based partitioning
-                            \item Euclidean distance minimization
-                            \item k=number of disease classes
-                        \end{itemize}
-                    \item \textbf{Hierarchical Clustering}
-                        \begin{itemize}
-                            \tiny
-                            \item Agglomerative approach
-                            \item Ward linkage criterion
-                            \item Dendrogram-based cutting
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \begin{block}{Density & Model-Based Methods}
-                \begin{itemize}
-                    \item \textbf{DBSCAN}
-                        \begin{itemize}
-                            \tiny
-                            \item Density-based spatial clustering
-                            \item Noise point identification
-                            \item Automatic cluster number detection
-                        \end{itemize}
-                    \item \textbf{Gaussian Mixture Model (GMM)}
-                        \begin{itemize}
-                            \tiny
-                            \item Probabilistic clustering
-                            \item Multiple Gaussian components
-                            \item EM algorithm optimization
-                        \end{itemize}
-                \end{itemize}
-            \end{block}
-        \end{column}
-    \end{columns}
-            
-    \begin{alertblock}{Evaluation Metric}
-        \scriptsize
-        \textbf{Cohen's Kappa coefficient}: Measures agreement between cluster assignments and ground truth disease classifications beyond chance (EPPO benchmark 0.7)
-    \end{alertblock}
-\end{frame}
-
+% Unsupervised classification methodology slide
 \begin{frame}
     \frametitle{\small Disease Detection - Materials and Methods - Unsupervised Classification}
     
@@ -3620,6 +3617,72 @@
     \end{center}
 \end{frame}
 
+% Slide Unsupervised Classification
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Unsupervised Classification}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Distance-Based Clustering}
+                \begin{itemize}
+                    \item \textbf{K-Means Clustering}
+                        \begin{itemize}
+                            \tiny
+                            \item Centroid-based partitioning
+                            \item Euclidean distance minimization
+                            \item k=number of disease classes
+                        \end{itemize}
+                    \item \textbf{Hierarchical Clustering}
+                        \begin{itemize}
+                            \tiny
+                            \item Agglomerative approach
+                            \item Ward linkage criterion
+                            \item Dendrogram-based cutting
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Density and Model-Based Methods}
+                \begin{itemize}
+                    \item \textbf{DBSCAN}
+                        \begin{itemize}
+                            \tiny
+                            \item Density-based spatial clustering
+                            \item Noise point identification
+                            \item Automatic cluster number detection
+                        \end{itemize}
+                    \item \textbf{Gaussian Mixture Model (GMM)}
+                        \begin{itemize}
+                            \tiny
+                            \item Probabilistic clustering
+                            \item Multiple Gaussian components
+                            \item EM algorithm optimization
+                        \end{itemize}
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+            
+    \begin{alertblock}{Evaluation Metric}
+        \scriptsize
+        \textbf{Cohen's Kappa coefficient}: Measures agreement between cluster assignments and ground truth disease classifications beyond chance (EPPO benchmark 0.7)
+    \end{alertblock}
+\end{frame}
+
+% Experimental setup slide
+\begin{frame}
+    \frametitle{\small Disease Detection - Materials and Methods - Experimental Setup}
+    \textbf{Unsupervised Classification}
+        \begin{itemize}
+            \item \textbf{Parameter Initialization}: 3 classes/clusters/components
+            \item \textbf{Testing}: All samples (1374 images per dataset)
+            \item \textbf{Unsupervised Classification}: Group diseases by similarity patterns without supervision
+            \item \textbf{Benchmarks}: Cohen's $\kappa$
+        \end{itemize}
+\end{frame}
+
 \begin{frame}
     \frametitle{\small Disease Detection - Results - Lab Classification}
         \centering
@@ -3640,10 +3703,8 @@
         \begin{column}{0.5\textwidth}
             \begin{block}{Key Findings}
                 \begin{itemize}
-                    \item \textbf{Lightweight superiority}: ShuffleNet outperform large models
                     \item \textbf{Performance gap}: 5-10\% reduction lab-to-field
-                    \item \textbf{Method stability}: LOF most robust anomaly detector
-                    \item \textbf{Feature quality}: t-SNE essential for performance
+                    \item \textbf{Model importance}: Encoder choice critical for field, not really for lab
                 \end{itemize}
             \end{block}
         \end{column}
@@ -3653,7 +3714,6 @@
                 \begin{itemize}
                     \item \textbf{Environmental variability}: Field condition robustness
                     \item \textbf{Labeling costs}: Reduced annotation requirements
-                    \item \textbf{Scalability}: Cross-crop applicability potential
                 \end{itemize}
             \end{alertblock}
             
@@ -3670,31 +3730,72 @@
     
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            
-            \begin{exampleblock}{Best Practice Recommendations}
-                \begin{itemize}
-                    \item \textbf{Encoder}: ShuffleNet\_v2\_x1\_0 (2.3M parameters)
-                    \item \textbf{Dimensionality reduction}: t-SNE (10-20 components)
-                    \item \textbf{Anomaly detection}: Local Outlier Factor
-                    \item \textbf{Clustering}: DBSCAN for disease classification
-                \end{itemize}
-            \end{exampleblock}
+            \includegraphics[width=\linewidth]{Imgs/Anomaly_conclusion.png}
         \end{column}
         
         \begin{column}{0.5\textwidth}
             \begin{alertblock}{EPPO Integration Potential}
                 \begin{itemize}
-                    \item \textbf{Pathogen symptom localization}: Spatial anomaly mapping in fields with photogrammetry
-                    \item \textbf{Geostatistical integration}: Disease distribution analysis
-                    \item \textbf{EPPO compliance}: Benchmarks achieved
+                    \item \textbf{Symptoms detection}: \small Anomaly detection and sympthoms classification proven to be achievable in lab and in fields for apple cedar rust and apple scab
+                    \item \textbf{EPPO compliance}: \small Benchmarks achieved
                 \end{itemize}
             \end{alertblock}
             
-            \begin{exampleblock}{Technology Transfer}
-                \textbf{Ready for field deployment}: Lightweight, robust, and practical solution for agricultural disease monitoring
+            \begin{exampleblock}{Future Directions}
+                \textbf{Field deployment}: Practical solution for geostatistic if integrated with photogrammetry or with georeferenced observations
             \end{exampleblock}
         \end{column}
     \end{columns}
+\end{frame}
+
+% Slide: Georeferencing Assessments
+\begin{frame}
+    \frametitle{\small Georeferencing Assessments}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|l|c|c|c|}
+        \hline
+        & \textbf{Type of Variable} & \textbf{Measurement} & \textbf{Ranking} & \textbf{Scoring} \\
+        \hline
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous not limited & X & & \\
+        \hline
+        \rowcolor{green!20} \textcolor{green}{\checkmark} & Continuous limited & X & & \\
+        \hline
+        \rowcolor{yellow!20} \textcolor{green}{\checkmark} & Discrete & X & & \\
+        \hline
+        \rowcolor{red!20} \textcolor{green}{\checkmark} & Ordinal & & X & X \\
+        \hline
+        \rowcolor{red!20} \textcolor{green}{\checkmark} & Nominal & & & X \\
+        \hline
+        \rowcolor{red!20} \textcolor{green}{\checkmark} & Binary & & & X \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+\begin{frame}
+    \frametitle{\small Georeferencing Assessments - Conclusions}
+    \begin{exampleblock}{Georeferencing EPPO standard assessment observations:}
+        Proven to be possible to every kind of variable
+    \end{exampleblock}
+    \begin{exampleblock}{Georestatistics enabled for EPPO efficacy and selectivity trials:}
+        Enanced analysis and insights for decision-making
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\small Acknowledgements}
+    \begin{itemize}
+        \item Supervisors: Prof. Enrico Corrado Borgogno Mondino, Dr. Stefano Gaudino
+        \item Funding: SAGEA centro di saggio s.r.l., Regione Piemonte
+        \item Institutions: University of Turin, DISAFA
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \centering
+    Thank you for your attention\\
+    \vspace{0.5cm}
+    \includegraphics[width=\linewidth]{Imgs/Loghi.png}
 \end{frame}
 
 \end{document}

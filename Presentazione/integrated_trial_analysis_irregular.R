@@ -6,20 +6,184 @@
 #.libPaths(c("C:/Users/samuele.bumbaca/Documents/R/win-library/4.5", .libPaths()))
 
 # Load required packages
-library(ggplot2)
-library(dplyr)
-library(gridExtra)
-library(metR)      # For geom_text_contour
-library(SpATS)     # For spatial modeling
-library(gstat)     # For variogram modeling
-library(sp)        # For spatial data structures
-library(lme4)      # For linear mixed models
-library(car)       # For Levene's test
-library(lmtest)    # For Durbin-Watson test
-library(spdep)     # For Moran's I test
+# Set library path to user directory
+#.libPaths(c("C:/Users/samuele.bumbaca/Documents/R/win-library/4.5", .libPaths()))
+
+# Function to check and install required packages
+check_and_install_packages <- function() {
+  # List of required packages with installation order (dependencies first)
+  required_packages <- c(
+    "ggplot2",      # For plotting
+    "dplyr",        # For data manipulation
+    "gridExtra",    # For arranging plots
+    "metR",         # For geom_text_contour
+    "SpATS",        # For spatial modeling
+    "gstat",        # For variogram modeling
+    "sp",           # For spatial data structures
+    "lme4",         # For linear mixed models
+    "car",          # For Levene's test
+    "lmtest",       # For Durbin-Watson test
+    "spdep",        # For Moran's I test
+    "scales"        # For rescale function (used in visualization)
+  )
+  
+  cat("Checking required packages...\n")
+  
+  # Function to clean lock directories
+  clean_lock_dirs <- function() {
+    lib_path <- .libPaths()[1]
+    lock_dirs <- list.dirs(lib_path, full.names = TRUE, recursive = FALSE)
+    lock_dirs <- lock_dirs[grepl("00LOCK", basename(lock_dirs))]
+    
+    if (length(lock_dirs) > 0) {
+      cat("Cleaning lock directories...\n")
+      for (lock_dir in lock_dirs) {
+        try(unlink(lock_dir, recursive = TRUE, force = TRUE), silent = TRUE)
+        cat("Removed:", basename(lock_dir), "\n")
+      }
+    }
+  }
+  
+  # Clean any existing lock directories
+  clean_lock_dirs()
+  
+  # Check which packages are not installed
+  missing_packages <- required_packages[!required_packages %in% installed.packages()[,"Package"]]
+  
+  if (length(missing_packages) > 0) {
+    cat("Missing packages detected:", paste(missing_packages, collapse = ", "), "\n")
+    cat("Installing missing packages...\n")
+    
+    # Install RcppEigen first if needed (common dependency)
+    if ("lme4" %in% missing_packages || "car" %in% missing_packages) {
+      if (!"RcppEigen" %in% installed.packages()[,"Package"]) {
+        cat("Installing RcppEigen (required dependency)...\n")
+        tryCatch({
+          install.packages("RcppEigen", dependencies = TRUE)
+          cat("RcppEigen installed successfully.\n")
+        }, error = function(e) {
+          cat("Error installing RcppEigen:", e$message, "\n")
+        })
+      }
+    }
+    
+    # Install missing packages one by one
+    for (pkg in missing_packages) {
+      if (!pkg %in% installed.packages()[,"Package"]) {
+        cat("Installing", pkg, "...\n")
+        tryCatch({
+          # Clean lock dirs before each installation
+          clean_lock_dirs()
+          
+          install.packages(pkg, dependencies = TRUE, repos = "https://cloud.r-project.org")
+          cat(pkg, "installed successfully.\n")
+        }, error = function(e) {
+          cat("Error installing", pkg, ":", e$message, "\n")
+          
+          # Try alternative installation method
+          cat("Trying alternative installation for", pkg, "...\n")
+          tryCatch({
+            clean_lock_dirs()
+            install.packages(pkg, dependencies = FALSE, repos = "https://cloud.r-project.org")
+            cat(pkg, "installed successfully (without dependencies).\n")
+          }, error = function(e2) {
+            cat("Alternative installation also failed for", pkg, "\n")
+          })
+        })
+      }
+    }
+  } else {
+    cat("All required packages are already installed.\n")
+  }
+  
+  # Verify all packages can be loaded
+  cat("\nVerifying package loading...\n")
+  failed_packages <- c()
+  
+  for (pkg in required_packages) {
+    tryCatch({
+      library(pkg, character.only = TRUE, quietly = TRUE)
+      cat("✓", pkg, "loaded successfully\n")
+    }, error = function(e) {
+      cat("✗", pkg, "failed to load:", e$message, "\n")
+      failed_packages <<- c(failed_packages, pkg)
+    })
+  }
+  
+  if (length(failed_packages) > 0) {
+    cat("\nWarning: The following packages could not be loaded:\n")
+    cat(paste(failed_packages, collapse = ", "), "\n")
+    
+    # Try to install failed packages one more time
+    cat("Attempting to reinstall failed packages...\n")
+    for (pkg in failed_packages) {
+      tryCatch({
+        clean_lock_dirs()
+        remove.packages(pkg, lib = .libPaths()[1])
+      }, error = function(e) {})
+      
+      tryCatch({
+        install.packages(pkg, dependencies = TRUE, repos = "https://cloud.r-project.org")
+        library(pkg, character.only = TRUE, quietly = TRUE)
+        cat("✓", pkg, "reinstalled and loaded successfully\n")
+        failed_packages <<- failed_packages[failed_packages != pkg]
+      }, error = function(e) {
+        cat("✗", pkg, "still failed after reinstall\n")
+      })
+    }
+    
+    if (length(failed_packages) > 0) {
+      cat("\nSome packages still cannot be loaded. Continuing with available packages...\n")
+      return(FALSE)
+    }
+  }
+  
+  cat("\nAll packages loaded successfully!\n\n")
+  return(TRUE)
+}
+
+# Run the package check and installation
+cat("Starting package installation and verification...\n")
+if (!check_and_install_packages()) {
+  cat("Some packages could not be installed, but continuing with available packages...\n")
+  cat("You may need to install missing packages manually later.\n\n")
+}
+
+# Load required packages (this section replaces your original library() calls)
+# library(ggplot2)
+# library(dplyr)
+# library(gridExtra)
+# library(metR)      # For geom_text_contour
+# library(SpATS)     # For spatial modeling
+# library(gstat)     # For variogram modeling
+# library(sp)        # For spatial data structures
+# library(lme4)      # For linear mixed models
+# library(car)       # For Levene's test
+# library(lmtest)    # For Durbin-Watson test
+# library(spdep)     # For Moran's I test
 
 # Set seed for reproducibility
 set.seed(123)
+
+# Configure emoji font support for better rendering
+if (Sys.info()["sysname"] == "Linux") {
+  # Try to ensure emoji fonts are available
+  cat("Configuring emoji font support for Linux...\n")
+  
+  # Check if system has emoji fonts installed
+  emoji_fonts <- c("Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Symbola")
+  
+  # Set graphics device options for better Unicode support
+  options(device = function(...) {
+    if (requireNamespace("ragg", quietly = TRUE)) {
+      ragg::agg_png(..., res = 300)
+    } else {
+      png(..., res = 300, type = "cairo")
+    }
+  })
+  
+  cat("Emoji font configuration completed.\n")
+}
 
 # Suppress common warnings for cleaner output
 # options(warn = -1)  # Temporarily suppress warnings
@@ -327,13 +491,14 @@ add_wheat_spikes_with_legend <- function(plot_obj, data) {
   size_mapping <- c("Low" = 3, "Medium" = 5, "High" = 7)
   individual_data$spike_size <- size_mapping[individual_data$yield_category]
   
-  # Add wheat spike annotations
+  # Add wheat spike annotations with corn emoji
   for(i in 1:nrow(individual_data)) {
     size_val <- switch(individual_data$yield_category[i],
                        "Low" = 3, "Medium" = 5, "High" = 7)
     plot_obj <- plot_obj + 
       annotate("text", x = individual_data$x_scaled[i], y = individual_data$y_scaled[i], 
-               label = "🌽", size = size_val, hjust = 0.5, vjust = 0.5)
+               label = "🌽", size = size_val, hjust = 0.5, vjust = 0.5,
+               family = "Noto Color Emoji")  # Explicitly specify emoji font
   }
   
   # Add treatment letters
@@ -367,9 +532,10 @@ add_wheat_spikes_with_legend <- function(plot_obj, data) {
       guide = guide_legend(
         override.aes = list(
           alpha = 1,
-          shape = rep("🌽", n_levels),  # Use the correct number of emoji symbols
-          color = c("black", "black", "black")[1:n_levels],  # Use only the needed colors
-          size = c(4, 6, 8)[1:n_levels]  # Use only the needed sizes
+          shape = c("🌽", "🌽", "🌽")[1:n_levels],  # Use corn emoji in legend
+          color = c("goldenrod4", "goldenrod3", "goldenrod1")[1:n_levels],  # Use corn-like colors
+          size = c(4, 6, 8)[1:n_levels],  # Use only the needed sizes
+          family = "Noto Color Emoji"  # Specify emoji font for legend
         ),
         title.position = "top",
         title.hjust = 0.5,
@@ -425,14 +591,6 @@ create_integrated_plot <- function() {
     scale_fill_gradient2(low = "#FFF5EB", mid = "#FDAE61", high = "#D7301F", 
                         midpoint = 0, name = "Environmental\nSpatial Effect\n(t/ha)",
                         breaks = c(-1.5, 0, 1.5), labels = c("Low (-1.5)", "Medium (0)", "High (+1.5)")) +
-    # Spline effect contours from SpATS model (only for finite values)
-    geom_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
-                aes(x = x_scaled, y = y_scaled, z = spline_effect),
-                color = "purple", linewidth = 1.5, alpha = 0.8) +
-    # Spline effect contour labels (only for finite values)
-    geom_text_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
-                     aes(x = x_scaled, y = y_scaled, z = spline_effect),
-                     color = "purple4", size = 4, fontface = "bold") +
     # Map plot_coords treatments to dataset2 treatment values for border colors
     geom_rect(data = {
       temp_coords <- plot_coords
@@ -453,6 +611,29 @@ create_integrated_plot <- function() {
                          name = "Treatment\nEffect (t/ha)",
                          breaks = c(0, 0.5, 1),
                          labels = c("Control (0)", "Reference (0.5)", "Test (1)")) +
+    # Spline effect contours from SpATS model (only for finite values)
+    geom_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
+                aes(x = x_scaled, y = y_scaled, z = spline_effect),
+                color = "purple", linewidth = 1.5, alpha = 0.8,
+                breaks = seq(10, 14, 0.2)) +
+    # Spline effect contour labels (only for finite values) - using geom_text_contour for better control
+    geom_text_contour(data = pred_grid_fine[is.finite(pred_grid_fine$spline_effect), ], 
+                     aes(x = x_scaled, y = y_scaled, z = spline_effect),
+                     color = "purple4", size = 4, fontface = "bold",
+                     breaks = seq(10, 14, 0.2), 
+                     skip = 1,
+                     label.formatter = function(x) sprintf("%.1f", x)) +
+    # Add invisible line for contour legend
+    geom_line(data = data.frame(x = c(-100, -101), y = c(-100, -101)), 
+              aes(x = x, y = y, linetype = "SpATS Spatial Effects"), 
+              color = "purple", linewidth = 1.5, alpha = 0) +
+    scale_linetype_manual(name = "Model Contours", 
+                         values = c("SpATS Spatial Effects" = "solid"),
+                         guide = guide_legend(
+                           override.aes = list(alpha = 1, color = "purple", linewidth = 1.5),
+                           title.position = "top",
+                           title.hjust = 0.5
+                         )) +
     # Treatment labels
     geom_text(data = plot_coords,
               aes(x = x_center, y = y_center, label = treatment),
@@ -461,16 +642,34 @@ create_integrated_plot <- function() {
     geom_text(data = block_labels,
               aes(x = x_pos, y = y_pos, label = block),
               size = 5, fontface = "bold", hjust = 1, color = "black") +
+    # Block effect values below each block label in dark violet
+        geom_text(data = {
+          # Calculate grand mean and add it to block effects
+          if (is_mixed_model) {
+            grand_mean <- fixef(rcbd_mixed_model)["(Intercept)"]
+          } else {
+            grand_mean <- coefficients(rcbd_mixed_model)["(Intercept)"]
+          }
+          
+          # Add grand mean to block effects to get absolute block means
+          block_labels_with_means <- block_labels
+          block_labels_with_means$absolute_block_mean <- grand_mean + block_labels_with_means$block_effect
+          block_labels_with_means
+        },
+                  aes(x = x_pos, y = y_pos - 2, label = sprintf("%.1f t/ha", absolute_block_mean)),
+                  size = 4, fontface = "bold", hjust = 1, color = "darkviolet") +
     # Coordinate system
     coord_fixed(ratio = 1) +
     xlim(-8, 45) + ylim(0, 30) +
-    # labs(x = "X coordinate (m)", y = "Y coordinate (m)",
-    #     title = "Irregular Environmental Gradient Trial Design",
-    #     subtitle = "Purple contours: SpATS spatial effects | Irregular environmental pattern matching presentation slide") +
+    labs(x = "X coordinate (m)", y = "Y coordinate (m)",
+         title = "Trial Analysis: RCBD vs SpATS Comparison",
+         subtitle = "Purple contours with values: SpATS spatial effects (t/ha) | Background: Environmental zones | Plot borders: Treatment effects",
+         caption = "🌽 = Individual observations (size indicates yield level)\nTreatments: T=Test, C=Control, R=Reference") +
     theme_minimal() +
     theme(
       plot.title = element_text(size = 16, face = "bold"),
-      plot.subtitle = element_text(size = 12),
+      plot.subtitle = element_text(size = 11, color = "gray40"),
+      plot.caption = element_text(size = 10, color = "gray60", hjust = 0),
       axis.title = element_text(size = 12),
       legend.title = element_text(size = 10),
       legend.text = element_text(size = 9),
@@ -795,11 +994,47 @@ calculate_comprehensive_comparison <- function() {
 cat("=== GENERATING INTEGRATED PLOT WITH IRREGULAR ENVIRONMENTAL PATTERN ===\n")
 integrated_plot <- create_integrated_plot()
 
-# Save the plot
-suppressMessages(suppressWarnings(
-  ggsave("integrated_rcbd_spats_comparison_irregular.png", integrated_plot, 
-         width = 14, height = 10, dpi = 300)
-))
+# Save the plot with proper emoji support
+suppressMessages(suppressWarnings({
+  # Set up proper font configuration for emoji rendering
+  # Check if we're on Linux and try to use fonts that support emoji
+  if (Sys.info()["sysname"] == "Linux") {
+    # Try to install and use ragg package for better font support
+    if (!requireNamespace("ragg", quietly = TRUE)) {
+      cat("Installing ragg package for better emoji support...\n")
+      install.packages("ragg", quiet = TRUE)
+    }
+    
+    if (requireNamespace("ragg", quietly = TRUE)) {
+      # Use ragg with explicit font configuration
+      ragg::agg_png("integrated_rcbd_spats_comparison_irregular.png", 
+                    width = 14, height = 10, units = "in", res = 300,
+                    scaling = 1.0)
+      print(integrated_plot)
+      dev.off()
+      cat("Plot saved with ragg device (better emoji support)\n")
+    } else {
+      # Fallback: Try cairo with UTF-8 encoding
+      tryCatch({
+        cairo_png("integrated_rcbd_spats_comparison_irregular.png", 
+                  width = 14*300, height = 10*300, res = 300)
+        print(integrated_plot)
+        dev.off()
+        cat("Plot saved with cairo device\n")
+      }, error = function(e) {
+        # Final fallback
+        ggsave("integrated_rcbd_spats_comparison_irregular.png", integrated_plot, 
+               width = 14, height = 10, dpi = 300, device = "png")
+        cat("Plot saved with standard png device\n")
+      })
+    }
+  } else {
+    # For non-Linux systems, use standard approach
+    ggsave("integrated_rcbd_spats_comparison_irregular.png", integrated_plot, 
+           width = 14, height = 10, dpi = 300, device = "png")
+    cat("Plot saved with standard device\n")
+  }
+}))
 
 cat("Integrated plot saved as: integrated_rcbd_spats_comparison_irregular.png\n\n")
 

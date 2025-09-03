@@ -1,5 +1,5 @@
 %% This is file `mdpi_apacite.bst',
-%% Modified by MDPI according to apacite.bst. (Updated on 4 December 2024)
+%% Modified by MDPI according to apacite.bst. (Updated on 12 January 2025)
 %%
 %% The original source files were:
 %%
@@ -3765,18 +3765,13 @@ FUNCTION {howpublished.block}
     }
   if$
 }
+
 FUNCTION {begin.end.url.env}
 { "Available online: " % MDPI modified
-%  lastchecked empty$
- %   { 
-	urldate empty$
-        {" (accessed on)."}
-        {"" * " (accessed on)."} % MDPI modified
-      if$
-%    }
-%    { "[{" * lastchecked * "}]" * }
-%  if$
- % " (accessed on)"
+  urldate empty$
+    { " (accessed on)." }
+    { " (accessed on " urldate * ")." * } % MDPI modified
+  if$
 }
 
 FUNCTION {begin.end.doi.env}

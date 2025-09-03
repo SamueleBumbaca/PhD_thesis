@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%	MDPI class for LaTeX files	 23 December 2024
+%%%%	MDPI class for LaTeX files	 18 June 2025
 %% %%	For any information please send an e-mail to:
 %% %%		latex@mdpi.com
 %% %%
@@ -23,7 +23,7 @@
 
 %% IDENTIFICATION
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Definitions/mdpi}[12/23/2024 MDPI paper class]
+\ProvidesClass{Definitions/mdpi}[18/06/2025 MDPI paper class]
 
  %% PRELIMINARY DECLARATIONS
 \LoadClass[10pt,a4paper]{article}
@@ -170,6 +170,7 @@
 \newcommand{\isPreprints}{
         \ifthenelse{\equal{\@journal}{preprints} %
                 \OR \equal{\@journal}{preprintschicago}
+                \OR \equal{\@journal}{preprintsapa}
 	}
 }
 
@@ -284,14 +285,17 @@
 %%%% APA style journals
 \newcommand{\isAPAStyle}{
 	\ifthenelse{\equal{\@journal}{admsci}       % Transfer to APA type
+		\OR \equal{\@journal}{aieduc}       
 		\OR \equal{\@journal}{behavsci}       % Transfer to APA type
 		\OR \equal{\@journal}{businesses}    % Transfer to APA type
 		\OR \equal{\@journal}{econometrics}% Transfer to APA type
 		\OR \equal{\@journal}{economies}    % Transfer to APA type
 		\OR \equal{\@journal}{education}     % Transfer to APA type
 		\OR \equal{\@journal}{ejihpe}           % Transfer to APA type
+		\OR \equal{\@journal}{famsci}           % Transfer to APA type
 		\OR \equal{\@journal}{games}          % Transfer to APA type
 		\OR \equal{\@journal}{humans}         % Transfer to APA type
+		\OR \equal{\@journal}{ijcs}               % Transfer to APA type
 		\OR \equal{\@journal}{ijfs}               % Transfer to APA type
 		\OR \equal{\@journal}{journalmedia} % Transfer to APA type
 		\OR \equal{\@journal}{jrfm}              % Transfer to APA type
@@ -316,16 +320,19 @@
 		\OR \equal{\@journal}{religions}
 		\OR \equal{\@journal}{risks}
 		\OR \equal{\@journal}{socsci}
-             \OR \equal{\@journal}{preprintschicago} %% Just use for preprints, not a real Chicago journal
+             \OR \equal{\@journal}{preprintschicago} 
 	      \OR \equal{\@journal}{admsci}       
+		\OR \equal{\@journal}{aieduc}      
 		\OR \equal{\@journal}{behavsci}       
 		\OR \equal{\@journal}{businesses}   
 		\OR \equal{\@journal}{econometrics}
 		\OR \equal{\@journal}{economies}    
 		\OR \equal{\@journal}{education}     
-		\OR \equal{\@journal}{ejihpe}           
+		\OR \equal{\@journal}{ejihpe}    
+		\OR \equal{\@journal}{famsci}       
 		\OR \equal{\@journal}{games}          
-		\OR \equal{\@journal}{humans}         
+		\OR \equal{\@journal}{humans}  
+		\OR \equal{\@journal}{ijcs}                      
 		\OR \equal{\@journal}{ijfs}              
 		\OR \equal{\@journal}{journalmedia}
 		\OR \equal{\@journal}{jrfm}             
@@ -400,6 +407,7 @@
 	\crefname{scheme}{Scheme}{Schemes}
 	\crefname{chart}{Chart}{Charts}
 	\crefname{paragraph}{Section}{Sections}
+	\crefname{graph}{Graph}{Graphs}
 }
 
 % After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
@@ -465,6 +473,7 @@
 	\crefrangelabelformat{appendix}{##3##1##4--##5##2##6}
 	\crefrangelabelformat{scheme}{##3##1##4--##5##2##6}
 	\crefrangelabelformat{chart}{##3##1##4--##5##2##6}
+	\crefrangelabelformat{graph}{##3##1##4--##5##2##6}
 }
 
 \newcommand{\crefrangeconjunction}{--}
@@ -475,7 +484,8 @@
 \newcommand{\sche}[1]{Scheme~\ref{#1}}
 \newcommand{\cchart}[1]{Chart~\ref{#1}}
 \newcommand{\equ}[1]{\ref{#1}}
-\newcommand{\boxref}[1]{Box~\ref{#1}}%
+\newcommand{\boxref}[1]{Box~\ref{#1}}
+\newcommand{\cgraph}[1]{Graph~\ref{#1}}
 
 %%%% Metadata
 \newcommand{\org@maketitle}{}% LATEX-Check
@@ -625,7 +635,7 @@
 \ifthenelse{\equal{\@journal}{molbank}
 	\OR \equal{\@journal}{chemproc}
 	\OR \equal{\@journal}{engproc}
-	\OR \equal{\@journal}{environsciproc}
+	\OR \equal{\@journal}{eesp}
 	\OR \equal{\@journal}{materproc}
 	\OR \equal{\@journal}{blsf}
 	\OR \equal{\@journal}{msf}
@@ -756,6 +766,7 @@
 %% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.
 \ifthenelse{\equal{\@journal}{preprints} %
 		\OR \equal{\@journal}{preprintschicago}
+		\OR \equal{\@journal}{preprintsapa}
 		\OR \equal{\@arttype}{Book}
 		\OR \equal{\@arttype}{Monograph}}{%
 	\fancypagestyle{plain}{%
@@ -849,6 +860,7 @@
 		{%0
 		\ifthenelse{\equal{\@journal}{preprints}
 		\OR \equal{\@journal}{preprintschicago}
+		\OR \equal{\@journal}{preprintsapa}
 			\OR \equal{\@arttype}{Book}
 			\OR \equal{\@arttype}{Monograph}}{}{
 				\vspace{-2 pt}%
@@ -859,6 +871,9 @@
 					\href{https://www.mdpi.com/journal/\@journal}{
 					\includegraphics[height=1.2cm]{Definitions/\@journal-logo.eps}}%
 					\hfill
+					\ifthenelse{\equal{\@journal}{ijom}}{%
+						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-ijom.eps}}
+						}{
 					\ifthenelse{\equal{\@journal}{siuj}}{%
 						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-siuj.eps}}
 						}{
@@ -869,8 +884,9 @@
 							}%
 						}%
 					}%
-					\par
-					\rule{\fulllength}{0.4pt}%
+				}%
+				\par
+				\rule{\fulllength}{0.4pt}%
 			}%
 		\par
 		}%0
@@ -973,7 +989,7 @@
 	\ifthenelse{\equal{\@journal}{proceedings}
 		\OR \equal{\@journal}{chemproc}
 		\OR \equal{\@journal}{engproc}
-		\OR \equal{\@journal}{environsciproc}
+		\OR \equal{\@journal}{eesp}
 		\OR \equal{\@journal}{materproc}
 		\OR \equal{\@journal}{blsf}
 		\OR \equal{\@journal}{msf}
@@ -1197,29 +1213,29 @@
 % For journal Applied Sciences:
 \ifthenelse{\equal{\@featuredapplication}{\@empty}}{
 	}{%
-	\noindent\textbf{Featured Application:\space\@featuredapplication}
+	\noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
 	\vspace{12pt}
 	\par
 }	
 %
 %10
 \ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
-	\noindent\textbf{Simple Summary:\space}\@simplesumm
+	\noindent\textbf{Simple Summary\vspace{6pt}\\}\@simplesumm
 	\vspace{12pt}
 	\par
 }
 \ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
-	\noindent\textbf{Highlights:\\\vspace{-12pt}}\addhighlights % redefined in .tex to use itemize
+	\noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
 	\vspace{12pt}
 	\par
 }
 \ifthenelse{\equal{\@abstract}{\@empty}}{}{
-	\noindent\textbf{Abstract:\space}\@abstract
+	\noindent\textbf{Abstract\vspace{6pt}\\}\@abstract
 	\vspace{12pt}
 	\par
 }
 \ifthenelse{\equal{\@encyclopediadef}{\@empty}}{}{
-	\noindent\textbf{Definition:\space}\@encyclopediadef
+	\noindent\textbf{Definition\vspace{6pt}\\}\@encyclopediadef
 	\vspace{12pt}
 	\par
 }
@@ -1437,6 +1453,7 @@
 \setcounter{hypothesis}{0}
 \setcounter{notation}{0}
 \setcounter{algorithm}{0}
+\setcounter{graph}{0}
 }
 
 \renewcommand{\appendix}{%
@@ -1494,6 +1511,7 @@
 \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
 \renewcommand{\thenotation}{A\arabic{notation}}
 \renewcommand{\thealgorithm}{A\arabic{algorithm}}
+\renewcommand{\thegraph}{A\arabic{graph}}
 }
 
 %%%% Dimensions
@@ -1591,6 +1609,7 @@
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}
 \DeclareFloatingEnvironment[]{figurewide}
+\DeclareFloatingEnvironment[]{graph}
 
 \RequirePackage{caption}
 \isPreprints{%
@@ -1605,6 +1624,8 @@
 \captionsetup[table]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
 
 \captionsetup[boxenv]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
+
+\captionsetup[graph]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
 }{
 \captionsetup[figure]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 
@@ -1617,6 +1638,8 @@
 \captionsetup[table]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
 
 \captionsetup[boxenv]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
+
+\captionsetup[graph]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 }
 
 %% For table footnotes
@@ -1667,6 +1690,7 @@
 \lhead{
 	\ifthenelse{\equal{\@journal}{preprints}%
 	\OR \equal{\@journal}{preprintschicago}
+	\OR \equal{\@journal}{preprintsapa}
 	\OR \equal{\@arttype}{Book}
 	\OR \equal{\@arttype}{Monograph}}{%
 		}{%

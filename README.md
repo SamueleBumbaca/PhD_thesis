@@ -2,6 +2,8 @@
 
 This repository contains the complete PhD thesis by Samuele Bumbaca, including the main thesis document, presentation, and three research papers.
 
+## Video of fhe the presentation: https://youtu.be/UXV4R5TPSrg?si=cq-K2DowVbCMAOq4
+
 ## Repository Structure
 
 ```
@@ -18,6 +20,8 @@ This repository contains the complete PhD thesis by Samuele Bumbaca, including t
 │   ├── integrated_trial_analysis.R     # Regular gradient analysis
 │   └── integrated_trial_analysis_irregular.R  # Irregular gradient analysis
 ├── Plant_count/                          # Research Paper 1: Plant Counting
+│   ├── Definitions/
+│   ├── Plots/
 │   ├── remotesensing-3622397.tex
 │   ├── remotesensing-3622397.bib
 │   └── Unsupervised_plant_counting.bib
@@ -26,6 +30,7 @@ This repository contains the complete PhD thesis by Samuele Bumbaca, including t
 │   ├── SAGEA_DiSAFA.bib
 │   └── Images/
 ├── Anomaly_detection/                    # Research Paper 3: Anomaly Detection
+│   ├── plots/
 │   ├── Anomaly_detection.tex
 │   ├── Anomaly_detection.bib
 │   ├── Results.ipynb                    # Jupyter notebook for plots

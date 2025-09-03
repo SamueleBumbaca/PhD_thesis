@@ -1,1 +1,35 @@
 Anomaly_detection/TSNE/data
+
+# Generated PDF files (can be regenerated with build.sh)
+*.pdf
+!README.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+texput.log
+
+# R generated files
+*.RData
+.Rhistory
+.RData
+.Ruserdata
+
+# Large image files (keep source, ignore large copies)
+Presentazione/Imgs/*.jpg
+Presentazione/Imgs/*.png
+Anomaly_detection/plots/*.png
+Anomaly_detection/plots/*.jpg
+
+# Temporary files
+*~
+.DS_Store
+Thumbs.db

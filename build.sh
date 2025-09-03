@@ -3,7 +3,7 @@
 # PhD Thesis Build Script
 # This script generates all required data and compiles the thesis, presentation, and research papers
 
-set -e  # Exit on any error
+# Note: We don't use 'set -e' to allow graceful handling of non-critical failures
 
 echo "=========================================="
 echo "PhD Thesis Build Script"
@@ -49,25 +49,37 @@ cd Presentazione
 
 # Install R packages
 echo "Installing R packages..."
-Rscript install_packages.R
+if ! Rscript install_packages.R; then
+    echo "Warning: Some R packages failed to install. Continuing with available packages..."
+fi
 
 # Generate trial data
 echo "Generating trial data..."
-Rscript generate_trial_data.R
+if ! Rscript generate_trial_data.R; then
+    echo "Warning: Trial data generation failed. Using fallback data if available..."
+fi
 
 # Generate integrated analysis plots
 echo "Generating integrated analysis plots (regular)..."
-Rscript integrated_trial_analysis.R
+if ! Rscript integrated_trial_analysis.R; then
+    echo "Warning: Regular analysis plots generation failed. Continuing..."
+fi
 
 echo "Generating integrated analysis plots (irregular)..."
-Rscript integrated_trial_analysis_irregular.R
+if ! Rscript integrated_trial_analysis_irregular.R; then
+    echo "Warning: Irregular analysis plots generation failed. Continuing..."
+fi
 
-# Copy generated files to main directory if needed
-cp dataset1_detailed.csv ../
-cp dataset2_plots.csv ../
-cp trial_models.RData ../
-cp integrated_rcbd_spats_comparison.png ../
-cp integrated_rcbd_spats_comparison_irregular.png ../
+# Copy generated files to main directory if they exist
+echo "Copying generated files..."
+for file in dataset1_detailed.csv dataset2_plots.csv trial_models.RData integrated_rcbd_spats_comparison.png integrated_rcbd_spats_comparison_irregular.png; do
+    if [ -f "$file" ]; then
+        cp "$file" ../
+        echo "✓ Copied: $file"
+    else
+        echo "⚠ Missing: $file (may not be needed for compilation)"
+    fi
+done
 
 cd ..
 
